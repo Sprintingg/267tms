@@ -1,0 +1,176 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[와호장룡] 무릉마을 사람들의 부탁"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "마스터가 할 말이 있다고 한다. 적호파 도장 내부에 있는 마스터를 만나보도록 하자."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "무릉 마을의 사람들이 우리 문파에게 도움을 요청했다고 한다. 무릉 마을로 가서 마을 사람들을 만나고 오자.\\r\\n#b(요청한 마을 사람: #p2090004#, #p2090102#, #p2091143#)"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "무릉 마을 사람들의 부탁을 들어 주었다."
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#m250000000#에서 #p2090004#,#p2090102#,#p2090006#를 찾아가 보도록 하게. 우리 문파에게 도움을 청한 사람들이네."
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2091112"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q35045s"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201510150000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201510150000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "35044"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2091112"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q35045e"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "35046"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "35047"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "35048"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[納希沙漠] 阿斯旺戰場：補給戰攻略！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "43"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "阿斯旺的宰相清隆說他願意透漏阿斯旺戰場各種模式中的補給戰進行方法。去找阿斯旺宰相清隆。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "向阿斯旺的宰相清隆習得了阿斯旺戰場各種模式中的補給戰進行方法。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "向阿斯旺的宰相清隆習得了阿斯旺戰場各種模式中的補給戰進行方法。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "那我就向你說明有關補給戰的內容吧。你要聽嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "恩.."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "補給戰並不需要什麼特別的攻略，所以我就只告訴你參與的方法吧。#r從下午2點到晚上8點之間#k，如果參與補給戰，透過#b畫面左側#i3800265#任務提示#k，就可以開始解放戰補給模式任務了。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "恩.."
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2183002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "40"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q3979s"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2183002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  }
+}

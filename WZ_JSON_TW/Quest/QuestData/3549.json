@@ -1,0 +1,202 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[* 時間神殿] 失去記憶的神官"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "263"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "神殿管理人旁邊站著我曾經幫助過的神官。跟神官打招呼的話也許會交代一些麻煩的事情，還是向神殿管理人打聽一下旁邊的神官是誰吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "拜訪回憶的凝視者，詢問怎樣找回失去記憶的神官的記憶。\\r\\n#bTip. 通過回憶中的休息處的1樓傳送點可進入凝視者的房間。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "到#m270010111#，見到了回憶的凝視者。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "130"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "139"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "682173"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2140000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "130"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3548"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q3549s"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2140001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "682173"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "你所幫助的故事是透過 #b失憶神官#k聽說了。感謝你幫助我們的神官。\\r\\n#L0##b在時間的神殿迷路的 神官…感覺來沒多久？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "那個…是有原因的。為了找回記憶，經常去自己被發現的地方，可是丟失的不只是記憶，還是個嚴重的路癡，經常在神殿內迷路。\\r\\n#L0##b想找回記憶？ 是不是失去記憶了？#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "有一天，在過去之門裡發現了失去記憶的她。連自己的名字也記不住。之後就成了神官…\\r\\n能幫助她找回記憶嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "為了找回他的記憶，要請#p2140001#幫忙才行 用蒙蔽的眼睛，只能看到回憶的人，#b#p2140001##k的話，應該會知道失憶的神官丟失的記憶。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "真冷酷。可憐的神官，以後就都不知道自己是誰了。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "什麼事情…？ 他是… 心裡深處的記憶丟失了，感覺空蕩蕩的。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "想幫助他嗎…？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "看來還沒找到 #b#p2140001##k啊。他在回憶之路某處的 #b#m270010111##k。"
+          }
+        }
+      }
+    }
+  }
+}

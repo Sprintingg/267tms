@@ -1,0 +1,132 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "battle"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "loot"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "[祕法符文]珠子裡的話語"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "從奧術之河地區的怪物身上獲得祕法符文1000個"
+    },
+    "parentId": {
+      "_dirType": "int",
+      "_value": "844"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "unique"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "40"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "uiForm": {
+        "_dirType": "string",
+        "_value": "basic"
+      },
+      "gauge": {
+        "_dirType": "string",
+        "_value": "submission_info"
+      },
+      "gaugeMissionIndex": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "gaugeSubMission": {
+        "_dirType": "string",
+        "_value": "pickup_mob_reward_item"
+      }
+    },
+    "prior": {
+      "_dirType": "sub",
+      "block": {
+        "_dirType": "string",
+        "_value": "hide"
+      },
+      "condition": {
+        "_dirType": "string",
+        "_value": "and"
+      },
+      "values": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "achievement_id": {
+            "_dirType": "int",
+            "_value": "842"
+          },
+          "achievement_state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "keyword": {
+      "_dirType": "string",
+      "_value": "祕法符文獲得"
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "從奧術之河地區的怪物身上獲得祕法符文1000個"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "pickup_mob_reward_item": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "int",
+              "_value": "1000"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            },
+            "type": {
+              "_dirType": "string",
+              "_value": "counting"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub",
+            "item": {
+              "_dirType": "sub",
+              "condition": {
+                "_dirType": "string",
+                "_value": "or"
+              },
+              "values": {
+                "_dirType": "sub",
+                "0": {
+                  "_dirType": "sub",
+                  "item_id": {
+                    "_dirType": "int",
+                    "_value": "171"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

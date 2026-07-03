@@ -1,0 +1,261 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[克里塞] 磁能的真實性"
+    },
+    "area": {
+      "_dirType": "string",
+      "_value": "33"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "磁能？既然是因為磁能變成這樣首先應該查明什麼是磁能才是。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "無論如何還是向村子內最年長的長老確認比較好吧？去找長老提坦吧。去見長輩應該表示一點小小的誠意嗎？"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "維持克里塞的動力源…沒想到是村莊必要的磁能招來的禍。難道過去都沒事那不是很奇怪？"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000634:# #t4000634:# #c4000634# / 50\r\n#i4000635:# #t4000635:# #c4000635# / 50\r\n"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "克里塞陷入危機的原因"
+    },
+    "order": {
+      "_dirType": "string",
+      "_value": "4"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 17,568\r\n可進行 '[克里塞] 提坦長老的委託' 任務\r\n"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "17568"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2170001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "50"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31003"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2170002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000634"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000635"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "17568"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000634"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000635"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你說想要知道有關磁能的事情？ 把我的薛西斯變成那樣的磁能… 其實我並不想要提到那個。 "
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "事實上，我只知道那是克里塞必須要有的東西，其他的我也不太清楚 … 我看你去找比我懂更多的長老應該會得到更多的資訊！ 因為長老知道所有的事情… "
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "來到克里塞你還沒有去見過長老吧？ 他是村子裡最年長的人，因此你最好先準備些禮物再去會比較好。 "
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "現在村莊的所有物質很不足… #r#t4000634##k和 #r#t4000635##k可當一個好材料。\\r\\n\\r\\n#b50個#k的話應該足夠的，對吧？"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你又沒興趣何必問我呢？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我很擔心克里塞…"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你是誰啊？ 你說你是聽過米加爾拉的故事之後來的？ 是嗎… 這樣啊。 但是這又是什麼呢? 呵呵… 你還準備了禮物啊。 真是不好意思…"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請問都收集到嗎？那就去找提坦長老吧？"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請問米加爾拉沒有說他需要什麼物品嗎？ 譬如說怪物的戰利品之類的…"
+          }
+        }
+      }
+    }
+  }
+}

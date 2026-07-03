@@ -1,0 +1,245 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[艾靈森林] 弗勒提的結界"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "39"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "必須要協助守護設立有結界石的亞泰爾營地的弗勒提。問他該如何幫助他。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了阻止結界石弱化，必須要有這森林的生命體力量。\n請去消滅棲息在這裡的怪物，必須要收集他們的力量才行。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "為了強化結界石，將需要的材料交給弗勒提。如果有時間，就必須要收集材料交給弗勒提。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4033109:# #t4033109:# #c4033109# / 30\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "309230"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2131001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "95"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31205"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2131001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033109"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "309230"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033109"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "노멀"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "你看起來非常地面熟。 呵呵。 你的故事對這裡的人來說是個祕密。 不能讓大家陷入混亂。\\r\\n#L0##b好的，我知道了。 但是到底誰是卡奧呢？ 大家都叫我卡奧啊。 大家好像都認識我…#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "他是跟我們一起來這裡的人。 就跟你長得一模一樣。 所以人們才搞混的。\\r\\n#L0##b卡奧是怎麼樣的人呢？ 現在他在哪裡呢？#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "我也不知道他現在在哪裡。 他突然消失了，而你就出現了。 希望你在人們面前，最好是以卡奧的身分繼續行動。\\r\\n#L0##b(好像得在問些什麼…但卻不知要說什麼…)#l\\n#k"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "你可以幫助我嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "結界石會保護營區不受黑暗力量侵犯。但目前正漸漸惡化當中。想要守護結界石，需要森林怪物的力量。消滅這個地方的怪物，收集30個森林的力量。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果你準備好了，請再與我對話吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "森林的力量找來了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝。 在保護營地的人上，你給了我們相當大的幫助。 祝你能獲得神的祝福…"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請收集30個森林的力量。"
+          }
+        }
+      }
+    }
+  }
+}

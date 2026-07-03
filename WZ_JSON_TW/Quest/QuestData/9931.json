@@ -1,0 +1,180 @@
+{
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2120004"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q9931e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031832"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2120004"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "200810221200"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "200811121200"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "7644"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "200811060000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "200810221200"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9929"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 蘇菲莉雅的肖像畫"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "想製作出與他女兒相似的玩偶，必須要有#p2120004#他女兒的#r肖像畫#k。聽到這樣回答後，#b#p2120004##k沉著臉思考了好一會。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2120004#說很久沒見過女兒，連女兒的樣子都似乎忘掉了，並讓把#r#t4031832##k帶回來。是#p2120005#？那麼這個人就是#p2120005#尋找的人了？…去#m229000211#把#t4031832#帶回來後，詳細詢問一下。\\n\\n#i4031832##t4031832##b#c4031832#/1#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把#t4031832#交給他後，#m2120004#看了好一會，然後就開始製作玩偶。向他轉告了#p2120005#哭述沒有人記得她自己後，他說他在完成玩偶之前不能去並要求轉達他的歉意。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "如此看來…很久沒有見過女兒了。從製作玩偶空洞的眼神中可以看出，似乎連#b#p2120005##k的樣子都忘記了…\\r\\n#L0##b(…#p2120005#？你認識#p2120005#？)"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "如果有#b#t4031832##k的話，就可以製作出完美的玩偶了…這有很多以前畫家畫的畫…你要拿一些畫嗎?"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "在掛相框的房間裡掛著許多幅畫。在其中選擇#p2120005#畫的畫拿走。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不是你說如果想要製作完美的玩偶必須有#t4031832#才行嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "找不到#b#t4031832##k嗎？畫全都在#b掛相框的房間#k裡。"
+          }
+        }
+      }
+    }
+  }
+}

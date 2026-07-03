@@ -1,0 +1,117 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "job"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "skill"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "閃雷悍將的後繼"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "閃雷悍將的鯨噬5等級達成"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "unique"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "40"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "uiForm": {
+        "_dirType": "string",
+        "_value": "basic"
+      },
+      "gauge": {
+        "_dirType": "string",
+        "_value": "mission_count"
+      }
+    },
+    "prior": {
+      "_dirType": "sub",
+      "condition": {
+        "_dirType": "string",
+        "_value": "or"
+      },
+      "values": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "achievement_id": {
+            "_dirType": "int",
+            "_value": "480"
+          },
+          "achievement_state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "sync": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "<閃電精靈之力>完成"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "quest_state_change": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            },
+            "type": {
+              "_dirType": "string",
+              "_value": "counting"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub",
+            "quest_change_info": {
+              "_dirType": "sub",
+              "quest_id": {
+                "_dirType": "int",
+                "_value": "2536"
+              },
+              "quest_state": {
+                "_dirType": "sub",
+                "min": {
+                  "_dirType": "int",
+                  "_value": "2"
+                },
+                "max": {
+                  "_dirType": "int",
+                  "_value": "2"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

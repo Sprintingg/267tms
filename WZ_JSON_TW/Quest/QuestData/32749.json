@@ -1,0 +1,134 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[Friend's Story] 需要學生紀錄簿2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "93"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "與教務室的艾爾文對話."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在教務室的垃圾地區清除垃圾後收集學生紀錄簿分頁."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "找回垃圾帶走的學生紀錄簿分頁. 艾爾文說懷疑為轉學生的那位是個非常壞的傢伙...?"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4030039:# #t4030039:# #c4030039# / 40\r\n"
+    },
+    "friendsStory": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1530034"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q32749s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32748"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1530034"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q32749e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4030039"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "40"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "學生紀錄簿好像被垃圾偷走了.\\r\\n#b(進入教務室的垃圾地區清除垃圾後找回學生紀錄簿分頁.)#k"
+          }
+        }
+      }
+    }
+  }
+}

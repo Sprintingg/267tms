@@ -1,0 +1,200 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[星星力量] 消失之星的碎片"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "41"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "因為流星而變異的怪物…但是，#p2081000#也很擔心其他事情，去聽聽看 #p2081000#到底擔心些什麼事情。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2081000#推測流星並不是只會對怪物造成影響而已，所以必須調查那股可怕的力量對森林造成何種影響，消滅因為星星力量而變異的怪物，並且收集消失之星的碎片給 #p2081000#吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "受擔心流星對森林造成影響的 #p2081000#所托，收集了消失之星的碎片， #p2081000#說要徹底調查星星碎片。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4034180:# #t4034180:# #c4034180# / 15\r\n"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "#m240010600#\r\n#m240010520#\r\n#m240010510#\r\n#m240020200#\r\n#m240020300#\r\n#m240020310#"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "189230"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2081000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3875"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2081000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034180"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "15"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "189230"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034180"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-15"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我知道流星造成怪物們產生了變異，但是，流星的影響並非僅限於怪物身上而已，如果那股力量如此恐怖，那森林本身大概也被影響了，還是詳細調查比較好，你要辛苦一下了。 \\r\\n"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "聽說怪物們之所以會變異，是因為擁有星星碎片。只要調查後應該就會有線索吧？只要解決怪物，就能取得 #r消失之星的碎片#k，為了調查至少需要 #b15個#k左右，你可以幫我收集嗎？\\r\\n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "光靠我們矮人族的力量是有限的，現在光是要應付闇黑龍王就已經很吃力了。 \\r\\n"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "消失之星的碎片全都湊齊了嗎？怪物們變凶殘後應該很難對付，辛苦你了。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "除了文博士的研究以外，我們同樣也要另外調查星星，如果有進一步的發現，我會聯絡你的，謝謝你的幫忙。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#r消失之星的碎片#k只要利用星星力量消滅變異的怪物就能取得，想要進行研究，至少要收集 #b15個#k左右。"
+          }
+        }
+      }
+    }
+  }
+}

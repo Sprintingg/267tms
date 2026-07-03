@@ -1,0 +1,221 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[龍使者，龍魔導士] 餵食地獄獵犬"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "7"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必需]"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "向#b#p1013101##k道早安吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "不停嘲笑的#p1013101#說不要再說奇怪的話，把早餐拿給#p1013102#。代替膽小鬼#p1013101#拿飼料給在#b左邊#k#b#p1013102##k的吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "給#p1013102#早餐。"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "22001"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "2"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "35"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1013101"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q22001s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "2"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "22000"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2001"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1013102"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032447"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "35"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032447"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#b(將食物放在#p1013102#的碗裡。)#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "#b(#p1013102#很老實。#p1013101#也很膽小。)#k"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b(#p1013102#將食物都吃掉了。回去告訴#p1013101#。)#k"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "嗯？還沒有去找#b左側#k的#b#p1013102##k呢嗎？快點拿去給他吧。他肚子似乎很餓，心情很差。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "(#p1013102#的肚子似乎非常餓。這樣餓下去太可憐了。快點去找#b#p1013101##k要#b#t4032447##k。)"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯？什麼？在去的路上把飼料弄丟了？呼，真是冒失，還有一些飼料，再給你一次，這次一定要送到啊。再這樣下去的話，#p1013102#那個傢伙就要想吃人了。"
+        }
+      }
+    }
+  }
+}

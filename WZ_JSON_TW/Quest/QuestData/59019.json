@@ -1,0 +1,126 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[幻獸師] 冒險的開始!看看世界地圖吧!"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "85"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "selfStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "selfComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "終於開始旅行了!\\r\\n決定先到離這裡綠樹村入口村莊."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了成為英雄而投入冒險的我，在動物英雄團朋友們的村子外等待. 告訴我了如何看世界地圖的魔法. 按下W就可以了吧?"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "看著世界地圖來找找我要去的地方到底在哪裡. 楓之谷世界真的很大耶."
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "按W鍵的話,可打開世界地圖.\\r\\n打開世界地圖,找到樹木入口村莊後並點選.\\r\\n再按世界地圖上方的導航登錄鍵即可."
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q59019s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "59018"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub"
+      },
+      "job_TW": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "11212"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "11213"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q59019e"
+      }
+    }
+  }
+}

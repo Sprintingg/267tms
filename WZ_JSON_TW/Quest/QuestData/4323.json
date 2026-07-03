@@ -1,0 +1,197 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[櫻花城] 邪惡的影子"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "18"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "和富士進行詳談。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "去找富士後，他說真正的領主被囚禁在領主房間屏風後面的櫃子中，想要擊退蟾蜍妖怪，就得先解開領主房門佈置的蟾蜍怪的咒術。妖怪的手下影子忍者身上帶著能夠解除妖怪咒術的祕笈，擊退影子忍者，然後收集 #b#e#t4000701# 60個#k#n。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "去找富士後，他說真正的領主被囚禁在領主房間屏風後面的櫃子中，想要擊退蟾蜍妖怪，就得先解開領主房門佈置的蟾蜍怪的咒術。妖怪的手下影子忍者身上帶著能夠解除妖怪咒術的祕笈，擊退影子忍者，然後收集影子忍者的祕術。\\n湊齊影子忍者的祕術後，便回去找富士。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000701:# #t4000701:# #c4000701# / 60\r\n"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 110,000\r\n可進行 '破壞結界的鑰匙' 任務\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "110000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2200003"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4322"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2200003"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000701"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "60"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "110000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000701"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-60"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我已經依照公主的命令，調查出領主的行蹤了。領主就被關在領主房間屏風後的櫃子當中。領主房間有蟾蜍怪的咒術，蟾蜍怪日夜都守在那邊，想要救出領主，就只能擊敗蟾蜍怪了！你願意幫我嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "為了解除房間的妖術，需要祕術，祕術在妖怪的手下影子忍者身上。擊敗影子忍者，然後帶#b#e影子忍者祕術 60個#k#n回來。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這件事非常需要你的幫忙！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "辛苦了。看來得稍微瀏覽一下祕術書才行。應該寫有解除咒術的方法…"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "為了解除房間的妖術，需要祕術，祕術在妖怪的手下影子忍者身上。擊敗影子忍者，然後帶#b#e影子忍者祕術 60個#k#n回來。"
+          }
+        }
+      }
+    }
+  }
+}

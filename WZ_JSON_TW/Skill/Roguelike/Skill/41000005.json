@@ -1,0 +1,267 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "4221006 연막탄"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "smokeshell"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            },
+            "socketName": {
+              "_dirType": "string",
+              "_value": "None"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "4221006"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "SummonZone"
+      },
+      "zoneType": {
+        "_dirType": "string",
+        "_value": "self"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "duration": {
+          "_dirType": "int",
+          "_value": "30"
+        },
+        "z": {
+          "_dirType": "int",
+          "_value": "20000"
+        }
+      },
+      "zones": {
+        "_dirType": "sub",
+        "Anim": {
+          "_dirType": "sub",
+          "LayerSlots": {
+            "_dirType": "sub",
+            "Slot0": {
+              "_dirType": "sub",
+              "Segment:stand": {
+                "_dirType": "sub",
+                "StartPos": {
+                  "_dirType": "int",
+                  "_value": "0"
+                }
+              },
+              "Segment:die": {
+                "_dirType": "sub",
+                "StartPos": {
+                  "_dirType": "int",
+                  "_value": "2940"
+                }
+              }
+            }
+          },
+          "Notifies": {
+            "_dirType": "sub",
+            "attack": {
+              "_dirType": "sub",
+              "TriggerTime": {
+                "_dirType": "int",
+                "_value": "540"
+              },
+              "TriggerInterval": {
+                "_dirType": "string",
+                "_value": "300"
+              },
+              "EndTriggerTime": {
+                "_dirType": "string",
+                "_value": "2640"
+              }
+            },
+            "die": {
+              "_dirType": "sub",
+              "TriggerTime": {
+                "_dirType": "int",
+                "_value": "2940"
+              }
+            },
+            "buff": {
+              "_dirType": "sub",
+              "TriggerTime": {
+                "_dirType": "int",
+                "_value": "540"
+              },
+              "TriggerInterval": {
+                "_dirType": "string",
+                "_value": "300"
+              },
+              "EndTriggerTime": {
+                "_dirType": "string",
+                "_value": "2640"
+              }
+            }
+          },
+          "Sections": {
+            "_dirType": "sub",
+            "summonned": {
+              "_dirType": "sub"
+            },
+            "stand": {
+              "_dirType": "sub",
+              "NextSectionName": {
+                "_dirType": "string",
+                "_value": "stand"
+              },
+              "StartTime": {
+                "_dirType": "int",
+                "_value": "540"
+              }
+            },
+            "die": {
+              "_dirType": "sub",
+              "StartTime": {
+                "_dirType": "int",
+                "_value": "2940"
+              }
+            }
+          }
+        }
+      }
+    },
+    "buff": {
+      "_dirType": "sub",
+      "constants": {
+        "_dirType": "sub",
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "100"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -250,
+          "_y": -150
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 250,
+          "_y": 150
+        }
+      },
+      "type": {
+        "_dirType": "string",
+        "_value": "AreaBuff"
+      },
+      "targetBuffID": {
+        "_dirType": "int",
+        "_value": "41100001"
+      },
+      "targetingType": {
+        "_dirType": "string",
+        "_value": "Hostile"
+      }
+    },
+    "attack": {
+      "_dirType": "sub",
+      "constants": {
+        "_dirType": "sub",
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "100"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -365,
+          "_y": -320
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 275,
+          "_y": 80
+        }
+      },
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "targetBuffID": {
+        "_dirType": "int",
+        "_value": "41100002"
+      }
+    },
+    "die": {
+      "_dirType": "sub"
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "Tags": {
+      "_dirType": "sub",
+      "onlyOnConvex": {
+        "_dirType": "sub"
+      }
+    },
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "cooltime": {
+      "_dirType": "string",
+      "_value": "60-2*x"
+    },
+    "x": {
+      "_dirType": "string",
+      "_value": "30"
+    },
+    "criticalProb": {
+      "_dirType": "string",
+      "_value": "5*x"
+    },
+    "duration": {
+      "_dirType": "int",
+      "_value": "30"
+    }
+  }
+}

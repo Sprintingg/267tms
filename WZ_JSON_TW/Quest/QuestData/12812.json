@@ -1,0 +1,159 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[共同楓葉] 再次領取新人加持券"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "遺失了#t2430905#。去找楓之谷GM。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "遺失了#t2430905#。去找楓之谷GM再次領取。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "遺失了#t2430905#。去找楓之谷GM再次領取。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoPreComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201209200000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201209200000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "12800"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2430905"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2430905"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "dateExpire": {
+            "_dirType": "string",
+            "_value": "2012092000"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你把#t2430905#遺失了？ 但是不用擔心。我會重新幫你尋找。\\r\\n#i2430905# #t2430905#\\r\\n現在要重新領取嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不是現在也無所謂...需要的時候告訴我吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我會再提供#t2430905#給你。請確認道具欄。"
+        }
+      }
+    }
+  }
+}

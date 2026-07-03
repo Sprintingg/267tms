@@ -1,0 +1,149 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[星光之塔] 請讓我成為選拔歌手的星探吧！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "211"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "…在放棄之前先問問自己還有什麼解決辦法吧！或許跟#b#p1052203##k稍微談談，會出現不錯的答案。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "與#p1052203#討論出的解決辦法，就是另外尋覓素人歌手！迷迷糊糊之中幫助了他，暫時成為大發娛樂歌手徵選的負責人。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "出發之前聽祕書#b#p1052212##k說明徵選歌手相關的基本事項吧！"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2157750"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "145"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052203"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q34404s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34403"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052206"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2157750"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "sayEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#b(他下定決心成為一位星探發掘素人歌手。)#k"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "啊，這麼好的歌曲不會就此埋沒真是太好了！那麼現在就要開始挖掘歌手嗎？"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "對了！在動身之前想請你跟我的祕書#b#p1052212##k稍微談一下！他會告訴你一些發掘新人的小技巧。"
+          }
+        }
+      }
+    }
+  }
+}

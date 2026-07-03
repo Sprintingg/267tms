@@ -1,0 +1,207 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[獅子王城] 教官鮑爾"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "221"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "targetMapID": {
+      "_dirType": "int",
+      "_value": "211060400"
+    },
+    "targetPN": {
+      "_dirType": "string",
+      "_value": "up00"
+    },
+    "returnType": {
+      "_dirType": "int",
+      "_value": "-1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "和在#b獅子王城#m211060800##k的騎士#b盧頓#k對話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "盧頓說獅子王城被黑暗籠罩後，被怪物們佔領了地盤，並請我去#b#m211060401##k消滅#r教官鮑爾#k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在#b#m211060401##k成功消滅教官鮑爾。"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q1565x"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1082400"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2161002"
+      },
+      "subJobFlags": {
+        "_dirType": "int",
+        "_value": "15"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "120"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3164"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2161002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "3140"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "clear"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1082400"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "還有事要在城堡裡處理嗎？嗯？說城堡裡有人被綁架了？沒想到會有這種事…真嚴重。他平安無事嗎？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "其實，這座城有來自不明的怪物。是被#r稱為教官的怪物#k，在城被黑暗籠罩之後，就開始出現並佔領地盤了。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "因為那些傢伙，原本就危險的城堡完全變成了怪物的巢穴。他們沒有停止，繼續讓居民陷入痛苦之中… 看來得快點消滅他們了。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "冒險家已經消滅了第一座塔的怪物，接下來只要消滅第二座塔的怪物就可以了。請前往#b第二座塔#k，擊退#r教官鮑爾#k。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "那就拜託了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "對冒險家來說，這不是件難事。請再考慮一下。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你消滅教官鮑爾了嗎？非常感謝。托你的福，城堡會稍微變得更安全。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "消滅第二座塔的怪物就可以了。請去#b第二座塔#k，擊退#r教官鮑爾#k吧。"
+          }
+        }
+      }
+    }
+  }
+}

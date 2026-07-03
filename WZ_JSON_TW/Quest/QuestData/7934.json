@@ -1,0 +1,161 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[專門技術] 採集的達人5"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "採集的達人"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去哈姆梅爾學習成為採集達人的方法。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "帶著通過提煉才能獲得的#b#t4007007##k去找哈姆梅爾吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "採集等級達到9後，再去找哈姆梅爾吧。"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "終於是最後一次了。 你已經成長為了不起的採集者了。 但不可以讓腳步停止在這裡。 只要再多付出些努力，你也能成為採集大師。 所以說啊，最後就選了這個。 #b#t4007007##k 1個。 我會等著你拿給我。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b#t4007007##k可在提煉#r#t4022017##k或#r#t4022018##k的時候得到。 因為比較稀有，需要一定的耐心才能發現。 那麼，祝你好運。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "專業技術要不停進行修煉。 有空的時候一定要再來找我。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "我還沒想好要說些什麼，等我全部都準備好之後再來吧。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9031000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "7933"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "skill": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "92000000"
+          },
+          "level": {
+            "_dirType": "int",
+            "_value": "9"
+          },
+          "levelCondition": {
+            "_dirType": "string",
+            "_value": "以上"
+          },
+          "acquire": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9031000"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q7934e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4007007"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[萬聖節] 什麼？要給新的投擲遊戲遊戲盤？"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "波明說要告知新投擲遊戲屬性的資訊。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在投骰遊戲取得第 1名10次以上的話，就會提供能當作\r\n屬性使用的#b萬聖節遊戲盤#k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "獲得#b萬聖節遊戲盤#k。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#投骰遊戲中取得第 1名10次以上 #R43830Ex26countRef43826# / 10\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "投骰遊戲專用 #b萬聖節遊戲盤#k"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "新星世界"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "starPlanet": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1540100"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201410020000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201411130900"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201410020000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201411060000"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q43826s"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1540100"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "43830"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q43826e"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "10"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "投骰遊戲中獲得第1名10次以上"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "26count"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒能在投擲遊戲中獲得絕對的勝利，\\r獲得10次以上勝利再來吧。"
+          }
+        }
+      }
+    }
+  }
+}

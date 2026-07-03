@@ -1,0 +1,214 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[幻獸師] 讓烏德勒看看2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "85"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "吹牛大王湯姆說要告訴我接下來要做的事.跟他說話吧."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "把#i4034001:# 10個給烏德勒看吧"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把#i4034001:# 10個給烏德勒看了,但他還是不相信."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4034001:# #t4034001:# #c4034001# / 10"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "1757"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1757"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034001"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這次把這個拿去給烏德勒看.這次應該也不會不相信吧...?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "給烏德勒看過後再跟我說!我太好奇了."
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "希望你再想一下.不喜歡就算了!"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嗯…!?"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "難道… 這個… "
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "是那個很貴的熊爪嗎???是要給我嗎? 嗯請等一下."
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒去找烏德勒嗎?趕快去!"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390313"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "59038"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub"
+      },
+      "job_TW": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "11212"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "11213"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390312"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034001"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

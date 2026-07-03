@@ -1,0 +1,152 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "order": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "有位年幼的少年在比叡山的入口哭泣。為什麼在這種地方會有少年呢…？真可疑。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "年幼的少年似乎是聯軍的侍童。是在睡覺時被帶來的，據他所說，聯軍的士兵們變得很不對勁。先幫他找行李後，再問他關於聯軍的情報吧。行李應該不會在很遠的地方，找草叢裡試試看吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "找到年幼的少年拜託我尋找的包袱布了，問他關於聯軍士兵的異狀吧。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4034131:# #t4034131:# #c4034131# / 1\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "95"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "[濃姬] 哭泣的少年"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9130107"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "58915"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q58914s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "180"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          }
+        }
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "58913"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9130107"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q58914e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034131"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "我的包袱行李在哪裡？"
+          }
+        }
+      }
+    }
+  }
+}

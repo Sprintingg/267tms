@@ -1,0 +1,122 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 尋找索非亞"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "瑪亞和奇怪的藥"
+    },
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在維多利亞港的維多利亞附近見了特奧。他是鬍子很多的人。他說他是有那種藥，但不能白給我。要是我給他會發光的石頭，他就可以給我那藥。看起來他似乎很了解瑪亞，而且他已經知道瑪亞的病，但怎麼不主動去要求呢？真是奇怪的人...不過我為了拿到發光的石頭得去見勇士之村雜貨店的索非亞。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "為了尋找能夠製作閃耀石頭的索非亞而前往勇士之村。索非亞說只要有變異菇菇的血就能做出閃耀的石頭。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "2"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "2004"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我是有一個#b#t4031006##k，不過不能白給你啊。你若能把#b#t4031004##k帶給我的話，或許我還能考慮一下就是說想和你交換啦。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "在哪裡能得到那個石頭？我如果知道的話，還會拜託你嗎？去問問#b#m102000000##k的雜貨店老闆的女兒#r#p1022100##k，她也許知道。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "難不成…你不知道去#m102000000#的路嗎？？去#m102000000#，可以往東邊小路走，再沿著六條岔道走就可以到了。是我多嘴了嗎？？？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒找到#b#t4031004##k嗎？該不會那個石頭不會是被誰給拿去了吧。它那亮晶晶的樣子真的很漂亮快去#b#m102000000##k雜貨店的#r#p1022100##k那裏吧！"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022100"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "15"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2002"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    }
+  }
+}

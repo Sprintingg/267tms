@@ -1,0 +1,138 @@
+{
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 他們的名字是海盜"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "楓之谷各處有神祕人士出現，充滿信心的表情以及前所未聞的武器…好像可以感受到海洋的氣息…他們到底是誰呢？去問#b#p9330072##k好了。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p9010010#說他們終於來了！他們是誰？原來是指#b海盜#k，他說若對海盜感興趣，就可以讓我體驗一下某個海盜的神祕技能，但在此之前，必須要先證明自己確實對海盜感到興趣，那就來解答#p9330072#所提出的四個問題吧！"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "從#p9330072#手中得到了#b#t2210010##k，只要有它，就可以體驗海盜神祕的技能了。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub"
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "來了！他們終於來了！什麼？你說是誰啊？天啊～你還不曉得嗎？他們就是#b海盜#k！"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "長久以來以海盜的身分雲遊四海的#b卡伊琳#k，終於再回到維多利亞島了！看來...長久以來困擾她的煩惱，已獲得解脫了…相信海盜們的力量，將有助於楓之谷世界的發展！我覺得又開心又興奮！！"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "楓之谷世界的新英雄─海盜！你勢必會和他們相遇！若你對他們感興趣的話，我可以讓你先體驗他們的某項#b神奇的技能#k，如何？有興趣嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那你就拿出證明，證明你確實對海盜深感興趣。我會提出#b有關海盜的四個問題#k，若你能全部答對的話，就會送你一個#b#t2210010##k。如何？做好準備了嗎？若已做好準備，就再跟我#p9330072#說話吧！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯…你不需要畏懼他們！海盜也會是你的夥伴…甚至你也有可能加入他們的行列也說不定。"
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q9951e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "200801070000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "200801070000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2210010"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2210011"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "1440"
+      }
+    }
+  }
+}

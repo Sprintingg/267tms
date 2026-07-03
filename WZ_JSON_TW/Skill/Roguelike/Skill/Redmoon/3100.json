@@ -1,0 +1,259 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "리프 토네이도 23111001"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "elfTornado"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "23111001"
+          }
+        }
+      },
+      "effect1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub"
+          }
+        }
+      },
+      "effect2": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-2"
+            }
+          }
+        }
+      },
+      "zoneEffect": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "115+70*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "4"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "8"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -290,
+          "_y": -150
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 290,
+          "_y": 280
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub"
+        },
+        "1": {
+          "_dirType": "sub"
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "23111001"
+      }
+    },
+    "zoneEffect": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "SummonZone"
+      },
+      "zones": {
+        "_dirType": "sub",
+        "effectZone1": {
+          "_dirType": "sub",
+          "LayerSlots": {
+            "_dirType": "sub",
+            "Slot0": {
+              "_dirType": "sub",
+              "Segment:all": {
+                "_dirType": "sub",
+                "dir": {
+                  "_dirType": "string",
+                  "_value": "Left"
+                },
+                "3": {
+                  "_dirType": "uol",
+                  "_value": "0"
+                },
+                "4": {
+                  "_dirType": "uol",
+                  "_value": "1"
+                },
+                "5": {
+                  "_dirType": "uol",
+                  "_value": "2"
+                }
+              }
+            }
+          }
+        },
+        "effectZone2": {
+          "_dirType": "sub",
+          "LayerSlots": {
+            "_dirType": "sub",
+            "Slot0": {
+              "_dirType": "sub",
+              "Segment:all": {
+                "_dirType": "sub",
+                "dir": {
+                  "_dirType": "string",
+                  "_value": "Left"
+                },
+                "3": {
+                  "_dirType": "uol",
+                  "_value": "0"
+                },
+                "4": {
+                  "_dirType": "uol",
+                  "_value": "1"
+                },
+                "5": {
+                  "_dirType": "uol",
+                  "_value": "2"
+                }
+              }
+            }
+          }
+        }
+      },
+      "zoneType": {
+        "_dirType": "string",
+        "_value": "random"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": -320,
+          "_y": -150
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 320,
+          "_y": 280
+        },
+        "duration": {
+          "_dirType": "string",
+          "_value": "0.66"
+        },
+        "count": {
+          "_dirType": "string",
+          "_value": "8"
+        },
+        "z": {
+          "_dirType": "int",
+          "_value": "9000"
+        }
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "4"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "8"
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "115+70*x"
+    },
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "impactY": {
+      "_dirType": "string",
+      "_value": "800"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -290,
+      "_y": -150
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 290,
+      "_y": 280
+    },
+    "cooltime": {
+      "_dirType": "int",
+      "_value": "7"
+    }
+  },
+  "SkillTags": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "string",
+      "_value": "RLGame.Skill.Extra"
+    }
+  }
+}

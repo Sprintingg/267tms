@@ -1,0 +1,209 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[命運武器]決戰，監視者卡洛斯"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "最終，仙人們決定協助敵對者。然而要將創世武器變成敵對者的專屬武器，必須經歷無法想像的試煉…\r\n\r\n#r ※ 可透過接受「[命運武器] 敵對者的決心」任務開啟命運武器任務UI，並在UI中確認任務資訊及進度。 #k\r\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了堅定敵對者的決心，必須擊敗格蘭蒂斯的強者們。此外，還需在滿足任務條件後擊敗#r監視者卡洛斯#k。\r\n\r\n#r ※ 可透過接受「[命運武器] 敵對者的決心」任務開啟命運武器任務UI，並在UI中確認任務資訊及進度。 #k\r\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在與格蘭蒂斯強者決戰的過程中，敵對者的決心融入了武器。"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "except": {
+        "_dirType": "sub"
+      }
+    },
+    "demand": {
+      "_dirType": "sub",
+      "base": {
+        "_dirType": "string",
+        "_value": "#questorder1#擊敗監視者卡洛斯任務完成 (#R35858ExclearRef35855#)\r\n#questorder1#敵對者的決心 #R35858ExpointRef35855# / 2500\r\n"
+      },
+      "explain": {
+        "_dirType": "sub"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3006179"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q35855s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "275"
+      },
+      "subJobFlags": {
+        "_dirType": "int",
+        "_value": "15"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "35854"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "202510020000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3006179"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q35855e"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "35858"
+      },
+      "QuestRecordAndOption": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "2"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "擊敗監視者卡洛斯任務完成"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "clear"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "2500"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "敵對者的決心"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "point"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "我等著看你能否戰勝這場試煉。"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[被破壞的弓箭手村] 未來之門"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "266"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去時間神殿向神殿管理人詳細詢問一下傳聞吧。時間神殿到底發生了什麼事情？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "給驚嚇的神殿管理人1個萬能療傷藥 ，仔細聽聽關於謠言的情況吧。\n\\n\\n#i2050004##t2050004# #b#c2050004# / 1#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "從神殿管理員那裡聽到了詳細的傳聞。黑魔法師的手下們確實襲擊了神殿。"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "160"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "169"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5567645"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2140000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "160"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31100"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2140000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2050004"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "31102"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2050004"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "5567645"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你也是聞風而來調查的嗎？呼嗚… 真是鬱悶啊。那件事之後我的身體狀況一直不太好。請問您有藥嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果給我一個#b萬能療傷藥#k，應該就能繼續詳細討論了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那是什麼事情？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "真的是萬能療傷藥啊。 謝謝。現在稍微好一點了。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "其實…前陣子，黑魔法師的手下，大膽襲擊此地。可能是瞄準了門後空間盡頭的時間祭壇。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "雖然幸運地擊敗了，但並不是就此沒有任何問題了。 …#b未來之門#k已經打開了。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒帶來#b萬能療傷藥#k啊。如果真的沒有的話，買別人賣的也可以。"
+          }
+        }
+      }
+    }
+  }
+}

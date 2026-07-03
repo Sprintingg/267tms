@@ -1,0 +1,174 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[聯盟任務] 遠征隊任務 - 領路者"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "223"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "如果配置在船艦的巨大里程表進行補充魔力時，就可以找出遠征隊要前進的正確方向。大家一起協力把船艦的里程表均衡補充吧。\\r\\n船艦里程表可透過在特定時間中，從怪物身上獲得的 #b#i4009461##t4009461##k來進行補充。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "如果配置在船艦的巨大里程表進行補充魔力時，就可以找出遠征隊要前進的正確方向。大家一起協力把船艦的里程表均衡補充吧。\\r\\n船艦里程表可透過在特定時間中，從怪物身上獲得的 #b#i4009461##t4009461##k來進行補充。\r\n\r\n#b能量充填只有特定時機進行，且充填完畢為止的剩下時間能在聊天視窗確認。\r\n船艦的巨大里程表階段是以 #r充填最少的里程表能量#b為準來決定。#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把船艦的里程表均衡補充魔力而完成遠征隊任務。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#船艦里程表 3階段以上活性化 #R35121Ex1Ref35127# / 3\r\n"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "10000 心願"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003564"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "35119"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "999"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "not"
+          }
+        }
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201901230900"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201902060000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003564"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "35121"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q35127e"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "3"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "船艦里程表 3階段以上活性化"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "如果能夠讓船艦上的多個里程表進行補充魔力的話，我猜遠征隊應該可以獲得更強大的力量吧。"
+          }
+        }
+      }
+    }
+  }
+}

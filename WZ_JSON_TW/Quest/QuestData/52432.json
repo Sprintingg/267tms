@@ -1,0 +1,239 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[職業] 是誰做的呢？"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[轉職]"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "returnMapID": {
+      "_dirType": "int",
+      "_value": "120000100"
+    },
+    "returnPN": {
+      "_dirType": "string",
+      "_value": "ai04"
+    },
+    "targetType": {
+      "_dirType": "int",
+      "_value": "-1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "耶願有話要說。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "據說有手下無法察覺的線索，需要請你協助找尋。\r\n線索聽說就在瑪迦提亞城和納希沙漠、神木村三處當中其中一地。\r\n\r\n先在瑪迦提亞城的#m261010102:#將#o7110301:#怪物擊殺，\r\n收集#t4001699:#吧！\r\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "找到了線索。但是目前的線索似乎還是不夠。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4001699:# #t4001699:# #c4001699# / 10\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "100000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330209"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "52431"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "job": {
+        "_dirType": "sub"
+      },
+      "job_TW": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "571"
+        }
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330209"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001699"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "261010102"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "100000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001699"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "在主人進行修煉的期間，為了尋找背後的勢力，我做了許多調查。然而…但仍有許多還沒查到的線索。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "這些線索已經搖動了整個楓之谷了。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "應該就是．．．三個當中其中一個地方。瑪迦提亞城、納希沙漠和神木村．．．先前往瑪迦提亞城調查看看吧？\\r\\n#b#e(接受時移動至#m261010102:#地圖。)#k#n"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "第一個線索，或許可以從瑪迦提亞城的#o7110301:#怪物身上找到。會需要#b#t4001699# 10個#k。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請主人去尋找線索這件事，對主人來說太過勉強了嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "很好！找來了瑪迦提亞城所有線索了。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "線索的數字還不夠。"
+          }
+        }
+      }
+    }
+  }
+}

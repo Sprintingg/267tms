@@ -1,0 +1,158 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[地球防衛本部] 告知葛雷的陰謀"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "38"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "問到#o6220001#，#p2050002#冒著冷汗說不知道。…有點奇怪？回去向#b#m221000000##k的#b#p2050001##k報告吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "問到#o6220001#，#p2050002#冒著冷汗說不知道。…有點奇怪？回去向#b#m221000000##k的#b#p2050001##k報告吧。"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 51,268\r\n可進行 '超音波解讀器' 任務\r\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "向#b#m221000000##k的#b#p2050001##k報告了外星人葛雷的事情。"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "葛雷的陰謀"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "51268"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2050002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "75"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3453"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2050001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "3454"
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "51268"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "不可能會忘記吧！啊哈哈哈。沒有，絕對沒有，真的沒事。人類真是充滿了好奇心。我不負責葛雷金剛，不太清楚。為什麼用這種質疑的眼神？沒事的話，可以走開嗎？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "#b(雖然沒得到情報，可是好像有什麼不尋常的…？先回去找金博士報告這件事。)#k"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b（不用報告也可以嗎？）#k"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "去找#p2050002#？…這樣嗎？果然無法取得特別的情報。這是理所當然的。可稱得上自己的弱點的情報，聰明的葛雷怎麼可能這麼輕易就告知。那麼要不要用第二個計策…"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b(雖然沒得到情報，可是好像有什麼不尋常的…？先回去找金博士報告這件事。)#k"
+          }
+        }
+      }
+    }
+  }
+}

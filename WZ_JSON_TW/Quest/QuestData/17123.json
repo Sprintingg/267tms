@@ -1,0 +1,186 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[水世界]突破入口"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "35"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o9390016# #a171231#\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "幾乎已經到達目的地了。去找安吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "來到最終目的地洞窟前了，這邊也充滿了怪物。處理#o9390016#吧！"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#o9390016#全部都清除了。安先回到了洞穴。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "5000000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5000000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "震源地位於 #b#m860000032##k深處的古老洞穴。已經所剩無幾了。好，最後去消滅擋路的怪物吧。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "往#b#m860000032##k會有很多 #r#o9390016##k。盡快處理吧。當然你的安全還是最優先。那就拜託你了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你，來這裡說什麼啊！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "好的。看來全都處理好了。辛苦你了！ 多虧有你的幫忙，才能夠順利完成研究。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請先去洞穴裡，在做好萬全的準備後，請你跟上來。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "欸，怎麼跟我這麼沒默契啊?好好做。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390007"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "200"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "17122"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390007"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9390016"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "500"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

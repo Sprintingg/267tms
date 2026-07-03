@@ -1,0 +1,164 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[弓箭手村] 事情內幕"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "有話要轉告菇菇王國的#p1300005#。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "去找菇菇王國的#p1300003#。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "從菇菇王國的#p1300003#那裡聽說事件的經過。"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 1,600\r\n可進行 '菇菇森林探險（１）' 任務\r\n"
+    },
+    "summary": {
+      "_dirType": "string",
+      "_value": "去找菇菇王國的#b#p1300003##k。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "25"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1600"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1300005"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2312"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1300003"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "2314"
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "1600"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我已經從我們#b#p1300003##k那裡聽說了許多關於勇士的事了。 希望能見到#b#p1300003##k。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請拯救我們的王國！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "沒時間了，請快點。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "喔！原來你就是 #p1300005#所說的那名勇士。現在我們菇菇王國面臨一大危機。雖然很丟臉，但冰島的 #b企鵝國王#k展開攻擊奪走了王國，菲歐娜公主還被抓去當人質，情況可以說是非常糟糕！"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "狡猾的企鵝國王傢伙們！趁菇菇國王身體不好想把王位讓給菲歐娜公主的機會，向我們進攻了。強迫菲歐娜公主嫁給企鵝國王的呆瓜兒子蘇佩王子，最終目標是搶奪王國…目前最重要的是先救出菲歐娜公主。勇士，拜託你救出公主～"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "沒有時間了，必須趕快。"
+          }
+        }
+      }
+    }
+  }
+}

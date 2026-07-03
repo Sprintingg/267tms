@@ -1,0 +1,227 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[弓箭手村] 跨越城牆（３）"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000501:##t4000501:##c4000501#/30"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 4,600\r\n可進行 '跨越城牆（４）' 任務\r\n可進行 '詹姆士的下落（１）' 任務\r\n可進行 '調撥物資（１）' 任務\r\n可進行 '阻止結婚' 任務\r\n可進行 '王國的象徵' 任務\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "好像可從#b#p1300004##k那裡得知越過城牆的線索。\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了製作#b#t2430015##k，請你去#b#m106020401##k消滅#r#o3300002##k，並且收集#b#t4000501#30個#k交給#b魔法大臣#k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "收集#b#t4000501#30個#k交給了#b魔法大臣#k。"
+    },
+    "summary": {
+      "_dirType": "string",
+      "_value": "為了製作#b#t2430015##k，請你去#b#m106020401##k消滅#r#o3300002##k，並且收集#b#t4000501#30個#k交給#b魔法大臣#k。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "25"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "4600"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1300003"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2322"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1300004"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000501"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "4600"
+      },
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "2324"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000501"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊！我想到了一個主意。我們可以利用防禦城堡用的刺藤潛入城堡。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "可拿掉有刺的藤蔓裡的刺的話，抓著藤蔓可越過城牆的。要這樣做的話需要藤蔓解除劑…"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b#t2430015##k可用冰原雪域的神祕藥草中萃取的成分製作。 企鵝國王就是利用這藥草來讓豬群中毒，佔領菇菇森林的。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "從#b#t4000501##k裡可萃取藥草的成分。所以到 #b#m106020401##k消滅 #r#o3300002##k後收集 #b#t4000501# 30個#k再交給 #b魔法大臣#k。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "除了這個方法是很難進入城堡的。等你改變主意了再來找我。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你說什麼？ 你說需要#b#t2430015##k？ 這位朋友就只會這麼突然地提出那麼為難人的要求嗎？ 你找來材料了嗎？ "
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這是被冰原雪域高原魔法藥草迷惑的豬的尾巴。企鵝國王用這種藥草給怪物洗腦。我要提取出藥草成分，然後利用魔法結晶加以淨化。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "找來#b#t4000501#30個#k拿給#b#p1300004##k吧。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "嗯？ 你請我製作#b#t2430015##k？ 那麼就先收集拿來材料啊。 就算有我，沒有材料也是沒辦法製作的。 請前往#b#m106020401##k，消滅#r#o3300002##k，並且收集拿來#b#t4000501# 30個#k。"
+          }
+        }
+      }
+    }
+  }
+}

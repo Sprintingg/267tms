@@ -1,0 +1,226 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "인핸스 스나이핑 3221025"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "enhanceSniping"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "3201011"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Projectile"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "time": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "hitIntervalPerTarget": {
+          "_dirType": "long",
+          "_value": "2000"
+        },
+        "boundLT.X": {
+          "_dirType": "string",
+          "_value": "-145"
+        },
+        "boundRB.X": {
+          "_dirType": "string",
+          "_value": "170"
+        },
+        "boundLT.Y": {
+          "_dirType": "string",
+          "_value": "-75"
+        },
+        "boundRB.Y": {
+          "_dirType": "string",
+          "_value": "75"
+        },
+        "emitPos.X": {
+          "_dirType": "string",
+          "_value": "-100"
+        },
+        "emitPos.Y": {
+          "_dirType": "string",
+          "_value": "-35"
+        },
+        "rotatable": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "emitSpeed": {
+          "_dirType": "string",
+          "_value": "2000"
+        },
+        "emitToTarget": {
+          "_dirType": "string",
+          "_value": "Directly"
+        },
+        "emitMinAngle": {
+          "_dirType": "string",
+          "_value": "-30"
+        },
+        "emitMaxAngle": {
+          "_dirType": "string",
+          "_value": "30"
+        }
+      },
+      "ball": {
+        "_dirType": "sub"
+      },
+      "onProjectileHit": {
+        "_dirType": "string",
+        "_value": "AttackByProjectile"
+      },
+      "targetSorter": {
+        "_dirType": "sub",
+        "TargetComparators": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "GreaterHP"
+          }
+        }
+      }
+    },
+    "AttackByProjectile": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "140+90*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "4"
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "300"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "randomHitOrigin": {
+            "_dirType": "int",
+            "_value": "15"
+          },
+          "randomHitAngle": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "useZ": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "z": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "3221025"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "140+90*x"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "4"
+    },
+    "iconRaw": {
+      "_dirType": "uol",
+      "_value": "icon"
+    },
+    "cooltime": {
+      "_dirType": "int",
+      "_value": "12"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -800,
+      "_y": -300
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": -50,
+      "_y": 300
+    }
+  },
+  "SkillTags": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "string",
+      "_value": "RLGame.Skill.Extra"
+    }
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "HTcoatOfArms"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "overlay": {
+              "_dirType": "string",
+              "_value": "OverFace"
+            },
+            "z": {
+              "_dirType": "long",
+              "_value": "3"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AEAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "24111000"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "damage": {
+          "_dirType": "string",
+          "_value": "350+35*x"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "4+d(x/10)"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "4"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -290,
+          "_y": -175
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 30,
+          "_y": 30
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "onlyOnce": {
+            "_dirType": "string",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "onlyOnce": {
+            "_dirType": "string",
+            "_value": "1"
+          }
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "24111000"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "damage": {
+      "_dirType": "string",
+      "_value": "350+35*x"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "4+d(x/10)"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "4"
+    },
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "20"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -290,
+      "_y": -175
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 30,
+      "_y": 30
+    }
+  },
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "24111000 코트 오브 암즈"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "battle"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "boss"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "[殘暴炎魔]知道手再多也沒用了吧"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "混沌殘暴炎魔1人擊殺"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "epic"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "uiForm": {
+        "_dirType": "string",
+        "_value": "basic"
+      },
+      "gauge": {
+        "_dirType": "string",
+        "_value": "submission_info"
+      },
+      "gaugeMissionIndex": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "gaugeSubMission": {
+        "_dirType": "string",
+        "_value": "mob_kill"
+      }
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "混沌殘暴炎魔1人擊殺"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "mob_kill": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            },
+            "type": {
+              "_dirType": "string",
+              "_value": "counting"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub",
+            "mob": {
+              "_dirType": "sub",
+              "mob_id": {
+                "_dirType": "int",
+                "_value": "8800102"
+              }
+            },
+            "party": {
+              "_dirType": "sub",
+              "party_member_count": {
+                "_dirType": "sub",
+                "min": {
+                  "_dirType": "int",
+                  "_value": "1"
+                },
+                "max": {
+                  "_dirType": "int",
+                  "_value": "1"
+                }
+              },
+              "enter_fieldset_party_member_count": {
+                "_dirType": "sub",
+                "min": {
+                  "_dirType": "int",
+                  "_value": "1"
+                },
+                "max": {
+                  "_dirType": "int",
+                  "_value": "1"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

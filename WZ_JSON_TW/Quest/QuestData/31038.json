@@ -1,0 +1,194 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[玫瑰庭園]剛開花的玫瑰"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#玫瑰開花#R31038ExcountRef31038#/5\\r\\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽聽看玫瑰庭園的庭園詩人賽西莉亞的第一項委託吧."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "只要消滅冰封玫瑰,就能夠獲得玫瑰種子,只要持有種子點擊花園,就可以拾取玫瑰花.撿起#b五朵玫瑰花#k後,回去找賽西莉亞吧."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "只要消滅冰封玫瑰,就能夠獲得玫瑰種子,只要持有種子點擊花園,就可以拾取玫瑰花.撿起五朵玫瑰花,然後交給了賽西莉亞."
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "221"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "682200"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2162000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "115"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31037"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2162000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "31038"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "5"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "玫瑰綻放"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "count"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "682200"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "那我要說第一個委託囉.準備好了?"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "在大陸上,這裡原本是屈指可數的美麗之地,而且有玫瑰綻放.但是永恆的寒冬降臨後,連玫瑰都被冷冷的凍結了.就像好比殿下那顆被結凍的心."
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "我想拜託你去把剛綻放,還沒結凍的玫瑰取來.消滅#b冰封玫瑰#k就能取得#b玫瑰種子#k,帶著它#b點擊空花園#k就能拾取玫瑰花.怎麼樣呢?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "試幾次就不會難了.#e點擊花園拾取五朵玫瑰,然後回來找我就行了.#n\\r\\n#b(前往被遺忘的庭園.)#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嘖...都說會給你禮物了..."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你順利把它摘來給我了啊.剛綻放的神聖玫瑰...我想要的就是這個.\\r\\n"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那我也要發揮一下隱藏許久的實力了.請稍等...\\r\\n#b(賽西莉亞開始製作某物.)#k"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "試幾次就不會難了.點擊花園拾取五朵玫瑰,然後回來找我就行了.\\r\\n#b(前往被遺忘的庭園.)#k"
+          }
+        }
+      }
+    }
+  }
+}

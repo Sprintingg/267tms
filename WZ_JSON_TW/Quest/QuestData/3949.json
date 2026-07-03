@@ -1,0 +1,304 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2101001"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031582"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2101001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "75"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3908"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3900"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "冒險家，你好嗎。我決定和姐姐見面！我打聽了進宮殿的方法。\\r\\n#L0##b進入宮殿的方法？（該不會…是透過#p2101004#？）#l"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "我問了大人，只要付錢給一個名叫 #p2101004#的人，就能進入宮殿。可是我沒有錢。可以跟冒險家借嗎？以後等我長大了，賺了很多錢一定會還給你。\\r\\n#L0##b好吧！這種程度，應該可以輕易地借吧！#l\\r\\n#L1##b不行！我最近也沒什麼錢！#l"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "哇啊！謝謝你。有了這些錢，就能見到姐姐了。 可是該怎麼跟 #p2101004#這個人說呢？我從遠處看那個人，看起來好可怕喔…\\r\\n#L0##b要不要我代替你去？#l\\r\\n#L1##b一點也不可怕。是很不錯的朋友。#l"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "這樣真的沒關係嗎？"
+      },
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "1": {
+            "_dirType": "string",
+            "_value": "啊…原來你沒有錢。我還以為冒險家都是有錢人…"
+          },
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "1": {
+            "_dirType": "string",
+            "_value": "不錯的人嗎？…可以給這種評語的人，目前為止我只見過冒險家…"
+          },
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "37400"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031582"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[納希沙漠] 吉優勒的宮殿出入資格證"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "尋找姐姐"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#p2101001##k說他想找姐姐，這麼小的孩子該怎麼辦呢，不如去看看吧！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2101001#說要見到姐姐就必須得進宮...#p2101001#想出的方法是從#b#p2101004##k購買#b#t04031582##k，沒錢的#p2101001#請求我代為出資…我應該遵守約定嗎？\\n\\n#i04031582##t04031582##b#c04031582##k/1"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "獲得#b#t04031582##k後#p2101001#顯得很高興…呃？什麼時候跑去王宮了，也許一會兒他就能與姐姐見面了吧。不過…有在#t04031582#簽名的嗎？我可是第一次聽說？"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "43"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "37400"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "冒險家先生，你好，我想要見我的姐姐！我已經知道了進入王宮的方法。\\r\\n#L0##b進入王宮的方法？（莫非…#p2101004#說的那樣？）#l"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "聽大人們講，只要掏錢給一位名叫#p2101004#的人就可以獲得#t04031582#，可是我沒有錢…冒險家先生能替我交嗎？以後我長大了會賺很多錢，我一定會還給你的。\\r\\n#L0##b好，這些給你。#l\\r\\n#L1##b不行！我最近也沒錢？#l"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "哇！謝謝你。有了#t04031582#我就能見到姐姐了，可是我要怎麼對#p2101004#說呢？我曾在遠處看見過他，長得真嚇人…\\r\\n#L0##b請你替我去買好嗎？#l\\r\\n#L1##b他一點也不可怕，實際上是位很不錯的朋友。#l"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "真的很和藹嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "啊…沒錢啊！我還以為冒險家先生們都是大富翁呢…"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "和、和藹的人嗎？…能夠稱得上和藹的除了冒險家先生外我還沒見過呢…"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯… 太謝謝你。這恩惠是絕對不會忘記的。 從 #b#p2101004##k淑淑 買下 #b#t04031582##k後拿給我吧。我在這等你。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請你改變主意後再過來，我等著你。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊！！真的買到#t04031582#了？\\n哇~感謝你。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這就是#t04031582#嗎？只要有它我就能進入王宮了嗎？呃…？這空白處是做什麼的呢？難道要寫上我的稱號？我寫　我寫…嘿嘿，好了！請你在這裡等一會兒，等我見到姐姐後就回來。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你見到#b#p2101004##k大叔了嗎？#b#p2101004##k大叔是守衛納希綠洲王宮入口的衛兵，只要給他2000楓幣就能獲得進入王宮的許可證。"
+          }
+        }
+      }
+    }
+  }
+}

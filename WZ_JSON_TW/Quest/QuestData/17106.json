@@ -1,0 +1,220 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[水世界]材料不夠"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "35"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p9390005##k露出相當不耐煩的表情。有什麼事嗎。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p9390005##說正在查明怪物變兇暴的原因，但是因缺乏實驗樣本，需要幫忙收集。擊捕#o9390006#收集戰利品吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "找來了不足的樣品。"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4000871:# #t4000871:# #c4000871# / 300\r\n"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "5000000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5000000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000871"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-300"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊啊啊啊啊！ "
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "#b#h ##k！！ 請幫幫我吧。怪物研究即將有了頭緒，樣本卻不夠了。 你會幫我吧？？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "單憑#o9390005##k似乎還無法確定。若有#r#o9390006##k的樣本應該就可以了。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "請把#r#o9390006##k的戰利品帶回300個給我。拜託你了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗚，竟然就這樣無情地拒絕了。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你來了。樣品帶來了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "噢，真是太感謝了。終於能夠再次專心進行研究了。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "啊… 什麼..."
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "可以待會再和我說話嗎？"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還是不夠。請再接再厲。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390005"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "200"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "17105"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390005"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000871"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "300"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

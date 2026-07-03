@@ -1,0 +1,154 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[公會改編]公會!這次就盡情享受吧!"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "感謝聽取說明的#p2010011#說這次準備了改編祝賀活動...再次和各個村莊的#b#p2010011#交談,參加活動吧!#k\\r\\n\\r\\n#e活動參加獎勵:#n\\r\\n#i1112260##t1112260#\\r\\n#i2432297##t2432297#"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "參加改編祝賀活動!活動完成條件達成後,和#p2010011#交談吧!\\r\\n\\r\\n#e活動結束時間:#n\\r\\n2014年04月29日23點59分\\r\\n\\r\\n#e活動完成條件:#n\\r\\n1.隸屬公會\\r\\n2.旗幟爭奪戰參加1次以上\\r\\n\\r\\n#e活動參加獎勵:#n\\r\\n#i1112260##t1112260#\\r\\n#i2432297##t2432297#"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "公會活動完成了!\\r\\n\\r\\n經過一番激烈的競爭後,總覺得肚子有些餓.以公會為單位累積分數後,這次#b要不要挑戰排行呢?#k"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#參加旗幟爭奪戰1次#R26014ExplayRef26013#/1\\r\\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2010011"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201404300000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201404300000"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q26013s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "26012"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2010011"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q26013e"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "26014"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "參加旗幟爭奪戰1次"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "play"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "嗯...#h0#目前並沒有#b加入公會或參加過旗幟爭奪戰,#k若是兩項資格都符合,就能夠獲得獎勵."
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "#h0#取得獎勵之前,要一直好好加油喔!"
+          }
+        }
+      }
+    }
+  }
+}

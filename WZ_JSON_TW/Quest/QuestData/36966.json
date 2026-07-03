@@ -1,0 +1,155 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[過去的英雄，狂狼勇士] 平息暴走的矛"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "6"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[轉職]"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o8645453# #a369661#\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#p1201002##k好像發生了什麼事情。是什麼事情？為什麼這麼痛苦？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1201002#說，經過數百年的時間，自己獨自生活，內心產生的黑暗偶爾會暴走，希望能阻止暴走。擊倒#p1201002#，暴走就會停止…雖然看起來不容易，但這是主人該做的事情。阻止#r#o9001014##k吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "打敗#o9001014#了。阻止暴走的#p1201002#找回了大部分過去的力量。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1201002"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q36966s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "36965"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2111"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1201002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q36966e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8645453"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "能阻止我的只有你！"
+          }
+        }
+      }
+    }
+  }
+}

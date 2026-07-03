@@ -1,0 +1,138 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[艾芙特領域]萬事不能出去的理由"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "121"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p9400216#說會吃掉黃金的#p9400217#很恐怖，因此不能不顧他的金銀財寶而到城外去，為了他請去說服萬事，讓他先去城牆外吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p9400217#一直在觀察我做的每一件事情。 體型龐大的他說他可以看到城牆外的美麗世界，他偶爾也會想要到外面去，\\r\\n但因為他的體型太大了，所以無法通過小小的城門…\\r\\n為了他請破壞一邊的城牆吧。\\r\\n\\r\\n在吃下#e#t2436086:##n#e讓身體變大後，只要跳上城牆，好像就可以破壞城牆了。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在破壞城牆後，#p9400217#終於可以到外面來了，\\r\\n他說雖然不知道破壞城牆是否是件對的事情，也不知道他選擇出來是否是對的，但總之還是先謝謝我了。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#破壞城堡牆壁 (#R63071ExdestroyRef63071#)\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400217"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "63069"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q63071s"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400217"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "63071"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "破壞城堡牆壁"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "destroy"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q63071e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "城門太小了，我無法出去啊。 "
+          }
+        }
+      }
+    }
+  }
+}

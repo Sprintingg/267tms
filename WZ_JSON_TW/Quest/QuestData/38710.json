@@ -1,0 +1,133 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[生命的搖籃卡爾西溫] 芬札爾特產"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#p 3006517 ##k看起來完全沒有準備戰爭的想法…繼續聽埃托的說。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b#p 3006517 ##k和戰士們出入珊瑚群落的理由是為了尋找只生長在珊瑚群落中的草藥。 按照埃托的要求，從珊瑚群落中找到#b水滴花#k。 水滴花似乎可以擊敗#b巨型珊瑚群落#k地區的幽靈們來找到。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "依埃托的請求找來了草藥。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "252"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4037198:# #t4037198:# #c4037198# / 10\r\n"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3006517"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q38710s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "285"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "38709"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3006517"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q38710e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4037198"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "defaultEx": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "sub",
+            "msg": {
+              "_dirType": "string",
+              "_value": "水滴花只能在#b巨型珊瑚群落#k中獲得！\\r\\n"
+            },
+            "imgPos": {
+              "_dirType": "int",
+              "_value": "1"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[過去的英雄，狂狼勇士] 完成首次情報收集"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "6"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "第一情報收集活動. #m100000000#的 #p1300007# 博士是到現在為止所出現的奇怪的怪物原因有找出原因嗎? 去見#b#p1300007##k吧."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1300007#是調查到現在為止所發現的娃娃結果,那裡面會發出只對怪物了解的獨特的聲音,那個聲音的關係怪物變越來越兇暴得.簡單說  #r怪物變得原因就是娃娃#k.第一個情報有大該收集完成 .去告知 #b#p1002104##k."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "將#o1210102#異常的原因告知#p1002104#，並完成了第一次情報收集。"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1500"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1300007"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q21712s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "21711"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2113"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "2114"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002104"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1500"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "喔, 現在回來阿? #m100000000# 怪物們變化原因相關的情報收集.想像中花很多時間.好,原因是甚麼? \\n\\r\\n#L0##b(告知#m100000000#遇到的事情和,怪物們身上所發現的娃娃事情.)#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "哦…派你過去是因為這件事情沒那麼難，但事件比預想的還複雜，可是事情都解決了。以為你失去了記憶還擔心著，可是覺得適應的很好。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "很好！託你的福得到了好的情報，這個情報能夠賣個好價錢的。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "既然已經完成第一階段的情報收集．．．那要不要進到下一階段呀？剛好有一些情報需要英雄你來幫忙調查，稍後再來搭話吧！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "託你的福可知道 #m100000000#怪物的奇怪現象的原因 . 幸好... 可是你為甚麼調查這件事呢? #b誰#k拜託的嗎 "
+          }
+        }
+      }
+    }
+  }
+}

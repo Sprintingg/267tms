@@ -1,0 +1,217 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[里艾那海峽] 一網打盡破壞冰河的犯人 3"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "254"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽到從敵人的大本營附近傳來了爆炸的聲響。與學者諾拉對話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "聽到從敵人的大本營附近傳來了爆炸的聲響。進入冰河輸送線，擊退卡奧樂克後回來找學者諾拉吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "進入冰河輸送線，擊退了卡奧樂克。黑色翅膀只留下部下，領導層好像已經全數撤退了。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o3502008# #a321901#\r\n"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "targetMapID": {
+      "_dirType": "int",
+      "_value": "141050200"
+    },
+    "returnMapID": {
+      "_dirType": "int",
+      "_value": "141050000"
+    },
+    "targetPN": {
+      "_dirType": "string",
+      "_value": "bossfight"
+    },
+    "returnPN": {
+      "_dirType": "string",
+      "_value": "1510007"
+    },
+    "returnType": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "59"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "171535"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1510007"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q32190s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32189"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1510007"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q32190e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3502008"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "171535"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "剛剛有爆炸的聲音。是不是被敵人發現了？還是去觀察一下出現爆炸聲的根據地內部。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請小心，勇士。敵人很強。\\r\\n#e#b(進入冰河輸送線，消滅#r格奧爾格#b吧。)#k\\r\\n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "進入敵人基地之前需要準備嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "勇士，你沒關係嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "原來，只留下屬下首領們全部撤退。。。可以打敗巨大的機器，勇士你真的好厲害。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請小心，勇士。敵人很強。\\r\\n#e#b(進入冰河輸送線，消滅#r格奧爾格#b吧。)#k\\r\\n"
+          }
+        }
+      }
+    }
+  }
+}

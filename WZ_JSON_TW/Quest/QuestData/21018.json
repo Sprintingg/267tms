@@ -1,0 +1,228 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[過去的英雄，狂狼勇士] 基礎體力測試"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "6"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "基礎體力已經達到一定程度了。與#b#p1201000##k對話，進行最後的基礎體力測試吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1201000#說為了測試基礎體力，要去消滅#r#o0100134##k。這次前往對面村莊左邊的#b#m140010200##k就好，幸虧不是什麼難事．．．\r\n\r\n#o0100134##r #a210181##k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "消滅了所有的#o0100134#。體力確實有了提升。那接下來要做什麼？"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "returnMapID": {
+      "_dirType": "int",
+      "_value": "140000000"
+    },
+    "returnPN": {
+      "_dirType": "string",
+      "_value": "1201000"
+    },
+    "targetType": {
+      "_dirType": "int",
+      "_value": "-1"
+    },
+    "returnType": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1201000"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q21018s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "21017"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2000"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1201000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "100134"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "140010200"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "好，那就開始檢驗一下你的體力吧。方法很簡單，去消滅這島上最強，最兇惡的怪物#o0100134#就可以！幫我們消滅50隻得話再好不過了…"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "但如果把為數不多的#o0100134#都消滅的話，對生態系也不好，就先除掉5隻吧。與自然環境共存的修練！啊，還真是美妙呢．．．"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#o0100134#相對來說在島的深處。往村莊的左邊一直前進的話，就可以看到#b#m140010200##k，在那個地方消滅#r#o0100134#5隻#k吧。\\r\\n #r ※自動移動至任務地圖。#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "難道，5隻太少了嗎？要是為了修煉想多消滅幾隻的話，我是不會反對的。雖然有點心痛，但是為了英雄的修煉這次我就睜一隻眼閉一隻眼吧…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "消滅完5隻#o0100134#了嗎。好，順利的完成了基礎的體力。在冰裡時變僵硬了的身體，終於變的剛好可以修煉的程度了。那現在就開始修煉…咦？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "對，說來…到現在我還不知道英雄的大名呢。雖然知道您是5位英雄中的一員…您是哪位？…對了。您沒有記憶了…"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "現在開始您要做專門為消滅黑魔法師的修煉。但是要知道你是哪位英雄，才能針對武器特性做專業的訓練啊…因為用你不適合的武器，練你不適合用的技能的話是不可能消滅黑魔法師的。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "但是…您到底是哪位英雄啊？"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "看來您還沒有消滅完5隻#r#o0100134#吧？只有消滅完5隻，才可以完成基礎生命的鍛煉。請快點到#b#m140010200##k，完成鍛煉的任務吧。"
+          }
+        }
+      }
+    }
+  }
+}

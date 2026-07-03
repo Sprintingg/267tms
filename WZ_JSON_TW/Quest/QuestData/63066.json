@@ -1,0 +1,138 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[艾芙特領域]更幸福的世界"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "121"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p9400215#用快死掉的聲音呼喚著我。 請試著去與他對話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p9400215#也同樣是餓肚子的狀態，\\r\\n先拿些食物給他，然後再與他對話吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p9400215#來問我這段時間都跑去了哪裡。 我說去找了鑰匙，結果他卻說那他給的黃金怎麼辦，我竟然只顧著找鑰匙，令他感到很生氣…\\r\\n#p9400215#知道在這黃金城牆外，有豐饒的田野和溫暖的陽光以及綻放了芬芳花朵的美麗世界嗎？\\r\\n#e要是能帶他去外面看看那就好了…#n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4034994:# #t4034994:# #c4034994# / 10\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400215"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "63098"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "turn"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q63066s"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400215"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034994"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q63066e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "吃…吃…的東西在哪裡？！\\r\\n#t4034994:#只要…10個…"
+          }
+        }
+      }
+    }
+  }
+}

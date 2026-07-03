@@ -1,0 +1,206 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓之谷世界的冒險家] 影武者－覺醒之時"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必需]"
+    },
+    "showEffect": {
+      "_dirType": "string",
+      "_value": "0"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "祕密花園的主人雪姬說時候到了。是指什麼時候呢？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "祕密花園的主人雪姬說時候終於到了，要測試一下是否做好走上影武者之路的準備。到祕密花園樓上的珠子之房找到混濁的玻璃珠後，點二下把它打碎，就能獲得只有在具有主人資格的人前才會出現的慧眼…"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "祕密花園的主人雪姬說時候終於到了，要測試一下是否做好走上影武者之路的準備。到祕密花園樓上的珠子之房找到混濁的玻璃珠後，點二下把它打碎，就能獲得只有在具有主人資格的人前才會出現的慧眼…得到慧眼後交給了雪姬，雪姬恭喜我終於可以覺醒為真正的影武者。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4032616:##t4032616:##c4032616#/1\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n可進行 '貓頭鷹修里' 任務\r\n可進行 '第七個任務－目擊者' 任務\r\n可進行 '雪姬的決定' 任務\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "77"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1056000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "19"
+      },
+      "subJobFlags": {
+        "_dirType": "int",
+        "_value": "2"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2362"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1056000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "20"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032616"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#b#h0##k，你也該有身為影武者覺悟了，準備好了嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好，你相當有自信。要想覺醒為影武者，要滿足兩個條件。\\r\\n第一，要達到20級以上，\\r\\n第二，據說只有夠資格的主人才能獲得傳說中的寶物－#b慧眼#k，要將它拿到手。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "慧眼是能夠提高洞察力的寶物，是自行選擇主人後才出現。走出這個房間延著走廊一直往左走到底就會出現珠子之房。珠子之房裡有很多放在臺子上的珠子。去打擊那些珠子，珠子會掉在地上變得混濁。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "打碎混濁的珠子就能獲得慧眼，當然如果你有資格成為慧眼的主人的話。那不是可以簡單得到的東西，要不斷努力。知道了吧？那祝你好運。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "等準備好了再來找我吧，希望不要讓我等得太久。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "好，你相當有自信。要想覺醒為影武者，要滿足兩個條件。\\r\\n第一，要達到20級以上，\\r\\n第二，據說只有夠資格的主人才能獲得傳說中的寶物－#b慧眼#k，要將它拿到手。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "好，你相當有自信。要想覺醒為影武者，要滿足兩個條件。\\r\\n第一，要達到20級以上，\\r\\n第二，據說只有夠資格的主人才能獲得傳說中的寶物－#b慧眼#k，要將它拿到手。"
+          }
+        }
+      }
+    }
+  }
+}

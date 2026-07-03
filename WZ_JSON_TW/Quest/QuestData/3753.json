@@ -1,0 +1,190 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[神木村] 還不安全"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "41"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2082010#為了自己的安全，請求除掉怪物。按照他的委託，除掉#o7120108#和#o7120109#各100個。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "按照#p2082010#的委託除掉了#o7120108#和#o7120109#各100個。不過周圍還有很多怪物…"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p2082010#好像有事要委託。去找他對話吧。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o7120108# #a37531#\r\n#o7120109# #a37532#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 64,924\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "64924"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2082010"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "125"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3734"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2082010"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "7120108"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "7120109"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "64924"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "還有一件事要拜託你。想要從這裡離開到安全的地方去，總是會有怪物不斷出現。這樣下去根本沒辦法去。請擊敗附近出沒的怪物。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "果然是個勇敢帥氣的人！#r#o7120108#和#o7120109#分別100隻#k就可以了。這種程度沒問題吧？"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你應該知道危險的事。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嗚哇！已經都擊退了嗎！剛剛就感覺到了，可是戰鬥的樣子真的好帥喔！現在只剩下逃走的事了"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "路上還充滿著怪物。#r#o7120108#和#o7120109#分別抓100隻#k。"
+          }
+        }
+      }
+    }
+  }
+}

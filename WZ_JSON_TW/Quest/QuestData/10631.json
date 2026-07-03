@@ -1,0 +1,192 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 가가의 알리바이"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "가가의 거짓말?!"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "자신은 카산드라의 편지같은 것은 본 적도 없고 가져가지도 않았다고 주장하는 가가. 그런데 그렇게 말하는 가가의 태도에서 어딘지 수상한 냄새가 나는 것 같다. 우선 카산드라에게 돌아가서 가가의 말을 전하고 다시 상의하는 것이 좋겠다.\\n아마 가가의 말을 전해주면 더 불같이 화를 내겠지?..."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "편지같은 것은 본 적도 없고 가져가지도 않았다는 가가의 말을 전해주자 마자 예상했던 대로 카산드라는 폭발하는 엘나스 화산처럼 화를 냈다. 가가가 이렇게까지 나온다면 자신에게도 방법이 있다고 하는데..."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#e카산드라#n에게 가가의 대답 전해주기"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "경험치 200\r\n'거짓말재채기 사탕과 가가' 퀘스트로 진행 가능\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "200"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000021"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201004080000"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201004010000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "10630"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010010"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q10631e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "200"
+      },
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "10632"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "카...카산드라에게 저는 그...그런 편지 본 적이 어...없다고 전해주세요. 그럼 전 이만 바빠서...\\n#b(어쩐지 분주한 척 시선을 피하고 부산스럽게 제자리를 맴돌고 있다.)"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "카산드라의 부탁을 받고 오신 거 아니었나요?"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "그래, 그 녀석이 뭐라고 해? 내 편지를 찾아 온거지?\\r\\n#L0##b저...가가는 그런 편지 본 적도 가져간 적도 없다고 하던데...정말 가가가 다녀 간 뒤에 편지가 없어진 것이 맞아? 다른 곳에 두고 잊어버린 건 아니고?#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "뭐라고!! 가가 그 녀석이 그렇게 말했다고? 크으으으...가가 녀석! 용서하지 않겠다! 분명해! 그녀석이 가져갔다고!! 혹시 가가가 말할 때 말을 더듬지 않았어?\\r\\n#L0##b그러고 보니 평소같지 않게 말을 더듬더듬하면서 시선을 피했어. 초조해 보이기도 했고..#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "거봐! 가가 그 녀석 거짓말을 할 때면 항상 그렇게 말을 더듬고 초조해 하지. 감히 이 카산드라에게 거짓말을 해? 이렇게 나온 다면 나도 방법이 있지!"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "그...글쎄...전 모른다니까요...카...카산드라에게 저는 그...그런 편지 본 적이 어...없다고 전해주세요. 그럼 전 이만 바빠서...\\n#b(어쩐지 분주한 척 시선을 피하고 부산스럽게 제자리를 맴돌고 있다.)"
+          }
+        }
+      }
+    }
+  }
+}

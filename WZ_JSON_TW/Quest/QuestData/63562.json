@@ -1,0 +1,169 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[伊露納]另一個痕跡"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "再跟 #p9400464#對話看看吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p9400464#表示確定自己的祖先曾經居住在伊露納，並好奇他們要離開這個地方的理由。\\r\\n尋找可能是他們離開的理由的線索，並照相後交給#p9400464#吧。\\r\\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "找到了為了過濾水的淨水設施遺跡。話說在 伊露納上都沒看到過一滴水呢。會不會這是 #p9400464#的祖先會離開 伊露納的原因呢？"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4036119:# #t4036119:# #c4036119# / 1\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\n\r\n#i2436828:##t2436828:# 10個"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "long",
+            "_value": "2436828"
+          },
+          "count": {
+            "_dirType": "long",
+            "_value": "10"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400464"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "63561"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q63562s"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201708300000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400464"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036119"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "secret": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q63562e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "目前還沒發現任何痕跡嗎？\\r\\n探險更遠的地方後，用相機拍他們的痕跡，並拿給我吧。"
+          }
+        }
+      }
+    }
+  }
+}

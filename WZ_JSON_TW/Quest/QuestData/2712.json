@@ -1,0 +1,183 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[弓箭手村] 明明夫人的沙拉料理食譜"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "卡蜜拉說這次是從明明夫人那裡拿沙拉料理食譜，但約好照顧生病的瑪亞，所以委託我替她去明明夫人那裡拿來料理食譜。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "卡蜜拉說上次的菇菇寶貝果汁很成功，這次是從明明夫人那裡拿沙拉料理食譜，但約好照顧生病的瑪亞，所以委託我替她去明明夫人那裡拿來料理食譜。 去明明夫人那裡解釋卡蜜拉來不了的理由。"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 420\r\n可進行 '綠菇菇 沙拉的料理食譜' 任務\r\n"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "q2712"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "25"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "420"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "卡蜜拉的料理百書"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012108"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2711"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012106"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "2713"
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "420"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#h0#！ 明明夫人那裡有新的沙拉食譜。 不久前在自由市場見到他問他可否借我它很爽快的答應了。 但是因為今天要去探望生病的瑪亞所以不能去明明夫人那裡了。 可是明明夫人又說他很忙除了今天他也沒空…請你代替我去明明夫人告訴他我無法親自去的原因並拿回食譜可以嗎？\\r\\n"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "明明夫人是長老斯坦的夫人。 他負責#m100000000#的所有生活雜事。 他應該在長老家裡 。 長老家的話，從左邊階梯上去的話比較容易找到的。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "今天好像沒空喔。 那…只好這樣吧…\\r\\n"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "你好。 怎麼會來找我呢？ 長老應該是在公園入口那裡呢。\\r\\n#L0##b我是被卡蜜拉委託來拿食譜的人。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "啊，對了！ 卡蜜拉有說她要來借食譜。 可是卡蜜拉他人呢，你又是誰呢？\\r\\n#L0##b 卡蜜拉說他今天要去瑪亞那裡探病所以是我替她來的。 我和卡蜜拉只是…偶然認識的關係。#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "她這麼關心生病的瑪亞卡蜜拉真是善良的孩子。 呵呵"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "明明夫人在長老家裡 。 長老家的話，從左邊階梯上去的話比較容易找到的。\\r\\n"
+          }
+        }
+      }
+    }
+  }
+}

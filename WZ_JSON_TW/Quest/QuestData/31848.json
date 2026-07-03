@@ -1,0 +1,180 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[赫力席母] 獲得被詛咒的凱撒"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "21"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "擊退梅格耐斯取得他持有的巨大的劍。我感受到什麼強大的氣息，可是被詛咒沒辦法使用。#b#p3001015##k或許知道更詳細的資訊？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "透過通信機和 #p3001015#聯絡。他看來很吃驚的樣子，看來是很厲害的劍。最好快點去找位於 #b#m401040000##k的 #b#p3001015##k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "親眼看到劍的 #b#p3001015##k似乎比剛才還要吃驚。名字…叫做凱撒嗎？有個方法可以解除劍的詛咒…稍後再跟 #b#p3001015##k再次對話。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n可進行 '解除凱撒的詛咒' 任務\r\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i1402179:# #t1402179:# #c1402179# / 1\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "22000000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q31848s"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001100"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1402179"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "175"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001100"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q31848e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1402179"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1402179"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "身上並沒有持有#b#t1402179##k。這樣的話無法完成任務。"
+          }
+        }
+      }
+    }
+  }
+}

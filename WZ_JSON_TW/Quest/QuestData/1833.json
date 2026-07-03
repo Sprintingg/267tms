@@ -1,0 +1,210 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[選擇程序]  Hard難易度挑戰"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "32"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "[選擇程式] 困難難度 挑戰！\r\n\r\n必須在#e連結1#n 怪物的難度提升的狀態下完成#b連結1 程式。\n "
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "[選擇程式] 困難難度 挑戰！\r\n\r\n必須在#e連結1#n 怪物的難度提升的狀態下完成#b連結1 程式。\r\n\r\n\r\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "[選擇程序]  Hard難易度挑戰!\\n#b#e任務完成#n#k"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "validField": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "int",
+        "_value": "957010000"
+      },
+      "1": {
+        "_dirType": "int",
+        "_value": "957011000"
+      },
+      "2": {
+        "_dirType": "int",
+        "_value": "957012000"
+      },
+      "3": {
+        "_dirType": "int",
+        "_value": "957013000"
+      },
+      "4": {
+        "_dirType": "int",
+        "_value": "957014000"
+      },
+      "5": {
+        "_dirType": "int",
+        "_value": "957015000"
+      },
+      "6": {
+        "_dirType": "int",
+        "_value": "957016000"
+      },
+      "7": {
+        "_dirType": "int",
+        "_value": "957017000"
+      },
+      "8": {
+        "_dirType": "int",
+        "_value": "957018000"
+      },
+      "9": {
+        "_dirType": "int",
+        "_value": "957019000"
+      }
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "完成的強化程序 1次"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9075200"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "1818"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "q1833"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9075200"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q1833e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1820"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "目前 #e連結1#n內的怪物處於能力強化的狀態，請在此一狀態下完成#e#b連結1 程式#k#n。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "在困難模式 進行強化程式話，可以獲得更上一層的強化肉體和特別的獎勵。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "準備好進行程式的話，再跟我說話。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "在困難模式完成強化程式3個以上了嗎?"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": " 請完成#e#b連結1程式#k#n。"
+          }
+        }
+      }
+    }
+  }
+}

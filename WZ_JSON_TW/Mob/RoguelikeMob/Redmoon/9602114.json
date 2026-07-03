@@ -1,0 +1,671 @@
+{
+  "Skills": {
+    "_dirType": "sub",
+    "attack1": {
+      "_dirType": "sub",
+      "Anim": {
+        "_dirType": "sub",
+        "Notifies": {
+          "_dirType": "sub",
+          "doAttach": {
+            "_dirType": "sub",
+            "TriggerTime": {
+              "_dirType": "int",
+              "_value": "599"
+            }
+          },
+          "attatch": {
+            "_dirType": "sub",
+            "TriggerTime": {
+              "_dirType": "string",
+              "_value": "600"
+            },
+            "EndTriggerTime": {
+              "_dirType": "string",
+              "_value": "2520"
+            },
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_JumpToSection"
+              },
+              "SectionName": {
+                "_dirType": "string",
+                "_value": "explode"
+              },
+              "ReqElapsedTime": {
+                "_dirType": "string",
+                "_value": "10000"
+              }
+            }
+          },
+          "sound": {
+            "_dirType": "sub",
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2RLAnimNotify_PlaySkillSound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/Redmoon.img/Mob/9602114/attack2"
+              }
+            }
+          }
+        },
+        "Sections": {
+          "_dirType": "sub",
+          "start": {
+            "_dirType": "sub",
+            "StartTime": {
+              "_dirType": "int",
+              "_value": "0"
+            }
+          },
+          "attatch": {
+            "_dirType": "sub",
+            "StartTime": {
+              "_dirType": "int",
+              "_value": "600"
+            },
+            "NextSectionName": {
+              "_dirType": "string",
+              "_value": "attatch"
+            }
+          },
+          "explode": {
+            "_dirType": "sub",
+            "StartTime": {
+              "_dirType": "int",
+              "_value": "2520"
+            }
+          }
+        },
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment1:start": {
+              "_dirType": "sub",
+              "z": {
+                "_dirType": "int",
+                "_value": "-1"
+              }
+            },
+            "Segment2:attatch": {
+              "_dirType": "sub",
+              "z": {
+                "_dirType": "int",
+                "_value": "-1"
+              }
+            },
+            "segment3": {
+              "_dirType": "sub",
+              "z": {
+                "_dirType": "int",
+                "_value": "-1"
+              }
+            }
+          }
+        },
+        "!class": {
+          "_dirType": "string",
+          "_value": "WZ2AnimMontage"
+        }
+      },
+      "Events": {
+        "_dirType": "sub",
+        "sticktoTank": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "Attack"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "lt": {
+              "_dirType": "vector",
+              "_x": -240,
+              "_y": -125
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 20,
+              "_y": 5
+            },
+            "attackCount": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "mobCount": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "attackPower1Rate": {
+              "_dirType": "long",
+              "_value": "0"
+            }
+          },
+          "hit": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "sub",
+              "z": {
+                "_dirType": "int",
+                "_value": "2"
+              }
+            }
+          }
+        }
+      },
+      "common": {
+        "_dirType": "sub",
+        "maxLevel": {
+          "_dirType": "int",
+          "_value": "20"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -210,
+          "_y": -161
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 191,
+          "_y": 206
+        },
+        "cooltime": {
+          "_dirType": "string",
+          "_value": "3"
+        },
+        "Tags": {
+          "_dirType": "sub",
+          "selfDestruct": {
+            "_dirType": "int",
+            "_value": "0"
+          },
+          "interruptable": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "movable": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "!class": {
+        "_dirType": "string",
+        "_value": "WZ2RLMobAttachSkill"
+      }
+    },
+    "deathRattle": {
+      "_dirType": "sub",
+      "Events": {
+        "_dirType": "sub",
+        "explode": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "Attack"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "lt": {
+              "_dirType": "vector",
+              "_x": -240,
+              "_y": -125
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 280,
+              "_y": 219
+            },
+            "attackCount": {
+              "_dirType": "string",
+              "_value": "4"
+            },
+            "mobCount": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "attackPower1Rate": {
+              "_dirType": "long",
+              "_value": "30"
+            }
+          },
+          "hit": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "sub",
+              "z": {
+                "_dirType": "int",
+                "_value": "2"
+              }
+            }
+          },
+          "CalculationModifiers": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "sub",
+              "TransientAggregatorIdentifier": {
+                "_dirType": "string",
+                "_value": "finalDamage"
+              },
+              "AggregatorType": {
+                "_dirType": "string",
+                "_value": "Transient"
+              },
+              "ModifierChannel": {
+                "_dirType": "string",
+                "_value": "Channel0"
+              },
+              "ModifierOp": {
+                "_dirType": "string",
+                "_value": "Additive"
+              },
+              "ModifierMagnitude": {
+                "_dirType": "sub",
+                "MagnitudeCalculationType": {
+                  "_dirType": "string",
+                  "_value": "AttributeBased"
+                },
+                "AttributeBasedMagnitude": {
+                  "_dirType": "sub",
+                  "AttributeCalculationType": {
+                    "_dirType": "string",
+                    "_value": "AttributeMagnitude"
+                  },
+                  "Coefficient": {
+                    "_dirType": "sub",
+                    "ValuesText": {
+                      "_dirType": "string",
+                      "_value": "x"
+                    }
+                  },
+                  "BackingAttribute": {
+                    "_dirType": "sub",
+                    "AttributeToCapture": {
+                      "_dirType": "sub",
+                      "Field": {
+                        "_dirType": "string",
+                        "_value": "AttackPower1"
+                      },
+                      "Class": {
+                        "_dirType": "string",
+                        "_value": "WZ2RLAttributeSet"
+                      }
+                    },
+                    "AttributeSource": {
+                      "_dirType": "string",
+                      "_value": "Source"
+                    }
+                  }
+                }
+              },
+              "SourceTags": {
+                "_dirType": "sub",
+                "IgnoreTags": {
+                  "_dirType": "sub",
+                  "0": {
+                    "_dirType": "string",
+                    "_value": "RLGame.Effect.Overloaded"
+                  },
+                  "1": {
+                    "_dirType": "string",
+                    "_value": "RLGame.Effect.Suppressed"
+                  }
+                }
+              }
+            },
+            "1": {
+              "_dirType": "sub",
+              "TransientAggregatorIdentifier": {
+                "_dirType": "string",
+                "_value": "finalDamage"
+              },
+              "AggregatorType": {
+                "_dirType": "string",
+                "_value": "Transient"
+              },
+              "ModifierChannel": {
+                "_dirType": "string",
+                "_value": "Channel0"
+              },
+              "ModifierOp": {
+                "_dirType": "string",
+                "_value": "Additive"
+              },
+              "ModifierMagnitude": {
+                "_dirType": "sub",
+                "MagnitudeCalculationType": {
+                  "_dirType": "string",
+                  "_value": "AttributeBased"
+                },
+                "AttributeBasedMagnitude": {
+                  "_dirType": "sub",
+                  "AttributeCalculationType": {
+                    "_dirType": "string",
+                    "_value": "AttributeMagnitude"
+                  },
+                  "Coefficient": {
+                    "_dirType": "sub",
+                    "ValuesText": {
+                      "_dirType": "string",
+                      "_value": "x * 5"
+                    }
+                  },
+                  "BackingAttribute": {
+                    "_dirType": "sub",
+                    "AttributeToCapture": {
+                      "_dirType": "sub",
+                      "Field": {
+                        "_dirType": "string",
+                        "_value": "AttackPower1"
+                      },
+                      "Class": {
+                        "_dirType": "string",
+                        "_value": "WZ2RLAttributeSet"
+                      }
+                    },
+                    "AttributeSource": {
+                      "_dirType": "string",
+                      "_value": "Source"
+                    }
+                  }
+                }
+              },
+              "SourceTags": {
+                "_dirType": "sub",
+                "RequireTags": {
+                  "_dirType": "sub",
+                  "0": {
+                    "_dirType": "string",
+                    "_value": "RLGame.Effect.Overloaded"
+                  }
+                }
+              }
+            },
+            "2": {
+              "_dirType": "sub",
+              "TransientAggregatorIdentifier": {
+                "_dirType": "string",
+                "_value": "finalDamage"
+              },
+              "AggregatorType": {
+                "_dirType": "string",
+                "_value": "Transient"
+              },
+              "ModifierChannel": {
+                "_dirType": "string",
+                "_value": "Channel0"
+              },
+              "ModifierOp": {
+                "_dirType": "string",
+                "_value": "Additive"
+              },
+              "ModifierMagnitude": {
+                "_dirType": "sub",
+                "MagnitudeCalculationType": {
+                  "_dirType": "string",
+                  "_value": "AttributeBased"
+                },
+                "AttributeBasedMagnitude": {
+                  "_dirType": "sub",
+                  "AttributeCalculationType": {
+                    "_dirType": "string",
+                    "_value": "AttributeMagnitude"
+                  },
+                  "Coefficient": {
+                    "_dirType": "sub",
+                    "ValuesText": {
+                      "_dirType": "string",
+                      "_value": "x / 2"
+                    }
+                  },
+                  "BackingAttribute": {
+                    "_dirType": "sub",
+                    "AttributeToCapture": {
+                      "_dirType": "sub",
+                      "Field": {
+                        "_dirType": "string",
+                        "_value": "AttackPower1"
+                      },
+                      "Class": {
+                        "_dirType": "string",
+                        "_value": "WZ2RLAttributeSet"
+                      }
+                    },
+                    "AttributeSource": {
+                      "_dirType": "string",
+                      "_value": "Source"
+                    }
+                  }
+                }
+              },
+              "SourceTags": {
+                "_dirType": "sub",
+                "RequireTags": {
+                  "_dirType": "sub",
+                  "0": {
+                    "_dirType": "string",
+                    "_value": "RLGame.Effect.Suppressed"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "bDeathRattle": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Info": {
+    "_dirType": "sub",
+    "Chase": {
+      "_dirType": "sub",
+      "SearchRect": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": -6468,
+          "_y": -3332
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 6163,
+          "_y": 3850
+        }
+      },
+      "distanceX": {
+        "_dirType": "int",
+        "_value": "40"
+      }
+    },
+    "reward": {
+      "_dirType": "string",
+      "_value": "mob_normal_redmoon"
+    },
+    "fly": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "constants": {
+      "_dirType": "sub",
+      "maxHP": {
+        "_dirType": "long",
+        "_value": "1"
+      },
+      "speed": {
+        "_dirType": "long",
+        "_value": "120"
+      },
+      "attackPower1": {
+        "_dirType": "long",
+        "_value": "100"
+      },
+      "flyAcc": {
+        "_dirType": "string",
+        "_value": "1"
+      },
+      "flySpeed": {
+        "_dirType": "string",
+        "_value": "1"
+      }
+    },
+    "DurationPolicy": {
+      "_dirType": "string",
+      "_value": "Instant"
+    },
+    "flyingByPreciseInput": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "script": {
+      "_dirType": "string",
+      "_value": "Redmoon/Mob_FlareBomb"
+    }
+  },
+  "AnimSet": {
+    "_dirType": "sub",
+    "stand": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      }
+    },
+    "move": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      }
+    },
+    "hit": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      }
+    },
+    "die": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      },
+      "Notifies": {
+        "_dirType": "sub",
+        "sound": {
+          "_dirType": "sub",
+          "Notify": {
+            "_dirType": "sub",
+            "!class": {
+              "_dirType": "string",
+              "_value": "WZ2AnimNotify_PlaySound"
+            },
+            "SoundPath": {
+              "_dirType": "string",
+              "_value": "Sound/Redmoon.img/Mob/9602114/die"
+            }
+          }
+        }
+      }
+    },
+    "appear": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      },
+      "Notifies": {
+        "_dirType": "sub",
+        "sound": {
+          "_dirType": "sub",
+          "Notify": {
+            "_dirType": "sub",
+            "!class": {
+              "_dirType": "string",
+              "_value": "WZ2AnimNotify_PlaySound"
+            },
+            "SoundPath": {
+              "_dirType": "string",
+              "_value": "Sound/Redmoon.img/Mob/9602104/regen"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Tags": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "string",
+      "_value": "RLGame.Effect.Flare"
+    }
+  },
+  "ChaseTargetSorter": {
+    "_dirType": "sub",
+    "TargetFilter": {
+      "_dirType": "sub",
+      "RequireTags": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "RLGame.Tank"
+        }
+      }
+    }
+  }
+}

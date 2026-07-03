@@ -1,0 +1,239 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[消逝的旅途]擊退亞勒瑪吧"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "272"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o8641010# #a341191#\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "卡歐被亞麻勒攻擊倒下了。打倒亞麻勒，逃離安息的洞穴吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "卡歐被亞麻勒攻擊倒下了。打倒亞麻勒，逃離安息的洞穴吧。\r\n#m450001230#可透過#m450001219#右下方的傳送點進入。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在卡歐地犧牲下，總算擊敗了亞麻勒。帶著卡歐逃離安息的洞穴吧。"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "8"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "200"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    },
+    "demand": {
+      "_dirType": "sub",
+      "explain": {
+        "_dirType": "sub"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "608445952"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "200"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003140"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34118"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003140"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8641010"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q34119e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "450001350"
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "608445952"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "sayEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#b（只能打敗亞勒瑪了。）#k"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yesEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#b（為了打敗亞勒瑪，前往亞勒瑪的藏身處。）#k"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "noEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#b（只能打敗亞勒瑪了。）#k"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#b（必須快點帶著卡歐逃離這個洞窟。）#k"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b（卡歐昏倒了， 如果想離開洞窟就必須打倒亞勒瑪。）#k"
+          }
+        }
+      }
+    }
+  }
+}

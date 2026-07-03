@@ -1,0 +1,218 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 達克魯的委託"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "墮落城市的吉姆有事情要委託."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b#p1052001##k在墮落城市各處準備對換舊的磚塊的捕手施工, 把需要用在施工的磚塊透過#b#p1052103##k向冒險家們拜託. 磚塊雖然 #b吉姆#k可以製作, 不過需要在墮落城市周圍#b沼澤#k取得的#b#t4000623##k. 收集#b#t4000623# 80個#k交給 #b吉姆#k\r\n\r\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把黏土送給了吉姆。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000623:# #t4000623:# #c4000623# / 80\n#o2230114# #a28841#\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "33013"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "45"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2881"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000623"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "80"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2230114"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "150"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "33013"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000623"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-80"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "有新的委託. 當然可以做吧? "
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好吧。 #b#p1052001##k這次在準備把墮落城市破舊磚頭更換的維護工程。 工程需要用到新的#b#t04032802##k，但這類磚頭很難弄到。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "需要的是#b#t04032802##k #b10個#k, 這磚塊我可以製作. 但是, 需要材料. #b#t4000623# 80個#k 左右? 打倒沼澤爛泥怪物後, 帶回泥巴."
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "看樣子報酬很豐厚，這也沒事？ 哦…改變想法的話再來找我。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "材料都弄來了嗎？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "嗯…這些就足夠了…製作#t4032802#需要一些時間，稍等一會兒。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "材料的泥巴不足...為了製作磚塊10個需要80個."
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "不要忘了也要打倒沼澤爛泥怪物150隻左右."
+          }
+        }
+      }
+    }
+  }
+}

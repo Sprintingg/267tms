@@ -1,0 +1,148 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "growth"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "makingSkill"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "[採礦]高級冶煉師"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "採礦高級物品(推薦等級 9 ~ 推薦等級 10) 100次製作成功"
+    },
+    "keyword": {
+      "_dirType": "string",
+      "_value": "採礦高級物品製作"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "epic"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "uiForm": {
+        "_dirType": "string",
+        "_value": "basic"
+      },
+      "gauge": {
+        "_dirType": "string",
+        "_value": "submission_info"
+      },
+      "gaugeMissionIndex": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "gaugeSubMission": {
+        "_dirType": "string",
+        "_value": "makingskill_making"
+      }
+    },
+    "prior": {
+      "_dirType": "sub",
+      "block": {
+        "_dirType": "string",
+        "_value": "hide"
+      },
+      "condition": {
+        "_dirType": "string",
+        "_value": "and"
+      },
+      "values": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "achievement_id": {
+            "_dirType": "int",
+            "_value": "169"
+          },
+          "achievement_state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "採礦- 高級物品100次製作(推薦等級 9 ~ 推薦等級 10)"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "makingskill_making": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "int",
+              "_value": "100"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            },
+            "type": {
+              "_dirType": "string",
+              "_value": "counting"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub",
+            "skill_id": {
+              "_dirType": "sub",
+              "condition": {
+                "_dirType": "string",
+                "_value": "or"
+              },
+              "values": {
+                "_dirType": "sub",
+                "0": {
+                  "_dirType": "int",
+                  "_value": "92010019"
+                },
+                "1": {
+                  "_dirType": "int",
+                  "_value": "92010020"
+                },
+                "2": {
+                  "_dirType": "int",
+                  "_value": "92010021"
+                },
+                "3": {
+                  "_dirType": "int",
+                  "_value": "92010022"
+                },
+                "4": {
+                  "_dirType": "int",
+                  "_value": "92010023"
+                }
+              }
+            },
+            "makingskill_result": {
+              "_dirType": "sub",
+              "is_success": {
+                "_dirType": "int",
+                "_value": "1"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

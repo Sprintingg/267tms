@@ -1,0 +1,175 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[專門技術] 阿爾馮絲小綠的香草 I"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b天空之城雲彩公園Ⅰ#k的#b阿爾馮絲小綠#k好像需要什麼東西…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "阿爾馮絲小綠想栽培薰衣草喝香草茶。幫阿爾馮絲小綠尋找他所希望的薰衣草種子吧。可以在紫色藥草堆裡採集的過程中找到薰衣草種子…如果沒有採集技能是不是能從別人那裡買到呢？\r\n\r\n#i4022002##t4022002#  #b#c4022002# / 10#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "將薰衣草種子交給阿爾馮絲小綠。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2012020"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "35"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2012020"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4022002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4022002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好~ 世上好像有很多好吃的東西。我特別喜歡從植物中提取的飲料。最近好像有很多用香草製作的香草茶，你有興趣嗎~？\\r\\n"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "你果然也很有興趣！那麼…知道哪裡能找到薰衣草種子嗎？我想自己種種薰衣草，就是不知道哪裡有種子。聽說#b採集藥草#k的過程中能夠獲得…"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "我聽說在尋找#b紫色藥草堆#k的過程中能獲得薰衣草種子！可是我好像因為沒有採集藥草的技術，不行。所以，你能不能幫我找來#b薰衣草種子#k#b10個#k~？拜託了！"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "據說在紫色藥草堆能找到薰衣草種子！但是如果沒有#b藥材採集技術#k，可能要用其他辦法才能獲得。哈哈~ 這個時候鑰匙有個具有藥草採集技術的人就好了…"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "啊，我以為你對香草有興趣，或許能知道獲得的方法，看來不是？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊，薰衣草種子都找到了！哇，有了這個，種薰衣草也不是什麼難事了！真是太感謝了！"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒找到#b薰衣草種子10個#k嗎？如果有藥草採集技術，不找個懂得技術的人購買就好了…"
+          }
+        }
+      }
+    }
+  }
+}

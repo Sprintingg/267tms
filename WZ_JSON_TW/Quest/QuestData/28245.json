@@ -1,0 +1,244 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[職業] 朽木不可雕也"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "3"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b勇士之村#k的#b#@1020000:##k說他也許能夠揭開#r骯髒的藏寶圖#k上的紅色區域。我們去找他談一談。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "與其花時間和力氣在那不存在的寶藏上，他建議倒不如去殺幾隻#r黑木妖#k，讓你的頭腦清醒一點。你可以在#b#m101030000##k輕鬆找到它們。\\n\\n完成之後，向#b勇士之村#k的#b#@1020000:##k回報。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#b勇士之村#k的#b#@1020000:##k說他也許能夠揭開#r骯髒的藏寶圖#k上的紅色區域。我們去找他談一談。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o1110101##a282451#"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 1,350\r\n可進行 '神祕的紅色區域' 任務\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "1350"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1350"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "藏寶圖？真不知道你從哪弄來這玩意兒，但這只是浪費時間罷了。\\n世界上根本沒有寶藏。我怎麼知道？我年輕的時候，花很多時間在追尋寶藏，也真的相信藏寶圖的存在。\\n\\n看吧，我再告訴你一遍，世界上根本沒有寶藏！去呼吸新鮮空氣，讓頭腦醒醒吧。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "去打倒30隻#r黑木妖#k吧！或許你在獵捕怪物的時候，會慢慢接受藏寶圖不存在的事實。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "別拒絕我。你應該把我的話聽進去！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "看來我低估你了。\\n\\n成果如何？看來你還是沒放棄尋找藏寶圖呀？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "現在開始就別再去想寶藏了。不然只是浪費寶貴的時間與精力而已。\\n\\n....\\n\\n不過你是在哪裡找到那張地圖的呀？\\n當然，我只是隨便問問而已…"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "你說什麼？你是在#b鯨魚號#k跟#b#p1072008##k拿的？\\n喔！那這一定是真的。\\n\\n我可以看一下嗎？我只是想看看而已。別給我那種表情！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "不是跟你說要打倒30隻#r黑木妖#k嗎？"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1020000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1110101"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1020000"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "40"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "28244"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "500"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "510"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "520"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "511"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "521"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "512"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "522"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "1500"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "1510"
+        },
+        "9": {
+          "_dirType": "int",
+          "_value": "1511"
+        },
+        "10": {
+          "_dirType": "int",
+          "_value": "1512"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

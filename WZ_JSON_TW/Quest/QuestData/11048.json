@@ -1,0 +1,147 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 達到了500分！冰騎士模式"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "參加冰騎士模式添加紀念大亂鬥活動吧。在#b#m960000000##k和#b#p9070005##k對話就可以。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "以大亂鬥活動參加#b冰騎士模式達到500分#k就能獲得一個#t4310015#。此活動持續#b到2月10日#k 兩周，每天參加一次吧。 "
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "達到了500分，獲得了獎品。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9070005"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201108031200"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201108031200"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "11047"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9070005"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "11024"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q11048e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "500"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "現在進行紀念冰騎士模式增加活動~參加#b冰騎士模式達到500分#k，就送一個#t4310015#! #h0#大人~也去參加看看怎麼樣呢？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這次活動截止到#b2月 10日，約在2周內可以每天1次可反復#k參加。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "咦，不打算參加活動嗎？可惜… 跟可怕的冰騎士戰鬥不覺得有趣嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒參加冰騎士模式嗎？在#b冰騎士模式達到500#k！"
+          }
+        }
+      }
+    }
+  }
+}

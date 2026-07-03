@@ -1,0 +1,195 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 保持耐性是痛苦的，但它的果實是甜的。"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "有一個想要變成人的熊有話要跟你說。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "想要變成人類的熊叫你栽培艾蒿。只要將小艾蒿栽培成忍耐的艾蒿，就可以獲得獎勵。\\n\\n#e<各日期的獎勵清單>#n\\n-9月30日：#i2049119:##t2049119#\\n-10月1日：#i2530002:##t2530002#\\n-10月2日：#i2049309:##t2049309#\\n-10月3日：#i2049013:##t2049013#\\n-10月4日：#i2049119:##t2049119#"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "想要變成人類的熊叫你栽培艾蒿。只要將小艾蒿栽培成忍耐的艾蒿，就可以獲得獎勵。\\n\\n#e<各日期的獎勵清單>#n\\n-9月30日：#i2049119:##t2049119#\\n-10月1日：#i2530002:##t2530002#\\n-10月2日：#i2049309:##t2049309#\\n-10月3日：#i2049013:##t2049013#\\n-10月4日：#i2049119:##t2049119#"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i3994437:##t3994437:##c3994437#/1\r\n"
+    },
+    "autoCancel": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000092"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201109300000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201110050000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201109200000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201110050000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000092"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q11881e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994437"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994436"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "resignRemove": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "period": {
+            "_dirType": "int",
+            "_value": "60"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994437"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#h0#，我有一個願望。 那就是變成 #b人類#k。 昨天晚上，出現在我夢中的山神說只要將小艾蒿栽培成忍耐的艾蒿，就可以製作成能變成人類的祕方。 \\n但是，我似乎沒有栽培植物的天分。 可以幫我種植小艾蒿嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "只要將小艾蒿放在背包裡1個小時，就會變成 #b長大的忍耐艾蒿#k。 如果將那個艾蒿帶來給我，我會給你不錯的禮物，\\n\\n#e<各日期獎勵清單>#n\\n- 9月30日： #i2049119:# #t2049119#\\n- 10月1日： #i2530002:# #t2530002#\\n- 10月2日： #i2049309:# #t2049309#\\n- 10月3日： #i2049013:# #t2049013#\\n- 10月4日： #i2049119:# #t2049119#"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我真的很想變成人類…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  }
+}

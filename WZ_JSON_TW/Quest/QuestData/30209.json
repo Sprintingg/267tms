@@ -1,0 +1,240 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[鬼怪公園] 挑戰在鬼怪公園一般模式生存100次"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "51"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "在鬼怪公園一般模式中生存100次的話，就能獲得\\r\\n#b#i1142877:# #t1142877:##k。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在鬼怪公園一般模式中生存100次的話，就能獲得\\r\\n#b#i1142877:# #t1142877:##k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "已在鬼怪公園一般模式中生存100次，並且獲得\\r\\n#b#i1142877:# #t1142877:##k。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#鬼怪公園生存100次 #R30209ExcountRef30209# / 100\\r\\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#i1142877:# #t1142877:#"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "demand": {
+      "_dirType": "sub",
+      "base": {
+        "_dirType": "string",
+        "_value": "#questorder1#在鬼怪公園一般模式生存100次#R30209ExcountRef30209# / 100\r\n"
+      },
+      "explain": {
+        "_dirType": "sub"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1142877"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2079000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "125"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q30209s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "30202"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "worldList": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "0"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "3"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "4"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "6"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "30"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "45"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "49"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2079000"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "30209"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "100"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "在鬼怪公園一般模式生存100次"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "count"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1142877"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哈哈，你已達成一般模式#b生存100次#k了耶！\\r\\n耐力真不錯，呵呵！"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你還沒達成 100回生存耶？"
+          }
+        }
+      }
+    }
+  }
+}

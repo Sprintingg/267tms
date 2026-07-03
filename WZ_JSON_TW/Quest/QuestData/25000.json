@@ -1,0 +1,139 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[幻影俠盜] 潛入作戰"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "9"
+    },
+    "selfComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "終於到了期待的時刻。準備好了嗎？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "已準備就緒。按照管家#p1402000#的話，開始就行。好，那麼深呼吸後進入#m130000000#…#b只要躲過聚集在騎士之殿的警衛兵，之後就很簡單#k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "計畫成功！太漂亮的一戰！嘿，不愧是幻影俠盜團隊。"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "25000"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "3"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1402000"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q25000s"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2003"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "25001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "計劃成功了嗎？呼…應該是非常成功的出道舞台。這樣絕對不會有辱怪盜幻影的大名。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "全新楓之谷，歡迎怪盜幻影！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "因為警備森嚴使用技能也受限，但是以主人的能力相信潛入絕不是問題。"
+          }
+        }
+      }
+    }
+  }
+}

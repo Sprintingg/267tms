@@ -1,0 +1,155 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇家騎士團] 騎士的帽子"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "奇慕說為我準備了禮物，　雙擊奇慕對話。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "裝備奇慕給的 #b騎士的帽子#k。\r\n\r\n#e[裝備方法]#n\r\n1. 點擊快捷鍵 I 打開道具欄位。\r\n\r\n2. 雙擊騎士團的帽子或者右擊拖住可以裝備。\r\n\r\n3. 點擊快捷鍵E打開裝備視窗，確認是否套用。\r\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "學習了裝備套用方法。\r\n\r\n點擊快捷鍵 I 打開道具欄位，雙擊道具。\r\n\r\n點擊快捷鍵E打開裝備視窗後雙擊已套用的裝備道具就可以卸掉。\r\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#eqp#\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1102101"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q20824s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20823"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "1000"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1102101"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q20824e"
+      },
+      "itemEquip": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1003769"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "gender": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "穿著裝備的方法很簡單吧？\\r\\n#h0#， 你的力量變越大會需要能相稱的武器和裝備的。裝備會讓你變更強的。\\r\\n"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "奇努來了啊。 會跟你說明你一定需要的內容。雖然有點無聊但一定要好好參考。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "目前還沒有裝備帽子呢？按#b熱鍵 I#k來開啟背包視窗後，#r點擊裝備道具#k就可以囉。\\r\\n穿用的裝備是可以按 #b熱鍵 E#k來確認喔。\\r\\n\\r\\n該不會真的忘記了吧？\\r\\n隨便亂丟東西的習慣是不好的喔。一定要會判斷是否為需要的道具喔。\\r\\n"
+          }
+        }
+      }
+    }
+  }
+}

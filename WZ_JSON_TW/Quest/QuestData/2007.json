@@ -1,0 +1,186 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 製作閃耀的石頭"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "瑪亞和奇怪的藥"
+    },
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "看我收集完所有的材料，索非亞好像挺吃驚的，因為這不太容易完成。她用我收集來的材料做成了發光的石頭，看著它發光閃耀的樣子…我才理解人們為什麼想獲得這個石頭。我得到了石頭，要趕快去維多利亞港見特奧和他交換怪藥。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "索非亞看到變異菇菇的血吃了一驚，之後為我做出了閃耀的石頭。現在，只要去找特奧就可以了吧？"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "6"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031004"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "2008"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031004"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "請收下這個#b#t4031004##k這石頭，是要用在什麼地方啊？雖然很特別除了收藏家外，對其他人來說是沒有用的東西呢？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "噢，這個石頭！這是#b#t4031004##k！你是怎麼弄到的？真了不起！能把它給我嗎？我把#b#t4031006##k送給你！"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b#t4031004##k用在什麼地方了呢？那個石頭誰都想擁有不過要收集的材料太多，到現在為止都收集齊的你是第一個。希望你能好好利用它。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒找到#b#t4031004##k嗎？該不會那個石頭不會是被誰給拿去了吧。它那亮晶晶的樣子真的很漂亮快去#b#m102000000##k雜貨店的#r#p1022100##k那裏吧！"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請收下這個#b#t4031004##k這石頭，是要用在什麼地方啊？雖然很特別除了收藏家外，對其他人來說是沒有用的東西呢？"
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031004"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022100"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "15"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2006"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    }
+  }
+}

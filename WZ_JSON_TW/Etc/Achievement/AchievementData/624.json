@@ -1,0 +1,97 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "battle"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "field"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "[Multi-kill] 1擊中10是Multi-kill的基本"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "10隻以上Multi-kill 1000次達成"
+    },
+    "parentId": {
+      "_dirType": "int",
+      "_value": "1384"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "rare"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "20"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "uiForm": {
+        "_dirType": "string",
+        "_value": "basic"
+      },
+      "gauge": {
+        "_dirType": "string",
+        "_value": "submission_info"
+      },
+      "gaugeMissionIndex": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "gaugeSubMission": {
+        "_dirType": "string",
+        "_value": "multikill"
+      }
+    },
+    "keyword": {
+      "_dirType": "string",
+      "_value": "10隻以上Multi-kill"
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "10隻以上Multi-kill 1000次達成"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "multikill": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "int",
+              "_value": "1000"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            },
+            "type": {
+              "_dirType": "string",
+              "_value": "counting"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub",
+            "multikill_count": {
+              "_dirType": "sub",
+              "min": {
+                "_dirType": "int",
+                "_value": "10"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

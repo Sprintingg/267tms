@@ -1,0 +1,219 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 西瓜農日記不見了嗎？"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoPreComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#r#p9000021##k說是有東西給我。這就去找找看吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p9000021#把遺失的#t4162002#給找到了。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p9000021#把遺失的#t4162002#給找到了。"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#i4162002:# #t4162002:# 1 個\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4162002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000021"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201106160000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201106160000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "11340"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4162002"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000021"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4162002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "dateExpire": {
+            "_dirType": "string",
+            "_value": "2011063000"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "你好，#b#e#h0##n#k！你該不會弄丟了 #t4162002#嗎？\\r\\n#L0##b…？看樣子沒有耶。你怎麼知道的？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "果然~剛剛某個善良的玩家撿了寫著#h0#名字的#b#t4162002##k來給我。 可以再確認一次嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "奇怪了。明明寫著#h0#的名字…反正如果弄丟的話隨時來找我，我會好好保管的。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "恭好是#h0#的東西，如果再次遺失的話無論何時請#b點擊左邊的活動通知#k或來找我。因為在楓之谷都是心地善良的玩家，遺失物一定會重新回到主人身邊的。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請確認看看其他欄位是否還空有1格以上？"
+          }
+        }
+      }
+    }
+  }
+}

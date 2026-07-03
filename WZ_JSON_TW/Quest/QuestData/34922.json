@@ -1,0 +1,148 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[亞克] 復原作業結束！？"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "219"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4036352:# #t4036352:# #c4036352# / 1\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "威伊似乎有最後一件事情想要交代。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": " 接獲負責將#i4036352# #b#t4036352##k放入食糧倉庫的事情。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "雖然復原作業已經告一段落．．．"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q34922x"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001402"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q34922s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34921"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001403"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q34922e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036352"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "把剩餘的材料拿到倉庫放之後再來，我就會告訴你克拉班專屬的休憩區在哪裡！倉庫在那下面。"
+          }
+        }
+      }
+    }
+  }
+}

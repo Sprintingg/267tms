@@ -1,0 +1,184 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[時間神殿]記憶祕藥"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "263"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "向魔法提煉師詢問是否有方法找回失去記憶的神官的記憶。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "他說只要有記憶祕藥，就能找回失去的記憶。 \r\n支付手續費10萬楓幣吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把10萬楓幣交給了魔法提煉師。在魔法提煉師製作記憶祕藥的期間，稍等一下再和他說話吧。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##fUI/UIWindow2.img/QuestIcon/7/0# 需要100,000\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "130"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "139"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "852717"
+      },
+      "meso": {
+        "_dirType": "int",
+        "_value": "-100000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2140002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "130"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3551"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2140002"
+      },
+      "endmeso": {
+        "_dirType": "int",
+        "_value": "100000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "money": {
+        "_dirType": "int",
+        "_value": "-100000"
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "852717"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嗯。找回記憶的藥？ 別擔心！有#b記憶的祕藥#k。我世界最強#p2140002#，沒有不可能。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "只是藥有點貴。嗯，你應該能支付#b10萬楓幣#k吧？怎麼樣？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那麼，我要來準備製作藥了，請你帶#b10萬楓幣#k過來。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不需要藥了？ 有了這個藥，找回記憶就不用說了，還能治好頭痛、腰痛、牙痛、風濕性關節炎！真的不要買嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "所需材料都找來了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "稍等一下。我這世界最強#p2140002#馬上給你製作#b記憶的祕藥#k。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "帶來手續費#b10萬楓幣#k就行了。"
+          }
+        }
+      }
+    }
+  }
+}

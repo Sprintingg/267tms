@@ -1,0 +1,174 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[過去的英雄，狂狼勇士] 尋找失去的記憶"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "6"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[轉職]"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#使用心願之鏡 (#R36962ExclearRef36962#)"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "瑪哈說我變得相當強，現在是時候開始正式的修煉。瑪哈說，我變得更強的最快方法，就是找回以前的技術。去找找瑪哈說的#b修煉場所#k吧。如果是莉琳，應該會知道些什麼。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "瑪哈說自己在島嶼某處製作了可以反覆過去修行的地方。莉琳說那個地方應該是冰封絕壁的#b鏡子洞窟#k。在鏡子洞窟裡回想過去的修行吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "通過心願之鏡，想起了過去的武陵鐵匠#b大長翁#k的試驗，以及想起瑪哈給予的記憶。新的記憶浮現的同時，想起了以前忘記的技術。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1201000"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q36962s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "36961"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2100"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1201002"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q36962e"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "36962"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "cl"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "使用心願之鏡"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "clear"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "defaultEx": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "sub",
+            "msg": {
+              "_dirType": "string",
+              "_value": "好像從村莊的左方出去就能找到鏡子洞窟。"
+            },
+            "userSay": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "imgPos": {
+              "_dirType": "int",
+              "_value": "1"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[米特拉] 米特拉的引導者"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#e#r<米特拉世界開放>#k#n\r\n\r\n#e[活動期間]#n\r\n2025年2月19日(三) 維護後～\r\n2025年3月31日(一)下午11點59分為止\r\n\r\n#e[活動內容]#n\r\n如果是#b#e米特拉#n#k世界的居民，請去找村莊裡的#b微微安#k吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "微微安保證，在米特拉世界達成#e#b260級#k#n就送米特拉的#b#t1143418##k 勳章。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "已達成#b260級#k獲得#b#t1143418##k。\\n#i1143418:# #t1143418#"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "long",
+            "_value": "1143418"
+          },
+          "count": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010010"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "202503312359"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "202503312359"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "101"
+      },
+      "worldList": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "45"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010010"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "260"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1143418"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嘿！歡迎來到米特拉世界！\\n你想在新規則的世界重新展開冒險，我想給你一個有趣的建議。要聽聽看嗎？\\n#r(該任務每個世界僅限執行一次。)\\r"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#i1143418##r#t1143418##k是只能在這個米特拉世界\\n獲得的特別勳章。如果想成為這勳章的主人，#b\\n在這個米特拉世界達成260級#k就能獲得。\\r\\n當然，如果已經在原本的世界達成260級也沒關係！"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "對了！這是有期限的。\\r\\n必須在#b#e2025年3月31日23點59分前#n#k達成#e#b260級#k#n才能獲得#e#r#t1143418##k#n。要記住喔！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我的建議真的很有意思，你沒興趣嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "達成260級了啊？\\n很好。我送你勳章\\n#r#t1143418##k，紀念你在新世界的開始。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "收到#i1143418##r#t1143418##k了嗎？\\n期待你日後也能在米特拉世界展開精彩的冒險！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "奇怪。可以確認一下是不是#r還沒達成260級，或者是不是物品欄的裝備欄#k不足嗎？"
+          }
+        }
+      }
+    }
+  }
+}

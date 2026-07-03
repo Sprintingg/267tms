@@ -1,0 +1,242 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 失蹤的船員"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "黃金富豪好像非常著急，急需幫助。到底是什麼事情呢，快去找黃金富豪。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "黃金富豪說自己貿易船上的船員去見久未謀面的朋友之後，已經過了兩天還沒有回來。不知那位船員是不是身陷某個危險的地方，實在讓人擔心。因此，黃金富豪委託我去查探那名船員的行蹤，一旦發現那名船員，就用#b#t2030000##k將那名船員送到最近的城鎮。\r\n\r\n#i2030000##t2030000##b#c2030000##k/1"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在地下城中央尋找迷路的呆呆水手戰士, 把他安全的送回去了."
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n"
+    },
+    "autoCancel": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "500"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2084001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201103140000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201104040000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201008300000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201009270000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "10827"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "dayOfWeek": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "Saturday"
+        }
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q10845e"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000084"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2030000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "dayOfWeek": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "Saturday"
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2030000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我想交給你一件找人的工作，你可以做嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不是因為別的，就是因為乘坐我們貿易船的船員，在船停泊時去見一個老朋友…到現在都已經過很多天了，但是都還沒回來。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "那個船員，雖然擁有熟練的航海技術、做事也很認真，但是一旦到了陸地之後，就會變成一個完全沒有方向感的路癡。不知道現在會不會在一個危險的地方亂跑，這真是讓人擔心啊。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "拜託你了。請你幫我找回那個朋友吧。要是見到那個人的話，就把#b回家卷軸#k交給他，然後讓他回村就可以了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "是一件找人的工作…但是沒人能幫我去做…你能不能再考慮一下？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "打擾一下，請問這裡是什麼地方？看著地圖也不知道…我怎麼會來到這麼個地方呢…(哭泣)"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "什麼？是黃金富豪先生派你來的嗎？啊啊…真幸運啊。我正因為不知道怎麼回去而鬱悶著呢，而且周圍又沒有什麼人…"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "阿…這是回歸村莊卷軸呢！真的很感謝。現在我可以回去了呢。我要趕快回去洗澡、吃飯了呢。好幾天都在這裡迷路的關係，肚子又餓而且身上又臭臭的…"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "陸地真的是一個可怕的地方…那我就回去了。多虧有你我才能回去，真是謝謝你。哦對了！我回去之後，一定會和黃金富豪先生說你的好話的。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "啊…我該怎麼回去呢…"
+          }
+        }
+      }
+    }
+  }
+}

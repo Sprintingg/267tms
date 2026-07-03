@@ -1,0 +1,161 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "스피어 풀링 1301012"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "spearPulling"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "1301012"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "120+80*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "4"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "8"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -360,
+          "_y": -160
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 0,
+          "_y": 30
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "-800"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "useZ": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "z": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "randomHitOrigin": {
+            "_dirType": "int",
+            "_value": "15"
+          }
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "1301012"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "120+80*x"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "4"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "8"
+    },
+    "iconRaw": {
+      "_dirType": "uol",
+      "_value": "icon"
+    },
+    "cooltime": {
+      "_dirType": "string",
+      "_value": "8"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -390,
+      "_y": -185
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 0,
+      "_y": 30
+    }
+  },
+  "SkillTags": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "string",
+      "_value": "RLGame.Skill.Extra"
+    }
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[狐狸峽谷] 扒開刺藤前進！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "218"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o2400253# #a347521#\r\n"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "returnMapID": {
+      "_dirType": "int",
+      "_value": "410000118"
+    },
+    "targetType": {
+      "_dirType": "int",
+      "_value": "-1"
+    },
+    "returnType": {
+      "_dirType": "int",
+      "_value": "-1"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q34752x"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "想到好方法的瑪魯，瞬間跑到狐狸森林。趕緊與在 #b#m410000114##k的#b#p3002020##k對話看看。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "因為#o2400253#威脅的樣子，無法前進！打敗在#b#m410000114##k的#r#o2400253##k#r200隻#k左右後與在 #b#m410000118##k的#b#p3002020##k對話看看。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "好不容易到達的#m410000118#有一個小樹。說要利用小樹做一個遮住村莊的雨傘的瑪魯。一定是又開始想一些奇怪的法子…要不要幫忙呢？"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3002022"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q34752s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "185"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34751"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201804250900"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201804250900"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3002023"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q34752e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2400253"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "200"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": " #r#o2400253# #k#b200隻#k全部都擊殺了嗎?"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#r#o2400253##k全部擊殺後就來#b#m410000118##k吧!"
+          }
+        }
+      }
+    }
+  }
+}

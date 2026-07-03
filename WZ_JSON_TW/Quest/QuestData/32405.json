@@ -1,0 +1,130 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[回歸的勇士]了解道具"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "80"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "為了適應楓之谷世界,跟#b#p9062001##k說話吧."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "有關#b#p9062001##k的附加屬性說明.從道具欄的#b消耗鍵#k使用武器,開啟後再跟#b#p9062001##k說話."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#b#p9062001##k說明附加屬性,領取武器箱."
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "打開我給你的#b武器箱子#k後,再來跟我對話吧."
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9062001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q32405s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32404"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9062001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q32405e"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "18189"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "eq"
+          }
+        }
+      }
+    }
+  }
+}

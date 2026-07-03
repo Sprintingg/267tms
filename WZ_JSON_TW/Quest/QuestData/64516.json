@@ -1,0 +1,146 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[LINE FRIENDS]微微安！請幫忙取得收藏道具！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "若難以取得兔兔拜託的楓之谷紀念品，可以請微微安代為取得。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "微微安答應要幫忙取得兔兔需要的今日紀念品。但作為代價，需要#b狩獵等級範圍怪物#k，收集#t4036532# 50個…\r\n需要思考一下親自取得紀念品比較容物，還是收集#t4036532#比較容易了。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "依照微微安的需求，收集了#t4036532# 50個。\r\n兔兔拜託的紀念品，微微安幫忙取得了…雖然懷疑紀念品的出處，但還是不要太過深入好了。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4036532:# #t4036532:# #c4036532# / 50"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒收集到嗎？應該不會是改變心意了吧？\r\n#b狩獵等級範圍怪物#k，收集#t4036532# 50個來給我吧！"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010010"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "61"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q64516s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "64515"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201903270900"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201904240000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010010"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q64516e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036532"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

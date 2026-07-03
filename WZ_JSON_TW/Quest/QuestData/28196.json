@@ -1,0 +1,315 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[職業] 蟄伏暗處的邪惡勢力"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b勇士之村#k的#b#@1022000:##k說他已經瞭解這個徽記的含意。我們去看看他有什麼發現。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "他說這是惡魔#r瑪巴斯#k的徽記，他是惡名昭彰的疾病散佈者。他一直被封印在#b魔法森林#k裡，不知是誰打破了這個封印。\\n\\n慢慢來，一次一件事。他說你需要大量的樹木以阻止病毒的擴散。\\n他要你去打倒#r黑木妖#k和#r斧木妖#k。\\n\\n完成之後，向勇士之村的#b#@1022000:##k回報。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "這個徽記象徵著惡魔#r瑪巴斯#k；我們已經利用樹木堵住供水管，阻止了病毒的擴散。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o1110101##a281961#\\r\\n#o1130100##a281962#"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 2,630\r\n可進行 '返回魔法森林' 任務\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "2630"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2630"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "根據古書記載，這紋章象徵#r瑪巴斯#k，他是被封印在#b魔法森林#k的惡魔。他喜歡到處散播致命疾病，行為令人髮指。我想他與最近維多利亞島上流行的疾病脫不了關係。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "既然我們找出了幕後黑手，我們就要遏止病毒擴散。你願意伸出援手嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "病毒是透過水傳播的，所以我們要堵住下水道。將下水道堵住的唯一辦法，就是利用大量木材堵住出水口。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "打倒30隻#r黑木妖#k與30隻#r斧木妖#k，這樣一來就有足夠的木材了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這很警急。準備好再跟我說。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "太好了。有了這些木材，我們就可以堵住下水道。這樣一來就可以防止病毒擴散了。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "多虧你，我們才能防止病毒擴散。我向你再次表達感謝之意。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請打倒30隻#r黑木妖#k與30隻#r斧木妖#k。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1110101"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1130100"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022000"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "40"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "28195"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "200"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "210"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "220"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "230"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "211"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "221"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "231"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "212"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "222"
+        },
+        "9": {
+          "_dirType": "int",
+          "_value": "232"
+        },
+        "10": {
+          "_dirType": "int",
+          "_value": "1200"
+        },
+        "11": {
+          "_dirType": "int",
+          "_value": "1210"
+        },
+        "12": {
+          "_dirType": "int",
+          "_value": "1211"
+        },
+        "13": {
+          "_dirType": "int",
+          "_value": "1212"
+        },
+        "14": {
+          "_dirType": "int",
+          "_value": "2200"
+        },
+        "15": {
+          "_dirType": "int",
+          "_value": "2210"
+        },
+        "16": {
+          "_dirType": "int",
+          "_value": "2211"
+        },
+        "17": {
+          "_dirType": "int",
+          "_value": "2212"
+        },
+        "18": {
+          "_dirType": "int",
+          "_value": "2213"
+        },
+        "19": {
+          "_dirType": "int",
+          "_value": "2214"
+        },
+        "20": {
+          "_dirType": "int",
+          "_value": "2215"
+        },
+        "21": {
+          "_dirType": "int",
+          "_value": "2216"
+        },
+        "22": {
+          "_dirType": "int",
+          "_value": "2217"
+        },
+        "23": {
+          "_dirType": "int",
+          "_value": "2218"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

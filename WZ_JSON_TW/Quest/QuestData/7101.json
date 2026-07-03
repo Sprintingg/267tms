@@ -1,0 +1,238 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2041021"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "120"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "7100"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2041021"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031171"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031175"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "300"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "766612"
+      },
+      "money": {
+        "_dirType": "int",
+        "_value": "76600"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031171"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-100"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031175"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-300"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊，正是這個！這個#b#t4031175:##k與我的#r#t4031171:##k會有反應。用這個就能做出時間之球了。怎麼樣，可以再多弄些來嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "就如我剛才說過..多虧了你，得知#t4031175#和#t4031171#有反應。為了將這些做成完整的一個球體並得到動力，還需要更多的相關材料。可以在下一層出現的#b所有怪物#k身上得到這個#b#t4031170##k。不過#r#t4031171##k卻只有#r#o7130300##k身上才有。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "完成時間之球所需的#b#t4031175:#300個#k和#b#t4031171:#100個#k就應該充分了。\\n\\n#i4031175##t4031175##r300#k個\\n#i4031171##t4031171##r100#k個"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "為了收集到我所說的那些，需要對付比較強的怪物。所以等你變得再強一些再來幫我也沒關係。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "用於製作時間之球所需的#b#t4031170:#300個#k與#b#t4031171:#100個#k都已經收集齊了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我將用收集的這些開始製作#b時間之球#k。還有一些...必要的東西。準備好之後再來找我吧。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "為了做出完整的時間之球，需要#t4031170:#300個和#t4031171:#100個。"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[玩具城] 替代時間能源"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "死守玩具城"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "需要可取代在動力室被#o8500001#所侵蝕的時間之球之力量！要去找#p2041021#詢問解決的方法。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "前往時間通道下方時出現的怪物，是因獲得#o8500001#所擁有該力量的怪物，應該就可以恢復原有的平靜…得先收集可製作時間之球的#b#t4031175#300個#k與#b#t4031171#100個#k吧！\\n\\n#t4031175:##r#c4031175#/300#k\\n#t4031171:##r#c4031171#/100#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "將製作時間之球時所需的替代能源#b#t4031175##k與#b#t4031171##k交給他了"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "36"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "766612"
+      },
+      "meso": {
+        "_dirType": "int",
+        "_value": "76600"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[艾比米修斯盒子]令人討厭的伏日!"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "滋補的季節,夏天來了.\r\n每當伏日的季節到來,餐廳就會推出各種補品的優惠.特別是以蔘雞湯著名的元祖雞湯店,正在舉行#b每次使用艾比米修斯的盒子時就會發送蔘雞湯優惠卷#k的活動.\r\n\r\n斑斑聽到這樣的消息之後非常憤怒,因此來到了楓之谷世界.斑斑有話要說.聽聽看吧.\r\n\r\n#r注意!本活動每個帳號限進行1次,進行途中放棄則無法再進行活動.#k"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "每當伏日,斑斑的同胞就會遭到屠殺.他說他沒辦法再看到這種景象了.先不要問理由,拿#b30張蔘雞湯優惠卷#k給他吧.\r\n\r\n收集30張蔘雞湯優惠卷後,跟斑斑說話吧.\r\n(#r集滿30張蔘雞湯優惠卷後可以透過活動通知跟斑斑說話.#k)"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "與因伏日而憤怒的斑斑結束了對話."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4033904:##t4033904:##c4033904#/30\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000204"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "18209"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "0"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "state"
+          }
+        }
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033904"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q26457s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "18"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201307180000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201308010000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201307180000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201308010000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000204"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033904"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q26457e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒收集到30張蔘雞湯優惠卷呀.快去拿那討人厭的紙來!"
+          }
+        }
+      }
+    }
+  }
+}

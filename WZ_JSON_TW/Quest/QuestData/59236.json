@@ -1,0 +1,177 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[幻獸師] 拯救時刻2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "85"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "前往祕密通道,救出變為機械怪物的人們.\r\n與#p9390368#對話."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p9390368#自己的前面, 發出#b耀眼光芒#k的祕密通路裡有著變成機器怪物的人們與 #o5110300#. 前往祕密通路擊敗#o9390923# 2名和 #o5110300# 20隻."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "幸好救出全部的人.\r\n將救出的人從#m221000000#那邊帶到#m130000000#.\r\n我也立刻要前往#m130000000#,去見#p1101002#."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o9390923# #a592361#\r\n#o5110300# #a592362#"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "快點去救出人們吧."
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390460"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q59236s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "59235"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub"
+      },
+      "job_TW": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "11212"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "11213"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390460"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q59236e"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "clear"
+          }
+        }
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9390923"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "5110300"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

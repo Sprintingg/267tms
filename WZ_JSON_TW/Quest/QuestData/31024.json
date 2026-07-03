@@ -1,0 +1,216 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[克里塞] 收集訓練用長槍(2)"
+    },
+    "area": {
+      "_dirType": "string",
+      "_value": "33"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "為了村子居民的訓練，必須要有訓練用的槍。\n請消滅怪物，以拿回戰利品。\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "佩涅克的長槍100個…雖然有點多…應該有辦法收集吧？"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "擊倒怪物收集佩涅克的長槍100個交給他。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000636:# #t4000636:# #c4000636# / 100\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 28,783\r\n可進行 '[克里塞] 收集訓練用盾牌(1)' 任務\r\n"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "預備訓練裝備"
+    },
+    "order": {
+      "_dirType": "string",
+      "_value": "2"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "28783"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2170000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "50"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31008"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2170000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000636"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "28783"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000636"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-100"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "上次你找來的槍在我們仔細檢查之後發現，很多都太老舊了，實際上沒有幾個可以拿來使用。 看來得請你去找來訓練時可以使用的佩涅克的長槍了。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這一次希望你可拿給我100個。這樣應該就足狗的。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這個請求太過分了嗎？ 如果是#h0#的話，我相信你一定可以辦到的…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你回來了啊！ #h0#？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "沒錯全部是100個。 這次你找回來的槍看來狀態非常地好。 居民們在訓練上應該會很充分的。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "沒有長槍就無法開始訓練。我委託的佩涅克長槍 100個呢？"
+          }
+        }
+      }
+    }
+  }
+}

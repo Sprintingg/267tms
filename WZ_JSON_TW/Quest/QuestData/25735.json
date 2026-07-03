@@ -1,0 +1,184 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[凱撒] 邪惡的氣息！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "22"
+    },
+    "selfStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "selfComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽完#p3000001#的話，從萬神殿走出來的瞬間感受到邪惡的氣息。從哪裡散發出的氣息呢？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "追逐邪惡的氣息。\n\n#r※ 注意#k\n失敗的情況可放棄任務重新開始。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "追查邪惡的氣息後在前往的地方發現了奇怪的祭司。和在東部聖所，想在聖物上做些什麼的那些人似乎是同事。想要壓制那些祭司，最後逃走了。"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 3,500\r\n可進行 '向卡塔利溫報告' 任務\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "3500"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q25735s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "15"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "25734"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "6100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "6110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "6111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "6112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "6113"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "6114"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "25802"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "3500"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "最好告訴#p3000000#關於遇到可疑祭司的事情。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "失敗時，就重新進行任務吧。"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[3！3！3！活動] 天天領取3樣禮物"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoPreComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#i2001548:# #t2001548:# 10 個\r\n#i2450059:# #t2450059:# 1 個\r\n#i2430693:# #t2430693:# 1 個\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "從3月22日開始到4月4日為止#b[3！3！3！活動] 進行天天發放道具禮物#k活動。去聽聽正在進行活動的GM說明吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "從3月22日開始到4月4日為止#b[3！3！3！活動] 進行天天發放道具禮物#k活動。去聽聽正在進行活動的GM說明吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "從3月22日開始到4月4日為止#b[3！3！3！活動] 進行天天發放道具禮物#k活動。去聽聽正在進行活動的GM說明吧。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2001548"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2450059"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2430693"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201204050000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201204050000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2001548"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2450059"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "period": {
+            "_dirType": "int",
+            "_value": "2880"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2430693"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "period": {
+            "_dirType": "int",
+            "_value": "180"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好 #h0# ！\\r\\n#b2012年 3月 22日#k起至#b2012年 4月 4日止#k紀念幸運的3！3！3！活動 #r每天登入時#k 可獲得各種道具。但是，#b道具欄必須有3個空欄位以上#k 才能獲得禮物。現在就領取今天的3！3！3！活動道具嗎？ "
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "活動禮物一天只會給一次，今天結束之前一定要領取！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "恭喜！已獲得今天的三種道具禮物。\n\n#i2001548# #t2001548# 10個\n#i2450059# #t2450059#1個\n#i2430693# #t2430693# 1個\n"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "有收到道具嗎？ 幸運的3！3！3！活動進行到 #b4月 4日#k止 #r請每天前往參加#k。那麼，希望在楓之谷度過快樂時光！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#r道具欄#k已滿無法領取道具。請確認道具欄是否有空間？"
+          }
+        }
+      }
+    }
+  }
+}

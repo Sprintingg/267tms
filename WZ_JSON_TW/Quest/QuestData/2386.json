@@ -1,0 +1,227 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓之谷世界的冒險家] 熬製補藥"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必需]"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "為了雪姬小姐找來了新鮮的章魚腳，不知道鴻亞有沒有熬好？總是讓人擔心啊？去找#b鴻亞#k看看吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "若要完成補藥必須放入藥草嗎？透過墮落城市右側傳點，經過六條岔道前往勇士之村風塵山丘，獵捕#r黑木妖#k就可以收集#b葉子#k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "喝了補藥，雪姬小姐要趕快好起來啊…"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000005:##t4000005:##c4000005#/10"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 330\r\n可進行 '第五個任務－偽造' 任務\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "77"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "330"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1057001"
+      },
+      "subJobFlags": {
+        "_dirType": "int",
+        "_value": "2"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "16"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2385"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1057001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000005"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "330"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000005"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "#h0#來得正好。\\r\\n#L0##b出什麼事情了嗎？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "現在想起來忘了一件非常重要的事情。補品裡應該加入藥草。我要守著這個藥，你能不能去找來藥草？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "利用墮落城市右邊傳送點經過六條岔道到底斐利翁灰土山丘就會有黑木妖。狩獵#r黑木妖#k收集#b樹葉10個#k吧。在藥煎完之前回來啊。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果沒有藥草，就算不上是補品了…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊！回來了。因為火要滅了，我正努力地扇著扇子呢。快給我藥草。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "唉。有了這個就可以了。現在只要用心熬制拿給雪姬小姐就可以了。接下來還有任務要給你，再來找我吧。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "利用墮落城市右邊傳送點經過六條岔道到到風塵山丘就會有黑木妖。狩獵#r黑木妖#k收集#b樹葉10個#k吧。在藥煎完之前回來啊。"
+          }
+        }
+      }
+    }
+  }
+}

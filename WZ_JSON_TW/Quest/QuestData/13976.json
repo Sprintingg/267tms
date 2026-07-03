@@ -1,0 +1,193 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[簽到]任務!收集貝殼!"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "跟#r楓之谷#k一起蓋貝殼簽到章,領取簽到禮物!\\r\\n#e[簽到活動日程]\\n>2013年06月24日~2013年07月03日#k"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "跟#r楓之谷#k一起蓋貝殼簽到章,領取簽到禮物!\\r\\n#e[簽到活動日程]\\n>2013年06月24日~2013年07月03日#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "跟#r楓之谷#k一起蓋貝殼簽到章,領取簽到禮物!\\r\\n#e[簽到活動日程]\\n>2013年06月24日~2013年07月03日#k"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i3994839:##t3994839:##c3994839#/30\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201306240000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201307040000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201306040000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201306140000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "13975"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "interval_t": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q13976e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994839"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994839"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嗨,#b#h0##k!\\r\\n現在正在進行#e#b貝殼點名活動#k#n#k.\\n要現在點名嗎?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b#e#t3994839#30個#k#n取來的話,會在簽到簿上蓋上簽到章.如何?應該不是難事吧?\\r\\n#e#i3994839##t3994839#是什麼?\\n#n夏日開始的話,楓之谷世界很容易看見五色貝殼.楓之谷世界的怪物會有的."
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "蓋了出席印章就可獲得精美禮物喔...改變心意的話再來跟我說吧."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b#e#t3994839#30個#k#n取來的話,會在簽到簿上蓋上簽到章.如何?應該不是難事吧?\\r\\n#e#i3994839##t3994839#是什麼?\\n#n夏日開始的話,楓之谷世界很容易看見五色貝殼.楓之谷世界的怪物會有的."
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[艾芙特領域]為了居民掃蕩怪物"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "121"
+    },
+    "selfStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "selfComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "因為我的關係，長久無法獲得休息的勇氣之地居民們，\\r\\n有什麼辦法能向他們賠罪嗎？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了讓勇氣之地的居民們明天能度過一個安穩的一天，決定先去掃蕩怪物。分別掃蕩\\r\\n#o9402052#和#o9402053#各 50隻。\\r\\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "為了讓勇氣之地的居民們能夠安穩的度過明天，掃蕩了#o9402052#和#o9402053#。 在怪物們恢復之前，快點將天空#e變為白天吧。\\r\\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o9402052# #a630601#\r\n#questorder1##o9402053# #a630602#\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "63059"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q63060s"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q63060e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9402052"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9402053"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "應該要掃蕩#b#o9402056# 50隻還有 #o9402057# 50隻才夠吧！？"
+          }
+        }
+      }
+    }
+  }
+}

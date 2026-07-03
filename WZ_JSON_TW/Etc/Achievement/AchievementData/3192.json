@@ -1,0 +1,141 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "battle"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "boss"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "[咖凌] 怪異封印 : 完成"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "以虎影給予最多傷害後擊倒普通咖凌"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "legendary"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "100"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "uiForm": {
+        "_dirType": "string",
+        "_value": "basic"
+      },
+      "gauge": {
+        "_dirType": "string",
+        "_value": "submission_info"
+      },
+      "gaugeMissionIndex": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "gaugeSubMission": {
+        "_dirType": "string",
+        "_value": "mob_kill"
+      }
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "以虎影給予最多傷害後擊倒普通咖凌"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "mob_kill": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            },
+            "type": {
+              "_dirType": "string",
+              "_value": "counting"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub",
+            "mob": {
+              "_dirType": "sub",
+              "condition": {
+                "_dirType": "string",
+                "_value": "or"
+              },
+              "mob_id": {
+                "_dirType": "sub",
+                "values": {
+                  "_dirType": "sub",
+                  "0": {
+                    "_dirType": "int",
+                    "_value": "8880842"
+                  }
+                }
+              }
+            },
+            "character": {
+              "_dirType": "sub",
+              "condition": {
+                "_dirType": "string",
+                "_value": "or"
+              },
+              "values": {
+                "_dirType": "sub",
+                "0": {
+                  "_dirType": "sub",
+                  "character_jobcode": {
+                    "_dirType": "int",
+                    "_value": "16400"
+                  }
+                },
+                "1": {
+                  "_dirType": "sub",
+                  "character_jobcode": {
+                    "_dirType": "int",
+                    "_value": "16410"
+                  }
+                },
+                "2": {
+                  "_dirType": "sub",
+                  "character_jobcode": {
+                    "_dirType": "int",
+                    "_value": "16411"
+                  }
+                },
+                "3": {
+                  "_dirType": "sub",
+                  "character_jobcode": {
+                    "_dirType": "int",
+                    "_value": "16412"
+                  }
+                }
+              }
+            },
+            "is_max_damage_on_fieldset_user": {
+              "_dirType": "short",
+              "_value": "-1"
+            }
+          }
+        }
+      }
+    }
+  }
+}

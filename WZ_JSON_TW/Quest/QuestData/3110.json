@@ -1,0 +1,229 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2020005"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3109"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "115"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2020012"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031791"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[組隊任務] 修復雪精靈雕像"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "雪原的巨人"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "亞凱斯特表示已做好精靈雕像的準備, 並將冰之結晶交給了我. 藏有魔法的冰之結晶, 應該就可以修復雪精靈的雕像..."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "修復雪精靈雕像後，雪毛怪人的怒氣終於平息，而且又變得溫馴了。我想可以喘口氣了吧！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "49"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4031791:# #t4031791:# #c4031791# / 1\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "32795"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "快進來！我已經聽史卡圖勒說過了，我已經準備好了修復雪精靈雕像的冰結晶，來！拿好這些冰結晶去修復雕像吧，雕像修復後雪毛怪人也能恢復正常了。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我聽說你阻止了雪毛怪人，但那畢竟不是長久之計，修復雕像是唯一徹底解決問題的方法。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "(攜帶冰結晶找到雕像，將結晶塗抹在雕像上受損部分得到修復。)"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "(雪毛怪人的吼聲消失了，黑暗中的巨大生物消失蹤跡。)"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請攜帶我給你的冰結晶找到雪精靈雕像。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "(要修復雪精靈雕像需要一些特殊的物品.)"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "冰結晶弄丟了嗎...這可是拯救冰原雪域的貴重物品啊！我還可以給你，但再製造可不是那麼容易的了！請一定要小心保管！！"
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031791"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "pop": {
+        "_dirType": "int",
+        "_value": "20"
+      },
+      "npcAct": {
+        "_dirType": "string",
+        "_value": "act3110"
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "32795"
+      },
+      "senseEXP": {
+        "_dirType": "int",
+        "_value": "70"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031791"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  }
+}

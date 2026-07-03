@@ -1,0 +1,188 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[專門技術] 情報商人的委託Ⅱ"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b維多利亞港#k的#b情報商人特魯#k好像有話要說…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "特魯說鐵戟實在是太重了，沒法使用，這次想用輕便的弓箭。拜託我幫他找副使用弓箭所需要的赤月手套…\r\n\r\n#i1082067##t1082067#  #b#c1082067# / 1#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "收到赤月手套的特魯好像要練習射箭。但是看起來很危險的…？"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "8000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002104"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "45"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2440"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002104"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1082067"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "8000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1082067"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "呼…無論怎麼練習，用矛戰鬥有些勉強。那些人怎麼可以那麼輕鬆使用那麼重的武器呢，力氣還真大…"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "沒辦法把武器換成弓了。雖然還沒正式練習過…據說想用弓還需要一個。這次也希望你去找…可以答應嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "使用弓時所需的是手套。沒戴手套使用弓，手疼的不方便。所以找來一個#b赤月手套#k吧。可以的話找個自己做的就好了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "拒絕嗎？吼…也沒辦法…是不是得雇傭護衛呢。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "找到赤月手套了啊？好。戴著試一下弓。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "…啊，對不起。不是想射你的頭而是反方向，怎麼會…呃，反正手不痛就要繼續練習！辛苦了！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒找到#b赤月手套#k嗎？嗯嗯… "
+          }
+        }
+      }
+    }
+  }
+}

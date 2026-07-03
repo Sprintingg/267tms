@@ -1,0 +1,131 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[Friend's Story] 作戰會議"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "93"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "與閃雷悍將對話."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "與頂樓的閃雷悍將對話."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "向閃雷悍將報告取得的情報.\r\n不管怎麼看這企劃好像不可能."
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "friendsStory": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1530100"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q32804s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32803"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1530103"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q32804e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "很好, 都到了嗎?"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "軍士們! 加油!"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "在頂樓集合!"
+          }
+        }
+      }
+    }
+  }
+}

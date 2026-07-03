@@ -1,0 +1,270 @@
+{
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你就是#p2091001#說的冒險者吧.你能告訴我#p2071006#在哪?謝謝了.#p2091001#雖然離得很遠，但是#p2071006#依然受到#m250000000#全體村民的喜愛~我會做一些藥的.你願意幫助#p2071006#嗎?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝.但是藥材有點不夠.這不是給人吃而是給#p2071006#吃的藥,所有需要一些別的材料.既然你願意幫忙，找到#b#t4000276#50個、#t4000279#50個、#t4000292#20個#k給我吧.那傢伙需要的是治療健忘症的藥而不是治療傷口的藥."
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "啊?只有製好藥才能送去給#p2071006#.你都答應送藥了，不能幫忙收集材料嗎?"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "給#p2071006#做藥所需的材料都找來了呀.真厲害~#p2071006#一定會滿意的."
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "藥等一下就能做好,稍等."
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "嗯?忘記什麼材料了?#b#t4000276#50個、#t4000279#50個、#t4000292#20個#k.不要再忘了，快去找吧."
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你就是 #p2091001#說的冒險者。想知道#p2071006#在哪裡？真的很謝謝你。#p2091001#培養的 #p2071006#是受到 #m250000000# 村莊全體喜愛的傢伙～只要是藥，不管多少都能製作。你也會幫助#p2071006#吧？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝你！可是藥的材料有點不太夠。不給人類的藥，是要給 #p2071006#的藥，需要平時不用的材料。剛好你答應要幫忙，那就取得 #t4000276# 50個、 #t4000279# 50個和人蔘水20個吧！這個傢伙，除了傷口治療藥，還要製作健忘症治療藥。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯？要製作藥配送給 #p2071006#。答應要配送，既然如此可不可以順便收集材料呢？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000276"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000279"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000292"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2091002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000292"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000276"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000279"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2091002"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3824"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[武陵桃園] 燕子的治傷藥"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "尋找道公的燕子"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "4"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p2091001#說會為受傷的#p2071006#準備#b藥#k,讓玩家去找#b#p2091002##k試試."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2091002#欣然同意為#p2071006#製藥.但是藥的材料不夠了，需要再找些…\\n\\n#i4000292##t4000292##b#c4000292##k/20\\n#i4000276##t4000276##b#c4000276##k/50\\n#i4000279##t4000279##b#c4000279##k/50"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#b#p2091002##k說：藥馬上就製好，請稍等."
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "44"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

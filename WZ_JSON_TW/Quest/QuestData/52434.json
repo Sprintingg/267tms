@@ -1,0 +1,235 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[職業] 邪念體的真相"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[轉職]"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "returnMapID": {
+      "_dirType": "int",
+      "_value": "120000100"
+    },
+    "returnPN": {
+      "_dirType": "string",
+      "_value": "ai04"
+    },
+    "targetType": {
+      "_dirType": "int",
+      "_value": "-1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "耶願有話要說。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "據說有手下無法察覺的線索，需要請你協助找尋。\r\n\r\n擊殺棲息於神木村的半人馬，\r\n並收集#t4001701:#吧！"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "已收集所有線索。現在可以知道所有事情的元兇了。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4001701:# #t4001701:# #c4001701# / 10\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "100000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330209"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "52433"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "job": {
+        "_dirType": "sub"
+      },
+      "job_TW": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "571"
+        }
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330209"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001701"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "240020000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "100000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001701"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "最後一個地區，就是神木村。雖然不知道為什麼線索會流漏到那麼遠的地區去，但是既然有線索，那就還是得找回來才行。\\r\\n#b#e(接受時立即移動至#m240020000:#地圖)#k#n"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "根據調查棲息於神木村的半人馬們有著最後的線索。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "主人你的耐力就只有這樣嗎？我真是感到失望。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "現在所有的線索都收集齊了。那麼我要來調查這些線索了。請你等一下再來找我，好嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "線索的數字還不夠。"
+          }
+        }
+      }
+    }
+  }
+}

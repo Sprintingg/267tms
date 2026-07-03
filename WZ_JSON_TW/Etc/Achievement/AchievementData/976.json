@@ -1,0 +1,125 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "item"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "enchantment"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "[咒文的痕跡]沒有付出就沒有收穫"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "咒文的痕跡15%卷軸1000次成功"
+    },
+    "parentId": {
+      "_dirType": "int",
+      "_value": "977"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "epic"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "uiForm": {
+        "_dirType": "string",
+        "_value": "basic"
+      },
+      "gauge": {
+        "_dirType": "string",
+        "_value": "submission_info"
+      },
+      "gaugeMissionIndex": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "gaugeSubMission": {
+        "_dirType": "string",
+        "_value": "spell_trace_enchant"
+      }
+    },
+    "prior": {
+      "_dirType": "sub",
+      "condition": {
+        "_dirType": "string",
+        "_value": "or"
+      },
+      "values": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "achievement_id": {
+            "_dirType": "int",
+            "_value": "975"
+          },
+          "achievement_state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "咒文的痕跡15%卷軸1000次成功"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "spell_trace_enchant": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "int",
+              "_value": "1000"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            },
+            "type": {
+              "_dirType": "string",
+              "_value": "counting"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub",
+            "enchant_result": {
+              "_dirType": "sub",
+              "is_success": {
+                "_dirType": "int",
+                "_value": "1"
+              },
+              "enchant_success_prob": {
+                "_dirType": "sub",
+                "min": {
+                  "_dirType": "int",
+                  "_value": "15"
+                },
+                "max": {
+                  "_dirType": "int",
+                  "_value": "15"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

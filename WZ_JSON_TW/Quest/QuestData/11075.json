@@ -1,0 +1,191 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 成功堆10個磚塊！"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "第二週， 成功堆10個磚塊。去找尤莉亞吧！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "第二週， 成功堆10個磚塊。去找尤莉亞領取 #b加持藥水#k吧！"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "第二週， 成功堆10個磚塊。去找尤莉亞領取 #b加持藥水#k。再堆20個磚塊，累積到30個 可以取得#b卷軸#k。#b\\r\\n<下列卷軸當中可挑選一個>\\n#t2046014#\\n#t2046015#\\n#t2046113#\\n#t2046229#\\n#t2046230#\\n#t2046231#\\n#t2046232#\\n#t2046320#\\n#t2046321#\\n#t2046322#\\n#t2046323#"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "堆磚塊成果-第二週"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "11069"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201102210000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201102280000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201101240000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201101310000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "10"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "willEXP": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2004109"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "15"
+          },
+          "prop": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2004119"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "15"
+          },
+          "prop": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你已經收集了黑塊10個嗎？恭喜你～送你一個 #b加持藥水#k做紀念。到我這裡來挑選你滿意的藥水吧。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "現在有什麼困擾你的事情嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你需要什麼藥水呢？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "往後繼續收集 20個達到 30個時，送給你武器和防具使用的 #b卷軸#k。加油！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

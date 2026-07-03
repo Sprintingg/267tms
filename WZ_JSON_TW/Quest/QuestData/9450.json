@@ -1,0 +1,402 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 特奧的回憶1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "拜訪居住在維多利來港的#b#p1002001##k，也許會有一些收穫..."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "與居住在維多利來港的#b#p1002001##k對話。#b#p1002001##k想起自己年輕時的冒險經歷願意幫助我，條件是我為他收集100個#b#t4000016#和　50個#b#t4000004#。…嗯！為了成為真正的冒險家，努力吧！\\n\\n#t4000016##b#c4000016#/100#k\\n#t4000004##b#c4000004#/50#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "居住在維多利亞港的#b#p1002001##k承認我具備了冒險家的資格並給予部分旅行必需的資金，我將以這部分資金為本錢開始冒險家之旅。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "meso": {
+        "_dirType": "int",
+        "_value": "100000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002001"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "2006072000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "2006100100"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "money": {
+        "_dirType": "int",
+        "_value": "100000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000016"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-100"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000004"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "看......你想去冒險嗎?但你看起來不是很強壯...我年輕的時候...曾經週遊各地去尋找新世界…很懷念那個時候，沒有比冒險還要開心的事情了。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "但是，最初由於沒有經驗或者準備不足會很吃力…看見你，我腦海裡經常浮現出年輕時代去冒險時那些坎坷的記憶...。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "你的感覺也是如此嗎？..如果讓我證明你具有作為冒險家的資格，我將會支援你的冒險之旅。怎麼樣？..想試一試嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好，那樣的話你搜集到#b#t4000016#100個#k和#b#t4000004#50個#k後再來。如果這些都收集到了，就會認證你具有資格。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "什麼？不想讓我幫你......如果你改變心意會再找你的。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這很了不起~都收集到了，我的眼睛沒看錯吧。你將會成為一名優秀的冒險家，我相信你。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "得到錢了？雖然不多，但對於剛開始冒險之旅的你來說可能會有用處，用不了多久就能看到變強壯的你了。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "恩...好像沒有全部收集到？難道是我高估你了？要趕緊收集到#b#t4000016#100個#k和#b#t4000004#50個#k。如果不夠的話就不能證明你有資格了。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002001"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "200607200000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "200610010000"
+      },
+      "worldmin": {
+        "_dirType": "string",
+        "_value": "18"
+      },
+      "worldmax": {
+        "_dirType": "string",
+        "_value": "18"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "200610010000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "200607200000"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "120"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "121"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "122"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "130"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "131"
+        },
+        "9": {
+          "_dirType": "int",
+          "_value": "132"
+        },
+        "10": {
+          "_dirType": "int",
+          "_value": "200"
+        },
+        "11": {
+          "_dirType": "int",
+          "_value": "210"
+        },
+        "12": {
+          "_dirType": "int",
+          "_value": "211"
+        },
+        "13": {
+          "_dirType": "int",
+          "_value": "212"
+        },
+        "14": {
+          "_dirType": "int",
+          "_value": "220"
+        },
+        "15": {
+          "_dirType": "int",
+          "_value": "221"
+        },
+        "16": {
+          "_dirType": "int",
+          "_value": "222"
+        },
+        "17": {
+          "_dirType": "int",
+          "_value": "230"
+        },
+        "18": {
+          "_dirType": "int",
+          "_value": "231"
+        },
+        "19": {
+          "_dirType": "int",
+          "_value": "232"
+        },
+        "20": {
+          "_dirType": "int",
+          "_value": "300"
+        },
+        "21": {
+          "_dirType": "int",
+          "_value": "310"
+        },
+        "22": {
+          "_dirType": "int",
+          "_value": "311"
+        },
+        "23": {
+          "_dirType": "int",
+          "_value": "312"
+        },
+        "24": {
+          "_dirType": "int",
+          "_value": "320"
+        },
+        "25": {
+          "_dirType": "int",
+          "_value": "321"
+        },
+        "26": {
+          "_dirType": "int",
+          "_value": "322"
+        },
+        "27": {
+          "_dirType": "int",
+          "_value": "400"
+        },
+        "28": {
+          "_dirType": "int",
+          "_value": "410"
+        },
+        "29": {
+          "_dirType": "int",
+          "_value": "411"
+        },
+        "30": {
+          "_dirType": "int",
+          "_value": "412"
+        },
+        "31": {
+          "_dirType": "int",
+          "_value": "420"
+        },
+        "32": {
+          "_dirType": "int",
+          "_value": "421"
+        },
+        "33": {
+          "_dirType": "int",
+          "_value": "422"
+        },
+        "34": {
+          "_dirType": "int",
+          "_value": "430"
+        },
+        "35": {
+          "_dirType": "int",
+          "_value": "431"
+        },
+        "36": {
+          "_dirType": "int",
+          "_value": "432"
+        },
+        "37": {
+          "_dirType": "int",
+          "_value": "433"
+        },
+        "38": {
+          "_dirType": "int",
+          "_value": "434"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000016"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000004"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[過去的英雄，狂狼勇士] 心願之鏡"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "6"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "矛突然介紹自己是瑪哈，讓我趕快想起自己。這到底意味著什麼。去找#b#p1201000##k問問吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1201000#說那個聲音應該就是#p1201001#的聲音，要按照#p1201001#所說，無論如何都要想起記憶。位於#b#m140000000#西方的#m140030000##k，有個心願之鏡，它能夠讓人看到希望看到的東西，莉琳建議我去一趟…"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "我用鏡子看到了自己的過去。第一次製作矛的過去…聽到這些話#p1201002#好像鬆了一口氣。在#p1201002#的幫助下找回了一些過去的能力。"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[轉職]"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "targetMapID": {
+      "_dirType": "int",
+      "_value": "140030000"
+    },
+    "targetType": {
+      "_dirType": "int",
+      "_value": "-1"
+    },
+    "returnType": {
+      "_dirType": "int",
+      "_value": "-1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1201000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "21200"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2100"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1201002"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q21201e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "21202"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "矛到底出什麼事了？啊？#p1201001#直接用人的聲音與你對話了？呵呵。這種事還真有趣。記錄中是說英雄的武器有完全的自我意識，還可以像人一樣說話，以前還不以為然現在看來是真的啊。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "真的是矛的聲音的話有必要認真聽。依#p1201001#的話一定要回想起來#p1201001#的記憶。怎樣才能回想記憶呢？啊，這麼一想，想起一個想法可以用在像這次這樣有線索的事上。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "往鄉村的左邊直走會有一個被寒冰的絕壁堵著的地方。在那個絕壁上有一個冰洞穴…那洞穴裡有用冰做的鏡子，那就是所謂的#b#m140030000##k。"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "很久以前一個瑞恩族的人所製作的神祕的鏡子，可以看你想見到的一切，因此叫做#b心願之鏡#k。但也因為能見到所有想見的東西，它的使用方法也比較困難。"
+      },
+      "4": {
+        "_dirType": "string",
+        "_value": "這鏡子只能見到與自己直接相關的事物。其中抽象的可能不行，一定要有具體的物件。只要強烈去想，與物件所相關的事物就能呈現在眼前…"
+      },
+      "5": {
+        "_dirType": "string",
+        "_value": "先前你的記憶太抽象，且範圍又廣大，因此無法使用心願之鏡。但這次有\"矛\"，這個具體的物件，有可能會看見什麼…快去那邊看看吧…"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "別忘了。一定要想起關於自己的正確物件的具體的事。那心願之鏡就會告訴你一些事的。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "啊？難道討厭非科學的方法嗎？你難道不是因為神祕的詛咒，數百年被封印在冰裡的嗎？再仔細想想吧…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "往鄉村左邊直走有一個洞，洞裡有個用冰做的鏡子。在鏡子前透過傳送點使用心願之鏡到想看的一切。"
+          }
+        },
+        "quest": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒記起我？哼。你怎麼這樣對我？"
+          }
+        }
+      }
+    }
+  }
+}

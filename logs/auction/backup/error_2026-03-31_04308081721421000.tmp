@@ -1,0 +1,16 @@
+2026-03-31 09:50:29.051 ERROR --- [AuctionPartition-13-Worker-2] : [AuctionPartition-13] Exception processing packet for SessionId: 3e07ce3c. 
+All Bytes: CA 8F 19 A4 07 00 00 00 00 00 00 00 
+java.lang.RuntimeException: Buffer underflow: requested 4, but only 0 available.
+	at com.ms.common.net.endian.InPacket.decode4(InPacket.java:86)
+	at com.ms.auction.net.external.handler.AuctionHandler.handlePacket(AuctionHandler.java:324)
+	at com.ms.auction.net.external.handler.AuctionHandler.handlePacket(AuctionHandler.java:33)
+	at com.ms.auction.net.external.AuctionDispatcher.handleSinglePacket(AuctionDispatcher.java:57)
+	at com.ms.common.net.external.router.PacketDispatcher.processSessionWork(PacketDispatcher.java:199)
+	at com.ms.common.net.external.router.PacketDispatcher.workerLoop(PacketDispatcher.java:143)
+	at java.base@17.0.10/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base@17.0.10/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base@17.0.10/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base@17.0.10/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+	at org.graalvm.nativeimage.builder/com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:775)
+	at org.graalvm.nativeimage.builder/com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:203)

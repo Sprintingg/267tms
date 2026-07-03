@@ -1,0 +1,174 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[墮落城市] 第一個委託"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽說後街吉姆有了得要委託我的事情。 去找一下他吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "得要調查在墮落城市地鐵站裡的垃圾桶。 說主要以在#b#m103020100#的垃圾桶#k 為主，得趕快確認一下。\n\nTip。 在去調查的路上，去聽取在地鐵售票處的地鐵站服務員的煩惱吧。 \n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "雖然翻找了地鐵站的垃圾桶，但沒有發現可疑的地方。"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "q2857"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "28"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "374"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "43"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2856"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052002"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "2857"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1111"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "374"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這是給你的第一個委託。 沒問題吧？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那好，去調查地鐵裡的垃圾桶吧。 仔細調查有無可疑的地方。  #b#m103020100##k地區裡的#b垃圾桶#k都檢查一遍，應該就可以了。 對了，去的路上順道再去看看地鐵站服務員。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "接受委託還想挑三揀四嗎？ 那樣可不行哦。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "發現什麼可疑的地方了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯，垃圾桶裡什麼都沒有…難道情報有誤..？ 不管怎麼說，辛苦你了。 那就快去。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b#m103020100##k地區的垃圾桶，還沒有都調查完嗎？ 像你這樣拖拖拉拉的?我很有可能會找其他人哦。 快些去辦。"
+          }
+        }
+      }
+    }
+  }
+}

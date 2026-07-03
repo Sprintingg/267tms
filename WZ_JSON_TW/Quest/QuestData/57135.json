@@ -1,0 +1,170 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[戰國時代 劍豪] 陰謀的蛛絲馬跡３"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "57"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "史菲魯納認為繼續進行調查會比較好。與史菲魯納討論之後建立具體調查的計畫吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "史菲魯納說到公園的最深處，也就是雲彩公園V那裡去調查看看怎麼樣。到雲彩公園V清除日光精靈之後尋找織田軍的蹤跡看看吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "雖然日光精靈真的是一種非常暴躁的怪物，在他們身上也沒有找到關於織田軍的蹤跡。還是這次的事件真的與織田軍無關嗎？"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o5120000# #a571351#\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "之前目擊我要找的人時，他們在公園裡面移動，這次調查一下公園最深處。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "往裡面去的話，會出現雲彩公園Ⅴ。 在這個地方擊退日光精靈並進行調查。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "希望這次能有線索。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "擊退日光精靈順利嗎? 日光精靈在雲彩公園Ⅴ很多。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2032001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "50"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "57134"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub"
+      },
+      "job_TW": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "4100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "4110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "4111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "4112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "4113"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "4114"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2032001"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q57135e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "5120000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "200"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

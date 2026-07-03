@@ -1,0 +1,344 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "1001011 어퍼 차지 / 1121015 인사이징"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "upperCharge"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "1001011"
+          }
+        }
+      },
+      "effect1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            },
+            "socketName": {
+              "_dirType": "string",
+              "_value": "None"
+            }
+          }
+        }
+      },
+      "effect2": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          }
+        }
+      },
+      "extraAttackZone": {
+        "_dirType": "sub"
+      },
+      "sound2": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "1121015"
+          }
+        }
+      },
+      "ResetAirJumpCount": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "100+250*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "5"
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "50"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -165,
+          "_y": -300
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 170,
+          "_y": 2
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub"
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "1001011"
+      }
+    },
+    "extraAttackZone": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "SummonZone"
+      },
+      "zoneType": {
+        "_dirType": "string",
+        "_value": "exactSelf"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "duration": {
+          "_dirType": "string",
+          "_value": "2"
+        },
+        "count": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "z": {
+          "_dirType": "int",
+          "_value": "20000"
+        },
+        "searchDistanceY": {
+          "_dirType": "string",
+          "_value": "0"
+        },
+        "floatingZ": {
+          "_dirType": "string",
+          "_value": "Z_EFFECT"
+        },
+        "summonXpos": {
+          "_dirType": "string",
+          "_value": "100"
+        }
+      },
+      "zones": {
+        "_dirType": "sub",
+        "attackZone": {
+          "_dirType": "sub",
+          "LayerSlots": {
+            "_dirType": "sub",
+            "Slot0": {
+              "_dirType": "sub",
+              "Segment:stand": {
+                "_dirType": "sub",
+                "dir": {
+                  "_dirType": "string",
+                  "_value": "Forward"
+                }
+              }
+            }
+          },
+          "Notifies": {
+            "_dirType": "sub",
+            "extraAttack": {
+              "_dirType": "sub",
+              "TriggerTime": {
+                "_dirType": "string",
+                "_value": "810"
+              }
+            }
+          },
+          "Sections": {
+            "_dirType": "sub",
+            "stand": {
+              "_dirType": "sub",
+              "StartTime": {
+                "_dirType": "int",
+                "_value": "0"
+              }
+            }
+          }
+        }
+      }
+    },
+    "extraAttack": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "250"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "3"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "8"
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "50"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -380,
+          "_y": -310
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 120,
+          "_y": 50
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "useZ": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "z": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "randomHitOrigin": {
+            "_dirType": "int",
+            "_value": "25"
+          }
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "1121015"
+      }
+    },
+    "ResetAirJumpCount": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "ResetAirJumpCount"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "1"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "5"
+    },
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "100+250*x"
+    },
+    "cooltime": {
+      "_dirType": "int",
+      "_value": "4"
+    },
+    "impactY": {
+      "_dirType": "string",
+      "_value": "1000"
+    },
+    "x": {
+      "_dirType": "string",
+      "_value": "250"
+    },
+    "y": {
+      "_dirType": "string",
+      "_value": "3"
+    },
+    "w": {
+      "_dirType": "string",
+      "_value": "8"
+    }
+  }
+}

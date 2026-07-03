@@ -1,0 +1,159 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "general"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "general"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "還記得到目前為止使用過多少瓶藥水嗎？"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "消耗超級藥水來恢復HP達10,000次以上(恢復1以上)"
+    },
+    "keyword": {
+      "_dirType": "string",
+      "_value": "用超級藥水來恢復HP"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "rare"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "20"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "uiForm": {
+        "_dirType": "string",
+        "_value": "basic"
+      },
+      "gauge": {
+        "_dirType": "string",
+        "_value": "submission_info"
+      },
+      "gaugeMissionIndex": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "gaugeSubMission": {
+        "_dirType": "string",
+        "_value": "item_use"
+      }
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "消耗超級藥水來恢復HP 10,000次以上(1以上恢復)"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "item_use": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "int",
+              "_value": "10000"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            },
+            "type": {
+              "_dirType": "string",
+              "_value": "counting"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub",
+            "item": {
+              "_dirType": "sub",
+              "condition": {
+                "_dirType": "string",
+                "_value": "or"
+              },
+              "values": {
+                "_dirType": "sub",
+                "0": {
+                  "_dirType": "sub",
+                  "item_id": {
+                    "_dirType": "int",
+                    "_value": "2000005"
+                  }
+                },
+                "1": {
+                  "_dirType": "sub",
+                  "item_id": {
+                    "_dirType": "int",
+                    "_value": "2000019"
+                  }
+                },
+                "2": {
+                  "_dirType": "sub",
+                  "item_id": {
+                    "_dirType": "int",
+                    "_value": "2000032"
+                  }
+                },
+                "3": {
+                  "_dirType": "sub",
+                  "item_id": {
+                    "_dirType": "int",
+                    "_value": "2001505"
+                  }
+                },
+                "4": {
+                  "_dirType": "sub",
+                  "item_id": {
+                    "_dirType": "int",
+                    "_value": "2022176"
+                  }
+                },
+                "5": {
+                  "_dirType": "sub",
+                  "item_id": {
+                    "_dirType": "int",
+                    "_value": "2022457"
+                  }
+                },
+                "6": {
+                  "_dirType": "sub",
+                  "item_id": {
+                    "_dirType": "int",
+                    "_value": "2022720"
+                  }
+                },
+                "7": {
+                  "_dirType": "sub",
+                  "item_id": {
+                    "_dirType": "int",
+                    "_value": "2023236"
+                  }
+                }
+              }
+            },
+            "inc_hp": {
+              "_dirType": "sub",
+              "min": {
+                "_dirType": "int",
+                "_value": "1"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

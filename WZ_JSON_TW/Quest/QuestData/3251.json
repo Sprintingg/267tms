@@ -1,0 +1,190 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[玩具城] 工廠長卡霍的失誤"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "36"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去找#b#m220020300##k的#b工廠長卡霍#k。正在找解決方法…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "把不小心產出的#r#o4230111##k和#r#o4230112##k各打倒#r80隻#k. 但是, 是這爺爺不小心怎麼看起來很開心...? 氣氛關係嗎..."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": " 受#b工廠廠長卡霍#k的委託各打倒了#r#o4230111##k和#r#o4230112##k #r80隻#k. 恩... 酬勞也不錯呢."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o4230111# #a32511#\r\n#questorder1##o4230112# #a32512#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 701,472\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "701472"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2040015"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "110"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2040015"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4230111"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "80"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4230112"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "80"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "701472"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "呵呵呵~在那裡的你。想不想打工啊？我給你豐厚的酬勞。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "很好。工作不算太困難。我先來自我介紹。我是#b廠長卡霍#k。管理此地工廠的所有工作。因此我將對工廠付出所有一切。所以啊..天空上繁星點點的某一天….就是那！一！天！"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "我因為太累了不小心睡著了問題就從那時候開始。如果好好的躺著就沒有問題了，可是我的手卻讓工廠進入緊急啟動的狀態。\\n\n#e所！以！啊！#n\\n\n我睡著時不小心按到那個按鈕了..呃呃呃~"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "聽說那時藍色機器人生產過多才導致工廠變得一塌糊塗。所以幫忙消滅#r藍色機器人#k和#r紅色機器人#k各#r80隻#k。酬勞不會少。就拜託你了。呵呵呵～"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "酬勞很豐厚喔…不想要嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哦~多虧你，看起來好多了。喀喀~ 辛苦了。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好…我說過會給你優渥的獎勵…喜歡嗎？總之，謝謝你。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "幫忙打倒 #r藍色機器人#k和#r紅色機器人#k各#r80隻#k ."
+          }
+        },
+        "quest": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "幫忙打倒 #r藍色機器人#k和#r紅色機器人#k各#r80隻#k ."
+          }
+        }
+      }
+    }
+  }
+}

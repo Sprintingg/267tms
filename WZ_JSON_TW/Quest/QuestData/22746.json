@@ -1,0 +1,269 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[凱內西斯] 奈蘿的訓練提議 1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "112"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4000007:# #t4000007:# #c4000007# / 10\r\n#questorder1##o2230100# #a227461#\r\n"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b奈蘿#k似乎相當的興奮。好像是關於協助修練的部分，跟她對話看看。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "第一個對象是#b火獨眼獸#k，擊敗#b50隻#k火獨眼獸，並收集#b尾巴 10個#k。與其說是修練，不如說解奈蘿的嘴饞才是真正的目的…不過也沒差。\r\n\r\n最接近的狩獵場似乎是#b林木飄舞之處#k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "完成火獨眼獸的狩獵，確實感受到自己變強了。如果想要繼續其他修練，請和#b奈蘿#k對話。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "7604"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1531009"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "23"
+      },
+      "QuestOrOption": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q22746s"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "22745"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "14200"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "14210"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "14211"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "14212"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "14213"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "14000"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "14214"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1531009"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q22746e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000007"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2230100"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "7604"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000007"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "d"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "d"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "d"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "d"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "d"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "狩獵50隻火獨眼獸，並收集火獨眼獸的尾巴 10個回來！"
+          }
+        }
+      }
+    }
+  }
+}

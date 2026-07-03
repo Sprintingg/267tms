@@ -1,0 +1,214 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[[鏡子世界] 武陵] 桃醫仙的詭異藥水1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "72"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "桃花仙境奇人桃醫仙,和善的打了招呼.不知道為什麼有股不祥的預感,但還是先跟他說話吧."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "桃醫仙製作的奇怪藥水.說是只要喝下去頭腦就會變聰明.雖然覺得有點可疑,但他應該也不至於要害人吧?"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "喝了桃醫仙給了詭異紅色藥水,結果就變成深山人蔘了."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i2210116:##t2210116:##c2210116#/0\r\n"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "[村莊]桃花仙境"
+    },
+    "deleteItem": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "int",
+        "_value": "2210116"
+      }
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2440004"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "138"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "40934"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "10100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "10110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "10111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "10112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "10113"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "10114"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2440004"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q41160e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2210116"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2210116"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "resignRemove": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "喂,#h0#!這麼急著去哪?有空的話要不要跟我聊聊?每天都一個人在實驗室,所以很無聊."
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "其實我最近做了一個很厲害的東西~就是...只要喝下去頭腦就會變好的藥水!怎麼樣?不覺得光聽名字心臟就砰砰跳嗎?你如果知道我為了做這個有多努力的話,肯定會想流淚的."
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "你與我之間一定有著什麼樣的差別~所以,我特別為你準備了這#r藥水#k給你當禮物.不不不,別拒絕我.就在這裡馬上把他給喝了吧."
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "感覺你很面熟!"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "不要怕,趕快進去.去吧~"
+          }
+        }
+      }
+    }
+  }
+}

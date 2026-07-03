@@ -1,0 +1,125 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "battle"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "boss"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "[血腥女王]臉型改變前"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "5分鐘內混沌血腥女王擊殺"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "unique"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "40"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "uiForm": {
+        "_dirType": "string",
+        "_value": "basic"
+      },
+      "gauge": {
+        "_dirType": "string",
+        "_value": "submission_info"
+      },
+      "gaugeMissionIndex": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "gaugeSubMission": {
+        "_dirType": "string",
+        "_value": "mob_kill"
+      }
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "5分鐘內混沌血腥女王擊殺"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "mob_kill": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            },
+            "type": {
+              "_dirType": "string",
+              "_value": "counting"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub",
+            "mob": {
+              "_dirType": "sub",
+              "mob_id": {
+                "_dirType": "sub",
+                "condition": {
+                  "_dirType": "string",
+                  "_value": "or"
+                },
+                "values": {
+                  "_dirType": "sub",
+                  "0": {
+                    "_dirType": "int",
+                    "_value": "8920000"
+                  },
+                  "1": {
+                    "_dirType": "int",
+                    "_value": "8920001"
+                  },
+                  "2": {
+                    "_dirType": "int",
+                    "_value": "8920002"
+                  },
+                  "3": {
+                    "_dirType": "int",
+                    "_value": "8920003"
+                  }
+                }
+              }
+            },
+            "fieldset": {
+              "_dirType": "sub",
+              "fieldset_elapsed_time": {
+                "_dirType": "sub",
+                "min": {
+                  "_dirType": "int",
+                  "_value": "0"
+                },
+                "max": {
+                  "_dirType": "int",
+                  "_value": "300000"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

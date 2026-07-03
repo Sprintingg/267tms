@@ -1,0 +1,213 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2032000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "72"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3086"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2032000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3230200"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4230106"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "110050"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哈囉。我在旁邊聽到你跟 #p2032001#聊天的內容。你不能煩 #p2032001#。他是透過冥想正在思考可拯救天空之城的方法。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "其實#p2032001#老早預感到了此事，並研究了各種原因。現在還沒得到正確答案，但覺得天空之城的重量也是原因之一。所以我有事想麻煩你，你能幫我的忙嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "天空之城的重量逐漸變重，這都是因為怪物。怪物的數量增加太多。當務之急是減輕天空之城的重量，減緩掉落的速度。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "現在馬上消滅 #o3230200#, #o4230106# 50隻。要到這程度 ， 天空之城的重量才會減少。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我只是為擋住天空之城的墜落才想拜託你的..."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你回來了！我已經透過一些人聽說你的表現了。託你的福，怪物的數量已經明顯的減少了。真的很厲害。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "通過你的幫助天空之城的墜落速度雖然減慢了，但仍然在漸漸墜落，到底是什麼原因？#p2032001#還在研究中。我真擔心。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "我拜託的事進行得還順利嗎？#b#o3230200#、#o4230106##k分別抓50隻，這樣會花一點時間吧？"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[天空之城] 減輕天空之城的重量"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "天空之城的危機"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在#p2032001#家中見到了身分不明的女孩, 女孩說天空之城逐漸下降的原因是雲上庭園的怪物數量增加太多, 所以委託消滅#r#o3230200#, #o4230106##k各#b50隻."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "按照在#p2032001#見到的女孩的委託，除掉了星光精靈和月光精靈各50隻。天空之城沉降的速度雖然減慢了…但天空之城的危機還沒消失。可是這個女孩子是誰？好像很清楚天空之城面臨的危機…再去對話吧？"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 110,050\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "34"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去找在#p2032001#家見過的女孩子對話。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o3230200# #a30871#\r\n#o4230106# #a30872#\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "110050"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

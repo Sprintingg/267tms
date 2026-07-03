@@ -1,0 +1,233 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[每週任務]持續完成委託的報答"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "105"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "每當幫忙完成委託時，機器人的偵查就會更為順利，聽說還能收集到稀有的物品。\r\n#b* 與區域無關，每當完成４次委託時，會配發#t4001842#作為報答。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#b完成４次委託，獲得稀有物品作為報答。"
+    },
+    "summary": {
+      "_dirType": "string",
+      "_value": "#b[每週可以進行１次]#k"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#委託完成#R39100ExFCRef39160# / 4\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#i4001842:# #t4001842:# 20 個"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "#m310070000#"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在這個地方完成委託時，機器人的偵查就會更為順利，聽說還能收集到稀有的物品。\r\n#b* 每完成４次委託時，會配發#t4001842#作為報答。"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "dailyAlarm": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "1|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "except": {
+        "_dirType": "sub",
+        "lvmin": {
+          "_dirType": "int",
+          "_value": "1"
+        }
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001842"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2155000"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "39160"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q39160s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "190"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "start"
+          }
+        }
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "39204"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2155000"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "39100"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q39160e"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "4"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "委託完畢"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "FC"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "充分完成委託時\\n會給予對應的獎勵。\\n看起來還沒完成４次呢。\\n再加把勁吧，哈哈哈。"
+          }
+        }
+      }
+    }
+  }
+}

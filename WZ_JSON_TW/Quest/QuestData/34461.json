@@ -1,0 +1,200 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[阿爾卡娜]前往森林深處"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "277"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "已將草笛放回原位，這就來找下一個天然物吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "已將草笛放回去了，出發去尋找下一個天然物吧。接下來是找回藤條豎琴的旅程。\r\n在#b#m450005000##k循著#r右邊的路#k往#b#m450005200##k移動吧。然後和在那裡等待的#r小精靈#k商量一下吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "雖到達了森林深處，但好像有什麼嚴重的誤解。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "8"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "225"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "7683396"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "225"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003306"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34460"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q34461s"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003307"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q34461e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "7683396"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "現在開始動身去找下一個自然物吧？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yesEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "下一個目的地是森林深處。去那裡吧。"
+          },
+          "npcID": {
+            "_dirType": "int",
+            "_value": "3003350"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "現在到這裡好像還有什麼話要說？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嗯……，好不容易才到的呢，到底是什麼事情……，樹精靈們到底為什麼……"
+      },
+      "yesEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#b(把剛剛發生的事情跟小精靈說吧。)#k"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "下一個目的地是森林深處。去那裡吧。"
+          }
+        }
+      }
+    }
+  }
+}

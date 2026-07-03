@@ -1,0 +1,235 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 音樂盒的材料"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "將樂譜交給黃金富豪時，問他為了老爺爺月妙的心願可否暫時出借，但是黃金富豪說樂譜太珍貴無法出借，就提議將樂譜的曲子放在音樂盒內帶去。\\n如果收集音樂盒的材料，就可以幫忙製作音樂盒…擊倒怪物收集音樂盒的材料吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "黃金富豪看到失而復得的樂譜後，他說雖然很感謝找到了樂譜，但是正本不能出借，所以提議把月光小夜曲放在音樂盒帶走。收集製作音樂盒的材料音樂盒晶片後，交給了黃金富豪。"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "月光小夜曲"
+    },
+    "order": {
+      "_dirType": "string",
+      "_value": "4"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4032828:# #t4032828:# #c4032828# / 10\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 500\r\n可進行 '音樂盒內的月光小夜曲' 任務\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "500"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "500"
+      },
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "10870"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032828"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "我好像在作夢一樣能夠再度看到這樂譜。那麼現在給你看這樂譜就可以了嗎 ？\\r\\n#L0##b老爺爺月妙想把這首歌給小月妙聽。你可以把這樂譜借我幾天嗎？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "很抱歉。我只是答應你讓你看看樂譜而已。如果借給你之後，又把樂譜遺失的話那該怎麼辦呢？那這樣好了。如果只是想聽歌曲的話，我可以把這樂譜的歌曲收錄到音樂盒給你。但是，你需要先收集音樂盒的材料。這種交易應該很公平吧？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這樣我們就成交了。請從怪物那裡收集 #b音樂盒晶片#k來吧。所有怪物都會持有。#b10個#k左右就很足夠了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你不滿意這麼公平的交易那我也沒辦法嚕。請你記住。若想要得到必須先有付出。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "辛苦你了。已經收集了我說的所有材料。請稍候一下就把音樂盒做給你。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請從怪物那裡收集 #b音樂盒晶片#k來吧。所有怪物都會持有。#b10個#k左右就很足夠了。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請從怪物那裡收集 #b音樂盒晶片#k來吧。所有怪物都會持有。#b10個#k左右就很足夠了。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2084001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201010040000"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201009150000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201009080000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201009150000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "10868"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2084001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032828"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

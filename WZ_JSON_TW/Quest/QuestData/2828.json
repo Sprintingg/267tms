@@ -1,0 +1,210 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 煉金術初級者"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "向索非亞詢問強化變身藥水的方法。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "翻閱半天書本的她說，想要製作強化的變身祕藥，就需要火肥肥的尖牙50個。\r\n據說#m 102030300#、#m102030400# 地區有很多火肥肥，去那裡消滅火肥肥150隻後，收集尖牙來吧。\r\n\r\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "給索非亞送去火肥肥的尖牙50個。 能做好強化的變身祕藥嗎？"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000024:# #t4000024:# #c4000024# / 50\r\n#o3210100# #a28281#\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "35838"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022100"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "55"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2827"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022100"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000024"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3210100"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "150"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "35838"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000024"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "正常"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "阿，在這裡耶！上面寫著強化變身祕藥所需要的材料。 需要的材料有，嗯．．．這不像是我的筆跡耶？需要火肥肥尖牙50個。 等你拿來後我可以幫你製作強化的變身祕藥。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "火肥肥通常在 #m 102030300#， #m102030400# 地區活動。 #b擊倒火肥肥150隻#k之後 #b收集火肥肥尖牙 50個#k就可以了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果沒有材料即使是最優蜂蜜的煉金術師也無法製作出任何東西。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你有帶來火肥肥尖牙50個來嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "啊我好緊張。 等等。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有收集到火肥肥尖牙 50個嗎？"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇家騎士團] 黑暗的空間"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[轉職]"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "為了抓住黑暗魔法師部下，在伸手的瞬間轉到了未知空間。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "空曠的地方只有我自己。 \r\n從哪裡傳來鷹眼的聲音？"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "聽到鷹眼的吶喊醒過來後，回到了原來的空間。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1104300"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q20891s"
+      },
+      "QuestOrOption": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20890"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20895"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "1111"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "1211"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "1311"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "1411"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "1511"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1102112"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "20891"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "dream"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "130000000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "還好嗎？ #h0#?\\r\\n#L0##b嗯？鷹眼大人。怎麼了嗎？剛才一個人在奇怪的空間裡。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "我到的時候，你已經失去意識。不會是在睡覺吧？應該是我要問是什麼事？\\r\\n#L0##b看到黑色翅膀了。 正要伸手去抓的時候，就到了奇怪的空間。#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "你先回去後把這件事報告給那因哈特.這週邊我會自己觀察的.請回到 耶雷弗.請不要在這防礙我 …還有不要忘記 !你得生命恩人是我 , 鷹眼.哈哈哈.\\r\\n(接收後,移動到 耶雷弗)"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "嗯。這裡是哪啊。要怎麼出去？"
+          }
+        }
+      }
+    }
+  }
+}

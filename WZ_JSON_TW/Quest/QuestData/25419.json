@@ -1,0 +1,214 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[幻影俠盜] 調查黑色翅膀的幹部"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "9"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#m104000000#的情報商人#p1002104##k新得到的情報會是什麼…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "剛好想去找黑色翅膀的幹部調查一些事。機會不錯。到#b#m100040000##k找到#p1404000#，看看他對黑魔法師瞭解多少。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "見到了#o9300500# #p1404000#…粗魯地。哈啊~只是想說幾句話，怎麼怎樣？"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "25419"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "4980"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "25"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002104"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q25419s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "25418"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2400"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2410"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2411"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2412"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2413"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "2414"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1404000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9300500"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "4980"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "你，你幹嘛？某人突然進入別人的家裡打了正在裡面的人嗎？嘖，我看來很好欺負嗎？這傢伙那傢伙大家…\\r\\n#L0##b黑色翅膀的幹部，#p1404000#對吧？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "對是對，但沒什麼關係啊！反正任務都失敗了！是#p1101000#騎士團是#p1404002#是精靈遊俠，現在大家都受夠了！我不管是黑色翅膀或是什麼了！我要休息一陣了啊！"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你還沒去#o9300500#的基地啊？是#o5130101#的寺院那邊"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "都不需要了。切。大家都太強勢了。"
+          }
+        }
+      }
+    }
+  }
+}

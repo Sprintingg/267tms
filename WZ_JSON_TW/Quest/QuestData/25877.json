@@ -1,0 +1,257 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[天使破壞者] 收回消失的糧食2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "23"
+    },
+    "selfStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "對了就是變節的祭司偷走了 #m400000000#的食材吧..."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "從#o2400010#、#o2400011#、#o2400012#那裡找到 #t4033348#之後交給位於 #m400000000#的 #p3000006# 大嬸吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "雖然量沒有很多但 #p3000006# 大嬸還是很高興。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4033348:# #t4033348:# #c4033348# / 50\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 22,000\r\n可進行 '新世界的旅行' 任務\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "22000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "35"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "25876"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "6500"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "6510"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "6511"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "6512"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "6513"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "6514"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3000006"
+      },
+      "dressChanged": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033348"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "22000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033348"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "對了。對了，背叛的祭司們還竊取了 #m400000000#的食材吧？ 得找回那些食材，然後物歸原位才行。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "向#o2400010#、#o2400011#、#o2400012#取得#t4033348#，然後交給 #m400000000#的#p3000006#阿姨。只要帶50個就可以了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我的正義感跑去哪了呢..."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "今天有什麼好事情嗎？\\r\\n#L0##b(交出糧食袋。)#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "天啊。這個... 是裝有食材的袋子。而且還這麼多..."
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "對。謝謝。多虧你的幫忙，#m400000000# 情況應該會變得更順利。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "今天有什麼好事嗎？"
+          }
+        }
+      }
+    }
+  }
+}

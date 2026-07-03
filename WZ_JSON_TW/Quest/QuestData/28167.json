@@ -1,0 +1,290 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[職業] 調查供水管"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#m103000000##k的#b#@9201120:##k說問題可能出在供水管。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "請調查消防栓並找出問題的原因。\\n\\n前往#b#m102040000##k調查消防栓，並帶回三個#r#t4001340##k\\n(使用武器攻擊消防栓)。\\n\\n完成之後，向墮落城市的#b#@9201120:##k回報。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#b#m103000000##k的#b#@9201120:##k說他知道供水管阻塞的原因了。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "summary": {
+      "_dirType": "string",
+      "_value": "調查消防栓並帶回三個#r#t4001340##k。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4001340:##t4001340:##c4001340#/3"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 1,100\r\n可進行 '黏糊糊的綠水靈！' 任務\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "1100"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1100"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001340"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-3"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哇，你很厲害喔！你怎麼那麼快就解決附近的怪物了？\\n好，我們就一起到下水道看看如何？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "喔，下水道阻塞了。\\n等等，我見過這些綠色的垃圾。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請調查消防栓，並幫我找到3個#r#t4001340##k。"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "怎麼會…#b#m102000000##k不是已經擁有足夠的水源了嗎？不妙！聽起來很危急。你可以幫助我找出原因嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝你願意幫忙。\\n請調查#b#m102040000##k的消防栓。\\n\\n如果沒有問題的話，那可能是#r#t4001340##k的緣故。請調查消防栓並帶回3個垃圾。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "真有意思，我還以為你才是需要幫忙的人呢。"
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9201120"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001340"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9201120"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "40"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "28166"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "120"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "130"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "111"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "121"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "131"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "112"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "122"
+        },
+        "9": {
+          "_dirType": "int",
+          "_value": "132"
+        },
+        "10": {
+          "_dirType": "int",
+          "_value": "1100"
+        },
+        "11": {
+          "_dirType": "int",
+          "_value": "1110"
+        },
+        "12": {
+          "_dirType": "int",
+          "_value": "1111"
+        },
+        "13": {
+          "_dirType": "int",
+          "_value": "1112"
+        },
+        "14": {
+          "_dirType": "int",
+          "_value": "2100"
+        },
+        "15": {
+          "_dirType": "int",
+          "_value": "2110"
+        },
+        "16": {
+          "_dirType": "int",
+          "_value": "2111"
+        },
+        "17": {
+          "_dirType": "int",
+          "_value": "2112"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

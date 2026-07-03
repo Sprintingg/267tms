@@ -1,0 +1,140 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[偵探雷夫的事件日誌] 那是那個，這是這個。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "226"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4036493:# #t4036493:# #c4036493# / 25\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "我有依照馬羅尼所命令的指示進行了行動。在#b鬥陣俱樂部的入口#k跟馬羅尼進行對話後，確認關於參加比賽的事情。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "馬羅尼說要做為比賽的參加費用，請我去收集 #b緩動的尾巴#k。去#b危險的鬥陣俱樂部3#k狩獵幽靈野狗吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "馬羅尼雖然許可我參加，但也有警告別做草率的事情。"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q37115x"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "175"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "179"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3004042"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q37115s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "37114"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3004042"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q37115e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036493"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "25"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "緩動的尾巴不夠呢。不是說去 #b危險的鬥陣俱樂部3#k就可以獲得嗎？"
+          }
+        }
+      }
+    }
+  }
+}

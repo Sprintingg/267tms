@@ -1,0 +1,136 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇家騎士團] 教你打獵方法"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "想知道有關打獵的情報嗎？快去找#b奇加#k吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1102005#簡單告知了打獵的方法，並要求去狩獵一隻#r#o100120##k，說這是考試。他說按#bCtrl鍵#k就能攻擊怪物。快試試吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "打完#o0100120#回來了。#p1102005#說如果繼續往左走，就能見到他的兄弟#p1102006#。"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1102005"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q20011s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20010"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "1000"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1102005"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q20011e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9300328"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有消滅#r#o100120#1隻#k嗎？不要害怕，接近#o0100120#當武器快要接觸它的時候，點擊幾次#bCtrl鍵#k就能容易消滅它。快去吧。"
+          }
+        }
+      }
+    }
+  }
+}

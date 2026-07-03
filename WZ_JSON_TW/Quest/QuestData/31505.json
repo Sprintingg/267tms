@@ -1,0 +1,277 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[* 赫力席母] 衝破地下洞穴 - 地下1樓"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "259"
+    },
+    "selfComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o2400113# #a315051#\r\n#questorder1##o2400114# #a315052#\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "關於下一個任務與#b#p3001100##k對話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b#p3001100##k說 #b在特雷格洛實驗室地下1樓#k擊倒幽靈 #r#o2400113#、#o2400114##k #r#o2400118##k各 40隻之後重新再通訊。\n<特雷格洛地下洞地下1樓>\n#m401052002#"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#b#p3001100##k說試著進入地下 2樓。\r\n\r\n在#r< <#b#m401052003##r試著進入往 #b#m401052100##r去的 *傳點*吧。>>"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 415,200\r\n可進行「地下洞突破-地下2樓」任務\r\n"
+    },
+    "selfStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "119"
+      }
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "16"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "415200"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q31505s"
+      },
+      "notInTeleportItemLimitedField": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31504"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q31505e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2400113"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "40"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2400114"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "40"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "401052002"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "415200"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub"
+      },
+      "sayEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "嗯，在我們進行研究的同時，請你進入#r特雷格洛#k的地下洞穴，展開正式的攻略吧。"
+          },
+          "npcID": {
+            "_dirType": "int",
+            "_value": "3001100"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#r特雷格洛#k的實驗室是由3個樓層所構成的。他幾乎是維持著在赫力席母被佔領之前的構造，因此我們也可以大致了解裡面的情況。"
+          },
+          "npcID": {
+            "_dirType": "int",
+            "_value": "3001100"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "請你消滅在#b特雷格洛的地下洞穴 1樓#k的#r#o2400113#、#o2400114##k各#b40隻#k後，請利用發訊機與我們聯絡。\\r\\n#r#e(接收時移動至該原野)\\r\\n\\r\\n#r#e(接收時移動至該原野)\\r\\n"
+          },
+          "npcID": {
+            "_dirType": "int",
+            "_value": "3001100"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "yesEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "如果留下怪物單槍匹馬地突破，後面跟上的人可能無法順利進入。請儘量消滅敵人。"
+          },
+          "npcID": {
+            "_dirType": "int",
+            "_value": "3001100"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "noEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "在研究進行的過程中，也要繼續攻略城堡。時間不多了。"
+          },
+          "npcID": {
+            "_dirType": "int",
+            "_value": "3001100"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  }
+}

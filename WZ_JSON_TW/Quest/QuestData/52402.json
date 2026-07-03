@@ -1,0 +1,197 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[職業] 為新進洪武團員的修煉2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "完成初級階段。現在進入中級。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "若要成為合格的洪武團員必須認真修煉。前往中級修煉場擊倒#r#o9410154##k15隻"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "累積了經驗。等級也提升了。但這樣還是不夠"
+    },
+    "selfStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "selfComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "52402"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "1200"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1200"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這麼快就要進入到中級了嗎？有獲得新的感受？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "那麼就到中級訓練場去再次接受訓練吧。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "只要在消滅#r#o9410154#15隻#k，應該就足夠了吧！"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好，要變的更加強悍"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嘿…你，不，是我…初級都已經能夠通過了，那中級還有什麼好感到害怕的呢？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "擊退了15隻了。現在那些傢伙，應該也充分地被擊退了。可以前往下一個階段了吧？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "我的耐力就只有這種程度嗎？"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "subJobFlags": {
+        "_dirType": "int",
+        "_value": "1024"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "52400"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "0"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9410154"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "15"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

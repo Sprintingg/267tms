@@ -1,0 +1,134 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[Friend's Story] 學校危機2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "93"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o9101056# #a330101#\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "為了一次打倒產出的3個的垃圾區域, 向艾爾文詢問."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "消滅圖書室的垃圾60隻，然後和艾爾文說話吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "打倒圖書室垃圾區域. 詢問艾爾文下一個地方."
+    },
+    "friendsStory": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1530035"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q33010s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "33009"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1530035"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q33010e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9101056"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "60"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "垃圾還沒消滅完嗎？必須消滅60隻左右。"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1102000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20002"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20010"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20011"
+          }
+        },
+        "3": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20012"
+          }
+        },
+        "4": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20013"
+          }
+        },
+        "5": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20014"
+          }
+        },
+        "6": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20015"
+          }
+        },
+        "7": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20016"
+          }
+        },
+        "8": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20017"
+          }
+        },
+        "9": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20018"
+          }
+        },
+        "10": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20019"
+          }
+        },
+        "11": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20020"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "1000"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1102000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "100120"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "都準備好了嗎？那就開始修煉吧。首先從簡單的開始。這個島上的提提當中最弱的是 #m0100120# 。開始獵捕#m0100120# 5隻可以嗎 ？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "利用左邊的傳送門到達修煉森林1，那裡有許多的 #m0100120#。捕獲他們不會很困難。那麼，就辛苦你嚕。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你覺得很困難嗎？不要擔心。因為他們都很弱。若有危險的話記得要喝藥水。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "80"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "已經狩獵了#o0100120#5隻。可以嗎？不是很困難吧？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那麼預備好進行下一個修煉就再跟我講話吧。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有狩獵#r#o0100120#5隻#k嗎？若去#b#m130010000##k就會有超多的啊…"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "都準備好了嗎？那就開始修煉吧。首先從簡單的開始。這個島上的提提當中最弱的是提諾#m0100120#。開始獵捕#o0100120#5隻可以嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這裡#b#m130010000##k有很多#o0100120#。捕獲他們不會很困難。那麼就辛苦你嚕。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你覺得很困難嗎？不要擔心。因為他們都很弱。若有危險的話記得要喝藥水。"
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇家騎士團] 奇酷的第一個修煉"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "接受#b修煉教官#p1102000##k的訓練。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "第一個修煉是在耶雷弗的提提當中獵捕最弱的#r#o0100120##k5#r隻#k。開始狩獵#b#m130010000##k的#o0100120#吧。\\n\\n#o0100120##r#a200031##k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "捕獲#o0100120#5隻後返回。接受下一個修煉。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "80"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

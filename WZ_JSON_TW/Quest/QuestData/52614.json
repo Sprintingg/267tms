@@ -1,0 +1,205 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇帝的陵]掃除皇帝的聖物1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "61"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "先去找至尊步問問要如何進入皇帝的陵去找皇帝"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "先擊退皇帝的其中一個聖物兵馬俑(兵)吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "去找高材打聽關於下一個聖物的內容吧。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o9410220# #a526141#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 298,796\r\n可進行 '[皇帝的陵]掃除皇帝的聖物2' 任務\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "298796"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "298796"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "來吧!讓我來說說關於皇帝的陵的事情吧，你要聽嗎?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "皇帝的陵裡面有兩個皇帝的聖物在保護他，所以要先擊退他們才能去找到皇帝。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "第一個聖物是 #b#o9410220##k第二個是 #b#o9410222##k。首先先擊退#b#o9410220##k然後再去找高材聽聽關於第二個聖物的詳細說明。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "再次跟我說話的話我就讓你進入皇帝的陵。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "要聽完我的說明才可以進入皇帝的陵，改變想法的話在過來吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "擊退兵馬俑了嗎?"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "擊退兵馬俑了阿。首先為了要開啟下一道關卡要記下咒語先等我一下。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒去找 #p9330231#嗎？"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請擊退兵馬俑之後再過來。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330235"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "125"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201301160000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201301160000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "52613"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330231"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9410220"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

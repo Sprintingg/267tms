@@ -1,0 +1,241 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[龍使者，龍魔導士] 一口豬肉"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "7"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "龍可能是只吃肉。所以打獵 #r#o1210100##k給 #p1013000# #b#t4032453##k吧.\\r\\n\\r\\n#i4032453# #t4032453# #b#c4032453# / 3#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p1013000#說#t4032453#似乎有點消化不良…"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "龍要吃什麼呢？向寶貝龍對話吧。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4032453:# #t4032453:# #c4032453# / 3\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1200"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1013000"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q22503s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "22502"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2200"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2210"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2211"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2212"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2213"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "2214"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "2215"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "2216"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "2217"
+        },
+        "9": {
+          "_dirType": "int",
+          "_value": "2218"
+        },
+        "10": {
+          "_dirType": "int",
+          "_value": "2219"
+        },
+        "11": {
+          "_dirType": "int",
+          "_value": "2220"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1013000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032453"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "22504"
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "1200"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032453"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-3"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "噢唔，找到新的食物了？這就是主人說過的#t4032453#？那麼嘗嘗看？啊啊~"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "（咕嚕咕嚕，咕咚）"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "唔…這個味道不差但太硬。好像消化不了。不適合我…"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒找到食物嗎？剛才說的那，那個叫什麼？#b豬肉#k？#b抓肉#k？好奇那個是什麼味道。快找來吧！"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[3500日活動] 請領取楓葉！"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoPreComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "我有禮物要送給參與楓之谷發光的#r3500天活動#k的所有參加者...\\r\\n去找#b楓之谷GM#k吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "向楓之谷 GM領取準備好的3500日禮物 #i1012352##b#t1012352##k吧！"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "參加3500日活動領取到 #i1012352##b#t1012352##k。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "13390"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201301010000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201301010000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "maple"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1012352"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好！  #b#h0##k ！ 真心感謝你參予過去#r3500天的每個活動#k。為了表達這一份感謝，我們準備了一份小小的禮物，你要收下嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "啊... 你現在看起來好像很忙啊。只要你改變心意，隨時都可以再來找我。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我們準備的 #i1012352##b#t1012352##k已經收到了嗎？為了#b#h0##k，我會摘下最漂亮的楓葉且曬乾的。\\n謝謝你如此支持楓之谷。祈願日後楓之谷世界只會出現好的事情。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "道具欄好像不夠充足... 可以請確認一下#b裝備道具欄#k嗎？"
+          }
+        }
+      }
+    }
+  }
+}

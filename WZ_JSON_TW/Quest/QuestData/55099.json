@@ -1,0 +1,126 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[雙十節] 收集香料"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "迎接雙十節龍山寺師傅需要香料. 要不要再次詢問狀況看看呢?"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "迎接雙十節龍山寺師傅需要香料. "
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "收集香料後, 獲得煙火拳套和道具."
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "收集完香料了嗎? 需要100個香料."
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330107"
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "2014100100"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "2014101500"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q55099s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "55098"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330107"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q55099e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034213"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          }
+        }
+      }
+    }
+  }
+}

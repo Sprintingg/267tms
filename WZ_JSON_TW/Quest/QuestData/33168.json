@@ -1,0 +1,142 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[黑暗天堂] 請去找那因哈特。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "102"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "那因哈特在哪裡呢？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "那因哈特在哪裡呢？"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "那因哈特在哪裡呢？"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#尋找那因哈特 (#R33168ExnoRef33168#)\r\n"
+    },
+    "disableAtStartTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "disableAtPerformTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "disableAtCompleteTab": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "每次都拜託你，真的很抱歉。\\r\\n#b（在船內尋找那因哈特。）#k"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1540556"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q33168s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "33167"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1540444"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "33168"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "尋找那因哈特吧"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "no"
+          }
+        }
+      }
+    }
+  }
+}

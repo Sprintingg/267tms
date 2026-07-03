@@ -1,0 +1,130 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "battle"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "field"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "大量消滅有點稀有的[菁英冠軍]"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "消滅菁英冠軍10,000隻"
+    },
+    "parentId": {
+      "_dirType": "int",
+      "_value": "1393"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "unique"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "40"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "uiForm": {
+        "_dirType": "string",
+        "_value": "basic"
+      },
+      "gauge": {
+        "_dirType": "string",
+        "_value": "submission_info"
+      },
+      "gaugeMissionIndex": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "gaugeSubMission": {
+        "_dirType": "string",
+        "_value": "mob_kill"
+      }
+    },
+    "prior": {
+      "_dirType": "sub",
+      "block": {
+        "_dirType": "string",
+        "_value": "hide"
+      },
+      "condition": {
+        "_dirType": "string",
+        "_value": "and"
+      },
+      "values": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "achievement_id": {
+            "_dirType": "int",
+            "_value": "1391"
+          },
+          "achievement_state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "keyword": {
+      "_dirType": "string",
+      "_value": "消滅菁英冠軍"
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "消滅菁英冠軍10,000隻"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "mob_kill": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "int",
+              "_value": "10000"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            },
+            "type": {
+              "_dirType": "string",
+              "_value": "counting"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub",
+            "mob": {
+              "_dirType": "sub",
+              "mob_is_elite": {
+                "_dirType": "int",
+                "_value": "1"
+              },
+              "mob_elite_lv": {
+                "_dirType": "int",
+                "_value": "4"
+              },
+              "mob_id": {
+                "_dirType": "int",
+                "_value": "9101222"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

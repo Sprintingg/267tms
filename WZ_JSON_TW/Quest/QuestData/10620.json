@@ -1,0 +1,191 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "影武者的一級祕密"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽說尤莉亞在收集新出現的影武者的相關情報。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "尤莉亞正在收集突然出現的神祕團體祕花團和影武者的情報，要求去找來自己的情報員們在怪物身上藏下的#b一級祕密#k。竟然是情報員…尤莉亞的影響力真的是超越想像啊…？從怪物身上回收#b一級祕密20個，回去找尤莉亞吧。#k\\r\\n#b每30分鐘可以再執行"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "尤莉亞正在收集突然出現的神祕團體祕花團和影武者的情報，要求去找來自己的情報員們在怪物身上藏下的#b一級祕密#k。竟然是情報員…尤莉亞的影響力真的是超越想像啊…？從怪物身上回收一級祕密20個，交給尤莉亞，獲得了豐厚的謝禮。\\r\\n#b每30分鐘可以再執行"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4032630:##t4032630:##c4032630#/20\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201005100000"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201008111200"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201009151200"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201008111200"
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "30"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q10620e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032630"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032630"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "傳說中的影武者終於現身了！雖然祕花團和影武者依然被籠罩著神祕的面紗，但尤莉亞大人會為您一一揭露其真面目！呵呵呵呵！我的情報員已經從他們那裡挖來的情報，開始向我回報了。#b#h0#！#k您看起來很閒暇，能拜託你做些事嗎？謝禮我會根據我的心情付給你的，絕對不會少的。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我忠實的情報員們已經將有關影武者和祕花團的#b一級祕密#k藏在怪物身上了。如果被其他人知道了就麻煩了。請你去收集那些文書，並將之帶回來交給我。一次收集#b20個#k就可以了。我的情報員們在楓之谷所有的怪物身上都藏了文書，所以你的搜索範圍很廣。所以，有時間的話就去狩獵吧。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "想交給你一些兼職，但卻不知道怎樣抓住機會！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "我忠實的情報員們已經將有關影武者和祕花團的#b一級祕密#k藏在怪物身上了。如果被其他人知道了就麻煩了。請你去收集那些文書，並將之帶回來交給我。一次收集#b20個#k就可以了。我的情報員們在楓之谷所有的怪物身上都藏了文書，所以你的搜索範圍很廣。所以，有時間的話就去狩獵吧。"
+          }
+        }
+      }
+    }
+  }
+}

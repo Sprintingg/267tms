@@ -1,0 +1,197 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[瑪迦提亞城] 製作試藥"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "為了辛苦進行研究的猶利塔，決定要助他一臂之力！不曉得該幫他什麼事情呢？快去問問#b猶利塔#k好了。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "猶利塔需要協助的是關於#b製作試藥#k的工作，需將準備好的液體倒入燒杯內，但聽說必須要依照一定的順序導入液體，不然會前功盡棄！順序是…#b紅、綠、黃、藍、紫色的液體#k！接下來快來製作試藥吧！\\n\\n#i4031798##t4031798##b#c4031798##k/1"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "完成試藥後再向猶利塔報告狀況了！猶利塔對協助他進行研究而向我表達了感謝之意。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "pop": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031798"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我想拜託妳幫我製作試藥，其實試藥的製作需要相當精準的計算，但這部分我已經算好了，所以你只需要顧到速度就好，如何？有把握做好嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "當你往左邊走，會看到三個通往實驗室的門，請你進入#b第一個門#k的話，就會看到一個燒杯，你需要將準備好的液體倒入那燒杯中製作出#b完成的試藥#k，但可不能隨意就把材料混進去。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "你要將拿到的試藥材料，以#b紅色、綠色、黃色、藍色、紫色#k的順序導入燒杯中，若順序弄錯了，就必須從頭開始，因此請你務必要按照順序…是紅、綠、黃、藍、紫！"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "只要注意倒入的順序，想要製作出試藥應該不會很難，那就麻煩你了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "看來你現在沒空吧！沒關係~等你有時間的時候，再來幫我一下吧！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "成功做出試藥了嗎？嗯嗯~很好~辛苦你了。這麼一來就不擔心沒有試藥可進行下一階段的實驗了。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "看來你還沒能成功做出完成的試藥啊！請你加油囉~"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2112014"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031798"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2112014"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "70"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3365"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

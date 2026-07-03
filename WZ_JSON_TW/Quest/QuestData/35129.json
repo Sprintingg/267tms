@@ -1,0 +1,174 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[聯盟任務] 遠征隊任務 - 迷霧中的戰鬥"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "223"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "被困住在迷霧的遠征隊陷入了危險。去狩獵在迷霧中的菁英怪物，並支援遠征隊後，再跟 #p3003564#進行報告吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "被困住在迷霧的遠征隊陷入了危險。去狩獵在迷霧中的菁英怪物，並支援遠征隊後，再跟 #p3003564#進行報告吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "狩獵迷霧中的菁英怪物而成功了遠征隊任務。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#在迷霧中狩獵菁英怪物 #R35121Ex3Ref35129# / 10\r\n"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "10000 心願"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003564"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "35119"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "999"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "not"
+          }
+        }
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201901230900"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201902060000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003564"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "35121"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q35129e"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "10"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "在迷霧中狩獵菁英怪物"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "3"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "在迷霧裡，強力的怪物可能會對遠征隊非常致命。請麻煩去狩獵迷霧中的菁英怪物。"
+          }
+        }
+      }
+    }
+  }
+}

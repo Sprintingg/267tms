@@ -1,0 +1,222 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[黃昏的勇士之村] 收集夢的材料"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "268"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "關於惡夢的事件還沒有結束。開始出現中毒於夢境，無法區分現實和夢境的人。為了治療這些人，應該怎麼做呢？聽聽#b漢斯#k怎麼說吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "漢斯說，為了治癒夢中毒，需要夢的材質。 消滅黃昏的勇士之村的怪物，收集#b夢的材質8個#k吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "收集了所有夢的材質，再次與漢斯對話。他說這應該能治好那些夢中毒的人。但這只是治標不治本的方法，並不能完全斷絕與惡夢的關係。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4033732:# #t4033732:# #c4033732# / 8\r\n"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "185"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "189"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "89350602"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1032001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "185"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q31911s"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31910"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1032001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033732"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "8"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "89350602"
+      },
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "31912"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033732"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-8"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "收集完8個夢的材質了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝，只要有這個，就能治好夢中毒了。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "但歸根究底，這也只是暫時的方法，並不能完全斷絕與惡夢的關係。要想完全根除，得找別的辦法啊….但我也還不知道有什麼辦法。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "如果能多打聽操縱夢境的人，也許會有辦法… 但因為不是軍團長或黑色翅膀，所以沒有什麼特別的線索。"
+        },
+        "3": {
+          "_dirType": "string",
+          "_value": "究竟是什麼樣的人在操縱夢…操縱夢的人…#控制夢想並操縱無意識之人#k…等一下，無意識？ 應該會有辦法。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "自由行動時，在黃昏的勇士之村內收集#b夢的材質#k。 收集#b8個#k左右就可以了。"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[冰原雪域山脈] 禁忌魔法的跡象"
+    },
+    "area": {
+      "_dirType": "string",
+      "_value": "33"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "皮斯特說可以從殭屍的痕跡感覺到禁止的魔法，也說殭屍變多好像跟這禁止的魔法有關。但說樣品不足無法追蹤，所以有請求幫忙尋找樣品 #b#t4000069# 100個#k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "尋找殭屍弄丟的臼齒100個後交給皮斯特了。"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "受詛咒的祭司"
+    },
+    "order": {
+      "_dirType": "string",
+      "_value": "3"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 628,622\r\n可透過「禁忌的祭司」任務進行"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4000069:# #t4000069:# #c4000069# / 100\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "628622"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9073005"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "120"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3188"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9073005"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000069"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "3191"
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "628622"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000069"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-100"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "從殭屍的 #b#t4000069##k那裡偵測到禁忌魔法。一個一個魔法的力量雖然很微弱，如果集中起來就可以追蹤了。總之，先收集 #t4000069# #b100個#k吧。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "都來這裡了會怕嗎?"
+        }
+      },
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "sayEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "有段時間不用擔心殭屍了，辛苦了。但是只有在死亡森林的殭屍，突然會變多的這件事情還是需要調查。\\r\\n#r禁止的魔法#k雖然可以感覺得到，但是太微弱，所以無法追蹤。 總之，殭屍變多的原因應該是這個#r禁止的魔法#k。\\r\\n#L0##b是禁止的魔法嗎？#l\\n#k"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "禁止的魔法#k是因為遠古的貪婪所導致的退位的#b一位大法師#k研究的魔法之一。 你沒有見過死而活動的怪物嗎？ 就是那些和那些殭屍一樣的存在。 讓原本不能活動的東西活動起來的就是這個#r禁止的魔法#k。\\r\\n#L0##b應該能知道為什麼那位大法師會退位。#l\\n#k"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "總之，如果有足夠的樣本，應該就能追蹤禁止的魔法，能幫幫我嗎？"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "收集完樣品了. 可以稍等一下嗎? 調查樣品後, 馬上跟你說."
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "只有這些無法追蹤禁忌魔法。去收集殭屍的臼齒 100個給我。"
+          }
+        }
+      }
+    }
+  }
+}

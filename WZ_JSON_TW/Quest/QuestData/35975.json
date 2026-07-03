@@ -1,0 +1,140 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[古代遺跡帕爾坦] 點燃火爐吧"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "231"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4036534:# #t4036534:# #c4036534# / 30\r\n#questorder1##o2300267# #a359751#\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "三胞胎逐漸邁往更深的地方。\r\n邁往#b#m100051062##k追隨三胞胎吧！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了在火爐生火，必須收集#i4036534##b#t4036534##k#r30個#k。\r\n順便也消滅#b#o2300267##k#r150隻#k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "已收集並交出所有材料。"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q35975s"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1013420"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "35974"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1013420"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q35975e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036534"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2300267"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "150"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "幫我收集在火爐生火所需的#i4036534##b#t4036534##k#r30個#k！\\r\\n順便把妨礙我們的#b#o2300267##k也消滅#r150隻#k就更好了。"
+          }
+        }
+      }
+    }
+  }
+}

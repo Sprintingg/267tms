@@ -1,0 +1,160 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[黑暗天堂] 硬餅乾和星星糖"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "102"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "赫力泰似乎有話要說的樣子。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "赫力泰似乎有話要說的樣子。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "赫力泰似乎有話要說的樣子。"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i2010030:# #t2010030:# #c2010030# / 30\r\n#questorder1##i2010029:# #t2010029:# #c2010029# / 30\r\n"
+    },
+    "disableAtStartTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "disableAtPerformTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "disableAtCompleteTab": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "回去的路上拜託你硬餅乾和星星糖。\\r\\n#b(回去的路上打獵 麻雀小偷，收集硬餅乾和星星糖各 30個後往下一個場所。)#k"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "有什麼事嗎？\\r\\n#b(對… 忘記他需要硬餅乾和星星糖 30個。)#k"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1540554"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q33166s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "33165"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1540555"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q33166e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2010030"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2010029"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

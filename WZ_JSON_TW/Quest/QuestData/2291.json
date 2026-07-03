@@ -1,0 +1,133 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[墮落城市] VIP地區入場"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "28"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "該不會…VIP地區？在101大樓的那VIP地區？快去找#b俊伊#k。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "說蒐集VIP卷的話，就傳送到VIP地區。你說可從101大樓的所有怪物身上得到吧？"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "VIP地區聽說30分鐘才可進入一次。經過30分鐘的話，再次去找#b俊伊#k。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4032521:##t4032521:##c4032521#/10\r\n"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "讓開！這地方不是誰都可以進去的地方。什麼？一定要進去這個地方？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好。這樣的話去蒐集可從101大樓怪物身上得到的#bVIP卷10張#k回來。這樣的話就給你可以使用VIP地區30分鐘。反正，不是因為這樣蒐集5張就可以進去15分鐘，一定要蒐集10張回來。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這樣的話請往後退。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052125"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "35"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2290"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "30"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052125"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q2291e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032521"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[冬日戰歌]往寒冬軍團營地"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p2081000#有話要說。\r\n去確認看看吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2081000#說經過的勇士消滅了出現在#m240000000#的#o9402095#。但對#m240000000#一直找機會。\r\n\r\n打算幫助#p2081000#消滅#b#o9402095##k。\r\n\r\n還有#o9402095#拿著很奇怪的東西。\r\n所以消滅#o9402095#後獲得#i4036034##t4036034#後去找#p9400350#吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p2081000#說經過的勇士消滅了出現在#m240000000#的#o9402095#。但對#m240000000#一直找機會。\r\n\r\n打算幫助#p2081000#消滅#b#o9402095##k。\r\n\r\n還有#o9402095#拿著很奇怪的東西。\r\n所以消滅#o9402095#後獲得#i4036034##t4036034#後去找#p9400350#了。\r\n\r\n#p9400350#說剛好#i4036052##t4036052#的分析也結束了。\r\n感覺都是有召喚魔法的物品。\r\n\r\n打算逆追縱召喚魔法後去找寒冬軍團的營地。\r\n\r\n在寒冬軍團的營地裡去找#b#p9400363##k吧。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4036034:# #t4036034:# #c4036034# / 1\r\n"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoPreComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2081000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "63190"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q63191s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201612070900"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201612280900"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400350"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036034"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q63191e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "把消滅#o9402095#後獲得 #i4036034##t4036034#交給  #p9400350#吧。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "恩，有什麼事嗎？ \\r\\n你找我！？"
+          }
+        }
+      }
+    }
+  }
+}

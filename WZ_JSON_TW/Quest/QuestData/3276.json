@@ -1,0 +1,252 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2012011"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "70"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3275"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2032001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4037257"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "200050001"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4037257"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "121292"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4037257"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "你將破碎的黑色水晶順利轉交給史菲魯納了嗎？史菲魯納沒有大發雷霆嗎？\\r\\n#L0##b你明知道史菲魯納會生氣所以才拜託我的嗎？怎麼會這樣！因為太生氣無法詢問赫拉的下落。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "赫拉的下落…呼呼，什麼都沒聽說嗎？\\r\\n#L0##b什麼話都沒說。聽說若想復原破碎的水晶，需要#t4031051#。史菲魯納的助手…l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "從#b史菲魯納的助手#k那裡聽說的嗎？想修理破碎的水晶…？哈啊～原來如此…那麼請幫我把這個妖精之粉，轉交給史菲魯納。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "直接移動到史菲魯納的家。呼呼，還有請替我問候史菲魯納的助手~"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這不是#t4031051#嗎？ 只要有這個，就能修好這個#b#t4031050##k…！嗯…？ 讓水晶破掉的不是你？ 原來如此…怪物走過來踩到了，也不知道破掉了…呵呵… 在那樣的地方掉下這麼珍貴的東西，應該是克莉爾的錯。 總之，能幫忙到這個程度真的很感謝。 這個東西雖然比較小，但還是感謝你的回報…"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "快點把我給你的#b#t4031051##k交給史菲魯納。那麼，我很忙先告辭了～"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你怎麼這麼厚臉皮，竟敢站在我面前！你們這些傢伙，該不會忘了打破我珍貴的#b黑色水晶#k的事了吧？都是你們害我的研究延誤半年！要找到復原破碎的水晶的方法。"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "要將妖精之粉帶走！不要弄丟了，一定要順利交給史菲魯納。"
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[天空之城] 獲得妖精之粉"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b妖精克莉爾#k對我有些抱歉，#b拿出了 妖精之粉#k。將妖精之粉交給了史菲魯納，等那女生消氣了，就問一問赫拉的去向吧。\r\n\r\n#b(如果喪失了妖精之粉，那就再去找克莉爾吧。)"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把妖精之粉交給了史菲魯納。好像氣消了，問問赫拉的行蹤吧？"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "34"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 121,292\r\n可進行「史菲魯納的煩惱」任務"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "克莉爾看到破碎的水晶，怕史菲魯納會生氣，才讓我去轉交的。去找克莉爾問清這個情況，再要來妖精之粉才行。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4037257:# #t4037257:# #c4037257# / 1\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "121292"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

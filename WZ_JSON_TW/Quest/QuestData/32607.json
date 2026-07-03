@@ -1,0 +1,130 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[次元圖書館] 女皇培育的第一步"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "82"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "試著確認西格諾斯的狀態吧.直接詢問西格諾斯他的狀態,會不會就能夠知道呢?"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "試著確認西格諾斯的狀態吧.直接詢問西格諾斯他的狀態,會不會就能夠知道呢?\\r\\n#b(和西格諾斯交談詢問狀況.)#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "若是想知道西格諾斯目前的狀況,藉由和西格諾斯交談便能夠知道.\\r\\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#觀看西格諾斯的狀況 (#R32626ExRef32607#)\\r\\n"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "現在才來嗎?動作還真是慢慢吞吞.這樣子對西格諾斯的培養能幫上忙嗎?"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "就如同我所說的一樣,我們的目標是在一年內讓西格諾斯具備女皇的資格.西格諾斯目前的狀況只要去詢問西格諾斯就能夠知道."
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "確認西格諾斯的狀況後,請再來和我說話.\\r\\n#b(和西格諾斯交談了解她的狀況.)#k"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2520000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32606"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2520000"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q32607e"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "32626"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "查看西格諾斯的狀態"
+          }
+        }
+      }
+    }
+  }
+}

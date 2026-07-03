@@ -1,0 +1,200 @@
+{
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "呵呵…問題很嚴重，黑暗魔法師的手下覬覦此地已經很久了。已經不是一兩次像這樣跟隨我們了。看來一定要解決這件事，你可以幫忙嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "參考米拉的報告，在弓箭手村和鯨魚號附近可以發現他們的蹤跡。他們在偏僻的地方會變裝成平凡的怪物躲起來，如果沒有力氣就會突然恢復原來的面貌，因此要好好找一找。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我本來期待你可以了結這件事，真是太可惜了。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "230"
+      },
+      "pop": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 暗黑巫師的手下"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "鯨魚號內的搗亂者"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "盲俠仔細讀過報告後詢問了#r暗黑巫師手下#k的行蹤，認為他們目前仍在弓箭手村和鯨魚號附近徘徊。他們就隱藏在外側的樹林裡並準備潛入。打敗他們來守護鯨魚號的安全吧！\\n\\n#o9300156##r#a21751##k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "找到並打敗暗黑巫師的手下。不過現在的鯨魚號還能夠保證安全嗎？"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "230"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊～終於完成了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "動作真快。了不起。不愧是維多利亞少有的人才？我會向卡伊琳大人報告你的功勞。鯨魚號的船員都會記住我這次的功蹟的。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有打敗黑魔法師的手下嗎？它們就在我告訴你的那個地方。"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "呵呵…問題嚴重了。黑魔法師手下已經在此地潛伏很久了。但是我們之前也曾經驅逐過幾次。這次就由你來擔任此次清除任務如何？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "根據巴爾特的報告似乎就在這附近。嗯...我會把你送到那些傢伙的基地，你要把#r黑魔法師的手下#k全部消滅。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "它們經過變身後不易辨認。但一旦力量減弱後就會恢復本來面目，你一定要仔細尋找消滅它們。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我為你不能完成這次光榮的任務而感到遺憾。"
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1092007"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9300156"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1092007"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2174"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    }
+  }
+}

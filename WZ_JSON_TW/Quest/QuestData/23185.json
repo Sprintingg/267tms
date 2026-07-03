@@ -1,0 +1,177 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[雷本礦山] 準備潛入"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "255"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "與藏身在#b#m310040200##k的少年#b#p2153003##k見面對話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "村莊裡有和#p2152008#長得一模一樣，但個性完全相反的#p2153003#。他說是為了找到被關在礦山裡的#p2154004#而來的。但是因為有守門人，所以無法進去。\r\n\r\n聽說在附近有人在賣#b可以偽裝成黑色翅膀的帽子#k。幫#p2153003#找來#t1003134#吧。\r\n\r\n#i1003134# #t1003134# #b#c1003134# / 1#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "接獲#t1003134#的#p2153003#說，穿上這個就可以悄悄地潛入基地，大家可以為救出#p2154004#的自己準備慶祝了。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i1003134:# #t1003134:# #c1003134# / 1\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "79"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2153003"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "23184"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2153003"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q23185e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1003134"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "噓！安靜！如果被守門人們知道我來這裡救#p2154004#姐姐，那該怎麼辦？#p2154004#姐姐就在這扇門後面。但是守門人太多了，我無法進去…呃呃呃，真讓人火大。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "要怎麼樣才能突破那些守門人呢？之前使用堅硬盾牌猛衝，結果失敗了？那守門人，明明是兔子，肌肉還這麼大。嘖。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "但是我還沒放棄！不管怎麼樣，我一定會進入礦山，救出被黑色翅膀抓走的可憐的#p2154004#姐姐！我已經準備好了新的方法。你也會一起吧？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "聽說在某處有人在賣#b#t1003134##k。只要戴上那個，就可以輕鬆偽裝成黑色翅膀，進入礦山了。所以請幫我找來#t1003134#吧！就拜託了，朋友！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "雖然失敗了，但我不會氣餒！雖然很失望，但鼓起勇氣試試吧！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哦哦！找來#t4032765#了啊！真謝謝！雖然膽小鬼#p2152008#逃跑了，但我相信你會挺我到底！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "哇哈哈！等著，黑色翅膀的守門人！舉著#t4032765#的#p2152008#大人很快就要潛入礦山！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒找到#b#t1003134##k嗎？明明說#b有人#k在賣啊？應該是在#b這附近#k。"
+          }
+        }
+      }
+    }
+  }
+}

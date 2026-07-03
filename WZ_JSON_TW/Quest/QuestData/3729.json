@@ -1,0 +1,215 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[神木村] 時間旅行者的懷錶"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "41"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "為了前往奈歐市，而想要啟動時空之門的話，需要時間旅行者的懷錶。前往時間旅行者安迪那裡的話，就可以獲得時間旅行者的懷錶…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了前往奈歐市，而想要啟動時空之門的話，需要時間旅行者的懷錶。前往時間旅行者安迪那裡的話，就可以獲得時間旅行者的懷錶…"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "為了前往奈歐市，而想要啟動時空之門的話，需要時間旅行者的懷錶。前往時間旅行者安迪那裡的話，就可以獲得時間旅行者的懷錶…"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#i4001393:# #t4001393:# 1 個\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001393"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2082004"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3718"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001393"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2082004"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001393"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "我是時間流逝而是旅行的。 捲入急流一樣 可能被漂走,就像鮭魚的歸鄉一樣也可逆走…現在我的位置是…(自言自語)\\r\\n#L0##b喂…安迪…在說什麼？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "嗯…嗯…沒事。你找我什麼事? 我很忙。要想要整理的東西太多。\\r\\n#L0##b我想要使用時空之門。#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "你說使用時空之門? 時間旅行是非常危險的事。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果一定要去的話，我不會阻止你。但, 為了時間旅行一定需要 #b#t4001393##k。我去找 #b#t4001393##k你稍後再找我。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果沒有來的話，也就沒有去的。這個是時間的法則 。如果沒有其他事的話，就請你離開吧 。 我要想的東西非常多。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這是時間旅行者的懷錶.... 雖然已說過很多次，時間旅行要小心。不要讓時間的急流捲起..."
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

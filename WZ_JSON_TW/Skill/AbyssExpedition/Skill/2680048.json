@@ -1,0 +1,229 @@
+{
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "piercingNew"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "long",
+              "_value": "3"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AEAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "3201005"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Projectile"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "time": {
+          "_dirType": "string",
+          "_value": "0.4"
+        },
+        "emitSpeed": {
+          "_dirType": "int",
+          "_value": "2000"
+        },
+        "boundLT": {
+          "_dirType": "vector",
+          "_x": -110,
+          "_y": -80
+        },
+        "boundRB": {
+          "_dirType": "vector",
+          "_x": 110,
+          "_y": 60
+        },
+        "emitCount": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "emitPos": {
+          "_dirType": "vector",
+          "_x": 0,
+          "_y": -30
+        },
+        "destroyHitCount": {
+          "_dirType": "int",
+          "_value": "99"
+        },
+        "hitIntervalPerTarget": {
+          "_dirType": "int",
+          "_value": "1000"
+        }
+      },
+      "AnimSet": {
+        "_dirType": "string",
+        "_value": "Skill\\AbyssExpedition\\Skill\\2680048.img\\AnimSetAssets\\AnimSet"
+      },
+      "onProjectileHit": {
+        "_dirType": "string",
+        "_value": "attack"
+      }
+    },
+    "attack": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "damage": {
+          "_dirType": "string",
+          "_value": "180+125*x"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "range": {
+          "_dirType": "string",
+          "_value": "450"
+        },
+        "piercing": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "4+d(x/5)"
+        },
+        "BossDamageRatio": {
+          "_dirType": "string",
+          "_value": "50"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub"
+        },
+        "1": {
+          "_dirType": "sub"
+        },
+        "2": {
+          "_dirType": "sub"
+        },
+        "3": {
+          "_dirType": "sub"
+        },
+        "4": {
+          "_dirType": "sub"
+        },
+        "5": {
+          "_dirType": "sub"
+        },
+        "6": {
+          "_dirType": "sub"
+        },
+        "7": {
+          "_dirType": "sub"
+        },
+        "8": {
+          "_dirType": "sub"
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "3201005"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "20"
+    },
+    "damage": {
+      "_dirType": "string",
+      "_value": "180+125*x"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "1"
+    },
+    "range": {
+      "_dirType": "string",
+      "_value": "450"
+    },
+    "piercing": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "4+d(x/5)"
+    },
+    "BossDamageRatio": {
+      "_dirType": "string",
+      "_value": "70"
+    }
+  },
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "3201011 피어싱"
+  },
+  "AnimSetAssets": {
+    "_dirType": "sub",
+    "AnimSet": {
+      "_dirType": "sub",
+      "move": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub"
+            }
+          }
+        }
+      }
+    }
+  }
+}

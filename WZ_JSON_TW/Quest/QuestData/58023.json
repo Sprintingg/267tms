@@ -1,0 +1,204 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[戰國時代] 經驗值2倍加持活動！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "disableAtCompleteTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoCancel": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b戰國時代改版紀念活動進行中！#k\n\n活動期間內，1天可獲得4次\n#b#i2023380:# #t2023380:##k。\n\n#b#e[活動期間]2014年12月31日00:00~2015年1月20日23:59#k#n\n\n#r※ 此任務1天最多可進行4次，一旦登出就會自動棄權。#k"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "參加活動時得到的#b#t3994917:##k，如果持續擁有30分鐘，似乎會變化成#b#t3994918:##k。\n\n變化成#b#t3994918:##k後，就去拜訪活動導遊，接受#b#i2023380:# #t2023380:##k?。\n\n#b#e[活動期間]2014年12月31日00:00~2015年1月20日23:59#k#n\n\n#r※ 此任務1天最多可進行4次，一旦登出就會自動棄權。#k"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#i2023380:# #t2023380:#"
+    },
+    "deleteItem": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "int",
+        "_value": "3994917"
+      },
+      "1": {
+        "_dirType": "int",
+        "_value": "3994918"
+      }
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994917"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994918"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q58023s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "140"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201412310000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201501210000"
+      },
+      "dayN": {
+        "_dirType": "int",
+        "_value": "4"
+      },
+      "dayN_t": {
+        "_dirType": "int",
+        "_value": "4"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994918"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q58023e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b#i3994917:# #t3994917:##k還沒\r\n變為#b#i3994918:# #t3994918:##k！"
+          }
+        }
+      }
+    }
+  }
+}

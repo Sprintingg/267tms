@@ -1,0 +1,182 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[神木村] 少女的素描簿"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "41"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了哭泣的少女，找到綠水靈吃下的#i4032513##t4032513##b20個#k，還給少女吧。\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把被綠水靈吃掉的少女的素描簿碎紙張還給了少女。但少女看到被綠水靈咬碎的紙張卻陷入更大的痛苦。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4032513:# #t4032513:# #c4032513# / 20\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 430,698\r\n可進行 '少男少女' 任務\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "經由#t4001393#到達的2021年學校，見到了哭泣的少女。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "430698"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2082006"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "125"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2082006"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032513"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "430698"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032513"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嗚嗚…綠水靈把我的素描簿吃掉了。那是我珍貴的圖畫……嗚嗚。拜託去教訓綠水靈，把我的素描簿找回來。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b破爛不堪的素描簿20張#k左右應該就夠了…嗚嗚。請幫我找回我的素描簿。擊退綠水靈或許可以找回。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "阿… 我的素描簿… 啊啊啊啊"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哇！ 我的畫！拿來了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "哼… 都皺了。 我的畫…"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請務必找回被綠水靈吃掉的素描簿20張。"
+          }
+        }
+      }
+    }
+  }
+}

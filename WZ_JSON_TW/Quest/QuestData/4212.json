@@ -1,0 +1,248 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9250003"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "200001010000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "200001020000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "200001020000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "200001010000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4211"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9250005"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031383"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031383"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031383"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你說想成為守護水上市場的守護隊隊員吧?要是那樣，你必須仔細聽好我跟你講的~說明。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "在我給你的守護隊加入許可證上，需要蓋上5個印章。什麼?你說你已經知道?不過你知道以後需要找誰嗎?不知道是吧！仔細聽好了。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "你下一個要見的隊員是#b#p9250005##k。對了，就是在村莊開飲食店的...去找#b#p9250005##k隊員時，必須帶著我給你的守護隊加入許可證。到蓋完5個印章之前，絕對不可以丟了這個許可證！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "什麼。這麼快就放棄了?那麼你就沒有資格成為守護隊隊員。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "噓！說話小聲點。你說你也想成為水上市場守護隊隊員?這麼大聲說這麼重要的話還得了?不過你說想成為守護隊隊員?那麼你應該拿來守護隊加入許可證了吧?給我看看。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "哦，這麼快就獲得了#b#p9250003##k的蓋章啊。我的印章在哪啊。我要找找看印章在哪，等一下再來找我吧。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "拿著我給你的守護隊加入許可證，趕快去找#b#p9250005##k吧。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "連守護隊加入許可證也沒有，還想成為守護隊隊員?"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你說弄丟了我給你的守護隊加入許可證?我不是告訴你千萬不要弄丟嗎。我再給你一次，你拿走吧。"
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[世界] 加入水上市場守護隊2"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "加入水上市場守護隊"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "為了加入水上市場守護隊，需要獲得守護隊隊員的蓋章。給蓋章的#b#p9250003##k說，可以告知以後具體應該怎麼做..."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "下一個要去找的守護隊隊員是飲食店主人#b#p9250005##k。只要跟著烤雞的香味走過去，應該不難找。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "找到了第二個隊員#b#p9250005##k。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "45"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[弓箭手村] 詹姆士的下落（２）"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "幫助#b#p1300008##k的逃脫。\n\n#r是與「稱號-菇菇王國守護者」任務無關的其他任務。#k"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4001317:##t4001317:##c4001317#/1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 5,000\r\n可進行 '詹姆士的下落（３）' 任務\r\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了#b#p1300008##k的逃脫，請找來#b#t4001317##k。\n\n#r是與「稱號-菇菇王國守護者」任務無關的其他任務。#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "為了#b#p1300008##k，已交給#b#t4001317##k。"
+    },
+    "summary": {
+      "_dirType": "string",
+      "_value": "為了#b#p1300008##k的逃脫，請找來#b#t4001317##k。\n\n#r是與「稱號-菇菇王國守護者」任務無關的其他任務。#k"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "james2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "25"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1300008"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2325"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1300008"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001317"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5000"
+      },
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "2327"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001317"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "一定有辦法可以離開這個地方。請幫助我一次好嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我躲在這裡之前，曾經看到過頭戴奇怪頭盔的士兵。我想有了這頭盔就可以假扮離開這裡了。請您找到#b#t4001317##k。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請送我到哥哥那裡。拜託了。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "找到#b#t4001317##k了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好極了。我終於可以回家了。真是太感謝了。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "沒有#b#t4001317##k我是無法逃出城外的。外面太可怕了。"
+          }
+        }
+      }
+    }
+  }
+}

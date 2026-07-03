@@ -1,0 +1,182 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[賽爾尼溫(後)] 不能撤退了"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "與#b#m410000900##k的#b超新星士兵#k談論未來的計劃吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "必須支援#b#m410000900##k才行。\r\n與#b#m410000920##k的#r#o8645131##k在\r\n#b#m410000950##k擊退#r#o8645132##k吧！\r\n執行任務後去找#b#m410000900##k的#b超新星士兵#k吧！"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "已經收拾掉#r#o8645131##k跟#r#o8645132##k， \r\n並且向#b#m410000900##k的#b超新星士兵#k報告事情的經過。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o8645131# #a399151#\r\n#questorder1##o8645132# #a399152#\r\n"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q39915x"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "284"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "24"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "265"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3004513"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q39915s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "265"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "39914"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3004513"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q39915e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8645131"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8645132"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "似乎得先支援#r東方城牆#k才行。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請報告狀況！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請先除掉雷普步兵 #b100名#k和雷普法師 #b100名#k。"
+          }
+        }
+      }
+    }
+  }
+}

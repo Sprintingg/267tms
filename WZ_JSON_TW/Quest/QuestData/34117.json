@@ -1,0 +1,218 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[消逝的旅途]找到安息的洞穴2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "272"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4034937:# #t4034937:# #c4034937# / 30\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "跟著里諾前往洞窟盡頭。 距離消滅的旅途盡頭處不遠了。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "斯拉烏可以用安息的溶解劑溶解。要溶解這般聚集的斯拉烏，需要10個安息的溶解劑。安息的溶解劑可透過棲息在洞窟的安息的艾爾達斯與艾爾達斯的燈火取得。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "將安息的溶解劑撒在阻擋在通道上的斯拉烏後，道路就打開了。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "8"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "200"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "14713510"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "200"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003129"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34116"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q34117s"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003115"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034937"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q34117e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "14713510"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034937"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這裡也有一群斯拉烏擋在路上，這次還比剛剛更嚴重。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "跟剛才一樣，可以請你從週圍的艾爾達斯那裡，取得安息的溶解劑30個嗎?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果安息的溶解劑30個都得到時，請你拿著這個直接灑在擋在路中央的斯拉烏身上吧。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這樣下去就會無法前進。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#b（對史拉烏噴灑安息的溶劑。 隨著史拉烏消失，路就開通了。）#k"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請靠近擋在路中央的斯拉烏並噴灑溶劑。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b(要將擋路的斯拉烏完全溶解掉，需要10個安息的溶解劑。)#k"
+          }
+        }
+      }
+    }
+  }
+}

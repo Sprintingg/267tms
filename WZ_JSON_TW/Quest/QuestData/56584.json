@@ -1,0 +1,168 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[天龍地虎]入門考試(2)"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "在武陵村北邊的[#m250010304#]見到了大師兄，大師兄給了我第二項體力考驗。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "這次大師兄讓我在返回武陵村的途中，狩獵25只#o6130203#、15只#o4230502#、15只#o4230500#。限時300秒。抓緊時間吧！"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "順利在300秒內到達了武陵村並狩獵了怪物，通過了第二項考驗。"
+    },
+    "timeLimit": {
+      "_dirType": "int",
+      "_value": "300"
+    },
+    "timerUI": {
+      "_dirType": "string",
+      "_value": "default"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "117"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你好像還沒有消滅我所說的怪物啊？25只#o6130203#、15只#o4230502#、15只#o4230500#。你好像把這件事給忘了啊。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9310418"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q56584s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "56583"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9310417"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q56584e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "6130203"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "25"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4230502"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "15"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4230500"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "15"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

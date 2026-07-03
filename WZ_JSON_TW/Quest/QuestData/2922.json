@@ -1,0 +1,200 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[鯨魚號] 王子的囑託1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#p1092003##k 王子您怎麼會淪落到這一步呢？ 真令人納悶啊？ 與王子談一下吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b#p1092003##k 王子從遠海來到這裡，感覺很疲勞的樣子啊。 況且為了#b#p1090000##k所準備的禮物都丟在海水裡了，很沮喪的樣子… 幫#b#p1092003##k王子打倒 #r#o1220002##k找回為了#b#p1090000##k所準備的禮物吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "打倒#r#o1220002##k找回了 #b#p1092003##k王子所準備的禮物。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4033011:# #t4033011:# #c4033011# / 1\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 2,003\r\n可進行 '王子的囑託1' 任務\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "29"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2003"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1092003"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "20"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2946"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1092003"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033011"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2003"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033011"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "正常"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你願意幫助我嗎？ 雖然拜託別人有些難以啟齒…"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "事實上，在我疲憊不堪的時候，為#b#p1090000##k準備的禮物都隨著海浪漂流散掉了。 沒有禮物，去見#b#p1090000##k可是非常失禮的啊… 怎麼辦呢？ 可以的話，願意幫助我找回那些禮物嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "他雖然倒下有點久，但應該不會漂到很遠的地方的。 來的路上 #r#o1220002##k一直關注這禮物…有可能 #r#o1220002##k拿走也說不定。 "
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果找不回禮物，我就無法離開這裡了。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "是啊。 這正是我拿來的禮物箱子。 能夠找回來，實在是太幸運了…"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "遊了那麼遙遠的路到這裡，還是很值得的。 \\r\\n非常感謝。\\r\\n"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "一定是#r#o1220002##k拿著，沒錯。 一定要找回禮物。"
+          }
+        }
+      }
+    }
+  }
+}

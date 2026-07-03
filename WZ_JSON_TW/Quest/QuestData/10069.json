@@ -1,0 +1,108 @@
+{
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 유령 T는 누구일까?"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "페토와 집사 그리고 유령T"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "3"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "이 저택에서 나오는 모든 물건을 유령 T에게 가져다 주자!!"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#b유령 T#k가 #b페토#k 였다니. 이 저택에는 무슨 일이 있었던 거지?"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2120008"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q10069e"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2120008"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "2008101600"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "2008110600"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "10068"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub"
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "나는 내가 누군지 전혀 모르겠어. 사람들에게 물어보려고 했지만 날 보면 전부 무서워하더라고, 그래서 숨어서 지내다 보니 어딘지도 모를 이곳까지 오게 됐어. 여기 어둡기는 한데 사람들이 날 보고 무서워하지 않으니 괜찮아. 혹시 내가 나를 찾을 만한 물건을 나에게 전해 주지 않겠어? 돌아다니면 사람들이 무서워하니 나한테 이곳의 물건을 하나씩 주면 기억이 날 수도 있을 것 같은데."
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "고마워!! 기다리고 있을게!!"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "도와줘. 너밖에 도와줄 사람이 없다고~"
+        }
+      }
+    }
+  }
+}

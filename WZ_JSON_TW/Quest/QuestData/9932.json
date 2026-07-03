@@ -1,0 +1,184 @@
+{
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 露迪米拉的耳環"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "對#p2120005#說要去#b#m229000210##k那裡，去約拿斯的房間看看。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在#m229000210#那裡，#p2120006#穿著華麗的裙子。那女孩看到房間裡竟然出現了一個陌生人，很生氣的樣子。但聽到有萬聖節派對很吃驚，並表示要去參加。於是#p2120006#要求找到她參加派對的#b耳環#k…#t4031835#好像是被一個#r什麼東西都能吃掉的傢伙#k給吞掉了。\\n\\n#i4031835##t4031835##b#c4031835#/1#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把耳環帶回來交給#p2120006#後，她很滿足的笑了。但是當問到認不認識#p2120005#時，#p2120006#帶著討厭的表情說派對更加的重要。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "你是誰？以為誰都可以隨意進到這裡來嗎？管家到底在做什麼？！怎麼隨便放人進來…\\r\\n#L0##b正在參加萬聖節派對，是無意中才…"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "什麼？你說萬聖節派對？派對是什麼時候開始的？不！還不是時候。如果要參加派對首先得…對！得有個耳環才行。你別在那裡站著了，去找個#b耳環#k回來。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "耳環會在哪裡呢。對了！房子裡好像有個#r什麼都吃的傢伙#k。東西會在哪裡呢…啊，那麼耳環的事就拜託你了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果你不想去找耳環，那就馬上離開這裡！為什麼隨便闖進別人的房間裡？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有找到#b耳環#k嗎？啊啊~到底耳環會在哪裡呢？好像真的有一個#r什麼東西都吃的怪物#k。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2120006"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q9932e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031835"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2120006"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "200810221200"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "200811121200"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "7643"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "200811060000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "200810221200"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9928"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    }
+  }
+}

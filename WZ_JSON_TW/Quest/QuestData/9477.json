@@ -1,0 +1,294 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 烏山的鬼怪"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "鬼怪仍然還存在著，快去找#b#p2040050##k問問吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "消滅嚇人的鬼怪。\\n\\n#t04000208##b#c04000208#/70#k\\n#t04000206##b#c04000206#/30#k\\n#t04000207##b#c04000207#/30#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "幫助#b#p2040050##k，使勇士之村的鬼火不再出現。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "33500"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2100030"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "33500"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000208"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-70"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000206"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000207"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "3": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2100030"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好，上次謝謝你幫我。但聽說在勇士之村裡還是有很多鬼怪出現。你能幫我再消滅那些動物骨頭變成的鬼怪嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝。為避免鬼怪在勇士之村出現，請收集骷髏指揮官身上掉落的#b#t04000208#100個#k與#b#t04000206#30個#k，#b#t04000207#30個#k。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "鬼怪的出現讓冒險者感到害怕。如改變主意了就來找我吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這麼快就回來了？請快給我找來的骨頭吧。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我給的召喚袋中會出來之前抓到的那些鬼怪。這些鬼怪之前是傷害過人類，但現在失去了力量，無法再傷害人類了，而且過一會兒也會自動消失。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "還有剩的動物骨有可能變成鬼怪，一天後來找我一次幫我消滅鬼怪吧。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "為避免鬼怪出現，請收集#b#t04000208#70個#k和#b#t04000206#30個#k，#b#t04000207#30個#k。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2040050"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "70"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "200607200000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "200609010000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "200609010000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "200607200000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9476"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "1440"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2040050"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000206"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000207"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000208"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "70"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "info": {
+      "_dirType": "string",
+      "_value": "캐논타워"
+    },
+    "placementArea": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": -70,
+        "_y": -164
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 71,
+        "_y": 2
+      }
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "attack"
+    },
+    "attack": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "sub",
+        "action": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "attackRatio": {
+          "_dirType": "int",
+          "_value": "100"
+        },
+        "type": {
+          "_dirType": "int",
+          "_value": "0"
+        },
+        "cooltime": {
+          "_dirType": "int",
+          "_value": "3000"
+        },
+        "elemAttr": {
+          "_dirType": "string",
+          "_value": "F"
+        },
+        "affected": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "stun"
+          },
+          "time": {
+            "_dirType": "int",
+            "_value": "2000"
+          },
+          "prob": {
+            "_dirType": "float",
+            "_value": "0.2"
+          }
+        }
+      }
+    },
+    "firstAttack": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "firstAttackRange": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": -300,
+        "_y": -300
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 300,
+        "_y": 100
+      }
+    },
+    "reward": {
+      "_dirType": "string",
+      "_value": "r2692019"
+    },
+    "demolish": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "maxHP": {
+      "_dirType": "int",
+      "_value": "500"
+    },
+    "attackPower": {
+      "_dirType": "int",
+      "_value": "90"
+    },
+    "targetType": {
+      "_dirType": "string",
+      "_value": "craft"
+    }
+  },
+  "Anims": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "stand": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub",
+              "AnimReference": {
+                "_dirType": "sub"
+              }
+            }
+          }
+        }
+      },
+      "attack1": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub",
+              "AnimReference": {
+                "_dirType": "sub",
+                "info": {
+                  "_dirType": "sub",
+                  "range": {
+                    "_dirType": "sub",
+                    "lt": {
+                      "_dirType": "vector",
+                      "_x": -300,
+                      "_y": -300
+                    },
+                    "rb": {
+                      "_dirType": "vector",
+                      "_x": 0,
+                      "_y": 0
+                    }
+                  },
+                  "ball": {
+                    "_dirType": "sub"
+                  },
+                  "hit": {
+                    "_dirType": "sub"
+                  },
+                  "affected": {
+                    "_dirType": "sub",
+                    "pos": {
+                      "_dirType": "int",
+                      "_value": "1"
+                    },
+                    "repeat": {
+                      "_dirType": "int",
+                      "_value": "1"
+                    }
+                  },
+                  "sp": {
+                    "_dirType": "vector",
+                    "_x": -55,
+                    "_y": -135
+                  }
+                },
+                "attackAfter": {
+                  "_dirType": "int",
+                  "_value": "360"
+                }
+              }
+            }
+          }
+        },
+        "Notifies": {
+          "_dirType": "sub",
+          "sound": {
+            "_dirType": "sub",
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/MExplorer.img/Reactor/2000019/attack1"
+              }
+            }
+          }
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub",
+              "AnimReference": {
+                "_dirType": "sub"
+              }
+            }
+          }
+        },
+        "Notifies": {
+          "_dirType": "sub",
+          "sound": {
+            "_dirType": "sub",
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/MExplorer.img/Reactor/2000000/0_hit"
+              }
+            }
+          }
+        }
+      },
+      "die": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub",
+              "AnimReference": {
+                "_dirType": "sub"
+              }
+            }
+          }
+        },
+        "Notifies": {
+          "_dirType": "sub",
+          "sound": {
+            "_dirType": "sub",
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/MExplorer.img/Reactor/2000000/0_die"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

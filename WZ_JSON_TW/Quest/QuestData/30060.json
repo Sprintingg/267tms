@@ -1,0 +1,205 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[菇菇城堡] 尋找偽裝用裝備"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "91"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "搭乘黑維京, 不 是被綁架的菲歐娜. 因為公主被綁架而陷入恐慌狀態的蘑菇國王. 與蘑菇國王對話. "
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "蘑菇國王說為了救出被綁架的菲歐娜公主只能先從打聽搭乘飛行船的方法開始了. 為了打聽所以需要可以偽裝成維京的裝備. 但是穿了裝備就能夠看起來像維京一樣嗎?"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "為了救出被黑維京綁架的公主必須打聽搭乘飛行船的方法才行. 雖然偷了維京的裝備偽裝成維京想要打聽情報, 但果然只帶了一個頭盔是無法看起來像維京一樣的. "
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4034110:# #t4034110:# #c4034110# / 20\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 48,994\r\n"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "#m106030400# / #m106030401#"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "48994"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1302000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "30059"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1302000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034110"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "48994"
+      },
+      "transferField": {
+        "_dirType": "int",
+        "_value": "106031001"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034110"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這到底該怎麼辦才好! 公主又再次被綁架了. 所以我才擔心公主的美貌公諸於世上該如何是好. 要趕快找到公主才行. 只要想到公主該有多害怕我的心就…… 嗚嗚. "
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "但是我們對於他們一無所知. 甚至連飛行船要怎麼上去都不知道. 總之要先打聽到如何搭乘飛行船的方法. 你會幫忙的? "
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我想過了， 偽裝成維京打聽情報應該不錯。 但是需要偽裝成維京的裝備，所以要找來 #r#t4034110##k. 如果連我們的菇菇士兵也要用的話,需要大概 #r20個#k.  "
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "再這樣下去我們公主出了什麼差錯的話我就要把自己的身體丟入火坑中! "
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "請求的東西都收集來了嗎? 喔喔, 那麼你就先戴頭盔. 因為我們菇菇沒有腳, 就算戴了頭盔看起來也不會像維京一樣. 但是你有兩隻腳不是嗎?"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "為了偽裝成維京士兵需要 #r#t4034110##k #r20個#k左右才行。#b#o3300104##k戴著的就是那個頭盔！"
+          }
+        }
+      }
+    }
+  }
+}

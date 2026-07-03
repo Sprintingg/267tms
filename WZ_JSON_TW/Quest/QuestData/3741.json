@@ -1,0 +1,205 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[神木村] 實施救助工作"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "41"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了救助#p2082016#，除掉#r#o8120102#和#o8120103#各100個#k吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "為了救助#p2082016#，除掉了#o8120102#和#o8120103#各100個。可是怪物的數量沒怎麼減少。"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p2082016#好像有事要委託。去找他對話吧。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o8120102# #a37411#\r\n#o8120103# #a37412#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 72,716\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "72716"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2082016"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "125"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3739"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2082016"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8120102"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8120103"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "72716"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "我可以離開此地嗎？\\r\\n#L0##b四周若沒有危險的怪物，應該有可能。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "那麼可以在四周走動，除掉怪物嗎？我連一隻都抓不到。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝你。那麼就拜託你了。#r#o8120102#和#o8120103#分別100隻#k就夠了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我一個人絕對無法自己出去。 拜託幫我。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "替我做這麼危險的事真的很感謝。我的身體狀況不太好，無法離開，可是心情卻變平靜了。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請再加油。#r#o8120102#和#o8120103#100隻#k。"
+          }
+        }
+      }
+    }
+  }
+}

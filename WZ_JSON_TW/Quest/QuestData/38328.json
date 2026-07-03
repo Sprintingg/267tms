@@ -1,0 +1,145 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[覺醒的實驗室奧迪溫] 系統修復 1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "244"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o8645296# #a383281#\r\n#questorder1##o8645297# #a383282#\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "村裡的巡邏員#b納索爾#k似乎需要幫助。去找找納索爾吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "照納索爾說的，調查一下實驗室的警衛兵。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "調查了奧迪溫的警衛兵。但是看起來沒什麼異常．．．"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3005534"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q38328s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "270"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "38320"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "202303150900"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3005534"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q38328e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8645296"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "200"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8645297"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "200"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "好像還沒有完成調查呢。警衛兵們在#b陽光灑落的實驗室#k。"
+          }
+        }
+      }
+    }
+  }
+}

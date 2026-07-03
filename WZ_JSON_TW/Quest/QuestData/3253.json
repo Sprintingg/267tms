@@ -1,0 +1,219 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[玩具城] 輪流使用玩具扳手1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "36"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "配送維修裝備"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去找#b#m220020300##k的#b工廠長卡霍#k。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "按照工廠長卡霍的吩咐，把玩具扳手送到#b#m220030200##k的#b#p2041019##k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "按照工廠長卡霍的吩咐，把玩具扳手送到了#b#m220030200##k的#b#p2041019##k。"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 35,218\r\n可進行 '輪流使用玩具扳手2' 任務\r\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4033140:# #t4033140:# #c4033140# / 1\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "35218"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2040015"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "65"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2041019"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033140"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033140"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "35218"
+      },
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "3254"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033140"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "如果你不忙的話，可以為了工廠做一點義工嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝你！將這個玩具板手拿去給#b#m220030200##k的#b#p2041019##k。現在洛基負責的工廠機械故障了，沒有修理的裝備，現在非常危急。我雖然有裝備，可是卻抽不了身…那麼就拜託你了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果太忙的話那也沒辦法。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哇嗚~我已經收到#p2040015#的連絡了。說會把玩具板手送到這裡…謝謝你。我先用這些來修理機械。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "將玩具板手拿去給#b#m220030200##k的#b#p2041019##k。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "玩具板手???不是弄丟的.."
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "剛才在這附近撿到玩具板手。是工廠內僅有的珍貴物品，會小心使用。"
+        }
+      }
+    }
+  }
+}

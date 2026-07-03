@@ -1,0 +1,183 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[遺跡發掘隊] 擊倒發掘中斷地區防礙者"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#m102040300#上立了#p1022112#."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "- 公告 - \\n\\n最近遺跡發掘現場出沒的怪物妨礙遺跡發掘有延遲. 等待有勇氣人的挑戰. \r\n\r\n#b#m102040300#, #m102040301##k : 打倒骷髏犬, 木乃伊犬"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "打倒妨礙遺跡發掘作業的骷髏犬和木乃伊犬."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o4230125# #a28391#\r\n#questorder1##o4230126# #a28392#\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "39892"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022112"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022112"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4230125"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "80"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4230126"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "80"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "39892"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "- 公告 - \\n\\n最近遺跡發掘現場出沒的怪物妨礙遺跡發掘有延遲. 等待有勇氣人的挑戰."
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b#m102040300#, #m102040301##k : 打倒骷髏犬, 木乃伊犬"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "隨時等待有勇氣的人來挑戰."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "- 公告 - \\n\\n掃到#b#m102040300#, #m102040301##k的怪物者去找在#m102040300#的#p1022112#.\\r\\n\\r\\n#L0##b#m102040300#, 打倒了#m102040301# 地區的怪物.#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "感謝幫忙遺跡發掘作業."
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "在#m102040300#, #m102040301# 地區妨礙發掘作業的骷髏犬和木乃伊犬個打倒 80隻."
+          }
+        }
+      }
+    }
+  }
+}

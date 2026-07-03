@@ -1,0 +1,145 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 每天正義嘉年華！！"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "正義嘉年華期間2012年6月27日至2013年2月26日內登入，就能獲得#b#t04310034#各1個#k。#r點選畫面左側活動提示#k或去找#p9010000#獲得#t04310034#。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "正義嘉年華期間內登入，獲得#b#t04310034##k。#r明天也不要忘記登入#k領取#t04310034#。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoPreComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201112150000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201209191200"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201112080000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201209191200"
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4310034"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好#h0#！#b2012年6月27日至2012年9月19日為止#k為紀念正義嘉年華每天登入時可獲得#r#t04310034##k1個為禮物。現在馬上領取今天的#t04310034#嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "一天只發放一次，所以今天結束前一定要接受一下！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "利用領取的#t04310034#可以在各村莊的#r正義硬幣商店#k購買有用的物品。那麼，請盡情享受正義嘉年華！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#r其他物品欄#k已滿無法領取#t04310034#。請確認其他物品欄是否有空間？"
+          }
+        }
+      }
+    }
+  }
+}

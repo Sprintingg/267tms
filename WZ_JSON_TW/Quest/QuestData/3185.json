@@ -1,0 +1,150 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[冰原雪域山脈] 史卡圖勒的真相"
+    },
+    "area": {
+      "_dirType": "string",
+      "_value": "33"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "收集野狼與白狼的尾巴交給史卡圖勒，然後聽他說因為雪山魔女，已經有一段時間沒有狩獵了。還說身為獵人竟然因為怪物而無法狩獵，所以心情非常鬱悶…史卡圖勒請求#b亞凱斯特#k解決問題。去找亞凱斯特吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "去找亞凱斯特講述關於雪山魔女，並轉告了史卡圖勒的請求。"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "雪山魔女"
+    },
+    "order": {
+      "_dirType": "string",
+      "_value": "2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "12542"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2020007"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q3185s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "75"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3184"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2020005"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "3186"
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "12542"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b亞凱斯特#k就在 #b冰原雪域市場#k 裡面。拜託你。啊還有... 這件事請不要和其他人說。讓別人知道獵人怕怪物，無法出去狩獵是很丟臉的。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯嗯…又不是什麼難事…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "去找亞凱斯特。亞凱斯特就在 #b冰原雪域市場#k 裡面。"
+          }
+        }
+      }
+    }
+  }
+}

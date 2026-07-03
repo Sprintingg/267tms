@@ -1,0 +1,208 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[埃德爾斯坦] 一切都是為了任務"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "24"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "看守礦山內#m310050100#的機器人#b#p2154003##k需要幫忙。和#p2154003#對話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2154003#說為了任務，希望自己的性能能再升級，所以拜託我找來性能升級所需的零件。聽說只要消滅#r#o6150000##k就能獲得零件…\r\n\r\n#i4000608# #t4000608# #b#c4000608# / 30#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "嘗試自我升級的#p2154003#。就像#o8105003#一樣非常的冷漠…"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4000608:# #t4000608:# #c4000608# / 30\r\n"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "69900"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2154003"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201012291200"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201012291200"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "23195"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2154003"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000608"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "69900"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000608"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "確認場所、服裝和等級結果，導出給你這次任務是最合適。#h0#。幫助我性能升級。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "為了性能升級需要新的零件。按照我內藏的升級原則第3章，升級用零件不存在時在現場調配。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "所以請把#r#o6150000##k分解後，帶來#b#t4000608# 30個#k。如果是你的話，有83.4%的機率能辦到。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "常理以外的回答。不能接受。重新考慮一下吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "確認了#t4000608# 30個。確認完成。謝謝。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "獲得了優秀的結果。對你的評價上升了12.7%。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒收集到#b#t4000608# 80個#k。請分解#r#o6150000##k後，收集30個零件。再說一次..."
+          }
+        }
+      }
+    }
+  }
+}

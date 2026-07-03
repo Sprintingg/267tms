@@ -1,0 +1,138 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[進化系統] 進化系統"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "32"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "向#p9075006#詢問關於進化系統的事吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "向#p9075006#詢問進化系統的使用方法吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "知道了進化系統是什麼東西。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9075006"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1803"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9075006"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "...System Error。 眼睛辨識裝置無法啟動。聲音辨識裝置無法啟動。指紋辨識裝置無法啟動。因所有辨識裝置無法啟動，進化系統設定初始化。ESS人工智慧解除裝置運作。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "請使用者登錄。\\r\\n...使用者名#h0#. \\r\\n使用者登錄完成。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "為了使用者進行介紹進化系統。要開始進行了嗎?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "進化系統是以肉體完全進化為目標。為了進化的所有環境條件，會符合使用者來組成，全部過程會由進化系統所支援的假想世界來實現。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "想要聽有關進化系統的介紹的話，再跟我說話吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "開始介紹進化系統。\\r\\n#e連線方法#n\\r1. 透過次元之鏡往進化系統研究所移動\\r2. 點ESS，開始進化系統 \\r3.點系統 迴路鍵的START鍵時，往假想空間移動\\r\\n"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "#e進化系統UI介紹#n\\r\\n#b#e1.系統迴路鍵 #n#k\\r- 可變更進化系統假想世界環境條件的迴路.\\r- #r以核心欄位#k和#r核心置物櫃#k來組成。\\r\\n#e[核心]#n\\r- 可變更假想世界環境的物體\\r- 在核心置物櫃的核心，可裝設在核心欄位使用。\\r\\n#e[核心置物櫃]#n\\r- 可保管核心。\\r- 所獲得的核心自動往置物櫃移動。\\r\\n"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "#e#b2. 實驗室構造鍵#n#k\\r\\n#e[連線連結路線圖]#n\\r-由總共9個連結組成\\r- 連結 1~5 可連線，連結6~9可透過系統改善任務來擴張。\\r\\n#e[訓練程式]#n\\r-可執行各連結基本程式\\r- 程式的進行狀態可用圖示區別。"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "#e#b3. 進化系統獎勵#n#k\\r\\n1. 金幣店\\r- 可透過進化系統研究所入口的 #b機器-C2#k來購買需要的道具。\\r\\n進化系統 #r組隊也可進入#k，之外也有多樣的功能。\\r\\n\\r\\n進化系統介紹結束。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

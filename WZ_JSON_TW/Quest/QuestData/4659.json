@@ -1,0 +1,168 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[世界] 機器小子升級"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "等到機器小子的等級達到15級後，再去見見負責進化寵物的迦爾努斯吧！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "機器小子是利用科學和魔法所創造出的生命體，為了讓他可以變得更加強壯，必須需要一些材料。取得#b#t5380000##k1個和#b#t4000111##k50個後，再去見迦爾努斯吧！"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "原本只是小機器人的寵物，已升級成為成年體了！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "45"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這…相當特殊的生命體耶！難道是想要藉由科學的力量，創造出擁有人工智慧的生命體嗎？生命煉成的技術沒想到進步這麼神速…話說回來，你來找我有什麼事嗎？你想要讓這機器人進化？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "是嗎？雖然不是很確定，至少我可以試試看，我想應該跟其他以魔法做組成的寵物，有不少不同點吧！首先，可能需要#t5380000#1個和#t4000111#50個，材料蒐集就拜託你囉！"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "就趁你蒐集材料的空檔，我來研究一下煉金術的部份吧！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你是想一直維持目前的型態嗎？那其實也沒什麼不好，那我就尊重你的意見了。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "把材料蒐集齊全了嗎？"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9102001"
+      },
+      "pettamenessmin": {
+        "_dirType": "int",
+        "_value": "1642"
+      },
+      "pet": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "5000048"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "pettamenessmin": {
+        "_dirType": "int",
+        "_value": "1642"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q4659e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000111"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "5380000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "pet": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "5000048"
+          }
+        }
+      }
+    }
+  }
+}

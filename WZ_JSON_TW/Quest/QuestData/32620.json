@@ -1,0 +1,188 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[次元圖書館] 正式藥材收集 1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "82"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "桃醫仙說只要有材料,很快就能製作好藥品.該去取得哪些材料呢?聽聽他說的吧."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "桃醫仙要我找來用作藥材的#t4033966#3個。他說從右邊出去的話，鶴會好好引導的。不要普通的鹿茸，要發光的鹿茸！\\r\\n#b(去右側的傳送點狩獵#o8230027#，收集3個#t4033966#吧)#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "給桃醫仙找來了用作藥材的#t4033966#3個。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4033966:# #t4033966:# #c4033966# / 3\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "233711"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2520015"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32619"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2520015"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033966"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "233711"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033966"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-3"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我看看~第一項材料是 #b#t4033966##k.鹿茸能促進血液循環,醒腦,以及加強免疫力."
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "從右邊出去的話，鶴會好好引導你的。不要普通的鹿茸，要發光的鹿茸！\\r\\n#b(去右側的傳送點狩獵#o8230027#，收集3個#t4033966#吧。)#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "幹嘛?說急的人不是你嗎?"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我看看,已經湊齊了嗎?"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "沒錯.已經湊齊了呀.身手真是了得."
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "沒有材料卻要我製作藥品?沒有#b#t4033966##k要怎麼製作藥呢?"
+          }
+        }
+      }
+    }
+  }
+}

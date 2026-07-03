@@ -1,0 +1,196 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[未來之門] 收集糧食2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "47"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "弓箭手村的卡蜜拉需要幫忙。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "幫助卡蜜拉後，為了弓箭手村的居民而找來食物材料。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "找來為了村民們的食物材料。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4000643:# #t4000643:# #c4000643# / 80\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "6446000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2142004"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "160"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31110"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2142004"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000643"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "80"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000643"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-80"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "6446000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "又見面了。上次真是太感謝了。村民難得吃了美味的蝸牛料理了。能不能再幫一個忙？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這次我想做蘑菇料理。蘑菇能降低膽固醇，還有抗菌效果。應該會對身體好吧？\\r\\n#b請找來菇菇傘 80個#k。那就拜託了。我也很想儘快用我的菇菇料理招待冒險家。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "看來現在有點困難啊。那下次一定要幫忙啊。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "菇菇傘都找到了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "真是太謝謝了。終於能做美味菇菇料理了。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "如果想做所有人都能吃得到的料理，需要菇菇傘 80個喔。"
+          }
+        }
+      }
+    }
+  }
+}

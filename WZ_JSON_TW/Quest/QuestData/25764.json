@@ -1,0 +1,254 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[凱撒] 解除封印的材料"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "22"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p3000003#為了次元傳送點的封印解除再次啟動正在做準備。去幫忙吧！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了解除封印需要大量的反魔力石。前往#b#m400030400#除掉 #o2400013#後，接下來取得50個#t4033346#交給 #p3000003#。#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p3000003#說解除封印的準備結束了，現在只剩下再啟動的準備。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4033346:# #t4033346:# #c4033346# / 50\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 10,000\r\n可進行 '次元傳送點啟動的材料' 任務\r\n"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "targetMapID": {
+      "_dirType": "int",
+      "_value": "400030400"
+    },
+    "returnMapID": {
+      "_dirType": "int",
+      "_value": "400000001"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "10000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3000003"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "35"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "25763"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "6100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "6110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "6111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "6112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "6113"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "6114"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3000003"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033346"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "10000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033346"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "上次戰鬥時也一樣，現在材料也是非常短缺。可以幫忙我嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "是啊。為了解除封印，需要清除封印時加入的魔力。所以需要大量的#t4033346#。由於反魔力石本身是很危險的物質，所以神殿沒有另外進行保管。去#m400030400#解決 #o2400013#後，帶 #t4033346# 50個來給我。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯。你不是來幫忙的嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這種程度應該就夠了吧。辛苦了。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "解除封印所進行的準備已經告一段落，接下來只要重新啟動異次元傳點就可以了。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "反魔力石似乎還不夠。去#m400030400#解決 #o2400013#後，帶 #t4033346# 50個來給我。"
+          }
+        }
+      }
+    }
+  }
+}

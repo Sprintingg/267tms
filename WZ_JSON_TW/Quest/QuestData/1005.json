@@ -1,0 +1,197 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓之島] 交給長老的信件"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "將信件轉交給長老."
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽說瑪麗亞好像需要幫忙…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在菇菇村見到了正在苦苦盼望有人能幫助她的瑪麗亞。她請求我將一封信件轉交給楓葉村的長老路卡斯…"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把瑪麗亞的信件轉交給了楓葉村的長老路卡斯。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "20"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "1006"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有見到在#m1010000#的#r#p12000##k嗎？請趕快轉交我的信函吧…那是急件…還要等#p12000#的回信呢，這下怎麼辦呢…"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "應該差不多要從#b#p2103##k來信件的說…是有發生什麼事嗎？真是的，希望有人能幫我傳個消息呢…"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你把我的信函弄丟了呀！小心點呀…再給你一次。這附近有很多怪物，要注意不要遺失信函。"
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊...這下怎麼辦啊…需要儘快把信函交給#p12000#…因為是緊急事件，需要儘快告訴他。但是我還有任務在身，無法離開這裡…"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "不好意思，可不可以幫我給#b#m1010000##k的#r#p12000##k轉交這封#b信函#k啊?我在這裡還有任務在身，無法離開。只要花你一點點時間就可以的…"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "要幫忙我嗎？太好了…終於可以鬆一口氣呢。首先接受我的 #b信件#k 吧。然後把這信件傳給在 #b#m1010000##k的長老。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "#b#m1010000##k是從這裡一直前往東北方面就會抵達。#p12000#大人是 #m1010000#的長老先生喔。大概今天也是在雜貨商店前散步吧。請在麻煩務必拿回#b#p12000##k大人的 #b回信#k喔。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "現在好像很忙啊？哈啊…怎麼辦啊…如果不及時把這封信函轉交給長老...總之，以後有時間，請一定要來找我對話哦。"
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "12000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2103"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "0"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

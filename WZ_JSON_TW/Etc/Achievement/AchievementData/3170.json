@@ -1,0 +1,98 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[卡洛斯]以眼還眼，以卡洛斯還卡洛斯"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "以處決入侵者技能給予普通卡洛斯最後一擊"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "100"
+    },
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "battle"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "boss"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "legendary"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "gauge": {
+        "_dirType": "string",
+        "_value": "submission_info"
+      },
+      "gaugeSubMission": {
+        "_dirType": "string",
+        "_value": "mob_kill"
+      }
+    },
+    "block": {
+      "_dirType": "string",
+      "_value": "hide"
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "以處決入侵者技能給予普通卡洛斯最後一擊"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "mob_kill": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "long",
+              "_value": "1"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub",
+            "mob": {
+              "_dirType": "sub",
+              "mob_id": {
+                "_dirType": "int",
+                "_value": "8880806"
+              }
+            },
+            "skill_use": {
+              "_dirType": "sub",
+              "condition": {
+                "_dirType": "string",
+                "_value": "or"
+              },
+              "values": {
+                "_dirType": "sub",
+                "0": {
+                  "_dirType": "sub",
+                  "skill_id": {
+                    "_dirType": "int",
+                    "_value": "80003148"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

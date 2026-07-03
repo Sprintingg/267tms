@@ -1,0 +1,206 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 我給你舊帽子! 給我新帽子!"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "認真參予 #b‘溫暖的春天郊遊!’活動#k之後， 若有拿到#b#t01003227##k #b#e2個#n#k的話，去找看看 #p9010010#吧。若有\\r\\n#t01003227#1個的話，再執行看看，'溫暖的春天郊遊!' 任務的話，可以領取 #t01003227#"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "迎春#b「給你舊帽子！換來新帽子！」#k活動。完成「呱呱春遊！」任務36次，達到#b50級#k後，交出#b#t01003227# 2個#k即可換取更好的帽子。\\r\\n#i01003228##b#t01003228#(30日) #k1個\\n所有能力值 +8\r\n攻擊力、魔力 +5\r\n物理/魔法防禦力 +70\r\n移動速度 +10\r\n跳躍力 +8\r\n不可使用卷軸強化\r\n#e不可交易\r\n不可延長有效期#n\r\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "參予 #b‘我給你舊帽子!給我新帽子!’#k 活動之後，把 #b#t01003227# 2個#k兌換為 #b#t01003228##k。\\r\\n#i01003228##b#t01003228#(30天) #k1個"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#b達成50等級#k\\r\\n#i1003227:# #t1003227:# #c1003227# / 2\\r\\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201204111200"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201205021200"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201204111200"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201205021200"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1003227"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q11125e"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "50"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1003227"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嘿，有獲得 #e#b#h0##n#k! #t01003227#! 怎樣，達成 #r#e50等級#k#n之後，再度完成 '溫暖的春天郊遊!' 任務36次之後，給我 #b#t01003227# 2個#k的話，將會給你更好的#b#e#t01003228##n#k。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "對喔，第一次領取的 #t01003227#的話， #r30天#k之後會消失，若想領取 #t01003228#的話，消失第一次領取的帽子之前，一定要再來兌換，記住囉！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "想要拿#b#t01003228##k吧？比春天青蛙帽子更好。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "好，先給我 #t01003227# 2個吧。若還在使用 #b的話，放置裝備欄#k之後，再度跟我對話吧。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "看看，有沒有變更好的帽子呢？"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "兌換為#t01003228#的話，需要2個#t01003227#。"
+          }
+        }
+      }
+    }
+  }
+}

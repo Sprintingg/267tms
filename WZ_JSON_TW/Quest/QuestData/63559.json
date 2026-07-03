@@ -1,0 +1,153 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[伊露納]刻著符文的螢光石"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "disableAtStartTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "在未開拓地帶發現有刻上符文文字的可疑螢光石。先拿好之後再跟其他人詢問看看吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在未開拓地帶發現有刻上符文文字的可疑螢光石。先拿好之後再跟其他人詢問看看吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把在未開拓地帶發現的 #t4036112：#拿給 #p9400464#看了。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##r#p9400461##k進行對話\\r\\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400468"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "63559"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "start"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q63559s"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201708300000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400464"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q63559e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npcSpeech": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9400461"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q63559p"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npcEx": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "sub",
+            "msg": {
+              "_dirType": "string",
+              "_value": "首先去找 #p9400461#詢問看看吧。"
+            },
+            "userSay": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "imgPos": {
+              "_dirType": "int",
+              "_value": "1"
+            }
+          }
+        }
+      }
+    }
+  }
+}

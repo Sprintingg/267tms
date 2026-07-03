@@ -1,0 +1,661 @@
+{
+  "Info": {
+    "_dirType": "sub",
+    "지원 목록": {
+      "_dirType": "sub",
+      "데이터 확인": {
+        "_dirType": "string",
+        "_value": "클라이언트에 getDateWZ2(key1, key2, returnType) 입력"
+      },
+      "script": {
+        "_dirType": "string",
+        "_value": "getDateWZ2( string, string, integer ) 함수 사용"
+      },
+      "QuestInfo": {
+        "_dirType": "string",
+        "_value": "#DL|Key1|Key2|returnType# 형태 사용"
+      },
+      "Check.img": {
+        "_dirType": "string",
+        "_value": "#DL|Key1|Key2# 형태 사용"
+      },
+      "NewEventList": {
+        "_dirType": "string",
+        "_value": "#DL|Key1|Key2# 형태 사용"
+      },
+      "Reward": {
+        "_dirType": "string",
+        "_value": "#DL|Key1|Key2# 형태 사용"
+      },
+      "NpcShop": {
+        "_dirType": "string",
+        "_value": "#DL|Key1|Key2# 형태 사용"
+      },
+      "Item/Consume": {
+        "_dirType": "sub"
+      },
+      "Etc/myHome.img": {
+        "_dirType": "sub"
+      },
+      "Npc": {
+        "_dirType": "string",
+        "_value": "condition dateStart/dateEnd 날짜 설정"
+      }
+    },
+    "변환 가능 형식": {
+      "_dirType": "sub",
+      "info": {
+        "_dirType": "string",
+        "_value": "변환 형식 대소문자 구분하여 입력"
+      },
+      "year": {
+        "_dirType": "string",
+        "_value": "{YY}, {YYYY}"
+      },
+      "month": {
+        "_dirType": "string",
+        "_value": "{MM}, {M}"
+      },
+      "day": {
+        "_dirType": "string",
+        "_value": "{DD}, {D}"
+      },
+      "hour": {
+        "_dirType": "string",
+        "_value": "{hh}, {h}"
+      },
+      "minute": {
+        "_dirType": "string",
+        "_value": "{mm}, {m}"
+      }
+    }
+  },
+  "returnType": {
+    "_dirType": "sub",
+    "info": {
+      "_dirType": "string",
+      "_value": "리턴값 입력 생략 시 코드에서 사용하는 형식을 사용, 0 입력 시 YYMMDDhhmm리턴"
+    },
+    "infoTW": {
+      "_dirType": "string",
+      "_value": "리턴타입 정리 (TW)"
+    },
+    "info1": {
+      "_dirType": "string",
+      "_value": "1 : 스크립트 currentTime 형식"
+    },
+    "info2": {
+      "_dirType": "string",
+      "_value": "2 : 대사 텍스트 형식 (기존 makeDateStr 방식)"
+    },
+    "info3": {
+      "_dirType": "string",
+      "_value": "3 : 대사 텍스트 형식 (기존 makeDateStr 방식), 시,분 생략"
+    },
+    "info4": {
+      "_dirType": "string",
+      "_value": "4 : DateExpire 형식 (아이템지급 스크립트)"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "{YY}/{MM}/{DD}/{hh}/{mm}"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "{YYYY}年{M}月{D}日{hh}點{mm}分"
+    },
+    "3": {
+      "_dirType": "string",
+      "_value": "{YYYY}年{M}月{D}日"
+    },
+    "4": {
+      "_dirType": "string",
+      "_value": "{YYYY}{MM}{DD}00"
+    },
+    "5": {
+      "_dirType": "string",
+      "_value": "{M}月{D}日"
+    }
+  },
+  "DateList": {
+    "_dirType": "sub",
+    "AbyssExpedition4": {
+      "_dirType": "sub",
+      "rank1": {
+        "_dirType": "string",
+        "_value": "202405160900"
+      },
+      "rank2": {
+        "_dirType": "string",
+        "_value": "202405180900"
+      },
+      "rank3": {
+        "_dirType": "string",
+        "_value": "202405220900"
+      },
+      "rank4": {
+        "_dirType": "string",
+        "_value": "202405290900"
+      },
+      "rank5": {
+        "_dirType": "string",
+        "_value": "202406050900"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "202406260000"
+      },
+      "end2": {
+        "_dirType": "string",
+        "_value": "202406252359"
+      }
+    },
+    "AnnualEventS5": {
+      "_dirType": "sub",
+      "junior": {
+        "_dirType": "string",
+        "_value": "202410300900"
+      },
+      "senior": {
+        "_dirType": "string",
+        "_value": "202411060900"
+      },
+      "veteran": {
+        "_dirType": "string",
+        "_value": "202411130900"
+      },
+      "master": {
+        "_dirType": "string",
+        "_value": "202411200900"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "202411262359"
+      },
+      "end2": {
+        "_dirType": "string",
+        "_value": "202411270000"
+      },
+      "main1": {
+        "_dirType": "string",
+        "_value": "202411052359"
+      },
+      "main2": {
+        "_dirType": "string",
+        "_value": "202411122359"
+      },
+      "main3": {
+        "_dirType": "string",
+        "_value": "202411192359"
+      },
+      "25skill": {
+        "_dirType": "string",
+        "_value": "202411210000"
+      },
+      "senior2": {
+        "_dirType": "string",
+        "_value": "202411060000"
+      },
+      "veteran2": {
+        "_dirType": "string",
+        "_value": "202411130000"
+      },
+      "master2": {
+        "_dirType": "string",
+        "_value": "202411200000"
+      }
+    },
+    "myHome_NewYear": {
+      "_dirType": "sub",
+      "start": {
+        "_dirType": "string",
+        "_value": "202602090900"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "202602240000"
+      },
+      "end2": {
+        "_dirType": "string",
+        "_value": "202602232359"
+      }
+    },
+    "myHome_Blossom": {
+      "_dirType": "sub",
+      "start": {
+        "_dirType": "string",
+        "_value": "202603150900"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "202603290000"
+      },
+      "end2": {
+        "_dirType": "string",
+        "_value": "202603282359"
+      }
+    },
+    "myHome_BlossomEnding": {
+      "_dirType": "sub",
+      "start": {
+        "_dirType": "string",
+        "_value": "202606010000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "202607010000"
+      },
+      "end2": {
+        "_dirType": "string",
+        "_value": "202606302359"
+      }
+    },
+    "myHome_Halloween": {
+      "_dirType": "sub",
+      "start": {
+        "_dirType": "string",
+        "_value": "202610180900"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "202611010000"
+      },
+      "end2": {
+        "_dirType": "string",
+        "_value": "202610312359"
+      }
+    },
+    "myHome_Christmas": {
+      "_dirType": "sub",
+      "start": {
+        "_dirType": "string",
+        "_value": "202612120900"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "202612260000"
+      },
+      "end2": {
+        "_dirType": "string",
+        "_value": "202612252359"
+      }
+    },
+    "myHome_birthday_amy": {
+      "_dirType": "sub",
+      "start": {
+        "_dirType": "string",
+        "_value": "202601080000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "202601090000"
+      },
+      "end2": {
+        "_dirType": "string",
+        "_value": "202601082359"
+      }
+    },
+    "myHome_birthday_kenneth": {
+      "_dirType": "sub",
+      "start": {
+        "_dirType": "string",
+        "_value": "202602270000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "202602280000"
+      },
+      "end2": {
+        "_dirType": "string",
+        "_value": "202602272359"
+      }
+    },
+    "myHome_birthday_dona": {
+      "_dirType": "sub",
+      "start": {
+        "_dirType": "string",
+        "_value": "202604200000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "202604210000"
+      },
+      "end2": {
+        "_dirType": "string",
+        "_value": "202604202359"
+      }
+    },
+    "myHome_birthday_trudy": {
+      "_dirType": "sub",
+      "start": {
+        "_dirType": "string",
+        "_value": "202605170000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "202605180000"
+      },
+      "end2": {
+        "_dirType": "string",
+        "_value": "202605172359"
+      }
+    },
+    "myHome_birthday_jenny": {
+      "_dirType": "sub",
+      "start": {
+        "_dirType": "string",
+        "_value": "202605270000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "202605280000"
+      },
+      "end2": {
+        "_dirType": "string",
+        "_value": "202605272359"
+      }
+    },
+    "myHome_birthday_edan": {
+      "_dirType": "sub",
+      "start": {
+        "_dirType": "string",
+        "_value": "202606100000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "202606110000"
+      },
+      "end2": {
+        "_dirType": "string",
+        "_value": "202606102359"
+      }
+    },
+    "myHome_birthday_jeffrey": {
+      "_dirType": "sub",
+      "start": {
+        "_dirType": "string",
+        "_value": "202607230000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "202607240000"
+      },
+      "end2": {
+        "_dirType": "string",
+        "_value": "202607232359"
+      }
+    },
+    "myHome_birthday_miranda": {
+      "_dirType": "sub",
+      "start": {
+        "_dirType": "string",
+        "_value": "202608030000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "202608040000"
+      },
+      "end2": {
+        "_dirType": "string",
+        "_value": "202608032359"
+      }
+    },
+    "myHome_birthday_renaitre": {
+      "_dirType": "sub",
+      "start": {
+        "_dirType": "string",
+        "_value": "202609210000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "202609220000"
+      },
+      "end2": {
+        "_dirType": "string",
+        "_value": "202609212359"
+      }
+    },
+    "myHome_birthday_kuan": {
+      "_dirType": "sub",
+      "start": {
+        "_dirType": "string",
+        "_value": "202611150000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "202611160000"
+      },
+      "end2": {
+        "_dirType": "string",
+        "_value": "202611152359"
+      }
+    },
+    "malitia_OpenEvent": {
+      "_dirType": "sub",
+      "start": {
+        "_dirType": "string",
+        "_value": "202507300900"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "202509100000"
+      },
+      "end2": {
+        "_dirType": "string",
+        "_value": "202509092359"
+      }
+    },
+    "AnnualEventS6": {
+      "_dirType": "sub",
+      "junior": {
+        "_dirType": "string",
+        "_value": "202510150000"
+      },
+      "week1END": {
+        "_dirType": "string",
+        "_value": "202510212359"
+      },
+      "week1END2": {
+        "_dirType": "string",
+        "_value": "202510220000"
+      },
+      "senior": {
+        "_dirType": "string",
+        "_value": "202510220000"
+      },
+      "senior2": {
+        "_dirType": "string",
+        "_value": "202510220900"
+      },
+      "week2END": {
+        "_dirType": "string",
+        "_value": "202510282359"
+      },
+      "week2END2": {
+        "_dirType": "string",
+        "_value": "202510290000"
+      },
+      "veteran": {
+        "_dirType": "string",
+        "_value": "202510290000"
+      },
+      "veteran2": {
+        "_dirType": "string",
+        "_value": "202510290900"
+      },
+      "week3END": {
+        "_dirType": "string",
+        "_value": "202511042359"
+      },
+      "week3END2": {
+        "_dirType": "string",
+        "_value": "202511050000"
+      },
+      "elite": {
+        "_dirType": "string",
+        "_value": "202511050000"
+      },
+      "elite2": {
+        "_dirType": "string",
+        "_value": "202511050900"
+      },
+      "week4END": {
+        "_dirType": "string",
+        "_value": "202511112359"
+      },
+      "week4END2": {
+        "_dirType": "string",
+        "_value": "202511120000"
+      },
+      "master": {
+        "_dirType": "string",
+        "_value": "202511120000"
+      },
+      "master2": {
+        "_dirType": "string",
+        "_value": "202511120900"
+      },
+      "week5END": {
+        "_dirType": "string",
+        "_value": "202511182359"
+      },
+      "week5END2": {
+        "_dirType": "string",
+        "_value": "202511190000"
+      },
+      "week6END": {
+        "_dirType": "string",
+        "_value": "202511252359"
+      },
+      "week6END2": {
+        "_dirType": "string",
+        "_value": "202511260000"
+      },
+      "week7END": {
+        "_dirType": "string",
+        "_value": "202512022359"
+      },
+      "week7END2": {
+        "_dirType": "string",
+        "_value": "202512030000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "202512022359"
+      },
+      "end2": {
+        "_dirType": "string",
+        "_value": "202512030000"
+      },
+      "openDate1": {
+        "_dirType": "string",
+        "_value": "202511060000"
+      },
+      "openDate2": {
+        "_dirType": "string",
+        "_value": "202511130000"
+      },
+      "skillexpireDate": {
+        "_dirType": "string",
+        "_value": "202512170000"
+      },
+      "memorialSkillEnd": {
+        "_dirType": "string",
+        "_value": "202512162359"
+      }
+    },
+    "Sengoku2025_Event": {
+      "_dirType": "sub",
+      "start": {
+        "_dirType": "string",
+        "_value": "202601140900"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "202602250000"
+      },
+      "end2": {
+        "_dirType": "string",
+        "_value": "202602242359"
+      }
+    },
+    "Kanna_SubWeapon_Replacement": {
+      "_dirType": "sub",
+      "start": {
+        "_dirType": "string",
+        "_value": "202601140900"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "202602250000"
+      },
+      "endStr": {
+        "_dirType": "string",
+        "_value": "202602242359"
+      }
+    },
+    "AbyssExpedition5": {
+      "_dirType": "sub",
+      "start": {
+        "_dirType": "string",
+        "_value": "202602250900"
+      },
+      "rank1": {
+        "_dirType": "string",
+        "_value": "202602250000"
+      },
+      "rank2": {
+        "_dirType": "string",
+        "_value": "202602250000"
+      },
+      "rank3": {
+        "_dirType": "string",
+        "_value": "202603040000"
+      },
+      "rank4": {
+        "_dirType": "string",
+        "_value": "202603110000"
+      },
+      "rank5": {
+        "_dirType": "string",
+        "_value": "202603180000"
+      },
+      "rank6": {
+        "_dirType": "string",
+        "_value": "202603250000"
+      },
+      "week1": {
+        "_dirType": "string",
+        "_value": "202602250000"
+      },
+      "week2": {
+        "_dirType": "string",
+        "_value": "202603040000"
+      },
+      "week3": {
+        "_dirType": "string",
+        "_value": "202603110000"
+      },
+      "week4": {
+        "_dirType": "string",
+        "_value": "202603180000"
+      },
+      "week5": {
+        "_dirType": "string",
+        "_value": "202603250000"
+      },
+      "week6": {
+        "_dirType": "string",
+        "_value": "202604010000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "202604080000"
+      },
+      "end2": {
+        "_dirType": "string",
+        "_value": "202604072359"
+      }
+    }
+  }
+}

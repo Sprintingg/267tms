@@ -1,0 +1,133 @@
+{
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2100001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "85"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3952"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2100001"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q3953e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4011008"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[納希沙漠] 說服莫哈默德"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "沙漠的懸賞"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "與#p2100001#對話，他不讓提#o3220001#是不是怪物之類的話。看來比想像中還要固執…？要想說服他首先還得先讓他開心一下。要不找來#p2100001#喜歡的#b#t4011008#1個#k再試試看？\\n\\n#i4011008##t4011008##b#c4011008#/1"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "終於說服#p2100001#了！由於比較固執讓人花了不少時間，不過總算成功了。太好了…！現在去找#p2101010#報告這個事情吧。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "43"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub"
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "…誰啊你是。有什麼想製造的東西…啊？#o3220001#？你是不是想說#o3220001#是個怪物什麼的事啊…？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "竟然說#o3220001#是個怪物…你那是什麼話啊？！竟然這麼不尊重，長時間守護著沙漠的守護神…！現在的年輕人真是沒有禮貌啊！要是想說那種話，就回去吧！和你沒什麼好說的！連個禮物都不帶還說什麼…"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那就放心了。因為最近有很多傳聞說#o3220001#是個怪物什麼的，所以讓我心裡很不是滋味。"
+        }
+      }
+    }
+  }
+}

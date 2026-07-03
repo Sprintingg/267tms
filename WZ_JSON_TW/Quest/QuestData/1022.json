@@ -1,0 +1,243 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓之島] 路卡斯的可愛女兒"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#m1010000##k的長老#b#p12000##k說有事情要拜託他."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p12000#掛念在#b#m60000##k的女兒,委託幫忙捕捉危險的#r#o0130101##k以便使他的女兒可以安全的回來.名字叫#o0130101#?哼~事情很難辦嗎?那麼在抓完#o0130101#後，再去看#b#p20100##k嗎?\\n#k\\n#o0130101##r#a10221##k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "告訴#p20100##o0130101#已經全部抓到了."
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "20"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "70"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2010000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2010009"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "70"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2010000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2010009"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "找我有什麼事嗎？接受了消滅#o0130101#的委託?#o0130101#真的是很可怕.因為我的關係讓你受苦了，太感謝你了。給你添麻煩了，真是抱歉."
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "真想早點離開楓之島，去看看外面廣闊的世界。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "嗯...還沒見到#b#p20100##k嗎?在#b#m60000##k找到最好看的人就行了~"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "嗯?如果想去楓之島以外的地方,就先去和那邊那位很帥的船長談談吧~"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "呃...你看起來還是一個初心者.我女兒年紀還小，還不能做這個...\\r\\n#b#L0#有女兒?#l"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "當然.是個可愛善良的孩子.可是不久前她說想去看海，就去了#b#m60000##k，直到現在還沒回來.去的時候是相當高興的，回來時可能害怕樹林裡的怪物。你能幫幫我嗎?"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請消滅兇悍的#r#o0130101#7隻#k.從#m1010000#到#m60000#的路上有很多#o0130101#.可能是因為這些傢伙#p20100#才無法回家的，消滅它們後告訴#b#p20100##k。拜託了."
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "呃...看起來還不想去#m60000#."
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "20100"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "130101"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "7"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "12000"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "0"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[艾芙特領域]幸福的條件"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "121"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "試著再次與吃東西的#p9400215#對話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p9400215#說他為了守護寶物，不能吃也不能睡，\\r\\n但在這裡有一些無法挨餓的人吃下了寶物，因此身體變得相當巨大…\\r\\n他因為好久沒有說那麼多話了，所以說肚子又餓了，請你再去找#t4034994:# 30個來。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p9400215#說他為了守護寶物，不能吃也不能睡。 但在這裡有一些無法挨餓的人吃下了寶物，因此身體變得相當巨大…\\r\\n他因為好久沒有說那麼多話了，所以肚子又餓了起來，為此又替他找來了一些#t4034994:#，而他也給了#t2436086:#當作感謝之意。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4034994:# #t4034994:# #c4034994# / 30\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400215"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "63038"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q63039s"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400215"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034994"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q63039e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "在你找來吃的東西之前，不要和我說話。 因為我要節省一些力氣…"
+          }
+        }
+      }
+    }
+  }
+}

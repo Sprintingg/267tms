@@ -1,0 +1,149 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[阿茲莫斯峽谷] 探險隊派遣"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "293"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽到先發隊情報的赫麗娜推測內部的情況。那裡到底有什麼？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "現在直接進入吧，赫麗娜。聽說已經有收到赫麗娜的支援請求的人先進去了。做好萬全準備後，進入未知的空間，阿茲莫斯峽谷吧。\r\n\r\n#b進入阿茲莫斯峽谷勘查後回來吧。#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "結束了阿茲莫斯峽谷的第一次探險。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#阿茲莫斯峽谷勘查1次 (#R26783ExRef26783#)\r\n"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "260"
+      }
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "32"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9063580"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q26783s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "260"
+      },
+      "subJobFlags": {
+        "_dirType": "int",
+        "_value": "15"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "26782"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9063580"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q26783e"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "26783"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "clear"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "果然，你平安回來了啊。我一直在等你。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請調查#b一次#k阿茲莫斯峽谷。必須知道那裡有什麼。點擊與我#r對話#k即可入場。"
+          }
+        }
+      }
+    }
+  }
+}

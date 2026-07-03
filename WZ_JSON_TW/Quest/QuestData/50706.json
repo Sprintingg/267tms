@@ -1,0 +1,203 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[十字獵人] 偷襲！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "我收到#b#p9133200##k傳來的連絡，說是十字旅團內部有背叛者。會是誰呢？我去#b#m813300000##k看看吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "這件事讓人難以相信呢，不過聽說#b#p9120218##k背叛了十字旅團，正被人追著呢。他竟然和#b#o9450080##k有接觸！你快點前往#b#m813000075##k追蹤她吧。\\r\\n#i3800182#"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "成功討伐了#b#o9450080##k。但是，#b#p9120218##k逃跑了。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o9450080# #a507061#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\n#i4310018:# #t4310018:# 25個\n可以前往任務「森林中的軍團」\n可以前往任務「討伐！蜈蚣妖怪」\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "long",
+            "_value": "4310018"
+          },
+          "count": {
+            "_dirType": "long",
+            "_value": "25"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9133200"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "50705"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "70"
+      },
+      "gender": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9133200"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q50706e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9450080"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "#b#h0##k…這件事讓人難以相信呢\\r\\n不過聽說#p9120218#背叛了十字旅團，正被人追著呢…。\\r\\n#L0##b咦？怎麼可能會有這種事情呢！#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "我也認為這其中一定有誤會…。\\r\\n\\r\\n不過沒有見到本人當面問她，是不會知道真相的呢。\\r\\n你願意幫我嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我知道了。現在#p9120218#正打算和#o9450080#接觸，所以往#m813000076# 方向走，所以你趕快去追她吧。從#m813000075#那邊去好像比較快。\\r\\n#i3800182#"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "你一定要揭開真相…。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我問你…你認為#p9120218#真的背叛了軍團嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  }
+}

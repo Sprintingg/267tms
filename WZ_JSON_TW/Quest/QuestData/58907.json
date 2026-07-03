@@ -1,0 +1,130 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "string",
+      "_value": "詢問#p9130102# 治療藥是否已完成。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p9130102# 請我把#i4034129##t4034129:#帶去送給#p9130008# 。然後還說，如果那個武將恢復意識，希望我去問他來到這裡的原委。為何他不自己去呢…"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把#i4034129##t4034129:#送給#p9130008# 了。接下來只需要等武將醒來。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4034129:# #t4034129:# #c4034129# / 1\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "95"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "[濃姬] 武田信玄的請求 -參-"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請把#i4034129##t4034129:#送給#m807000000#的#p9130008#。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9130102"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q58907s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "180"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "58903"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9130008"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q58907e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034129"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

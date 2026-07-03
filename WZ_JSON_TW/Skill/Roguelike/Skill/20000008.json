@@ -1,0 +1,170 @@
+{
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "RL_Magician_FullChargeAttackMaster"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_PlaySound"
+          },
+          "SoundPath": {
+            "_dirType": "string",
+            "_value": "Sound/RoguelikeWz2.img/Skill/20000008/Use"
+          }
+        }
+      },
+      "Projectile": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "180"
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "Projectile": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Projectile"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "time": {
+          "_dirType": "string",
+          "_value": "1.35"
+        },
+        "destroyHitCount": {
+          "_dirType": "string",
+          "_value": "99"
+        },
+        "persistAccel.X": {
+          "_dirType": "string",
+          "_value": "100"
+        },
+        "hitIntervalPerTarget": {
+          "_dirType": "long",
+          "_value": "2000"
+        },
+        "boundLT.X": {
+          "_dirType": "string",
+          "_value": "-432"
+        },
+        "boundRB.X": {
+          "_dirType": "string",
+          "_value": "0"
+        },
+        "boundLT.Y": {
+          "_dirType": "string",
+          "_value": "-208"
+        },
+        "boundRB.Y": {
+          "_dirType": "string",
+          "_value": "80"
+        },
+        "initialVelocity.X": {
+          "_dirType": "string",
+          "_value": "-200"
+        },
+        "initialVelocity.Y": {
+          "_dirType": "string",
+          "_value": "0"
+        }
+      },
+      "ball": {
+        "_dirType": "sub"
+      },
+      "onProjectileHit": {
+        "_dirType": "string",
+        "_value": "AttackByProjectile"
+      }
+    },
+    "AttackByProjectile": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "2400"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "700"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub"
+        }
+      },
+      "hitSoundPath": {
+        "_dirType": "string",
+        "_value": "Sound/RoguelikeWz2.img/Skill/20000008/Hit"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "2400"
+    },
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "1"
+    },
+    "iconRaw": {
+      "_dirType": "uol",
+      "_value": "icon"
+    }
+  }
+}

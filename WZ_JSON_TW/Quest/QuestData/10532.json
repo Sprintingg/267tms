@@ -1,0 +1,212 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 페리온의 월동준비"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "페리온의 이얀이 인디언들의 월동준비를 시작했다. 하지만 뭔가 도움이 필요해 보인다. 페리온에 있는 이얀을 찾아가서 도와주자."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "페리온에 있는 이얀에게 인디언의 월동준비에 대한 이야기를 들었다. 가장 중요한 것은 모닥불을 피울 장작을 준비하는 것이라고 한다. 그래서 장작을 준비하려고 준비하는 사이 그만 모닥불의 불씨가 꺼져버렸다면서 다시 모닥불을 피울 수 있게 불씨가 있는 장작 20개를 구해달라고 했다."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "실수로 모닥불의 불씨를 꺼트려버린 이얀을 도와주기 위해서 불씨가 남아있는 장작을 구해다 주었다. 다시 활활 타오르는 모닥불과 함께 이얀이 따뜻한 겨울을 보낼 수 있었으면 좋겠다."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4032560:# #t4032560:# #c4032560# / 20\r\n"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "경험치 70\r\n#Wbasic#\r\n#i4310014:# #t4310014:# 1 개\r\n#b눈꽃선물받기 이벤트 자동 응모#k\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "70"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4310014"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022007"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201101270000"
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "36"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201101270000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022007"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q10532e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032560"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "70"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032560"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4310014"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "날씨가 점점 추워지죠? 페리온의 인디언들은 추운 겨울을 따뜻한 모닥불에 의지해서 지낸답니다. 그래서 겨울이 오기 전에 가능한 많은 장작을 준비하고 불씨를 꺼트리지 않기 위해서 노력해요. 그런데 제가 그만 모닥불에 불씨를 꺼트려버렸지 뭐예요. 돼지와 함께 춤을 아저씨가 아시게 된다면 크게 혼날 것이 분명해요. 절 좀 도와주시지 않겠어요?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "能再次點燃營火，請麻煩收集 #e#b有火種的木柴 20個#k#n吧。可以簡單從勇士之村附近獲得的關係，勇士之村附近的怪物應該就會拿著吧。\\n\\n#i4032560# #t4032560# 20個"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "모닥불을 다시 피우려면 할 일이 많은데 저 혼자서는 다 할 수 없을 것 같아요… 어쩌죠?"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "能再次點燃營火，請麻煩收集 #e#b有火種的木柴 20個#k#n吧。可以簡單從勇士之村附近獲得的關係，勇士之村附近的怪物應該就會拿著吧。\\n\\n#i4032560# #t4032560# 20個"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "能再次點燃營火，請麻煩收集 #e#b有火種的木柴 20個#k#n吧。可以簡單從勇士之村附近獲得的關係，勇士之村附近的怪物應該就會拿著吧。\\n\\n#i4032560# #t4032560# 20個"
+          }
+        }
+      }
+    }
+  }
+}

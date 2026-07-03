@@ -1,0 +1,188 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[特快車] 伊露納特快車"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "q63602"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "外星人蘇菈想要說明要如何透過伊露納特快車來幫助楓之谷勇士成長。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "伊露納特快車內配置的瞬間移動裝置。聽說透過這個可以隨時移動到楓之谷多個地方……利用瞬間移動裝置去拜訪弓箭手村吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "體驗了伊露納特快車的瞬間移動裝置。之後修練時好像可以好好利用一下。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#使用瞬間移動裝置(#R63660Ext1Ref63602#)\n#questorder2#移動至弓箭手村(#R63660ExheRef63602#)\n#questorder3#透過伊露納特快車返回(#R63660ExreRef63602#)"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400482"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "63670"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q63602s"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201707260900"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201708300000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400482"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "63660"
+      },
+      "QuestRecordAndOption": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "使用瞬間移動裝置"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "t1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "移動至弓箭手村"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "he"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "透過伊露納特快車返回"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "re"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q63602e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "親身體驗伊露納特快車的瞬間移動裝置看看吧。不會很困難的。\\r\\n"
+          }
+        }
+      }
+    }
+  }
+}

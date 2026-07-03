@@ -1,0 +1,186 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[艾靈森林] 克魯？達克魯！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "39"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "與在#m300020200#的克魯見面，並且詢問了有關那裡的情況。到底對他們來說最佳的村莊地是什麼樣的地方呢…？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "消滅100隻苔蘚菇菇，向閣下證明我們有守護自己的力量。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "依照克魯所說的，將所有的苔蘚菇菇全部消滅了。克魯，和赫麗娜有不同的想法…？這個人就是帶領人們到墮落城市的達克魯始祖嗎？"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o5250000# #a312141#\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "272850"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2132001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "95"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31213"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2132001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "5250000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "272850"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "赫麗娜感到很好奇。 這地區就如預想的一樣啊。 由低矮的丘陵所組成，大樹也比茂盛的森林還要適合建蓋村莊。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "對了，卡奧！你有用心在進行修練嗎？ 和上次看到你的時候，你好像沒有什麼改變啊…就算沒有別人的幫助，你也要懂得保護自已啊。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "不要急躁，那麼就展現給我看你的實力吧。 這裡的怪物你應該可以輕鬆地把他們解決吧？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請前往菇菇森林消滅#b#e苔蘚菇菇100隻#k#n左右。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你沒有自信嗎？ 如果沒有那種能力的話，為甚麼要來這麼危險的地方，這會造成別人的困擾的。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我說的100隻苔蘚菇菇全都消滅了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不錯嘛。 不要相信任何人，必須要相信自己。 赫麗娜雖然也是個優秀的人才，但是我和他的想法是有一點不同的。 比起總是跟著別人的想法在行動，自己擁有想法，自己決定事情才是最重要的。 赫麗娜我會直接去告訴他的，卡奧你就去完成你要做的事情吧。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒嗎？ 你想要用那種程度就大聲說話嗎？卡奧？ 那麼我真的感到很失望～"
+          }
+        }
+      }
+    }
+  }
+}

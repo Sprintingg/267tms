@@ -1,0 +1,232 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[選擇程序]  怪物強化模型"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "32"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "[選擇程式] 怪物強化模型\r\n\r\n#e連結8#n中透過進化系統可以親自體驗研究過的怪物強化模型。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "[選擇程序]  怪物強化模型\\n#e從Link8#n裡透過進化系統可以直接體驗之前研究過的怪物強化模型。\\n#b清除強化前以及強化後的怪物各20隻#k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "[選擇程序]  怪物強化模型\\n#b#e任務完成#n#k"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o9306206# #a18371#\\n#o9306207# #a18372#"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "validField": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "int",
+        "_value": "957010000"
+      },
+      "1": {
+        "_dirType": "int",
+        "_value": "957011000"
+      },
+      "2": {
+        "_dirType": "int",
+        "_value": "957012000"
+      },
+      "3": {
+        "_dirType": "int",
+        "_value": "957013000"
+      },
+      "4": {
+        "_dirType": "int",
+        "_value": "957014000"
+      },
+      "5": {
+        "_dirType": "int",
+        "_value": "957015000"
+      },
+      "6": {
+        "_dirType": "int",
+        "_value": "957016000"
+      },
+      "7": {
+        "_dirType": "int",
+        "_value": "957017000"
+      },
+      "8": {
+        "_dirType": "int",
+        "_value": "957018000"
+      },
+      "9": {
+        "_dirType": "int",
+        "_value": "957019000"
+      }
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9075207"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "1818"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "q1837"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9075207"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q1837e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9306206"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9306207"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "透過進化系統，有進化肉體的怪物要體驗看看嗎?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "若是在#e連結8#n中啟動怪物產生器，會形成強化前後的怪物，各自消滅 20隻後，確認不同的地方。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "透過進化系統，要體驗經過研究怪物強化模型的話，再跟我說。 "
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#o9306206#, #o9306207# 各擊倒20隻了嗎?"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "怪物強化模型體驗結束。好好活用進化系統的話，可能獲得好的結果。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "在連結8啟動怪物生產器時，擊倒出現的#o9306206#, #o9306207#各20隻。"
+          }
+        }
+      }
+    }
+  }
+}

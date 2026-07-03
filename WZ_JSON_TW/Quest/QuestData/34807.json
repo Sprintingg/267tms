@@ -1,0 +1,167 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[伊利恩] 丁遺失的物品"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "215"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必要]"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "巡視空教室，並且狩獵#o2400409#，然後幫忙找回丁遺失的物品。\n#b\n#i4036165:# #t4036165:# 1個\n#i4036166:# #t4036166:# 10個"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "拯救了遭受異常機器人攻擊的丁。這樣好像就和丁稍微變親近了一點…？"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4036165:# #t4036165:# #c4036165# / 1\r\n#questorder1##i4036166:# #t4036166:# #c4036166# / 10\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "好像有人陷入困境了。似乎是丁？\n\n聲音來自#m402000521#左側綻放微弱燈光的地方。去找位於內部#m402000532#的丁吧。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "3"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q34807s"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001337"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34806"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q34807e"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001337"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036165"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036166"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b消滅#m402000534:##k的#r#o2400409:##k後把#b#i4036165:# #t4036165:# 1個#k和#b#i4036166:# #t4036166:# 10個#k帶給我！"
+          }
+        }
+      }
+    }
+  }
+}

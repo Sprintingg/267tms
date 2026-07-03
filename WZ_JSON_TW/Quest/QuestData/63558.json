@@ -1,0 +1,180 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[伊露納]個別指導4階段： 狩獵未開拓地帶怪物"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "真正的學習是要用身體來熟習！\\r\\n跟#p9400461#對話進行個別指導 4階段吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "終於踏進未開拓地帶的地圖上呢！\\r\\n果然螢光石會滿地都是的話試有些誇大的部分。可是經過再噴出的間歇泉的旁邊時，有時後會從天空上掉落螢光石呢。\\r\\n在這寬闊的未開拓地帶上，說不定真的有滿地都是螢光石的地方吧。首先把 #p9400461#給予的課題， #o9402194# 30隻、 #o9402195# 30隻進行狩獵吧！"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "從未開拓地帶的怪物身上能獲得比在完成開拓地帶的那堤還要高價值得螢光石。\\r\\n現在已經完成所有個別指導的關係，跟#p9400461#所說的內容一樣，去尋早滿地都是螢光石的地方後，隨心去探險 伊露納看看吧！"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o9402194# #a635581#\r\n#questorder1##o9402195# #a635582#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\n\r\n#i2436828:##t2436828:# 10個"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "long",
+            "_value": "2436828"
+          },
+          "count": {
+            "_dirType": "long",
+            "_value": "10"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400461"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "63557"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q63558s"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201708300000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400461"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q63558e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9402194"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9402195"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "只要抓未開拓地帶的 #o9402194#和 #o9402195#各 30隻。是最後一個課題的關係，你再加油一下吧。"
+          }
+        }
+      }
+    }
+  }
+}

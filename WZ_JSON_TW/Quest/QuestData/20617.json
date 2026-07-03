@@ -1,0 +1,156 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[光之騎士] 獻給女皇的禮物"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "13"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "多虧了女皇幫助才能到達這個位置。\r\n想向女皇表達我的感激之情……."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "可以從#b米納爾森林#k的精靈#b萊西#k們那裡獲得名為#r佩里多特#k的寶石。\r\n\r\n從在#b神木村西邊森林#k和#b神木村西部邊境#k的#b萊西#k和#b黑暗萊西#k那邊收集#r佩里多特5個#k後拿給女皇吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把祖母綠光寶石#r佩里多特#k交給了女皇。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4033232:# #t4033232:# #c4033232# / 5\n"
+    },
+    "selfStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q20617x"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q20617s"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "5112"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "5113"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "5114"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1101000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q20617e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033232"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "找到了擁有太陽力量的佩里多特嗎？ 現在我就把恩寵給你。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "按照約定讓你變得更強大。\n因我的傲氣你將擁有比之前更多的HP與MP，因我的祈禱能感應到更強大的能力。開啟技能視窗確認。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "itemEx": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "sub",
+            "msg": {
+              "_dirType": "string",
+              "_value": "請從神木村的 #r萊西#k與 #r黑暗萊西#k身上收集 #b佩里多特 5個#k 給我。"
+            },
+            "userSay": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "imgPos": {
+              "_dirType": "int",
+              "_value": "1"
+            }
+          }
+        }
+      }
+    }
+  }
+}

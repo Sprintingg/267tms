@@ -1,0 +1,207 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[龍使者，龍魔導士] 收集雞蛋"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "7"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必需]"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p1013101#似乎擁有可以孵化蛋的孵化器。向#b#p1013101##k對話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1013101#說代替自己做蒐集#t4032451#的工作的話，就給孵化器。代替#p1013101#從#b右邊#k的#p1013104#那邊蒐集#t4032451#吧。#b#t4032451##k說點#b#p1013104##k的話可以得到。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#t4032451#全部蒐集回來，從#p1013101#得到孵化器。"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "22007"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "targetType": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "returnType": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "targetMapID": {
+      "_dirType": "int",
+      "_value": "100030102"
+    },
+    "returnMapID": {
+      "_dirType": "int",
+      "_value": "100030102"
+    },
+    "targetPN": {
+      "_dirType": "string",
+      "_value": "1013104"
+    },
+    "returnPN": {
+      "_dirType": "string",
+      "_value": "1013101"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "7"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1013101"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "7"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "22006"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2001"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1013101"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q22007e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032451"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嗯？你說孵化器嗎？對，我是有。以前是一個冒險家丟下的，被我撿到了。我保管的很好，一點也沒壞。但是你為什麼要孵化器呢？你需要嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯。好。我給你孵化器。但你得為我做一件事。媽媽要我去收#t4032451#，但我還沒去做呢。啊~我討厭這樣。你如果能幫我收#t4032451#的話，我就給你孵化器。怎麼樣？可以嗎？"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "很好。那麼，你就直接去#b右邊的#p1013104##k，將#t4032451#帶回來吧。點二下#p1013104#就可以獲得#t4032451#了。拿太多很難回來，只要#b1個#k就可以了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不願意嗎？那我就沒辦法了。我還是留著我的孵化器吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "什麼，連#b#t4032451#1個#k都沒拿回來？#p1013104#不就在#b右邊#k嗎。如果你還想要孵化器的話，就快點。什麼？你不會是害怕雞吧？不，不會的！你只是不願意去做而已！"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[[鏡子世界] 弓箭手村] 想要變漂亮"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "71"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "美髮師娜塔麗對外貌有自卑感.聽聽看美髮師娜塔麗的原由."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "想要變漂亮的美髮師娜塔麗決定要去整形.正在考慮弓箭手村裡的兩個醫生,#b差不多院長#k和#b黛瑪院長#k中要讓誰進行手術呢.幫美髮師娜塔麗代替進行訪談看看吧."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "代替美髮師娜塔麗去接受整形商談,對美髮師娜塔麗推薦適合的醫生.可是為什麼感到罪惡感呢?"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##r#p2430010##k對話\r\n#questorder2##r#p2430011##k對話\r\n"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "[村莊]弓箭手村"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2430018"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "123"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "40921"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "10100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "10110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "10111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "10112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "10113"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "10114"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2430018"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q41114e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npcSpeech": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2430010"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q41114_midNPC1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2430011"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q41114_midNPC2"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "在你看來我長的那麼醜嗎?\\r\\n#L0##b...每個人對美的標準都不一樣呀.#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "從你轉移話題看來,我真的長的很醜吧.其實我原本沒有長這麼醜的.這都是因為我吃錯了藥......用漂亮的臉蛋活在這個世界上是什麼感覺呢?\\r\\n#L0##b沒什麼特別的...#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "...你挺厚臉皮的?反正,我下決心了!即使要整型也要變漂亮!所以,你可以幫我嗎?"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "弓箭手村有兩個整型醫生.就是#b差不多院長#k和#b黛瑪院長#k.這是跟我未來有關的很重要的事情,所以無法隨便決定.因此你去見#b差不多院長#k和#b黛瑪院長#k後資訊後,請推薦給我更好的醫生."
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這個只會幫忙漂亮女生的骯髒世界!"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b差不多院長#k和#b黛瑪院長#k中,給哪位醫生整型比較好?"
+          }
+        }
+      }
+    }
+  }
+}

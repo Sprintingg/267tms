@@ -1,0 +1,231 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#完成擊敗凡雷恩任務(#R35650ExclearRef35658#)\r\n#questorder1#黑暗的痕跡#R35650ExpointRef35658# / 500\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "為了尋找黑魔法師留下的力量的線索……去尋找它賦予軍團長力量的痕跡吧。\r\n\r\n #r ※ 透過接取「[創世武器] 跟著黑魔法師的痕跡」任務，可開啟創世武器任務介面，通過介面可查看任務資訊以及進行任務。#k"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "滿足任務執行條件後，必須擊破軍團長#r困難凡雷恩#k。\r\n\r\n#r ※ 執行該任務途中嘗試Boss入場時，可進入符合任務執行條件的Boss關卡。#k\r\n#r ※ 可透過「[創世武器] 跟著黑魔法師的痕跡」任務進入那因哈特所在的夜晚的聯盟會議場。#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "擊破軍團長困難凡雷恩後，將黑暗的痕跡交給了漢斯。"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "[創世武器] 獅子王凡雷恩的痕跡"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "255"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    },
+    "demand": {
+      "_dirType": "sub",
+      "base": {
+        "_dirType": "string",
+        "_value": "#questorder1#完成凡雷恩擊破任務(#R35650ExclearRef35658#)\r\n#questorder1#黑暗的痕跡#R35650ExpointRef35658# / 500\r\n"
+      },
+      "explain": {
+        "_dirType": "sub"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "255"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "9063150"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q35658s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "35652"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1465"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "9063151"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q35658e"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "35650"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "完成凡雷恩擊破任務"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "clear"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "500"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "黑暗的痕跡"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "point"
+          }
+        }
+      },
+      "QuestRecordAndOption": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你還沒打倒#r困難凡雷恩#k和軍團的殘像嗎？"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "完成所有任務後，去跟漢斯大人報告吧。"
+          }
+        }
+      }
+    }
+  }
+}

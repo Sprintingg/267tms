@@ -1,0 +1,211 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[[鏡子世界] 神木村] 並不是這樣"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "69"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#r#p2411002##k對話\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "因為克隆意外的判決,結果亞可決定放棄蛋了.這真的是對的嗎?如果是賢者,請下個更好的結論吧!"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "克隆認為對這顆蛋更為用心的亞可,應該要是這顆蛋的主人.果然賢者就是賢者啊!把克隆的結論告訴#b依托#k和#b亞可#k吧."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "其實,依托會對蛋這麼執著的原因是因為他想成為保蛋者.亞可聽說了這個消息後,說要把依托帶在身邊教導......原本以為絕對解不開的問題竟然解決了.果然是賢者克隆!"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "[村莊]神木村"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2411006"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "107"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "41001"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "10100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "10110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "10111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "10112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "10113"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "10114"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2411003"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q41002e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npcSpeech": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2411002"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q41002_midNPC"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "亨亨,所以阿,依托是把蛋分一半也要拿,亞可是不希望蛋會受傷所以放棄.亨亨,假如這樣的話結論就出來啦!蛋是#r亞可#k的!\\r\\n#L0##b亞可說他想要放棄蛋阿.#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "亨亨,所以阿,這是#r亞可#k的!亞可不是擔心蛋會受傷這樣的不是嗎?更擔心蛋的矮人族負責蛋是應該的,亨亨亨.\\r\\n#L0##b有這麼深奧的意思?!#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "亨亨,假如這樣的話,你跟#b依托#k和#b亞可#k說蛋是亞可的.然後叫依托不要再靠近那個蛋,亨亨."
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "亨亨,辛苦你了."
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "亨亨,你都幫忙了,希望持續幫我......"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "兔子再怎麼頑皮,也不是那種會故意使壞的孩子...哼哼."
+          }
+        }
+      }
+    }
+  }
+}

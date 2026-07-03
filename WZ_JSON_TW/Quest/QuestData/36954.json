@@ -1,0 +1,173 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[過去的英雄，狂狼勇士] 緊急請求"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "6"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#防禦瑞恩襲擊 (#R36954ExclearRef36954#)"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "特魯突然跟我說話。好像有什麼緊急的事情發生了？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "根據特魯的情報，可疑的船艦正在接近瑞恩島！大概是瞄準了瑞恩島保管的封印石。趕緊前往瑞恩島吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "襲擊瑞恩的果然是黑色翅膀。幸好沒有太晚抵達，才能守護住封印石。但是我好像不是獨自來守護瑞恩島的。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002104"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q36954s"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "55"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "36953"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2113"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "2114"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1201000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q36954e"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "36954"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "cl"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "防禦瑞恩襲擊"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "clear"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "不，英雄，你怎麼會來這裡？瑞恩島正面臨襲擊的危機！"
+          }
+        }
+      }
+    }
+  }
+}

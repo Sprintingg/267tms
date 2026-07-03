@@ -1,0 +1,171 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 집사의 시달림"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "페토와 집사 그리고 유령T"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "굴뚝에서 나를 도와 주었던 유령T가 범인일까? 일단 유령T를 만나봐야겠다."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "유령 T는 자신이 누구인지 기억을 하고 있지 못했다."
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "50"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "50"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2120008"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2120002"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "2008101600"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "2008110600"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "10067"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "(혼잣말)페토가 귀신이 되어서 돌아왔나? 우리에게 복수를 하려고? 설마 그럴 리가...?\\r\\n#b#L0#귀신이요?#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "(깜짝!) 아, 예. 사실은 밤마다 귀신이 나타나서 절 괴롭히는데 정말 힘들어서 잠도 못 자고 있지요. 요..요즘 피곤해서 마..말을 자주 더듬죠. 어험.\\r\\n#b#L0#굴뚝에서 유령을 본 것 같기는 한데.. "
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "정말입니까? 부탁 드립니다. 굴뚝에서 이 못된 유령 좀 퇴치해주세요. 그래야 밤마다 편히 잘 수 있을 것 같습니다."
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "굴뚝 근처에서 봤다 그러셨지요? 못된 유령을 꼭 퇴치해주세요!"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "바쁘신가 보군요. 굴뚝으로 다른 사람을 보내봐야겠어요."
+        }
+      },
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "뭐라고?? 내가 누구를 괴롭혔다고? 말도 안돼!! 난 내가 누군지 알고 있는지 물어보고 다닐 뿐이야. 사람들이 멋대로 겁을 먹고선 피하고 있는 거라고!!"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "굴뚝에 유령이 있다니...어서 빨리 쫓아버려 주세요."
+          }
+        }
+      }
+    }
+  }
+}

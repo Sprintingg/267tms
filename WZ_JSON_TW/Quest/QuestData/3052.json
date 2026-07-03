@@ -1,0 +1,220 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2020007"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "76"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2020007"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000048"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000055"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[冰原雪域山脈] 史卡圖勒的新毛皮"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去找冰原雪域的史卡圖勒。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "史卡圖勒想要以新的毛皮取代他老舊的毛皮，所以委託我幫忙收集製作最高級毛皮需要的材料。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "幫了史卡圖勒的忙，好讓他製作出最高級的毛皮。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4000048:# #t4000048:# #c4000048# / 50\r\n#questorder1##i4000055:# #t4000055:# #c4000055# / 50\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "33"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "92576"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "pop": {
+        "_dirType": "int",
+        "_value": "2"
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "92576"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000048"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "노멀"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000055"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "노멀"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "真的都弄來了啊～辛苦了！我也可以穿上不錯的毛皮大衣過上暖和的日子啦。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "非常感謝~這個對我來說沒什麼用，就送給你吧。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有收集完為了製作我毛皮的材料啊. 請快收集完畢. 需要#b#t4000048# 50個, #t4000055# 50個#k."
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你，可以來見我嗎？嗯…你看起來好強。很好！你！要不要幫我的忙？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "知道你會感興趣的。不是別的，最近天氣好像更冷了，我想做一個比我現在穿的更好的毛皮大衣。而且是做出一件最高級的大衣…"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "所以希望你能幫我弄來製作毛皮所需的東西啊～這是需要像你這種強者力量才能辦到的事情～不會虧待你的～"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "製作新毛皮衣服需要的是#b#t4000048# 50個, #t4000055# 50個.#k 拜託囉~"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "來到這裡還要拒絕的理由是什麼呢…"
+        }
+      }
+    }
+  }
+}

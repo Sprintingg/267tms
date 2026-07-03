@@ -1,0 +1,175 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[次元圖書館]今天起我就是讀書人"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "82"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#p2500002##k說在次元圖書館不分順序讀完三本書就會贈送禮物。#e\r\n\r\n  - Episode I : 白魔法師\r\n  - Episode II : 成為女皇的方法\r\n  - Episode III : 黑暗魔女\r\n  - Episode IV : 雪原的吟遊詩人\r\n  - Episode V  : 暗影煉金術師\r\n  - Episode VI : 威廉古堡的騎士\r\n  - Episode VII : 賽皮洛特的園藝師#n\r\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b#p2500002##k說在次元圖書館不分順序讀完三本書就會贈送禮物。#e\r\n\r\n  - Episode I : 白魔法師\r\n  - Episode II : 成為女皇的方法\r\n  - Episode III : 黑暗魔女\r\n  - Episode IV : 雪原的吟遊詩人\r\n  - Episode V  : 暗影煉金術師\r\n  - Episode VI : 威廉古堡的騎士\r\n  - Episode VII : 賽皮洛特的園藝師#n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在圖書館看完三本書後，收到了#b#p2500002#k的禮物。#e\r\n\r\n  - Episode I : 白魔法師\r\n  - Episode II : 成為女皇的方法\r\n  - Episode III : 黑暗魔女\r\n  - Episode IV : 雪原的吟遊詩人\r\n  - Episode V  : 暗影煉金術師\r\n  - Episode VI : 威廉古堡的騎士\r\n  - Episode VII : 賽皮洛特的園藝師#n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": " - 最多 6,000,000 楓幣#e#b(依照完成章節紀錄會有差異)#k#n \\r\\n - #i1122263#   #b#t1122263##k"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#清除的書籍 #R32666ExclearRef32666# / 3\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2500002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32662"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2500002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q32666e"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "32666"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "3"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "清除的書籍"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "clear"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "阿，來的正好。剛好麗塔有拿來幾本書。要不要讀看看這些呢？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不論順序，只要讀完三本書，就會贈送禮物。\\r\\n#e\\r\\n  - Episode I : 白魔法師\\r\\n  - Episode II : 成為女皇的方法\\r\\n  - Episode III : 黑暗魔女\\r\\n  - Episode IV : 雪原的吟遊詩人\\r\\   - Episode V : 暗影煉金術師\\r\\n  - Episode VI : 威廉古堡的騎士\\r\\n  - Episode VII : 賽皮洛特的園藝師#n\\r\\n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "隨時都可以再來."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "quest": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "看完這四個故事後，就會送你禮物。\\r\\n#b(可以和雲雀麗塔對話進入故事中。)#k\\r\\n#e\\r\\n  - Episode I : 白魔法師\\r\\n  - Episode II : 成為女皇的方法\\r\\n  - Episode III : 黑暗魔女\\r\\n  - Episode IV : 雪原的吟遊詩人\\r\\n  - Episode V  : 暗影煉金術師\\r\\n  - Episode VI : 威廉古堡的騎士\\r\\n  - Episode VII : 賽皮洛特的園藝師#n\\r\\n"
+          }
+        }
+      }
+    }
+  }
+}

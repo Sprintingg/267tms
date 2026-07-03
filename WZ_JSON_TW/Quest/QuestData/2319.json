@@ -1,0 +1,202 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[弓箭手村] 彩色菇菇芽孢（３）"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 1,600\r\n#i2430014:# #t2430014:# 1 個\r\n可進行 '跨越城牆（１）' 任務\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b思卡斯#k說有話要告訴你。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1300007#是製作成#b彩色菇菇芽孢樣本#k的事實，請你去告訴#b魔法大臣#k。請稍等一下。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p1300007#在向#p1300004#完成報告之後，#p1300003#告訴你他為了進城正在做準備。"
+    },
+    "summary": {
+      "_dirType": "string",
+      "_value": "在#b#p1300007##k向#p1300004#報告的期間，請稍等一下。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "25"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1600"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2430014"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4032389:##t4032389:##c4032389#/1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1300007"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2318"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1300007"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1600"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2430014"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊！ 差一點忘記了！ 你看看我這腦袋。 必須要將這完成的#b#t4032389##k拿去給#b#p1300004##k，並且進行報告才行。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我會去向#b魔法大臣#k報告的，請你稍等一下。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b#p1300004##k說不定會下達什麼指示。 說是製作#b#t4032389##k的沒有錯啊…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#b#p1300004##k說在看到製作好的#t4032389#後，就請準備進行進入城牆。 #b#p1300003##k對此好像陷入了苦惱之中。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "大概跟我的對話結束之後，#b#p1300003##k會找你對話的。 那我就期待你的好消息。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "既然報告已經結束了，那麼現在是該告知#b#t2430014##k了。 如使用這個，也許就可以破壞結界了。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

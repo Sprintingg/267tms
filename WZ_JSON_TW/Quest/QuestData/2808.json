@@ -1,0 +1,159 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[勇士之村] 發掘進行情況報告"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "溫斯頓說有東西要交給武術教練。 去問溫斯頓，要交給什麼東西吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "從溫斯頓那裡收到寫著關於發掘進行情況的信，裝著樹苗的黑之包。 得把這個交給在勇士之村的武術教練。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把溫斯頓委託的東西都交給了武術教練。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "27"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "486"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022006"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "20"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2807"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "486"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嗯，還無法知道為何會出現異常行動。 但是因你的相助收集了足夠的研究樣本所以很快就會知道結果了。 還有一件事需要你解決，願意幫忙嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "將這信件與苗木袋交給 #b武術教練#k。 上面寫了關於最近的情形一定要交給他。 那就再麻煩你一次了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "反正要回到村莊不是嗎 …？ 改變心意就告訴我。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "青年戰士弟兄。 我發現你比以前有氣魄多了。 有什麼事會來找我？ "
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "原來你是來轉告溫斯頓的消息。 辛苦你了。 "
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "若有東西遺失時最好是走回頭路看看…你明白我的話嗎？"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你遺留下的 #b苗木袋#k與 #b信件#k被我撿到了…不要再弄丟請交給武術教練。"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[夜光] 幫助可麗的研究 1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "12"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "向可麗詢問在哪裡可取得水晶。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "可麗說若想取得水晶就要協助自己的研究。在可麗的拜託下廚調大蜘蛛，收集 #b50個大蜘蛛的觸角#k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "收集50個大蜘蛛的觸角交給可麗。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000610:# #t4000610:# #c4000610# / 50\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "285000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2154008"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "66"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "25634"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2711"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2712"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2154008"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000610"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "285000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000610"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "嗯，來找我做什麼？ 如果不是急事就回去。\\r\\n#L0##b我想在礦山收集水晶。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "水晶？ 嗯，收集水晶不是什麼困難的事。但是我不可能平白的告訴你。如果想取得水晶就幫我一下。目前正缺乏研究需要的材料。去幫我收集 #b大蜘蛛的觸角 50個#k給我。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "大蜘蛛就在坑到那邊很容易就找到。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不喜歡就算了。我要繼續研究了你快去吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "為什麼去這麼久？ 等的研究都快結束了嘛。我要先做試藥快點給我。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "大蜘蛛的觸角呢？ 我要快點進行研究啊！"
+          }
+        }
+      }
+    }
+  }
+}

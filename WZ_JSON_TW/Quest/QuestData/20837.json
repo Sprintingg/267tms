@@ -1,0 +1,145 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇家騎士團] 第5課程 - 技能攻擊"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "問奇加詳細的技能攻擊。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b#o9300731# 5隻#k用 #rElemental Slash技能#k攻擊吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "基礎訓練全部結束了，若通過修練騎士等級考試，我就成為修練騎士了！\r\n\r\n透過左邊的關卡進入考場吧，"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o9300731# #a208371#\r\n"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1102102"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q20837s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20836"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1102102"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q20837e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9300731"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "使用元素力量打擊怪物嗎？好樣的。嗯嗯，很好。好像可以成為修練騎士了呢？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "現在基本訓練全部結束了。只要通過簡單的測驗，你就可以成為修練騎士了。從那傳點出去就可以了。那麼測驗加油～沒考過的話可是要重新教育的！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b#o9300731#是為了修練而製作的假想生物。遭受到技能的攻擊了嗎。使用#r元素狂刃#k攻擊看看。"
+          }
+        }
+      }
+    }
+  }
+}

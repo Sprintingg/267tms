@@ -1,0 +1,185 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[伊甸提斯克] 來歷不明的恩人"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "伊甸島的首領#p9062961#正在尋找幫助過#p9062966#的恩人。但是不知為何，好像哪裡都看不到那位恩人…\r\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "到底幫助#p9062966#的恩人在哪裡呢？一定在伊甸提斯克的某個地方…去高處找找看吧。\r\n\r\n#b(※ 若進行中出現問題，請放棄任務後重新嘗試。)"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "終於找到了#p9062967#。#p9062967#擺手說幫助#p9062966#並不算什麼大事。或許是有些害羞吧…\r\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4037173:# #t4037173:# #c4037173# / 1\r\n"
+    },
+    "disableAtCompleteTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "demand": {
+      "_dirType": "sub",
+      "base": {
+        "_dirType": "string",
+        "_value": "#questorder1##i4037393:# #t4037393:# #c4037393# / 1\r\n"
+      },
+      "explain": {
+        "_dirType": "sub"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "deleteItem": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "int",
+        "_value": "4037393"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003588"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q35290s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "35289"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "35285"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003594"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q35290e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4037393"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有找到恩人嗎？我沒去過的地方只剩高處..."
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "我，找我有什麼事嗎？明明第一次見...不要跟我說話。"
+          }
+        }
+      }
+    }
+  }
+}

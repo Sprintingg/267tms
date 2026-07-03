@@ -1,0 +1,202 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[弓箭手村] 菇菇森林探險（１）"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "要接開菇菇國王的結界並救公主的話…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "調查菇菇森林的強力的結界，向#b#p1300003##k報告。\\r\\n#b菇菇森林結界探險：#R2314#/1完成。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "調查強大的結界。好像有人用魔法放置了強大的結界，用一般的方法無法前進菇菇王國的#p1300004#知道方法…"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 4,600\r\n可進行 '菇菇森林探險（２）' 任務\r\n"
+    },
+    "summary": {
+      "_dirType": "string",
+      "_value": "前往#b#m106020300##k調查菇菇森林的強力的結界向#b#p1300003##k報告。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "菇菇森林結界探險:#R2314#/1完成。"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "2314"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "25"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "4600"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1300003"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q2314s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2313"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1300003"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "2314"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "2315"
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "4600"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "要拯救公主，首先必須調查菇菇森林。可是企鵝國王那傢伙不知用了什麼法術形成了一個強大的結界，阻斷了進入城堡的道路。請您前往調查吧。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "菇菇森林的結界只要從這裡一直往東走的話，就可以在 #b#m106020300##k看見。 請小心。 聽說凶狠的怪物們已經完全掌控森林了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請不要拋棄我們菇菇王國啊。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "調查菇菇森林的結界了嗎。怎麼回事？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "原來如此，果然不是一般的結界啊。真是辛苦您了，沒有勇士的幫助我們是無法瞭解的。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請潛入菇菇森林深處調查結界的情況。"
+          }
+        }
+      }
+    }
+  }
+}

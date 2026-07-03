@@ -1,0 +1,201 @@
+{
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "RL_Warrior_3"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          }
+        }
+      },
+      "effect2": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_PlaySound"
+          },
+          "SoundPath": {
+            "_dirType": "string",
+            "_value": "Sound/RoguelikeWz2.img/Skill/10000005/Use"
+          }
+        }
+      }
+    },
+    "VectorSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "AnimReference": {
+            "_dirType": "sub",
+            "bEnableRootMotion": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "0": {
+              "_dirType": "sub",
+              "pos": {
+                "_dirType": "vector",
+                "_x": 0,
+                "_y": 0
+              },
+              "delay": {
+                "_dirType": "int",
+                "_value": "210"
+              },
+              "intrpl": {
+                "_dirType": "string",
+                "_value": "Linear"
+              }
+            },
+            "1": {
+              "_dirType": "sub",
+              "pos": {
+                "_dirType": "vector",
+                "_x": 0,
+                "_y": 0
+              },
+              "delay": {
+                "_dirType": "int",
+                "_value": "30"
+              },
+              "intrpl": {
+                "_dirType": "string",
+                "_value": "Linear"
+              }
+            },
+            "2": {
+              "_dirType": "sub",
+              "pos": {
+                "_dirType": "vector",
+                "_x": -60,
+                "_y": 0
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "1200"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "6"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -241,
+          "_y": -86
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": -49,
+          "_y": 18
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "500"
+        },
+        "stunDuration": {
+          "_dirType": "string",
+          "_value": "1"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "onlyOnce": {
+            "_dirType": "string",
+            "_value": "1"
+          }
+        }
+      },
+      "hitSoundPath": {
+        "_dirType": "string",
+        "_value": "Sound/RoguelikeWz2.img/Skill/10000005/Hit"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "1200"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "1"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "6"
+    },
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  }
+}

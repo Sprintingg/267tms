@@ -1,0 +1,238 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[星光之塔] 請幫我找錄音機"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "211"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4036023:# #t4036023:# #c4036023# / 1\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#r星光之塔4樓天空花園#k。見到了擁有神祕音色的#b亞咪#k，雖然提出招募的提議，但她好像已經有想要去的地方…還沒有決定前，還有希望的，她應該往同一層的唱片行的方向過去了。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "大概是因為弄丟錄音機而苦惱中。在重新提出招募建議之前，先幫她找回#b#i4036023:# #t4036023:##k好像比較好…好像就混在周圍的#r#o4310009##k與#r#o4310010##k持有的#b#i2436127:# #t2436127:##k之中，只能一個一個確認了。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "找出混在 #b#i2436127:# #t2436127:##k 內的 #b#i4036023:# #t4036023:##k。"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "3098601"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "145"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052211"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34413"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052211"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036023"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "3098601"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036023"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "Normal"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "sayEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "…我的錄音機去哪了呢？"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#b(大概是因為弄丟錄音機而苦惱中。要不要幫她找回#r#i4036023:# #t4036023:##b？)#k"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yesEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "(好像就混在周圍的#r#o4310009##k與#r#o4310010##k持有的#e#b#i2436127:# #t2436127:##n#k之中。只能#b一個一個確認#k了。)"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "…得從周圍開始尋找了。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊，這個是我的…"
+      },
+      "yesEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#b(將#i4036023:# #t4036023:#給他。)#k"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "…謝謝你。"
+          }
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "(好像就混在周圍的#r#o4310009##k與#r#o4310010##k持有的#e#b#i2436127:# #t2436127:##n#k之中。只能#b一個一個確認#k了。)"
+          }
+        }
+      }
+    }
+  }
+}

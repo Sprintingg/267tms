@@ -1,0 +1,246 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 艾溫的染料1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "魔法森林的#b#p1032100##k很緊急的需要幫忙…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在魔法森林魔法學校的慶典負責畫壁畫的#b艾溫#k，因畫壁畫需要的黃色與綠色染料不足無法完成圖片。幫他收集染料的材料#b#t4000007#20個#k與#b#t4000013#20個#k吧。\\n\\n#i4000007##t4000007##b#c4000007##k/20\\n#i4000013##t4000013##b#c4000013##k/20"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "幫艾溫收集了染料的材料#t4000007#與#t4000013#。原來那就是畫壁畫的艾溫特製的染料材料…"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 600\r\n#i2000001:# #t2000001:# 30 個\r\n可進行 '艾溫的染料2' 任務\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "600"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2000001"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1032100"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "20"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1032100"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000007"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000013"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "600"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000007"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000013"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2000001"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "是急事！不想跟人類請求幫助，但可以幫忙的人只有你，可以幫我嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這次在魔法學校有活動中，負責了畫壁畫。畫壁畫時得要用我做的#b特製染料#k。普通染料容易掉下來，所以無法畫畫。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "可正好沒有黃色和綠色染料。這次畫壁畫時也需要…加上畫乾之前得要塗黃色和綠色，因此時間緊急。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "要製造這染料需要#b#t4000007##k和#b#t4000013##k。各有#b20個#k，就可以製造壁畫需要的染料。這染料的材料可在#b北部#k找到。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "果然不能依靠人類是錯誤的…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "材料都找回來了啊。得要做染料，快給我吧。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "謝謝你。 託你的福我可製作顏料。 給你這個。你在冒險時會有幫助的。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "得去做染料了，那麼就…"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b#t4000007##k和#b#t4000013##k還沒找到嗎？畫乾掉之前得要塗上染料啊…"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[墮落的世界樹] 英雄和狼，還有世界樹"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "270"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "阿爾伽托開始說明魔族們為何要撤退。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "阿爾伽托說會說明在這個世界樹上發生了什麼事情。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "阿爾伽托講述了戴米安和六位英雄在世界樹上發生的事情。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#欣賞故事摘要 (#R101937ExRef101937#)"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "190"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "199"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "306747082"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1540895"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q101937s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "190"
+      },
+      "subJobFlags": {
+        "_dirType": "int",
+        "_value": "15"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "15417"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1540895"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "101937"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "欣賞故事摘要"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "306747082"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "是很長的故事。怎麼樣？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "就這樣，我們魔族被英雄們打敗，被迫離開這片土地。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "怎麼辦，全部都是我們播下的種子…"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "現在只要和阿爾伽托對話，就能欣賞#b#e楓葉英雄#n#k的#r#e故事摘要#n#k。這個內容可以在#b#e次元之鏡#n#k的#b#e楓之谷聯盟會議場#n#k中直接進行。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "故事還沒結束呢。\\r\\n#r(*請放棄任務後重新領取。)#k"
+          }
+        }
+      }
+    }
+  }
+}

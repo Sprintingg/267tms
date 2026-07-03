@@ -1,0 +1,188 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 尤莉亞的宅配"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "把遭到怪物襲擊而遺失的#t4032803#找回來，並交給#b尤莉亞#k。不過，尤莉亞拜託黃金富豪的到底是什麼東西呢？"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把物品轉交給了尤莉亞。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4032803:##t4032803:##c4032803#/1\r\n"
+    },
+    "autoCancel": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201103140000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201104040000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201008300000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201009270000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "10828"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "dayOfWeek": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "Monday"
+        }
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q10829e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032803"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "dayOfWeek": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "Monday"
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032803"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哦~把所有的快遞物品都找回來了啊。現在時間緊迫。你能不能在幫我做下一件事啊？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哎呀？我的快遞？哦…看樣子是上次在黃金富豪那裡訂購的東西，現在才到呢。謝謝你幫我送到這麼遠的地方來…有了這些東西，應該能夠幫上埃德爾斯坦的末日反抗軍了。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "辛苦你了。要不要休息一下再走啊？"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "哎呀？我的快遞呢？"
+          }
+        }
+      }
+    }
+  }
+}

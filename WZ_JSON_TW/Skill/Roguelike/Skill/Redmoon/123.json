@@ -1,0 +1,225 @@
+{
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "alert9"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "socketName": {
+              "_dirType": "string",
+              "_value": "None"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_PlaySound"
+          },
+          "SoundPath": {
+            "_dirType": "string",
+            "_value": "Sound/Redmoon.img/Skill/123/Use"
+          }
+        }
+      },
+      "attackPowerBuff": {
+        "_dirType": "sub"
+      },
+      "attack": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "60"
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "AreaBuff"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "10"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -350,
+          "_y": -250
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 50,
+          "_y": 100
+        }
+      },
+      "targetBuffID": {
+        "_dirType": "int",
+        "_value": "120"
+      },
+      "targetingType": {
+        "_dirType": "string",
+        "_value": "Hostile"
+      }
+    },
+    "attackPowerBuff": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "SelfBuff"
+      },
+      "constants": {
+        "_dirType": "sub"
+      },
+      "selfBuffID": {
+        "_dirType": "int",
+        "_value": "123"
+      },
+      "selfBuffAction": {
+        "_dirType": "string",
+        "_value": "Apply"
+      }
+    },
+    "attack": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "10"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -350,
+          "_y": -250
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 50,
+          "_y": 100
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "3"
+        },
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "170"
+        },
+        "buffLevel": {
+          "_dirType": "string",
+          "_value": "1"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "z": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "hitSoundPath": {
+        "_dirType": "string",
+        "_value": "Sound/Redmoon.img/Skill/123/Hit"
+      },
+      "eventTags": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "RLGame.Effect.Burn"
+        }
+      },
+      "targetBuffID": {
+        "_dirType": "string",
+        "_value": "500"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "3"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "10"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -350,
+      "_y": -250
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 50,
+      "_y": 100
+    },
+    "cooltime": {
+      "_dirType": "int",
+      "_value": "8"
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "170"
+    },
+    "Tags": {
+      "_dirType": "sub",
+      "cannotDestroy": {
+        "_dirType": "sub"
+      },
+      "interruptable": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "SkillTags": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "string",
+      "_value": "RLGame.Skill.Basic"
+    }
+  }
+}

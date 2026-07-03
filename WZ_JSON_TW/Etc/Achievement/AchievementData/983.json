@@ -1,0 +1,111 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "parentId": {
+      "_dirType": "int",
+      "_value": "0"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "就是怕這種事，所以裝上口紅控制器標誌。"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "裝備口紅控制器標誌"
+    },
+    "sync": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "100"
+    },
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "item"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "equip"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "legendary"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "uiForm": {
+        "_dirType": "string",
+        "_value": "basic"
+      },
+      "gauge": {
+        "_dirType": "string",
+        "_value": "mission_count"
+      },
+      "gaugeMissionIndex": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "gaugeSubMission": {
+        "_dirType": "string",
+        "_value": "item_equip"
+      }
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "裝備口紅控制器標誌"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "item_equip": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "long",
+              "_value": "1"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            },
+            "setGroup": {
+              "_dirType": "string",
+              "_value": "item_equipped"
+            },
+            "setValue": {
+              "_dirType": "string",
+              "_value": "item_id"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub",
+            "item_equipped": {
+              "_dirType": "sub",
+              "condition": {
+                "_dirType": "string",
+                "_value": "or"
+              },
+              "values": {
+                "_dirType": "sub",
+                "0": {
+                  "_dirType": "sub",
+                  "item_id": {
+                    "_dirType": "int",
+                    "_value": "1012632"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

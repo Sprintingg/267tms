@@ -1,0 +1,210 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓之谷世界的冒險家] 聽取內拉的意見"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必需]"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "內拉好像非常瞭解達克魯，再去和#b內拉#k對話。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "內拉說總覺得達克魯還有一些祕密，為了瞭解一下其他人是不是有同樣的想法，要求去找吉姆。#b後街吉姆#k。怎麼是那個傢伙？"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "內拉好像對達克魯不太瞭解。吉姆好像知道一些…"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 100\r\n可進行 '聽取後街吉姆的意見' 任務\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "77"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052103"
+      },
+      "subJobFlags": {
+        "_dirType": "int",
+        "_value": "2"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "12"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2354"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "2382"
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "100"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "可是不知道為什麼躲在爵士酒吧裡不出來。難道等別人都睡了以後一個人偷溜出來嗎？\\r\\n#L0##b我還是有點不明白。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "唉。這種神祕的一面就是達克魯的魅力，不過會不會有什麼祕密呢？啊…當然不會為此有什麼不滿，不過我對別人的祕密非常感興趣。我正好有件感到好奇的事，能不能幫我去打聽一下？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "最近村民們在議論流氓菇菇仔，不知出了什麼事情。能不能去問問#b後街吉姆#k？"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你都聽了我的故事，但還是不想幫我嗎？我以為我們已經很親近了呢 …"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "嗨！你想聽什麼事情？不用擔心。我對小道消息知道的可不少。我也知道你不會無緣無故就和我說話！\\r\\n#L0##b沒什麼理由。不過你對小道消息很熟悉，只是想問問知不知道流氓菇菇仔的事情。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "什麼。為了這個特意來找我的？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "流氓菇菇仔…我說這話你可能會失望，那些傢夥其實沒什麼好說的。頂多是個愛開玩笑的賴皮而已。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "看來流氓菇菇仔的事情還是去問#b後街吉姆#k比較好。"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,268 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1032106"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "40"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2085"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1032106"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000207"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "2087"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000207"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031165"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "為什麼人類會在這種地方的？我不想和人類說話，趕緊離開這裡吧。\\r\\n#L0#我也不想和你說話！#l\\r\\n#L1#關於'飛翔之藥'…"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "咦，人類怎麼會知道那個藥的？哼！雖然不知道是怎麼知道的，但我不想和你這種傢夥談論關於那個藥的事情！\\r\\n#L0#你這個無禮自大的小傢夥！#l\\r\\n#L1#我非常需要那個藥。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "說什麼？！！小傢夥？我可不是什麼小傢夥！！\\r\\n#L0#對不起，說得有些過頭了#l\\r\\n#L1#可是你為什麼要使用非敬語啊？#l\\r\\n#L2#如果不是因為伊卡路斯拜託我，我也不會來這裡…(自言自語)"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "伊卡路斯？你是受到那個傢夥之託來這裡的嗎？伊卡路斯是我唯一的一個人類朋友…既然是受到伊卡路斯之託來到這裡的，那我就特別為你製作吧。不過做這個藥所需要的藥材可是很難弄到的啊。你真的能弄來嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "0": {
+            "_dirType": "string",
+            "_value": "彼此彼此，快走吧。"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "不管需要還是不需要都只是你的事情，我不感興趣。"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "0": {
+            "_dirType": "string",
+            "_value": "哼！再也不想和你說話，快走吧！"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "我是妖精耶。這樣看起來比你活得更久呢！總之我懶得跟你在對話了，你快離開吧。"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好吧。看你那麼重視與朋友之間的約定，應該是一個不錯的小夥子。只要你收集來#b#t4000207#50個#k和#b#t4031165#20個#k的話，我就幫你製造#b#t4031163##k。魔女草是生長在沼澤地帶的草，他的採集方法有點複雜。必須要站在#b右邊採集#k，才能採到。加油吧，但是應該不會太簡單的。\n\n\n#b#t4000207#，可以除掉#r被封鎖的遺跡發掘地#k的怪物取得。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "就知道會是這樣，對你來說還太勉強吧。這並不是虛弱的人類能夠做到的事情。看來你對你自己還是很瞭解嘛！那就快離開這裡，不要再打擾我了。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "呃，什麼啊，真的都弄來了嗎？可是這算什麼啊？魔女草葉子都枯掉了，這樣還想讓我做藥嗎？\\r\\n#L0#幹嘛沒事找麻煩？#l\\r\\n#L1#我看還可以啊？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "你知道什麼啊？反正我先當成材料收下了。不過材料不怎麼好，就算藥效不好我也不會負責的啊。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "0": {
+            "_dirType": "string",
+            "_value": "什麼？我現在心情不好不想給你做，下次再來吧。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你有沒有仔細聽我說的話啊？我說是#b#t4000207#50個#k和#b#t4031165#20個#k！知道了嗎？"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 飛天藥水的材料"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在魔法森林見到的妖精維英好像非常討厭人類。可他是怎麼成為伊卡路斯的朋友的？維英說為了製作#b#t4031163##k需要#b#t4000207#50個#k和#b#t4031165#20個#k。只要收集了這些就會給我製作藥劑嗎？\\n\\n#i4000207##t4000207##b#c4000207##k/50\\n#i4031165##t4031165##b#c4031165##k/20"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "就如溫莉的請託，蒐集了怪藥和魔女草的葉子交給了他。只要有這些就可以做出飛翔的祕藥了嗎？"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

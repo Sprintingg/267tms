@@ -1,0 +1,153 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "info": {
+      "_dirType": "string",
+      "_value": "벽가시-오른쪽4"
+    },
+    "sensorList": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": -65,
+          "_y": -5
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 5,
+          "_y": 60
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "attack": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": -64,
+          "_y": 0
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 0,
+          "_y": 58
+        },
+        "damage": {
+          "_dirType": "string",
+          "_value": "12"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "z": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    }
+  },
+  "AnimSet": {
+    "_dirType": "sub",
+    "stand": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment:All": {
+            "_dirType": "sub",
+            "AnimReference": {
+              "_dirType": "sub"
+            }
+          }
+        }
+      }
+    },
+    "attack": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "AnimReference": {
+              "_dirType": "sub"
+            }
+          }
+        }
+      },
+      "Notifies": {
+        "_dirType": "sub",
+        "attack": {
+          "_dirType": "sub",
+          "TriggerTime": {
+            "_dirType": "int",
+            "_value": "360"
+          }
+        },
+        "sound": {
+          "_dirType": "sub",
+          "Notify": {
+            "_dirType": "sub",
+            "!class": {
+              "_dirType": "string",
+              "_value": "WZ2AnimNotify_PlaySound"
+            },
+            "SoundPath": {
+              "_dirType": "string",
+              "_value": "Sound/RoguelikeWz2.img/Trap/Common/Attack"
+            }
+          },
+          "TriggerTime": {
+            "_dirType": "int",
+            "_value": "360"
+          }
+        }
+      }
+    },
+    "disabled": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "AnimReference": {
+              "_dirType": "sub"
+            }
+          }
+        }
+      }
+    },
+    "appear": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "AnimReference": {
+              "_dirType": "sub"
+            }
+          }
+        }
+      }
+    }
+  }
+}

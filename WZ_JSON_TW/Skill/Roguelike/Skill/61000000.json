@@ -1,0 +1,158 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "0008005 쓸만한 어드밴스드 블레스"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "alert2"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          }
+        }
+      },
+      "effect1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      },
+      "buffEffect": {
+        "_dirType": "sub"
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "8005"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": -150,
+          "_y": -150
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 0,
+          "_y": 0
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub"
+        }
+      },
+      "buffID": {
+        "_dirType": "int",
+        "_value": "61100000"
+      }
+    },
+    "buffEffect": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": -150,
+          "_y": -150
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 0,
+          "_y": 0
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub"
+        }
+      },
+      "buffID": {
+        "_dirType": "int",
+        "_value": "61100000"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "3"
+    },
+    "cooltime": {
+      "_dirType": "int",
+      "_value": "60"
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "30*x"
+    },
+    "time": {
+      "_dirType": "string",
+      "_value": "20"
+    }
+  }
+}

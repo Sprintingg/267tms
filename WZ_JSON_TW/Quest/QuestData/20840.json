@@ -1,0 +1,107 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇家騎士團] 騎士的自我管理"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "鷹眼說對騎士的自我管理方法想要提出建議。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "認真修練獲得升級就可以領取 AP和 SP，可以強化能力。\r\n\r\n[AP 分配]\r\n使用快捷鍵S開啟屬性欄位後，用 AP可以提供必要的能力。\r\n可透過自動分配按鈕提升 STR(根據職業不同..)\r\n\r\n[SP 分配]\r\n使用快捷鍵K開啟技能視窗後，用 SP(技能點數)提升 #1次攻擊技能#級別。\r\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "成為修練騎士後若好好使用已獲得的 AP和 SP就會變成更加強大的騎士。認真修練成為更強的騎士。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1101003"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "1100"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1101007"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "如何？用 SP把技能等級提升後打過怪了嗎？是我太急了嗎？ 哈哈哈。\\r\\n"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那去看看吧。 不要忘記完美的管理自己。 那因哈特說有要給我們可愛的新修練騎士的任務， 去找那因哈特吧。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "按下快捷鍵K打開技能欄後， 提升技能等級看看吧。"
+          }
+        }
+      }
+    }
+  }
+}

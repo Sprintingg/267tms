@@ -1,0 +1,311 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "비욘더 마스터리 21121016"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "beyonder_second"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "Effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          }
+        }
+      },
+      "Sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "21121016"
+          }
+        }
+      },
+      "attack": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "360"
+        }
+      },
+      "createZone": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "360"
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "attack": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "100+70*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "5"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "6"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -325,
+          "_y": -220
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 20,
+          "_y": 70
+        },
+        "buffLevel": {
+          "_dirType": "string",
+          "_value": "5"
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "50"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub"
+        }
+      },
+      "hitSoundPath": {
+        "_dirType": "string",
+        "_value": "Sound/RoguelikeWz2.img/Skill/10000006/Hit"
+      },
+      "targetBuffID": {
+        "_dirType": "int",
+        "_value": "500"
+      },
+      "eventTags": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "RLGame.Effect.Burn"
+        }
+      }
+    },
+    "createZone": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "SummonZone"
+      },
+      "zoneType": {
+        "_dirType": "string",
+        "_value": "self"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "duration": {
+          "_dirType": "string",
+          "_value": "12"
+        },
+        "count": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "z": {
+          "_dirType": "int",
+          "_value": "20000"
+        },
+        "searchDistanceY": {
+          "_dirType": "string",
+          "_value": "150"
+        },
+        "summonXpos": {
+          "_dirType": "string",
+          "_value": "150"
+        }
+      },
+      "zones": {
+        "_dirType": "sub",
+        "attackZone": {
+          "_dirType": "sub",
+          "LayerSlots": {
+            "_dirType": "sub",
+            "Slot0": {
+              "_dirType": "sub",
+              "Segment:stand": {
+                "_dirType": "sub"
+              },
+              "Segment:loop": {
+                "_dirType": "sub"
+              },
+              "Segment:die": {
+                "_dirType": "sub"
+              }
+            }
+          },
+          "Notifies": {
+            "_dirType": "sub",
+            "attackLoop": {
+              "_dirType": "sub",
+              "TriggerTime": {
+                "_dirType": "string",
+                "_value": "360"
+              },
+              "TriggerInterval": {
+                "_dirType": "string",
+                "_value": "360"
+              },
+              "EndTriggerTime": {
+                "_dirType": "string",
+                "_value": "3600"
+              }
+            }
+          },
+          "Sections": {
+            "_dirType": "sub",
+            "stand": {
+              "_dirType": "sub",
+              "StartTime": {
+                "_dirType": "int",
+                "_value": "0"
+              }
+            },
+            "loop": {
+              "_dirType": "sub",
+              "StartTime": {
+                "_dirType": "int",
+                "_value": "360"
+              },
+              "NextSectionName": {
+                "_dirType": "string",
+                "_value": "loop"
+              }
+            },
+            "die": {
+              "_dirType": "sub",
+              "StartTime": {
+                "_dirType": "int",
+                "_value": "3600"
+              }
+            }
+          }
+        }
+      }
+    },
+    "attackLoop": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "20"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -155,
+          "_y": -100
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 155,
+          "_y": 5
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "5"
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "2221012"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "100+70*x"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "5"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "6"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -325,
+      "_y": -220
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 20,
+      "_y": 70
+    },
+    "cooltime": {
+      "_dirType": "string",
+      "_value": "15"
+    }
+  },
+  "SkillTags": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "string",
+      "_value": "RLGame.Skill.Extra"
+    }
+  }
+}

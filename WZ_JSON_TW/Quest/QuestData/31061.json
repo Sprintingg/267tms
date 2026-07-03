@@ -1,0 +1,150 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[星星力量] 不吉祥的光芒"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "33"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#m211000000# 村莊發生了不尋常的事情，去找#b#p2020005##k聽聽詳細內容吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2020005#說自己目睹昨晚從天空降下的#b謎樣的光芒#k，看到昨晚降到冰原雪域山脈後方的光芒，活了相當長時間的 #p2020005#認為那非常不吉祥。\n去尋找是否有人知道那道光芒的真實身分，亞凱斯特指名了#b史卡圖勒#k。\r\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "受#p2020005#的委託去尋找昨晚目睹天空降下的謎樣光芒時，從#p2020007#那邊聽到關於光芒的真實面目，那個謎樣的光芒是 #b流星#k。"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 323,465\r\n'[★] 能以降落在廢礦的星星' 任務進行\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "323465"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2020005"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "120"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2020007"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "323465"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你也看見了嗎？ #b昨晚的那道光芒#k！嗯？沒看見嗎？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "嗯嗯…我在這個地方住了300年，但卻是第一次看到那種光芒，不吉祥…太不吉祥了…嗯？什麼東西不吉祥？ \\r\\n太難說明了，但我看見了，那個蘊含藍色光芒的黑暗。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "天啊，不安感一直揮之不去，\\r\\n如果可以的話，能請你去探聽是否有人看見那道光芒嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好， #b#p2020007##k應該有看見，因為他昨天晚上好像有去狩獵，去詢問他關於光的事情吧。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不吉祥…太不吉祥了。\\r\\n"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "亞凱斯特？嗯…亞凱斯特也看見了呀，那是#b流星#k，從西北邊天空出現，然後往廢礦方向飛過去後就消失了。\\r\\n"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我有不好的預感，這是身為獵人的預感，咳咳，讓我先喘口氣再說吧。因為我徹夜趕回來，所以有點喘，希望你能諒解。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "去找史卡圖勒吧，他應該就在這附近的某處。"
+          }
+        }
+      }
+    }
+  }
+}

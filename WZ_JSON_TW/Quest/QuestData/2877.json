@@ -1,0 +1,236 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[墮落城市] 內拉的第四次委託"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽說有了新的事情。 去找一下內拉吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "消滅沼澤地帶的#b鱷魚150隻#k獲得的#b鱷魚皮革 20個#k，要放在從#r 藥店右邊開始算起的第二個，從上面開始算起的第三個抽屜#k裡。\n跟吉姆的方式一樣，到底是怎麼一回事呢？\n先執行內拉的委託吧。\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在藥店放了受委託的物品。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000032:# #t4000032:# #c4000032# / 20\r\n#o3110100# #a28771#\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "28"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1825"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052103"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "45"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2876"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052131"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000032"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3110100"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "150"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1825"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000032"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "正常"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1472007"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "正常"
+          },
+          "job": {
+            "_dirType": "int",
+            "_value": "16400"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好~ 又有新事情了。 狩獵棲息在#m103030100#的鱷魚，收集20張皮革，放進 #r藥店裡從右數第二個、從上數第三個抽屜#k裡就行。 沒問題吧？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那麼這次的事情也拜託你了~"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這件事不怎麼難，報酬也不低?再考慮一下吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "將受請托之物放進抽屜，拿出報酬。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#r藥店裡從右數第二個、從上數第三個抽屜#k。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "鱷魚皮不足。 需要的物品是鱷魚皮革20張。"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請消滅150隻鱷魚。"
+          }
+        }
+      }
+    }
+  }
+}

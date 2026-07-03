@@ -1,0 +1,203 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "400051008 빅 휴즈 기간틱 캐논볼"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "5thBFCanonBall"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub"
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "400051008"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Projectile"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "time": {
+          "_dirType": "string",
+          "_value": "12"
+        },
+        "destroyHitCount": {
+          "_dirType": "string",
+          "_value": "9999"
+        },
+        "hitIntervalPerTarget": {
+          "_dirType": "long",
+          "_value": "400"
+        },
+        "boundLT.X": {
+          "_dirType": "string",
+          "_value": "-145"
+        },
+        "boundRB.X": {
+          "_dirType": "string",
+          "_value": "130"
+        },
+        "boundLT.Y": {
+          "_dirType": "string",
+          "_value": "-130"
+        },
+        "boundRB.Y": {
+          "_dirType": "string",
+          "_value": "130"
+        },
+        "emitPos.X": {
+          "_dirType": "string",
+          "_value": "-200"
+        },
+        "emitPos.Y": {
+          "_dirType": "string",
+          "_value": "-100"
+        },
+        "initialVelocity.X": {
+          "_dirType": "string",
+          "_value": "-50"
+        },
+        "initialVelocity.Y": {
+          "_dirType": "string",
+          "_value": "0"
+        }
+      },
+      "ball": {
+        "_dirType": "sub",
+        "z": {
+          "_dirType": "int",
+          "_value": "-1"
+        }
+      },
+      "onProjectileHit": {
+        "_dirType": "string",
+        "_value": "Attack"
+      }
+    },
+    "Attack": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "60+30*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "4"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "24"
+        },
+        "stunDuration": {
+          "_dirType": "string",
+          "_value": "0.5"
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "100"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "randomHit": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "0": {
+          "_dirType": "sub"
+        },
+        "1": {
+          "_dirType": "sub"
+        },
+        "2": {
+          "_dirType": "sub"
+        },
+        "3": {
+          "_dirType": "sub"
+        },
+        "4": {
+          "_dirType": "sub"
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "400051008"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "120"
+    },
+    "hitCount": {
+      "_dirType": "string",
+      "_value": "120"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "4"
+    },
+    "cooltime": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "60+30*x"
+    }
+  }
+}

@@ -1,0 +1,243 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[* 十字獵人] 除掉遺跡發掘地的阻礙"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "264"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去找遺跡發掘隊營區的杉峰。向他詢問遺跡發掘現場狀況，問問看有什麼需要幫忙的。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了讓遺跡發掘順利進行，要除掉妨礙作業的怪物。\n\n#b#m102040300#,#m102040301##k：骷髏犬、木乃伊犬\n#b#m102040400#,#m102040500##k：骷髏士兵、骷髏士官"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "除掉妨礙遺跡發掘作業的骷髏犬、木乃伊犬、骷髏士兵和骷髏士官。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o4230125##a16041#\r\n#o4230126##a16042#\r\n#o5150001##a16043#\r\n#o6230602##a16044#\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "140"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "149"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "11300"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9040002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "45"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1603"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9040002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4230125"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4230126"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "5150001"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "3": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "6230602"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "1606"
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "11300"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "情況逐漸變嚴重了。 骷髏的攻擊讓死傷者倍增，遺跡發掘持續的落後。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "聽說遺跡發掘現場出現了前所未見的藍光柱，發現這個之後，骷髏變狂暴，至於原因是不是在於柱子，僅僅是推測罷了…"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "不能再讓發掘作業延遲！ 你來幫忙。 只要將骷髏除掉即可。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "骷髏犬、木乃伊犬、骷髏士兵和骷髏士官，分別除掉50隻。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "倘若不快點結束發掘 作業，或許會有非常大的危機接近。 需要你的幫助。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "都除掉了嗎 ？ 真的很感謝你協助遺跡發掘隊。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "等一下，你還有事要做。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "將在#m102040300#、#m102040301# 地區妨礙發掘作業的骷髏犬和木乃伊犬分別除掉50隻。"
+          }
+        }
+      }
+    }
+  }
+}

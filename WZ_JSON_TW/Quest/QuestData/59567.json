@@ -1,0 +1,183 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[重逢] 再次相遇的點名活動"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "為了好久沒上線的您，尤利亞準備的點名活動！每天點名蓋章來獲得輔助成長的豐富禮物吧！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了好久沒上線的您，尤利亞準備的點名活動！每天點名蓋章來獲得輔助成長的豐富禮物吧！"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "為了好久沒上線的您，尤利亞準備的點名活動！每天點名蓋章來獲得輔助成長的豐富禮物吧！"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o9101025# #a595671#"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330042"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q59567s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "59566"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "interval_t": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201603300900"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201604130900"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330042"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q59567e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9101025"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "300"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哈囉，#b#h0##k！好久不見了！正好有活動進行中喔，現在馬上參加點名活動吧？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "狩獵#b#e#o9101025#300隻#k#n後打開點名簿，就可以確認是否完成點名，怎麼樣？這規則應該沒什麼問題吧？\\r\\n★#e#o9101025#是？\\n#n以角色等級為基準，#r-10等級至 +20等級範圍內#k的怪物。例如角色的等級是50級的話，40級~70級的怪物就是#e等級範圍怪物#n。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "準備了不少輔助成長的禮物呢，所以挑戰看看吧！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒狩獵#b#e#o9101025#300隻#k#n嗎？是不是太久沒戰鬥的關係？\\r\\n★#e#o9101025#是？\\n#n以角色等級為基準，#r-10等級至 +20等級範圍內#k的怪物。例如角色的等級是50級的話，40級~70級的怪物就是#e等級範圍怪物#n。"
+          }
+        }
+      }
+    }
+  }
+}

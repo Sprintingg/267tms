@@ -1,0 +1,194 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[菇菇城堡] 尋找公主2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "91"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "如果是詹姆士的話或許會知道菲歐娜公主在哪裡? 與詹姆士對話看看. "
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "詹姆士說他看見公主被拉到地下. 還有為了救出公主後逃脫, 必須要先打倒甲板上的維京, 這樣以後逃跑的時候才會比較容易.  "
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "從被抓來當俘虜的菇菇詹姆士那聽到了公主在地下的情報. 還有要輕易的與公主一起逃脫的話要先打倒在甲板上的徘徊的維京們. "
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o3300106# #a300641#\r\n#questorder1##o3300107# #a300642#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 52,919"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "#m106030500# / #m106030501# / #m106030502# "
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "52919"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1302020"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "30063"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1302020"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3300106"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3300107"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "52919"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "是要來救菲歐娜公主的嗎? 如果是菲歐娜公主的話我看見他被拉到 #b地下#k了. 雖然努力的在隱藏情緒,但公主也是受到了非常多的驚嚇. 勇士您是來救公主的嗎? 那麼必須先打倒甲板上的維京才行. "
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "為了找到公主回到菇菇城堡,一定要經過這甲板才行. 還有要打倒 #r#o3300106##k與 #r#o3300107##k才能輕易地回去. "
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "沒有打倒甲板上的維京們的話就算找到公主也無法回去. 再想想看. "
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "打倒全部飛行船的維京們了嗎? 那麼現在我也可以回到城堡了!"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "要先打倒#r#o3300106##k與 #r#o3300107##k才能與公主輕易地逃出. "
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[水世界]成群阻擾"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "35"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#p9390005##k好像有事情要委託。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p9390005#說幫忙擊捕 #o9390003##k 300隻。300隻而已..."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "打倒了#o9390003##k全部 300隻。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o9390003# #a171031#\r\n"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "5000000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5000000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "現在派遣到水世界的四名研究員在各自的領域進行研究當中。而且我正在調查這個區域。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "可是… 研究途中發生了 #b小小的#k問題。要幫忙嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝你。最近棲息在這附近的 #r#o9390003##k數量增多後開始成群結黨。當#r#o9390003##k成群結黨就會出現攻擊的情形"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "擊退#r#o9390003##k讓它們無法成群結黨吧。\\n嗯... 大概打倒 #r#e300#k 隻#n 就好了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "連這種程度都辦不到嗎？若是改變想法，就請告訴我一聲。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "歡迎光臨。#r#o9390003##k的數量有明顯地減少了。謝謝。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "同時我還想要拜託你幾件事，可以嗎？若是可以的話，請再和我說話。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "好像還沒有明顯的數量減少。請你再繼續加油吧。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390005"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "200"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "17102"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390005"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9390003"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "300"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

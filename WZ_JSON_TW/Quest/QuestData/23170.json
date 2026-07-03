@@ -1,0 +1,178 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[末日反抗軍] 末日反抗軍的新生"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "16"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "你就是一名真正的末日反抗軍！末日反抗軍該做些什麼事呢？詢問#b#p2151000##k吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2151000#說你目前的等級太低，無法提供任務，要你先升到#b14級#k以上。透過狩獵累積經驗值就能升級，但聽說末日反抗軍新生有客製的教育課程，去找#b教育教官#p2151010##k吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "去找#p2151010#詢問末日反抗軍教育課程的事情。"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "targetMapID": {
+      "_dirType": "int",
+      "_value": "310010010"
+    },
+    "returnMapID": {
+      "_dirType": "int",
+      "_value": "310010010"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2151000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "3700"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "3710"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "3711"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "3712"
+        }
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201606290900"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2151010"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q23170e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "還沒有身為末日反抗軍來進行的第一個任務呢。失望了嗎？因為你等級還是有點低而有無法給予任務的問題呢。我們也不能把剛成為末日反抗軍的人陷入危險阿…所以先把 #b等級升級到 14級#k吧。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你應該知道升級的方法吧？累積經驗的話，等級就會自然的上去了。雖然也有透過狩獵的方式來累積經驗，可是我們末日反抗軍是有#b為了末日反抗軍學生的教育程序#k，你就透過那個方式來升級會比較快喔。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "末日反抗軍的教育程序是 #b#p2151010##k先生在負責喔。去#b#m310010010##k的話，就可以遇到 #p2151010#先生吧。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "那麼下次課程再見面吧。\\r\\n到那時後為止期待你能以末日反抗軍的身分來帥氣的活躍吧。\\r\\n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "恩…你這樣說也是一樣，還沒成為14等級的傢伙是無法給予任務喔…為了要做更重要的事情先進行修練吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "在這裡又見到你。恭喜你當了 末日反抗軍。其實我第一次看到你的時候對你得特別能力有感興趣呢。我相信 #p2151000#也是對你感覺到某些東西才會把你送到這。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你還沒去找 #b#p2151010##k嗎? 他在右邊的訓練房裡，所以去找他看吧。"
+          }
+        }
+      }
+    }
+  }
+}

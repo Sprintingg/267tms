@@ -1,0 +1,176 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[埃德爾斯坦] 好像遭小偷了"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "24"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "位於礦山內#b#m310060000##k的#b一般研究員#p2154011##k發生了一個問題。和#p2154011#對話看看吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2154011#說小偷把實驗成果偷走了，需要教訓一下這個小偷#r#o8105000##k。聽起來好像#p2154011#不太贊成#p2154009#的實驗…\n\r\n#o8105000##r#a239691##k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#o8105000#被教訓之後，#p2154011#似乎非常的滿意。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o8105000# #a239691#\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "69900"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2154011"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201012291200"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201012291200"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "23195"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2154011"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8105000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "69900"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "有人偷走了實驗結果。不，不能說是有人。因為知道犯人是誰。應該#o8105000#…傢伙偷走了實驗結果。那些傢伙，反抗越來越加重了！"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "嫌麻煩所以就那麼算了，但一直就那樣放著，對實驗有很大的損失。不管怎麼說得需要教訓一下。看你閒著，要不要幫個忙？"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "為了避免那種事情，你要不要教訓一下#o8105000#？被教訓後#o8105000#也不會再把結果偷走了。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "幫我... 教訓#r#o8105000# 50隻#k。這樣就夠了。實驗材料反抗的話，實驗怎麼能順利進行呢？哈哈。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "已教訓#o8105000#了啊。謝謝。以後一個月不會有小偷了。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒教訓#r#o8105000# 50隻#k嗎？因為那些傢伙，實驗出了很大的問題。"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[奇幻村]洛尼的小石子"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "31"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "有個少年獨自一人在#o5130100#的濕地到處出沒。很危險啊，要不要幫他回去？ "
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "消滅#b#o5130100#的洞穴#k裡的#b#o5130100##k，把#b#t4033174# 5個#k找回來。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "找回了#t4033174# 5個。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4033174:# #t4033174:# #c4033174# / 5\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 57,800\r\n#i2020006:# #t2020006:# 50個\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "57800"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2020006"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1061004"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "65"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1061004"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033174"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "57800"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033174"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-5"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2020006"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "你好啊？ 你在這裡做什麼？\\r\\n#L0##b我才想問你在這以做什麼呢？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "我？ 我有東西不見了，所以我正在尋找中。嗯，但是再怎麼找就是找不到。\\n對了，你來的正好。你可以幫我找找看嗎？\\r\\n#L0##b你是弄丟了什麼呢？#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "事實上，我正獨自玩著丟石子遊戲，玩著玩著我的#b小石子#k就滾走了。\\n不知道它滾了多遠，我怎麼找都找不到。\\n看來應該是滾到了#b#o5130100#的洞穴#k裡了，你可以替我找回我的#b小石子#k嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝你～！#b小石子#k總共有#b5個#k。只要前往#b#o5130100#的洞穴#k，應該就可以看到了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "哼，這個世界還真是冷漠無情啊。就連小孩子的請求也不願意幫忙嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你找回我的#b小石子#k了嗎？ 快點給我！"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "一、二、三、四、五…… 太好了，都找到了！\\r但是小石子是真的滾到了#o5130100#的洞穴裡去了嗎？\\r替我找回來小石子，真是辛苦你了。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "辛苦了。這是我的零食，就當作報答你，送給你吧。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "什麼，如果沒有#b小石子 5個#k，那就沒有辦法玩丟石子遊戲了啊。\n你去過了#b#o5130100#的洞穴#k了嗎？"
+          }
+        }
+      }
+    }
+  }
+}

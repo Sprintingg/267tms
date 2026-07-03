@@ -1,0 +1,192 @@
+{
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你的事情我已經從魔法森林的#b#p1032001##k聽說過了。我們不需要見面也可以透過心靈對話。一路上辛苦了，不過聽說你…正在找#b#t4031056##k…是嗎？當然我這裡也有一張地圖碎片，這件事都快被我遺忘了…"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "但是我不能白白給你。幾百年來想當弓箭手的人消耗了我不少的體力，近來有意當弓箭手的人越來越多，我的體力就快耗盡了。如果你給我#b2個#t4005002##k的話，我就會給你找#b#t4031056##k需要的線索。怎麼樣？你同意嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好﹗#t4005002#可以從艾納斯島的部份怪物身上獵取。想得到它並不是那麼容易…但是我相信你會成功的。那麼我在這裡等著你。加油吧﹗"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "哦…但是沒有我的幫助你可能永遠也找不到#b#t4031056##k…如果你以後改變想法了，就隨時來找我吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你想不想知道超遠的距離打怪是什麼感覺？這是只有弓箭手才能做的事…"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你還沒收集 #b#t4005002# 2個#k嗎?相關道具透過大陸的怪物可獲得，但獲得應該不容易，可我相信你的話應該沒問題的 。那我等你回來喔。多多加油 ！"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012100"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3025"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "77"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012100"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4005002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "16482"
+      },
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "3027"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4005002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-2"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[冰原雪域山脈] 找回赫麗娜的力量"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "弓箭手村的賢者#b赫麗娜#k跟我約好了要是我給他#b2顆敏捷水晶#k，他就給我地圖的碎片。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "將敏捷水晶交給赫麗娜。這次應該可以拿到第三個古老的地圖碎片嗎？"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "33"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去找弓箭手村的赫麗娜。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "16482"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 開鑰匙的達人，權達開"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "再一次去問權達開，關於舊金錶的事。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "權達開要求需要告知舊金錶行蹤的代價. 就是可以開啟鎖緊緊的箱子, 需要在墮落城市地鐵找到製作鑰匙的材料.\r\n去#b#m103020100##k或是#b#m103020200##k收集#b實用的廢鐵 5個#k."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "幫權達開找來鑰匙材料之後，找回了舊金錶。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4033037:# #t4033037:# #c4033037# / 5\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2587"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000008"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "43"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2853"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000008"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033037"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2587"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033037"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-5"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "正常"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "我非常忙啊！ 為什麼總跟我說話？ 快說！\\r\\n#L0##b或許，你對舊金錶知道一些什麼嗎？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "我可不會免費告訴你！\\r\\n#L0##b那麼，我能為你做些什麼呢？ 阿勒斯很可憐，我真的很像幫助他…可是我身上沒帶多少錢。#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "沒有錢就出力吧。 你願意做我讓你做的事情嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我，權達開，沒有我打不開的鎖。 有一個箱子始終無法打開。 可是，我一定要打開這個箱子！ 這可是涉及到我名譽的事情。 "
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "好像需要製作新的鑰匙, 但是沒有材料. 去找材料吧. 聽說#b#m103020100##k或是#b#m103020200##k的#r鐵#k還蠻好用."
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不願意也沒事。 不過無法找到舊金錶啦。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "鑰匙的材料都收集齊了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "辛苦你了。 我要先打開箱子。 等一下再來找我。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "鑰匙材料的廢鐵還沒有收集齊嗎？ 需要#b5個#k！ 不想找回舊金錶了嗎？"
+          }
+        }
+      }
+    }
+  }
+}

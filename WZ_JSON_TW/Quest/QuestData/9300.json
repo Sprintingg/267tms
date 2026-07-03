@@ -1,0 +1,170 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 向武術教練拜年"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "春節拜年任務"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "恭喜發財！為了慶賀一年一度的春節，#p9010000#好像準備了特別的活動喔！去見見位在某處的#p9010000#吧！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p9010000#表示，向位在維多利亞島四大村莊的#b4位賢者#k拜過年，最後可得到#b某個物品#k，希望將那物品交給他。#p9010000#要我先去見位在#b勇士之村#k的#b#p1022000##k，向他拜年問安。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "受#p9010000#所託，向位在勇士之村的#p1022000#拜年問安了。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "450"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "450"
+      },
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "9301"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "適逢最大的名俗節日\"春節\"，我正在進行一項特別的活動喔！有沒有興趣試試看啊？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "首先，請你要向維多利亞島的四大賢者拜年問安後回來吧！需要拜年問安的賢者就是…勇士之村的#b#p1022000##k、魔法森林的#b#p1032001##k、弓箭手村的#b#p1012100##k，以及墮落城市的#b#p1052001##k。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "新年了應該要跟長輩拜年才對啊？但要注意的地方是，一定要按照我所吩咐的順序來進行才可。拜年結束的話，他們會給一個東西，記得不要遺失，拿給我的話會好喔。那拜託你了～！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "活動內容其實沒那麼複雜。若你改變心意的話，歡迎你再來找我參機活動喔！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "我是在勇士之村，為所有劍士們服務的#b#p1022000##k，總是有很多人前來找我，因此我片刻都無法好好休息，可是話又說回來了，你來找我是有什麼事情嗎？\\r\\n#L0##b我是來向您拜年問安的。#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "是嗎？時間過的這麼快啊！又到過年的時候了啊…謝謝你，沒想到會特意前來向我拜年…！"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "記得去#b#m102000000##k，向#b#p1022000##k拜年問安喔！"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "200802140000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "200802140000"
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "129600"
+      }
+    }
+  }
+}

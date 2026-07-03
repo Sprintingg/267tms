@@ -1,0 +1,233 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 鐵匠史密斯"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "勇士之村的鐵匠史密斯好像有事情要委託."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了苦惱於材料用完的史密斯，必須幫他找來鐵才行。 既然他說只要有鐵的什麼東西都可以，那就消滅鋼之肥肥和鋼之黑肥肥，取得#t4000178#、#t4000039#後拿給他吧。\r\n據說他們主要生活在 #m102030200#，所以去那裡看看吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "幫史密斯找到了他需要的材料。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4000178:# #t4000178:# #c4000178# / 75\r\n#questorder1##i4000039:# #t4000039:# #c4000039# / 75\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "34046"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022004"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "55"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2818"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022004"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000178"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "75"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000039"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "75"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "34046"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000178"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-75"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000039"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-75"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1332010"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "노멀"
+          },
+          "job": {
+            "_dirType": "int",
+            "_value": "-2145368046"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#h0#你好嗎！ 請幫幫我吧。 委託的物品很多但是缺乏材料真是頭痛啊。 請幫我收集材料吧。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝！只要是有鐵的東西什麼都可以。 我只要加工一下就可以了。 住在#m102030200# 地區的鋼之黑肥肥與鋼之肥肥會給你可用的材料。 請收集鋼之黑肥肥的鎧甲碎片75個、鋼之肥肥鐵蹄子75個左右給我。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你現在很忙嗎？ 等你有空再說吧。 "
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我委託你的材料都收集好了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝。 現在終於得救了。 時間內要做好所有物品必須要動作加快。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你好像還沒有收集好耶！需要鋼之黑肥肥的鎧甲碎片 75個，鋼之肥肥盔甲75個。"
+          }
+        }
+      }
+    }
+  }
+}

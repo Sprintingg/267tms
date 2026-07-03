@@ -1,0 +1,169 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "12101"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1011"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "0"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "12101"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "1013"
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓之島] 瑞恩的測驗4"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "瑞恩的楓之谷測驗"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "4"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "挑戰#b#p12101##k所出的第四個問題吧！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "瑞恩出的這些題目都是很容易的。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "瑞恩的第4個測驗題目是，為了撿起掉在地上的物品，應該使用哪個鍵？這種程度還是蠻容易的，就是Z鍵嘛~不過使用右下方的數字鍵0也能撿起物品我還是頭一次知道。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "20"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "恭喜~已經是第四個問題了。我一共準備了7個問題。那你準備好就跟我說一聲。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "檢取地上的道具時要按什麼快捷鍵？\\n\\n#L0##bX鍵#l\\n#L1#S鍵#l\\n#L2#I鍵#l\\n#L3#Z鍵#k#l"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "答對了。要檢取道具，應該按下Z鍵。數字0鍵也可以，\\nX鍵是用來坐在椅子上的。以後你去維多利亞試試吧。坐在椅子上時，恢復速度會比較快。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "4"
+          },
+          "0": {
+            "_dirType": "string",
+            "_value": "X鍵是坐下的熱鍵，但在楓之島沒有椅子，若你日後去了維多利亞，記得坐上椅子看看恢復速度怎麼樣吧。"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "隨著角色等級的提升，能力值也會跟著增加。你按下「S」鍵可以確認你目前的能力值"
+          },
+          "2": {
+            "_dirType": "string",
+            "_value": "「I」鍵是打開道具欄的快捷鍵。你可用來確認你檢取的東西。"
+          }
+        }
+      }
+    }
+  }
+}

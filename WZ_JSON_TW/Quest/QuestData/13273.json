@@ -1,0 +1,145 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[網咖] 領取第2次網咖禮物"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "向馬蒂達進行網咖出席確認，將可以根據到目前為止出席的次數獲得禮物。今天是#r第2次#k！ 如在#b網咖#k上線，請去找馬蒂達。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "向馬蒂達進行網咖出席確認，將可以根據到目前為止出席的次數獲得禮物。今天是#r第2次#k！ 如在#b網咖#k上線，請去找馬蒂達。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "向馬蒂達進行網咖出席確認，將可以根據到目前為止出席的次數獲得禮物。今天是#r第2次#k！ 如在#b網咖#k上線，請去找馬蒂達。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000018"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "18079"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201303010000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201303010000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q13273s"
+      },
+      "premium": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "2"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "reward"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000018"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "謝謝你參加網咖簽到活動。\\n今天可以領取 #b2次#k禮物請問現在就領取禮物嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果你準備好收下禮物，請再來與我對話。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這是今天的點名獎勵。\\n活動會持續進行，明天也繼續進行點名就能夠取得禮物。\\n啊，另外，#r點名狀況只要按下 V鍵，點擊顯示的活動清單點名鍵#k就可以確認。往後會有更棒的禮物等待著各位，千萬別錯過！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你好像不是收禮的對象啊？"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,324 @@
+{
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "NWstardust"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_PlaySound"
+          },
+          "SoundPath": {
+            "_dirType": "string",
+            "_value": "Sound/Redmoon.img/Skill/201/Use"
+          }
+        }
+      },
+      "Projectile_1": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "240"
+        }
+      },
+      "Projectile_2": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "240"
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "Projectile_1": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Projectile"
+      },
+      "onProjectileHit": {
+        "_dirType": "string",
+        "_value": "AttackByProjectile_1"
+      },
+      "onProjectileHitType": {
+        "_dirType": "string",
+        "_value": "ImpactPoint"
+      },
+      "onProjectileExpired": {
+        "_dirType": "string",
+        "_value": "AttackByProjectile_2"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "time": {
+          "_dirType": "string",
+          "_value": "0.7"
+        },
+        "emitAngle": {
+          "_dirType": "string",
+          "_value": "0"
+        },
+        "emitSpeed": {
+          "_dirType": "string",
+          "_value": "700"
+        },
+        "emitCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "boundLT.X": {
+          "_dirType": "string",
+          "_value": "-50"
+        },
+        "boundRB.X": {
+          "_dirType": "string",
+          "_value": "50"
+        },
+        "boundLT.Y": {
+          "_dirType": "string",
+          "_value": "-50"
+        },
+        "boundRB.Y": {
+          "_dirType": "string",
+          "_value": "50"
+        },
+        "emitPos.X": {
+          "_dirType": "string",
+          "_value": "-50"
+        },
+        "emitPos.Y": {
+          "_dirType": "string",
+          "_value": "-30"
+        },
+        "maxHitCount": {
+          "_dirType": "string",
+          "_value": "1"
+        }
+      },
+      "ball": {
+        "_dirType": "sub"
+      }
+    },
+    "AttackByProjectile_1": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "350"
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "50"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -130,
+          "_y": -130
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 130,
+          "_y": 100
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "5"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "buffLevel": {
+          "_dirType": "string",
+          "_value": "1"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "useZ": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "randomHitOrigin": {
+            "_dirType": "int",
+            "_value": "15"
+          },
+          "z": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "randomHitAngle": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "effect": {
+        "_dirType": "sub"
+      },
+      "eventTags": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "RLGame.Effect.Freeze"
+        }
+      },
+      "hitSoundPath": {
+        "_dirType": "string",
+        "_value": "Sound/Redmoon.img/Skill/201/Hit"
+      },
+      "targetBuffID": {
+        "_dirType": "int",
+        "_value": "501"
+      }
+    },
+    "AttackByProjectile_2": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "350"
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "50"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -160,
+          "_y": -160
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 140,
+          "_y": 140
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "8"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "buffLevel": {
+          "_dirType": "string",
+          "_value": "1"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "useZ": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "randomHitOrigin": {
+            "_dirType": "int",
+            "_value": "15"
+          },
+          "z": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "randomHitAngle": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "effect": {
+        "_dirType": "sub"
+      },
+      "hitSoundPath": {
+        "_dirType": "string",
+        "_value": "Sound/Redmoon.img/Skill/201/Hit"
+      },
+      "eventTags": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "RLGame.Effect.Freeze"
+        }
+      },
+      "targetBuffID": {
+        "_dirType": "int",
+        "_value": "501"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "350"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "1"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "5"
+    },
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "SkillTags": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "string",
+      "_value": "RLGame.Skill.Basic"
+    }
+  }
+}

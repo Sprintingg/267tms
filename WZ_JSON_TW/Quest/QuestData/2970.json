@@ -1,0 +1,243 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[黃金海岸] 被波浪捲走的球"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "在#m120041500#出現了#p1082000#。問問這次又因為什麼事而來吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "必須打倒#m120041600#的#o3401008# 50隻之後，找回黃金富豪二世所遺失的 #t4033622#。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "幫助黃金富豪二世將遺失的威廉的球找回來給他。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4033622:# #t4033622:# #c4033622# / 1\r\n#questorder1##o3401008# #a29701#\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "228"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "59"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "134107"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1082209"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2969"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1082209"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033622"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3401008"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033622"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "134107"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "原來在這裡。我是按黃金富豪二世的指示來這裡找東西的。\\r\\n#L0##b黃金富豪二世要在這裡見面的…又有什麼事？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "去海邊散步結果威廉的球弄丟了請幫我找回來。球掉到海裡了，海浪也來回拍打…\\r\\n請幫幫我。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這邊沒有耶，似乎已經漂流到#m120041600#去了！請前往#e#m120041600##n打倒#b#o3401008# 50隻#k， 找出#b#t4033622##k。 "
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "事情怎麼做也做不完。看來是需要幫助了。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "消滅了#o3401008#然後來找 #t4033622#嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這裡也沒有潛水艇?跡的樣子。潛水艇真的和黑色綠水靈有關連嗎？如果有關連的話，為什麼要做成那個樣子呢…？"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "打倒#m120041600#的#o3401008# 50隻之後，尋找黃金富豪二世的#t4033622#。"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "打倒#m120041600#的#o3401008# 50隻後，尋找黃金富豪二世的#t4033622#。"
+          }
+        }
+      }
+    }
+  }
+}

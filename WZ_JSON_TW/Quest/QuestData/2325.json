@@ -1,0 +1,172 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[弓箭手村] 詹姆士的下落（１）"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "james1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b警衛隊長#k有要轉告的事情。\n\n#r是與「稱號-菇菇王國守護者」任務無關的其他任務。#k"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "尋找躲在城堡內的#b詹姆士#k。\n\n#r是與「稱號-菇菇王國守護者」任務無關的其他任務。#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "已找到躲在城堡內的#b詹姆士#k。"
+    },
+    "summary": {
+      "_dirType": "string",
+      "_value": "尋找躲在城堡內的#b詹姆士#k。\n\n#r是與「稱號-菇菇王國守護者」任務無關的其他任務。#k"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n可進行 '詹姆士的下落（２）' 任務\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "25"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1600"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1300005"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2323"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1300008"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q2325e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "2326"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "勇士！聽說你果然潛入城堡了？我的弟弟…請救救我弟弟。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我們兄弟很小就失去了雙親，所以我們兄弟就相依為命長大。自從我成為警衛隊員後便一起搬到城堡內居住，這次為了保護國王所以來不及把他帶出來。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "他從很小就在城堡內長大，現在一定隱藏在某個角落裡。請找到我的弟弟。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我只有一個弟弟啊。請再考慮一下。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我…我怕…請一定要幫助我呀…"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "什麼？你是哥哥派來的麼？啊啊…我有救了。真是太感謝了。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請…儘快找到我弟弟#b#p1300008##k。"
+          }
+        }
+      }
+    }
+  }
+}

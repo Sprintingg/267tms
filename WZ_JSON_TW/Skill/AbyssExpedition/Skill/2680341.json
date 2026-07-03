@@ -1,0 +1,153 @@
+{
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "LYNNpredatorStrike"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect0": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "long",
+              "_value": "3"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AEAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "172121006"
+          }
+        }
+      },
+      "EventDelay": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "180"
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "damage": {
+          "_dirType": "string",
+          "_value": "450+180*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "6+d(x/5)"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -543,
+          "_y": -550
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 0,
+          "_y": 104
+        },
+        "BossDamageRatio": {
+          "_dirType": "string",
+          "_value": "100"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "randomHitOrigin": {
+            "_dirType": "int",
+            "_value": "20"
+          }
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "172121006"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "damage": {
+      "_dirType": "string",
+      "_value": "450+180*x"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "6+d(x/5)"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "1"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -543,
+      "_y": -550
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 0,
+      "_y": 104
+    },
+    "BossDamageRatio": {
+      "_dirType": "string",
+      "_value": "100"
+    }
+  },
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "172121006 포식자의 일격"
+  },
+  "combatOrders": {
+    "_dirType": "int",
+    "_value": "1"
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇家騎士團] 下一個訓練是？"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "奇努的培訓結束後， 奇慕再次出現。\r\n下一個修練是什麼呢，　請問 奇慕。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了接受第二課程，轉到基礎體力鍛鍊場。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "抵達了體力鍛鍊場。"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "q20827"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1102101"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20826"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "1000"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1102114"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "奇努的教育如何了呢？ 有點幫助了嗎？ 好像有點無聊吧？ 起來伸個懶腰，做一下基礎體力訓練嗎？ \\r\\n那就一起移動到體力鍛鍊場吧。\\r\\n"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "透過地圖左邊的傳點可以移動到體力鍛練場。跟著地上的標示移動到體力鍛練場吧。我也馬上過去。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "還沒準備好嗎？ 給你一點時間，等一下重新跟我說話吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "順利到了啊。現在跟剛剛過來的方式一樣透過地圖上的傳點可以移動到其他區域。 \\r\\n那麼要馬上開始基礎體力訓練嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "透過地圖左邊的傳點可以移動到體力鍛練場。跟著地上的標示移動到體力鍛練場吧。我也馬上過去。"
+          }
+        },
+        "quest": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "透過地圖左邊的傳點可以移動到體力鍛練場。跟著地上的標示移動到體力鍛練場吧。我也馬上過去。"
+          }
+        }
+      }
+    }
+  }
+}

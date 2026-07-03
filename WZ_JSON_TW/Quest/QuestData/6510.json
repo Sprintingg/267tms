@@ -1,0 +1,154 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 作出歡呼的表情。"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "被大發企劃代表#b#p1052121##k遷就要接受#b演技課程#k. 是哪個課程? 向#b弓箭手村市場, 美髮店旁邊#k站著的#p1052121#進行對話."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "這次決定學歡呼的表情。聽說送 #b#t1162003##k給在 #m200000202#的#p2012007#，就可以學到這個表情…不過要去哪找剪刀阿？不能從很多人來往的弓箭手村莊裡購買嗎？\r\n\r\n#i1162003##t1162003#  #b#c1162003# / 1#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "學到歡呼的表情。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052121"
+      },
+      "charmMin": {
+        "_dirType": "int",
+        "_value": "70"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "6509"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2012007"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q6510e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1162003"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好，#h0#。冒險進行的如何啊？如果覺得冒險很累的話，可以隨時改變主意。好，那麼開始演技課程吧？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "第九個演技課程。這次要學習歡呼的表情。沒有比歡呼的表情蘊含著深刻感情的表情了。所以要真正讓人歡呼才可以。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "認識#b#m200000000##k一個叫 #b#p2012007##k的少女嗎？在美髮店工作的她為了設計更漂亮的髮型，不斷地努力。送#b#t1162003##k給她會得到獎勵。用帥氣的表情。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "剪刀在天空之塔是找不到的。人來人往的弓箭手村某處好像有人賣…去找找吧。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯…看來正忙著冒險啊？演技課程不用花很多時間…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒見到#b#p2012007##k嗎？她在#m200000202#。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "歡迎光臨~ 想要什麼樣的髮型？如果有#b#t1162003##k的話應該能設計更漂亮的髮型……"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[回歸的勇士]攻擊看看"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "80"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o9308000##a324071#\r\n"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "q32407"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "跟#b休菲凱拉#k對話繼續進行新手村."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b休菲凱拉#k召喚測驗用怪物.#b#o9308000##k7隻全部擊倒,去見#b休菲凱曼#k."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#b休菲凱拉#k召喚測驗用怪物.#b#o9308000##k7隻全部擊倒,去見#b休菲凱曼#k."
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "(#b訓練用稻草人#k7隻全部擊倒,去見#b休菲凱曼#k.)"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9062003"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q32407s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32406"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9062002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q32407e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9308000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "7"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

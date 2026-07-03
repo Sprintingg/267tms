@@ -1,0 +1,141 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 黑魔法的痕跡4"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "楓之谷GM正在呼喚著你！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "尋找因黑魔法師的力量而遭到變異的東西吧！\\n\\n#i4001240##t4001240##b#c4001240#/20#k"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "91"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "200902200000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q10209s"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "200902200000"
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q10209e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001240"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "隨著西格諾斯女皇出現在楓之谷世界，感覺黑魔法師的力量有變得愈來愈強。根據得到的消息，聽說已經有因黑魔法師的力量而產生物質的變異，當吃下變異的物質，搞不好會變成更強大的怪物也說不定….我得分析這遭到變異的物質，你願意幫我的忙嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝你…但要小心，遭到變異的物質可能還會影響到你。我想…你應該適合#b#t4001240##k???????????.???????????????????,?????尤莉亞????????.???????????????????????????."
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "害怕了嗎？好吧…那我也只好拜託其他人了。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "我看你還沒蒐集到足夠的數量吧！請你去打倒那些等級相仿的怪物。"
+          }
+        }
+      }
+    }
+  }
+}

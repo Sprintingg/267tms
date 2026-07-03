@@ -1,0 +1,219 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[* 赫力席母] 確保新的補給路線"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "259"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#完成戰場 (#R34710ExRef34710#)\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "補給品全都湊齊了。為了下一項任務，和#b夏倫#k說話吧！\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "既有的補給路要繞過敵陣，所以太遠了。只要消滅會造成妨礙的敵陣就行了吧？\\r\\n#r ※ 因為是戰場任務，失敗時必須放棄再次執行。#k\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "消滅所有敵人且開拓了新的補給路線。\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "119"
+      }
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "16"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "72621"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001008"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q34710s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "90"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34709"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "6400"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "6410"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "6411"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "6412"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "6413"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "6414"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001008"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "34710"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "完成戰場"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "72621"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "真是太厲害了，勇士！對峙的敵人全都撤退了，嘿嘿！\\r\\n"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "若是想在那邊設置補給路線，需要進行一點作業程序，憑我們的人力應該就能解決。\\r\\n"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "啊，對了！ #b指揮官棚子#k的#b皮塔斯#k似乎在找勇士你。大概是來給下一項任務的吧。\\r\\n"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "謝謝你的幫忙。多虧你的幫忙才能解決補給的問題。那祝你好運。\\r\\n"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "未能確保補給路線。\\r\\n#r ※ 失敗時須放棄後重新執行。#k\\r\\n"
+          }
+        }
+      }
+    }
+  }
+}

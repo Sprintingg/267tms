@@ -1,0 +1,220 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[艾芙特領域]分點顏色吧"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "121"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "再次來到思索之地，從我身上搶走顏色的人們又再次變得蒼白了。 試著去與他們對話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "他們說在雨降落下來後，顏色就都被洗掉了。 再分給他們顏色吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "將我的顏色分給了思索之地的人們。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#跟#r#p9400218##k進行對話\r\n#questorder2#跟#r#p9400219##k進行對話"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400220"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "63089"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "0"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "red"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "0"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "blue"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "0"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "green"
+          }
+        }
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "63052"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "63073"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q63050s"
+      },
+      "QuestRecordAndOption": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "dayN": {
+        "_dirType": "int",
+        "_value": "3"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400220"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q63050e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npcSpeech": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9400218"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "npc9400218"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9400219"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "npc9400219"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "其他人也想要一點顏色。"
+          }
+        }
+      }
+    }
+  }
+}

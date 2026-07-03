@@ -1,0 +1,152 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 布滿灰塵的寶物現場的眼藥"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "發掘寶物時發現了休菲凱曼遺失的工具。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "將此工具交給休菲凱曼時休菲凱曼會非常感謝，這對發掘寶物會有很大的幫助。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "找到了讓休菲凱曼的眼睛清爽的藥水。休菲凱曼流著眼淚說謝謝。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010044"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q12417s"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201303200000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201303200000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994525"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010044"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994525"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "煩悶又乾澀。我需要東西擦拭眼睛。眼睛太大、太清澈在這種時候就是錯的…"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b#h0##k的眼睛不要緊吧？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "謝謝！竟然能夠找到洗眼睛的眼藥。所有的寶物似乎全都映入我大又清澈的眼睛當中了。謝謝，#b#h0##k。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "找到的工具還沒有讓我看過。"
+          }
+        }
+      }
+    }
+  }
+}

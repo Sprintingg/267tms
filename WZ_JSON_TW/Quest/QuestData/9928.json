@@ -1,0 +1,195 @@
+{
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 奇怪的少女"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "按照#p2120000#的話，去#b左側房間#k與那裡的人聊聊吧！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "房間裡的奇怪少女─#r#p2120005##k站著那裡，她面色看來有些蒼白，與她對話並詢問萬聖節派對是怎麼一回事。她吃了一驚，說她並不知道召開萬聖節派對，並說也想要#b#t2022256##k。\\n\\n#i2022256##t2022256##b#c2022256#/5#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把#t2022256#交給#p2120005#，她得到#t2022256#後，嗚咽著說人們似乎都把她給忘記了…"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "嗯…？你是誰？好像第一次見面…你為什麼會在這裡？外面很吵…\\r\\n#L0##b那是因為正在舉行萬聖節派對。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "什麼？你是說萬聖節派對？正在開派對嗎？哇…完全不知道啊…為什麼沒有人和我說呢？那麼說你是參加派對來了？？\\r\\n#L0##b嗯。是來參加萬聖節派對的。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "啊啊。很好…#p2120005#也很想吃#t2022256#。…你沒有帶#t2022256#來嗎？給#p2120005#幾個#b#t2022256##k。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝。你真是個好人。那麼就給#b#t2022256#5個#k吧。我會等著的！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "......"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "要#b#t2022256#5個#k嗎？在萬聖節派對…為什麼找不到糖果呢？"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2120005"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q9928e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2022256"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2120005"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "200810221200"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "200811121200"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "7649"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "200811060000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "200810221200"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9927"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    }
+  }
+}

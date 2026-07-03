@@ -1,0 +1,152 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 寶物現場的必需品指南針"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "發掘寶物時發現了休菲凱曼遺失的工具。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "將此工具交給休菲凱曼時休菲凱曼會非常感謝，這對發掘寶物會有很大的幫助。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "找到了正確掌握寶物現場位置的指南針。休菲凱曼非常感謝說不需要探索就可以正確找到寶物的位置了。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010044"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q12414s"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201303200000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201303200000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994522"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010044"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994522"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這個… 根本就不知道正確的位置。若是沒有可愛與聰明的那小子…似乎就沒辦法掌握正確位置…"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "哼… 你對東西南北清楚嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "寶物現場的嚮導當然就是指南針。這真的是一個相當聰明的工具。就算其他人不知道，但它卻能夠清楚掌握珍貴寶物的方向。可以稱得上是寶物現場的必需品！"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "找到的工具還沒有讓我看過。"
+          }
+        }
+      }
+    }
+  }
+}

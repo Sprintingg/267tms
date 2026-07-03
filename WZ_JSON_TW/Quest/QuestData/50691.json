@@ -1,0 +1,188 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[十字獵人] 營救雪莉！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "能夠透過#b#p9133200##k接受十字旅團的指令。前往#b#m813300000##k吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "受了傷的#b#p9120218##k為了恢復名譽，勉強自己去討伐#b#o9450075##k。請你幫助前去#b#m813000045##k的她。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "營救受了傷的#b#p9120218##k，十字旅團 #b#o9450075##k 討伐指令完成。\\r\\n#i3800177#"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o9450075# #a506911#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\n#i4310018:# #t4310018:# 15個\n可以前往任務「沙漠中的十字旅團」\n可以前往任務「討伐！傑諾」\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "long",
+            "_value": "4310018"
+          },
+          "count": {
+            "_dirType": "long",
+            "_value": "15"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9133200"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "50688"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "65"
+      },
+      "gender": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9133200"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q50691e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9450075"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "不好了！#b#h0##k！\\r\\n\\r\\n我們知道了#p9120218#的行蹤。\\r\\n聽說她不久之前才出發去討伐#o9450075#。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "她一定是為了挽回之前的名譽\\r\\n才會擅自採取行動。\\r\\n\\r\\n不好意思，能不能請你去幫助她呢？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#o9450075#是很難纏的對手。要是受了傷的#p9120218#一個人逞強，又會受更重的傷…。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "請你前往#m813000045#營救她，並且討伐#o9450075#。\\r\\n#i3800177#"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "某方面來說…這件事也跟你有關。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  }
+}

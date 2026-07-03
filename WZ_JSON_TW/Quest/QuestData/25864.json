@@ -1,0 +1,222 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[天使破壞者] 阻止幽靈的攻擊"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "23"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽取#p3000000#的目前戰況吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "聽說保護罩警戒北側有幽靈入侵。去擊倒他們吧。\n#r若要重新進行請放棄任務後重新開始。#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "好的。入侵保護罩警戒北側的敵人似乎全被擊倒了。"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 16,000\r\n可進行 '幽靈的正式進攻' 任務\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "16000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3000000"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q25864s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "dressChanged": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "25863"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "6500"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "6510"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "6511"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "6512"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "6513"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "6514"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3000000"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "25798"
+      },
+      "dressChanged": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "16000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我會告訴你戰況，請先進行防禦。辦得到吧？ #r(同意的話，就移動到戰場吧。)#k"
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "太了不起了！凱撒和騎士團正在整理那個地方。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "正巧騎士團員也準備就緒了。辛苦了。沒有受傷吧？"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "不要阻止幽靈的攻擊嗎？ 騎士團尚未準備好。若是想要重新進行的話，就要放棄任務，重新進行。"
+          }
+        }
+      }
+    }
+  }
+}

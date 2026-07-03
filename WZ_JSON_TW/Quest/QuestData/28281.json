@@ -1,0 +1,186 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[蒐集]傳統儀式的準備工作"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#m102000000##k的#b#@1020000:##k想請你幫個忙。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "他說傳統儀式中需要使用#r葉子#k追念他的祖先。\\n消滅#r黑木妖#k並拾取20片#r葉子#k。\\n你可以在#b#m101030300##k和#b#m101030000##k找到#r黑木妖#k。\\n\\n完成之後，向#b#m102000000##k的#b#@1020000:##k回報。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "你已經消滅#r黑木妖#k，並取得傳統儀式所需的#r葉子#k。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000005:##t4000005:##c4000005#/20\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 210\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "210"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "210"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000005"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我必須盡快開始祭拜祖先的傳統儀式，但是用來舉行儀式的#r葉子#k不夠。我的時間不多。\\n\\n啊，你看來像是個冒險者。你願意伸出援手嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "打倒#r黑木妖#k就能得到#r葉子#k。\\n請帶給我20片葉子。\\n\\n你可以在#b#m101030300##k和#b#m101030000##k之間找到成群的#r黑木妖#k。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我知道#r黑木妖#k很強，不過你應該對自己有點信心！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "動作真快。打倒他們不容易吧？那些怪物的防禦力非常高。哈哈！知道世上有像你這樣的冒險者讓我覺得安心多了。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "感謝你的協助，我可以繼續祭拜祖先的傳統儀式了。\\n\\n多保重，有緣再會。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請帶給我20片#r葉子#k。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1020000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000005"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1020000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "12"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      }
+    }
+  }
+}

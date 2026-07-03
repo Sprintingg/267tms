@@ -1,0 +1,188 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[克林森烏德城] 魔族掠奪者的標誌"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "66"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "與里德力對話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "透過里德力右邊的傳點，進行小遊戲後獲得魔族掠奪者的標誌吧。（全部進行的話可以獲得完整的標誌，擊使沒辦法全部進行也可透過過程中發放的箱子，獲得魔族掠奪者的標誌碎片。收集100個魔族掠奪者的標誌碎片的話，可以製作完整的魔族掠奪者標誌。）"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "透過里德力右邊的傳點進行小遊戲獲得了魔族掠奪者的標誌。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4030021:# #t4030021:# #c4030021# / 1\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "593310"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "demand": {
+      "_dirType": "sub",
+      "explain": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2134012"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "130"
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2134012"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4030021"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "593310"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4030021"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "來，有看到我右手邊的傳送門嗎？那裡有 #r鑰匙之類的特別#k東西。去拿給我吧。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "利用右邊的傳點拿#b魔族掠奪者的標誌#k來吧。這次應該不太容易喔？能通過克林森屋德（克林森烏德）的陷阱嗎？\r\n\r\n#r（小遊戲　通過陷阱：避開障礙物移動到盡頭吧！）#k\r\n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯… 好像還有別的東西？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "帶來魔族掠奪者的標誌了嗎？快給我看看。我使一下魔法的力量！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "(靠近里德利標誌閃爍一下就消失了。)\\r\\n\\r\\n好，有很大的幫助。總有一天能回到原來的樣子吧……\\r\\n"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "進入右邊的傳點，躲開克林森烏德的陷阱，拿魔族掠奪者的標誌來吧。\r\n\r\n#r（小遊戲　通過陷阱：避開障礙物移動到盡頭吧！）"
+          }
+        }
+      }
+    }
+  }
+}

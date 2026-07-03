@@ -1,0 +1,144 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[伊利恩] 啟動次元傳送點"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必要]"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "試著和位於#b#m400000001#的#p3000003交談吧。#k 雖然很懷疑他是否能信賴，但目前也沒有其他辦法。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了幫助我移動至＂其它次元＂而出現的#p3000003#。雖嘴巴說要幫助我， 反而跟我說他需要一些材料．．．這下變成是我幫助他了。雖然懷疑這個人是否還可以信賴，但目前好像也沒有其它的辦法了。\r\n前往#b#m400010400#，消滅#o2400014#後，帶回#t4036172#30個吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "說可以幫我移動到'其他次元'，托#p3000003#的福成功啟動傳送點了。終於朝#p3001301#所說的'其他次元'邁出第一步了。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4036172:# #t4036172:# #c4036172# / 30\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "215"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "3"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3000003"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q34822s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34821"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3000003"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q34822e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036172"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "消滅#b#m400010400##k的#r#o2400014##k，將#i4036172# #b#t4036172# 30個#k帶回來給我吧。"
+          }
+        }
+      }
+    }
+  }
+}

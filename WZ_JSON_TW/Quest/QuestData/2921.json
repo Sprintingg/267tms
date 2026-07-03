@@ -1,0 +1,189 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[鯨魚號] 幫助可憐的海豚"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "海邊出現了不明的海豚。\n不明的海豚… 到底發生了什麼事呢？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "不明的海豚說自己就是韋爾族王子。 因為缺少魔力才不能變身。 能不能幫王子找個 #b魔力藥水一瓶#k 呢？ \n#b活力藥水#k在附近雜貨商店就能買到。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "回復活力的韋爾族王子。 我以為只不過是海豚而已，不過竟隱藏著這麼帥得一面！ 不可思議啊？"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 742\r\n可進行 '韋爾族王子在這裡' 任務\r\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i2000018:# #t2000018:# #c2000018# / 1\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "29"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "742"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1092003"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "20"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2920"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1092003"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2000006"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "742"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2000006"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "正常"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "那個… 那個… 可以的話，能不能幫我一個忙？ 呼啊~ 求求你幫幫我吧。 身體越來越沒力氣了。\\r\\n啊… 現在活力都耗光，快支撐不住了。 求求你為我弄來#b活力藥水 1瓶#k，好嗎？\\r\\n"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "非常感謝你幫助我。 現在的我看起來也許是個海豚，但我其實是韋爾族王子，名叫#b#p1092003##k。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "啊… 求求你…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "謝謝。 力量正在恢復。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "求求你… 請弄來活力藥水 1瓶。 活力藥水在#b雜貨店#k可以購買到。"
+          }
+        }
+      }
+    }
+  }
+}

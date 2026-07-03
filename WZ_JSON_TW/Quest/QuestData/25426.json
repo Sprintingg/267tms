@@ -1,0 +1,219 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[幻影俠盜] 緊急請求"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "9"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p1002104#突然來了聯繫…什麼事情？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "得到情報說#b瑞恩村#k來了奇怪的人。如果是想要封印石的黑色翅膀，瑞恩村就有危險了。雖然#p1002104#已經派去了#p1404002#。為了以防萬一，趕緊去瑞恩村吧！"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "幸好#p1404002#及時趕來，阻止了黑色翅膀。還見到了，等待英雄的少女，#p1404001#…"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "25426"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "11980"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002104"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "42"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q25426s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "25425"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "notInTeleportItemLimitedField": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2400"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2410"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2411"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2412"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2413"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "2414"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1404001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "11980"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "你是誰呢？看來不像是黑色翅膀?啊，再看一次，我好像知道的樣子。莫非你是真實叔叔口中所說的那個英雄，幻影嗎？\\r\\n#L0##b真實叔叔?？是指情報商人特魯對吧？是的，主人。在瑞恩陷入危險之前跑來這裡?還好看來沒事。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "狂狼勇士先來幫我了。雖然是為了安全考量才來這裡避難的，但老實說是沒那麼危險。\\r\\n#L0##b總而言之，還好能平安無事。如果漂亮的臉蛋上留下傷口的話，那就慘了？…所以，你守護住了封印石嗎？#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "沒有被奪走。能帶著這樣重要的東西，即使你說沒有人幫我，待在瑞恩圖書館的結界裡，也是不容易被侵入的啊。\r\n"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我有事情想問你，現在當場問也沒有關係嗎？你該不會是筋疲力盡於這種程度的戰鬥吧？"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你還沒去瑞恩啊？快點，快點去瑞恩！"
+          }
+        }
+      }
+    }
+  }
+}

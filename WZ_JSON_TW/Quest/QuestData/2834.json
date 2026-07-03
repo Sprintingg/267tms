@@ -1,0 +1,170 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 消滅遺跡發掘地的怪物1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "要我在#p1022006#分析#t4000196#期間稍等他."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1022006#分析#t4000196#後無法停止驚嚇. 好像知道什麼, 就不能告訴我嗎. 首先打倒#o2230110# 150隻的拜託我就接受了."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "溫斯頓說 #o2230110#的數字好像少了很多的樣子. 以前還有很多的說..."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o2230110# #a28341#\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "39892"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022006"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2833"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022006"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2230110"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "150"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "39892"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嚇?這是?那些東西果真存在？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你，馬上去消滅#r#o2230110# 150隻#k。 快去吧。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不快點結束挖掘作業，會有很大的危險出現。 做完消滅怪物的準備之後一定要回來找我。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#o2230110#的數量減少很多了。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "辛苦了。 #t4000197#的分析馬上就要結束，稍等一下。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "需要消滅#o2230110# 150隻。 刻不容緩。"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[過去的英雄，狂狼勇士] 第二次情報收集"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "6"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p1002104#會告訴你第二個情報收集項目，前往#b#m104000000##k見#b#p1002104##k吧！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "第二個資報收集是變兇暴的  #o5130101# 問題.感覺跟之前一樣的調查...? 往#b#m100000000##k 去見#b#p1012003##k後調查#o5130101#得異常原因."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "見#m100000000#的 #p1012003#."
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002104"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "15"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "21712"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2113"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "2114"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012003"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "100000000"
+      },
+      "portalName": {
+        "_dirType": "string",
+        "_value": "gm00"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "喔, 來得好. 剛好有件事情要拜託英雄您.之前去過的  #b#m100000000##k上總於發生的問題... 聽說#r兇暴的 #o5130101##k綁架了人."
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "前往#m100000000#見#b#p1012003##k詢問關於事件的事，這就是你的第二個情報收集事項喔！\\r\\n #r ※ 自動移動至任務地圖。#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "為什麼拒絕? 不想知道發生什麼事情嗎? "
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "甚麼事呢? 我也剛好#o5130101# 的關係在煩惱呢... 甚麼? 你是為了調查兇暴的#o5130101#所來的?"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒到 #m100000000#嗎?去找 #m100000000#的 #p1012003#詢問 巨人事件後再回來."
+          }
+        }
+      }
+    }
+  }
+}

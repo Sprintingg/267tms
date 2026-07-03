@@ -1,0 +1,207 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[瑪迦提亞城] 艾利遜的藥材"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "沒想到#p2012018#竟然是#p2111004#的弟弟。…這怎麼可能！但是#p2012018#用非常認真的臉說為了幫助姊姊，因此請託幫忙出去尋找藥材#b#t4000060# 100個#k。\\n#i4000060##t4000060# #b#c4000060##k/100"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "尋找#p2012018#所說的材料，他請我稍候一下。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "呼。菲莉亞離開天空之城不曉得已經過了幾年。因為那個該死的煉金術師，來到瑪迦提亞城…再加上也不曉得生了女兒。不曉得有了姪女…嗯？和菲莉亞是什麼關係？菲莉亞是姊姊。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "菲莉亞的託付當然要答應。幫忙製作藥。可是如果按照寫在信的琪妮這個孩子的詳情，那要製作藥並不容易…如果你不介意，可以幫個忙嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯…如果要為了琪妮製作藥…這很困難…嗯…所以啊！去收集50個月光精靈的碎片和10個蝴蝶精的觸角。用這些製作藥吧！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "沒辦法幫忙，現在才這樣說，真是太過分了。請你再考慮看看。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000060"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-100"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "呼！#p2111004#離開#b#m200000000##k都不知道經過了多少年…就因為那該死的煉金術師，她才會跑到瑪迦提亞城，而且還生了個女兒，真的沒想到呢！我竟然不曉得自己有一個小姪女！嗯？你問我跟#p2111004#是什麼關係啊？#p2111004#是我姊姊。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "#p2111004#的委託的話當然得要答應。可以給你做藥。但是叫#p2111005#的孩子的狀態就像信裡寫的一樣的話，製造不會那麼容易的…可以的話，你能不能幫我？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯…要製造為了#p2111005#的藥的話…這有點難…嗯…就是，找來100個#k#b#t4000060#吧。先用那個做做吧。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你竟然說沒辦法幫我！事到臨頭你才這麼說啊！請你再想想吧！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嗯！材料都有蒐集齊全嗎？很好！在你蒐集材料的同時，我也準備好其他所需的東西囉！那現在開始做藥吧！這不是馬上就能做好的藥，麻煩請你等一下。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "不是還沒收集好材料嗎？是100個#k#b#t4000060#。要找到全部。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2012018"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000060"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2012018"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "85"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3323"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

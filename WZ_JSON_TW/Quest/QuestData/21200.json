@@ -1,0 +1,131 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[過去的英雄，狂狼勇士] 武器選擇主人"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "6"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "等級達到30級時，#b#p1201000##k他和我說…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1201000#說矛的反應有點奇怪，不知是不是有話要對我說…趕快到#b#m140000000##k查看#b矛#k的狀態吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "矛的面前站著一個陌生的少年…是誰？看起來非常兇惡的少年有點眼熟。什麼？自己就是#p1201001#？不可能吧？"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[轉職]"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1201000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q21200s"
+      },
+      "notInTeleportItemLimitedField": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2100"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1201002"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q21200e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "140000000"
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "修練得如何呀？哇嗚，看來你等級提升了不少呢。馬要送到濟州島，低等級送到維多利亞島。這話果然沒錯啊．．．對了，現在不是講這些的時候。真是不好意思，我只知道你很忙，但是你得回島一趟了。\\r\\n #r ※ 自動移動至任務地圖。#k"
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "來了就先確認一下矛吧。有記錄說#b英雄的武器可以說話#k…有可能他想告訴你什麼。"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[卡莉之風] 消滅等級範圍怪物"
+    },
+    "disableAtStartTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "disableAtPerformTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "disableAtCompleteTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "disableAtNPC": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "disableAtCompleteBalloon": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoCompleteAction": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o9101025# #a5026331#\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010010"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "202309052359"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "202309052359"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "101"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "502630"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "202307050900"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "202307050900"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010010"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9101025"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "2000"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "setEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "qrID": {
+            "_dirType": "int",
+            "_value": "502630"
+          },
+          "key": {
+            "_dirType": "string",
+            "_value": "state"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[9週年]專屬的楓葉"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽說尤莉亞有一些關於迎接楓之谷9週年楓葉的說法."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "尤莉亞說只要我蒐集了50個#r#t3994821##k給他,就給我楓葉做為禮物."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把#r#t3994821##k拿去給尤莉亞,收到了楓葉禮物."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i3994821:##t3994821:##c3994821#/50\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201407230000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201305230000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "dayN": {
+        "_dirType": "int",
+        "_value": "5"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q13790e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994821"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嗨?!#b#ho#!#k不知不覺隨著春天,楓之谷#e#r十一歲生日#k#n到了!!為了讓慶祝活動更加豐富,須要你的幫助.......如何?你願以幫我狩獵怪物#r#t3994821##k#r,收集50個#k嗎?\\r\\n#i3994821##r#t3994821#\\r\\n#b(從比自己低11等級以上,或高21等級以上的怪物身上無法獲得.)"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝!你收集種子來的話,會給你#r#t4310080##k禮物!#b\\r\\n1回完成：#r#i4310080:#10個#b\\r\\n2回完成：#r#i4310080:#20個#b\\r\\n3回完成：#r#i4310080:#40個#b\\r\\n4回完成：#r#i4310080:#80個#b\\r\\n5回完成：#r#i4310080:#150個\\r\\n"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "那麼等你喔~#b#ho##k!!"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "喔?有事在忙的樣子...雖然可惜,有空的話再跟我說!!"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒完全收集到#r#t3994821##k嗎?\r\n只要在給我#r#t3994821##k#b50#k個的話,我就送你禮物!!"
+          }
+        }
+      }
+    }
+  }
+}

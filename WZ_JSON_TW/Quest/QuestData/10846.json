@@ -1,0 +1,230 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 消滅白色發條鼠"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "黃金富豪正在尋找幫忙做事的人，去找黃金富豪看看。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "黃金富豪說，正在自己的倉庫儲存支援末日反抗軍的物資，但是倉庫裡突然冒出了許多白色發條鼠，正在啃食那些物資。從倉庫裡的箱子中找出捕鼠器，四處放置#b捕鼠器#k，捕捉#b白色發條鼠#k。\r\n\r\n#i4032813##t4032813##b#c4032813##k/10"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "將黃金富豪的倉庫裡的白色發條鼠全部捕捉了。"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n"
+    },
+    "autoCancel": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "500"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2084001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201103140000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201104040000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201008300000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201009270000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "10827"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "dayOfWeek": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "Sunday"
+        }
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2084001"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q10846e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032813"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "dayOfWeek": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "Sunday"
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032813"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我需要有人來幫我做件事…怎麼樣？你要不要做啊？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "在我的寶物倉庫中，為末日反抗軍準備的物品堆積如山。但是突然間#b白色發條鼠#k的數量暴增了，且問題是他們正在啃食著裡面的東西。要是這樣放著不管的話，倉庫裡的東西，肯定會被它們啃光的。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "所以我想求你一件事。到倉庫的話，可以在箱子中找到老鼠夾。利用那個老鼠夾來抓來#b10隻#k白色發條鼠吧。但是白色發條鼠的速度很快，所以不容易抓到，那就拜託你了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "要是改變主意了，在今天之內隨時來找我吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我的倉庫呢！我的東西呢！都還在吧？！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "真的把10隻白色發條鼠給抓來了啊。真是辛苦你了。這下就不用擔心那些倉庫裡的東西了…"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "我說你啊。我是叫你去抓來#b10隻#k#b白色發條鼠#k啊。"
+          }
+        }
+      }
+    }
+  }
+}

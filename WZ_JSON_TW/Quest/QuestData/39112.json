@@ -1,0 +1,192 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[每週任務]機械墳場 : 處理藍追隨者機器人"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "105"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#m310070160##k的 #b#p2155106##k需要委託一件事."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "消滅#b#o8250004##k 200隻\r\n向#m310070000#的#p2155000#報告。"
+    },
+    "summary": {
+      "_dirType": "string",
+      "_value": "#b[機器墳墓 委託]#k：處理敵人\r\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o8250004# #a391121#\r\n"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "#m310070150#, #m310070160#"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 50,000,000"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "dailyAlarm": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "1|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "except": {
+        "_dirType": "sub",
+        "lvmin": {
+          "_dirType": "int",
+          "_value": "1"
+        }
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "50000000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2155000"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "39112"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "190"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q39112s"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "start"
+          }
+        }
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2155000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q39112e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8250004"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "200"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒達成委託條件.\\r\\n再繼續加油."
+          }
+        }
+      }
+    }
+  }
+}

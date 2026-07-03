@@ -1,0 +1,215 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[Kanna] Mu Lung's Contribution"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "58"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "Mu Lung, the village of pandas... What a mystical place. Ask Tae Sang about anyone suspicious he may have seen."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "Tae Sang saw some shady characters around Mu Lung, but he didn't pay much attention to them."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "You found Tae Soo, the peach farm manager."
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic# #fUI/UIWindow2.img/QuestIcon/8/0# 1,536,020 Can proceed to the Tae Soo from the Orchard quest"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1536020"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2091002"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "57440"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q57441s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "135"
+      },
+      "job": {
+        "_dirType": "sub"
+      },
+      "job_SG": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "4200"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "4210"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "4211"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "4212"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "4002"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "4213"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "4214"
+        }
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2091003"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q57441e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1536020"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "A suspicious group of people wearing odd clothing passed through when I was on my way to the Peach Farm. They sort of looked like you actually, frilly and ancient."
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "I didn't pay much attention. I was inspecting the trees. The blossoms are particularly vibrant this time of year. Talk to Tae Soo. He's the farmer around here."
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "Exit Mu Lung and head west to get to the Peach Farm. Tae Soo looks after the farm, so he should be easy to find. And be sure to marvel at the trees!"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "I see. Well, it looks like you're on your own."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "What a healthy tree! This year's harvest should be excellent. Oh! hello. You were looking for me?"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "Head west from Mu Lung to reach the Peach Farm. Tae Soo should be there."
+          }
+        }
+      }
+    }
+  }
+}

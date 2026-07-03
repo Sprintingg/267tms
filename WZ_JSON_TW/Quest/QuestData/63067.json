@@ -1,0 +1,130 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[艾芙特領域]傑恩不能出去的理由"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "121"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "試圖說服#p9400215#到城牆外去吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p9400215#說城牆外有虎視眈眈覬覦他金銀財寶的#o9402046#，因此他不能出去外面，\\r\\n為了讓他放心，請去擊退#o9402046#。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p9400215#說因為城牆外有虎視眈眈覬覦他金銀財寶的#o9402046#，因此他不能出去外面。 為了讓他放心，在擊退#o9402046#後，他決定要到外面來看看，\\r\\n為了讓他到外面，請幫他搬運金銀財寶吧。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o9402046# #a630671#\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400215"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "63066"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q63067s"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400215"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q63067e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9402046"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "至少要擊退#o9402046#100隻才能讓我安心… "
+          }
+        }
+      }
+    }
+  }
+}

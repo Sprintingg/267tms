@@ -1,0 +1,188 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[阿斯旺] 希拉之塔"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "257"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "即使變成幽靈，也留在#b避難處#k數百年的阿斯旺的百姓們。阿斯旺的巫女#b梅迪沙#k決定與聯盟合作。和梅迪沙對話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "梅迪沙說希拉在避難處的東邊的#b希拉之塔#k。希拉是即使單純的偵察，也必須賭上性命的危險對象，所以梅迪沙也說要一起去…那就去希拉之塔吧。\r\n\r\n#e#r任務進行失敗時請放棄後重新開始"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "因為希拉危險的魔法，差點就喪命了。幸虧在梅迪沙的幫助下，才得以脫離危機，但希拉好像不在塔裡。也就是說，希拉已經在楓之谷世界活動了。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#調查希拉之塔 (#R1576ExdiRef1576#)"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q1576x"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "80"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "84"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2183001"
+      },
+      "subJobFlags": {
+        "_dirType": "int",
+        "_value": "15"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "80"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1575"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2183001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "1576"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q1576e"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "調查希拉之塔"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "di"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "setEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub"
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你問是否知道希拉在哪裡？我倒是有想到的地方。避難處的東邊有#r為了希拉而建造的塔#k。那是百姓們根據相信大巫女必須在高處祈禱的信念所建造的塔。希拉應該就在裡面。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "難道，你真的要親自去希拉之塔嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這是很危險的事情。希拉在大巫女時期，就是擁有阿斯旺歷史上從未出現過的強大力量的人。為了黑魔法師獻出了王國，並且獲得了更強的力量。就算只是進行偵查，也可能會賭上性命。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "…好。如果你一定要進去的話，跟我一起去吧。雖然我比希拉的能力還弱…但好歹也是阿斯旺的巫女。可以幫助你不被發現，安全地出來。那麼… 要出發嗎？"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "明智的決定。希拉之塔很危險。即便是單純的偵察也必須賭上性命。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "如果要進入#r希拉之塔#k的話，跟我一起去吧。雖然我比希拉的能力還弱…但好歹也是阿斯旺的巫女。可以幫助你不被發現，安全地出來。"
+          }
+        }
+      }
+    }
+  }
+}

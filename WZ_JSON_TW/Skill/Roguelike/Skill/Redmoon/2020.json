@@ -1,0 +1,170 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "프로즌 오브 2221012"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "frozenOrb"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub"
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "2221012"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Projectile"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "time": {
+          "_dirType": "string",
+          "_value": "5"
+        },
+        "destroyHitCount": {
+          "_dirType": "string",
+          "_value": "20"
+        },
+        "hitIntervalPerTarget": {
+          "_dirType": "long",
+          "_value": "1000"
+        },
+        "boundLT.X": {
+          "_dirType": "string",
+          "_value": "-250"
+        },
+        "boundRB.X": {
+          "_dirType": "string",
+          "_value": "50"
+        },
+        "boundLT.Y": {
+          "_dirType": "string",
+          "_value": "-180"
+        },
+        "boundRB.Y": {
+          "_dirType": "string",
+          "_value": "120"
+        },
+        "initialVelocity.X": {
+          "_dirType": "string",
+          "_value": "-100"
+        },
+        "initialVelocity.Y": {
+          "_dirType": "string",
+          "_value": "0"
+        }
+      },
+      "ball": {
+        "_dirType": "sub"
+      },
+      "onProjectileHit": {
+        "_dirType": "string",
+        "_value": "Attack"
+      }
+    },
+    "Attack": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "25+15*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "5"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub"
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "2221012"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "25+15*x"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "5"
+    },
+    "iconRaw": {
+      "_dirType": "uol",
+      "_value": "icon"
+    },
+    "cooltime": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "8"
+    }
+  },
+  "SkillTags": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "string",
+      "_value": "RLGame.Skill.Extra"
+    }
+  }
+}

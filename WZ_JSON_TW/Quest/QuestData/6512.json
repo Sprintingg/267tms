@@ -1,0 +1,154 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 作出憤怒的表情。"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "被大發企劃代表#b#p1052121##k遷就要接受#b演技課程#k. 是哪個課程? 向#b弓箭手村市場, 美髮店旁邊#k站著的#p1052121#進行對話."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "這次輪到學憤怒的表情。#p1052121#溫順的乘務員 #p2012013#也有憤怒的時候，讓我抓住那表情。拿出被#r#o8150000##k搶走的#t4032935#就可以看到…\r\n\r\n#i4032935##t4032935#  #b#c4032935# / 1#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "學到憤怒的表情。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052121"
+      },
+      "charmMin": {
+        "_dirType": "int",
+        "_value": "80"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "6511"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2012013"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q6512e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032935"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好，#h0#。目前所學的演技已深入到你的身體裡，讓你變得更有魅力了。那麼開始下一個演技課程吧？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "第十一個演技課程。這次學習憤怒的表情吧。要強烈表達憤怒情緒很難，但很有意思。會是個有趣的課程。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "認識#b#m200000000##k的乘務員 #b#p2012013##k嗎？接受乘務員教育的她一直維持溫柔的態度，但不表示她沒有憤怒的感情。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "之前#p2012013#說自己的手套因為航海途中出現的#r#o8150000##k而遺失了。因此生了很大的氣…能不能幫忙找來#b#t4032935##k？"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不要否定自己的才能啊。你具有演員的才能。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒去找#b#p2012013##k嗎？她在#b#m200000000##k。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "…哈啊，應該趁早做好準備才是…竟然讓#r#o8150000##k搶走了手套。怎麼辦…能找回嗎？"
+          }
+        }
+      }
+    }
+  }
+}

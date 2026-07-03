@@ -1,0 +1,260 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[幻影俠盜] 派登的失誤"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "9"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "有能力的管家#p1401000#果然替我準備了騎乘。會是什麼樣的呢？應該是符合幻影俠盜的吧？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1401000#預定的騎乘就是敞篷車。找來#m261000000#的煉金術士，付了昂貴的價錢定做的…可是東西還沒來。啊~不能再等了！要去#m261000000#找#p2111008#！"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "說是來找敞篷車的，#p2111008#好像非常緊張…什麼？有什麼問題？"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1401000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "25300"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2400"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2410"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2411"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2412"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2413"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "2414"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2111008"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033139"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033139"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033139"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "訂購的騎乘是…是與主人最相配的敞篷車。已經吩咐他用最華麗的裝飾所以你一定會滿意。\\r\\n#L0##b呵呵呵！敞篷車？聽起來還不賴？是委託#m261000000#的煉金術師製作的嗎？像這#m150000000#一樣應該是特別訂作的吧？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "那當然。已經交代所有材料都要最高級的了。可是物品還沒有送來…說好用宅配送的。遇到什麼問題嗎…\\r\\n#L0##b為什麼？什麼事情？什麼原因呢？啊～我沒辦法等待。到底是怎樣！我真的很納悶！#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "吼。如果不想在這裡等，您要親自去看看嗎？如果親自去領他們會很歡迎。因為是特別訂製所以宅配也很貴。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "去找#m261000000#，蒙特鳩所屬的煉金術師#p2111008#吧。是他答應了製作敞篷車。把剛給你的製作委託書給他他就知道了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "還沒有意願親自去嗎…那，就再等等看吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊，很忙，很忙…你有什麼事？難道是你對蒙特鳩有興趣嗎？我沒時間理你去找卡森吧…噢不！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那，那張紙是…是你訂購敞篷車嗎？呃，呃呃…這，這個…就，就是這敞篷車…還在開發中…"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有去#m261000000#嗎？向蒙特鳩的煉金術師#p2111008#訂購了敞篷車。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "啊…偏偏從這許多零件中用壞了鋰引擎…為什麼呢。啊啊，啊啊啊，怎麼辦？這不能從我薪水中扣除…"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "什麼？委託書不見了？主人本來不是這種人…還好我有留影本。我重新給您。"
+        }
+      }
+    }
+  }
+}

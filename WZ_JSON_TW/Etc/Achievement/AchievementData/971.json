@@ -1,0 +1,94 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "item"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "enchantment"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "[咒文的痕跡]痕跡累積成咒文"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "咒文的痕跡累積使用10,000個"
+    },
+    "parentId": {
+      "_dirType": "int",
+      "_value": "974"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "normal"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "uiForm": {
+        "_dirType": "string",
+        "_value": "basic"
+      },
+      "gauge": {
+        "_dirType": "string",
+        "_value": "submission_info"
+      },
+      "gaugeMissionIndex": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "gaugeSubMission": {
+        "_dirType": "string",
+        "_value": "spell_trace_enchant"
+      }
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "咒文的痕跡累積使用10,000個"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "spell_trace_enchant": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "int",
+              "_value": "10000"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            },
+            "type": {
+              "_dirType": "string",
+              "_value": "sum"
+            },
+            "setGroup": {
+              "_dirType": "string",
+              "_value": "spell_trace_enchant"
+            },
+            "setValue": {
+              "_dirType": "string",
+              "_value": "spell_trace_enchant_cost"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[赫力席母] 加強戰鬥力 - 訓練士兵2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "259"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#再次訓練士兵 (#R38818ExbattleRef38818#)\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "在#b奪回總部的指揮官棚子#k的#b伊黛亞#k似乎還有話要對我說。去找伊黛亞吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "伊黛亞說上次看到對練的士兵們蜂擁而至，想和我一起嘗試對練。既然有助於提升士氣，就再和他們對練一下吧。 \r\n\r\n#r#e※進行失敗時，請放棄任務，從頭開始進行。#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "士兵們的士氣似乎高漲了許多。"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q38818x"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "119"
+      }
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "16"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1585710"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "subJobFlags": {
+        "_dirType": "int",
+        "_value": "15"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q38818s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "38817"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "38818"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "再次訓練士兵"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "battle"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1585710"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "累了嗎？很抱歉麻煩你做這種事。但是確實很有效果。士兵們的士氣高漲。而且實力也提升了不少。這肯定對奪回赫力席母很有幫助。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "現在應該多方面通過實戰培養士兵的力量。在此期間，你得做別的事情。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒準備好和士兵對練嗎？準備好的話，#r請放棄任務後重新進行#k。"
+          }
+        }
+      }
+    }
+  }
+}

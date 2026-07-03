@@ -1,0 +1,133 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[路德斯湖] 無可奈何的睡蟲"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "交付鬧鐘"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去見位在羅威草原某處的粉狼戰士–濱琪。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在地球防衛總部附近草原上又見到了粉狼戰士–濱琪。她說將上次收集到的材料交給了地球防衛總部的#b士兵克賓#k，並拜託我去拿來#b超級鬧鐘#k。只要有了這個鬧鐘，早上應該就能早起了吧？"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "接受粉狼戰士–濱琪交付鬧鐘的請求，從士兵克賓那裡得到了鬧鐘，看起來相當精緻。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "37"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "3418"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊哈！正在等你呢，來的正好。正在用你上次幫我收集來的材料製作超強鬧鐘。不過這並不容易呀，這段期間又有想拜託你的事了…最後一次，能再幫我嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你也有很多事情要忙，還答應幫我，真的很感謝。我把用那些零件製作鬧鐘的方法紀錄下來，然後交地球防衛總部的#b#p2050011##k已經1個星期了，這傢伙由於手藝好，製作什麼道具都很有天份。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "雖然約定一個星期以後來拿鬧鐘，但是由於這裡的任務還沒有完成，所以沒有時間去拿回來。而且最近還是常常遲到…不管怎麼樣，替我到地球防衛總部，從#b#p2050011##k那裡拿回我委託的鬧鐘吧。拜託了！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "哦呵…好像因為其他事很忙的樣子。不過，以後有時間的話，一定要再到我這裡來一趟，我有重要的事情想拜託你。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有找到#b#t4031108##k呀？我把不久前拿來的零件交給地球防衛總部的#b#p2050011##k，現在大概已經製作好鬧鐘了，但是我由於有任務在身，沒有辦法離開。希望你能替我把鬧鐘拿回來…請把握時間吧！"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2041012"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "65"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3416"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2050011"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  }
+}

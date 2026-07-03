@@ -1,0 +1,176 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[埃德爾斯坦] 消滅失敗的作品1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "24"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "位於礦山#m310060000#黑色翅膀的瘋狂科學家#b#p2154009##k，露出一副很不爽的表情。去問#p2154009#看看吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2154009#說失敗的機器人太多，讓人很頭疼，因此實驗進行得不太順利，要我去告訴#b#p2154012##k消滅#o8105003#。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "將消滅#o8105003#的命令轉告給#p2154012#。"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "109800"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2154009"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "23972"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201012291200"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201012291200"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q23974s"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2154012"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q23974e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "109800"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊啊，不順不順不順！不順的實驗都沒進展！頭痛怎麼不消失啊…本來就頭痛，抓走的也消失了…咳，什麼也得要先解決。那樣實驗才可以進行…喂，你！就是你！能聽到我的話嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "去告訴#b#p2154012##k，除掉所有#o8105004#！消滅80隻左右，噪音應該能消失吧。為什麼用那種眼神看我？那些傢伙對我來說只是失敗作而已！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "聽不到我的話嗎？沒用的！是不是戴大型聲音探測器才提起精神嗎！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "……沒有得到允許的對話是禁止的。我只聽博士#p2154009#的命令。有博士#p2154009#口信，就說吧。\\r\\n#L0##b(轉告了#p2154009#的命令。)#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "……NE-00型。個人命名#p2154012#。聽命令。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒去找#b#p2154012##k？啊啊，犯人！實驗也不行，沒有一件順心的事！"
+          }
+        }
+      }
+    }
+  }
+}

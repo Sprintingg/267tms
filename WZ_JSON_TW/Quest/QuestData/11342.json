@@ -1,0 +1,168 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 每日送西瓜花盆！"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoPreComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "加加說會每天贈送#t2440004#和#t2440005#。可以去找加加或者是#r點選畫面左邊的活動公告來拿到#k #b#t2440004##k和#b#t2440005##k。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "從加加手上拿到2個西瓜花盆。好好養#b#t2440004##k的話，就可以使用西瓜農日記，還可以養#b#t2440005##k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "從加加手上拿到2個西瓜花盆。好好養#b#t2440004##k的話，就可以使用西瓜農日記，還可以養#b#t2440005##k。"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2440004"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000021"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201106160000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201106160000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "11340"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000021"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q11342e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你來了啊。 #h0#！現在給為了#h0#準備的#b今天的#t2440004##k和#b#t2440005##k。因為西瓜花盆兩個全在#r今天午夜後消失#k，所以在那之前請務必放入道具寵物。種植全部#b#t2440004#並獲得#k加加西瓜才得來種植#b#t2440005##k請牢記。那麼現在要領取西瓜花盆嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "因一天只給2個，所以在今天過了之前請再來領取。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "收到花盆了吧？！#b因一天會給予一個#k明天再來時則會給明天的#i2440004#西瓜花盆2個。果然夏天的王道就是西瓜吧？\\r\\n"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請確認看看特殊欄位是否還空有1格以上？"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[墨玄] 龍之峽谷"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "138"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoCancel": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "風恆傳來消息。\r\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "風恆綜合魔教的所作所為，推測他們應該是為了製作魔教流傳下來的靈藥，正在收集材料。 如果這個推測沒錯，他們的下一個目的地就是這裡，米納爾森林。\r\n風恆料中了！\r\n消滅他們，別讓他們收集到剩餘的材料。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "風恆綜合魔教的所作所為，推測他們應該是為了製作魔教流傳下來的靈藥，正在收集材料。 如果這個推測沒錯，他們的下一個目的地就是這裡，米納爾森林。\r\n風恆料中了！\r\n過了一會魔教爪牙就現身了，並且開始尋找靈藥的最後一個材料，火靈神草。雖然雲霧沒出現，但是我成功地讓他們無法收集材料。\r\n\r\n風恆說這顯然是那天的戰鬥#e讓某人受了重傷，所以他們才會需要靈藥，必須在那個人恢復之前趕緊將之除掉#n。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#消滅魔教爪牙(#R65976ExchkRef65976#)"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9401345"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "65975"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q65976s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "130"
+      },
+      "job": {
+        "_dirType": "sub"
+      },
+      "job_TW": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "17000"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "17500"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "17510"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "17511"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "17512"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "17513"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "17514"
+        }
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9401345"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "65976"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "消滅魔教爪牙"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "chk"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q65976e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "必須消滅那些魔教爪牙，讓他們無法收集靈藥 材料！\\r\\n"
+          }
+        }
+      }
+    }
+  }
+}

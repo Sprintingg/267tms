@@ -1,0 +1,233 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[菇菇城堡] 需要俘虜"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "91"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "大喊以斗笠還斗笠, 以孢子還孢子(不管怎樣應該是以眼還眼, 以牙還牙的樣子) 誓言一定要抓到維京的警衛隊長. 聽聽看到底是要說明什麼事情. "
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "警備隊長說想出了抓維京的俘虜來打聽情報的作戰。利用繩子來捕獲維京吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "因警衛隊長的請求抓到了維京們. 警衛隊長說要從抓來的維京們開始打聽如何搭乘飛行船的方法. 但是維京們好像不會輕易說出的樣子……"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4034111:# #t4034111:# #c4034111# / 10\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 45,969"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "#m106030401# / #m106030402#"
+    },
+    "deleteItem": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "int",
+        "_value": "4034111"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "45969"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1302007"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "30060"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1302007"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034111"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2270038"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "resignRemove": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "45969"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034111"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "因為我說要綁架維京所以嚇了一大跳? 我是指要抓維京俘虜來打聽情報的意思. 哈哈, 在我看來真的是很新穎的作戰隊? 所以啊…… 這個作戰就決定交給你了! "
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "果然勇士的想法跟我很合。來，那麼就先用這個 #b#t2270038##k捕獲#r#o3300105##k #r10隻#k吧。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "唉咿, 真是太固執了. 既然都變成這樣了就繼續幫忙啊. "
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "抓到所有的維京了嗎? 因為是兇殘的傢伙所以不容易捕獲, 真的是辛苦了. "
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那麼可以稍等一下嗎? 我會向抓來的維京們打聽如何搭乘飛行船的方法. 雖然是這些傢伙們不會輕易回答的問題……. "
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請用我所發放的 #b#t2270038##k來抓 #r#o3300105##k #r10隻#k. "
+          }
+        }
+      }
+    }
+  }
+}

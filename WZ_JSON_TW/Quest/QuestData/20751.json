@@ -1,0 +1,144 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇家騎士團] 前往時間神殿！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p1101002#突然緊急連絡..."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "從#p1101002#那裡取得重要的任務。任務是前往時間神殿幫助當地的#b情報員#p1103006##k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在#m270000000#和#p1103006#見面..."
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1101002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "120"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "5112"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "5113"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1103006"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "新的任務。前往時間神殿。在那裡和蒐集黑魔法師相關資料的 #b情報員 #p1103006##k接觸，幫助她的工作即可。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#p1103006#的緊急支援要求。快一點。非常重要的工作，拜託你了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "來到耶雷弗，有什麼要處理的工作嗎？那麼請稍等。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我，我，我正在等你呢！ #h0#！ 你是那因哈特派來的人嗎？你來晚了我很擔心。因為這裡是一般騎士也很難前來的危險地區。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不是因為我很強才能進入，而是擅長特殊能力、隱藏、躲避、尋找安全地方，所以才能進入。嗯嗯… 門的對面真的很可怕。更可怕的是，任務還沒結束。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "在#m270000100#見情報員 #p1103006#就行了。聽她蒐集的情報，了解傳聞的真相吧！"
+          }
+        }
+      }
+    }
+  }
+}

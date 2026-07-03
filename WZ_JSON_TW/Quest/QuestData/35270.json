@@ -1,0 +1,178 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[聯盟任務] 遠征隊任務 - 苦痛迷宮"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "223"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#p3003564##k 在提供著今天的遠征隊任務。去接收任務吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "接收了3個遠征隊任務。在迷宮完成所有遠征隊任務後，再回到 #b#p3003564##k吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "完成了所有迷宮的遠征隊任務而獲得了報酬。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1# 遠征隊任務完成次數 #R35269ExcountRef35270# / 3\r\n"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#i2439260##t2439260# 1個"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003564"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q35270s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "35268"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201902060000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201902192359"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "35269"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003564"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q35270e"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "3"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "遠征隊任務完成次數"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "count"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "若完成三種遠征隊任務後回來的話，做為謝禮，我會贈送小禮物。"
+          }
+        }
+      }
+    }
+  }
+}

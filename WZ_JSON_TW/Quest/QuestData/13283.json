@@ -1,0 +1,160 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[挑戰目標] 完成怪物卡"
+    },
+    "disableAtStartTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "disableAtPerformTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "disableAtCompleteTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "[挑戰目標] 完成怪物卡"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "[挑戰目標] 完成怪物卡"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "[挑戰目標] 完成怪物卡"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "13280"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201301030000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201301030000"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q13283s"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "30"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "card"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "恭喜你達成挑戰目標？]！\\r\\n我準備了 #i2431306:##b小小的禮物#k，要收下嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "禮物送給你吧~ "
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那也沒有辦法。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "禮物收到了嗎？那麼，希望這個冬季你能夠在楓之谷遇上很多好事！ "
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "物品欄似乎不夠的樣子。可以清空消耗物品欄後再來嗎？"
+          }
+        }
+      }
+    }
+  }
+}

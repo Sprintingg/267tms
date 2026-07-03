@@ -1,0 +1,241 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[星光之塔] 幫我收集飲料材料"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "211"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4036020:# #t4036020:# #c4036020# / 25\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "在#星光之塔2樓咖啡廳#k裡見到打工的#b薩菲#k，即使忙碌奔走著，臉上卻總是帶著笑容，讓周圍充滿明朗氛圍…但仔細看了一下，好像有什麼問題。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "薩菲說#b#t4036020:##k沒有了，讓他很困擾。若是想進行選角，就必須幫忙快點完成打工．．．收集#b#i4036020:# #t4036020:##k#b25個#k交給#r薩菲#k吧。#t4036020:#可以向周圍的#r#o4310004##k、#r#o4310005##k和#r#o4310006##k取得。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "幫助了因為#t4036020:#掉落感到慌張的薩菲。"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "3098601"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "145"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052208"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34407"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052208"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036020"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "25"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "3098601"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036020"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "標準"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "sayEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "天呀！#b#t4036020:##k都用完了耶！這樣的話從點餐到出餐似乎要花費很多時間…這樣要去補習班會遲到耶…"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "嗚...如果有人能幫忙快點收集#b#i4036020:# #t4036020:##k#b25個#k就好了．．．"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#b(在他提出請求之前幫助薩菲完成打工的工作吧？)#k"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "咖啡廳周圍的#r#o4310004##k和#r#o4310005##k、#r#o4310006##k說不定會有#b#i4036020:# #t4036020:##k…"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我答應老闆要幫他賣出100杯的說…嗚嗚…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "歡迎光臨，分送微笑給您的星光之塔咖啡廳！很抱歉客人，現在無法接受點餐…哇，天啊，這不是#b#i4036020:# #t4036020:##k嗎？"
+      },
+      "yesEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#b(把#t4036020:#25個交給薩菲了。)#k"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "哈哈，真的很謝謝你！…有了這個感覺可以馬上結束打工工作耶！"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#b(薩菲的工作似乎很快就會結束，邀請她參加徵選吧！)#k"
+          }
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "如果有人幫忙收集#b#t4036020:##k#b25個#k就好了．．．聽說#b#i4036020:# #t4036020:##k可向周圍的#r#o4310004##k、 #r#o4310005##k和#r#o4310006##k取得．．．"
+          }
+        }
+      }
+    }
+  }
+}

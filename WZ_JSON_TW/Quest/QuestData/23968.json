@@ -1,0 +1,292 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[埃德爾斯坦] 莫斯卡丹的善意"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "24"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "失去心臟後機能停止的#p2154007#…若要救他就需要#p2154003#為他製作的新的心臟。前往#b#m310050100##k去見#b#p2154003##k吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2154003#交出了親手做的心臟。因為不是#p2154009#製作的，所以能源效率較低可能能源不足，先把能源填滿後，再交給#b#p2154007##k吧。這和能源匣一樣只要#b狩獵怪物就會填滿能源#k。\r\n\r\n雙擊#b其他欄#k的#r能量匣#k後，把能源填滿吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "接獲新心臟的#p2154007#睜開了眼睛。沒有感情的#o8105003#兄妹…但是他們之間的友愛卻是真的。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4220179:# #t4220179:# #c4220179# / 1\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "150000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2154003"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q23968s"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201012291200"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201012291200"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "23966"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4220179"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2154007"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q23968e"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "23981"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "100000"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4220179"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4220179"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "關於你的情報就在機能停止之前，從#p2154007#那裡傳送了。謝謝你幫助弟弟。托你的福救了兩個弟弟。像你這樣的叫好人吧。\\r\\n#L0##b知道會發生這種事情嗎？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "…知道總有一天博士#p2154009#會丟棄#p2154012#。雖然#p2154012#在我們當中最適合做戰鬥，但是消耗率也高。所以判斷丟棄的話，應該#p2154012#是第一個。\\r\\n#L0##b那麼為什麼做了不是#p2154012#的心臟，而是#t4032774#的呢？#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "以我的技術不能完美再現#p2154009#型心臟。假如做了#p2154012#的心臟，以後動員#p2154012#戰鬥時功率輸出會不夠。因為#p2154007#不是戰鬥用，所以用我的技術做成的心臟無法勉強的。\\r\\n#L0##b(#p2154003#好像從很久以前開始都算好了。)#l\\n#k"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "但即使是給#p2154007#使用，我做的心臟的能源效率不好。所以要提前裝滿能源。把#p2154007#心臟交給時，也要填充能源。我相信你會幫忙。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "跟充能源匣的電一樣，狩獵#b怪物，並把從牠身上得到的生體能源#k填充進去就可以。把心臟的能源填滿至100%之後，交給#b#p2154007##k設定。那麼就拜託了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#p2154007#機能停止時也沒感到害怕，因為他相信你。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#b(看到機能停止的#p2154007#。往拿出心臟的地方放入新的心臟後，按下按鈕恢復#p2154007#吧。)#k"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#p2153003#高興能在見到你。#h0#。要不是你我們的計畫不會成功。#p2154012#姐姐不會表現出來，但在線路深處感激你的。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒去找#p2154007#嗎？#b狩獵怪物後，給#t4032774#充滿能源後，放入#p2154007恢復#k吧。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "(看到機能停止的#p2154007#。想要恢復#p2154007#，得需要新的心臟。)"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[弓箭手村] 王國的象徵"
+    },
+    "summary": {
+      "_dirType": "string",
+      "_value": "請找回被偷走的菇菇王國的象徵，交給#b#p1300003##k。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4001318:##t4001318:##c4001318#/1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 5,000\r\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "請找回被偷走的#b菇菇王國的象徵#k，交給#b#p1300003##k。"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#p1300003##k有說不出口的煩惱…"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "找回#b總理大臣#k偷走的#b菇菇王國的象徵#k已交給#b#p1300003##k。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "25"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1300003"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2323"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1300003"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001318"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001318"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "事實上我找勇士來是有一件事要拜託你。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "企鵝國王入侵時，我本想帶著王國玉璽離開，可是在保管玉璽的金庫內沒有發現玉璽。究竟是被誰偷走了呢…請你幫我找到玉璽。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果掌握了玉璽，企鵝國王就可以主持菲歐娜公主的婚事，並對外宣佈他對王國的佔有權。能夠打開金庫的人只有#b菇菇#k大人和#b菲歐娜#k以及#b總理大臣#k和我…。請你一定要找回來。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請再認真考慮一下。這關係到我們王國的命運。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "找到玉璽了！真是太感謝了。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "是啊。我已經聽說了。沒想到 #b總理大臣#k會是這個事件的主謀者… 他明明是很忠心的人，大概是貪念招來了這場災難吧。總之已經找到玉璽，現在就努力讓王國恢復正常吧。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "玉璽是王國權力的象徵。一定得找回來。"
+          }
+        }
+      }
+    }
+  }
+}

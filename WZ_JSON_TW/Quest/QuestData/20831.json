@@ -1,0 +1,188 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇家騎士團] 第3課程 – 基本戰鬥2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "與奇加對話繼續修練。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "再次練習一般攻擊。\r\n打敗#o9300730# 3隻，搜集 #t4000489# 3個。\r\n\r\n點擊Ctrl鍵就可以打怪。\r\n點擊Z鍵就可以撿道具。\r\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "順利結束基本戰鬥訓練。\r\n\r\n[一般攻擊]\r\n點擊Ctrl鍵就可以打怪。\r\n\r\n[撿道具]\r\n點擊Z鍵就可以撿道具。\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000489:# #t4000489:# #c4000489# / 3\r\n#o9300730# #a208311#\r\n"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1102102"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q20831s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20830"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "1000"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1102102"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000489"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9300730"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000489"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-3"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        }
+      },
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "20832"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "好。持續重複進行訓練，這些動作就變得很簡單吧？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "來，那麼下個訓練是．．．"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "擊敗#o9300730# 3隻， 收集#t4000489# 3個後來找我。休息過後身體變得更敏捷了吧？"
+          }
+        }
+      }
+    }
+  }
+}

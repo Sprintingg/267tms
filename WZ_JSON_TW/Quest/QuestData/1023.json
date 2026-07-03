@@ -1,0 +1,221 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓之島] 消滅肥肥"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#m60000##k的#b#p20002##k不知道為什麼突然發起火來，究竟是什麼事啊?"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p20002#聽到有人說他長得像#o1210100#，正在生氣.說實話還真的有點像...不管怎麼說就幫#p20002#消滅兩頭#r#o1210100##k吧.\\n#k\\n#o1210100##r#a10231##k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "打倒#o1210100##p20002#看樣子也很滿意."
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "20"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2000000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2000003"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哇!消滅了#o1210100#2隻!真是了不起啊！看來你具有優秀冒險者的素質!太感謝了!現在那些謠言該平息了吧?"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "多虧你了.到底是什麼人在散布謠言呢!就不要被我抓到!否則饒不了他!"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒消滅2隻#r#o1210100##k嗎?只要肯努力，就一定可以完成的!加油啊!"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哼~氣死我了!實在受不了啦!你問我為什麼這麼生氣?是這樣的.有人在亂散布謠言，說什麼“本大爺#p20002#長的像#o1210100#”!讓我知道是誰會讓他好看!真是的，受不了啦.你要幫幫我!!"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "怎麼辦?很簡單.把#m60000#周圍的#o1210100#都消滅就行了!消滅了#o1210100#，謠言自然就平息了.很簡單吧?什麼?#o1210100#太多了?好吧，知道了。那麼你就先殺死2隻#r#o1210100##k就行了.這樣應該可以了吧?"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你不願幫我?難道你也認為本大爺#p20002#長的和#o1210100#一樣?!"
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2000000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2000003"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "20002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1210100"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "20002"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "0"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

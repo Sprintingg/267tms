@@ -1,0 +1,171 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[簽到]大蘿蔔簽到任務"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "跟#r楓之谷#k一起蓋大蘿蔔簽到章,成為風光的主人翁!\\r\\n#e[簽到活動日程]\\n>2013年05月27日~2013年06月23日#k"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "跟#r楓之谷#k一起蓋大蘿蔔簽到章,成為風光的主人翁!\\r\\n#e[簽到活動日程]\\n>2013年05月27日~2013年06月23日#k\r\n\\n★#e#o9010018#是什麼?\\n#n楓之谷世界各處突然出現的紅泡菜.雖然看起來很可愛,但是藏著辣味,所以請小心.當選玩家大獎特別製作.\\n#b#e製作者：昏暈暈#k#n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "跟#r楓之谷#k一起蓋大蘿蔔簽到章,成為風光的主人翁!\\r\\n#e[簽到活動日程]\\n>2013年05月27日~2013年06月23日#k"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o9010018##a139161#\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201305270000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201306240000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201305150000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201306040000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "13915"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q13916e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9010018"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好,#b#h0##k!\\r\\n#e#b預定進行蘿蔔點名活動#k#n#k.\\n#n\\n要現在點名嗎??#e#rAreYouReady?#k#n"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b#e#o9010018#10隻#k#n擊倒的話,會在簽到簿上蓋上簽到章.對你來說,應該不是難事吧?什麼是\\r\\n★#e#o9010018#?\\n#n楓之谷世界各處突然出現的紅泡菜.雖然看起來很可愛,但是藏著辣味,所以請小心.當選玩家大賞特別製作.\\n#b#e製作者：昏暈暈#k#n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "蓋了出席印章就可獲得精美禮物喔...改變心意的話再來跟我說吧."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b#e#o9010018#10隻#k#n擊倒的話,會在簽到簿上蓋上簽到章.對你來說,應該不是難事吧?什麼是\\n★#e#o9010018#?#fMob/9010018.img/stand/0#\\n#n楓之谷世界各處突然出現的紅泡菜.雖然看起來很可愛,但是藏著辣味,所以請小心."
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 艾溫的染料2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "魔法森林的#b#p1032100##k在為壁畫的事請求幫忙…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "魔法森林的#b#p1032100##k這次是說缺少了白色和黑色染料。幫他收集染料的材料#b#t4000023##k與#b#t4000621##k各40個吧。#i4000023##t4000023# #b#c4000023##k/40 #i4000621##t4000621# #b#c4000621##k/40"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "幫艾溫收集了白色和黑色染料的材料#t4000023#與#t4000621#。可是…他到底是要畫什麼畫呢？"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 1,000\r\n#i2000002:# #t2000002:# 30 個\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2000002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "24"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1032100"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2483"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1032100"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000023"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "40"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000621"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "40"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000023"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-40"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000621"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-40"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2000002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "是上次幫忙找來染料材料的人吧。來的正好。這次也沒了染料，能幫我們嗎？幫忙的話，就送給你對旅行有幫助的東西。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "托之前找來的材料的福，可以在畫乾之前用黃色和綠色的染料去畫畫。可是這次沒了白色和黑色。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "為了製作白色和黑色水彩需要 #b#t4000023##k和 #b#t4000621##k。感覺我會常使用他，所以請幫忙尋找 #b40個#k。這一次到#b北邊森林#k深處找找看吧。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "果然人類沒那麼親切…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "找來染料材料了嗎？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "#b#t4000023#40個#k…#b#t4000621#40個#k…都找來了啊。這次應該可以完成壁畫了。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "染料材料也找到了，得趕快做染料完成壁畫。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "不夠做染料。有#b#t4000023#40個#k，#b#t4000621#40個#k才可以製造染料。"
+          }
+        }
+      }
+    }
+  }
+}

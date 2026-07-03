@@ -1,0 +1,196 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[專門技術] 阿爾馮絲小綠的香草 Ⅲ"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b天空之城雲彩公園Ⅰ#k的#b阿爾馮絲小綠#k好像需要什麼東西…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "阿爾馮絲小綠說這次不想再喝香草茶，而想做做芳香按摩，幫他去尋找薄荷精油。採集一堆薄荷花並製作成精油好像需要一些技術呢…\r\n\r\n#i4023010##t4023010#  #b#c4023010# / 1#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "為阿爾馮絲小綠製作了薄荷精油。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "16800"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2012020"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "55"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3132"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2012020"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4023010"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "16800"
+      },
+      "pop": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4023010"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好~ 認識#h0#嗎？香草當茶喝也不錯，而且做成油擦在身上也不錯。別稱芳香精油按摩！。所以這次我也想試一試！"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "可是要得到精油挺難的。先採集香草獲得後，將材料組合製作精油。所以能不能幫我找來精油？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "需要找來的 是#b薄荷精油#k。收集在#b祖母綠 藥草堆#k中能夠獲得的薄荷，再製作成精油，具有藥草採集技術的人應該也很難！不過如果是你的話，肯定馬上就能獲得！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯…要找到精油真的很難嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哇~ 薄荷精油都收集了！謝謝。只要有了這個就能做芳香按摩了！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝你的幫助~ 如果以後還要尋找新的香草，再跟你聯繫！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒找到#b薄荷精油#k嗎？畢竟是稀有的…嗯。如果是藥草採集技術高的人，就會有辦法了。"
+          }
+        }
+      }
+    }
+  }
+}

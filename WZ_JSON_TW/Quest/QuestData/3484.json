@@ -1,0 +1,138 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[地球防衛總部] 取得設計圖"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "38"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#取得設計圖(#R3484ExenterRef3484#)\\r\\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "小豆的第二個條件是找回葛雷楓幣。從走廊103中回收葛雷楓幣5個後還給了他。\r\n\r\n小豆說要往走廊104移動。\r\n\r\n\r\n#r<無法進行時，請放棄任務後重新接取進行。>"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "進入勳兒的基地管制區域，\\r\\n必須潛入其中奪取設計圖。\n\n#r<若無法進行請放棄並重新接收任務>"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "雖然有些小插曲，但成功取得了設計圖。"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "16"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2052033"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "165"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q3484s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3483"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2052033"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "3484"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q3484e"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "取得設計圖"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "enter"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "必須潛入內部拿走設計圖～"
+          }
+        }
+      }
+    }
+  }
+}

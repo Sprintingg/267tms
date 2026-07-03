@@ -1,0 +1,215 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[黃金海岸] 維持整潔"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "向經理#p1082000#說明自己是客人，並向他拜託幫忙介紹渡假村吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了維持客房的整潔，必須要侵入渡假村內部，將客房弄亂的#o3401002#打倒才行。\\n#o3401002#主要聚集在#m120041000#，透過#m120040000#右邊的傳送口可以進行移動。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "將弄亂客房的#o3401002#清除之後，現在一定要將我是客人的這件事跟他們說清楚才行!"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o3401002# #a29551#\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "228"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "59"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "25686"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1082000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2954"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1082000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3401002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "40"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "25686"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "雖然變成喘口氣的空隙都沒有的事有點遺憾，但還是有事情要你做。\\r\\n#L0##b好像有點誤會的樣子，我這裡的員工…#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "員工？當然新人訓練也是在計劃之中。但現在沒有什麼心思，現在的情況還是冷靜一點比較好。\\r\\n#L0##b不不是那個…(這個人，完全不聽別人講話…怎麼辦？黃金海岸馬上就要到了…)#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "那，歡迎會就是由在下我負責並隆重舉辦。好這次你要做的事是#b#o3401002#清除#k。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "海邊的怪物跑進了客房搞的一團混亂。雖然目前裡面已經打掃乾淨，但不知道什麼時候又會來胡鬧。請消滅#b#o3401002#40隻#k。\\r\\n你要去那裡啊？#o3401002#必須要前往#b#m120040000#右邊的傳送點#k才對。往#e#m120041000##n喔！\\r\\n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "還沒有準備好要做事嗎？請等一下，準備好的話會告訴你的。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "擊殺#o3401002# 40隻了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不得不感嘆你的能力。啪啪啪，給你拍拍手。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒消滅#o3401002# 40隻吧？他們主要都棲息在#m120041000#，去那裡消滅他們就可以了。\\n#m120041000#可透過#m120040000#右邊的傳點抵達。"
+          }
+        }
+      }
+    }
+  }
+}

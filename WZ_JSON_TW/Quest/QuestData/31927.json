@@ -1,0 +1,196 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[黃昏的勇士之村] 供應優質蛋白質源2"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b蘇非亞#k說還有一件事情要委託一下。詢問是什麼事情。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "蘇非亞說除了黃昏的勇士之村，要是也能夠拿糧食給在#r原住民避難處#k的人們，那就好了。拿#b巨大肥肥的肉50個#k給他們吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "已交付狩獵#r變形的肥肥#k後取得的#b巨大肥肥的肉50個#k。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4033728:# #t4033728:# #c4033728# / 50\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "47"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "13009101"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2142104"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "185"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31926"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2142104"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033728"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033728"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        }
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "13009101"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "距離這邊比較遠的地方，有無法承擔勞力的人們所聚集的 #r避難處#k。他們無法承擔辛苦的工作，才會決定離開勇士之村。就連能夠勞動的我們也這麼#b辛苦#k，更何況是避難處的人呢？ 如果能把#b巨大肥肥的肉#k交給避難處的人們，#b難民一定會很開心的#k。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請拿#b大肥肥的肉50個#k過來。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "雖然我們想將肉送去避難處，但是目前勇士之村勞動的人根本就處於無法填飽肚子的狀態。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "已經順利取得#b大肥肥的肉#k了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝你！畢竟避難處是個#r什麼都缺的地方#k嘛。多虧有你暫時可以不用擔心糧食了。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "必須要有#b大肥肥的肉50個#k才行。"
+          }
+        }
+      }
+    }
+  }
+}

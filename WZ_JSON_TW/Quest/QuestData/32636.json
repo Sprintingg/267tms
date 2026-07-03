@@ -1,0 +1,130 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[次元圖書館] 在平靜森林的徬徨"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "82"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "在平靜森林中迷路了.真是傷腦筋... 和艾琳交談吧."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "看來我是徹底迷路了.這樣子能夠找到白魔法師嗎?\\r\\n#b(去找路吧.就先往右邊走,看看是否有出口.)#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "雖然在平靜森林中迷路了,但卻見到了白魔法師.獲得他的引導,於是便來到歐洛拉大神殿."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#找路 (#R32628ExnoRef32636#)\\r\\n"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "儘管逃跑吧!我一定會追到世界的盡頭,並且從背後開槍...我要在這邊休息.\\r\\n#b(試著往森林右邊的盡頭前進找路吧.)#k"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2510003"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q32636s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32635"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2510003"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "32628"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "no"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "尋找道路"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "no"
+          }
+        }
+      }
+    }
+  }
+}

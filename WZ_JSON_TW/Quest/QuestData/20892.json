@@ -1,0 +1,193 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇家騎士團] 耶雷弗歸還"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[轉職]"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "回到耶雷弗向那因哈特報告在 #b#m230040400##k發生的事情。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "那因哈特說想對在深海遇到的黑色翅膀做進一步的調查，把報告書轉交給女王。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "轉交報告書的時候，女王好像睡著了，怎麼辦，就放在旁邊？"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1101002"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20891"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "1111"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "1211"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "1311"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "1411"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "1511"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1101000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "20893"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "深海調查如何了呢？有知道為什麼黑色翅膀有什麼意圖出現在那邊了嗎？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "跟黑色翅膀身體接觸的瞬間，移動到了未知的空間？是這個意思嗎？呃嗯…挺有趣的。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "知道了。鷹眼大人說要做剩下的調查，感覺可以再知道些什麼。因為那件事還必須再調查一下，請幫我跟女皇傳達一下。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這是皇家騎士團活動報告書。那麼，我就到這了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "現在有一定，一定！要處理的事情嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "(…)\\r\\n#L0##b(女皇睡了嗎？怎麼辦…要傳達這個消息才可以) 女皇！女皇？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "(......)"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "在做什麼呢？沒理解我的指示嗎？快把那報告書轉達給女皇。馬、上！"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好像真的受到打擊的樣子啊。放著報告書就走了。請將這份報告書轉達給女皇。"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[拉圖斯]晃動的靈魂探測器"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "36"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p2041026#的靈魂探測器震動了，詢問是否和墜落到鐘塔最下層的光芒有關聯。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2041026#說靈魂探測器震動的時間點和光芒降下的時間點吻合，下去鐘塔最下層確認產生何種變化吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "受#p2041026#委託確認了降下光芒的鐘塔最下層的狀況，並且得知鐘塔最下層已經因為流星的力量完全改變了。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#前往鐘塔最下層\r\n#questorder2#狩獵怪物吧 (#R3463Ex1Ref3463#)\r\n#questorder3#執行任務 [星星力量]裝備中蘊含的星星力量\r\n"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "鐘塔最下層"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "16"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "481572"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2041026"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "115"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3462"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2041026"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "3463"
+      },
+      "QuestRecordAndOption": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "前往鐘塔最下層"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "狩獵怪物吧"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "1"
+          }
+        }
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "25972"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "3"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "481572"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "靈魂探測器會不會是故障了呢？不可能的！這是最新型的機器！我可是花了龐大的金額才買到的！到底為什麼會這樣呢？如果你有任何頭緒，就告訴我吧。 \\r\\n"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "什麼？墜落到鐘塔最下層的光芒？因為我一直都忙著狩獵幽靈，所以沒能看到。但是，那道光芒墜落的時間點和靈魂探測器如此劇烈反應的時間點吻合，看來得去確認一下才行，你願意幫忙我嗎？\\r\\n"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我去鐘塔最下層調查一下情況，我要向幽靈獵人協會報告這件事情，靈魂探測器如果沒有故障的話，就必須再派遣100名幽靈獵人才行。 \\r\\n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "被派遣到這個地區的幽靈獵人只有我而已，所以任務相當棘手，這種時候就該互相幫忙，不是嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "下面的狀況怎麼樣呢？靈魂們該不會全都黏在一起跳舞吧？"
+      },
+      "yesEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "（向#p2041026#說明文博士提過的流星的真面目與星星力量。）"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "那麼，也就表示流星的力量導致鐘塔最下層的怪物們全都變強了嗎？啊啊，真是糟糕，必須快點去向上級報告才行。"
+          }
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "從靈魂探測器晃動的如此劇烈這一點來看，鐘塔最下層一定發生事情了，你去確認一下吧。"
+          }
+        }
+      }
+    }
+  }
+}

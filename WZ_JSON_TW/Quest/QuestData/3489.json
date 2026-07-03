@@ -1,0 +1,134 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[地球防衛總部] 小建vs小琳"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "38"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o4230133# #a34891#\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "小琳位在通風口D-2，得照顧好她。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "要在通風口 D-2狩獵100隻梅卡堤安。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "已於通風口D-2狩獵梅卡堤安，再次跟位在D-2的小琳搭話吧！"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q3489x"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "16"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2052036"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "165"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q3489s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3488"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2052036"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q3489e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4230133"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "必須狩獵100隻梅卡堤安！快點！快點！"
+          }
+        }
+      }
+    }
+  }
+}

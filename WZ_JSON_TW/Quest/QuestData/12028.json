@@ -1,0 +1,145 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 挑戰！完成組隊任務3次！"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "正義嘉年華期間內完成組隊任務3次，就能領取 #t4310034# 2個。#r點擊畫面左側的活動提示#k或去找 #p9010000#。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b每天完成組隊任務3次#k就能領取 #r#t04310034# 2個#k。去挑戰吧！"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "完成組隊任務3次，領取了正義硬幣。正義嘉年華截止到2013年2月26日，每天來挑戰吧。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201209191200"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "50"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201209191200"
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "11483"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q12028e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "3"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好#h0#～正義嘉年華期間任何組隊任務一天完成3次，就可以獲得#b#t4310034##k。你要參加嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "完成組隊任務3次後，找旁邊的#r活動提醒#k或#r楓之谷管理者#k就可以了。那麼我在這裡等你。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "剩下機會不多了…若想要挑戰，請來找我。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "不管是什麼組隊任務都可以，進行共3次之後，再來找旁邊的#r活動提醒#k或者我這 #r楓之谷GM#k就可以。但是，在進行組隊任務途中放棄退出的話是無法完成的，請注意！那麼我在這裡等你。"
+          }
+        }
+      }
+    }
+  }
+}

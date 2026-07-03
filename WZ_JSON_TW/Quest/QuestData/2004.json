@@ -1,0 +1,118 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 閃耀石頭的材料"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "瑪亞和奇怪的藥"
+    },
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在雜貨店裡見到了索非亞。她是想成為煉金術士的小姐。她告訴我要製作發光的石頭需要50個綠液球、50個葉子、20個章魚腳及1瓶變異菇菇的血。別的東西不難得到…但是變異菇菇的血是什麼呢？幸虧索非亞告訴我在勇士之村某個地方住著一個叫麥吉的男人肯定知道。麥吉...他在哪兒呢？"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "聽索非亞說，麥吉那裡有閃耀石頭的材料-變異菇菇的血。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "3"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "2005"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "想得到#b#t4031004##k嗎？唔那個石頭太稀有，普通方法是做不出來的哦！好吧，你去找來我說的所有魔法材料，記一下哦。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "要是有#b#t4000004##e10#n個#k，#b#t4000005##e5#n個#k，#b#t4000006##e10#n個#k，#b#t4031005##e1#n個#k的話，就可以造出一個#b#t4031004##k了…別的都可以得到…但問題是#t4031005#。這個東西的話，最好是去問這個村莊裡的#r#p1022002##k吧。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "若有#b#t4000004# #e50#n 個#k、#b#t4000005# #e50#n個#k、#b#t4000006# #e20#n個#k、 #b#t4031005# #e1#n個#k的話，可以製作一個#b#t4031004##k喔… #t4031005#是詢問在 #m102000000# 某處的 #r#p1022002##k先生就可以囉。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022100"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "15"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2003"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    }
+  }
+}

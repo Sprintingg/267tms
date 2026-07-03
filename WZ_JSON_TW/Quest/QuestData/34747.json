@@ -1,0 +1,138 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[狐狸峽谷] 蓬蓬樹葉狐狸耳"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "218"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i1005059:# #t1005059:# #c1005059# / 1\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "自稱製作達人的瑪魯。幾乎沒有外人來訪的特性上說要做一個耳朵給我…不知道可不可以相信？\r\n\r\n與在 #b#m410000110##k的#b#p3002020##k對話看看。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "自稱製作達人的瑪魯…果然變裝一點都不像。裝備#r#i1005059##t1005059##k後，與在 #b#m410000110##k的#b#p3002020##k對話看看。\r\n\r\n#r(遺失#i1005059##t1005059#的情形，放棄任務後重新與瑪魯進行對話。)#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "利用瑪魯做的打噴嚏粉末讓村民吃下做了#r免疫力的鍛鍊訓練#k...怎麼看都好像是瑪魯的惡作劇，感覺不怎麼好。"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q34747x"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3002021"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q34747s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "185"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34746"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201804250900"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201804250900"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3002021"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q34747e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1005059"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "喔，#b#i1005059# #t1005059##k怎麼樣了?難道這麼快就用丟了嗎?沒有耳朵的話會很困擾呢…。\\r\\n#r ※ 需要放棄任務後再次進行。#k"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[登貝伊探究者] 黃金土地"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去赫爾奧斯圖書館見懷茲吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "去赫爾奧斯的圖書館，懷茲說怪物們在登貝伊大陸搶走古文書的事情，並且請求從他們手上帶回 #e#b#t3994882# 30個#k#n。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "去赫爾奧斯的圖書館，懷茲說怪物們在登貝伊大陸搶走古文書的事情，並且從他們手上帶回 #e#b#t3994882##k#n。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i3994882:# #t3994882:# #c3994882# / 30\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994882"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "normal"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "雖然你應該已經聽#p9010000#說過。赫爾奧斯圖書館保管的古文獻因為受怪物襲擊，所以消失了。我想那個文獻裡有關於黃金大陸登貝伊的紀錄。擊退怪物，拿 #b#e#t3994882# 30個#k#n來好嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請注意觀察怪物們。一定在他們身上。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "看來我的請求太困難了。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請注意觀察怪物們。一定在他們身上。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2040052"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "17218"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "9"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "17218"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "dayN": {
+        "_dirType": "int",
+        "_value": "10"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2040052"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q17219e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994882"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

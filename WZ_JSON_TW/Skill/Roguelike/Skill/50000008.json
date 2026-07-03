@@ -1,0 +1,502 @@
+{
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot1": {
+        "_dirType": "sub",
+        "Segment:start": {
+          "_dirType": "sub",
+          "AnimReference": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "sub",
+              "frameIdx": {
+                "_dirType": "int",
+                "_value": "0"
+              },
+              "action": {
+                "_dirType": "string",
+                "_value": "RL_Pirate_3"
+              }
+            }
+          },
+          "EndPos": {
+            "_dirType": "int",
+            "_value": "240"
+          }
+        },
+        "Segment:charging": {
+          "_dirType": "sub",
+          "AnimReference": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "sub",
+              "frameIdx": {
+                "_dirType": "int",
+                "_value": "0"
+              },
+              "action": {
+                "_dirType": "string",
+                "_value": "RL_Pirate_3"
+              }
+            }
+          },
+          "EndPos": {
+            "_dirType": "int",
+            "_value": "720"
+          }
+        },
+        "Segment:fullyCharged": {
+          "_dirType": "sub",
+          "AnimReference": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "sub",
+              "frameIdx": {
+                "_dirType": "int",
+                "_value": "0"
+              },
+              "action": {
+                "_dirType": "string",
+                "_value": "RL_Pirate_3"
+              }
+            }
+          },
+          "EndPos": {
+            "_dirType": "int",
+            "_value": "1800"
+          }
+        },
+        "spiritClaw": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "spiritClaw"
+          }
+        },
+        "superCannon": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "superCannon"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "jumpToSection": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "240"
+        },
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_JumpToSection"
+          },
+          "SectionName": {
+            "_dirType": "string",
+            "_value": "fullyCharged"
+          },
+          "ReqElapsedTime": {
+            "_dirType": "string",
+            "_value": "1200"
+          }
+        },
+        "EndTriggerTime": {
+          "_dirType": "string",
+          "_value": "720"
+        }
+      },
+      "jumpToEndSection": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "720"
+        },
+        "EndTriggerTime": {
+          "_dirType": "string",
+          "_value": "1800"
+        },
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_JumpToSection"
+          },
+          "SectionName": {
+            "_dirType": "string",
+            "_value": "superCannon"
+          },
+          "ReqElapsedTime": {
+            "_dirType": "string",
+            "_value": "3000"
+          }
+        }
+      },
+      "startSound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_PlaySound"
+          },
+          "SoundPath": {
+            "_dirType": "string",
+            "_value": "Sound/RoguelikeWz2.img/Skill/50000008/Charging"
+          }
+        },
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "210"
+        }
+      },
+      "spiritClawEffect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          }
+        },
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "1800"
+        }
+      },
+      "spiritClawSound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "25121005"
+          }
+        },
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "1800"
+        }
+      },
+      "spiritClawAttack": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "1800"
+        }
+      },
+      "superCannonEffect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          }
+        },
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "2610"
+        }
+      },
+      "superCannonSound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "5321000"
+          }
+        },
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "2610"
+        }
+      },
+      "superCannonEffect1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            },
+            "socketName": {
+              "_dirType": "string",
+              "_value": "None"
+            }
+          }
+        },
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "3150"
+        }
+      },
+      "superCannonAttack": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "3150"
+        }
+      }
+    },
+    "Sections": {
+      "_dirType": "sub",
+      "start": {
+        "_dirType": "sub"
+      },
+      "charging": {
+        "_dirType": "sub",
+        "NextSectionName": {
+          "_dirType": "string",
+          "_value": "charging"
+        },
+        "StartTime": {
+          "_dirType": "int",
+          "_value": "240"
+        }
+      },
+      "fullyCharged": {
+        "_dirType": "sub",
+        "StartTime": {
+          "_dirType": "int",
+          "_value": "720"
+        }
+      },
+      "ready": {
+        "_dirType": "sub",
+        "StartTime": {
+          "_dirType": "int",
+          "_value": "1200"
+        },
+        "NextSectionName": {
+          "_dirType": "string",
+          "_value": "ready"
+        }
+      },
+      "spiritClaw": {
+        "_dirType": "sub",
+        "StartTime": {
+          "_dirType": "int",
+          "_value": "1800"
+        },
+        "NextSectionName": {
+          "_dirType": "string",
+          "_value": "end"
+        }
+      },
+      "superCannon": {
+        "_dirType": "sub",
+        "StartTime": {
+          "_dirType": "int",
+          "_value": "2610"
+        },
+        "NextSectionName": {
+          "_dirType": "string",
+          "_value": "end"
+        }
+      },
+      "end": {
+        "_dirType": "sub",
+        "StartTime": {
+          "_dirType": "int",
+          "_value": "3510"
+        }
+      }
+    },
+    "LayerSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment:start": {
+          "_dirType": "sub",
+          "AnimReference": {
+            "_dirType": "sub"
+          }
+        },
+        "Segment:charging": {
+          "_dirType": "sub",
+          "AnimReference": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-3"
+            }
+          }
+        },
+        "Segment:fullyCharged": {
+          "_dirType": "sub",
+          "AnimReference": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-3"
+            }
+          }
+        }
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "Keydown": {
+      "_dirType": "sub",
+      "KeyUpJumpToSections": {
+        "_dirType": "sub",
+        "charging": {
+          "_dirType": "string",
+          "_value": "fire"
+        },
+        "fullyCharged": {
+          "_dirType": "string",
+          "_value": "fullyFire"
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "spiritClawAttack": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "145+40*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "12"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "3"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -400,
+          "_y": -230
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 100,
+          "_y": 50
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "100"
+        },
+        "stunDuration": {
+          "_dirType": "string",
+          "_value": "2"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub"
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "25121005"
+      }
+    },
+    "superCannonAttack": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "160+80*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "4"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "8"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -695,
+          "_y": -130
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 1,
+          "_y": 30
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "300"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "useZ": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "z": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "randomHitOrigin": {
+            "_dirType": "int",
+            "_value": "20"
+          }
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "5321000"
+      }
+    }
+  }
+}

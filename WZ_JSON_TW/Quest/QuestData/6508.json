@@ -1,0 +1,150 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 作出流淚的表情。"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "被大發企劃代表#b#p1052121##k遷就要接受#b演技課程#k. 是哪個課程? 向#b弓箭手村市場, 美髮店旁邊#k站著的#p1052121#進行對話."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "這次要學的表情是流淚的表情。讓 #b#m100000000##k的#b#p1012108##k看石塊就可以學到…但覺得好像在欺負他一樣，沒關係嗎？去 #m100000000#吧。\r\n\r\n#i4000022##t4000022#  #b#c4000022# / 600#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "學到流淚的表情。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052121"
+      },
+      "charmMin": {
+        "_dirType": "int",
+        "_value": "60"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "6507"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012108"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q6508e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000022"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "600"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好，#h0#。看到日益成長的你，身為你的演技老師真是太開心了。那麼開始演技課程吧？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "第七個課程。這次學習期待已久的流淚演技吧。流淚可不是那麼容易的，知道吧？"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "認識#b#m100000000##k的#b#p1012108##k少女嗎？平時就有很多淚水，看了#b#t4000022##k絕對忍不住哭出來的。所以給#p1012108#送去 #t4000022# #b600個#k，學習她的表情吧。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "還有事情要做嗎？那我等你。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還去出發到#b#m100000000##k嗎？到#m100000000#找一個叫#b#p1012108##k的少女吧。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你好？啊？問我最怕什麼怪物？所有怪物我都怕，不過最怕的是#r石巨人#k。"
+          }
+        }
+      }
+    }
+  }
+}

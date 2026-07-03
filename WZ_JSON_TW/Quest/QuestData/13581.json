@@ -1,0 +1,200 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[春節]風箏,蒼空的大追擊戰!"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p9000168#有話要說."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "狩獵相似等級的怪物,拿給#p9000168#\r\n#r#i3994726#[#t3994726#]#k吧.從比自己等級低11級以上或高21級以上的怪物身上沒辦法獲得[#t3994726#]."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "金點支用樹枝製作風箏.\n點左邊的福袋,再跟#b#p9000168##k說話."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i3994726:##t3994726:##c3994726#/30\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000168"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201401010000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201401150000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201401010000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201401150000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "13580"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000168"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994726"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994726"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#b你有搭過風箏飛上天空嗎??#k應該沒有吧.這種事有可能嗎?不要擔心.#b我就是‘風箏的達人’.#k做可以載人的巨大的風箏對我來說不算什麼.雖然最近沒有做過!"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "其實製作風箏最重要的就是木條,其他東西我都準備好了....\\r\\n#r#i3994726#[#t3994726#]#k就交給你去找可以嗎?#k"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "哈哈哈!你幫我!真得很感謝!謝謝你!你幫我找到#t3994726#的話,\r\n馬上可製作風箏的!!拜託你,讓我可以進行民族傳統的儀式,請幫我!\r\n#k#r#i3994726#[#t3994726#]#k是比你等級低#b11以上,或是高21以上的怪物身上是無法獲得的.#k\r\n\r\n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不願意的話就算了.只好去找願意幫我的其他年輕人..."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "風箏快要完成了.你有找到#i3994726##r[#t3994726#]#k嗎?"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b#h0##k,真的取得堅固好的樹枝.\n我人生的傑作即將完成!\n#k風箏即將完成,#b只要找到騎風箏的年輕人就可以了!!"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#i3994726##r[#t3994726#]#k都收集來了嗎?\n比自己等級#r11以下低或21以上高的怪物是無法取得道具#k請注意!"
+          }
+        }
+      }
+    }
+  }
+}

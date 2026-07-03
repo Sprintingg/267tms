@@ -1,0 +1,170 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[聯盟任務] 遠征隊任務 - 巨大怪物內部攻擊"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "223"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#對巨大怪物內部造成一定量的傷害 (#R35112ExdamageRef35132#)\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "終於可以靠近讓遠征隊受苦的的巨大怪物。進入到巨大怪物內部，並造成一定量以上的傷害吧。\r\n\r\n#r※對巨大怪物造成的傷害是從 #b#m450009402##k離開時會進行統計。#k"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "終於可以靠近讓遠征隊受苦的的巨大怪物。進入到巨大怪物內部，並造成一定量以上的傷害吧。\r\n\r\n#r#m450009401##b 入場後，躲開巨大怪物的攻擊時，可以進入 #r#m450009402##b。\r\n對巨大怪物造成的傷害是離開 #r#m450009402##b時，進行統計。#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "進入巨大怪物內部，並造成直接性的傷害後，成功遠征隊的任務。"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "10000 心願"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003564"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "35119"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "999"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "not"
+          }
+        }
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201901230900"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201902060000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003564"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "35112"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q35132e"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "500000000"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "對巨大怪物內部造成一定量以上的傷害"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "damage"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "一定會有可以進去到巨大怪物內部的方法。進去到巨大怪物內部，並進行攻擊造成傷害吧。"
+          }
+        }
+      }
+    }
+  }
+}

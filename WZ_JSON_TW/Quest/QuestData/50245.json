@@ -1,0 +1,113 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 適合的打獵場資訊1(15～18等級)"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "一口氣跑到這裡了……不過什麼是對我最適合的打獵場呢？問看看莉琳。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "莉琳告知適合15～18等級的打獵場。要去看看嗎？"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "透過莉琳的幫忙，找到了最適合的打獵場。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "要介紹給你適合15～18等級的打獵場嗎…？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "15～18等級的話，推薦#m104010002#…現在要移動嗎？"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯…？一個人可以嗎…？那，請小心……"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1201000"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q50245s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "15"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "18"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "200203221200"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "200203221200"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  }
+}

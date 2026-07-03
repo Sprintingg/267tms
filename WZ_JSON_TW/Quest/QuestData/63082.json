@@ -1,0 +1,130 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[艾芙特領域]新的小熊娃娃"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "121"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "找回童話書而看起來很幸福的#p9400224#，轉過身後又再度露出了難過的表情… 請再和#p9400224#對話一次吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p9400224#再次感到難過的原因，是因為他很想擁有#p9400226#販賣的#t4036015:#。\\r\\n請為了#p9400224#去買來#t4036015#吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在買#t4036015#給#p9400224#後，#p9400224#把我找來的#t2436113:#送給了我當作禮物。 #p9400224#說事實上那並不是他的童話書，而且上面有鎖鎖著，因此也無法打開閱讀。\\r\\n\\r\\n鎖…該不會#t4034992:#是用在這個地方吧？ 就算沒有鑰匙，鎖頭看起來好像很脆弱，只要稍微用一點力氣就可以打開的感覺。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4036015:# #t4036015:# #c4036015# / 1\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400224"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "63081"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q63082s"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400224"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036015"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q63082e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#t4036015:？！想拿 #p9400226#在賣的 #t4036015:# 嗎～？！"
+          }
+        }
+      }
+    }
+  }
+}

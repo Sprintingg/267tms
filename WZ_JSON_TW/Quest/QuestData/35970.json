@@ -1,0 +1,122 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[古代遺跡帕爾坦] 第三個遺物"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "231"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o2300265# #a359701#\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "吵著絕對不要回去的三胞胎。\r\n呼嗚．．．先配合他們會比較好吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了能讓三胞胎尋找遺物，去消滅#b#o2300265##k#r150隻#k吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "找到的遺物．．．看不出是什麼重要的東西。"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q35970s"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1013413"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "35969"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1013413"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q35970e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2300265"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "150"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "周圍的怪物太多了，沒辦法找遺物啦！幫我消滅#b#o2300265##k#r150隻#k！"
+          }
+        }
+      }
+    }
+  }
+}

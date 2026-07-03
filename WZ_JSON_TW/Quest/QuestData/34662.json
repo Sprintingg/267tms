@@ -1,0 +1,228 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[卡蒂娜] 友好關係"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "214"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "和那因哈特對話，將貝德的介紹信轉交給他。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "將貝德的介紹信交給了那因哈特。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "似乎成功與皇家騎士團建立了友好關係。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "30000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1101002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34661"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "6411"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "6412"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "6413"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "6414"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1101002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "30000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "sayEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "…呃嗯…."
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#b(難以呼吸…往後每次都要像這種人取得楓之谷世界的情報嗎…呼啊，沒辦法了。也只能試試看了。)#k"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "正義的使者啊。真是個有趣的介紹。"
+          }
+        },
+        "3": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "關於你，我聽說過一些傳聞。你在各個領域非常活躍。真沒想到你是格蘭蒂斯的那位…"
+          }
+        }
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "noEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#b(呼呼，總覺得空氣好悶…說話之前得稍微喘氣一下？)#k"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我們需要力量。與黑魔法師戰鬥的力量。從這個意義上來說，我們非常歡迎正義且堅強的人。我認為這會是一個很好的機會。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "如果有需要你支援的事情或轉交的資訊，我會聯繫你的。我先告辭了。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "啊，你就是正義使者啊。我從萬神殿議會那聽說了。請等一下。"
+          }
+        }
+      },
+      "yesEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#b(好像和皇家騎士團建立了關係。靠這個應該可以獲得一些情報吧….)"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

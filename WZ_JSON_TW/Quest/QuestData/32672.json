@@ -1,0 +1,112 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[次元圖書館] 雪原的吟遊詩人1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "82"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4036137:# #t4036137:# #c4036137# / 3\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "在雪山遇見穿著薄裙裝的少女。\n應該很冷吧，必須點火才行…\n和海依茲說話吧！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "海依茲拜託取得木柴。\n向火山蟲取得木柴，然後交給海依茲。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "麥拉回來了。要試著交談嗎？\n大概又會被嘮叨吧…"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2550100"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q32672s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2550100"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q32672e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036137"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "拿3個木柴來就可以了。"
+          }
+        }
+      }
+    }
+  }
+}

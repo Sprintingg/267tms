@@ -1,0 +1,85 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "memory"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "field"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "[突發任務] Mission CWAL"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "突發任務10秒內完成"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "rare"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "20"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "uiForm": {
+        "_dirType": "string",
+        "_value": "basic"
+      },
+      "gauge": {
+        "_dirType": "string",
+        "_value": "mission_count"
+      }
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "突發任務10秒內完成"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "suddenmission_complete": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            },
+            "type": {
+              "_dirType": "string",
+              "_value": "counting"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub",
+            "suddenmission_clear_time": {
+              "_dirType": "sub",
+              "min": {
+                "_dirType": "int",
+                "_value": "0"
+              },
+              "max": {
+                "_dirType": "int",
+                "_value": "10"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

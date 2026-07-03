@@ -1,0 +1,194 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[尤莉亞的圖畫]誰破壞了我的畫!"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "最近忙於作畫所以完全不知道時間流逝的尤莉亞,為了迎接楓之谷9周年,野心勃勃地做了一幅很大的畫作.卻因為某個人的玩笑,這幅畫失去了所有的顏色.去找找需要幫忙的尤莉亞吧."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "尤莉亞請求,幫那些只有素描的畫上色."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把#b#t3010639##k拿去給尤莉亞."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i3010639:##t3010639:##c3010639#/1\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201302010000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201302030000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201305090000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201305230000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "ItemOrOption": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q26400e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3010639"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3010642"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3010638"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "dateExpire": {
+            "_dirType": "string",
+            "_value": "2013052300"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊,煩死了!煩死了!煩死了!\\r\\n誰把我前一晚畫好的畫弄壞了!那是我非常用心,為了紀念#b楓之谷9週年#k畫的耶!!\\r\\n有懷疑的人,可是沒有確切的證據...唉,重要的是先把#r畫再次完成#k.願意幫我一下嗎?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "首先,上色是首要之務吧?我給你的只是素描畫,所以先給它上個色吧."
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "恩...也沒人幫忙...痛苦阿,真的."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "圖畫的顏色還沒上完啊."
+          }
+        }
+      }
+    }
+  }
+}

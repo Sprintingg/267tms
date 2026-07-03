@@ -1,0 +1,240 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012101"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031006"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "15"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2007"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031006"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "270"
+      },
+      "money": {
+        "_dirType": "int",
+        "_value": "5000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031006"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1002026"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "謝了！拿走這個藥吧。#b#m100000000##k的#r#p1012101##k病情又惡化了，用了這個藥也許會好點。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "身上渾身都疼啊！那..那不是#b#t4031006##k嗎？怎麼弄到的啊？你可真了不起啊！"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "那個能把那個藥給我嗎？我給你一件對我來說沒什麼用處的物品，拜託我需要那個藥啊！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "非常感謝，也許我這頑疾能治好呢？這個物品放在我這裏也沒什麼用，送給你。希望對你的旅行有所幫助。另外再送你一些楓幣以表謝意。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "快把這#b#t4031006##k交給#p1012101#吧！從這到#m100000000#挺遠的，小心路上別把藥弄丟了。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有見到#r#p1002001##k嗎。如果是居住在#b#m104000000##k的維多利亞湖附近的#p1002001#大叔的話，應該會知道，#t4031006#在哪裡的拜託。"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝！！！這個藥你拿去吧，#b#m100000000##k的#r#p1012101##k老毛病又犯了，把這藥拿去應該會好一點…"
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 遞送奇怪的藥水"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "瑪亞和奇怪的藥"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "7"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "去維多利亞港給特奧發光的石頭後得到了奇怪的藥。那麼我要把這藥給弓箭手村的瑪亞就可以了。但我想來想去，總覺得當初不應該答應她的請求，不過這個藥看起來挺好喝的樣子，路途中口渴的話，可不可以偷喝一點呢？"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "到弓箭手村給了瑪亞怪藥。有了這個瑪亞的毛病可能可以治好吧？瑪亞為了向我表示感謝給了我5000金幣和褐色斗笠。這個斗笠在太陽很大的時候可以戴，但看起來很舊的樣子，說不定裡面有蟲子，戴上這頂斗笠沒問題嗎？"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "270"
+      },
+      "meso": {
+        "_dirType": "int",
+        "_value": "5000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub"
+    }
+  }
+}

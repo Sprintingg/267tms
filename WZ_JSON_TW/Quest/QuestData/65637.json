@@ -1,0 +1,169 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓之谷探險隊] 古代石板的解讀 : 被封印的力量"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "136"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b古代石板#k的解讀雖到了最後，但還是沒有得到最重要的情報。去和#b海多妮#k商議吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b海多妮#k為了要推測封印#b大地手杖#k的場所，判斷可能需要分析#b噴出岩#k的魔力波動。前往島上調查時，採集#b噴出岩礦石#k，建造#b工業工作台#k，向總部報告吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "以這段期間所蒐集的情報來看，可以特別定出#b大地手杖#k的位置！聽說手杖被封印在#b王室的墳墓#k的深處，結合#b帕拉米#k的技術和魔法，就能打開通往那個地方的傳送點。傳說的寶物就在眼前！"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#幻影島深層探查 #R65637Ex2001Ref65637# / 3\r\n#questorder1#採集噴石岩礦石 #R65637ExlavastoneRef65637# / 3"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9401216"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "65636"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q65637s"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9401216"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "65637"
+      },
+      "QuestRecordAndOption": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "3"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "幻影島深層探查"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "2001"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "3"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "採集噴出岩礦石"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "lavastone"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q65637e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "必須找到#b大地手杖#k！如果分析#b噴出岩#k的魔力的話，應該可以追查的到… \r\n啊，當然建造#b工業工作台#k，和總部通信這件事也很重要！"
+          }
+        }
+      }
+    }
+  }
+}

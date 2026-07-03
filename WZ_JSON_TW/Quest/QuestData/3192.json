@@ -1,0 +1,218 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[冰原雪域山脈] 結界的圖騰"
+    },
+    "area": {
+      "_dirType": "string",
+      "_value": "33"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "把結界的圖騰立在厄運死神出現的場所, 據說會阻擋禁止的魔法. 在#m211041400#立結界的圖騰."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "建立結界的圖騰後，報告給皮斯特了。"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "受詛咒的祭司"
+    },
+    "order": {
+      "_dirType": "string",
+      "_value": "5"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 766,612\r\n#i2000004:# #t2000004:# 30 個\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "766612"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2000004"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9073005"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q3192s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3191"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "120"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9073005"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "3192"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "info": {
+        "_dirType": "string",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "766612"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2000004"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "材料已經全部收集了。請你稍等 。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "來, 這是 #bb結界的圖騰#k. 在厄運死神出現的#b枯萎木頭的森林4#k立下圖騰會阻擋厄運死神的禁止魔法."
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "只要等一下就可以，你太沒耐性了吧 。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "圖騰有樹立好嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "辛苦了。現在可以利用這個圖騰阻止厄運死神利用禁忌魔法來使殭屍暴增了。這段時間辛苦了。這是幫助這次事件的謝禮 。請你安心的帶走吧。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "圖騰設置在厄運死神出沒的#b死亡樹森林4#k就可以。快，在殭屍再次襲擊村子之前，抓緊時間吧。"
+          }
+        },
+        "quest": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "只要把圖騰樹立在厄運死神出現的 #b亡者之林4#k就可以。喏，在殭屍再度襲擊村莊的事情發生之前，盡快行動吧。"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[職業] 找回上古之弓的記憶"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "4"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#m101010102##k的#b#@9201122:##k說他想找回遺忘的記憶。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "他說自己的記憶被封印住了，想請你打倒附近的#r綠菇菇#k並拾回20塊#r記憶碎片#k。\\n\\n完成之後，向#b#m101010102##k的#b#@9201122:##k回報。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "這個傳說是關於#r所羅門之弓#k。不過，記憶似乎有些殘缺。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4001348:##t4001348:##c4001348#/20\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 2,630\r\n#i4032483:# #t4032483:# 1 個\r\n可進行 '另一個說書人' 任務\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "2630"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "long",
+            "_value": "4032483"
+          },
+          "count": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2630"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001348"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032483"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "…\\n\\n你表現的很好。\\n\\n謝謝…"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我被封印了好長一段時間。\\n\\n我不知道原因，但我的能力還沒回復。\\n\\n一定是有人把我的能力拿去亂用了。\\n\\n唉，現在我只是一把平凡至極的弓了。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "不過等一下！我想起來了！\\n\\n先到#b勇士之村#k去。\\n\\n我依稀記得要去見一個我認識的人。至少你的努力讓我恢復記憶，也不能說是浪費時間。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "收集20個#r記憶碎片#k。全部收集完再來找我。"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "…\\n\\n一定有哪裡不對勁。這就是你來找我的原因對嗎？\\n\\n你知道…？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "一個人的命運會決定發生在他身上的事情。\\n今天你來並且找到我，代表我甦醒的時間到了。\\n\\n你要喚醒我嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "…\\n\\n我遭封印之時，記憶碎成一片片，全都被#r綠菇菇#k吃了。\\n\\n我知道你不可能找回所有碎片，但你願意打敗他們，幫我收集20個#r記憶碎片#k嗎？"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你不能拒絕你的任務！"
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9201122"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001348"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9201122"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "40"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "28230"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "300"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "310"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "320"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "311"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "321"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "312"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "322"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "1300"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "1310"
+        },
+        "9": {
+          "_dirType": "int",
+          "_value": "1311"
+        },
+        "10": {
+          "_dirType": "int",
+          "_value": "1312"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

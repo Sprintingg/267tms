@@ -1,0 +1,141 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[過去的英雄，狂狼勇士] 使用矛的英雄"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "6"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽說英雄的武器能夠認出主人。如果我就是那個使用矛的英雄，只要摸到矛就會出現某種反應…點擊村莊裡的#b#p1201001##k。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "一碰到#p1201001#，迷迷糊糊想起了一些東西，但是不知是不是錯覺。如果真的是使用矛的英雄，那麼再摸一下#p1201001#吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "想起了一些過去的記憶。握在雙手上的矛…拿著矛站在暗黑巫師面前的記憶…我真的是使用矛的戰士，狂狼勇士…"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[轉職]"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1201001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q21101s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "21100"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2000"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1201001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#b(摸了一下#p1201001#。奇怪的是應該是冰冷的矛，卻感覺異常的溫暖。好像想起了以前的記憶。)#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "#b(…使用矛的英雄是個以強大的力量和體力為基礎，擅長使用各種技能，擅長近戰的戰士…)#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "#b(…因為擁有高力量，且還有少量的敏捷，所以單純以力量是揮不動的…)#k。"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "#b(這是我的記憶還是英雄同伴的記憶…為了確認還是在摸一下#p1201001#吧)#k"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b(難道我能確信我是那使用矛的英雄嗎？慎重考慮後，要是可以確定就再摸一次#p1201001#吧)#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b(再慎重的考慮一下）#k"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  }
+}

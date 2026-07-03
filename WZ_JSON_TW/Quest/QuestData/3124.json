@@ -1,0 +1,175 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[冰原雪域山脈] 羅貝亞的提議"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "33"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "經驗值14,050\r\n可進行＂封印的證據＂任務\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b●分類：侏儒帝王雷克斯的復活－護衛、組隊任務#k\\r●種類：事前必需任務\\r\\n●內容：侏儒帝王的復活聽說已經不遠了……"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "去找#b羅貝亞#k並傳達邪摩斯的話。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "從#b羅貝亞#k那邊得到為了再封印侏儒帝王而同行的提案。"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "14050"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2022003"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "170"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3123"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2020009"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "14050"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你去告訴羅貝亞吧。#b告訴他「雷克斯的封印的力量正在減弱，如果不封印，就會復活。」#k快點！"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "拜託不能遲到…"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "…雷克斯就這樣復活也沒關係的意思嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "邪摩斯有這樣講過嗎？\\r\\n#L0##b邪摩斯到底是誰？來歷是什麼而說這種話呢…#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "呼。邪摩斯… 是我們#r曾經#k絕對需要的存在。雖然不能說明詳細的內容，但過去他的魔法能力… 應該和葛雷托一樣厲害。但是他太危險了… 不能讓他單獨行動。絕對不能！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好！#b#h0##k。你招集同伴帶上邪摩斯，去再次封印侏儒帝王。但是，那地方太危險，所以超過#r170等級#k之後再去吧。不要忘記。那之前都不能接近。　"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "趕緊向 #b羅貝亞#k傳達我的話。"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,254 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇家騎士團] 耶雷弗搜查證"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "若要搜查耶雷弗尋找變身術士，必須先申請搜查證。與#p1101002#對話。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "因為一次分發太多騎士的搜查證，目前搜查證已缺貨了。聽說製作新的搜查證必須要有#t4000120#…"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把#t4005004#交給#p1101002#之後拿到了搜查證。那麼就自由搜查耶雷弗吧。"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[轉職]"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000120:# #t4000120:# #c4000120# / 20\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032179"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1101002"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20304"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032179"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "1410"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1101002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000120"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000120"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032179"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "period": {
+            "_dirType": "int",
+            "_value": "1440"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "…是說#t4032179#嗎？很抱歉但是有一個問題。其實因為耶雷弗不曾有過什麼問題，也從來沒有像這次同時發放那麼多的搜查證給騎士。所以搜查證的數量不夠。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "雖然已經緊急在製作新的搜查證但是也不容易…因為#t4032179#為了防止任意複製所以必須利用特別的道具製作…但現在缺少一種材料。又不能因此就停止搜查…"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "那也沒辦法。請在進行耶雷弗搜查之前幫忙找到製作搜查證的材料。雖然時間很緊迫，但即使是變身術士也無法脫離已經發動保護令的耶雷弗，所以找到材料就馬上發放搜查證給你。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "搜查證需要的道具是#b#t4000120# 20個#k。使用#t4000120#的魔力而製作的搜查證，是不可以複製或奪取，非常適合這裡。那麼就拜託了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "怎麼回事…就這樣放棄搜查了嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "拿來#t4000120#了啊。那麼馬上給你#t4032179#。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "只要有這個就可以來往發動緊急令的耶雷弗任何地方。請搜查耶雷弗各處一定要找出變身術士除掉他。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒找到#t4000120# 20個的樣子。是非常著急的事情，快去地球防禦本部。"
+          }
+        }
+      }
+    }
+  }
+}

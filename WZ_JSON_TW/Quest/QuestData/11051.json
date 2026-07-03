@@ -1,0 +1,159 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 大亂鬥參加獎勵"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "戰鬥廣場解說員羅茲弟說有挑戰大亂鬥挑戰這項任務。趕緊去找找看！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "戰鬥廣場解說員羅茲弟說今日內不管是任何模式，只要參加5次任務，即可獲得禮物。\\r\\n\\r\\n#rTip！必須要完全完成1局才算是真正參加1次。要是中途離開或者當天結束的話，任務就算無法完成。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "達成任務，接收獎勵。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9070005"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q11051s"
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9070005"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q11051e"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "11054"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "5"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好 #h0#~ 我是戰鬥廣場嚮導羅茲弟。當您完成我給予的挑戰任務時，會給予您禮物。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "這次的任務非常簡單喔！今天一天內，只要參加大亂鬥的不管什麼模式5次就給予您禮物。您當然會挑戰吧？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯！有一件事必須記著喔。完整的結束一場才會記錄已參加1次，中途出來的或過了一天的話會初始化而無法達成任務，請別忘記。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不會那麼難啦…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "果然，就知道這次的任務是可很輕易達成的。如何？沒那麼難吧？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好，那麼開始吧。其他任務是比這個還要難呢。可是你應該是可以達成的喔。加油！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還未完成任務了呢。因為是簡單的任務，應該很快就能完成喔。"
+          }
+        },
+        "quest": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還未完成任務了呢。因為是簡單的任務，應該很快就能完成喔。"
+          }
+        }
+      }
+    }
+  }
+}

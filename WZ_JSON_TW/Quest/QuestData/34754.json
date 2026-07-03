@@ -1,0 +1,156 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[狐狸峽谷] 成長成長樹樹樹1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "218"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4036318:# #t4036318:# #c4036318# / 1\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "自稱製作達人的瑪魯又開始行行動了。說要做特製肥料的瑪魯…不知道能不能相信呢？與在 #b#m410000118##k的#b#p3002020##k對話看看。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "終於製作完成的特製肥料有著惡臭味…這次一定也是胡鬧的，當作被他騙使用一次看看。\r\n\r\n從瑪魯獲得的#i4036318##t4036318#使用到在#b#m410000118##k的#b#p3002019##k上。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "\"成長成長 樹木樹木！\"\r\n\r\n嘴裡唸著奇怪的咒文使用了瑪魯的肥料，小樹木突然成長。雖然不能相信…感覺瑪魯好像能辦得到呢？"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q34754x"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3002023"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q34754s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "185"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34753"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201804250900"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201804250900"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3002019"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q34754e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036318"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "把我給的#b#i4036318# #t4036318##k噴撒在樹木上吧!"
+          }
+        },
+        "itemEx": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "sub",
+            "msg": {
+              "_dirType": "string",
+              "_value": "喔，#b#i4036318# #t4036318##k怎麼樣了?難道這麼快就弄丟了嗎?沒有那個的話，樹木就無法長大!\\r\\n#r ※需要放棄任務重新開始。#k"
+            },
+            "npcID": {
+              "_dirType": "int",
+              "_value": "3002110"
+            },
+            "imgPos": {
+              "_dirType": "int",
+              "_value": "1"
+            }
+          }
+        }
+      }
+    }
+  }
+}

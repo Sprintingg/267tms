@@ -1,0 +1,158 @@
+{
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "combo1": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "LWDevide"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "Effect1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub"
+          }
+        }
+      },
+      "Sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_PlaySound"
+          },
+          "SoundPath": {
+            "_dirType": "string",
+            "_value": "Sound/Redmoon.img/Skill/102/Use"
+          }
+        }
+      },
+      "Attack": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "int",
+          "_value": "120"
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "Attack": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "250"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "3"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "6"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -294,
+          "_y": -212
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 3,
+          "_y": 13
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "100"
+        },
+        "buffLevel": {
+          "_dirType": "string",
+          "_value": "1"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "onlyOnce": {
+            "_dirType": "string",
+            "_value": "1"
+          }
+        }
+      },
+      "hitSoundPath": {
+        "_dirType": "string",
+        "_value": "Sound/Redmoon.img/Skill/102/Hit"
+      },
+      "eventTags": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "RLGame.Effect.Burn"
+        }
+      },
+      "targetBuffID": {
+        "_dirType": "string",
+        "_value": "500"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "Tags": {
+      "_dirType": "sub",
+      "cannotDestroy": {
+        "_dirType": "sub"
+      },
+      "interruptable": {
+        "_dirType": "sub"
+      }
+    },
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "250"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "3"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "6"
+    }
+  },
+  "SkillTags": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "string",
+      "_value": "RLGame.Skill.Basic"
+    }
+  }
+}

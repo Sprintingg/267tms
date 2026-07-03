@@ -1,0 +1,354 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[職業] 向漢斯回報訓練結果。"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b魔法森林#k的#b#@9201121:##k說你必須回報訓練結果。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "前往#b魔法森林#k尋找#b#@1032001:##k，並回報訓練結果。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "你已成功通過四項嚴格的法師訓練。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 600\r\n#i2000002:# #t2000002:# 100 個\r\n#i2000003:# #t2000003:# 100 個\r\n可進行 '鯨魚號之旅' 任務\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "600"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "long",
+            "_value": "2000002"
+          },
+          "count": {
+            "_dirType": "long",
+            "_value": "100"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "long",
+            "_value": "2000003"
+          },
+          "count": {
+            "_dirType": "long",
+            "_value": "100"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "600"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2000002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2000003"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你成功完成了高挑戰性的訓練課程！\\n你成為合格的法師了！哈哈。\\n去回報你的訓練結果吧。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "向#b魔法森林#k的#b#p1032001##k回報，告訴他你已完成所有訓練課程。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果太累的話，可以先去休息。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "噢，你回來啦。\\n看得出來你的法力有很大的進步。做得好！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "是時候讓你到外面去體驗真實的世界。\\n\\n不過一連串的訓練課程一定很累人吧，先去休息一下。\\n等你回來再給你其他任務。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b#p1032001##k在#b魔法森林#k。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1032001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9201121"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "40"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "28181"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "28182"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "28183"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        },
+        "3": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "28184"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "200"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "210"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "220"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "230"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "211"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "221"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "231"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "212"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "222"
+        },
+        "9": {
+          "_dirType": "int",
+          "_value": "232"
+        },
+        "10": {
+          "_dirType": "int",
+          "_value": "1200"
+        },
+        "11": {
+          "_dirType": "int",
+          "_value": "1210"
+        },
+        "12": {
+          "_dirType": "int",
+          "_value": "1211"
+        },
+        "13": {
+          "_dirType": "int",
+          "_value": "1212"
+        },
+        "14": {
+          "_dirType": "int",
+          "_value": "2200"
+        },
+        "15": {
+          "_dirType": "int",
+          "_value": "2210"
+        },
+        "16": {
+          "_dirType": "int",
+          "_value": "2211"
+        },
+        "17": {
+          "_dirType": "int",
+          "_value": "2212"
+        },
+        "18": {
+          "_dirType": "int",
+          "_value": "2213"
+        },
+        "19": {
+          "_dirType": "int",
+          "_value": "2214"
+        },
+        "20": {
+          "_dirType": "int",
+          "_value": "2215"
+        },
+        "21": {
+          "_dirType": "int",
+          "_value": "2216"
+        },
+        "22": {
+          "_dirType": "int",
+          "_value": "2217"
+        },
+        "23": {
+          "_dirType": "int",
+          "_value": "2218"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

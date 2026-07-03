@@ -1,0 +1,233 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 週末！ 只要登入就是終極！"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "週末！ #b星期六#k和 #b星期日#k早上10點 ~ 晚上 10點登入，一律都會給 #t2028180#和 #t2028181#。\\n#i2028180# #t2028180#\\n#i2028181# #t2028181#"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "週末！ #b星期六#k和 #b星期日#k早上10點 ~ 晚上 10點登入，一律都會給 #t2028180#和 #t2028181#。\\n#i2028180# #t2028180#\\n#i2028181# #t2028181#"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "參加終極週末活動，獲得了#t2028180#和#t2028181#。\\n#i2028180# #t2028180#\\r\\n#i2028181# #t2028181#"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#i2028180:# #t2028180:# 1 個\r\n#i2028181:# #t2028181:# 1 個\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2028180"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2028181"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201301201000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201301202200"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201301201000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201301280010"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q13556s"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "18100"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "0"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "count"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2028180"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          },
+          "period": {
+            "_dirType": "int",
+            "_value": "4320"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2028181"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          },
+          "period": {
+            "_dirType": "int",
+            "_value": "4320"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好. #h0#！\\r\\n我們準備的活動，你覺得有趣嗎？\\r\\n我們為了隨時提供更好的東西，思考了很久，最後我們特地為了在週末來的#h0#，準備了小小的禮物。你要收下嗎？\\r\\n"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "雖然很小，但希望是 #h0#必需的物品。\\r\\n\\r\\n#i2028180# #t2028180#\\r\\n#i2028181# #t2028181#"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "就單純給你的而已喔。我不需要任何東西。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "2013年 1月 20日、26日、27日每週末都有禮物贈送一定要記得領取禮物。\\r\\n"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[赫力席母] 加強戰鬥力 - 訓練士兵1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "259"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#訓練士兵 (#R38817ExbattleRef38817#)\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b奪回總部的指揮官棚子#k的#b伊黛亞#k似乎有話要跟我說。去找伊黛亞吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "伊黛亞為了強化戰鬥力，打算要訓練士兵，要我與士兵對練。與士兵對練…. 先試試看吧？\r\n\r\n#r#e※進行失敗時，請放棄任務，重新開始。#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "按照伊黛亞的請託教導士兵。希望能幫上忙。"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q38817x"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "119"
+      }
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "16"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1554617"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "subJobFlags": {
+        "_dirType": "int",
+        "_value": "15"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q38817s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "38816"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "38817"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "訓練士兵"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "battle"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1554617"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "太棒了。你的力量讓士兵們學到了很多東西。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這段經歷肯定會對未來奪回赫力席母時有很大幫助。謝謝。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒準備好和士兵對練嗎？準備好的話，#r請放棄任務後重新進行#k。"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,268 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1032106"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1032106"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000010"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000003"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000004"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "230"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000003"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-5"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000004"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000010"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-3"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "3": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2000003"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "25"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "唔唔...喂你！你有空嗎？沒有就算了...想要拜託你一件事情...噢不，比起說是拜託，想要讓你替我做一件事情，有興趣嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我上的魔法學校裡有一個非常可怕的老師...反正是非常可怕的就是了。給我們出了製造藥水的作業，但是其他科目的作業也很多，實在沒時間做..."
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "做藥水的材料有#b樹枝5個，綠液球10個，綠水靈珠3個#k。幫我收集來這些東西吧！"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "問我是用在什麼地方的藥水嗎？這你就不必知道了。弄來那些材料的話我一定會給你酬勞的。不能欠人類的人情過日子嘛…"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "沒興趣的話就算了！就算你不做還有很多人呢！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "都弄來了啊！我得趕緊做完藥水再完成別的作業了。喂，人類！多虧了你我可以完成這些作業，這是我以前做過的藥水，對我來說沒什麼用，就給你吧…"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "沒什麼別的事情了，你可以走了！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有全部弄到嗎...快點啊...沒時間了呀，結束藥水作業之後還要背誦咒語呢！"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 幫忙寫作業"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去找魔法森林的維英，他會請求您幫一下忙…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在魔法森林見到的妖精維英好像非常討厭人類。想讓我幫忙做自己的作業，但是拜託的人怎麼會是那樣的態度？需要的材料是樹枝5個、綠液球10個、綠水靈珠3個。聽說是製作藥劑的材料…會是用在哪裡的藥劑呢？\\n\\n#i4000010:##t4000010:##c4000010#/3\n#i4000003:##t4000003:##c4000003#/5\n#i4000004:##t4000004:##c4000004#/10\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "幫魔法森林維英完成了作業，就是幫他收集了一些藥水的材料。那藥水的用途到底是什麼呢…？"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "230"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2000003"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "25"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

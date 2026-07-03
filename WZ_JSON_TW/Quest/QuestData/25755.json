@@ -1,0 +1,282 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[凱撒] 致命的陷阱的誘餌"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "22"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "前往#p3000003#取得魔力增幅裝置。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "將#b魔力增幅裝置交給 #p3000000# #k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "將魔力傳達裝置交給#p3000000#，按照 計畫給予梅格耐斯的軍隊致命的打擊。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4033351:# #t4033351:# #c4033351# / 1\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 3,000\r\n可進行 '反擊開始' 任務\r\n"
+    },
+    "deleteItem": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "int",
+        "_value": "4033351"
+      }
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "3000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3000003"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "25754"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "6100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "6110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "6111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "6112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "6113"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "6114"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3000000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033351"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033351"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "jobEx": {
+            "_dirType": "int",
+            "_value": "536870912"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "3000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033351"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你來了嗎？ 凱撒。我已經聽#p3000001#說過了。這是收集萬神殿周圍的魔力石製作成的魔力增幅裝置。要帶走嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這次作戰成功的話，就可以向赫力席母反擊，但若是失敗的話，可能會因此而失去萬神殿。只能希望敵人的召喚師汲汲於取得功勞，蠢到只要投下誘餌就會立刻上鉤。帶去給#p3000000#吧。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "看來還沒準備好。這次作戰成功的話，雖然可以向赫力席母反擊，但倘若失敗的話，可能會因此而失去萬神殿。只能希望敵人的召喚師汲汲於取得功勞，蠢到只要投下誘餌就會立刻上鉤。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "擬定出這種荒謬作戰計畫的是凱撒你嗎？ 真是豈有此理。但我也認為這次的作戰有必要承擔這種程度的風險。不管怎麼樣，梅格耐斯奪走赫力席母後，我一直都想要替死去的凱撒報仇！錯過這次的機會，說不定就只能一直採取防禦措施而已了。已經準備好了嗎？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "從赫力席母逃到這裡避難的騎士隊長皮塔斯會負責將魔力增幅裝置送去西邊召喚陣附近。之後只要消除保護罩，敵人就會利用召喚陣附近的該裝置，迅速啟動召喚陣。\\r\\n"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "當然，前提是要敵人的召喚師不分明紅皂白行動才有可能成功，但我覺得為了挽回上次的失敗，他們應該會使盡渾身解數吧。若是對方不上鉤的話，就立刻強化保護罩！失敗時，若是錯失時機，萬神殿就會被佔領！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好，那麼... 願幸運與超新星同在..."
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "快點帶著魔力增幅裝置去找萬神殿的 #p3000000#。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "有什麼事嗎？ (若是弄丟道具的話，就要放棄任務重新進行。)"
+          }
+        }
+      }
+    }
+  }
+}

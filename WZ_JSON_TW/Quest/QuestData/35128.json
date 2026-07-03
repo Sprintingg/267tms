@@ -1,0 +1,174 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[聯盟任務] 遠征隊任務 - 侵蝕的迷霧"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "223"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "因未知迷霧而降低著遠征隊的士氣。去迷霧中搜尋情報，並跟 #p3003564#進行報告吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "因未知迷霧而降低著遠征隊的士氣。去迷霧中搜尋情報，並跟 #p3003564#進行報告吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "報告關於迷霧的情報而成功遠征隊任務。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#在迷霧中進行調查 #R35121Ex2Ref35128# / 30\r\n"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "10000 心願"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003564"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "35119"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "999"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "not"
+          }
+        }
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201901230900"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201902060000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003564"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "35121"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q35128e"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "30"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "在迷霧中進行調查"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "2"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請麻煩在迷霧中搜尋一些情報。但是，迷霧裡非常危險的關係，記的要先進行足夠的準備喔。"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[蒐集]我需要雨傘！"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#m100000000##k的#b#@1010100:##k說她非常討厭在下雨天被淋濕。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "雖然#b#m100000000##k通常是晴天，不過偶爾也會下雨。#b#@1010100:##k非常討厭在下雨天被淋濕，她要你幫她蒐集一些製作雨傘的材料。\\n\\n打倒#r綠菇菇#k並收集20個#r綠菇菇傘#k\\n(你可以在#b#m105050400##k輕鬆找到它們)。\\n\\n完成之後，向#b#m100000000##k的#b#@1010100:##k回報。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在得知#b#p1010100##k想製作雨傘之後，你幫她蒐集了20個#r綠菇菇傘#k。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000012:##t4000012:##c4000012#/20"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 120\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "120"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "120"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000012"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你不必這麼心急，不過我倒是很欣賞這一點。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "啊，終於完成了！我的綠菇菇傘。\\n\\n雖然這把雨傘又重又臭，不過我真的很愛！真希望快點下雨！嘻嘻！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請收集20頂#r綠菇菇傘#k。"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嗨！冒險家。#b#m100000000##k的天氣不是很好嗎？\\n\\n不過就算天氣很好，還是會下雨。\\n\\n但是你在#b#m100000000##k完全買不到雨傘。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "所以我要製作一把我專屬的雨傘，不過需要一些物品。你可以幫我找嗎？\\n\\n請幫我打敗#r綠菇菇#k，然後帶回20頂#r綠菇菇傘#k可以嗎？\\n#b#m104040001##k那裡有很多#r綠菇菇#k。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你在忙啊…？"
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1010100"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000012"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1010100"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "14"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      }
+    }
+  }
+}

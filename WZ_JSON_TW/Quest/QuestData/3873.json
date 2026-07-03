@@ -1,0 +1,214 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[星星力量] 謎樣的光"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "41"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#m240000000# 村裡發生了不尋常的事情，去找 #p2081000#詢問詳細情況吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2081000#說看見昨晚從天空降下的謎樣光芒，但是，卻因為老花眼而無法看清楚，確認村裡的矮人族是否知道光芒的真面目。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "受#p2081000#委託，在尋找昨晚看見謎樣光芒的矮人族時，從 #p2081004#口中聽到了真相，謎樣的光芒就是…… 流星。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "和#questorder1##r#p2081003##k交談\r\n和#questorder2##r#p2081002##k交談\n和#questorder3##r#p2081001##k交談\r\n"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "#m240000000#\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "148405"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2081000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2081004"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npcSpeech": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2081003"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "speech": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "string",
+              "_value": "昨晚？啊啊，別提了！昨天晚上吃的果實好像還沒熟，害我整晚都跑廁所。根本就沒時間看天空，啊呀……肚子又開始痛了。"
+            }
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2081002"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "speech": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "string",
+              "_value": "昨晚發生的事情我不清楚，因為我昨晚很快就睡了，照顧蛋是一件非常疲倦的事情，但是，我還是很喜歡這份工作。"
+            }
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2081001"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "speech": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "string",
+              "_value": "昨晚從天空降下的光？很抱歉，我昨晚為了照顧蛋，根本就沒時間外出。這小子好像就要孵化了，不過，從尚未裂開這一點來看，似乎還需要一點時間。"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "148405"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "喂，可以和我談一下嗎？昨天晚上我看到 #r天空降下了光芒#k，不，不對，就算我年紀大了有老花眼，也絕對不是我看錯。那確實是一道光，幾乎照亮整個米納爾夜空的光芒… \\r\\n"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "聽說那道光芒降落到村莊另一端的森林，不知道這是什麼樣的徵兆，可能是吉兆，也可能是凶兆。總之，必須去調查一下才行，你願意幫忙嗎？\\r\\n"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "因為是深夜時發生的事情，我不清楚有沒有目擊者，但請你去調查村裡是否有人目睹這一切，並且去調查一下那道光芒的真面目。 \\r\\n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那並非單純的光芒，體積龐大且明亮到讓神木村幾乎像是已經清晨了一樣。 \\r\\n"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "昨晚天空降下的光芒？對，我當然看見了，那道光芒真的很漂亮。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那道光是什麼？那就是…… #r流星#k，非常大、明亮的流星。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "我今天心情非常好，因為昨晚……\\r\\n"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "那一定不是普通的光芒，一定要調查出那道光芒的真實身分。"
+          }
+        }
+      }
+    }
+  }
+}

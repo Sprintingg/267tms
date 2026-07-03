@@ -1,0 +1,206 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[夜光] 達成50級！！為了你的特別戒指！"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoPreComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "用夜光達成 50級。在祝賀的意義下，GM準備了禮物。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "用夜光達成 50級。為了表達祝賀之意，請收下GM準備的禮物。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "用夜光達成50級，就會得到活動期間內才能取得的夜光戒指當做禮物。"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#i1112747:# #t1112747:# 1 個\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1112747"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "50"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201303060000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201303060000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201301230000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201301230000"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2700"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2710"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2711"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2712"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2004"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1112747"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "job": {
+            "_dirType": "int",
+            "_value": "136183808"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好. #b#h0##k。終於達成了 #r50級#k！這段時間辛苦你了。為了報答你的努力準備了很棒的禮物，現在要立刻收下嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請不要忘記來我這裡取走禮物哦！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我給的 #b#i1112747##t1112747##k收到了吧？ 那麼往後還請你有好的表現！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請確認裝備欄位是否有空間！"
+          }
+        }
+      }
+    }
+  }
+}

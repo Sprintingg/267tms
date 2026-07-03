@@ -1,0 +1,140 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[偵探雷夫的事件日誌] 無法之地的英雄"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "226"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4036490:# #t4036490:# #c4036490# / 50\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "在#b危險的垃圾場1#k上發現墜落的飛行船。在被垃圾場的惡棍包夾的時刻，自稱為#b偵探雷夫#k的人就這麼帥氣的登場了。\r\n\r\n去跟雷夫對話看看吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "雷夫叫我去 #b危險的垃圾場1#k狩獵危險的刺蝟後，收集 #b大釘#k後回來。說可以透過這道具來開啟飛行船。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "飛行船裡面竟然是空空如也！在毫無頭緒的狀況下，偵探雷夫有說了一句話。\r\n\"找出無跡可尋的事物，那就是偵探所做的事情。\""
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q37104x"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "175"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "179"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3004035"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q37104s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "37103"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3004035"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q37104e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036490"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "是釘子25個，應該沒忘記吧？"
+          }
+        }
+      }
+    }
+  }
+}

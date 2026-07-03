@@ -1,0 +1,214 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[獅子王城]調查獅子王城2"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "根據#p2161012#的託付，探查城的深處。將城內的封印解除，似乎可以開始調查奇怪的黑暗氣息..."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2161012#說希望可以幫他找出黑暗氣息相關線索並轉交給他，狩獵獅子王城內肆虐的怪物，並取得#b#t4033113##k吧！\\n\\n#i4033113# #t4033113# #b#c4033113#/200#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "將#t4033113#拿去給#p2161012#。雖然只是短暫持有，然而卻讓情緒變差，一定是和黑暗氣息有什麼關聯。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "260"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "120"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "124"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "682200"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2161012"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3143"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2161012"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033113"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "200"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "682200"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033113"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-200"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "現在是正式開始調查的時刻。我的直覺告訴我這座城已經充滿了黑暗氣息，然而只憑直覺什麼事都做不了。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "因此你去找找看 #b和黑暗氣息有關的線索#k。如果我猜得沒錯，在此地流連的怪物，受到黑暗氣息的影響留下了蹤跡。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "為了調查要有許多樣品，只少要有#r#t4033113#200個#k。那麼，就拜託你了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你沒感受到這座城散發出的邪惡氣息嗎？如果不盡快解決…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我在等你。我看看，這就是線索嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "確實的看到就覺得心情很不好，這跟我猜測的一模一樣。調查詳細的東西後再跟你說，稍後再跟我說話。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒蒐集到#b#t4033113#200個#k嗎？雖然不簡單，但請多下一些工夫，"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒蒐集到#b#t4033113#200個#k嗎？雖然不簡單，但請多下一些工夫，"
+          }
+        }
+      }
+    }
+  }
+}

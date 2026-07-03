@@ -1,0 +1,272 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 找尋兔子的痕跡1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "加加說會幫忙找擔心鬼的兔子…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "清除怪物之後尋找到兔子的腳印，交給加加。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "清除怪物之後尋找到兔子的腳印，交給加加。"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "找尋兔子的痕跡"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "long",
+            "_value": "3994243"
+          },
+          "count": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994243"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "period": {
+            "_dirType": "int",
+            "_value": "60"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031435"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我剛剛問過村落的人，有些人說看過白色兔子跟怪物在一起。好像怪物隱瞞兔子的行蹤，可以幫忙清除怪物並找兔子的腳印嗎？10個就夠。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "真厲害！從怪物可以找到腳印。要記住唷！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "說的也是… 怪物很可怕。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "從怪物找到兔子的腳印嗎？\\r\\n#L0##b好像這是兔子的腳印……#l\\n#L1#還沒……#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "找到啦！让我看看……"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "找到了！看一下…腳印跟我找到的線索合起來…哎唷！太模糊看不太到。好像被怪物弄壞了。如果擁有著這個痕跡，並且持續在線上超過1小時的話就會變清楚。請把變清楚的兔子痕跡交給擔心鬼！對找兔子會很大的幫忙。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "還沒找到兔子的腳印嗎？打怪看看～"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒找到兔子的腳印嗎？打怪看看～"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你把模糊的兔子痕跡用不見了？！沒辦法。再給你一次，過１小時之後要拿給擔心鬼唷！"
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000021"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201101261200"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201102091200"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "4873"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201101261200"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201102091200"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "180"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000021"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q4870e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031435"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[末日反抗軍] 和喵怪仙人的契約"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[轉職]"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "和在#b#m310010000##k裡定居的#b#p2151009##k對話。#b#p2151009##k說透過契約可以獲得力量，因為是契約而無法避免的事情雖然是事實，但是顯然是有道理的話，該怎麼辦才好呢？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "向#b#m310010000##k的#b#p2151009##k對話後，並進行契約。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p2151009##k的力量在身體裡可以感受到，不管何時都可以和#p2151009#對話的事情，感到有些負擔，#p2151009#雖然說是好事…"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "23212"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "16"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2151009"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "23211"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "3100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "3101"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2151009"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q23212e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "#h0#！ 聽說#h0#失去力量之後我想起了一個好辦法。 就是我不需要戰鬥能力。 所以把我剩下的關於戰鬥的力量送給 #h0#好嗎？\\r\\n#L0##b意思就是說我們來簽約吧？ 現在 #p2151009#的語氣好像有改變了。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "真的嗎？ 離開軍隊經過了數百年時間大概是說話的方式都變了吧。 可是你現在是要轉移話題嗎？？\\r\\n#L0##b啊… 不。 呵呵… 可是契約我不是很喜歡。#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "可是契約的話我可以給你力量，也可以在任何地方對話要#h0#支援也很容易。 好，那我們要簽約嗎？ 來來！"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那麼我要準備簽約儀式了。 請稍後再與我對話。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你不是需要力量嗎？ 你不要這樣重新再考慮一下吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "好現在開始進行簽約儀式。 請將精神盡量往我這邊集中。\\n\\n#b(好像有奇異的氣息流入體內。)#k"
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

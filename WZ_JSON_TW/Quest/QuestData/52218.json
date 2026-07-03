@@ -1,0 +1,137 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 鬥神擂台 1次勝利達成"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "挑戰鬥神擂台 的勝利看看吧。向戰鬥廣場解說員#b#p9070005##k對話就可以了。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "戰鬥廣場解說員#p9070005#告知有關鬥神擂台 開幕紀念活動的相關事項。進入鬥神擂台並只要獲得1次勝利就可以了… 快點挑戰看看吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "獲得鬥神擂台 1次並獲得獎勵。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "參加鬥神擂台感覺如何啊？很有趣吧？這次任務是要在 鬥神擂台裡獲得1次勝利.聽著也知道不是簡單的事情…即使如此也要試試看嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "只一次就接受的你果然是冠軍！ …看起來似乎是可以完成的人…請達成 #b鬥神擂台 1次勝利#k的任務。我會期待的！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你在說謊吧？真的是說謊嗎？ 嗯嗯…在下次活動之前達成的話，還可以給你獎勵…請務必好好在想一下！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有完成#b鬥神擂台 1次勝利#k嗎？ 哼嗯。如果是你的話，一定可以完成的樣子…問我怎麼會知道？ 只是直覺？！"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9070005"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201109071200"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201109211200"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201109071200"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201109211200"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "52214"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9070005"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q52218e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  }
+}

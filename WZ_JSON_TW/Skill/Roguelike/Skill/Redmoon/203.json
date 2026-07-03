@@ -1,0 +1,291 @@
+{
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "NWstardust"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "Projectile": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "240"
+        }
+      },
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_PlaySound"
+          },
+          "SoundPath": {
+            "_dirType": "string",
+            "_value": "Sound/Redmoon.img/Skill/203/Use"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "Projectile": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Projectile"
+      },
+      "onProjectileDestroy": {
+        "_dirType": "string",
+        "_value": "AttackByProjectile"
+      },
+      "onProjectileExpired": {
+        "_dirType": "string",
+        "_value": "AttackByProjectile"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "time": {
+          "_dirType": "string",
+          "_value": "2"
+        },
+        "emitAngle": {
+          "_dirType": "string",
+          "_value": "-140-i*20"
+        },
+        "emitSpeed": {
+          "_dirType": "string",
+          "_value": "300"
+        },
+        "emitCount": {
+          "_dirType": "string",
+          "_value": "3"
+        },
+        "maxSpeed": {
+          "_dirType": "string",
+          "_value": "1000"
+        },
+        "destroyHitCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "hitIntervalPerTarget": {
+          "_dirType": "long",
+          "_value": "1000"
+        },
+        "boundLT": {
+          "_dirType": "vector",
+          "_x": -50,
+          "_y": -50
+        },
+        "boundRB": {
+          "_dirType": "vector",
+          "_x": 50,
+          "_y": 50
+        },
+        "emitPosRadius": {
+          "_dirType": "string",
+          "_value": "10"
+        },
+        "emitPosAngle": {
+          "_dirType": "string",
+          "_value": "-140-i*20"
+        },
+        "chaseAccel": {
+          "_dirType": "string",
+          "_value": "3000"
+        },
+        "chaseTargetType": {
+          "_dirType": "string",
+          "_value": "DragToTarget"
+        },
+        "emitPos.X": {
+          "_dirType": "string",
+          "_value": "50"
+        },
+        "emitPos.Y": {
+          "_dirType": "string",
+          "_value": "-50"
+        },
+        "persistAccel.X": {
+          "_dirType": "string",
+          "_value": "dir*500"
+        },
+        "searchBoundLT": {
+          "_dirType": "vector",
+          "_x": -1200,
+          "_y": -800
+        },
+        "searchBoundRB": {
+          "_dirType": "vector",
+          "_x": 0,
+          "_y": 800
+        }
+      },
+      "ball": {
+        "_dirType": "sub"
+      },
+      "retargetingType": {
+        "_dirType": "string",
+        "_value": "OnLostTarget"
+      }
+    },
+    "AttackByProjectile": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "200"
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "50"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -110,
+          "_y": -110
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 110,
+          "_y": 100
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "2"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "buffLevel": {
+          "_dirType": "string",
+          "_value": "1"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "useZ": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "randomHitOrigin": {
+            "_dirType": "int",
+            "_value": "15"
+          },
+          "z": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "randomHitAngle": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "effect": {
+        "_dirType": "sub"
+      },
+      "eventTags": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "RLGame.Effect.Freeze"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "RLGame.Skill.SingleAttack"
+        }
+      },
+      "hitSoundPath": {
+        "_dirType": "string",
+        "_value": "Sound/Redmoon.img/Skill/203/Hit"
+      },
+      "targetBuffID": {
+        "_dirType": "int",
+        "_value": "501"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "lt": {
+      "_dirType": "vector",
+      "_x": -1200,
+      "_y": -800
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 0,
+      "_y": 800
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "200"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "2"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "1"
+    },
+    "x": {
+      "_dirType": "string",
+      "_value": "3"
+    },
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "emitCount": {
+      "_dirType": "string",
+      "_value": "3"
+    }
+  },
+  "SkillTags": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "string",
+      "_value": "RLGame.Skill.Basic"
+    }
+  }
+}

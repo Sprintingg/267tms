@@ -1,0 +1,134 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[古代遺跡帕爾坦] 召喚古代怪獸！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "231"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#擊退遺跡的巨型怪物(#R35977ExBossRef35977#)\\r"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "將看似破爛的東西放置至祭壇的孩子們。\r\n這真的可行嗎．．．？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "將看似破爛的東西放置至祭壇的孩子們。\r\n這真的可行嗎．．．？"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "順利擊退突如其來的怪獸。"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q35977x"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q35977s"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1013423"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "35976"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1013423"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q35977e"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "35977"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "擊殺遺跡的巨型怪物"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "Boss"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "怪獸不聽我們的話．．．！"
+          }
+        }
+      }
+    }
+  }
+}

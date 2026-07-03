@@ -1,0 +1,194 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[水世界]進入深海"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "35"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o9390012# #a171211#\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "有關將來的事情，去和安討論看看怎麼樣呀。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "既然知道這是和阿卡伊農有關係的，如果不能夠坐視不管，說那就要再多進行一點調查的安。你看起來很起勁啊...那就先去消滅阻擋去路的#o9390012#，以確保道路安全吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "擊捕#o9390012#已確保了道路。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "5000000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5000000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "既然知道這是和阿卡伊農有關係的事情，那當然就無法坐視不管了。#h #，你也應該是這樣想的吧。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "觀察周圍後發現，已經找到連接深處的路了。往這邊走的話，會不會就能找到其他線索呢？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "乍看之下，在#b#m860000030##k好像住有#r#o9390012##k。請你先去擊退他們500隻，以確保可前往深海深處的道路。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "喂，那有其他方法嗎？重新思考一下吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好啊。既然你出馬了，那應該有好好地解決吧？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "到深處調查，確實感覺到更強大的氣息。尤其是偶爾會產生震動，我想應該會找到。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "好，進入下一項委託吧。準備好就說一聲。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "好像還不夠。去確認看看。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390007"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "200"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "17120"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390007"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9390012"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "500"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

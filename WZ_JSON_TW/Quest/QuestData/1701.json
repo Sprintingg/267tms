@@ -1,0 +1,155 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[休菲凱曼的奇怪畫廊] 季節連載鑑賞"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "4"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "在休菲凱曼的畫廊鑑賞圖畫吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "休菲凱曼畫出各個季節所經歷之事的季節連載。一幅一幅仔細看看是怎麼畫的吧。點擊圖畫能看得更仔細。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "鑑賞了休菲凱曼的全部圖畫。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "pop": {
+        "_dirType": "int",
+        "_value": "3"
+      },
+      "senseEXP": {
+        "_dirType": "int",
+        "_value": "100"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這裡所有的畫都是休菲凱曼親自畫的。他把不同季節經歷到印象最深刻的事情用圖畫表現了出來。所以主題就叫季節連作。親自觀賞一下吧。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你點擊一下圖畫可以更仔細的觀賞。請你一個都不要漏掉啊。因為看完所有的圖畫才會有真正連續作品的感覺。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "搞什麼… 這完全和畫廊不搭的客人嘛。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "看完季節連作的感想如何？ 嗯…看你沒有回答一定是對作品的敬畏與感動無法用言語形容是吧。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你點擊一下圖畫可以更仔細的觀賞。請你一個都不要漏掉啊。因為看完所有的圖畫才會有真正連續作品的感覺。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9074000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "50"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "120"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1700"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9074000"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "1703"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1111"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "d"
+          }
+        }
+      }
+    }
+  }
+}

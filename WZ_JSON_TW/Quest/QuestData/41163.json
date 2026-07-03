@@ -1,0 +1,175 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[[鏡子世界] 武陵] 犯人一定會回來"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "72"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "莉莉秀秀說看到昨晚無憚進到藥劑室.去找無憚問問看昨天晚上發生什麼事了吧."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "無憚雖然說自己昨晚很早就回住處睡覺了.但還是有很多可疑的地方.我感覺無憚就是犯人!不過因為沒有證據,也不能直接說他是犯人.犯人一定會再回來,在犯罪現場埋伏看看吧!"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "犯人一定會回到現場!在藥劑室埋伏的時候,發現了偷偷進入藥劑室的無憚."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#潛伏在藥劑室(#R41163ExclearRef41163#)\r\n"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "[村莊]藥劑室"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2440009"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q41163s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "130"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "41162"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "10100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "10110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "10111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "10112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "10113"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "10114"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2440007"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "41163"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "clear"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "潛伏在藥劑室裡"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "clear"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "竟敢在桃花仙境吃肉,一定要抓住這天怨人怨的小子."
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "我,我,我連藥劑室附近都沒去!"
+          }
+        }
+      }
+    }
+  }
+}

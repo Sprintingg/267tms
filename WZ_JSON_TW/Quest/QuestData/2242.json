@@ -1,0 +1,179 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[森林迷宮] 請警惕陌生人…"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "武英說見到了可疑的人。會不會跟巴洛古的復活有關？去問問武英吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "武英說在地下神殿的入口碰到過可疑的男子，並委託我去調查男子的身分。去調查在地下神殿入口裡的可疑男子。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "武英告訴我在地下神殿的入口碰到過一個可疑男子，想請我去調查這男子的身分，想確認看看這可疑男子究竟是誰。"
+    },
+    "summary": {
+      "_dirType": "string",
+      "_value": "與可疑男子對話。"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 12,060"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "31"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "12060"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1061014"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "68"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2235"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1061016"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "12060"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "來這裡的路上有沒有見過可疑的男子？這地方很少有人來，他卻站在這種地方，是不是很奇怪？而且還腳上掛著腳鐐，我想他肯定不是普通的人物，去調查一下比較好。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好。那你先去跟他說話，並讓他的注意力分散。趁他不注意時，我會馬上調查他。那麼你先出發吧，我隨後就到。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你不覺得他很可疑嗎？我覺得他很可疑，需要調查一下。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "今天天氣很好呢，我看你是跟那個戴斗笠的傢伙是一夥的，而且是來調查我的。我告訴你，我只是平凡的人，沒什麼好調查的。你回去吧。\\r\\n#b#L0#你是誰？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "我只是隨處可見的普通的人。但我有些有趣的本領，你以後再來找我吧，我讓你見識見識我的本領。看來那個戴斗笠的傢伙不會來哦。呵呵呵"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我知道有關珍貴寶物的事。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請與可疑男子對話來分散他的注意力。我隨後就到。"
+          }
+        }
+      }
+    }
+  }
+}

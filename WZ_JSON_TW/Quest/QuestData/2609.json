@@ -1,0 +1,170 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓之谷世界的冒險家] 間諜培訓結束"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[轉職]"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "最後的間諜培訓會是什麼呢？ 去找鴻亞看看。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "鴻亞說間諜的教訓訓練已結束，剩下的就是給予不會背叛的信賴。只要吃下鴻亞給的藥，然後去找雪姬就行了...如果連毒藥也能吃下去，鴻亞就會相信對方。那這是毒藥？！\r\n\r\n#rTip :毒藥的效果若是消失，就無法完成任務。請放棄任務後再領取。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "雪姬忍不住大笑說不可能讓人吃毒藥吧。這似乎只是鴻亞的測試，那並非毒藥。不過，背叛就是永遠和影武者成為敵人的行為，因此最好牢記在心。但我不可能會背叛吧？我已經是祕密花園的一員了。"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "2609"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "77"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1057001"
+      },
+      "subJobFlags": {
+        "_dirType": "int",
+        "_value": "2"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2608"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "0"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1056000"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q2609e"
+      },
+      "buff": {
+        "_dirType": "string",
+        "_value": "2022963"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "buffItemID": {
+        "_dirType": "int",
+        "_value": "2022963"
+      },
+      "transferField": {
+        "_dirType": "int",
+        "_value": "103050101"
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "好，間諜的教育訓練結束了。只剩下...精神訓練。你也能背叛祕密花園，站在輸家那一方不是嗎？我們還不夠了解你，無法相信你絕對不會背叛我們。所以你吃下這個藥吧。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "那是什麼藥？是毒藥。連毒藥也能吞下去的人。祕密花園需要這樣的人。這點程度是理所當然的！\\r\\n#b如果同意，我就會立刻讓你服藥，做好覺悟在回答我吧#k。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "效果應該很驚人吧？...解毒劑？我沒有啊。在雪姬手中。你在看什麼呢？快去見#b雪姬#k！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你的決心還不夠嗎？ 我想你還需要一點時間，等你下定決心後再來找我吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你還沒去見#b雪姬#k嗎？．．．．．．那個毒藥隨著時間過去會愈來愈危險吧？"
+          }
+        }
+      }
+    }
+  }
+}

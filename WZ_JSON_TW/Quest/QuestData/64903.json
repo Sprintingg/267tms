@@ -1,0 +1,191 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[我的小屋] 樂同樵夫"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|3"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "凱妮司似乎有什麼事情想要拜託，跟凱妮司對話看看吧！\r\n\r\n#e - 可執行期間 - #n\r\n#DL|myHome_NewYear|start|2#\r\n～ #DL|myHome_NewYear|end2|2#"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "據說森林裡的伐木地內伊森正在幫忙凱妮司砍樹，似乎人手不太足夠，去幫忙看看吧！\r\n\r\n#e - 可執行期間 - #n\r\n#DL|myHome_NewYear|start|2#\r\n～ #DL|myHome_NewYear|end2|2#"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在凱妮司的請託下前往想要幫助伊森，卻看見先前在克蘭西亞所見到的陌生孩子們，正在幫助伊森。但就在要對話之前，孩子們又再次逃跑了．．．．\r\n\r\n#e - 可執行期間 - #n\r\n#DL|myHome_NewYear|start|2#\r\n～ #DL|myHome_NewYear|end2|2#"
+    },
+    "demand": {
+      "_dirType": "sub",
+      "explain": {
+        "_dirType": "sub"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9401093"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "64902"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q64903s"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "#DL|myHome_NewYear|start#"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "#DL|myHome_NewYear|end#"
+      },
+      "worldList": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "0"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "3"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "4"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "6"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "30"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "45"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "49"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9401094"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "64903"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "end"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q64903e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "岔路的另外一邊向上走，應該就會出現伐木地。去那邊找伊森吧！"
+          }
+        }
+      }
+    }
+  }
+}

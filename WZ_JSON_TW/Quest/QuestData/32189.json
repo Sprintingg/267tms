@@ -1,0 +1,232 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[里艾那海峽] 一網打盡破壞冰河的犯人2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "254"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "與學者諾拉對話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "學者諾拉說，必須查出敵人想要的動力源是什麼。在冰河碎裂處擊退 #r#o3502007##k，並收集#b冰核磁能碎片30個#k吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "學者諾拉說，必須查出敵人想要的動力源是什麼。在冰河碎裂處擊退行動碎冰器後，收集了冰核磁能碎片。 據說冰核磁能碎片是擁有極致冷卻效果的神祕物品。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4030030:# #t4030030:# #c4030030# / 30\r\n"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "targetMapID": {
+      "_dirType": "int",
+      "_value": "141050200"
+    },
+    "returnMapID": {
+      "_dirType": "int",
+      "_value": "141050000"
+    },
+    "targetPN": {
+      "_dirType": "string",
+      "_value": "pt_west"
+    },
+    "returnPN": {
+      "_dirType": "string",
+      "_value": "1510007"
+    },
+    "returnType": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "59"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "158829"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1510007"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32188"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1510007"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q32189e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4030030"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4030030"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "158829"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "只有前面獲得的指令文章很難解讀目的。他們需要的原動力到底是什麼呢？ 打敗更深處的敵人可能會進一步的了解狀況。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果有能融化冰的機器，應該也有能破壞並運輸那機器的機器吧？\\r\\n#b#e(在冰河碎裂處，消滅#r移動型碎冰機#b，收集30個冰核磁能碎片吧。)#k\\r\\n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你要放著給敵人破壞冰河嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "如果有能融化冰的機器，應該也有能破壞並運輸那機器的機器吧？\\r\\n#b#e(在冰河碎裂處，消滅#r移動型碎冰機#b，收集30個冰核磁能碎片吧。)#k\\r\\n"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[每日任務]找出30個消失抑制劑"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "207"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "找到30個#t4034935#，交給位在#b消失的火焰地帶#k區域某處的調查團員#b潔娜#k吧！ 消失的火焰地帶區域的所有怪物都有#t4034935#。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "找到30個#t4034935#，交給位在#b消失的火焰地帶#k區域某處的調查團員#b潔娜#k吧！ 消失的火焰地帶區域的所有怪物都有#t4034935#。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "找到30個#t4034935#，交給位在#b消失的火焰地帶#k區域某處的調查團員#b潔娜#k。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4034935:# #t4034935:# #c4034935# / 30\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#i1712001:# #t1712001:# 2個"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "1|0"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "except": {
+        "_dirType": "sub",
+        "lvmin": {
+          "_dirType": "int",
+          "_value": "1"
+        }
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1712001"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003104"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "34127"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "999"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "not"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003108"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q34149e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034935"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "999999999"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034935"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      },
+      "transferField": {
+        "_dirType": "int",
+        "_value": "999999999"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請帶回30個#t4034935#給潔娜。 她現在大概在消失的火焰地帶附近進行調查活動。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "蘿娜說要帶回30個#t4034935#… 沒有#t4034935#的話，就無法再繼續進行調查活動…"
+          }
+        }
+      }
+    }
+  }
+}

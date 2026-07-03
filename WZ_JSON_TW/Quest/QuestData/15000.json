@@ -1,0 +1,125 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[전국시대] 타케다 신겐으로부터의 연락"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#m910810000#의 #p9000427#으로부터 전언이 왔다. 특별히 연락할 일이 없는 것 같은데 무슨 일일까?"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p9000427#에 의하면 #m910810000#에서 새로운 무장이 발견되었다고 한다. 하지만 조금 사소한 문제가 있다며 도와달라고 하는데?  #m910810100#의 #p9000427#을 찾아가 자세한 말을 들어보도록 하자."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#m910810000#에 새로 온 무장은 지금 크게 다쳐 이야기를 할 수 있는 상태가 아니라고 한다."
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "disableAtStartTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000427"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201510150000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201510150000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000427"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q15000e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "오랜만이군, #h0#! 잘 지내고 있었는가!"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "내가 이렇게 전언을 보내게 된 건 다름이 아니라, #m910810100:#으로 온 새로운 무장을 소개시켜주기 위해서라네."
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "아마 우리와 같은 곳에서 온 것 같은데 말이야… 조금 사소한 문제가 있다네. 자네의 도움이 필요할 것 같은데.. 좀 도와주겠는가?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "오오, 고맙네. 그러면 나는 #m910810001:#에서 기다리고 있겠네."
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "#m910810100:#에서 왼쪽으로 이동하면 내가 있는 장소까지 올 수 있을 것이네. 하하핫, 자네를 빨리 보고 싶구만!"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "음… 자네가 바쁘다면 어쩔 수 없지만… 꼭 와주었으면 하는 일이라네. 다시 한번 생각해보지 않겠는가?"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  }
+}

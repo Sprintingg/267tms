@@ -1,0 +1,178 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[玩具城]木馬的失控"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "36"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o3230305# #a32581#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 704,860\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去找玩具城#b#m220010500##k的#b#p2040003##k吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "按照#b#p2040003##k的請求打倒#r#o3230305# 100隻#k吧。 可在#b#m220010000##k或#b#m220011000##k遇見#o3230305#。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "按照#b#p2040003##k的請求打倒#r#o3230305# 100隻#k吧。"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "704860"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2040003"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "110"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3257"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2040003"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3230305"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "704860"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "喔~原來是你。你上次在發條熊擊退活動時立下了大功，這次也要多收集一些玩具！你問我最近在做什麼嗎當然在進行其他活動啊。正是#b玩具木馬管教活動#k。喔~這種眼神，是我上次看到的眼神。正是充滿關懷的眼神~~？！"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "很好，最近我的同事#r#o3230305##k變得越來越兇暴. 雖然原來就很神經質．．．..但現在太超過了。連玩具城的居民也受到很大的影響，所以我才帶頭發起活動。打倒#r#o3230305# 100隻#k就好。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那也沒辦法。活動是自發性的參與，不能強求。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "已經結束了嗎？好厲害喔！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果可以因此讓玩具木馬改過向上，那就太好了。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "打倒#r#o3230305# 100隻#k就好。 "
+          }
+        }
+      }
+    }
+  }
+}

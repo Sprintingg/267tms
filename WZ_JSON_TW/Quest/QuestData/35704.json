@@ -1,0 +1,175 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[苦痛迷宮] 警戒周圍"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#設置警戒石(#R35704ExMazeAlarmRef35704#)\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "先從墜落的地方開始尋找其他人吧。\r\n在那之前必須先準備好抵擋怪物的襲擊。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在#m450011120#附近設置#b警戒石#k。\r\n在巨大的門附近，#r發光的地方#k設置就可以了。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "已設置所有警戒石。怪物靠近時，可以事先做好準備。"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q35704x"
+    },
+    "deleteItem": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "int",
+        "_value": "2439370"
+      }
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "250"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003797"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q35704s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1465"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "35703"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003797"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "35704"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q35704e"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "3"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "設置警戒石"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "MazeAlarm"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "defaultEx": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "sub",
+            "msg": {
+              "_dirType": "string",
+              "_value": "在發光的位置設置警戒石吧。"
+            },
+            "userSay": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "imgPos": {
+              "_dirType": "int",
+              "_value": "1"
+            }
+          }
+        }
+      }
+    }
+  }
+}

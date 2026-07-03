@@ -1,0 +1,234 @@
+{
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "bombPunch0"
+          }
+        },
+        "Segment1": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "bombPunch1"
+          }
+        },
+        "Segment2": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "bombPunch2"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "origin": {
+              "_dirType": "string",
+              "_value": "None"
+            }
+          }
+        }
+      },
+      "effect1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "origin": {
+              "_dirType": "string",
+              "_value": "None"
+            }
+          }
+        },
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "360"
+        }
+      },
+      "effect2": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "origin": {
+              "_dirType": "string",
+              "_value": "None"
+            }
+          }
+        },
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "720"
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AEAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "25120000"
+          }
+        },
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "90"
+        }
+      },
+      "sound0": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AEAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "25120001"
+          }
+        },
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "450"
+        }
+      },
+      "sound1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AEAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "25120002"
+          }
+        },
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "810"
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "damage": {
+          "_dirType": "string",
+          "_value": "105+30*x"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "4+d(x/10)"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "5"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -365,
+          "_y": -290
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 15,
+          "_y": 60
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "randomHitOrigin": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "randomHitAngle": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "25121000"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "damage": {
+      "_dirType": "string",
+      "_value": "105+30*x"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "4+d(x/10)"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "5"
+    },
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -365,
+      "_y": -290
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 15,
+      "_y": 60
+    }
+  },
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "25121000 폭류권"
+  }
+}

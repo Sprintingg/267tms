@@ -1,0 +1,203 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[妖精學院愛里涅] 潘喜的魔法材料2"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "繼續和#b#m101070000##k的 #b#p1500010##k對話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b#p1500010##說還需要魔法的材料。 在#b#m101070300##k擊退#r#o3501001##k，收集#b#t4033825##k 3個吧！"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#b#p1500010##k說還需要魔法的材料。在#b#m101070300##k收集了#b#t4033825##k 3個。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4033825:# #t4033825:# #c4033825# / 3\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "227"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "59"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "18729"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1500010"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32103"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1500010"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033825"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "101070010"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033825"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-3"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "18729"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "辛苦你了，不過只有這樣是不夠的喵。如果想使用魔法，還需要催化劑喵！ 在#b#m101070300##k好像住著 #r#o3501001##k喵。從#r#o3501001##k收集 #b#t4033825##k 3個吧喵。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b#t4033825##k是很珍貴的材料啊喵。要有耐性地收集呀喵！\\r\\n在#b(在#m101070300#擊退 #o3501001#，收集 #t4033825#3個吧。）#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "已經要放棄了？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "收集好#b#t4033825##k了嗎喵？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b#t4033825##k是很珍貴的材料啊喵。要有耐性地收集呀喵！\\r\\n在#b(在#m101070300#擊退 #o3501001#，收集 #t4033825# 3個吧。）#k"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "真棒，用這個就能使用魔法吧，稍等我一下啊。。。"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[克梅勒茲交易所] 桃醫仙的請託"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "84"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "請託搬運交易品的客人進來了。好像比平常還要有賺頭的樣子？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "最近桃醫仙的藥好像比較沒有人氣的樣子，所以想要一個新的藥罐。把藥罐子裝備在船的欄位，帶去給靈藥幻境的桃醫仙吧。靈藥幻境的交易要在羅莎地區完成5次以上交易後才可以進行。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "將藥罐子交給了桃醫仙。怎麼想都覺得是因為藥罐子的緣故才讓藥性下降了嘛.."
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好。#h0#！ 我這次也有我們商人公會的委託，要聽聽看嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "靈藥幻境有位叫做桃醫仙的名醫…特別收到了要把克梅勒茲地區的熬藥器轉交給陶醫仙的請求。 "
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "聽說最近桃醫仙的名望不如從前了。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "那就請你去靈藥幻境貿易時，順便轉交。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "看來你很忙喔... ？那改天你有空請再跟我說吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "必須把熬藥器拿到靈藥幻境並進行貿易到最後。 不能中途停止放棄。"
+          }
+        },
+        "quest": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "必須把熬藥器拿到靈藥幻境並進行貿易到最後。 不能中途停止放棄。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390220"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "140"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "17020"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390220"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "17016"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "set"
+          }
+        }
+      }
+    }
+  }
+}

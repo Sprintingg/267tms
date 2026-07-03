@@ -1,0 +1,194 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[懸賞] 刺菇菇"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "在銀蓮花草叢中建立了懸賞標誌板。 \n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "銀蓮花叢林上立了刺菇菇懸賞告示板. 打倒刺菇菇20隻後領取懸賞金.\r\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在銀蓮花叢林#p1012119#立了刺菇菇懸賞告示板. 打倒刺菇菇20隻後領取了懸賞金. 但是怎麼知道我有沒有真的抓到刺菇菇呢?\r\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o2110200# #a27021#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 434\r\n#i1072061:# #t1072061:# 1 個\r\n"
+    },
+    "disableAtStartTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "434"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012127"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012127"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2110200"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "434"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1072061"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "正常"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#eWANTED#n\\n#i3800225#\\n懸賞最近出沒在哼聲森林小徑，銀蓮花叢林騷擾行人的刺菇菇 20隻。 \\n罪狀： 利用角威脅居民，妨礙通行"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "<附件>\\n向掃蕩刺菇菇20隻的人贈送懸賞金. 來找在銀蓮花叢林的#p1012127#."
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "<追申>\\n- 損毀佈告時，徵收罰金10萬楓幣。\\n- 請勿在此丟棄垃圾。」\\r\\n"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "<附件>\\n向掃蕩刺菇菇20隻的人贈送懸賞金. 來找在銀蓮花叢林的#p1012127#.\\r\\n#L0##b掃蕩刺菇菇20隻後來領取懸賞金了#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "確認完畢. 支付懸賞金."
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "<附件>\\n向擾當刺菇菇20隻的人贈送懸賞金. 來找在銀蓮花叢林的#p1012127#."
+          }
+        }
+      }
+    }
+  }
+}

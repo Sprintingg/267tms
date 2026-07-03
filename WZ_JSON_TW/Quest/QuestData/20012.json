@@ -1,0 +1,165 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇家騎士團] 你知道技能嗎？"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "向#b#p1102006##k打聽技能。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1102006#說按下#bK鍵#k打開技能視窗後，就能升級技能。並說能使用技能來打獵。抓到周圍的#r#o100121#3隻#k後，並帶來#b#t4000483#1個#k當作證據吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "抓到#o0100121#後，帶來了#o0100121#的羽毛。#p1102006#說下一個需要去見的人是#p1102007#，並說應該往左走。"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1102006"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q20012s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20011"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "1000"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1102006"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q20012e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000483"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "100121"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "消滅#o0100121#後，帶來#o0100121#的羽毛。相當出色，看來你已經熟練技能了，那麼我教你下一個階段。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "看來您還沒有抓到#o0100121#3隻或是還沒拿到#o0100121#的羽毛。再去抓#o0100121#吧，很快就能獲得羽毛。"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "看來您還沒有抓到#o0100121#3隻或是還沒拿到#o0100121#的羽毛。再去抓#o0100121#吧，很快就能獲得羽毛。"
+          }
+        }
+      }
+    }
+  }
+}

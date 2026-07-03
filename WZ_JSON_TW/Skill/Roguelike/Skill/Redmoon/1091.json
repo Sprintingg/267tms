@@ -1,0 +1,207 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "브랜디쉬 마하 400011031"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "5thBrandishMaha"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "Effect1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            },
+            "socketName": {
+              "_dirType": "string",
+              "_value": "None"
+            }
+          }
+        }
+      },
+      "Effect2": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "3"
+            },
+            "socketName": {
+              "_dirType": "string",
+              "_value": "None"
+            }
+          }
+        }
+      },
+      "Sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "400011031"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "80+50*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "8"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "5"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -480,
+          "_y": -550
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 450,
+          "_y": 190
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "50"
+        },
+        "stunDuration": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "buffLevel": {
+          "_dirType": "string",
+          "_value": "2"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "randomHitOrigin": {
+            "_dirType": "int",
+            "_value": "40"
+          },
+          "useZ": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "z": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "hitSoundPath": {
+        "_dirType": "string",
+        "_value": "Sound/RoguelikeWz2.img/Skill/400011031/Hit"
+      },
+      "targetBuffID": {
+        "_dirType": "string",
+        "_value": "501"
+      },
+      "eventTags": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "RLGame.Effect.Freeze"
+        }
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "Tags": {
+      "_dirType": "sub",
+      "cannotDestroy": {
+        "_dirType": "sub"
+      }
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "80+50*x"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "8"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "5"
+    },
+    "cooltime": {
+      "_dirType": "string",
+      "_value": "20"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -480,
+      "_y": -550
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 450,
+      "_y": 190
+    },
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "5"
+    }
+  },
+  "SkillTags": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "string",
+      "_value": "RLGame.Skill.Extra"
+    }
+  }
+}

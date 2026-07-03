@@ -1,0 +1,166 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[世界] 陽子的請求1"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "找小嵐的手提包"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去見陽子~!"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "聽說昭和村的陽子消化不良而引起肚子痛。本來想幫陽子買藥，但陽子說不用只要喝點汽水就會好。那就買汽水給她吧?\\n\\n#t02022002##b#c02022002##k/1"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "送汽水給陽子。可是，沒想到她是裝的!陽子說真的有事相求，要再跟她說話嗎?"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "45"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "8003"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2022002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊~~肚子痛得要死~。有空的話就幫我個忙~吧！"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝。那個…我剛吃完飯，不知什麼原因就開始肚子痛。如果喝汽水的話說不定會比較好…"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "呃~痛啊~~我要死了~！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哇~！汽水買來了啊！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝~。哎呀~好喝！你真是善良啊！嗚呼呼…老實說，事實上…我…不是肚子痛，只是太想喝汽水才會這麼做的。對不起！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "啥咪？怎麼還沒找到啊~？真是令人失望~嗚呼~"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9120018"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "45"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9120018"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2022002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

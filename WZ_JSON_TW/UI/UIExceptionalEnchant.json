@@ -1,0 +1,643 @@
+{
+  "main": {
+    "_dirType": "sub",
+    "button:exit": {
+      "_dirType": "sub",
+      "id": {
+        "_dirType": "int",
+        "_value": "1000"
+      },
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "結束卓越強化。"
+      }
+    },
+    "button:help": {
+      "_dirType": "sub",
+      "id": {
+        "_dirType": "int",
+        "_value": "1001"
+      },
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "查看關於卓越強化的說明。"
+      }
+    }
+  },
+  "tabReinforce": {
+    "_dirType": "sub",
+    "button:enchantStart": {
+      "_dirType": "sub",
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "使用卓越鎚子和楓幣，選擇裝備賦予卓越強化。"
+      },
+      "ToolTip_Disabled": {
+        "_dirType": "string",
+        "_value": "強化所需的卓越鎚子或楓幣不足。"
+      },
+      "id": {
+        "_dirType": "int",
+        "_value": "2100"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      }
+    },
+    "button:cancel": {
+      "_dirType": "sub",
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "回到初始畫面。"
+      },
+      "id": {
+        "_dirType": "int",
+        "_value": "2101"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      }
+    },
+    "button:exit": {
+      "_dirType": "sub",
+      "id": {
+        "_dirType": "int",
+        "_value": "1000"
+      },
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "卓越強化結束。"
+      }
+    },
+    "button:tab_reinforce": {
+      "_dirType": "sub",
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "normal": {
+        "_dirType": "sub"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "進行選擇的裝備卓越強化。"
+      },
+      "id": {
+        "_dirType": "int",
+        "_value": "4100"
+      },
+      "enable": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "ToolTip_Disabled": {
+        "_dirType": "string",
+        "_value": "無法再進行卓越強化的裝備。"
+      }
+    },
+    "button:tab_extract": {
+      "_dirType": "sub",
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "normal": {
+        "_dirType": "sub"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "使用楓幣，以裝備的卓越強化抽取卓越鎚子。"
+      },
+      "id": {
+        "_dirType": "int",
+        "_value": "4101"
+      },
+      "enable": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "ToolTip_Disabled": {
+        "_dirType": "string",
+        "_value": "裝備上沒有賦予的卓越強化。"
+      }
+    },
+    "reinforceEffect": {
+      "_dirType": "sub"
+    },
+    "scroll:enchantInfo": {
+      "_dirType": "sub",
+      "enabled": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "length": {
+        "_dirType": "int",
+        "_value": "145"
+      },
+      "wheelRange": {
+        "_dirType": "int",
+        "_value": "210"
+      },
+      "id": {
+        "_dirType": "int",
+        "_value": "2103"
+      },
+      "path": {
+        "_dirType": "string",
+        "_value": "UI/UIMapleUnion.img/mapleUnion/attackerSetting/scroll:attackerScroll"
+      },
+      "lt": {
+        "_dirType": "vector",
+        "_x": 777,
+        "_y": 543
+      }
+    },
+    "vector:accessoryIcon": {
+      "_dirType": "vector",
+      "_x": 52,
+      "_y": 226
+    },
+    "vector:itemCost": {
+      "_dirType": "vector",
+      "_x": 184,
+      "_y": 275
+    },
+    "vector:mesoCost": {
+      "_dirType": "vector",
+      "_x": 184,
+      "_y": 302
+    },
+    "vector:enchantInfo": {
+      "_dirType": "vector",
+      "_x": 159,
+      "_y": 153
+    },
+    "button:additional": {
+      "_dirType": "sub",
+      "id": {
+        "_dirType": "int",
+        "_value": "2102"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "額外使用卓越鎚子和楓幣，提高成功機率。"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "normal": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      }
+    },
+    "button:help": {
+      "_dirType": "sub",
+      "id": {
+        "_dirType": "int",
+        "_value": "1001"
+      },
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "查看關於卓越強化的說明。"
+      }
+    },
+    "vector:hammerTooltipLT": {
+      "_dirType": "vector",
+      "_x": 245,
+      "_y": 272
+    },
+    "vector:hammerTooltipRB": {
+      "_dirType": "vector",
+      "_x": 395,
+      "_y": 295
+    }
+  },
+  "tabExtract": {
+    "_dirType": "sub",
+    "button:transmissionStart": {
+      "_dirType": "sub",
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "使用楓幣選擇的裝備進行卓越強化1次，並抽取符合裝備分類的卓越鎚子。"
+      },
+      "ToolTip_Disabled": {
+        "_dirType": "string",
+        "_value": "抽取所需的楓幣不足。"
+      },
+      "id": {
+        "_dirType": "int",
+        "_value": "3100"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      }
+    },
+    "button:cancel": {
+      "_dirType": "sub",
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "回到初始畫面。"
+      },
+      "id": {
+        "_dirType": "int",
+        "_value": "3101"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      }
+    },
+    "button:exit": {
+      "_dirType": "sub",
+      "id": {
+        "_dirType": "int",
+        "_value": "1000"
+      },
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "結束卓越強化。"
+      }
+    },
+    "button:tab_reinforce": {
+      "_dirType": "sub",
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "normal": {
+        "_dirType": "sub"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "在所選的裝備上，進行卓越強化。"
+      },
+      "id": {
+        "_dirType": "int",
+        "_value": "4100"
+      },
+      "enable": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "ToolTip_Disabled": {
+        "_dirType": "string",
+        "_value": "無法再進行卓越強化的裝備。"
+      }
+    },
+    "button:tab_extract": {
+      "_dirType": "sub",
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "normal": {
+        "_dirType": "sub"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "使用楓幣後，用裝備的卓越強化抽取卓越鎚子。"
+      },
+      "id": {
+        "_dirType": "int",
+        "_value": "4101"
+      },
+      "enable": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "ToolTip_Disabled": {
+        "_dirType": "string",
+        "_value": "裝備上沒有賦予的卓越強化。"
+      }
+    },
+    "extractEffect": {
+      "_dirType": "sub"
+    },
+    "vector:accessoryIcon": {
+      "_dirType": "vector",
+      "_x": 90,
+      "_y": 226
+    },
+    "vector:extractIcon": {
+      "_dirType": "vector",
+      "_x": 277,
+      "_y": 226
+    },
+    "vector:mesoCost": {
+      "_dirType": "vector",
+      "_x": 184,
+      "_y": 298
+    },
+    "button:help": {
+      "_dirType": "sub",
+      "id": {
+        "_dirType": "int",
+        "_value": "1001"
+      },
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "查看關於卓越強化的說明。"
+      }
+    }
+  },
+  "dialog": {
+    "_dirType": "sub",
+    "okCancel": {
+      "_dirType": "sub",
+      "button:confirm": {
+        "_dirType": "sub",
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "1"
+        }
+      },
+      "button:cancel": {
+        "_dirType": "sub",
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "2"
+        }
+      }
+    },
+    "ok": {
+      "_dirType": "sub",
+      "button:confirm": {
+        "_dirType": "sub",
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "1"
+        }
+      }
+    },
+    "success": {
+      "_dirType": "sub",
+      "button:confirm": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "1"
+        }
+      },
+      "vector:accessoryIcon": {
+        "_dirType": "vector",
+        "_x": 72,
+        "_y": 69
+      },
+      "vector:accessoryName": {
+        "_dirType": "vector",
+        "_x": 125,
+        "_y": 48
+      },
+      "maxWidth": {
+        "_dirType": "int",
+        "_value": "200"
+      }
+    },
+    "fail": {
+      "_dirType": "sub",
+      "button:confirm": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "1"
+        }
+      },
+      "vector:accessoryIcon": {
+        "_dirType": "vector",
+        "_x": 72,
+        "_y": 69
+      },
+      "vector:accessoryName": {
+        "_dirType": "vector",
+        "_x": 125,
+        "_y": 48
+      },
+      "maxWidth": {
+        "_dirType": "int",
+        "_value": "200"
+      }
+    },
+    "extract": {
+      "_dirType": "sub",
+      "button:confirm": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "1"
+        }
+      },
+      "vector:accessoryIcon": {
+        "_dirType": "vector",
+        "_x": 72,
+        "_y": 147
+      },
+      "vector:accessoryName": {
+        "_dirType": "vector",
+        "_x": 128,
+        "_y": 122
+      },
+      "maxWidth": {
+        "_dirType": "int",
+        "_value": "200"
+      },
+      "vector:hammerIcon": {
+        "_dirType": "vector",
+        "_x": 72,
+        "_y": 73
+      },
+      "vector:hammerName": {
+        "_dirType": "vector",
+        "_x": 128,
+        "_y": 48
+      }
+    },
+    "successEffect": {
+      "_dirType": "sub"
+    },
+    "failEffect": {
+      "_dirType": "sub"
+    }
+  }
+}

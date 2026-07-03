@@ -1,0 +1,216 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[中秋節活動] 小月妙的月亮照片就拜託你了~!"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoCancel": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "小月妙極為珍藏的老舊月亮照片，聽說小月妙的月亮照片好像出現了什麼問題! 去問問小月妙吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#i3994648# #b聽說帶著褪色的月亮照片#k並維持在線30分鐘的話，滿月的力量搞不好會讓照片再一次的變的色彩鮮明。 維持30分鐘之後待月亮照片變得鮮明的時候再去找小月妙吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把色彩鮮明的月亮照片給了小月妙。興高采烈的小月妙給了我一個禮物箱! 好想趕快打開來看看。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i3994649:# #t3994649:# #c3994649# / 1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9001102"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201409030000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201409240000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201409030000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201409240000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994648"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994649"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "dayN": {
+        "_dirType": "int",
+        "_value": "5"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9001102"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q12997e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994649"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994648"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "resignRemove": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "period": {
+            "_dirType": "int",
+            "_value": "30"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#b#h0##k聽我說說。哭哭啼啼\\r\\n這是我的寶物月亮的照片。但是不久之前，取出月亮照片，照片的顏色好像退色的樣子?想要照片變原來的樣子，可以幫我嗎? \\r\\n #i3994648# #b#t3994648#"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "真的嗎?真的可以幫忙嗎?！ 謝謝！ \\n #i3994648# #r#t3994648##k暫時交給#b#h0##k。\\n我也想自己做，但是用兔子手真的太困難了... \\n只要讓人持有#b月亮照片#k就很容易解決，月妙爺爺說的。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "持有月亮照片，#b30分間維持連線#k的話，就可用月亮的力量讓照片恢復原本的顏色。但#r中間登出的話，照片會消失#k一定要注意。那麼30分過後，月亮照片恢復的話，再跟我對話~！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗚嗚用兔子手無法用，月妙爺爺說的。改變心意的話，再跟我說。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "月亮照片還沒恢復的樣子~?"
+          }
+        }
+      }
+    }
+  }
+}

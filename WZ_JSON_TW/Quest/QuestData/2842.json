@@ -1,0 +1,168 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[遺跡發掘隊] 骷髏指揮官"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#m102040600#立了#p1022115#."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "- 公告 - \\n\\n最近遺跡發掘現場出沒的怪物妨礙遺跡發掘有延遲. 等待有勇氣人的挑戰. \r\n\r\n#b#m102040600# : 打倒骷髏指揮官"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "打倒了妨礙遺跡發掘作業的骷髏指揮官."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o7130103# #a28421#\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "42109"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022115"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022115"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "7130103"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "150"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "42109"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "- 公告 - \\n\\n最近遺跡發掘現場出沒的怪物妨礙遺跡發掘有延遲. 等待有勇氣人的挑戰."
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b#m102040600##k : 打倒骷髏指揮官"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "隨時等待有勇氣的人來挑戰."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "- 公告 - \\n\\n#b#m102040600##k的怪物掃蕩者去向#m102040600#的#p1022115#報告.\\r\\n\\r\\n#L0##b打倒了骷髏指揮官150隻.#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "感謝幫忙遺跡發掘作業."
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "打倒在#m102040600# 地區妨礙發掘作業的骷髏指揮官 150隻."
+          }
+        }
+      }
+    }
+  }
+}

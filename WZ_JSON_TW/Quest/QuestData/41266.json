@@ -1,0 +1,238 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[[鏡子世界] 瑪迦提亞城] 奈歐洛伊德的心臟"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "74"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#t4033849#到手的人型機器人A.幫助人型機器人A製作奈歐洛伊德."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "製作奈歐洛伊德最後的材料就是機器心臟.因此人型機器人A請求將自己的機器心臟移植給#b奈歐洛伊德#k......"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "人型機器人A交給我自己的機器心臟後停止啟動,從奈歐洛伊德身上移植機器心臟後,他就可以重新啟動了."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4033851:##t4033851:##c4033851#/1\r\n"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "[村莊]瑪迦提亞城"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "deleteItem": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "int",
+        "_value": "4033851"
+      }
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2460006"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "157"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q41266s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "41265"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "40953"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "10100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "10110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "10111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "10112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "10113"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "10114"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2460007"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q41266e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033851"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npcAct": {
+        "_dirType": "string",
+        "_value": "stand"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033851"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "resignRemove": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033851"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "(人型機器人A不再動了.)"
+          }
+        }
+      }
+    }
+  }
+}

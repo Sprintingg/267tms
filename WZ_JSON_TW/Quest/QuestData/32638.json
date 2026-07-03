@@ -1,0 +1,215 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[次元圖書館] 奧門的殘骸"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "82"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "艾琳說有東西要給我.繼續交談吧."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "艾琳交出了這段期間收集的奧門殘骸.交給白魔法師吧.\\r\\n#b(白魔法師的房間在大廳右邊.)#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "奧門的殘骸交給白魔法師,並且短暫交談了一下."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4033971 : # #t4033971 : # #c4033971# / 1\\r\\n#questorder1#拜訪白魔法師的研究室(#R32628Exnothere Ref32638#)\\r\\n"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "q32638"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033971"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這是我這段期間收集的 #b奧門的殘骸#k.雖然我不太清楚,但魔法師們也會利用這個進行實驗吧?說不定有助於查清楚#r奧門的真面目#k."
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "交給白魔法師吧.他能夠殺光這個世界上的所有奧門吧?對吧?\\r\\n#b(去位於大廳右邊的白魔法師研究室吧.)#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "幹嘛?又不是在使喚你!這種程度就夠了吧."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嗯?你在尋找大師?\\r\\n我不是拜託過你了嗎?如果不是重要的事情,不要隨便進入大師的房間!\\r\\n"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗚嗯,嗯... 往後請多加注意.大師在神殿的屋頂.\\r\\n#b(這個魔法師還真是敏感.屋頂... 要不要上去一趟呢?)#k"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "交給白魔法師吧.他能夠殺光這個世界上的所有奧門吧?對吧?\\r\\n#b(去位於大廳右邊的白魔法師研究室吧.)#k"
+          }
+        },
+        "quest": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "找我有什麼事嗎?\\r\\n#b(必須向艾琳取得奧門的痕跡.)#k"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不會吧?傭兵.這個掉在地上了."
+        },
+        "yes": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "好好帶在身上!你知道我收集的多辛苦嗎?"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2510003"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32637"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2510010"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "32628"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q32638e"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "探訪白魔法師的研究室"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "nothere "
+          }
+        }
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033971"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

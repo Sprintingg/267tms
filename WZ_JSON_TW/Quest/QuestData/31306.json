@@ -1,0 +1,219 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[夢幻主題樂園] 遺失的入場券"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去詢問售票處的職員，主題樂園的入場券是否需要另外購買。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在艾伊里不注意的時候，多利恩偷走售票處20張入場券。得趁細心的老闆娘明發現之前，從位於 #b#m223010000##k的 #e#o8145000##n手中找回入場券。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "幸虧在老闆娘明察覺之前，就順利找回20張入場券了。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4033235:# #t4033235:# #c4033235# / 20\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "301891"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2190001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "120"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31300"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2190001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033235"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "301891"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033235"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "有什麼事嗎？不對，要親切一點~顧客，有什麼事情呢？\\r\\n#L0##b想要進入主題樂園，就得購買入場券吧？ (那是什麼眼神…？為何盯著我看呢？啊，心情真差！)#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "只要肯幫忙我，我就可以讓你免費入場，永遠都能夠免費！怎麼樣？要不要幫忙我呢？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "其實，在我不注意的時候，位於 #b#m223010000##k的 #e多利恩#n偷走了 #e#r入場券#k#n。老闆娘明知道的話，一定不會放過我！得快點找到才行。快點。拜託請安靜一點，千萬別讓老闆娘明發現。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "入場券還挺貴的？答應我的要求不是比較好嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "(噓，安靜) 你好~顧客！"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "(低沉的嗓音…) 不能讓老闆娘明聽見。入場券找回來了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "啊，真是太好了。差點就發生大事了。老闆娘明可是相當恐怖的一個人。\\r\\n以後我會讓你能夠免費進入主題樂園。謝謝。\\r\\n"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒找到嗎？快點。老闆娘明似乎快要發現了。一定要找回被多利恩帶走的20張入場券！"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[獅子王城] 玫瑰庭園的鑰匙"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "獅子王似乎完全不相信#p2161001#王妃變成了幽靈。聽不到#p2161001#的聲音也是因為這樣嗎？那要怎麼辦呢？去問問#b王妃#k吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "轉告獅子王的反應時，王妃就說著她和王之間的回憶，也許這樣王就會相信她變成幽靈還在等他。回憶的物品就在獅子王為王妃建造的玫瑰庭園裡…擊倒#r#o8210004##k找到鑰匙吧。\\n\\n#i4032836##t4032836##b#c4032836##k/1"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "接受#t4032836#的王妃非常開心。她在市場賣花時，遇到偷偷溜出城的獅子王，後來甚至結了婚…這樣聽來獅子王似乎是很浪漫的人。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "260"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "120"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "124"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "682200"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2161001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "115"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3173"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2161001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032836"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "682200"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032836"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "你去過他那裡嗎？你轉告他關於我的事嗎？他真的...忘記我了嗎？ 不然為什麼不回應我，請告訴我吧。\\r\\n#L0##b(轉告獅子王的反應。確定他還記得 #p2161001#，但是不相信現在是幽靈，還有他完全聽不到 #p2161001#的聲音…)#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "嗯… 這樣就不算太糟。他並沒有忘記我 …只要他還記得我一定會讓他相信我在這裡。你願意繼續幫助我嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果告訴他關於我和凡雷恩的回憶，他應該會相信我在這裡。該說什麼呢… 嗯，沒錯。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "當我還活著時凡雷恩曾為我預備了一座玫瑰庭園。那裡會有一個 #b回憶的物品#k…只要找到它拿給凡雷恩看他一定會相信。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "那麼需要先去找 #t4032836#。我之前看到被 #o8210004#吞食了。所已請消滅 #r#o8210004##k後幫我拿回\r\n#b#t4032836##k。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "若要使他冰凍的心回心轉意只有這個方法。請你再考慮一下吧 。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你已經找到了#t4032836#。謝謝你。因為時間太久了還以為都消耗掉了還好保持原樣…哈哈。你知道嗎？其實我是平民出身。幾乎和王見面是不可能的事。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "數百年前的某一天，那天是慶典的日子。假裝成平民的他來到了這裡。當時我就在市場賣花。這人真怪怎麼慶典中沒有一束花呢，這是我們第一次見面說的話。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "我們由花結緣後甚至結婚了，花對我們夫妻來說是很重要的物品。他向我求婚時送我的是白色的雪玫瑰。他送我玫瑰庭院也是因為這樣 。"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "這麼浪漫的凡雷恩怎麼會變呢…我還是無法相信。他說無論發生什麼事，我們的眼睛會彼此對看，耳朵會互相聆聽絕對不會改變…"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "啊，抱歉。我太想過去的事了 。那麼我從玫瑰庭院取回回憶的物品請稍候一下。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒找到 #b#t4032836##k嗎？應該是在#r#o8210004##k身上…"
+          }
+        }
+      }
+    }
+  }
+}

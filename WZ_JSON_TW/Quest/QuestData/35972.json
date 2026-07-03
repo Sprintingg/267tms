@@ -1,0 +1,140 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[古代遺跡帕爾坦] 模糊的文件與文字"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "231"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4036533:# #t4036533:# #c4036533# / 30\r\n#questorder1##o2300266# #a359721#\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "追隨三胞胎來到#b#m100051060##k，\r\n卻似乎出了點問題。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了確認圖畫，必須收集#i4036533##b#t4036533##k#r30個#k後榨成汁。\r\n#b#o2300266##k也消滅#r150隻#k吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "已經收集並交付所有材料。"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q35972s"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1013417"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "35971"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1013417"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q35972e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036533"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2300266"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "150"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "幫我收集#i4036533##b#t4036533##k#r30個#k！這樣就可以榨成汁，然後確認魔導書的內容了。\\r\\n順便把妨礙我們的#b#o2300266##k也消滅#r150隻#k就更好了。"
+          }
+        }
+      }
+    }
+  }
+}

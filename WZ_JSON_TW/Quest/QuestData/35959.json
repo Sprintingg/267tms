@@ -1,0 +1,122 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[古代遺跡帕爾坦]三胞胎中的老么，卡斯伯"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "231"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o2300260# #a359591#\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "必須找到消失的孩子們，摩利似乎知道方法。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了讓#i2630359##b#t2630359##k能順利啟動，必須降低周圍的聲音。把#b#o2300260##k消滅#r150隻#k左右來降低噪音後，再回去告訴莫里吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "因為已經擊退#o2300260#可以使用螺類外殼。"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1013404"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q35959s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "35958"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1013404"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q35959e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2300260"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "150"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "我..我會躲在這裡，快消滅#b#o2300260##k#r150隻#k左右使周圍變安靜吧。"
+          }
+        }
+      }
+    }
+  }
+}

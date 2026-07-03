@@ -1,0 +1,230 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[* 赫力席母] 獲得敵人的情報"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "259"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "為了分析敵人的動態去找 #p3001107#吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p3001107#說發現了最近敵人都是透過書信來往的情況。果然是～！有了吃補藥的成效？！#b打開由幽靈軍團士兵取得的書信擷取情報#k吧。相同的情報就沒意義所以要繼續打開書信最好是能夠獲得 10種左右的不同情報比較好吧。呼... 這將是很困難的任務吧。\n#b<可以從除了幽靈戰鬥犬之外的其他幽靈軍團士兵取得。>#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "收集情報拿給 #p3001007#的時候，他說自己並不清楚還是拿給 #p3001100#看看。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "打開書信收集敵人所有的情報\n\n獲得情報： #b#R31676# / 10#k"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 250,140\r\n可進行 '戰略無所謂最好。只有較好。' 任務\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "119"
+      }
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "16"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "250140"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001107"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q31674s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "102"
+      },
+      "dressChanged": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31673"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "6500"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "6510"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "6511"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "6512"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "6513"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "6514"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "6001"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001107"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "31676"
+      },
+      "dressChanged": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "10"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "250140"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "呵呵。情報都搜集好了啊！那麼。看一下？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "啊啊啊！不要！完全不懂在說什麼！好像暗號化了！還是轉給#p3001100# 大人為好。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "我會給你書信傳達，休息片刻之後去找一下 #b#p3001100##k大人吧。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "好像還缺很多情報。"
+          }
+        }
+      }
+    }
+  }
+}

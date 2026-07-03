@@ -1,0 +1,138 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[Friend's Story] 最後通話"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "93"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "異界學生想要回到原來的位置. 為了整理狀況向莉莉訊問狀況. "
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了把所有狀況歸位, 需要在所有人的記憶中消滅我的存在. 如果在那之前有想要聽到的朋友聲音, 就打給電話. "
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "短暫的通話結束. 就像明天也可以見面, 但是我要從所有人的記憶中消失了..."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#打電話給一位朋友 (#R33040ExnoRef33023#)\r\n"
+    },
+    "friendsStory": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1530041"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q33023s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "33022"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1530055"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "33040"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "打電話給一位朋友"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "no"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "打給最後一位朋友.\\r\\n#b(打開智慧型手機打給想起的朋友.)#k"
+          }
+        }
+      }
+    }
+  }
+}

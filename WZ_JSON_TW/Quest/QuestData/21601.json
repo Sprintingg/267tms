@@ -1,0 +1,233 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[過去的英雄，狂狼勇士] 為幼狼準備的營養餐"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "6"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "向生活在#b#m230010201##k的#b#p2060000##k詢問馴養狼的方法。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2060000#說他養過狼，要為虛弱的#b幼狼準備營養餐#k…據說營養餐的材料是抓到#b綠海馬後可以得到的#t4000161##k和#b#p2060005#那裡賣的#t4032331##k。\n\n#i4000161##t4000161##b#c4000161#/50#k\n#i4032331##t4032331##b#c4032331#/1#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "收集所有材料後#p2060000#讓我等一會，他就會幫我製作#t4032332#。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2060000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "50"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "21600"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2000"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2100"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2110"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2111"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2112"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "2113"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "2114"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2060000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000161"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032331"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000161"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032331"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哎呀，或許在養狼嗎？養狗的人挺多的但養狼的人很少。啊，是問養狼的方法吧？以前養過受傷的狼所以知道一點。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "小狼身體虛弱了可能是營養不良。把哈士奇的營養餐改良製作成#b#t4032332##k。你需要我幫你製作吧。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那麼能不能找來製作營養餐所需的材料？材料是營養價值高的#b#t4000161#50個#k和#b#t4032331##k。營養劑應該在水之路#m230000003#飼養各種動物的#p2060005#手裡。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "只要能把所有材料弄來就幫你製作#t4032332#。那就辛苦你了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "喔。不需要營養餐嗎？不是在養狼，只是以後養狼所以做事前調查嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哎呀，這麼快把材料弄來了？那先等一會吧。那我就用材料製作#t4032332#。等一會吧。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒找到#t4032332#材料嗎？就是#b#t4000161#50個#k和#b#t4032331#1個#k。#t4000161#通過狩獵水之路的#b綠海馬#k就能獲得，營養劑由#m230000003#的#b#p2060005#在賣#k。"
+          }
+        }
+      }
+    }
+  }
+}

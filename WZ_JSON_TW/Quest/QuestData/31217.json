@@ -1,0 +1,202 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[艾靈森林] 退燒藥"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "39"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "告訴洛哈，好睡小子突然發高燒重病了。再次詢問洛哈是否找到退燒藥了。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "洛哈說現在沒有可以使用的藥，請你去找魔法師弗勒提幫忙。\n去找弗勒提說明情況，問他是否可以製作退燒藥。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "向弗勒提說明情況，問他是否可以製作退燒藥。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "181900"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2131003"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "95"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31216"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2131001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "181900"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "藥到底是放去哪裡了呢？ 退燒藥都用完了嗎？ "
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "看來是中了菇菇的毒，但是沒有藥啊。 這該怎麼辦呢…？ 啊！ 請你去找弗勒提。 他也許知道降高燒的方法！"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "動作快一點吧。 向弗勒提說明好睡小子的症狀，並且詢問有沒有降高燒的方法。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "天啊。 在這種時候，應該要幫上什麼忙得才是！ 孩子在不舒服，難道要假裝不知道嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "在這裡的生活怎麼樣呢？ 看來你過的不錯\\r\\n#L0##b那個並不重要！ 好睡小子突然發起了高燒…但是現在我們沒有藥…#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "鎮定點。 慢慢地說。\\r\\n#L0##b那，好睡小子在吃過菇菇粥後，就突然發起了高燒，身上還出現斑點。 但是我們沒有藥，所以才想問弗勒提是否有什麼藥可以來救救好睡小子的。#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "沒有其他的症狀嗎？ 像是想吐之類的…？\\r\\n#L0##b嗯…好像沒有聽說。#l\\n#k"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "請稍等我一下。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請動作快一點。 向弗勒提詢問降高燒的方法。"
+          }
+        }
+      }
+    }
+  }
+}

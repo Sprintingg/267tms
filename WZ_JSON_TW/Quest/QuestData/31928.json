@@ -1,0 +1,196 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[未來之門] 優質木材的來源"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b義安#k好像有什麼#r擔心的事情#k．．．你去問問看他有什麼事情吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b義安#k說原住民們的避難處#r太危險#k了。那是一個隨時都可能被怪物襲擊的危險地區，所以我想設立柵欄，但#r樹木的數量不夠#k。消滅#r變形木面怪人#k，並且取得 #b不吉利的巨大木板20個#k吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "幫#b義安#k取得#b不吉利的巨大木板20個#k了。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4000832:# #t4000832:# #c4000832# / 20\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "47"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "30251400"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2142109"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "185"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31965"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2142109"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000832"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "30251400"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000832"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這裡太危險了。還有比這更大的問題。#r周邊兇猛的怪物#k們不知道什麼時候會襲擊這裡。只能每天生活在恐懼之中。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "雖然想立起保護這裡的木頭柵欄，但也沒有足夠的力量和樹木。能幫幫忙嗎？如果可以消滅附近的#r變形木面怪人#k獲得#b不吉利的巨大木板#k的話，至少可以暫時守護這個地方。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝。我絕對不會忘記您為這個一無所有的地方所做出的承諾。如果能獲得#b不吉利的巨大木板20個#k的話，應該能守住這裡吧？"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "一點都不驚訝。又不是一天兩天這樣了。無論如何都要試試看！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "保護這個地方所需要的#b不吉利的巨大木板20個#k已經湊齊了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝…. 託您的福，這裡的人們可以安心生活了。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b20個不吉利的巨大木板#k還沒準備好嗎？\\r雖然我很清楚這是很為難的請求．．．因為我實在太不安了．．．"
+          }
+        }
+      }
+    }
+  }
+}

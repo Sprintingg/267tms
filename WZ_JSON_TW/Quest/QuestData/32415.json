@@ -1,0 +1,163 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[組隊任務] 挑戰今天的跨伺服器聯合組隊任務!"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "49"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "堅持執行一天可參加五次的世界統合組隊任務,並且全都過關的話,就會提供附加點數!怎麼可能.必須盡快完成5次任務,然後去找#p9076000#說話!"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#執行跨伺服器聯合組隊任務#R7906ExcountRef32415# / 5\\r\\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽說跨伺服器聯合組隊任務中有特別的追加優惠喔... 快和#p9076000#對話吧."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "哈哈哈!已認出誠實的我,並獲得追加點數!以後每天都能挑戰,這真是很棒的任務!"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "您好,#b#e#ho##n#k!你知道跨伺服器聯合組隊任務的執行限制次數為#r一天5次#k吧?執行5次之後就贈與獎勵.那你一定會進行,對吧?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "真是明智的想法!今天也加油喔!"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "反正如果你想執行跨伺服器聯合組隊任務,就會有獎勵等著你.要是改變心意,請隨時來找我!"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "quest": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你好像還沒完成5次跨伺服器聯合組隊任務耶?請完成5次之後再來和我對話."
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9076000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "70"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32414"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q32415s"
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "9076000"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q32415e"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "7906"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "5"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "進行整合世界組隊任務"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "count"
+          }
+        }
+      }
+    }
+  }
+}

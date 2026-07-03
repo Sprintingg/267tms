@@ -1,0 +1,160 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[와호장룡] 송달사형의 부탁 : 장작 패기"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "수련하기에 앞서 송달 사형이 자신이 담당한 장작패기를 도와달라고 한다."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "송달사형이 도장에서 사용하는 땔감이 필요하다고 한다. 근처에 있는 장작을 공격키로 때리면 땔감을 얻을 수 있다."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "송달사형에게 장작을 패서12개를 가져다 주었다."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4034678:# #t4034678:# #c4034678# / 12\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034678"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-12"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "노멀"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "흠.. 아직 12개까지는 모자라네."
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2091114"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q35042s"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201510150000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201510150000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "35037"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2091114"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q35042e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034678"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "12"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

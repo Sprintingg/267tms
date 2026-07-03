@@ -1,0 +1,155 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 特殊指令"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "沙影團的指令"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#m102000000#的#p1022002#說有事情要告訴我"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1022002#表示，那些可疑人物有事情要轉達給我，內容是...#b?前往#m200000000#去見#p2012019#吧！?#k。#p1022002#說，除此之外他自己也並無所知。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在#m200000000#見到了脖子上掛有一個小盒子#p2012019#。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我正好在等你呢！有個可疑人物叫我把紙條轉交給你。不過我卻不小心把紙條燒掉了… 但我還確實地記得內容，感興趣嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "紙條上這樣寫著。去找#b'#m200000000#的 #p2012019#。'#k 這就是全部內容了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "沒興趣的話，也沒有必要了解內容。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "2124"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "汪！汪！(開心地搖著尾巴)"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "紙條上面寫著...#b?前往#m200000000#去見#p2012019#吧！?'#k，就只有這些。"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我正在等你呢！那些可疑人士說有事情要轉達給你，留下了一個紙條給我，但因我一時不小心，紙條被火燒毀了！但其中的內容，我可是記得非常清楚！如何？想不想知道？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "紙條上面寫著...#b前往#m200000000#去見#p2012019#吧！?#k，就只有這些。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "若你不感興趣，那就不需要知道紙條上所寫的內容是什麼吧！"
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2012019"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "18"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "29"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2127"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    }
+  }
+}

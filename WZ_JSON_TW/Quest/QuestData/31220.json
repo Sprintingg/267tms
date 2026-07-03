@@ -1,0 +1,201 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[艾靈森林] 魔力的根源"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "39"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "在#m300010200#尋找到了拉爾斯。他正非常專心地在觀察石巨人的樣子。問他為什麼要這樣。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了拉爾斯，必須要找來#b#e石蟲的石塊100個#n#k。\n\n石蟲稀奇在#m300010100#,#m300010200#地區。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "為了拉爾斯，找來了石蟲的石塊100個。因為西恩的擔心，決定回到營地繼續做研究。\n我也要回亞泰爾營地。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000439:##t4000439:##c4000439#/100\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "309230"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2132002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "95"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31219"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2132002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000439"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "309230"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000439"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-100"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "一開始我本來以為只要在營地周遭看守這些石頭就行了，但是漸漸地我對這些石頭所充滿的生命根源卻越來越感到好奇…"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "因為太專注於#o5250001#了，都忘記要給西恩報平安了。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "卡奧。 你可以幫助我嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝。 請你替我找來那些石蟲的石塊。 只要研究石塊的話，也許就可以查到些什麼了。 那麼拜託你了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我需要你的幫助。 如果你改變心意的話，請再告訴我。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#t4000439# 100個找到了嗎？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "有這些的話，應該就足夠了。 不用擔心。 現在我要帶著這些回去亞泰爾營地裡研究了。 西恩應該很擔心，我想我也該回去了。 謝謝你，卡奧。 你也快回去亞泰爾營地吧。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#t4000439# 100個還沒有找到嗎？ 那些石快到底是怎麼獲得生命的呢…"
+          }
+        }
+      }
+    }
+  }
+}

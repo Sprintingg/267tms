@@ -1,0 +1,244 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[夜光] 第八本童話書的蹤跡 3"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "12"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "現在可以聽第八本童話書的故事了嗎？ 去找圖書館員懷玆吧！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "圖書館員懷玆說在扭曲的兩個故事之間發現了某個共同點。可是要完成調查還有不足的部分，為此要從虎傑那裡取得#b50張老虎皮#k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把50張老虎皮交給圖書館員懷玆。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000171:# #t4000171:# #c4000171# / 50\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "155000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2040052"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "56"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "25612"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2710"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2711"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2712"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2040052"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000171"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "155000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000171"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "這樣把搗米棒與老虎腳印放在一起看，就比較確定吧。\\r\\n#L0##b有關於第八個童話書的線索嗎？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "因時間裂縫各自扭曲的兩個故事中好像看到了共同的內容。但是就兩個還是不夠。可以從虎傑那，收集虎皮給我嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這次還是 #b50張#k就足夠了。那麼拜託你了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這次應該是最後一次，請再考慮一下吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "你來了。不知你何時會來，所以就一直等你了。拿到虎皮嗎？\\r\\n#L0##b嗯，在這裡。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "現在來看看我的想法對不對吧。請稍候。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "果然，三個故事中的核心是隱惡揚善。第八個童話書幾乎都找到了。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "虎傑是跟他的身形一樣很可怕的傢伙，所以應該不好對付的。"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "플레임 스윕 VI 2141000"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "6thFlameSweep"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "3"
+            },
+            "socketName": {
+              "_dirType": "string",
+              "_value": "None"
+            }
+          }
+        }
+      },
+      "effect2": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            },
+            "socketName": {
+              "_dirType": "string",
+              "_value": "None"
+            }
+          }
+        }
+      },
+      "effect3": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            },
+            "socketName": {
+              "_dirType": "string",
+              "_value": "None"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "2141000"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "150+100*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "3"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "4"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -540,
+          "_y": -220
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 10,
+          "_y": 35
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "50"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "randomHitOrigin": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "onlyOnce": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "2141000"
+      },
+      "targetBuffID": {
+        "_dirType": "int",
+        "_value": "500"
+      },
+      "eventTags": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "RLGame.Effect.Burn"
+        }
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "150+100*x"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "3"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "4"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -485,
+      "_y": -180
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 10,
+      "_y": 20
+    },
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "cooltime": {
+      "_dirType": "int",
+      "_value": "20"
+    },
+    "Tags": {
+      "_dirType": "sub",
+      "onlyOnConvex": {
+        "_dirType": "sub"
+      }
+    },
+    "debuff": {
+      "_dirType": "string",
+      "_value": "x"
+    }
+  },
+  "SkillTags": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "string",
+      "_value": "RLGame.Skill.Extra"
+    }
+  }
+}

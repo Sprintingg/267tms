@@ -1,0 +1,297 @@
+{
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "AnimReference": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "sub",
+              "action": {
+                "_dirType": "string",
+                "_value": "shootF"
+              },
+              "frameIdx": {
+                "_dirType": "int",
+                "_value": "0"
+              }
+            }
+          },
+          "StartPos": {
+            "_dirType": "int",
+            "_value": "0"
+          },
+          "EndPos": {
+            "_dirType": "int",
+            "_value": "60"
+          }
+        },
+        "Segment1": {
+          "_dirType": "sub",
+          "AnimReference": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "sub",
+              "action": {
+                "_dirType": "string",
+                "_value": "shootF"
+              },
+              "frameIdx": {
+                "_dirType": "int",
+                "_value": "1"
+              }
+            }
+          },
+          "StartPos": {
+            "_dirType": "int",
+            "_value": "60"
+          },
+          "EndPos": {
+            "_dirType": "int",
+            "_value": "2460"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "EnterAimMode": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "info": {
+            "_dirType": "string",
+            "_value": "class 신규 제작 (MousecursorAim 등)\r\n\r\n지속시간 데이터 지정 (약 2초)\r\n발생시킬 공격이펙트 데이터 지정 (attack 이벤트)"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          }
+        }
+      },
+      "effect1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          }
+        }
+      },
+      "effect2": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-2"
+            },
+            "12": {
+              "_dirType": "uol",
+              "_value": "5"
+            },
+            "13": {
+              "_dirType": "uol",
+              "_value": "6"
+            },
+            "14": {
+              "_dirType": "uol",
+              "_value": "7"
+            },
+            "15": {
+              "_dirType": "uol",
+              "_value": "8"
+            },
+            "16": {
+              "_dirType": "uol",
+              "_value": "9"
+            },
+            "17": {
+              "_dirType": "uol",
+              "_value": "10"
+            },
+            "18": {
+              "_dirType": "uol",
+              "_value": "11"
+            },
+            "19": {
+              "_dirType": "uol",
+              "_value": "5"
+            },
+            "20": {
+              "_dirType": "uol",
+              "_value": "6"
+            },
+            "21": {
+              "_dirType": "uol",
+              "_value": "7"
+            },
+            "22": {
+              "_dirType": "uol",
+              "_value": "8"
+            },
+            "23": {
+              "_dirType": "uol",
+              "_value": "9"
+            },
+            "24": {
+              "_dirType": "uol",
+              "_value": "10"
+            },
+            "25": {
+              "_dirType": "uol",
+              "_value": "11"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_PlaySound"
+          },
+          "SoundPath": {
+            "_dirType": "string",
+            "_value": "Sound/Redmoon.img/Skill/322/Use"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "attack": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "250"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "6"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "12"
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "50"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -160,
+          "_y": -160
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 160,
+          "_y": 160
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "randomHit": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "0": {
+          "_dirType": "sub"
+        }
+      },
+      "hitSoundPath": {
+        "_dirType": "string",
+        "_value": "Sound/Redmoon.img/Skill/322/Hit"
+      },
+      "effect": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "420"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "12"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "6"
+    },
+    "iconRaw": {
+      "_dirType": "uol",
+      "_value": "icon"
+    },
+    "cooltime": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -1200,
+      "_y": -800
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 1200,
+      "_y": 800
+    }
+  },
+  "SkillTags": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "string",
+      "_value": "RLGame.Skill.Basic"
+    }
+  },
+  "!class": {
+    "_dirType": "string",
+    "_value": "WZ2RLSkill_Click"
+  },
+  "cursorUOL": {
+    "_dirType": "string",
+    "_value": "Skill/Roguelike/Skill/Redmoon/322.img/Anim/Notifies/EnterAimMode/Notify/Effect"
+  },
+  "OnClickEventName": {
+    "_dirType": "string",
+    "_value": "attack"
+  }
+}

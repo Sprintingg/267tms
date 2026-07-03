@@ -1,0 +1,207 @@
+{
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2071000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "3611"
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "20300"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "看來你是從外地來的年輕人啊。別看我這麼一把年紀，看人的眼光還是有的，我看你好像滿強的嘛.可以聽聽我說的話嗎？聽說不久前，赫爾奧斯塔圖書館發生了大問題。雖然不清楚是怎麼回事，那個時候從童話書中逃出來的鬼怪們藏在村子後面的烏山裡了。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "自從鬼怪們逃進烏山之後，烏山裡一直持續著黑夜，大概是鬼怪們弄出來的。統領烏山鬼怪的是三隻鬼怪王，唯有消滅這些鬼怪，烏山才會恢復以前的樣子。怎麼樣，你可以完成這個事情嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "看來我看人的眼光還是很準的嘛，我就知道你會答應我的請求的。消滅那些鬼怪可不是一件容易的事情，那些鬼怪藏的很隱密，從來不會讓人們發現。想要把它們引出來，就需要用它們喜歡的誘餌。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "聽說這些鬼怪們喜歡#b#t2022050##k、#b#t2022051#和#t2022052##k，這些東西應該可以透過村民們拿到。等搜集齊全後再來找我吧！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "看來我老了，我還以為你會對這件事情有所關心，是我看錯了人啦。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "都找來了，你還真不簡單。我們村子裡的人們本來對外地來的人是不太願意協助的，看來你確實是有些特殊的地方。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "想要獲得那些食物是不是不那麼容易？我們村子裡的人們對外地來的人不太願意提供協助，你可以先給他們提供一些幫助，那麼他們也就會幫助你的。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2071000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2071000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2022050"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2022051"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2022052"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[童話村] 消滅鬼怪的準備"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "烏山鬼怪"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽說童話村的地主朴大爺有件事情想要委託…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "童話村的朴大爺請求我消滅村莊後山上的鬼怪。在烏山出現的鬼怪是從鬼怪故事書裡逃出來的，藏身在山中的一所凶宅裡。若想讓藏的很隱密的鬼怪們現出原形，就需要有鬼怪喜歡的三種誘餌。要在村莊找出#b#t2022050#,#t2022051#,#t2022052##k，再回去找朴大爺。\\n\\n#t2022050##b#c2022050##k/1\\n#t2022051##b#c2022051##k/1\\n#t2022052##b#c2022052##k/1"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "受朴大爺之託要消滅童話村後山出現的從鬼怪故事書中逃出來的鬼怪們，朴大爺告訴我為了引出隱藏起來的鬼怪，需要準備它們喜歡的蕎麥蒟蒻、豬肉串、穀茶。這三樣東西可以從興夫、七南、小荳那裡獲得。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "40"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "20300"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

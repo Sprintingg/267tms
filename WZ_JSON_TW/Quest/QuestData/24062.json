@@ -1,0 +1,392 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[精靈之王，精靈遊俠] 菲利屋司的呼喚"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "8"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "突然聽到叫我的聲音，像似歌唱般的低沉又柔和的聲音，難道是， #p1033100#？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "因為黑魔法師的詛咒而被囚禁在冰裡的#b#p1033100##k甦醒過來的樣子，回到#b#m101050000##k並和#p1033100#見面看看，和他對話應該可以更加瞭解現在的情況。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "請說明有關現在狀況，#p1033100#說確定是因為黑魔法師的詛咒而使得其他精靈沒有甦醒。 \r\n\r但是只有國王的我甦醒應該是因為某種特別原因，而解開了黑魔法師的詛咒，因為我變強後而和我連結的長老， #p1033100#似乎也因為找回力量而覺醒…"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "4"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1033100"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "25"
+      },
+      "notInTeleportItemLimitedField": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "24051"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2300"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2310"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2311"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2312"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2313"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "2314"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1033100"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "101050000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "……\\r\\n#L0##b(…好像有人在呼喊…)#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "…精靈遊俠…\\r\\n#L0##b(很熟悉的聲音…)#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "精靈遊俠…！\\r\\n#L0##b(這聲音是…)\\n…？！ #p1033100#！？#l\\n#k"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "你在哪裡，精靈遊俠？ 為什麼不在休息處呢？ \\r\\n#L0##b#p1033100#！? 這怎麼回事？ 解開詛咒了嗎？#l\\n#k"
+      },
+      "4": {
+        "_dirType": "string",
+        "_value": "無法確切的知道。 只有我解除詛咒其他人都還關在寒冰裡。 可是王去了哪裡呢？ 怎麼不在休息處…\\r\\n#L0##b關於這些說明有點一言難盡。 你等著。 我會往村莊去！#l\\n#k"
+      },
+      "5": {
+        "_dirType": "string",
+        "_value": "…！對，好像有緊急的事情要說。趕快回來吧。我會等著您。\\r\\n#b#e(接收時會移動到精靈之林)#n#k"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "3": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "4": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "王！ 原來你平安無事… 還好臉色看起來不錯。 哈… 現在稍微安心了…\\r\\n#L0##b你看起來很疲憊。 還好嗎？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "是。 可能是因詛咒身體感覺很疲累但確定沒有問題。 現在最掛心的還是村裡的狀況… 除了王和我之外都被關進寒冰裡面了…\\r\\n#L0##b好像是這樣… 聽說你已經甦醒了所以還以為其他人也會醒來… 難道是黑魔法師的詛咒還沒有消失的嗎？#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "我以為在我們村莊設下的魔法是黑魔法師詛咒完全消失的時候就能醒過來… 我也不明白是怎麼回事。 王，你可以說明這段時間的經過嗎？ 我會洗耳恭聽。\\r\\n#L0##b(說明他在不久前醒過來，醒過來才發現已流失了數百年的歲月，其他人還依舊關在寒冰裡，等級變的不可理瑜的低，以及為了恢復可以解除詛咒的力量正在修煉中。)#l\\n#k"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "原來如此… 這段時間非常辛苦你了… 王單獨面對也很辛苦了…\\r\\n#L0##b不，這點還說不上辛苦。 這是我該做的事。 關於目前的狀況 #p1033100# 你有知道什麼嗎？#l\\n#k"
+      },
+      "4": {
+        "_dirType": "string",
+        "_value": "…根據我的判斷確定的是黑魔法師的詛咒仍然影響到我們精靈。 但是因不明原因 #b詛咒產生了裂縫#k而王也因此醒了過來。 還殘留著詛咒。\\r\\n#L0##b那麼 #p1033100# 你也是？#l\\n#k"
+      },
+      "5": {
+        "_dirType": "string",
+        "_value": "我能醒來可能是因為王的關係。 任何堅固的牆壁也會因著小洞而倒榻。 就是在黑魔法師詛咒的牆上出現了王的龜裂… 王透過修煉逐漸增強力量時此龜裂就逐漸擴大結果就影響到我了。\\r\\n#L0##b這話是說…#l\\n#k"
+      },
+      "6": {
+        "_dirType": "string",
+        "_value": "三位長老中擁有最強力量的就是那，#p1033100#… 所以透過王製造的龜裂最先醒來了不是嗎。 王遲早培養更強的力量時其他長老也…\\r\\n#L0##b可能會醒來嗎？#l\\n#k"
+      },
+      "7": {
+        "_dirType": "string",
+        "_value": "還不只是這樣。#b王的力量增長就是我們精靈全體的力量增長#k。 如果王能夠完全恢復過去的力量那甚至連最小的孩童都能打破詛咒回到原來的面貌。\\r\\n#L0##b原來如此！ 那麼我要繼續不停的修煉了！ #p1033100#，你也要一起去嗎？#l\\n#k"
+      },
+      "8": {
+        "_dirType": "string",
+        "_value": "不。 雖然沒有王那麼多但我也失去了過去的力量… 最好就在這裡繼續修煉恢復原有的力量吧。 因為也需要有人在這裡守著看到其他長老或百姓醒過來。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "己睜開眼睛看到這情況時一定有嚇一跳但你應付的非常得體，王。 年輕不成熟的你何時已消失現已蛻變成真正優秀的王了…"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "很快其他長老也會睜開眼睛。 我們一起守候吧。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "3": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "4": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "5": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "6": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "7": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "4221017 크루얼 스탭"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "cruelStab"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "4221017"
+          }
+        }
+      },
+      "effect1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            },
+            "socketName": {
+              "_dirType": "string",
+              "_value": "None"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "230+60*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "6"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "8"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -440,
+          "_y": -175
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 40,
+          "_y": 70
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "300"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "useZ": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "z": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "randomHitOrigin": {
+            "_dirType": "int",
+            "_value": "25"
+          }
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "4221017"
+      },
+      "buffID": {
+        "_dirType": "int",
+        "_value": "41100000"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "iconRaw": {
+      "_dirType": "uol",
+      "_value": "icon"
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "230+60*x"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "6"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "8"
+    },
+    "cooltime": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "stunDuration": {
+      "_dirType": "string",
+      "_value": "2+d(x/5)"
+    },
+    "time": {
+      "_dirType": "string",
+      "_value": "10"
+    },
+    "x": {
+      "_dirType": "string",
+      "_value": "5*x"
+    }
+  }
+}

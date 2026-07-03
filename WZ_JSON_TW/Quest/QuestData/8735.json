@@ -1,0 +1,411 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 生態復原"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "因環境破壞與過度開發，沼澤地的面積逐漸縮小。失去生存環境的鱷魚群便時常出現在村莊。不曉得是否有方法可以讓鱷魚群重新回到沼澤地呢？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "首先，需要瓦解那些想要讓沼澤地消失的人的陰謀！請你向溫斯頓領取研究報告書。另外為了感善水質，請你蒐集神祕的純淨之水。\\n\\n#i4032351##t4032351##b#c4032351#/1#k\\n#i4032352##t4032352##b#c4032352#/1#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "鱷魚王表示感謝，願意與勇士同行！"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032351"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032666"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1902019"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "period": {
+            "_dirType": "int",
+            "_value": "86400"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "糟糕…擔心死了~你有聽到消息嗎？聽說村莊出現了鱷魚群！為了讓鱷魚重新回到沼澤地，務必請你幫忙。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你願意幫忙喔？真是太感謝你了。考慮到冒險家們的安危，還是把鱷魚送回沼澤地會比較安全吧！可是鱷魚之所以離開沼澤地的原因，據說就是因為人類！為了阻止無謂的開發，並須先從東部岩山的#p1022006#取得#b#t4032351##k後拿給相關單位。此外為了改善周圍因廢水所造成的汙染，需要利用神祕的水質淨化劑─#b#t4032352##k，只要前往艾納斯島王冠之地附近就可以獲得。但是…裡面有一種叫乾淨雪吉拉的傢伙，守護著#b#t4032352##k長達4千年之久，因此你必須先購買#b#t1072385##k，避免留下腳印。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你在忙啊？那沒辦法了…可是這些鱷魚該怎麼辦才好呢？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你回來啦！哇！這不就是生態研究書嗎？而且還有純淨之水…這麼一來就可以讓鱷魚們回到自已的故鄉了！鱷魚的首長鱷魚王為了報答你的恩惠，他說願意與你隨行伴你身邊，只要接受沼地精靈的允許，鱷魚王就會跟隨你。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請你去見沼地精靈吧！看來他對造成污染的人類感到憤怒…"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "quest": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "為了保護沼澤地，必須要有生態報告書1個和純淨之水5個，缺一不可喔！"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330090"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "69"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201004071200"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201005121200"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201004071200"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201005121200"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1902019"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "86400"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "0"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "100"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "110"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "120"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "130"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "111"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "121"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "131"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "112"
+        },
+        "9": {
+          "_dirType": "int",
+          "_value": "122"
+        },
+        "10": {
+          "_dirType": "int",
+          "_value": "132"
+        },
+        "11": {
+          "_dirType": "int",
+          "_value": "200"
+        },
+        "12": {
+          "_dirType": "int",
+          "_value": "210"
+        },
+        "13": {
+          "_dirType": "int",
+          "_value": "220"
+        },
+        "14": {
+          "_dirType": "int",
+          "_value": "230"
+        },
+        "15": {
+          "_dirType": "int",
+          "_value": "211"
+        },
+        "16": {
+          "_dirType": "int",
+          "_value": "221"
+        },
+        "17": {
+          "_dirType": "int",
+          "_value": "231"
+        },
+        "18": {
+          "_dirType": "int",
+          "_value": "212"
+        },
+        "19": {
+          "_dirType": "int",
+          "_value": "222"
+        },
+        "20": {
+          "_dirType": "int",
+          "_value": "232"
+        },
+        "21": {
+          "_dirType": "int",
+          "_value": "300"
+        },
+        "22": {
+          "_dirType": "int",
+          "_value": "310"
+        },
+        "23": {
+          "_dirType": "int",
+          "_value": "320"
+        },
+        "24": {
+          "_dirType": "int",
+          "_value": "311"
+        },
+        "25": {
+          "_dirType": "int",
+          "_value": "321"
+        },
+        "26": {
+          "_dirType": "int",
+          "_value": "312"
+        },
+        "27": {
+          "_dirType": "int",
+          "_value": "322"
+        },
+        "28": {
+          "_dirType": "int",
+          "_value": "400"
+        },
+        "29": {
+          "_dirType": "int",
+          "_value": "410"
+        },
+        "30": {
+          "_dirType": "int",
+          "_value": "420"
+        },
+        "31": {
+          "_dirType": "int",
+          "_value": "411"
+        },
+        "32": {
+          "_dirType": "int",
+          "_value": "421"
+        },
+        "33": {
+          "_dirType": "int",
+          "_value": "412"
+        },
+        "34": {
+          "_dirType": "int",
+          "_value": "422"
+        },
+        "35": {
+          "_dirType": "int",
+          "_value": "500"
+        },
+        "36": {
+          "_dirType": "int",
+          "_value": "510"
+        },
+        "37": {
+          "_dirType": "int",
+          "_value": "520"
+        },
+        "38": {
+          "_dirType": "int",
+          "_value": "511"
+        },
+        "39": {
+          "_dirType": "int",
+          "_value": "521"
+        },
+        "40": {
+          "_dirType": "int",
+          "_value": "512"
+        },
+        "41": {
+          "_dirType": "int",
+          "_value": "522"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330090"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032351"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032666"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

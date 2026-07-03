@@ -1,0 +1,167 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[幻影俠盜] 時尚移動方法"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "9"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "看到製作委託書後非常緊張的#p2111008#…怎麼回事？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2111008#緊張的理由是，製作敞篷車的時候弄壞了最重要的鋰發動機。用製作費購買的精製的鋰，是用#p2111008#的工錢買不到的非常昂貴的東西…哈啊，沒辦法。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "給#p2111008#付了1000萬楓幣後拿到了敞篷車。雖然多花了錢，沒關係。很漂亮吧？"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2111008"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "25301"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2400"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2410"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2411"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2412"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2413"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "2414"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2111008"
+      },
+      "endmeso": {
+        "_dirType": "int",
+        "_value": "10000000"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q25302e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這，該怎麼說呢。要完成敞篷車還要再等待一段時間？什，什麼？本來就要花這麼久時間嗎？這，這個…有可能這樣也可能不是，所以其實是…"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "抱，抱歉！利用提供的製作費用購買精煉的鋰製作引擎時不小心失敗了呀？本來是很有自信一次成功但是不小心就…"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "你，你也知道…精煉的鋰本來價格就很貴…其他部分都做好了只有精煉的鋰無法重新取得所以就…真的很抱歉！"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "本來想利用我存的薪水購買精煉的鋰但是它的價格不斷上漲我實在無法購買…很，很抱歉。這個…可以的話…可否再提供一點製作費用…"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝！你真的很行！精煉的鋰的價格大約是1000萬楓幣。可以在#m261000000#直接購買所以你拿楓幣來之前我先保管！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "呵！抱，抱歉。真的很抱歉。可是沒有什麼方法嗎？如果被卡森發現不只薪水連研究費都要被扣押了…嗚嗚。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "啊，還沒有帶1000萬楓幣來嗎？已經訂購了精煉的鋰…那，怎麼辦呢？如果不趕快付楓幣就用還回去了…"
+          }
+        }
+      }
+    }
+  }
+}

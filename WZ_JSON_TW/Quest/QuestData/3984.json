@@ -1,0 +1,208 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "熟悉希拉的人"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "51"
+    },
+    "medalCategory": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "viewMedalItem": {
+      "_dirType": "int",
+      "_value": "1142396"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "在尋找#r困難希拉#k #b擊殺50次#k後，針對希拉非常熟悉的達人英雄。#b#h0##k，想不想成為這樣一名英雄？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在尋找#r困難希拉#k #b擊殺50次#k後，針對希拉非常熟悉的達人英雄。#b#h0##k，想不想成為這樣一名英雄？"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#r困難希拉#k已擊殺50次。請試著挑戰第51次。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1142396"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2183001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "120"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2183001"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "3990"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "50"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "count"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "setEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "qrID": {
+            "_dirType": "int",
+            "_value": "3990"
+          },
+          "key": {
+            "_dirType": "string",
+            "_value": "count"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "0"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1142396"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "很多有關希拉的資訊，都是陌生的。不過如果是有耐性的#b#h0##k，應該能查到很多希拉的事情。要不要成為非常瞭解希拉的楓之谷英雄？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b#h0##k去擊敗#r困難希拉#k #b50次#k後，再回來找我吧。我會交給#b#h0##k證明楓之谷世界上真正有骨氣的英雄標誌。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "啊… 看來要遇到一個有耐性的勇士不是件容易的事情啊。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "辛苦了。#b#h0##k真是有耐性的人啊。\\n阿斯旺的所有居民都在稱讚 #b#h0##k的努力和耐力。謝謝你。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "現在還剩不多。要加油！！"
+          }
+        }
+      }
+    }
+  }
+}

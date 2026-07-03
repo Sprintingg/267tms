@@ -1,0 +1,252 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 카산드라의 새해운세보기"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "경인년을 맞이해 새해운세를 봐주고 있는, 카산드라를 찾아가 보자."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "카산드라가 사람들의 운세를 봐줄 수 있도록 운세종이를 모아다 주자."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "카산드라는 하루에 한번 찾아와 도와 달라고 했다."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4032614:# #t4032614:# #c4032614# / 10\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010010"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201003010000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010010"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032614"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032614"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2430036"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "prop": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "period": {
+            "_dirType": "int",
+            "_value": "1440"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2430037"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "prop": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "period": {
+            "_dirType": "int",
+            "_value": "1440"
+          }
+        },
+        "3": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2430038"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "prop": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "period": {
+            "_dirType": "int",
+            "_value": "1440"
+          }
+        },
+        "4": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2001505"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "prop": {
+            "_dirType": "int",
+            "_value": "3"
+          }
+        },
+        "5": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2001504"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "prop": {
+            "_dirType": "int",
+            "_value": "4"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "보인다 보여~ 올해 #b#h0##k. 너의 운세가 보여… 너도 네 운세가 궁금하지?\\r\\n#L0##b아니요, 저는 그런걸 별로 믿는 편이 아니라서요..#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "그래? 그렇다면 뭐.,, 네 운세는 됐고, 다른 사람들 운세를 봐줄 수 있게 좀 도와주지 않을래? 물론 새해인 만큼 보답은 심심치 않게 해주겠어!"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "그래. 내가 사람들의 운세를 봐줄 수 있게. #b2010년 운세 종이#k를 모아와 줘. 아마 몬스터들에게서 쉽게 얻을 수 있을거야.\r\n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "아무 때나 이 카산드라님을 도울 수 있는 기회가 주어지는 것은 아니라고!"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "운세종이를 제대로 모아온거야? 그렇다면 나도 약속을 확실히 지키겠어."
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "당분간은 #b하루에 한번#k 나를 찾아와 운세종이 모으는 것을 도와줘. 연초에는 손님들이 아주 많으니까 말이야."
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "내가 사람들의 운세를 봐줄 수 있게. 2010년 운세 종이 10개를 모아와. 아마 몬스터들에게서 쉽게 얻을 수 있을껄?"
+          }
+        }
+      }
+    }
+  }
+}

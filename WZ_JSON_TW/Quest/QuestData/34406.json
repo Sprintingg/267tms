@@ -1,0 +1,210 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[星光之塔] 需要喇叭線"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "211"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4036019:# #t4036019:# #c4036019# / 5\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#r露比#k似乎默默地想要演奏下一首歌曲，不過奇怪了耶？沒聲音，究竟是出了什麼問題。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#r露比#k在公演前因為#b#t4036019:##k斷了，所以覺得很困擾。選角前先幫忙順利完成表演吧。#b#i4036019:# #t4036019:##k #b5個#k應該就夠了。#t4036019:#可向#r地下1樓電子賣場#k的#r#o4310002##k取得。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "表演開始前露比的#b#i4036019:# #t4036019:##k卻突然斷掉，因此我幫他解決了困難。"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "3098601"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "145"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052207"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34405"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052207"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036019"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "3098601"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036019"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "標準"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哎呀，糟了！#b#t4036019:##k竟然斷了！還有歌曲還沒表演耶…"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "喂，可以挪出一點時間給我嗎？你能幫我收集#b#t4036019:##k#b5個#k嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "果然！我就知道你會幫我！#b#i4036019:# #t4036019:##k可在#r地下一樓電器商場#k取得。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "哼，真的嗎？#b#i4036019:# 沒有#t4036019:##k應該就沒有辦法繼續聽見音樂了吧…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嘻嘻，已經取得#b#t4036019:##k #b5個#k了！好，現在連接音響吧？"
+      },
+      "yesEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#b(露比拿了#t4036019:#嘗試連接看看。)#k"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "啊，哇，有聲音了耶！好險，這樣就可以順利進行剩下的表演內容了！真的很謝謝你！"
+          }
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "喂，可以挪出一點時間給我嗎？你能幫我收集#b#t4036019:##k #b5個#k嗎？#b#i4036019:# #t4036019:##k只要去#r地下1樓電子賣場#k就能取得。"
+          }
+        }
+      }
+    }
+  }
+}

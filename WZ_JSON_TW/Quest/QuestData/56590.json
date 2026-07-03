@@ -1,0 +1,149 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[天龍地虎]問候師兄們"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "大師兄說他在道場入口處等我。通過武陵村的XX派道場門，移動到道場吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "大師兄讓我在虎嘯九天派道場四處轉轉，順便和其他師兄們打招呼，最後去問候下師傅。（位置：三師兄：岩石峽谷修練場，二師兄：竹林修練場）"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "四處觀察虎嘯九天派道場的同時，與師傅與其他師兄打了招呼。大家似乎都很隨和。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "117"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你從這裡前往右邊和左邊的修練場，應該都能看到我們門派的成員。他們都是你的前輩，你去跟他們打個招呼吧。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9310428"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q56590s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "56589"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9310428"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q56590e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npcSpeech": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9310422"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q56590_midNPC1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9310423"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q56590_midNPC2"
+          }
+        }
+      }
+    }
+  }
+}

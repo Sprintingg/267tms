@@ -1,0 +1,177 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[職業] 父親的修煉指示"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "雖然不知父親去了哪裡，但是留下了監視修煉的耶願。切。我自己也可以做的很好…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在初級修煉場，整頓#r#o9410153##k15隻就可以了吧。這有啥困難？"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "耶願說是父親提前送的生日禮物便交出洪武團的衣服。！！我現在也是正式的洪武團了！"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "52400"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "主人！父親說要嚴格地監督主人的訓練！"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "收到團長的命令，已經在初級訓練場裡準備好#r#o9410153#15隻#k了。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "不需要說太多，首先先前往初級訓練場，去接受訓練吧。"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "你的表情為什麼那麼難看？看來你是不想要受到父親的認可啊？快點，動作快！快點，請盡快加入訓練！"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "很好！那麼快點前往初級訓練場吧！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嘿…你，不，是我…既沒有耶願，父親也不在，就可以這樣怠惰訓練了嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "好像還沒有結束耶？！為什麼這樣！到底是為什麼！"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330206"
+      },
+      "subJobFlags": {
+        "_dirType": "int",
+        "_value": "1024"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "52401"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "0"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330206"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q52400e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9410153"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "15"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

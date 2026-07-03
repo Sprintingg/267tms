@@ -1,0 +1,210 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 打倒危險的黑鱷魚"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "後街的吉姆有委託的事情。 為了舒緩沼澤地帶的通行，所以要消滅黑鱷魚。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "打倒棲息在#m103030200#的黑鱷魚."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "打倒了棲息在#m103030200#的黑鱷魚."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4000033:# #t4000033:# #c4000033# / 80\r\n#questorder1##o5130103# #a28811#\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "25505"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "45"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2870"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000033"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "80"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "5130103"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "150"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "25505"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000033"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-80"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "正常"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這件事情是達克魯委託的. 因為沼澤鱷魚越來越多好像有很多移動上困難的話. 打倒棲息在#m103030200#的黑鱷魚作為證據收集皮革. 會做吧?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好的，快抓緊處理吧。 我一定要讓人們知道我比內拉強。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "像你這樣挑三揀四的可不行，嘖嘖。 考慮好之後再來找我。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "黑鱷魚都打倒了嗎?"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好，辛苦你了。 稍等一下再來找我吧。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有打倒黑鱷魚嗎? 住民們經過沼澤非常不方便. 快點處理. 還有作為證據帶回黑鱷魚的皮革就可以了."
+          }
+        }
+      }
+    }
+  }
+}

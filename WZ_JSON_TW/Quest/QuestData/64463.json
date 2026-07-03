@@ -1,0 +1,171 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[春節任務] 傳遞隱月的影像信件"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "disableAtCompleteTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "再跟隱月對話接收完成的影像信件吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "信件的收件人是格蘭蒂斯咪烏咪烏行星，尖耳狐狸村的 #b小蘭#k \r\n目前為止傳遞的任務中，是最遠的傳遞任務。前往咪烏咪烏行星的最快方法似乎是#b在萬神殿的卡塔利溫說是蒙的委託#k的樣子。\r\n卡塔利溫是#b角像手把的超新星種族#k，再記住一下吧！"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把信件傳遞給了尖耳狐狸村的 #b小蘭#k。\r\n小蘭似乎覺得這封信件是傳錯的信件。隱月為什麼要寄信給不知道的人呢？是怎麼認識小蘭的啊？"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4036489:# #t4036489:# #c4036489# / 1\r\n#questorder1##r#p3000000##k進行對話"
+    },
+    "deleteItem": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "int",
+        "_value": "4036489"
+      }
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400824"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "64462"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q64463s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "61"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201902080000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201902090000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400838"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036489"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q64463e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npcSpeech": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3000000"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q64463p"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "信件請麻煩傳遞到 #b尖耳狐狸村的小蘭#k。\\r\\n在格蘭蒂斯的#b萬神殿的卡塔利溫#k說是蒙的委託的話，應該就會幫你送到尖耳狐狸村。\\r\\n"
+          }
+        }
+      }
+    }
+  }
+}

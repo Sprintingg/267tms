@@ -1,0 +1,292 @@
+{
+  "info": {
+    "_dirType": "string",
+    "_value": "메기도 플레임 2121052"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "HY212megiddoFlame"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          }
+        }
+      },
+      "effect2": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "2121052"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Projectile"
+      },
+      "onProjectileDestroy": {
+        "_dirType": "string",
+        "_value": "AttackByProjectile"
+      },
+      "onProjectileExpired": {
+        "_dirType": "string",
+        "_value": "AttackByProjectile"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "time": {
+          "_dirType": "string",
+          "_value": "3"
+        },
+        "emitAngle": {
+          "_dirType": "string",
+          "_value": "-55+i*-35"
+        },
+        "emitSpeed": {
+          "_dirType": "string",
+          "_value": "600"
+        },
+        "emitCount": {
+          "_dirType": "string",
+          "_value": "4"
+        },
+        "maxSpeed": {
+          "_dirType": "string",
+          "_value": "600"
+        },
+        "destroyHitCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "hitIntervalPerTarget": {
+          "_dirType": "long",
+          "_value": "1000"
+        },
+        "boundLT.X": {
+          "_dirType": "string",
+          "_value": "-40"
+        },
+        "boundRB.X": {
+          "_dirType": "string",
+          "_value": "40"
+        },
+        "boundLT.Y": {
+          "_dirType": "string",
+          "_value": "-10"
+        },
+        "boundRB.Y": {
+          "_dirType": "string",
+          "_value": "0"
+        },
+        "emitPosRadius": {
+          "_dirType": "string",
+          "_value": "10"
+        },
+        "emitPosAngle": {
+          "_dirType": "string",
+          "_value": "-55+i*-35"
+        },
+        "chaseAccel": {
+          "_dirType": "string",
+          "_value": "3000"
+        },
+        "chaseTargetType": {
+          "_dirType": "string",
+          "_value": "DragToTarget"
+        },
+        "emitPos.X": {
+          "_dirType": "string",
+          "_value": "50"
+        },
+        "emitPos.Y": {
+          "_dirType": "string",
+          "_value": "-250"
+        },
+        "persistAccel.X": {
+          "_dirType": "string",
+          "_value": "dir*10"
+        },
+        "searchBoundLT.X": {
+          "_dirType": "string",
+          "_value": "-400"
+        },
+        "searchBoundLT.Y": {
+          "_dirType": "string",
+          "_value": "-300"
+        },
+        "searchBoundRB.X": {
+          "_dirType": "string",
+          "_value": "200"
+        },
+        "searchBoundRB.Y": {
+          "_dirType": "string",
+          "_value": "0"
+        }
+      },
+      "ball": {
+        "_dirType": "sub"
+      }
+    },
+    "AttackByProjectile": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "30+30*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "3"
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "50"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -50,
+          "_y": -50
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 50,
+          "_y": 50
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "6"
+        },
+        "buffLevel": {
+          "_dirType": "string",
+          "_value": "1"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "useZ": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "randomHitOrigin": {
+            "_dirType": "int",
+            "_value": "15"
+          },
+          "z": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "randomHitAngle": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "2121052"
+      },
+      "targetBuffID": {
+        "_dirType": "string",
+        "_value": "500"
+      },
+      "eventTags": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "RLGame.Effect.Burn"
+        }
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "30+30*x"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "3"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "6"
+    },
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "cooltime": {
+      "_dirType": "int",
+      "_value": "10"
+    }
+  },
+  "SkillTags": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "string",
+      "_value": "RLGame.Skill.Extra"
+    }
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2081007"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8150300"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "18"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8150301"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "18"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8150302"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "18"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2081007"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "130"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2081007"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "754021"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "來到這裡途中應該有看到翼龍吧？他們的數量現在一直持續的增加中，這些翼龍在龍族裡，也算是相當殘暴的一族。他們原本是居住在北邊的沼澤地帶，後來與闇黑龍王勾結開始向這邊進攻，這個龍之峽谷原本是幼年龍居住的地方，而現在卻被翼龍們佔據…"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "因為翼龍佔據了前往龍之巢穴的路口，有許多勇士都在此喪命。我想可以平安抵達這裡的你，應該可以打倒翼龍並減少他們的數量。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請你打倒住在峽谷的#b#o8150300#、#o8150301#、#o8150302##k#b各18隻#k，我會在這裡等你回來。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "難道對你來說，這也太困難了嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你回來啦！多虧有你幫忙，看來有確實的減少了翼龍的數量，真的太感謝你了。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "但願翼龍的數量不要持續增加下去了…"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "把#b#o8150300#, #o8150301#, #o8150302##k抓 #b各18隻#k的話會有很大幫助的。"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[神木村] 翼龍的襲擊"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去找找身受重傷倒在#m240040400#的#p2081007#吧！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在#m240040400#遇見了#p2081007#，他說希望幫他減少佔據龍之峽谷的翼龍的數量。需要先減少佔據峽谷的翼龍的數量後，再回去見#b#p2081007##k吧！\\n\\n#o8150300##r#a37111##k\\n#o8150301##r#a37112##k\\n#o8150302##r#a37113##k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "受到#m240040400#的#p2081007#的請求，雖然有打倒部份翼龍，但看著翼龍的數量一直持續增加，實在無法掩飾心中的擔憂…"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "41"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "754021"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 生存達人"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "戰鬥廣場解說員羅茲弟說有挑戰大亂鬥挑戰這項任務。趕緊去找找看！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "戰鬥廣場解說員羅茲弟說今日於大亂鬥生存模式之下點數達成1000的話，即可獲得獎賞。趕緊去挑戰吧。\\r\\n\\r\\n#rTip！務必於今日內於生存模式之下點數達到1000。要是中途離開或者當天結束的話，任務就算無法完成。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "於大亂鬥生存模式之下達到點數1000可獲得獎賞。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9070005"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q11052s"
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9070005"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "11055"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q11052e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1000"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好 #h0#~我是戰鬥廣場嚮導羅茲弟。當您完成我給予的挑戰任務時，會給予您禮物。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "這次的挑戰任務是~今天一天內在生存模式達成500分！如何？不會那麼難吧？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "今天一天內達成1000分！因超過今天後會初始化而無法完全任務，請別忘記！那麼期待您成為生存的達人！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不是那麼難的任務啦… 是您的話就有可能嘛？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這次的挑戰任務不會很難吧？來，依照約定給予您禮物。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "生存的達人！也有其他挑戰任務，請加油挑戰看看！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "這次任務是要在生存遊戲上分數達成 1000分的喔。這並不難的關係，請務必來挑戰看看喔！"
+          }
+        },
+        "quest": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "這次任務是要在生存遊戲上分數達成 1000分的喔。這並不難的關係，請務必來挑戰看看喔！"
+          }
+        }
+      }
+    }
+  }
+}

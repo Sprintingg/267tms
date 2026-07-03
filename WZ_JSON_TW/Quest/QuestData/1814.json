@@ -1,0 +1,188 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[改善系統] 系統的進化"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "32"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "進化系統發生變化。\\n去找#m957010000#的#p9075200#看看吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "利用#t4033453#可以擴大核的欄位。\\n清除假想世界中心的系統怪物，收集50個 #i4033456# #b#e#t4033456#來吧。#n#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "使用Evolvting Socket追加了3格核的欄位進行Link，強化進化系統的功能。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4033456:# #t4033456:# #c4033456# / 50"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9075200"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "1816"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "coreSlot1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9075200"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033456"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033456"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#t4033456#使用的話，可以使進化系統功能更加強化。 要參與功能改善嗎?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "為了系統改善作業需要#e#b#t4033456# 50個#k#n。可透過能連線的所有連結的系統怪物來獲得。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "要參與系統改善的話，請再次跟我對話。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "系統功能強化所需的#t4033456#取來了嗎?"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "使用#t4033456#，擴張#e核心欄位3個#n。請多加利用。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "為了擴張進化系統核心欄位需要#b#t4033456# 50個#k。除掉系統怪物可獲得。"
+          }
+        }
+      }
+    }
+  }
+}

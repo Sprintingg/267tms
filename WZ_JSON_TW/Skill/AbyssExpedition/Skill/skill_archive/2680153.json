@@ -1,0 +1,277 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "400031032 와일드 그레네이드"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "5thWildGrenade"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "3"
+            }
+          }
+        }
+      },
+      "effect1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-3"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AEAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "400031032"
+          }
+        }
+      },
+      "granade": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "480"
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "granade": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Projectile"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "time": {
+          "_dirType": "string",
+          "_value": "0.6"
+        },
+        "emitSpeed": {
+          "_dirType": "int",
+          "_value": "900"
+        },
+        "boundLT": {
+          "_dirType": "vector",
+          "_x": -60,
+          "_y": -60
+        },
+        "boundRB": {
+          "_dirType": "vector",
+          "_x": 80,
+          "_y": 80
+        },
+        "emitCount": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "emitAngle": {
+          "_dirType": "string",
+          "_value": "-15"
+        },
+        "emitPos": {
+          "_dirType": "vector",
+          "_x": -120,
+          "_y": -70
+        },
+        "destroyHitCount": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "flipByVelDir": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "rotatable": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "persistAccel": {
+          "_dirType": "vector",
+          "_x": 0,
+          "_y": 1500
+        },
+        "destroyOnHitFoothold": {
+          "_dirType": "int",
+          "_value": "1"
+        }
+      },
+      "AnimSet": {
+        "_dirType": "string",
+        "_value": "Skill\\AbyssExpedition\\Skill\\2680153.img\\AnimSetAssets\\AnimSet"
+      },
+      "onProjectileHit": {
+        "_dirType": "string",
+        "_value": "destroy"
+      },
+      "onProjectileDestroyAnimName": {
+        "_dirType": "string",
+        "_value": "die"
+      },
+      "onProjectileDestroy": {
+        "_dirType": "string",
+        "_value": "attack"
+      }
+    },
+    "attack": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "maxLevel": {
+          "_dirType": "int",
+          "_value": "15"
+        },
+        "damage": {
+          "_dirType": "string",
+          "_value": "210+150*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "4"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "8"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -200,
+          "_y": -200
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 200,
+          "_y": 200
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "randomHitOrigin": {
+            "_dirType": "int",
+            "_value": "15"
+          }
+        },
+        "randomHit": {
+          "_dirType": "int",
+          "_value": "1"
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "400031032"
+      }
+    },
+    "destroy": {
+      "_dirType": "sub"
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "damage": {
+      "_dirType": "string",
+      "_value": "210+150*x"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "8"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -600,
+      "_y": -400
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 0,
+      "_y": 0
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "4"
+    }
+  },
+  "AnimSetAssets": {
+    "_dirType": "sub",
+    "AnimSet": {
+      "_dirType": "sub",
+      "move": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub"
+            }
+          }
+        }
+      },
+      "die": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub"
+            }
+          }
+        }
+      }
+    }
+  }
+}

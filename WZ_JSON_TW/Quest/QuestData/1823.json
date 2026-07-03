@@ -1,0 +1,202 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[強化程序] 提升爆發力"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "32"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#e[強化程序] 提升爆發力#n迅速的處理掉飛來飛去的50隻#o9306002#吧。\\n但是，如果Link內的誘導裝置啟動的話，#o9306002#們就會被吸引到誘導裝置附近。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#e[強化程序] 提升爆發力#n迅速的處理掉飛來飛去的50隻#o9306002#吧。\\n但是，如果Link內的誘導裝置啟動的話，#o9306002#們就會被吸引到誘導裝置附近。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#e[強化程序] 提升爆發力#n#e#b任務完成#n#k"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o9306002# #a18231#"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "straightStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "validField": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "int",
+        "_value": "957010000"
+      },
+      "1": {
+        "_dirType": "int",
+        "_value": "957011000"
+      },
+      "2": {
+        "_dirType": "int",
+        "_value": "957012000"
+      },
+      "3": {
+        "_dirType": "int",
+        "_value": "957013000"
+      },
+      "4": {
+        "_dirType": "int",
+        "_value": "957014000"
+      },
+      "5": {
+        "_dirType": "int",
+        "_value": "957015000"
+      },
+      "6": {
+        "_dirType": "int",
+        "_value": "957016000"
+      },
+      "7": {
+        "_dirType": "int",
+        "_value": "957017000"
+      },
+      "8": {
+        "_dirType": "int",
+        "_value": "957018000"
+      },
+      "9": {
+        "_dirType": "int",
+        "_value": "957019000"
+      }
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9075202"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "fieldEnter": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "957012000"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9075202"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q1823e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9306002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#eLink3#n可進行提升爆發力程式。\\r\\n要開始了嗎?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好好跟著飛來飛去的#o9306002#，可以除掉 50隻。\\n連結3內的誘敵裝置啟動的話，#o9306002#會湧進誘敵裝置周圍，不要放過那個機會的話，就可更順利進行程式。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "準備好進行強化程式的話，再跟我說話。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#o9306002# 50隻除掉了嗎?"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "爆發力強化程式結束。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#e[強化程式] 提升爆發力 #n除掉在連結3的#o9306002# #b#e50隻#n#k。"
+          }
+        }
+      }
+    }
+  }
+}

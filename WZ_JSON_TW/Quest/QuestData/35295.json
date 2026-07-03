@@ -1,0 +1,172 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[伊甸提斯克] 假石像"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "disableAtCompleteTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "懷疑伊甸島與提斯克島上古代神石像是假的彼特。他的話是真的嗎？去問問伊甸島的學者#b歐比恩#k吧。\r\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "當問及石像時，歐比恩顯得為難，並提議一起去看看有壁畫的洞穴。去尋找伊甸提斯克島的洞穴吧。\r\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "確認了真相後，歐比恩表示古代神的石像確實是憑想像製作的。由於古代神的壁畫被抹去了太多，無奈之下只能這麼做…\r\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#查看壁畫 (#R502919ExRef502959#)\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "demand": {
+      "_dirType": "sub",
+      "base": {
+        "_dirType": "string",
+        "_value": "#questorder1#看看壁畫 (#R35295ExdirRef35295#)\r\n"
+      },
+      "explain": {
+        "_dirType": "sub"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003590"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q35295s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "fieldID": {
+        "_dirType": "int",
+        "_value": "993062651"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "35294"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003590"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q35295e"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "35295"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "看看壁畫吧"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "dir"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "和我一起去#b有壁畫的洞窟#k吧。看那邊畫下的壁畫就能明白了。"
+          }
+        }
+      }
+    }
+  }
+}

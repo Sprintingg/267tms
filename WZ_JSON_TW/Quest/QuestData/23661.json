@@ -1,0 +1,207 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[傑諾] 煉金術師的委託1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "65"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "貝里塔斯的煉金術師#b#p2300004##k好像遇到了困難。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2300004#遺失的信件就在研究所的 #b#o9300640##k 某處。攻擊#o9300640#之後找出 #b信件#k吧。\\n#r(任務進行失敗時，得放棄任務重新開始。)#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "尋找在灰塵裡的#b#t4033643##k，然後拿去給#p2300004#。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4033643:# #t4033643:# #c4033643# / 1\r\n"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n可進行 '煉金術師的委託2' 任務\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "8000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2300004"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q23661s"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "43"
+      },
+      "notInTeleportItemLimitedField": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "23660"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "3610"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "3611"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "3612"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "3613"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "3614"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2300004"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q23661e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033643"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033643"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "喔，這個在這裡耶。謝謝。為了找這個，你辛苦了吧。\\n這雖然不算什麼特別的東西，但就當作我的報答，可以請你收下嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

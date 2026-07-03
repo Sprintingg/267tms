@@ -1,0 +1,240 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[希拉] 尋找通路"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "257"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "詳細事情#b宰相清隆#k會說明."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "找到外部人進出的#b通道#k後, 趕走#b外部人#k. 使用阿斯旺避難所#b右邊傳點#k進入阿斯旺的底層部."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "宰相清隆所指示一樣找到通道位置後, 趕走盜墓者了. 使用阿斯旺避難所#b右邊傳點#k進入阿斯旺的底層部."
+    },
+    "selfComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoCompleteAction": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#打倒所有的盜墓賊 (#R31057ExkillRef31053#)\r\n#questorder1#尋找通路 (#R31057ExdoorRef31053#)\r\n"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "80"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "84"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "70000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "120"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2183002"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q31053s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31052"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "31057"
+      },
+      "QuestRecordAndOption": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "clear"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "打倒所有的盜墓賊"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "kill"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "clear"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "尋找通路"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "door"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "926200001"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "70000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "來的好. 所有事情應該從梅迪沙聽說了吧, 我們就進入正題. 我們阿斯旺除了這裡最上層通往地上外還有其他幾個地方. 外部人好像在找這通道. 但是只可惜居住在最上層的我們不知道其他通道. 只知道大概的位址, 但是因為經過太久時間不記得了. 如果找到通道遇到外部人, 請把他們趕走. 拜託了."
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "使用右邊的傳送點查看這附近."
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "對不起了. 對你而言好像是困難的事情."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "通路也找到了, 好像把盜墓者也趕走了?"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "通路也找到了, 好像把盜墓者也趕走了?"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "阿斯旺地下1樓有找到通路, 只要把盜墓者都趕走就可以了."
+          }
+        }
+      }
+    }
+  }
+}

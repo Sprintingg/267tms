@@ -1,0 +1,228 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "祕密團體加入條件1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "7"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#p1063018##k突然找我…有什麼事呢？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1063018#向主人說您的事情, 只要達成幾項條件就說要加入祕密團體且拜托打倒#o3110100#. 前往#b#m103000000# 沼澤#k打倒 #r#o3110100##k.\r\n\r\n#questorder1##o3110100# #a225601#"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "打倒了所有#o3110100#. "
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o3110100# #a225601#\r\n"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必需]"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "15484"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1063018"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "46"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q22560s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "22553"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2200"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2210"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2211"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2212"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2213"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "2214"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "2215"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "2216"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "2217"
+        },
+        "9": {
+          "_dirType": "int",
+          "_value": "2218"
+        },
+        "10": {
+          "_dirType": "int",
+          "_value": "2219"
+        },
+        "11": {
+          "_dirType": "int",
+          "_value": "2220"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1063018"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3110100"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "150"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "22561"
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "15484"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "奈洛, #o3110100# 150隻打倒完畢囉! 主人會很高興! 去看看這樣是否就能加入祕密團體, 請稍等!"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有打倒 #r#o3110100# 150隻#k嗎? 到#b#m103000000# 沼澤#k打倒 #o3110100#. 這樣就能加入祕密團體."
+          }
+        }
+      }
+    }
+  }
+}

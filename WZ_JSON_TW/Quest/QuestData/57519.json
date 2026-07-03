@@ -1,0 +1,176 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[十字獵人] 克勞烏最後的請求"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#p9133001##k表示要參加試煉之塔，必須先拿到印記。\\r\\n總之先問他有關這件事的細節吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b#p9133001##k表示要參加試煉之塔，必須先拿到印記。\\r\\n要拿到印記得先通過最後的測驗，所以先去找#b#p9133200##k吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#b#p9133001##k表示要參加試煉之塔，必須先拿到印記。\\r\\n為了接受最後的測驗拿到印記，我去找了#b#p9133200##k。"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "經驗值 1,006,320"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "1006320"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9133008"
+      },
+      "gender": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "57518"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "90"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9133200"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1006320"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "呼…對不起，#h0#。\\r\\n我剛剛講話有點太衝了。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "我可能是太急了才口不擇言。\\r\\n#h0#人這麼善良，一定可以體諒我的，對吧？"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "是嗎，太好了。那你趕快去文森那邊說要參加最後的測試。\\r\\n因為我無論如何都得進去試煉之塔一趟。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嘻嘻，#h0#你果然是我的大英雄！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "反正我的死活，對#h0#來說根本沒差對吧？嗚嗚…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你準備好參加最後的測試了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "很高興見到你來。我正好為#h0#你準備好了最後的測驗。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你和文森見面了嗎？什麼？還沒有？\\r\\n反正我的死活，對#h0#來說根本沒差對吧？嗚嗚…"
+          }
+        }
+      }
+    }
+  }
+}

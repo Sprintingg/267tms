@@ -1,0 +1,216 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 製造佩圖玩偶"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "佩圖的饒恕"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "變成佩圖後解開詛咒吧。首先要有個佩圖玩偶！把#b布塊20個#k帶給幽靈T就可以吧？\\n\\n#i04031838##t04031838##b#c04031838#/20#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "幽靈T在製造佩圖玩偶。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "200"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "200"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031838"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "我想能找回家庭和睦的人只有我。但我這個樣子怎麼去見人呢？怎麼辦？\\r\\n#b#L0#如果有相似的玩偶，應該就能拿去假面紳士那裡做成變身水。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "嗯??真的嗎？好神奇哦。假面紳士竟然做得到？那麼我幫你製造跟我長的一樣的玩偶。請你變成我後解開他們的詛咒吧。能找來#b布塊20個#k嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝，我會等你。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "拜託了，是因為我才發生的事，只有我才能解開詛咒。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "20個就夠了。請稍等…馬上幫你製造。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "看來還沒收集好布料嘛。一共需要20個。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2120008"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031838"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2120008"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201010131200"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201011031200"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201010131200"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201011031200"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "52095"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    }
+  }
+}

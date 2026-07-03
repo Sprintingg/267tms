@@ -1,0 +1,188 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[避難所] 小乖乖的成就"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "269"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "單眼機器人說要告訴我圍繞黑暗天堂的我的英雄故事，要不要聽聽看呢？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "單眼機器人說了對於這裡的機器人們，我是多麼讓他們驕傲的英雄。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "單眼機器人告訴了我在黑暗天堂的活躍表現。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#欣賞故事摘要 (#R101936ExRef101936#)"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "190"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "199"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "306747082"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2155000"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q101936s"
+      },
+      "subJobFlags": {
+        "_dirType": "int",
+        "_value": "15"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "190"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "39204"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2155000"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "101936"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "欣賞故事摘要"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "306747082"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "怎麼樣，很厲害吧！如果沒有親眼看到，很難相信這故事吧？哈哈哈！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "就這樣，黑暗天堂墜落到這裡。我們就這樣聚在一起，開始新的生活。都是託你的福。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "再次感謝。真的很謝謝。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "現在只要和單眼機器人對話，就能欣賞#b#e黑暗天堂#n#k的#r#e故事摘要#n#k。這個內容可以在#b#e次元之鏡#n#k的#b#e楓之谷聯盟會議場#n#k中直接進行。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "故事還沒說完呢。哈哈！\\r\\n#r(*請放棄任務後重新領取。)#k"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 메이플 퀴즈스타K 1주차"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "대 국민 퀴즈스타 발굴 오디션! 메이플스토리 <초성 퀴즈스타K>에 도전 하세요."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "대 국민 퀴즈스타 발굴 오디션! 메이플스토리 #r<초성 퀴즈스타K>#k에 도전 하세요.\r\n\r\n퀴즈스타 K는 2010년 12월 18일부터 2011년 1월 8일까지 매주 토요일 오후 2시 30분부터 자정사이에 참여 하실 수 있습니다.\r\n\r\n가까운 마을의 심사위원단 npc를 찾아가 보세요.\r\n심사위원단 NPC는 헤네시스, 커닝시티, 엘나스, 루디브리엄, 리프레, 마가티아에서 만나실 수 있습니다."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "퀴즈스타 K에 참가하기로 하였다."
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "timeLimit2": {
+      "_dirType": "int",
+      "_value": "3600"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010025"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201012181430"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201012190000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201012100900"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201012110000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010025"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "國民問答明星試鏡會！你聽過關於楓之谷 <國民問答明星K>嗎？\\r\\n參加的話你可能會獲得好成績喔。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "機會不是常常有耶。你要申請預賽嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "可以根據題目和提示回答問題。\\r\\n\\r\\n依據答對次數可以獲得各種道具及最先進的競賽用汽車！各種商城道具等豐盛獎品。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "還有！\\r\\n\\r\\n為4週連續答對問題的問答達人預備了更多獎勵道具，並透過抽獎可以獲得豐富的禮物贈品。\\r\\n\\r\\n請洽詢附近村莊的評審委員NPC。\\r\\n\\r\\n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那好吧…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "問題回答得還順利嗎？會有好結果吧？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝你的參與。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請洽附近村莊的評審委員團 NPC挑戰國民問答。"
+          }
+        }
+      }
+    }
+  }
+}

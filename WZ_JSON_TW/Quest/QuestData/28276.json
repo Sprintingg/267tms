@@ -1,0 +1,168 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[消滅]菇菇寶貝讓你昏昏欲睡？"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#m120000200##k的#b#@1092004:##k想請你幫個忙。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "他說#r菇菇寶貝#k散發出的粉末讓他感到昏昏欲睡。\\n他要你打倒30隻#r菇菇寶貝#k。\\n你可以在#b#m100030000##k輕鬆找到#r菇菇寶貝#k。\\n\\n完成之後，向#b#m120000200##k的#b#@1092004:##k回報。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "你已經替瞌睡蟲#b#p1092004##k消滅30隻#r菇菇寶貝#k。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o1210102##a282761#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 680\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "680"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "680"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我的眼皮最近非常沈重。我知道我很愛睡，可是#b#p1090000##k也許是對的，你說是嗎？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "你聽過#r菇菇寶貝#k嗎？她說菇菇寶貝會在移動時散播橘色粉末，而當人類接觸到這種粉末時會感到疲倦。\\n我不知道這是不是真的，不過你能不能助我一臂之力？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你可以輕易地在#b#m100030000##k找到#r菇菇寶貝#k。\\n你有辦法打倒30隻菇菇寶貝嗎？我覺得這能幫助我清醒一整天。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我知道你不願意把寶貴的時間用在陌生人身上。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你已經打倒所有的#r菇菇寶貝#k了？\\n我不再想睡了！真的！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b#p1090000##k是對的！\\n我終於能夠保持清醒並完成我的工作了。真是太感謝你了！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你要打倒30隻#r菇菇寶貝#k。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1092004"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1210102"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1092004"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      }
+    }
+  }
+}

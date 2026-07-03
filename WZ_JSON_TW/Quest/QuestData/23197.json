@@ -1,0 +1,238 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[埃德爾斯坦] 準備記憶晶片吧"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "24"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#p2153000##k的祕密提議會是什麼呢。聽聽看吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2153000#說可以賣自己擁有的#b#t1003134##k。身為黑色翅膀的成員，擁有進入礦山的權限的幹部的衣服，肯定會允許通過... 衣服可以用#b巡邏機器人S的記憶晶片30個#k交換。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p2153000#笑著說如果遺失#t1003134#時，可以再賣一次，所以隨時可以找他。雖然是讓人很討厭的男人，但是終於可以進入礦山內部了。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4000604:# #t4000604:# #c4000604# / 30\r\n"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2153000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "23198"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "I"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "demand"
+          }
+        }
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "23198"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1003134"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2153000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000604"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000604"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      },
+      "setEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "qrID": {
+            "_dirType": "int",
+            "_value": "23198"
+          },
+          "key": {
+            "_dirType": "string",
+            "_value": "quest"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "I"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "qrID": {
+            "_dirType": "int",
+            "_value": "23198"
+          },
+          "key": {
+            "_dirType": "string",
+            "_value": "demand"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "clear"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "果然如此。呵呵呵...從附近的#r巡邏機器人S#k收集#b巡邏機器人S的記憶晶片#k#r30#k個。因為用晶片收集錄音也是我的工作。當作你在代替我做我的工作就好。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "什麼？你問這樣可以嗎？反正黑色翅膀的幹部中沒有人會確認這個。反正這只是簡單的勞動。收集這種事，讓別人去做也不會有什麼大問題吧？我休息，你獲得帽子。不是一石二鳥嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我會等你的，物品準備好再跟我說吧。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不是為了衣服才來的嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "東西帶來了嗎？好，很好。那我就把帽子交給你吧。待會兒跟我說話。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "什麼？還沒收集到#b巡邏機器人S的記憶晶片#k#r30#k個嗎？哎呀，選錯客人了呢。你不想進去礦山裡面嗎？"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[龍使者，龍魔導士] 那就加強修練吧"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "7"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p1010100#拒絕幫助#p1013000#似乎相當不滿。要怎麼做才能哄#p1013000#呢？與#b#p1013000##k對話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1013000#說那麼到可輕鬆擊退#o2220100#時為止進行修練，並叫我去找修練場。該怎麼辦？既然說要拜託我，那麼問問#b#p1012003##k大叔吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "向斯坦大叔對話。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1013000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "14"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q22514s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "22513"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2200"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2210"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2211"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2212"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2213"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "2214"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "2215"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "2216"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "2217"
+        },
+        "9": {
+          "_dirType": "int",
+          "_value": "2218"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012003"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "100"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "龍魔導士？？還沒回家嗎？在#m100000000#有什麼事情吧？修煉場嗎？雖然有但…"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "要進入修煉場等級最少要達到15…等級達到15以上時，再幫你打聽吧。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "（對話肯定會被大肆宣揚，快去斯坦叔叔那裡問一下關於修煉場吧。）"
+          }
+        }
+      }
+    }
+  }
+}

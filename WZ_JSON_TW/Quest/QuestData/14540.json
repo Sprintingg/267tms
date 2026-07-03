@@ -1,0 +1,137 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動]掌握新世界歐洛拉的先驅者！"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#r#e準備了一些禮物給達成140級#k#n的 #e新世界歐洛拉#n的先驅者們。#b透過左側星星的提醒#k來詳細了解一下吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#r#e準備了一些禮物給達成140級#k#n的 #e新世界歐洛拉#n的先驅者們。#b透過左側星星的提醒#k來詳細了解一下吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#r#e達成#k#n140級#e成為掌握新世界歐洛拉#n的先驅者並獲得了豐富的獎勵。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010010"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q14540s"
+      },
+      "worldmin": {
+        "_dirType": "string",
+        "_value": "43"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010010"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "setEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "qrID": {
+            "_dirType": "int",
+            "_value": "18429"
+          },
+          "key": {
+            "_dirType": "string",
+            "_value": "reward"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "0"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好。#b#h0##k。身為這是世界的先驅者你擁有了完美的特質喔。假如 #b#h0##k在活動期間能達到#e140級#n的話我會給你很特別的禮物。要來挑戰一下嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那期待你能快速達到#r#b140#n#k的目標。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "想法有改變隨時來找我喔。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b#h0##k還沒有達到預期目標#r#e140#n#k級。再努力一下吧。\\r\\n剩不多了！"
+          }
+        }
+      }
+    }
+  }
+}

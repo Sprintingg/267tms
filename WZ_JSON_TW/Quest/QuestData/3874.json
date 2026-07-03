@@ -1,0 +1,147 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[星星力量] 向流星許的願望"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "41"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p2081004#說昨晚天空降下的光芒是流星，聽聽看詳細內容吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2081004#說自己昨晚坐在岩石上練習樂器時，突然感覺到整個世界都變明亮了，抬起頭一看，看見巨大的流星正往下墜落，將這一切轉告 #p2081000#吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "轉告#p2081000#說昨晚天空降下的光芒是 #p2081004#的事實，但是，#p2081000#說比起光芒的真面目，他對夜晚跑出去的 #p2081004#更感興趣。"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "#m240000000#\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "129193"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2081004"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q3874s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3873"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2081000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "QuestRecordAndOption": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "129193"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "好，你已經調查過那個未知的光芒了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "什麼？#p2081004#看見那道光了？看來那小子又趁夜晚偷偷跑出去練習樂器了，就算跟他說很危險，他也不在乎，該怎麼辦呢？嘖嘖。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "難道不能跟爺爺說不是我看見的嗎？好嗎？"
+          }
+        }
+      }
+    }
+  }
+}

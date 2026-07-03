@@ -1,0 +1,158 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 作出親一個的表情。"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "被大發企劃代表#b#p1052121##k遷就要接受#b演技課程#k. 是哪個課程? 向#b弓箭手村市場, 美髮店旁邊#k站著的#p1052121#進行對話."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "這次決定學親一個的表情。可以從#m200000000#在整形外科的#p2012036#那裡可以學到…拿一個#b#t4021007##k當做禮物吧。\r\n\r\n#i4021007##t4021007#  #b#c4021007# / 1#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "學到親一個的表情。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052121"
+      },
+      "charmMin": {
+        "_dirType": "int",
+        "_value": "85"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "6512"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2012036"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q6513e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4021007"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好，#h0#。是不是深陷演技的魅力中了？我已想到你會這樣的。那麼開始下一個演技課程吧？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "第十二個演技課程。這次學習親一個的表情吧。雖然只簡單伸出嘴唇就可以的表情，但能做到可愛的可沒幾個人。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "#b#m200000201##k新來的醫生，#b#p2012036##k專研魅力表情，終於找到了好方法。去找他學習親一個的表情吧。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "只不過是從職業角度研究表情，要想免費學習恐怕很難。建議救出#b#t4021007##k後，去找#p2012036#。祝你好運。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "唉…現在你也該知道演技課程的魅力了吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒去#b#m200000201##k嗎？去找#b#p2012036##k吧。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "哦~ 可愛的人~ 好想摸摸你的臉…"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "#b(太過熱情的人…給#t4021007#才會教做表情的方法吧？)#k"
+          }
+        }
+      }
+    }
+  }
+}

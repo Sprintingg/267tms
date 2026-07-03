@@ -1,0 +1,173 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 帶著意志的力量"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "跟尤莉亞拿到記憶能源，但似乎記憶能源有隱藏了更強的力量，去跟尤莉亞詢問詳情吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了引發出記憶能源的隱藏力量，似乎需要證明自己的意志。聽說狩獵楓之谷世界的怪物時，好像可以賦予意志的力量…\r\n#b擊殺等級範圍怪物 3000隻#k後再跟尤莉亞進行對話吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "跟尤莉亞證明自己的意志後拿到 #b充溢的記憶能源#k。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o9101025# #a557331#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#i1190543:# #t1190543:# 1 個"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "long",
+            "_value": "1190543"
+          },
+          "count": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "55732"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q55733s"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201909040000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q55733e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9101025"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "3000"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "已經足夠證明你的意志嗎？要不要再加油一下呢？\r\n#b(擊殺等級範圍怪物 3000隻後再進行對話吧。)#k"
+          }
+        }
+      }
+    }
+  }
+}

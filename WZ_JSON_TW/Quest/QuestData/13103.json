@@ -1,0 +1,204 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓之谷城堡] 為了閃亮亮的假面舞會"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "西格諾斯好像有事情想要拜託呢。在她微笑的聲音背後隱藏的一絲不祥的氣息，難到只有我感覺得到嗎? "
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "不是錯覺。因為那美麗的微笑，讓我不得不接下了打掃這寬廣的假面舞會會場的工作。趕快將會場打掃乾淨，成為萬聖節派對的一員享受萬聖節吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "打掃假面舞會會場的時後發現了許多張 #i3994656##t3994656#。好像寫著什麼東西，不管是誰的，感覺好像非常討厭讀書的樣子呢。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i3994656:# #t3994656:# #c3994656# / 5"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "q13103"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000136"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201311060000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201311060000"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201310230000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201310230000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "13102"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000136"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q13103e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994656"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994656"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-5"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#b#h0##n#k！我想了一下。那邊~派對大廳灰塵有夠多~！現在大家都在打掃中，場地還沒有打掃。\\r\\n可以幫我打掃嗎? "
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝！ 打掃灰塵堆的話，說不定可以找到 #b不錯的物品#k~? 這邊是神祕的古城啊。\\n如果在#b灰塵堆發現有趣的物品#k的話，記得給我看。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "場地可透過在我旁邊的#b前往場地的門#k進入。那我在這邊等你。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "什麼~?現在我一個人！我一個人打掃這樣寬的場地? "
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "如何?灰塵堆有找到不錯的東西嗎?"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嘖！0分！什麼嗎！這考卷！灰塵堆出現這種東西嗎? 是#b魔法學#k考卷?\\n那麼…看來楓之谷城堡這裡曾經真的是#b楓之谷世界最好的魔法學校#k的樣子。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "雖然聽過這傳說，但是看到這考卷，不知為何想要相信這傳說。\\n那麼我來處理這些考卷。嗯！為什麼想要從考卷確認名字。幹嘛那麼好奇！ 嘖！ 又！！ 又！！！ \\n等！等一下！我想起來有比#b考卷有趣的事了#k！"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "有傳聞#b那因哈特#k在準備派對中， 發現了#b楓之谷城堡的遺物#k。雖然還沒有問，但是#b那因哈特#k可能會想對這個地方的過去想要知道更多。去找那因哈特聽一下他怎麼說如何?\\n嘖！不要再管這些考卷，去見那因哈特！ "
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有完全打掃好的樣子。天啊灰塵！ "
+          }
+        }
+      }
+    }
+  }
+}

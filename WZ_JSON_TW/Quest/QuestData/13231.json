@@ -1,0 +1,276 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "我就是動作英雄"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "51"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "達成動感英雄的所有成績的話，聽說會給予有趣的東西呢..."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "達成動感英雄的4種成績的話，可以得到 #i1142550##r#t1142550:#勳章#k和 #i3010516##r#t3010516:# 椅子#k作為謝禮。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#b達成動感英雄的所有成績#k之後得到了 #i1142550##r#t1142550:# 勳章#k和 #i3010516##r#t3010516:#椅子#k作為謝禮。應該沒有人可以贏過我吧?"
+    },
+    "medalCategory": {
+      "_dirType": "int",
+      "_value": "4"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1142550"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3010516"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1142550"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3010516"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哈囉！要參加看看武打英雄嗎?很有趣有很多勇士挑戰 。展現成果，完成所有業績的話，會給予很好的獎勵.. 如何?要挑戰看看嗎? "
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "很好。雖然是不簡單的挑戰，但我也會給予相等的獎勵。值得你期待。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "在等待可以完成4種武打英雄挑戰業績的那天。那麼趕快吧。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "啊嗯嗯~ 還有一個。武打英雄在活動期間中，#b從上午10點開始到晚上10點為止，每小時整點，20分，40分#k接受飛來頭頂的任務的話，就可以參加，希望你參考看看。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "沒有韌性這點一點都沒變。活動活動期間中，#b從上午10點開始到晚上10點為止，每小時整點，20分，40分#k會有邀請，希望你能參加。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "好了~！來了嗎?確認所有業績都執行了嗎? "
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "呵呵。是不容易的挑戰你竟然做到了。你真的是真正楓之谷武打英雄。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "嗯。別推辭，收下吧。是可以證明真正的武打英雄重要的物品。其他的冒險家看見這個都會羨慕你的。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "不容易達成的業績。達成4種業績後再來。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000151"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201308210000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201309040000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201308210000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201309040000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000151"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "13226"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "13227"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "13228"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        },
+        "3": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "13229"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    }
+  }
+}

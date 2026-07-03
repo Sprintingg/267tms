@@ -1,0 +1,205 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[凱撒] 除掉魔龍"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "22"
+    },
+    "selfStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "selfComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "擊退詛咒神殿的魔物。首先先除掉最弱的#o6230100#。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "將#o6230100#除掉50隻。#o6230100#從 #m105030100#、 #m105030101#、 #m105030102#出現。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "雖然除掉了#o6230100#，可是邪惡的氣息還是沒消退。調查其他怪物吧！"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o6230100# #a257711#\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 13,000\r\n可進行 '除掉月牙牛魔王' 任務\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "13000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "65"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "25770"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "6100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "6110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "6111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "6112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "6113"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "6114"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "6230100"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "13000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "雖然感覺和幽靈不一樣，但最好還是能夠掌握邪惡力量的真面目。就去調查詛咒神殿吧！"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "去解決魔物當中看起來最弱的#o6230100#50隻。#o6230100#從 #m105030100#、 #m105030101#、 #m105030102#出現。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "等一下... 讓我喘口氣。呼啊呼啊"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "雖然解決#o6230100#了，但邪惡力量卻沒有什麼改變。難道還有其他東西嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有消滅 #o6230100#50隻。#o6230100#從 #m105030100#、 #m105030101#、 #m105030102#出現。"
+          }
+        }
+      }
+    }
+  }
+}

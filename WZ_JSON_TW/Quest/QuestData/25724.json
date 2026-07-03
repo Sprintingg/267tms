@@ -1,0 +1,224 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[凱撒] 變身？ 失敗？"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "22"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "了解使用指令技能的力量的界線究竟到哪裡。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "前往平原，#b以怪物為對象#k使用指令技能填滿龍能球。\n\n<龍能球 UI>\n#v03800328#\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "龍能球填滿後，力量充滿，外貌產生些許變化。然而沒有力量增加的感覺，繼續修練力量也不會增加嗎？"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n"
+    },
+    "selfStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "selfComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "900"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "25723"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "6100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "6110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "6111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "6112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "6113"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "6114"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "25700"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q25724e"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "0"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "0"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "morph"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我...。我充滿了力量！！！！！"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "什麼？ 我怎麼會...。\\r我應該把強大的力量用在正確的事情上才行。不能被力量控制！可是這力量的盡頭到底是到哪裡呢？ 讓我看看極限吧？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "很好！使用技能指令達到這個力量的極限吧。填滿龍能球看看吧！\n\n<龍能球>\n#v03800328#\n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "有點累了。下次再看極限到哪裡吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有完全填滿龍能球嗎？ 若要填滿龍能球就要以 #b怪物#k為目標使用技能指令。"
+          }
+        }
+      }
+    }
+  }
+}

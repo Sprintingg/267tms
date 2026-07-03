@@ -1,0 +1,154 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[玩具城] 遺失的裂縫碎片"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "若把時空裂縫的碎片弄丟的話，就再去找比耶魯先生吧！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "把弄丟時間裂縫的碎片一事告訴#r比耶魯先生#k。他說再給我一次機會，要我去找#r福樂#k問問看。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "透過福樂重新獲得了時空裂縫的碎片，這次一定要打倒拉圖斯。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "36"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "噢！#t4031179#弄丟了嗎？那真的是很珍貴的物品…如果沒有裂縫碎片，就無法召喚拉圖斯，這下該怎麼辦呢？你真的想要再挑戰一次嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好的。雖然我沒那個能力，不過您可以前往扭曲的時間之路入口處，見一下站在那裡的#b福樂#k。如果是福樂的話應該能幫的上您吧。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "看來您沒有重新挑戰的念頭啊。擊退巴布拉圖斯確實也是很不容易的事情。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "從皮耶魯先生那裡得到了聯絡。聽說您把時空的裂縫碎片弄丟了？我可以特別為您送上我的時空的裂縫碎片。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "想知道我是怎麼擁有這個裂縫碎片的嗎？呵呵，那是祕～密。可以說是一種魔術吧！如果想看我變魔術的話隨時都可以來找我。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "所有人的心合而為一，就是個很棒的魔法。哈哈哈… 還想看其他的魔法嗎？如果還想看很棒的魔法，你可以隨時來找我。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b弗樂#k就在前往#b扭曲的時間之路#k的入口處。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2041023"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2041021"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "120"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "7103"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031179"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "1440"
+      }
+    }
+  }
+}

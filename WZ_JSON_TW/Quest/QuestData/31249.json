@@ -1,0 +1,211 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[克林森烏德城] 與魔族幻術師的戰鬥"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "66"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "與#p2134012#對話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在第二道門後#m301020000#中狩獵 #o8148003# 130隻、#o8148004# 130個吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "狩獵了第二道門後#m301020000#中的 #o8148003# 130隻、#o8148004# 130個。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o8148003# #a312491#\r\n#questorder1##o8148005# #a312492#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 2,373,238\r\n可透過 '[克林森烏德城] 第二次脫逃' 任務來進行\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "2373238"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demand": {
+      "_dirType": "sub",
+      "explain": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2134012"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "130"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31247"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2134012"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8148003"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "130"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8148005"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "130"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2373238"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "第一個門已經監控太嚴謹無法使用祕密通道。要用第二個門進去。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好，那這次也麻煩了。幻術師是很難搞定的敵人，做好心理準備！\n#b（擊退第二道門#m301020000#的#o8148003# 130隻、#o8148004# 130個吧。)#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不太想做嗎？"
+        }
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "在第二個門 #m301020000#地方幫你引起注意。幫忙打敗魔物 #o8148003# 130名跟 #o8148004# 130名怎麼樣，辦得到嗎？"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "擊退所有敵人了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "很好，敵人的注意以經分散開來了。現在魔族居民們可以逃脫了。（去找#p2134009#吧。）\r\n"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "幻術師是很難搞定的敵人，做好心理準備！\n#b（在幻術師的陣營中擊退小鬼精130隻、魔族幻術師130個吧。)#k\r\n"
+          }
+        }
+      }
+    }
+  }
+}

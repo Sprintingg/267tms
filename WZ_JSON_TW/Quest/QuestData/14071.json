@@ -1,0 +1,158 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[簽到]任務!消除炎熱收集扇子!"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "炎熱的夏天,不能再繼續受這種酷熱了!去找尤莉亞吧.\r\n\\r\\n#e[夏季出席活動第1季日程]\\n>2013年07月04日~2013年07月17日#k"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "收集能克服酷熱的#i3994854##t3994854#30個,拿去給尤莉亞後可以蓋點名印章和獲得禮物!\r\n\\r\\n#e[夏季點名活動第1季時間表]\\n>2013年07月04日~2013年07月17日#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "呼..每次渡過夏天是一個很難的任務之一.可還是不放棄努力贏過夏天後,也不能放過出席印章和禮物!\r\n\\r\\n#e[夏天出席活動第1彈行程]\\n>2013年07月04日~2013年07月17日#k"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i3994854:##t3994854:##c3994854#/30\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q14071s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201307040000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201307172359"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201306270000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201307110000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "interval_t": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q14071e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994854"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嗨,#b#h0##k!\\r\\n你知道#e#b夏季點名活動第1次#k#n已經在#k進行了吧?要現在點名嗎?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "帶來可以消散這暑熱的#b#e#t3994854#30個#k#n的話,我就在出席簿子上幫你蓋上出席印章.一起度過一個涼爽的夏天吧!\\r\\n#e#i3994854##t3994854#嘛?\\n#n好像可以使暑熱飛散涼爽藍色的扇子.是楓之谷怪物們都有的啊.#r(但是,比自己等級低10以上、高20級以上的怪物除外!)#k"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒收集到#b#e#i3994854##t3994854#30個#k#n?我等你!"
+          }
+        }
+      }
+    }
+  }
+}

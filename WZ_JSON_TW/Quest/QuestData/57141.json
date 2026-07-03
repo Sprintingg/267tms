@@ -1,0 +1,222 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[Hayato] Honnou-ji Infiltration 2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "57"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "Talk to Yukimura about the infiltration plan."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "Princess Sakuno is here somewhere. Hurry to the Eastern Wing!"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "Princess Sakuno is safe! It doesn't look like Nobunaga was too rough with her either."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "Saving Sakuno"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\\n#fUI/UIWindow2.img/QuestIcon/8/0# 19,112\\nCan proceed to Internal Affairs quest"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[Required]"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "19112"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9130080"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "57140"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q57141s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "29"
+      },
+      "job": {
+        "_dirType": "sub"
+      },
+      "job_SG": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "4100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "4110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "4111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "4112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "4113"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "4114"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9130080"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "57141"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q57141e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "19112"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "The Mouri dogs were right. Security in this area is lax as can be."
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "The Eastern wing of the temple is right over this wall. Prove yourself worthy of your name, Bladed Falcon. The princess needs you."
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "I shall remain here to protect the escape route. Be cautious. It is still possible that the frail security is a trap."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "I don't see Princess Sakuno by your side."
+          }
+        }
+      }
+    }
+  },
+  "reqType": {
+    "_dirType": "int",
+    "_value": "2"
+  }
+}

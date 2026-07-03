@@ -1,0 +1,220 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[克里塞] 收集訓練用盾牌(2)"
+    },
+    "area": {
+      "_dirType": "string",
+      "_value": "33"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "米加爾好像有事情要委託。難道還要幫他找盾牌嗎？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "也許他能用的盾牌也不多了。反正又不難就幫他一下吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "擊倒黃金佩涅克收集佩涅克的盾牌100個交給他。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000637:# #t4000637:# #c4000637# / 100\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 31,163\r\n可進行 '[克里塞] 競技場調查' 任務\r\n"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "預備訓練裝備"
+    },
+    "order": {
+      "_dirType": "string",
+      "_value": "4"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "31163"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2170000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "50"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31009"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2170000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000637"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "31163"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000637"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-100"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "盾牌也同樣都很老舊，可以使用的沒有幾個。 如果早知道是這樣，我就會再拜託你一次了，這是我的疏失。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "可以請你再去找來可以使用的黃金佩涅克的盾牌嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這一次希望你可拿給我100個。這樣應該就足狗的。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我的請求太過分嗎？ 我想旅行者應該沒有問題…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "請問收集到訓練用的黃金佩涅盾牌嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "沒錯全部是100個。 這次找來的盾牌狀態好像還不錯。 這樣準備面對決戰之日的所有準備都完成了。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "沒有盾牌就無法開始訓練。我委託的黃金佩涅克的盾牌 100個呢？"
+          }
+        }
+      }
+    }
+  }
+}

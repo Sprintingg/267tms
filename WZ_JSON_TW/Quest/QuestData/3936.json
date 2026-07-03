@@ -1,0 +1,260 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2101002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "85"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3935"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2101002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4011008"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你說想加入沙影團，我還以為你開玩笑呢...。不好意思。是我低估你了。你想加入沙影團？那麼，再做一個測試吧，這是最後一次了。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "沙影團團員都非常憎恨王妃。但他們不會表現出來。因為表現出憤怒，會誤大事。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "因此，對沙影團團員來說最重要的是忍耐。不能一時衝動，每一件事都要三思。這也是加入沙影團所需要的條件。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "你知道鋰嗎？是個偶爾會獲得的沙漠寶石。專業技術中，使用採礦應該就可以獲得。若帶來#b#t4011008# 2個#k的話，我就認可你是沙影團團員。提煉元石做出寶石是一件很難的事情…透過這任務可以知道你的耐心了呢。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "看來這事對你來說比較勉強。沒信心，就放棄吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "收集來#t4011008#2個了嗎？只有在納希才能獲得的此寶石，雖然很硬並且不好加工，但一旦加工形狀能保持長時間。看外表就像玻璃一樣容易破碎，但實際上這寶石像鑽石一樣堅硬。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "#t4011008#很像沙漠人。他不相信一般人，但一旦相信就不會背叛。看來你的真心確實打動他了。沙漠的戰士愛爾斯佳認定你為沙影團團員。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "但你還不能滿足。目前你只得到了一名團員的信賴，還不能完全成為沙影團團員。如想成為沙影團團員，需要找其他團員證明自己。放心吧。我想你應該很快就得到他們的認可。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "看來還沒找來#b#t4011008#2個#k呢。"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "125580"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4020007"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4011008"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-2"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4010003"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[納希沙漠] 艾里斯卡的沙影團"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "艾里斯卡提到的沙影團"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "3"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "通過了#p2101002#的所有測試。現在可以成為沙影團員了吧？去問問最可信的#p2101002#吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2101002#說再怎麼憎恨王妃，也不能表現出來，這就是真正的沙影團，作為團員最重要的就是忍耐。忍耐…這跟磨練很相似。按照艾里斯卡的話，去收集#b#t4011008#2個#k後拿給他吧。\\n\\n#i4011008# #t4011008#  #b#c4011008#/2"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "拿到#t4011008#的#p2101002#說有充分的資格成為沙影團團員，並說能通過其他團員的測試，就可以加入沙影團。其他團員？想起來了，那祕密之牆壁上還寫有弓和鐵錘不是嗎？"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "43"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "125580"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4020007"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "3"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4010003"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "3"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

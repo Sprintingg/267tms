@@ -1,0 +1,266 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "神祕的紅色區域"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "4"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b勇士之村#k的#b#@1020000:##k說他也許能夠揭開#r骯髒的藏寶圖#k上的紅色區域。我們去找他談一談。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b勇士之村#k的#b#@1020000:##k說他能夠將地圖上的紅色區域恢復原狀，但是你必須要從#r黑木妖#k手上取得兩顆#r打火石#k。\\n\\n完成之後，向#b勇士之村#k的#b#@1020000:##k回報。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#b勇士之村#k的#b#@1020000:##k建議你向#b勇士之村#k的#b#@1022007:##k探聽更多消息。不過，我們先去找#b#@1020000:##k談一談吧。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4001356:##t4001356:##c4001356#/2"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 2,250\r\n可進行 '缺漏的部分' 任務\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "2250"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2250"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001356"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-2"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "都收集到了嗎？好，我來看看！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這是#r打火石#k。\\n\\n把地圖攤開，放在打火石上面，地圖應該會產生變化。\\n\\n你有發現什麼變化再跟我說吧。快點！真想看看會發生什麼事！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "收集到2顆#r打火石#k了嗎？"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "讓我看看藏寶圖。\\n這些彩色標記是什麼？\\n看來好像有人故意不讓別人看清楚藏寶圖，才畫上去的。這張手繪的地圖也未免太簡陋了點。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "我真的還蠻好奇的。尋寶真是一件令人興奮的事！哈哈！\\n\\n如果你帶給我幾樣東西，我應該有辦法消除這些紅色區塊。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你果然跟我一樣好奇，對吧？\\n我的經驗與直覺告訴我，這些紅色墨水雖然擦不掉，但可以用火讓它揮發。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "你可以從#r黑木妖#k的身上找到#r打火石#k。我只需要兩顆打火石，就可以生火讓紅色墨水揮發。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "別再吊我胃口了！"
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1020000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001356"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1020000"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "40"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "28245"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "500"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "510"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "520"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "511"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "521"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "512"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "522"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "1500"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "1510"
+        },
+        "9": {
+          "_dirType": "int",
+          "_value": "1511"
+        },
+        "10": {
+          "_dirType": "int",
+          "_value": "1512"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

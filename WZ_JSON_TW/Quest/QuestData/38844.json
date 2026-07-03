@@ -1,0 +1,192 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[赫力席母] 偵查城堡"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "259"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "結束了黃金地帶的偵察。向位於#b黃金地帶黑市#k的#b伊黛亞#k報告情況吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "伊黛亞說，梅格耐斯是為了獲得超新星的古代神們留下的#b聖遺物奧特里格#k，才入侵赫力席母，但對城市本身的意義並不大，因此請我去城寨進行偵察。\r\n\r\n為了掌握梅格耐斯的情況，請進入城寨內部，進行#b暴君的王座#k的偵察後回來。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "暴君的王座似乎還鎖著。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#偵察暴君的王座 (#R38844ExdoorRef38844#)\r\n"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "119"
+      }
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "16"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1057140"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001100"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q38844s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "subJobFlags": {
+        "_dirType": "int",
+        "_value": "15"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "38843"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001100"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "38844"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "偵察暴君的王座"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "door"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1057140"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "確認完城堡內部了嗎？怎麼樣？門是鎖著的嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "原來如此….門被鎖著，意味著#r守護赫力席母王位的守護者#k還存在。首先…也許我們應該先打敗他們。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "能能進到城堡裡面最中心的位置，確認一下王座在哪裡嗎？恐怕無法進去。因為可能已經上了結界。就算能進去也千萬不要進去。因為我們還沒有做好與梅格耐斯戰鬥的準備。"
+          }
+        }
+      }
+    }
+  }
+}

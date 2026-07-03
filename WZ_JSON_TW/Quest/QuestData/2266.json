@@ -1,0 +1,197 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[奇幻村]遺失的背包"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "31"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "葛溫好像還有話要說。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在被詛咒的神殿裡找回被怪物搶走的背包。\n除掉魔龍，找回遺失的背包。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "找回了被魔龍搶走的葛溫的背包。"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "受傷的冒險家"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4033148:# #t4033148:# #c4033148# / 1\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "72250"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1061013"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "65"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2265"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1061013"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033148"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "72250"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033148"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "不好意思，我可以再委託一下事嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "在神殿內受到怪物襲擊後遺失了背包。裡面有重要的物品所以一定要找到，但是我的身體還沒有…進入神殿擊倒魔龍之後請幫我找回#b背包#k。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "啊，很抱歉。如果現在不方便聽我的請託，有空時再和我談話。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "找到我的背包嗎？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "噢，太好了。因為背包裡有很有重要的東西…？\\n#b（確認背包的葛溫突然停止說話。）#k"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "擊倒神殿入口的魔龍請幫我找回#b背包#k。"
+          }
+        }
+      }
+    }
+  }
+}

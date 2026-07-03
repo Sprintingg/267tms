@@ -1,0 +1,105 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 維多利亞港的特奧"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "瑪亞和奇怪的藥"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽說住在弓箭手村的#p1012101#身體不舒服…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在弓箭手村的小屋裡有個叫瑪亞的女孩子。她得了頑疾無法正常生活。她說只有一種叫\"怪藥\"(奇怪的名字)的藥可以讓他好一點，為了她我得去維多利亞港見一個叫特奧的水手。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "受到住在弓箭手村的瑪亞之託，去見維多利亞港的特奧。他說只要為他帶來閃耀的石頭，就會給我奇怪的藥水。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "2003"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "咳咳..咦？是旅行者啊！能拜託您一件事情嗎？我從很久以前就疾病纏身，聽說這個病是不會好的可是最近症狀加深了，生活都成了問題。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "你能替我弄來#b#t4031006##k嗎？雖然我不清楚該怎樣弄來那個藥，也許#b#m104000000##k的#r#p1002001##k會知道,拜託你了。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有見到#r#p1002001##k嗎。如果是居住在#b#m104000000##k的維多利亞湖附近的#p1002001#大叔的話，應該會知道，#t4031006#在哪裡的拜託。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012101"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "15"
+      }
+    }
+  }
+}

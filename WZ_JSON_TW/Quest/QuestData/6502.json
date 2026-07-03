@@ -1,0 +1,125 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 作出懷疑的表情。"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "被大發企劃代表#b#p1052121##k遷就要接受#b演技課程#k. 是哪個課程? 向#b弓箭手村市場, 美髮店旁邊#k站著的#p1052121#進行對話."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1052121#說，觀察並模仿他人是最好的演技。還說去#b#m100000000##k好好觀察#b#p1012003##k就能得到一個表情…"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "學到看著#p1012003#作出懷疑的表情。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052121"
+      },
+      "charmMin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "6501"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012003"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q6502e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "提高演技的辦法很簡單。只要會擺出各種表情就好。可是每個人的性格都不同，要擺出所有表情也不容易。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "那是有個很簡單的辦法。仔細觀察其他性格的人，學他的樣子演就可以了。理解了嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那麼這是第一個演技課程。到#b#m100000000##k好好觀察#b#p1012003##k，學一下他的表情吧。就能獲得一個表情了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "雖然不想當藝人，也不希望你忽視這個課程。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒去找 #b#p1012003##k嗎？他在#b#m100000000##k。"
+          }
+        }
+      }
+    }
+  }
+}

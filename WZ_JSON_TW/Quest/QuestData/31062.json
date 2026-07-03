@@ -1,0 +1,189 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[星星力量] 降落在廢礦的星星"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "33"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "和#b史卡圖勒#k交談吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "史卡圖勒說昨晚降下的光芒是流星，在夜晚狩獵時看到那道光芒相當不吉祥，他還說流星降落在 #b廢礦#k那邊。 必須將這件事情轉告 #b亞凱斯特#k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "史卡圖勒說昨晚降下的光芒是流星，在夜晚狩獵時看到那道光芒相當不吉祥，他還說流星降落在 #b廢礦#k那一邊。"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 323,465\r\n'[★] 能以偵查廢礦'任務進行\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "323465"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2020007"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "120"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q31062s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31061"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2020005"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "323465"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "昨天晚上我在追巨大的白狼時，我沿著白狼留下的痕跡穿越了原野，\\r\\n雖然難以置信…但流星出現之前，我就已經注視著西邊的天空了，因為我感受到一股難以形容的不吉氣息。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "那遼闊的原野就像是發生地震似地震動了起來，接著，西邊天空就渲染成一片紅色，就像是世界末日來臨一樣。\\r\\n隨之而來的流星就這樣穿越了原野飛向 #b廢礦#k後就消失了，於是我便放棄追白狼，立刻回到冰原雪域。 \\r\\n呼，這就是我昨晚看到的一切，可以替我轉達給 #b亞凱斯特#k嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "將我說的話轉達給#b亞凱斯特#k吧，我有事情要準備，那一切拜託了。 \\r\\n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我不可能看錯。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "sayEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "史卡圖勒說什麼呢？\\r\\n"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "（轉達史卡圖勒說過的話。）"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "廢礦嗎？史卡圖勒也感受到這股不吉祥了吧？ \\r\\n"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "亞凱斯特應該也察覺到了。"
+          }
+        }
+      }
+    }
+  }
+}

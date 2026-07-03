@@ -1,0 +1,143 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "36121001 퍼지롭 매스커레이드 : 저격\r\n36121011 퍼지롭 매스커레이드 : 포격\r\n36121012 퍼지롭 매스커레이드 : 폭격\r\nrandomEffect 구조로 변경 필요"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "RTfuzzyLobMasLeft"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-2"
+            },
+            "socketName": {
+              "_dirType": "string",
+              "_value": "None"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AEAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "36121011"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "damage": {
+          "_dirType": "string",
+          "_value": "254+3*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "4"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "8"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -480,
+          "_y": -145
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 100,
+          "_y": 5
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub"
+        },
+        "1": {
+          "_dirType": "sub"
+        },
+        "2": {
+          "_dirType": "sub"
+        },
+        "3": {
+          "_dirType": "sub"
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "36121011"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "damage": {
+      "_dirType": "string",
+      "_value": "254+3*x"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "4"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "8"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -480,
+      "_y": -145
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 100,
+      "_y": 5
+    },
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "30"
+    }
+  }
+}

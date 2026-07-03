@@ -1,0 +1,217 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[選擇程序]  臨時能源供給"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "32"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "[選擇程式] 臨時能源供給\r\n\r\n消滅#e連結7#n的#o9306007#，然後收集 #e#b#t4033458# 20個#k#n供給電源裝置。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "[選擇程序]  臨時能源供給\\n需要清除#eLink7#n的 #o9306007#並收集20個#e#b#t4033458#之後#k#n進行電源裝置的補給。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "[選擇程序]  臨時能源供給\\n#b#e任務完成#n#k"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4033458:# #t4033458:# #c4033458# / 20"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "validField": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "int",
+        "_value": "957010000"
+      },
+      "1": {
+        "_dirType": "int",
+        "_value": "957011000"
+      },
+      "2": {
+        "_dirType": "int",
+        "_value": "957012000"
+      },
+      "3": {
+        "_dirType": "int",
+        "_value": "957013000"
+      },
+      "4": {
+        "_dirType": "int",
+        "_value": "957014000"
+      },
+      "5": {
+        "_dirType": "int",
+        "_value": "957015000"
+      },
+      "6": {
+        "_dirType": "int",
+        "_value": "957016000"
+      },
+      "7": {
+        "_dirType": "int",
+        "_value": "957017000"
+      },
+      "8": {
+        "_dirType": "int",
+        "_value": "957018000"
+      },
+      "9": {
+        "_dirType": "int",
+        "_value": "957019000"
+      }
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9075206"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "1818"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "q1836"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9075206"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q1836e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033458"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#eLink7#n的能源供給不順暢。要解決問題嗎?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#e連結7#n的 #o9306007#擊倒並收集#e#b#t4033458# 20個#k#n供給電源裝置。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "準備好供給連結7#t4033458#的話，再跟我說。 "
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#t4033458# 20個取來了嗎?"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "連結7能源供給。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#e連結7#n的#o9306007#擊倒並取回 #e#b#t4033458# 20個#k#n。"
+          }
+        }
+      }
+    }
+  }
+}

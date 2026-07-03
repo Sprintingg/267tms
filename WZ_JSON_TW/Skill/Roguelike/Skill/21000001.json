@@ -1,0 +1,215 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "배틀 스퍼트 32111015"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "RMbattleSpurt"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "socketName": {
+              "_dirType": "string",
+              "_value": "None"
+            }
+          }
+        }
+      },
+      "effect2": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "socketName": {
+              "_dirType": "string",
+              "_value": "None"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "32111015"
+          }
+        }
+      }
+    },
+    "VectorSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "AnimReference": {
+            "_dirType": "sub",
+            "bEnableRootMotion": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "0": {
+              "_dirType": "sub",
+              "pos": {
+                "_dirType": "vector",
+                "_x": 0,
+                "_y": 0
+              },
+              "delay": {
+                "_dirType": "int",
+                "_value": "450"
+              },
+              "intrpl": {
+                "_dirType": "string",
+                "_value": "Linear"
+              }
+            },
+            "1": {
+              "_dirType": "sub",
+              "pos": {
+                "_dirType": "vector",
+                "_x": 0,
+                "_y": 0
+              },
+              "delay": {
+                "_dirType": "int",
+                "_value": "450"
+              },
+              "intrpl": {
+                "_dirType": "string",
+                "_value": "Linear"
+              }
+            },
+            "2": {
+              "_dirType": "sub",
+              "pos": {
+                "_dirType": "vector",
+                "_x": -500,
+                "_y": 0
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "500+150*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "8"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -500,
+          "_y": -50
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 0,
+          "_y": 0
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "100"
+        },
+        "stunDuration": {
+          "_dirType": "string",
+          "_value": "1"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub"
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "32111015"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "500+150*x"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "1"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "8"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -500,
+      "_y": -50
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 0,
+      "_y": 0
+    },
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "cooltime": {
+      "_dirType": "int",
+      "_value": "3"
+    }
+  }
+}

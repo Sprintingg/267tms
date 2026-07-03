@@ -1,0 +1,263 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[黃金海岸] 黃金海岸的熱帶水果"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "再一次的向非常漫不經心的#p1082000#請求介紹渡假村吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "找回在#e#m120040100##n被偷走的#b#o3401001##k偷走的＋#b熱帶水果#k找回， 並交給在#m120040000#的#p1082000#才行。\\n我是客人，不是職員耶... 不過感覺很像是緊急的事，先幫助他之後再解開這個誤會吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "被#o3401001#偷走的熱帶水果全部找回來了。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4033623:# #t4033623:# #c4033623# / 10\r\n#questorder1##i4033624:# #t4033624:# #c4033624# / 10\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "228"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "59"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "21405"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1082000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2953"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1082000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033623"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033624"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033623"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033624"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        }
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "21405"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "你是新來的員工吧？來的時機真是恰當。很高興見到你。\\r\\n#L0##b不，我不是員工，我是受到招待的…#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "那要馬上開始做事嗎？那些惡劣的黑色綠水靈們偷了儲藏室的水果。要找回才行！\\r\\n#L0##b啊，不是那個是我手裡…#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "在#m120040100#裡面的#o3401001#抓到然後找回藍子裡的水果才行。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#t4033623#, #t4033624# 各10個. 請加油. 有想要說的話嗎? 這先處理完事情後再聽."
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "渡假村在正式開幕前，很少會有船行駛。所有物品都很珍貴。一定要找回來！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "要找回所有的熱帶水果嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "哦~果然像介紹一樣是位有能力的人。辛苦了。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#t4033623#, #t4033624# 各10個. #e#m120040100##n的#b#o3401001##k偷走了!"
+          }
+        }
+      }
+    }
+  }
+}

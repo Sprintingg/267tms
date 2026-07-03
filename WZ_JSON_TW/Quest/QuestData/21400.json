@@ -1,0 +1,141 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[過去的英雄，狂狼勇士] 武器向主人挑戰？"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "6"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "達到100時 #b#p1201000##k突然過來交談..."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1201000#又說#p1201002#反應有點奇怪，讓我趕快去#b#m140000000##k。這次與前幾次不同，好像真的有什麼事情…"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p1201002#看起來非常痛苦。到底發生了什麼事情？"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[轉職]"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1201000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q21400s"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2111"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1201002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "修煉進行的還好嗎？這麼忙真對不起可快回#m140000000#，#p1201002#又有異常反應出現…很怪不是以前的反應。比以前更深更黑的感覺。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "感覺很不祥…快回來吧。雖然我一次也沒見過#p1201002#的臉也沒聽過他的聲音可我能感覺到他很痛苦。只有#b#p1201002#的主人你才能解決這狀態。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不是鬧著玩的！真的很怪…分明#p1201002#出問題了！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊！啊…"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "…你是…狂狼勇士？你為什麼來這兒。？啊，是這樣。那前面嬌氣的女孩子教的…嗨。這次不希望喊你的。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "快幫#b#p1201002##k.這樣下去會弄壞它的。"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,319 @@
+{
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot1": {
+        "_dirType": "sub",
+        "Segment:start": {
+          "_dirType": "sub",
+          "AnimReference": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "sub",
+              "action": {
+                "_dirType": "string",
+                "_value": "swingP2"
+              },
+              "frameIdx": {
+                "_dirType": "int",
+                "_value": "1"
+              }
+            }
+          },
+          "StartPos": {
+            "_dirType": "int",
+            "_value": "0"
+          },
+          "EndPos": {
+            "_dirType": "int",
+            "_value": "900"
+          }
+        },
+        "Segment:KeydownLoop": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "RL_Bowman_KeydownLoop"
+          },
+          "StartPos": {
+            "_dirType": "int",
+            "_value": "90"
+          },
+          "EndPos": {
+            "_dirType": "int",
+            "_value": "1320"
+          },
+          "LoopingCount": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        },
+        "Segment:end": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "RL_Bowman_KeydownEnd"
+          },
+          "StartPos": {
+            "_dirType": "int",
+            "_value": "1320"
+          },
+          "EndPos": {
+            "_dirType": "int",
+            "_value": "1740"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_PlaySound"
+          },
+          "SoundPath": {
+            "_dirType": "string",
+            "_value": "Sound/Redmoon.img/Skill/303/Use"
+          }
+        }
+      },
+      "attackLoop": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "960"
+        }
+      }
+    },
+    "Sections": {
+      "_dirType": "sub",
+      "start": {
+        "_dirType": "sub"
+      },
+      "KeydownLoop": {
+        "_dirType": "sub",
+        "NextSectionName": {
+          "_dirType": "string",
+          "_value": "KeydownLoop"
+        },
+        "StartTime": {
+          "_dirType": "int",
+          "_value": "900"
+        }
+      },
+      "end": {
+        "_dirType": "sub",
+        "StartTime": {
+          "_dirType": "int",
+          "_value": "1200"
+        }
+      }
+    },
+    "LayerSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment:start": {
+          "_dirType": "sub",
+          "AnimReference": {
+            "_dirType": "sub"
+          },
+          "EndPos": {
+            "_dirType": "int",
+            "_value": "900"
+          }
+        },
+        "Segment:KeydownLoop": {
+          "_dirType": "sub",
+          "AnimReference": {
+            "_dirType": "sub"
+          }
+        },
+        "Segment:end": {
+          "_dirType": "sub",
+          "AnimReference": {
+            "_dirType": "sub"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "attackLoop": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Projectile"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "time": {
+          "_dirType": "string",
+          "_value": "0.8"
+        },
+        "emitSpeed": {
+          "_dirType": "string",
+          "_value": "2000"
+        },
+        "emitCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "destroyHitCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "boundLT": {
+          "_dirType": "vector",
+          "_x": -70,
+          "_y": -25
+        },
+        "boundRB": {
+          "_dirType": "vector",
+          "_x": 90,
+          "_y": 35
+        },
+        "emitPos": {
+          "_dirType": "vector",
+          "_x": -100,
+          "_y": -50
+        }
+      },
+      "onProjectileHit": {
+        "_dirType": "string",
+        "_value": "AttackByProjectile"
+      },
+      "ball": {
+        "_dirType": "sub"
+      }
+    },
+    "AttackByProjectile": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "100"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "4"
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "50"
+        },
+        "buffLevel": {
+          "_dirType": "string",
+          "_value": "1"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "useZ": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "z": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "hitSoundPath": {
+        "_dirType": "string",
+        "_value": "Sound/Redmoon.img/Skill/303/Hit"
+      },
+      "eventTags": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "RLGame.Skill.SingleAttack"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "RLGame.Effect.Shock"
+        }
+      },
+      "targetBuffID": {
+        "_dirType": "string",
+        "_value": "502"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "100"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "4"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "1"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -450,
+      "_y": -82
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 0,
+      "_y": 18
+    },
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "Keydown": {
+      "_dirType": "sub",
+      "KeyUpJumpToSections": {
+        "_dirType": "sub",
+        "start": {
+          "_dirType": "string",
+          "_value": "end"
+        },
+        "KeydownLoop": {
+          "_dirType": "string",
+          "_value": "end"
+        }
+      }
+    },
+    "Tags": {
+      "_dirType": "sub",
+      "cannotDestroy": {
+        "_dirType": "sub"
+      },
+      "interruptable": {
+        "_dirType": "sub"
+      }
+    },
+    "attackInterval": {
+      "_dirType": "string",
+      "_value": "0.3"
+    }
+  },
+  "SkillTags": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "string",
+      "_value": "RLGame.Skill.Basic"
+    }
+  }
+}

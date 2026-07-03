@@ -1,0 +1,136 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "growth"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "makingSkill"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "[飾品製作]細工界的翹楚"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "飾品製作工匠達成"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "epic"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "uiForm": {
+        "_dirType": "string",
+        "_value": "basic"
+      },
+      "gauge": {
+        "_dirType": "string",
+        "_value": "submission_info"
+      },
+      "gaugeMissionIndex": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "gaugeSubMission": {
+        "_dirType": "string",
+        "_value": "makingskill_lvup"
+      }
+    },
+    "prior": {
+      "_dirType": "sub",
+      "block": {
+        "_dirType": "string",
+        "_value": "hide"
+      },
+      "condition": {
+        "_dirType": "string",
+        "_value": "and"
+      },
+      "values": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "achievement_id": {
+            "_dirType": "int",
+            "_value": "161"
+          },
+          "achievement_state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "sync": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "飾品製作工匠達成"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "makingskill_lvup": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "int",
+              "_value": "11"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            },
+            "type": {
+              "_dirType": "string",
+              "_value": "set"
+            },
+            "setGroup": {
+              "_dirType": "string",
+              "_value": "skill"
+            },
+            "setValue": {
+              "_dirType": "string",
+              "_value": "skill_level"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub",
+            "skill": {
+              "_dirType": "sub",
+              "condition": {
+                "_dirType": "string",
+                "_value": "or"
+              },
+              "values": {
+                "_dirType": "sub",
+                "0": {
+                  "_dirType": "sub",
+                  "skill_id": {
+                    "_dirType": "int",
+                    "_value": "92030000"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

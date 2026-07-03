@@ -1,0 +1,199 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[十字獵人] 兼差攻擊"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "能夠透過#b#p9133200##k接受十字旅團的指令。前往#b#m813300000##k吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "代替受傷的#b#p9120217##k接受了#b#o9450074##k討伐指令。去搜索#b#m813000040##k吧。\\r\\n#i3800176#"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "代替受傷的#b#p9120217##k接受的十字旅團#b#o9450074##k討伐指令完成。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o9450074# #a506891#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\n#i4310018:# #t4310018:# 13個\n可以前往「營救克勞烏」任務\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "long",
+            "_value": "4310018"
+          },
+          "count": {
+            "_dirType": "long",
+            "_value": "13"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9133200"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "50687"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "62"
+      },
+      "gender": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9133200"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q50689e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9450074"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "你終於來了，#b#h0##k。\\r\\n真的很不好意思，不過這是緊急指令。\\r\\n\\r\\n#p9120217#在執行指令時，不小心受了傷…。\\r\\n#L0##b咦！！！#p9120217#的情況還好嗎？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "總之，他沒有生命危險。\\r\\n只不過他的狀況沒辦法執行指令。\\r\\n\\r\\n你能代替他執行指令嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝你。#p9120217#為了要驅逐#o9450074#而搜索#m813000040#時被偷襲了。\\r\\n#i3800176#"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "現在能代替#p9120217#的人就只有你！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  }
+}

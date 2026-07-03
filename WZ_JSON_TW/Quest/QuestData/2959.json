@@ -1,0 +1,182 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[黃金海岸] 故障的照明設備"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "一到達黃金海岸就發生了好多事啊。現在向#p1082000#問問我住的地方在哪裡吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "跟在#e#m120041100##n的#p1082003#說海灘上的照明設備發生故障了。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在#m120041100#找到了#p1082003#。必須要向#p1082003#說明海灘上的照明設備發生故障的事情。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "228"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "59"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "53259"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1082000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2958"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1082202"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "53259"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "到底這個黑色綠水靈是在那裡出沒…？\\r\\n#L0##b現在想休息一下的…要待在那裡好呢？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "(自言自語)嗯，忘了要解決照明的問題了。 不好意思，既然已經這樣了可以幫我一下嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝。我一定會報答你的。所有問題都解決，渡假村順利開幕的話，我一定會正式招待你為黃金海岸渡假村終身永久VVIP會員。無論何時都可以來去自如地在這裡休息。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "你可以把海邊燈光故障的事情告訴#e#p1082003##n嗎。 他應該巡邏渡假村週邊才對,應該在 #b#m120041100##k上。他也是… 黑綠水靈的關係變這麼可憐的。那拜託你了 。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "需要想一下下的時間嗎？說了請你幫忙，你答應就好。絕對不會後悔的。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "是在叫我嗎？有什麼事呢？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我很忙的。請簡單說明一下事情。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請跟在#m120041100#的#p1082003#說海邊照明壞掉的事情。會贈與豐厚的謝禮。"
+          }
+        }
+      }
+    }
+  }
+}

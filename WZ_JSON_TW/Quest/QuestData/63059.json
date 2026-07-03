@@ -1,0 +1,126 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[艾芙特領域]再次回到勇氣之地"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "121"
+    },
+    "selfStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "純真之地也都整頓好了。 看來得再次回到#e勇氣之地#n，展開尋找鑰匙的任務了。\\r\\n與#e#p9400205#對話，回到勇氣之地吧。#n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "再次回到勇氣之地。 勇士們全都昏倒了。 #p9400205#曾說過，勇氣之地的人們要到夜晚才能夠休息獲得恢復。\\r\\n#e請盡快轉動滑輪，讓天空變成黑夜吧。#n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "再次回到勇氣之地時，勇士們全都昏倒了。 他們要到夜晚才能夠休息獲得恢復。 \\r\\n在轉動滑輪讓天空變成黑夜後，昏倒的勇士們又再次甦醒了。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#轉動滑輪來弄成晚上 (#R63090ExDnNRef63059#)\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "63059"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "start"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "63090"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "轉動滑輪來弄成晚上"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "DnN"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "必須要到夜晚，他們才能夠獲得恢復。"
+          }
+        }
+      }
+    }
+  }
+}

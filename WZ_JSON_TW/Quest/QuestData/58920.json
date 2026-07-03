@@ -1,0 +1,152 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "order": {
+      "_dirType": "int",
+      "_value": "6"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "把紅壺和藍壺兩個都裝滿了。剩下黃壺…真的是這樣就好了嗎？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p9130107# 請求收集 #o9450033#的靈魂，並把罐子裝滿。罐子裡裝滿靈魂後再回來找 #p9130107# 吧。 總覺得#p9130107# 變得愈來愈奇怪，但已經接下的任務就堅持到底吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "捉住200隻#o9450033#靈魂把黃壺裝滿了。找#p9130107# 說話吧。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o9450033# #a589201#\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "95"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "[濃姬] 把靈魂裝進黃罐…"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "尚未收集足夠的靈魂到罐子中。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9130107"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "58915"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q58920s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "180"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          }
+        }
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "58919"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9130107"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q58920e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9450033"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "200"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

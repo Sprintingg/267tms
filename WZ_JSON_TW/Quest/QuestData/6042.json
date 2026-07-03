@@ -1,0 +1,233 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓之谷世界的冒險家] 鎮靜的大副凱丁的騎寵_BattleshipBomber!"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽說達到等級150時,2轉轉職官#b#p1090000##k會準備禮物喔?"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "不是鎮靜的大副凱丁的騎寵!快點去找#b#m120000100##k的#b#m120000101##的#b#p1090000##k吧!"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "好久沒去#b#m120000100##k.想到之前2次轉職時候的回憶,可以看到#b#p1090000##k,還可以收到海盜船轟炸機真是太好了!"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "和在#b#m120000100##k的#b#m120000101##k,#questorder1##b#p1090000##k對話\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "77"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1090000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "150"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "522"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "523"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "524"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1090000"
+      },
+      "npcSpeech": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1090000"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "skill": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "80001320"
+          },
+          "skillLevel": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "masterLevel": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "job": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "int",
+              "_value": "522"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "已經150等級了?厲害喔?恭喜.\\r\\n#L0##b啊!#p1090000#!有什麼事嗎?#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "現在已經150級了,好像已經準備好要獲得大副凱丁的騎寵了.\\r\\n#L0##b重砲指揮官的騎寵?#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "雖然這種誇張的名字有點丟臉,不過怎麼說還是慶祝達到#b150等級的禮物#k.要領取嗎?"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這樣想很不錯呢!但是...雖然是有預想過了,但是不是現在馬上就要給你.在回想過去的回憶時,順便來到#b#m120000100##k的#b#m120000101##k,和我對話吧."
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不想收禮物,出乎我意料呀.之後改變主意的話再拿走吧."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "來了啊#b#h0##k!再次恭喜你達到150級.\\r\\n#L0##b謝謝.那麼現在要收禮物了嘛?#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "嗯.為了不要遺忘初心成為堂堂地海盜,叫這地方為鯨魚號.嗯,收下吧.真正的海盜騎寵,#b戰鬥船本波騎寵#k."
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "騎乘後,可在村莊等特定地區按兩次跳躍鍵,就可以使用#b高空飛行技能#k."
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "千萬別忘了一開始選擇海賊這條路的初衷!再見!"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

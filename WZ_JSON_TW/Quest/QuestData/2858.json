@@ -1,0 +1,193 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 地鐵站服務員的煩惱"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去找在#b地鐵售票處#k的地鐵站服務員聽取一下他有什麼煩惱。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "需要代替地鐵站服務員打倒在地鐵越來越多的怪物.\r\n打倒在#b#m103020100##k或是#b#m103020200##k棲息的#r#o2300100# 50隻#k .\r\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "幫助地鐵站服務員消滅了地鐵站的怪物。 難道沒有完全消滅地鐵站怪物的方法嗎？"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o2300100# #a28581#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 12,938\r\n#i2030005:# #t2030005:# 10 個\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "12938"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2030005"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052006"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "43"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052006"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2300100"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "12938"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2030005"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "正常"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好。 呼…不好意思，能不能幫我一個忙？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "最近林車長太忙，所以地鐵線路管理也只好由我負責，但這些天怪物增加很多…雖然我很想親自解決，但又不能擅離崗位，而且我還有蝙蝠恐怖症。 請幫幫我吧！"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝! 我就在這裡繼續勤務, 就拜託了.\\n打倒棲息在#b#m103020100##k或是#b#m103020200##k的#r#o2300100# 50隻#k. 減少這些也可以讓地鐵使用方便許多."
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請不要拒絕，幫助我吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "消滅怪物進展順利嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝。 終於能放心一些了。 雖然還沒有完全消滅，不過地鐵裡的環境已經改善不少了。 啊！ 後街吉姆好像正在找你哦？ 快去看看吧。 那麼，再見了。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還有很多怪物在地鐵熱鬧著. 消失#b蝙蝠 50隻#k左右也可以讓地鐵使用方便."
+          }
+        }
+      }
+    }
+  }
+}

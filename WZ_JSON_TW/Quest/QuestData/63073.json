@@ -1,0 +1,181 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[艾芙特領域]被洗掉的顏色"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "121"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "我明明分出了我的顏色，但人們又再次變蒼白！\\r\\n去與#p9400221#對話，問看看這到底是怎麼一回事吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "下雨後思索之地居民們的顏色就會被洗掉，\\r\\n#p9400221#說因為那不是他們自己的顏色，雖然這不是什麼讓人感到驚訝的事情，但還是看得出他非常擔心這些感到失望的居民們，\\r\\n我有方法再次找回顏色，所以再去分點顏色給思索之地的居民們吧。 "
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "只要下雨，就會被洗掉顏色的思索之地居民們。\\r\\n我將顏色分給了他們，而我也再次變成了蒼白的狀態了，\\r\\n看來得再找色素給#p9400222#，請他替我著色了。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#跟#r#p9400220##k進行對話\r\n#questorder2#跟#r#p9400219##k進行對話\r\n#questorder3#跟#r#p9400218##k進行對話"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400221"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "63098"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "turn"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q63073s"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400221"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q63073e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npcSpeech": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9400220"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "speech": {
+            "_dirType": "sub"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "npc9400220"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9400219"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "speech": {
+            "_dirType": "sub"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "npc9400219"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9400218"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "speech": {
+            "_dirType": "sub"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "npc9400218"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "把顏色分給所有人了嗎？"
+          }
+        }
+      }
+    }
+  }
+}

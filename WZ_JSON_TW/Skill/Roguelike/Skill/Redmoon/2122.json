@@ -1,0 +1,142 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "리저렉션 2321006"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "resurrectionNew"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-2"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "2321006"
+          }
+        }
+      },
+      "buff_attackPower": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "buff_attackPower": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "AreaBuff"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": -3000,
+          "_y": -1500
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 3000,
+          "_y": 1500
+        }
+      },
+      "targetBuffID": {
+        "_dirType": "int",
+        "_value": "2120"
+      },
+      "targetingType": {
+        "_dirType": "string",
+        "_value": "Friendly"
+      },
+      "targetingIncludeSelf": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "cooltime": {
+      "_dirType": "string",
+      "_value": "180"
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "5+5*x"
+    },
+    "InvincibleDuration": {
+      "_dirType": "string",
+      "_value": "2"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -3000,
+      "_y": -1500
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 3000,
+      "_y": 1500
+    },
+    "time": {
+      "_dirType": "string",
+      "_value": "10"
+    },
+    "subCooltime": {
+      "_dirType": "string",
+      "_value": "30"
+    }
+  },
+  "SkillTags": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "string",
+      "_value": "RLGame.Skill.Extra"
+    }
+  },
+  "!script": {
+    "_dirType": "string",
+    "_value": "Roguelike/Redmoon/Skill_2120"
+  }
+}

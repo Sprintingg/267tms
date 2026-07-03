@@ -1,0 +1,140 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[偵探雷夫的事件日誌] 稱為廢棄物的傢伙"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "226"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o2400331# #a371061#\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "在#b危險的垃圾場3#k遇到的是矮小的惹事份子。我們要追問他們，並找出東西的行蹤。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "矮小的惹事份子有請我麻煩我方去教訓在 #b危險的垃圾場3#k的 #b危險的液體廢棄物#k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "矮小的惹事份子透過悄悄話告訴給雷夫是誰買走貨物。"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q37106x"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "175"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "179"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3004037"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q37106s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "37105"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3004037"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q37106e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2400331"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "垃圾100隻！幫我教訓危險的液體廢棄物！"
+          }
+        }
+      }
+    }
+  }
+}

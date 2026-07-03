@@ -1,0 +1,338 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓之谷世界的冒險家] 卡勒塔的老舊手鐲"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "堅固的意志"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "3"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2060100#說道…若想要吸收意志，需要作成藥來服用。但她不願白白地幫忙，而開出條件！她告知可以先去找#b#p2040050##k打探一下，設法幫她拿回她的#b#t4031463##k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#b#p2040050##k真的知道有關#p2060100#的手鐲的事情嗎？"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "77"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "35000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "如果想要吸收意志的話，就不能在碎片的狀態，而要在液體狀態才可以…。要製造使碎片溶解的藥並不是很困難，不過若是我再次幫助你的話就不像魔女了，不是嗎?\\r\\n#b#L0#是妳把意志丟在次元的漏洞的關係才會發生這樣的事情耶。#l"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "…這跟你根本毫不相干。\\n\\n#b#L0#什麼意思啊?#l"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "…反正無法幫你做多餘的事情。啊。我跟你說吧，這種藥是在魔法森林的漢斯或艾納斯島的羅貝亞也做不到的事情。只有我#p2060100#才可以做的事情呀。\\n\\n#b#L0#(卡勒塔是那麼了不起的法師嗎…?)#l"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "真的需要意志的話，就把很久以前在修煉魔法時搞丟的手鐲找找來給我吧，那麼我會幫忙做藥給妳。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "手鐲是格瑞芬多在身上。太舊了應該不太好用…不要直接帶來喔。帶給流浪的研究家#p2040050#，同時和#t4011002#一起合成給我吧。如果把鋰礦石手鐲帶來給我的話，我就會把可以讓意志溶解成液體的藥交給你。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不要的話就放棄吧。看你用意志的碎片還能做什麼。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好，我專門研究魔法和金屬，植物，礦物…以外所有的東西。萬一對我有疑問的話，什麼都可以幫忙喔。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "沒有吧#t4031463#帶來了喔…沒有它的話我無法把藥交給你。"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "35000"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2040050"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2060100"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "120"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "6301"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "112"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "122"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "132"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "212"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "222"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "232"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "312"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "322"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "412"
+        },
+        "9": {
+          "_dirType": "int",
+          "_value": "422"
+        },
+        "10": {
+          "_dirType": "int",
+          "_value": "434"
+        },
+        "11": {
+          "_dirType": "int",
+          "_value": "512"
+        },
+        "12": {
+          "_dirType": "int",
+          "_value": "522"
+        },
+        "13": {
+          "_dirType": "int",
+          "_value": "532"
+        },
+        "14": {
+          "_dirType": "int",
+          "_value": "1112"
+        },
+        "15": {
+          "_dirType": "int",
+          "_value": "1212"
+        },
+        "16": {
+          "_dirType": "int",
+          "_value": "1312"
+        },
+        "17": {
+          "_dirType": "int",
+          "_value": "1412"
+        },
+        "18": {
+          "_dirType": "int",
+          "_value": "1512"
+        },
+        "19": {
+          "_dirType": "int",
+          "_value": "2112"
+        },
+        "20": {
+          "_dirType": "int",
+          "_value": "2217"
+        },
+        "21": {
+          "_dirType": "int",
+          "_value": "2218"
+        },
+        "22": {
+          "_dirType": "int",
+          "_value": "2312"
+        },
+        "23": {
+          "_dirType": "int",
+          "_value": "2412"
+        },
+        "24": {
+          "_dirType": "int",
+          "_value": "2712"
+        },
+        "25": {
+          "_dirType": "int",
+          "_value": "3212"
+        },
+        "26": {
+          "_dirType": "int",
+          "_value": "3312"
+        },
+        "27": {
+          "_dirType": "int",
+          "_value": "3512"
+        },
+        "28": {
+          "_dirType": "int",
+          "_value": "3612"
+        },
+        "29": {
+          "_dirType": "int",
+          "_value": "6112"
+        },
+        "30": {
+          "_dirType": "int",
+          "_value": "6512"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "11212"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "11213"
+        }
+      },
+      "skill": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1121011"
+          }
+        }
+      }
+    }
+  }
+}

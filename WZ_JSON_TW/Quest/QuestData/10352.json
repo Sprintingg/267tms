@@ -1,0 +1,177 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 狂狼勇士隱隱約約的痕跡"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "終於狂狼勇士的痕跡12個全部都收集到了，可是這些痕跡…到底是…什麼呢？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "去找狂狼勇士隱約的痕跡吧。"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "尤莉亞說的12個狂狼勇士的痕跡中少了一個，最後一個痕跡可能也要去找尤莉亞才能獲得吧？"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4032371:##t4032371:##c4032371#/20"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "200907090000"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "200906300000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "200907090000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "200906300000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "10351"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q10352e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032371"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "加油吧。#h0#現在狂狼勇士的痕跡幾乎都已經收集到了吧？再加上他們也就要復活了。\\r\\n#b#L0#他們什麼時候會復活呢？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "啊…你在說什麼…我透過水晶球已經讓你看到了不是嗎…他們覺醒的那天…\\r\\n#b#L0#是1月27日嗎？#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "沒錯啊。所以要快點收集狂狼勇士的痕跡，要在他們復活之前…不是嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那麼就快點去收集#b#t4032371##k的#b20#k個吧，我就把最後兩個痕跡給你…"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果他們復活的話…你收集的狂狼勇士的痕跡就沒有任何意義了…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "那麼就快點去收集#b#t4032371##k的#b20#k個吧，那麼就把最後一個痕跡給你…"
+          }
+        }
+      }
+    }
+  }
+}

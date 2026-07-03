@@ -1,0 +1,159 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[十字獵人] 克勞烏的第二項請求"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "看來克勞烏還有事要拜託我，再問他看看吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b#p9133001##k請我和#b#p9133200##k見面，詢問有關魔性碎片的事，並且遵照他的指示行動。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "和文森碰面，並詢問他有關魔性碎片的事。"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "經驗值 1,006,320"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "1006320"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9133006"
+      },
+      "gender": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "57515"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q57516s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "90"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9133200"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1006320"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "您是指魔性石嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你提到的魔性石，是參加我們十字旅團試煉之塔時所必須的物品。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "試煉之塔是訓練十字旅團團員，並選出真正十字旅團團員的場所。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "話說上次你也提到需要隊長級人物的推薦信…\\r\\n該不會#h0#你也想挑戰試煉之塔吧？"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你有去調查魔性石的事了嗎？\\r\\n啊？還沒？\\r\\n反正我的死活，對#h0#來說根本沒差對吧？嗚嗚…"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[水世界]第二個委託"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "35"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o9390014# #a171121#\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽取#p9390004#的第二個委託。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p9390004#認為破壞水世界生態系的主謀應該就是 #o9390014#。雖然只是猜測... 總之他要求擊退500隻。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "按照#p9390004#所說擊退了 #o9390014#。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "5000000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5000000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "第一項委託令人非常滿意。多虧有你的幫忙，終於可以開始進行調查了。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "那麼現在進行第二次委託。如何？現在可以做嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "只要往這個地方的更深處，就會看見 #m860000012#。聽說最近這邊出現了奇怪的怪物。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "怪物的名字叫 #r#o9390014##k，本來是不會在水世界棲息的怪物。我認為是這些傢伙破壞了水世界的生態界。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "你可以幫我擊退#r#o9390014##k 500隻嗎？雖然想消滅它們，但是還有其他事要忙，首先就減少它們的數量吧。那麼快去快回吧。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "準備好就來找我吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "怎麼樣，那些傢伙有減少了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "辛苦了。但是，沒有時間休息了。得繼續加快動作，必需要解決的問題還很多啊。如準備好了，可以請你再來找我嗎？"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "加快腳步會比較好喔…怎麼還在這裡啊?"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390004"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "200"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "17111"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390004"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9390014"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "500"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

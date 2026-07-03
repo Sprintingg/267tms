@@ -1,0 +1,300 @@
+{
+  "info": {
+    "_dirType": "string",
+    "_value": "진기 : 흑풍각 175121040"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "HY17512blackTornadoKick"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect0": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            },
+            "socketName": {
+              "_dirType": "string",
+              "_value": "None"
+            }
+          }
+        }
+      },
+      "effect1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            },
+            "socketName": {
+              "_dirType": "string",
+              "_value": "None"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "175121040"
+          }
+        }
+      },
+      "applyDebuff_Burn": {
+        "_dirType": "sub"
+      },
+      "applyDebuff_Freeze": {
+        "_dirType": "sub"
+      },
+      "applyDebuff_Shock": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "120+80*x"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "10"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "5"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -775,
+          "_y": -815
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 450,
+          "_y": 115
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "800"
+        },
+        "stunDuration": {
+          "_dirType": "string",
+          "_value": "1"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "randomHitOrigin": {
+            "_dirType": "int",
+            "_value": "35"
+          }
+        },
+        "randomHit": {
+          "_dirType": "int",
+          "_value": "1"
+        }
+      },
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "hitSoundPath": {
+        "_dirType": "string",
+        "_value": "Sound/Skill.img/175121040/Hit"
+      }
+    },
+    "applyDebuff_Burn": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "AreaBuff"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "buffLevel": {
+          "_dirType": "string",
+          "_value": "5"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -775,
+          "_y": -815
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 450,
+          "_y": 115
+        }
+      },
+      "targetBuffID": {
+        "_dirType": "string",
+        "_value": "500"
+      },
+      "eventTags": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "RLGame.Effect.Burn"
+        }
+      }
+    },
+    "applyDebuff_Freeze": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "AreaBuff"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "buffLevel": {
+          "_dirType": "string",
+          "_value": "3"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -775,
+          "_y": -815
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 450,
+          "_y": 115
+        }
+      },
+      "targetBuffID": {
+        "_dirType": "string",
+        "_value": "501"
+      },
+      "eventTags": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "RLGame.Effect.Freeze"
+        }
+      }
+    },
+    "applyDebuff_Shock": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "AreaBuff"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "buffLevel": {
+          "_dirType": "string",
+          "_value": "3"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -775,
+          "_y": -815
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 450,
+          "_y": 115
+        }
+      },
+      "targetBuffID": {
+        "_dirType": "string",
+        "_value": "502"
+      },
+      "eventTags": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "RLGame.Effect.Shock"
+        }
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "iconRaw": {
+      "_dirType": "uol",
+      "_value": "icon"
+    },
+    "cooltime": {
+      "_dirType": "string",
+      "_value": "20"
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "120+80*x"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "10"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "5"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -775,
+      "_y": -815
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 450,
+      "_y": 115
+    }
+  },
+  "SkillTags": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "string",
+      "_value": "RLGame.Skill.Extra"
+    }
+  }
+}

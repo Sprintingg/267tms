@@ -1,0 +1,187 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[冰原雪域山脈] 復活徵兆"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "33"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 14,050\r\n可進行 '羅貝亞的提議' 任務\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "邪摩斯擔心的事情變成真的嗎？ "
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "收到在冰原雪域的侏儒族的動向異常的消息，去找邪摩斯，並從頭調查。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "邪摩斯說侏儒帝王－雷克斯的復活已經逼近了。"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "14050"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2020009"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "170"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3120"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2022003"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "3124"
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "14050"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "最近侏儒族的行動很可疑。從寒冰峽谷的方向傳來了可疑的侏儒族的消息，還有上次邪摩斯的行動也令人擔心…他真的能和雷克斯溝通啊。\\r\\n嗯，邪摩斯的話，應該知道一些事情。去問他一下，了解一下這個情況的原因吧。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "在情況變更糟之前快點行動。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這危機難道要袖手旁觀嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "早知道你會來找我。我一直再說。雷克斯！！他一定會回來！\\r\\n#L0##b雷克斯…侏儒帝王。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "好。侏儒帝王雷克斯！向笨蛋一樣的羅貝亞就算我這樣警告也是一樣不理。他的復活已接近了。要阻擋他才可以。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果不阻止他，所有人都會陷入危險。 同樣是…侏儒的我也是一樣。 一定要採取一些措施…"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "快.去找邪摩斯。"
+          }
+        }
+      }
+    }
+  }
+}

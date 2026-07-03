@@ -1,0 +1,140 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[闇黑龍王] 製作變身的祕藥"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "想要再次進入生命的洞窟, 不能再取得變身的祕藥嗎? \r\n去找在#m240040700#的摩伊拉."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "想要再次進入生命的洞窟, 不能再取得變身的祕藥嗎? \r\n去找在#m240040700#的摩伊拉."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "摩伊拉再次製作且提供可以變身為龍戰士樣子的變身祕藥後."
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "41"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "看來你是需要變身祕藥而來找我的吧？是不是還沒能夠打倒闇黑龍王呢？只要你願意，我可以再為你製作變身用的祕藥喔！你要製作龍族變身祕藥嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "製作祕藥所需的材料相同，材料有...\\n\\n#i4001103#  #t4001103# #b1個#k\\n#i4000267#  #t4000267# #b1個#k\\n#i4001076#   #t4001076# #b1個#k\\n#i4001077#  #t4001077# #b10個#k\\n#i4001078#  #t4001078# #b1個#k。 \\n\\n有好好記下來了嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "buffItemID": {
+        "_dirType": "int",
+        "_value": "2210003"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你吃下這藥的話， 暫時可維持龍戰士的樣子。 但要記住一件事。這藥的狀態非常不穩。離開這裡的話藥效會消失。這一定要記住喔。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "祝你一路順風！但願可以打倒邪惡的闇黑龍王…"
+        }
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "來找變身的祕藥囉. 好像沒有打倒闇黑龍王呢? 如果您需要, 再製作祕藥給您."
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "材料好像還剩下... 請稍候."
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "若沒有龍族變身祕藥，就無法進入生命之穴裡面喔！"
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2081006"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "120"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "7301"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "60"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2081006"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  }
+}

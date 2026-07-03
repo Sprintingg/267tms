@@ -1,0 +1,212 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[卡蒂娜] 接受治療吧！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "214"
+    },
+    "selfComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#使用治療藥(#R34603ExclearRef34603#)\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "肯發現左手的傷口。他好像是想要給什麼東西。\n\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "使用肯給的#b治療藥#k。\n\n #r※ 任務道具遺失時，必須放棄任務重新開始才行。#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "治療藥的苦澀味讓人想起過去的記憶。漫長的惡夢結束醒來後，初次和分部長肯見面的那一天…\n"
+    },
+    "deleteItem": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "int",
+        "_value": "2437264"
+      }
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "3"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001202"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q34603s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34602"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "6400"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "6410"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "6411"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "6412"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "6413"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "6002"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "6414"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "34603"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q34603e"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "使用治療藥。"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "clear"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#b(…啊，雖然短暫想到以前的事情…但現在不是悠哉的時候。)#k"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b(好、好。分部長說要傳授新的技術。現在應該是在祕密據點吧。過去那邊吧。)#k"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "defaultEx": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "sub",
+            "msg": {
+              "_dirType": "string",
+              "_value": "給了治療藥。味道很苦，但效果很棒。完成治療後就來找我。我要傳授你正式分部員才能學習的技術。\\r\\n"
+            },
+            "npcID": {
+              "_dirType": "int",
+              "_value": "3001250"
+            },
+            "imgPos": {
+              "_dirType": "int",
+              "_value": "1"
+            }
+          }
+        }
+      }
+    }
+  }
+}

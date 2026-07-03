@@ -1,0 +1,174 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2012012"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "5200000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2012012"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "75"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3900"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3903"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "擊退#o5200000#30隻了嗎？真是謝謝你呀。我去拿#t4031577#，請稍等一下？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "看來#r#o5200000##k不好擊退的樣子呀。但是不擊退#r30隻#k，就不能給你#t4031577#耶。"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "有什麼事情嗎？嗯？是來拿#t4031577#的嗎？那東西是不賣給人類的...是#m260000000#叫#p2101007#的妖精要的嗎？#p2101007#...？是嗎。好像沒聽過耶…一定要拿茶葉嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你看來很需要。但妖精的茶葉是妖精也不容易收集到的貴重茶葉...怎麼辦呢？啊！給你妖精的茶葉，委託一件事情，怎麼樣？擊退#m200000000#周圍的#r#o5200000##k#r30隻#k，就可以了..."
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "其實不賣給人類是因為最近不容易收集這些材料。妖精的茶是非常纖細的植物，必須在安靜的地方，細心地栽培。但因為#o5200000#，不能這樣栽培了。所以請你把牠們擊退吧。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "沒有達到我的請求，就不能把#t4031577#交給你。"
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2000"
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[納希沙漠] 王妃的茶2"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2012012#說他雖然不知道#p2101007#是誰，但#t4031577#不能隨便給人。他還說如果很想得到#t4031577#，得幫他消滅#r#o5200000#30只#k。\\n\\n#o5200000##r#a39041#"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "消滅#o5200000#30只後,去找#p2012012#了。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "43"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

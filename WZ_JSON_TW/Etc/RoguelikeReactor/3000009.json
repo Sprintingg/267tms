@@ -1,0 +1,185 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "info": {
+      "_dirType": "string",
+      "_value": "독 항아리 (지하던전) hitPoint = 1"
+    },
+    "hitPoint": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "string",
+      "_value": "Urns"
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "attack": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": -70,
+          "_y": -90
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 115,
+          "_y": 0
+        },
+        "damage": {
+          "_dirType": "string",
+          "_value": "2"
+        }
+      },
+      "targetBuffID": {
+        "_dirType": "int",
+        "_value": "81000004"
+      }
+    }
+  },
+  "AnimSet": {
+    "_dirType": "sub",
+    "stand": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "AnimReference": {
+              "_dirType": "sub"
+            }
+          }
+        }
+      },
+      "Sections": {
+        "_dirType": "sub",
+        "Loop": {
+          "_dirType": "sub",
+          "StartTime": {
+            "_dirType": "int",
+            "_value": "0"
+          },
+          "NextSectionName": {
+            "_dirType": "string",
+            "_value": "Loop"
+          }
+        }
+      }
+    },
+    "disabled": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "AnimReference": {
+              "_dirType": "sub"
+            }
+          }
+        }
+      },
+      "Sections": {
+        "_dirType": "sub",
+        "Start": {
+          "_dirType": "sub",
+          "StartTime": {
+            "_dirType": "int",
+            "_value": "0"
+          },
+          "NextSectionName": {
+            "_dirType": "string",
+            "_value": "Loop"
+          }
+        },
+        "Loop": {
+          "_dirType": "sub",
+          "StartTime": {
+            "_dirType": "int",
+            "_value": "1440"
+          },
+          "NextSectionName": {
+            "_dirType": "string",
+            "_value": "Loop"
+          }
+        }
+      },
+      "Notifies": {
+        "_dirType": "sub",
+        "sound": {
+          "_dirType": "sub",
+          "Notify": {
+            "_dirType": "sub",
+            "!class": {
+              "_dirType": "string",
+              "_value": "WZ2AnimNotify_PlaySound"
+            },
+            "SoundPath": {
+              "_dirType": "string",
+              "_value": "Sound/RoguelikeWz2.img/Trap/3000000/Hit"
+            }
+          },
+          "TriggerTime": {
+            "_dirType": "int",
+            "_value": "90"
+          }
+        },
+        "attack": {
+          "_dirType": "sub",
+          "TriggerTime": {
+            "_dirType": "int",
+            "_value": "90"
+          },
+          "TriggerInterval": {
+            "_dirType": "string",
+            "_value": "630"
+          },
+          "EndTriggerTime": {
+            "_dirType": "string",
+            "_value": "1350"
+          }
+        }
+      }
+    },
+    "appear": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "AnimReference": {
+              "_dirType": "sub"
+            }
+          }
+        }
+      },
+      "Sections": {
+        "_dirType": "sub",
+        "Loop": {
+          "_dirType": "sub",
+          "StartTime": {
+            "_dirType": "int",
+            "_value": "0"
+          },
+          "NextSectionName": {
+            "_dirType": "string",
+            "_value": "Loop"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇家騎士團] 成為騎士團的第一步"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "與修練教官 奇酷對話。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "可以幫助我訓練的 #b奇慕#k再次對話。\r\n找到奇慕雙擊就可以對話了。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "奇慕一起開始 騎士團訓練吧。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1102100"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q20822s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20821"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "1000"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1102101"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q20822e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "如你所知我們皇家騎士團是楓之谷世界的女皇為了對抗黑色魔法師而建立的。對女皇忠誠，用盡力量阻止黑色魔法師。\\r\\n雖然看起來好像很需要修練的樣子…不過別擔心。我們的教官們會把你塑造成有用的騎士的。\\r\\n\\r\\n準備好了嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "奇慕會負責騎士團所需具備的各種教育的。 去#e找奇慕吧。#n\r\n\r\n啊，還有 按#e#b快捷鍵Q#k#n的話，透過#e#r任務情報欄#k#n可重新確認任務內容，請記得。\n\r\n不知道的事一定要確認後再進行才不會發生問題。\r\n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯？有在聽我說話吧？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "沒找到奇慕嗎？在小地圖確認奇慕的位置吧。\r\n\r\n還有按下快捷鍵Q的話可以打開任務情報欄，可以重新確認任務內容…有不懂的一定要確認喔。"
+          }
+        }
+      }
+    }
+  }
+}

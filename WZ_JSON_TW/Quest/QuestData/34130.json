@@ -1,0 +1,202 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[每日任務]擊退200隻喜悅艾爾達斯"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "207"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "擊退200隻喜悅艾爾達斯後到蘿娜身邊去。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "擊退200隻喜悅艾爾達斯後到蘿娜身邊去。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "擊退200隻喜悅艾爾達斯，將探詢到的情報告知蘿娜。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o8641000# #a341301#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#i1712001:# #t1712001:# 2個"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "1|0"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "except": {
+        "_dirType": "sub",
+        "lvmin": {
+          "_dirType": "int",
+          "_value": "1"
+        }
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1712001"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003104"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "34127"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "999"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "not"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003104"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q34130e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8641000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "200"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "999999999"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "999999999"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你擊退200隻喜悅艾爾達斯了，我給你 #i1712001:# #t1712001:# 1個."
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b(跟蘿娜說明將近距離觀察喜悅艾爾達斯後所獲得的情報。)#k"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "#ho#，謝謝！ 在你的幫助之下，揭露這空間真相的日子稍微提前了呢！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "擊退200隻喜悅艾爾達斯才行"
+          }
+        }
+      }
+    }
+  }
+}

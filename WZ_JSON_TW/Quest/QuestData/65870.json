@@ -1,0 +1,227 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[我的小屋] 邁入冬天"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|3"
+    },
+    "disableAtNPC": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "克蘭西亞也開始吹起冷風。邁入冬天，這次會發生什麼樣的事情呢？\r\n和搭話的凱妮司對話吧。\r\n\r\n#b[可執行時間]#k\r\n#DL|myHome_Christmas|start|2#\r\n\n～ #DL|myHome_Christmas|end2|2#"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "因寒冷而可以感受到溫暖的季節冬天。這是什麼意思呢？ 前往凱妮司家吧。\r\n\r\n#b[可執行時間]#k\r\n#DL|myHome_Christmas|start|2#\r\n\n～ #DL|myHome_Christmas|end2|2#"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "今年一樣到來的聖誕節！為了讓大家可以一同分享溫暖的聖誕節，克蘭西亞的居民們決定舉辦聖誕節慈善會。\r\n\r\n#b[可執行時間]#k\r\n#DL|myHome_Christmas|start|2#\r\n\n～ #DL|myHome_Christmas|end2|2#"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q65870x"
+    },
+    "demand": {
+      "_dirType": "sub",
+      "base": {
+        "_dirType": "string",
+        "_value": "#questorder1#拜訪凱妮司的家 (#R65870ExdummyRef65870#)\r\n"
+      },
+      "explain": {
+        "_dirType": "sub"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9401266"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "500763"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "end"
+          }
+        }
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "501185"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q65870s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "200"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "#DL|myHome_Christmas|start#"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "#DL|myHome_Christmas|end#"
+      },
+      "worldList": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "0"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "3"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "4"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "6"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "30"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "45"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "49"
+        }
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9401266"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "65870"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "拜訪凱妮司的家"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "dummy"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q65870e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  }
+}

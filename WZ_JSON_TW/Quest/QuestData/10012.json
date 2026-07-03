@@ -1,0 +1,155 @@
+{
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 特別命令：尋找MasterM的指令書！"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "楓之谷似乎被一種奇怪的氣息所籠罩。到底MasterM是誰，讓大家變成這樣？#b#p9000036##k似乎知道些什麼。去找他問問吧？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "幹員E說要保衛楓之谷就得找到#t4032001#。\\n\\n#i04032001##t4032001##b#c4032001#/20#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "找到了#t4032001#。#b#p9000036##k會仔細分析的…"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你也是特殊幹員#b#h0##k？來得正好。這裡有給你的緊急命令。想知道什麼事嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "其實你已經知道了。關於目前威脅楓之谷的危機。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "不錯。這樣下去我們大家都得完蛋。現在村莊各地謠言四起，甚至有人說親眼看到UFO把MasterM綁架走了。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "我們必須找出#t4032001#守護楓之谷。請從附近的怪物處獲得祕密報告的#b#t4032001##k#b20張#k。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你沒有成為特殊幹員的資格。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請收集#b#t4032001##k#b20張#k。這就是給你的任務。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000036"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q10012e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032001"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000036"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "51"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "200809050000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "200809050000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "10000"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    }
+  }
+}

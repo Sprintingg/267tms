@@ -1,0 +1,208 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[弓箭手村] 調撥物資（１）"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000502:##t4000502:##c4000502#/25"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 5,000\r\n可進行 '調撥物資（２）' 任務\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "難道沒有可以幫助由於物資不足而陷入困境的菇菇王國士兵的方法嗎？#b#p1300005##k說有事情要告訴你。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "請在#b#m106020700##k等的場所消滅#r#o3300003##k，並且收集#b#t4000502#25個#k，轉交給#b#p1300005##k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "幫#b#p1300005##k收集#b#t4000502##k解除缺乏物資的困境吧。"
+    },
+    "summary": {
+      "_dirType": "string",
+      "_value": "請在#b#m106020700##k等的場所消滅#r#o3300003##k，並且收集#b#t4000502#25個#k，轉交給#b#p1300005##k。"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "25"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1300005"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2323"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1300005"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000502"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "25"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5000"
+      },
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "2329"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000502"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-25"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "現在應該已經進入到城裡了吧。 我有一個請求。 由於我們緊急逃到這裡，因此沒有攜帶足夠的物資能夠提供給士兵們使用。 雖然我和士兵們都一直守護這周遭，但是物資不足這件事情是事實。 你可以幫助我們嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝。 看來要找來新的物品應該會有點困難，所以只要替我們找來可以再次活用的頭盔#b#t4000502##k25個就可以了。 那會對我們有非常大的幫助的。 #b#t4000502##k可以在#b#m106020700##k等的場所裡消滅#r#o3300003##k獲得。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "喔，是這樣啊。 雖然也不是一定要你的幫忙，但是這對我們來說是非常重要的問題，因此希望你能夠再考慮一下。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你找來了頭盔殘骸了啊。 雖然有些毀損了，但只要稍作修理就可以在拿來活用了。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "真的太感謝你了。 雖然還是不太足夠，但是現在至少有可以分發給士兵的頭盔了。 怎麼會變成這樣… 勇士啊！請你一定要消滅#b#p1300001##k。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "雖然非常地感謝你，但是這樣的數量是不夠的。 請在#b#m106020700##k等場所消滅 #r#o3300003##k，並且收集拿來 #b#t4000502# 25個#k。"
+          }
+        }
+      }
+    }
+  }
+}

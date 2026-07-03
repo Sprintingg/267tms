@@ -1,0 +1,225 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[蓮] 第三個委託"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去#m410004101#的會長#p3006651#那裡接受並完成第三個委託吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "委託的內容是潛入停泊在港口的雷普艦船內部，調查被綁架的居民下落。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "我將在雷普艦船上發生的事情回報給了會長。會長對我竟與亥雷普交手一事大為驚訝，並在給予報酬後告知有一件特殊的委託送達。"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "returnMapID": {
+      "_dirType": "int",
+      "_value": "410004101"
+    },
+    "returnPN": {
+      "_dirType": "string",
+      "_value": "3006651"
+    },
+    "targetType": {
+      "_dirType": "int",
+      "_value": "-1"
+    },
+    "returnType": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demand": {
+      "_dirType": "sub",
+      "base": {
+        "_dirType": "string",
+        "_value": "#questorder1#[蓮] 調查船艦內部#u36827#\r\n#questorder2#[蓮] 可疑的入口#u36828#"
+      },
+      "explain": {
+        "_dirType": "sub"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3006651"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q36826s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "15"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "36825"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "16100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "16110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "16111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "16112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "16113"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "16114"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3006651"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q36826e"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "36827"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "36828"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "defaultEx": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "sub",
+            "msg": {
+              "_dirType": "string",
+              "_value": "先調查艦船內部吧。在艦船裡應該能找到些許線索。"
+            },
+            "imgPos": {
+              "_dirType": "int",
+              "_value": "1"
+            }
+          }
+        }
+      }
+    }
+  }
+}

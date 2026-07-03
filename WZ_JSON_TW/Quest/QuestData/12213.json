@@ -1,0 +1,207 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[改版祝賀] 替身術特殊技能書"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "為了表達祝賀新誕生的影武者之意，會給予達成70級的影武者替身術技能書。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了表達祝賀新誕生的影武者之意，會給予達成70級的影武者替身術技能書。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoPreComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "獲得了替身術技能書。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "70"
+      },
+      "subJobFlags": {
+        "_dirType": "int",
+        "_value": "2"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201209191200"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201209191200"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201208220000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201208220000"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "0"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "400"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "410"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "420"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "430"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "411"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "421"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "431"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "412"
+        },
+        "9": {
+          "_dirType": "int",
+          "_value": "422"
+        },
+        "10": {
+          "_dirType": "int",
+          "_value": "432"
+        },
+        "11": {
+          "_dirType": "int",
+          "_value": "433"
+        },
+        "12": {
+          "_dirType": "int",
+          "_value": "434"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2290578"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "job": {
+            "_dirType": "int",
+            "_value": "17"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好，為了紀念影武者的誕生，為70級以上的各位影武者贈送#r替身術技能書#k。現在就領取禮物嗎？    "
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不要忘記再來找我領取禮物！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我送給您的替身術技能書收到了嗎？ 希望您能好好加以使用。那麼，祝您好運！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請確認背包道具欄裡是否有空位。"
+          }
+        }
+      }
+    }
+  }
+}

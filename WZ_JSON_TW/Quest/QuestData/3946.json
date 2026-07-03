@@ -1,0 +1,193 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2101000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "85"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3926"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2103007"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2101000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3926"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "money": {
+        "_dirType": "int",
+        "_value": "300000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哎…你這人也太老實了。你可做了非常了不起的事啊。這次紅蠍子團可能有點害怕了。但，他們很快還會搶東西...我們再去偷他們的寶物。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "雖然你曾經幫助了紅蠍子團，但只不過是被他們欺騙而已…你做了非常了不起的事，我想你有資格獎勵，但你為什麼不要呢？說實話，要讓你做白工嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你也知道納希人還不到送別人禮物的程度。但你也不能跟王妃要獎勵品...不會是想跟貧窮的舞女要獎勵吧？只好你自己看著辦了。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "問我去哪兒拿獎勵品？呼呼~你真不知道？放有寶物的只有一個地方。你自己看著辦吧。我覺得你有資格得到獎勵品。哦…不會是還不知道吧？"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "啊？不需要獎勵？你這好傢伙..."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "巨大的箱子裡堆著各種寶物。好像變少了一點，但依然很多。\\r\\n#L0##b(拿走一個左右沒什麼問題吧？西琳也說拿走也沒關係…)"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "#b(我想這些夠了...)#k"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b(好人有好報啊...)#k"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒拿獎勵品？你自己拿呀~你有資格拿獎勵品的。"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[納希沙漠] 對善行的適當的獎勵"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "被自稱是沙影團的紅蠍子團所騙，幫助了紅蠍子團。幸好早發現，把紅蠍子團的寶物分給了村民，這下安心多了…但不知為什麼，#b西琳#k說關於這件事情有話對我講..."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "西琳讚揚我說儘管幫助了紅蠍子團，但做的非常出色，還說我能要#b獎勵#k。獎勵？跟誰要獎勵呢？\n\n提示1. #r#m260010400##k有盜賊巢穴。\n提示2. 洞窟的暗號似乎是指'芝麻開門'。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "做為對善行的獎勵，拿來了寶物箱裏面的幾個寶物。這算是適當的獎勵吧。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "43"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "meso": {
+        "_dirType": "int",
+        "_value": "300000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

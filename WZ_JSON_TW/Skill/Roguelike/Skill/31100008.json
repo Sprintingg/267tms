@@ -1,0 +1,431 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "23121002 레전드리 스피어 (지면)"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "jShot"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          }
+        }
+      },
+      "effect1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            },
+            "socketName": {
+              "_dirType": "string",
+              "_value": "None"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "23121002"
+          }
+        }
+      },
+      "zoneEffect1": {
+        "_dirType": "sub"
+      },
+      "zoneEffect2": {
+        "_dirType": "sub"
+      },
+      "resetVelocity": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_ResetVelocity"
+          }
+        },
+        "TriggerTime": {
+          "_dirType": "int",
+          "_value": "361"
+        }
+      }
+    },
+    "VectorSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "AnimReference": {
+            "_dirType": "sub",
+            "bEnableRootMotion": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "0": {
+              "_dirType": "sub",
+              "pos": {
+                "_dirType": "vector",
+                "_x": 0,
+                "_y": 0
+              },
+              "delay": {
+                "_dirType": "int",
+                "_value": "360"
+              },
+              "intrpl": {
+                "_dirType": "string",
+                "_value": "Linear"
+              }
+            },
+            "1": {
+              "_dirType": "sub",
+              "pos": {
+                "_dirType": "vector",
+                "_x": 0,
+                "_y": 0
+              },
+              "delay": {
+                "_dirType": "int",
+                "_value": "600"
+              },
+              "intrpl": {
+                "_dirType": "string",
+                "_value": "Linear"
+              }
+            },
+            "2": {
+              "_dirType": "sub",
+              "pos": {
+                "_dirType": "vector",
+                "_x": 0,
+                "_y": -10
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "200+150*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "3"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "12"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -600,
+          "_y": -200
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 15,
+          "_y": 110
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "500"
+        },
+        "stunDuration": {
+          "_dirType": "string",
+          "_value": "1"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub"
+        },
+        "1": {
+          "_dirType": "sub"
+        },
+        "2": {
+          "_dirType": "sub"
+        },
+        "3": {
+          "_dirType": "sub"
+        },
+        "4": {
+          "_dirType": "sub"
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "23121002"
+      },
+      "targetBuffID": {
+        "_dirType": "int",
+        "_value": "31100003"
+      }
+    },
+    "zoneEffect1": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "SummonZone"
+      },
+      "zones": {
+        "_dirType": "sub",
+        "effectZone1": {
+          "_dirType": "sub",
+          "LayerSlots": {
+            "_dirType": "sub",
+            "Slot0": {
+              "_dirType": "sub",
+              "Segment:all": {
+                "_dirType": "sub"
+              }
+            }
+          }
+        },
+        "effectZone2": {
+          "_dirType": "sub",
+          "LayerSlots": {
+            "_dirType": "sub",
+            "Slot0": {
+              "_dirType": "sub",
+              "Segment:all": {
+                "_dirType": "sub"
+              }
+            }
+          }
+        },
+        "effectZone3": {
+          "_dirType": "sub",
+          "LayerSlots": {
+            "_dirType": "sub",
+            "Slot0": {
+              "_dirType": "sub",
+              "Segment:all": {
+                "_dirType": "sub"
+              }
+            }
+          }
+        },
+        "effectZone4": {
+          "_dirType": "sub",
+          "LayerSlots": {
+            "_dirType": "sub",
+            "Slot0": {
+              "_dirType": "sub",
+              "Segment:all": {
+                "_dirType": "sub"
+              }
+            }
+          }
+        },
+        "effectZone5": {
+          "_dirType": "sub",
+          "LayerSlots": {
+            "_dirType": "sub",
+            "Slot0": {
+              "_dirType": "sub",
+              "Segment:all": {
+                "_dirType": "sub"
+              }
+            }
+          }
+        }
+      },
+      "zoneType": {
+        "_dirType": "string",
+        "_value": "random"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": -600,
+          "_y": -200
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 15,
+          "_y": 110
+        },
+        "duration": {
+          "_dirType": "string",
+          "_value": "2"
+        },
+        "count": {
+          "_dirType": "string",
+          "_value": "20"
+        },
+        "z": {
+          "_dirType": "int",
+          "_value": "9000"
+        }
+      }
+    },
+    "zoneEffect2": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "SummonZone"
+      },
+      "zones": {
+        "_dirType": "sub",
+        "effectZone1": {
+          "_dirType": "sub",
+          "LayerSlots": {
+            "_dirType": "sub",
+            "Slot0": {
+              "_dirType": "sub",
+              "Segment:all": {
+                "_dirType": "sub"
+              }
+            }
+          }
+        },
+        "effectZone2": {
+          "_dirType": "sub",
+          "LayerSlots": {
+            "_dirType": "sub",
+            "Slot0": {
+              "_dirType": "sub",
+              "Segment:all": {
+                "_dirType": "sub"
+              }
+            }
+          }
+        },
+        "effectZone3": {
+          "_dirType": "sub",
+          "LayerSlots": {
+            "_dirType": "sub",
+            "Slot0": {
+              "_dirType": "sub",
+              "Segment:all": {
+                "_dirType": "sub"
+              }
+            }
+          }
+        }
+      },
+      "zoneType": {
+        "_dirType": "string",
+        "_value": "random"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": -600,
+          "_y": -200
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 15,
+          "_y": 110
+        },
+        "duration": {
+          "_dirType": "string",
+          "_value": "2"
+        },
+        "count": {
+          "_dirType": "string",
+          "_value": "10"
+        },
+        "z": {
+          "_dirType": "int",
+          "_value": "9000"
+        }
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "3"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "12"
+    },
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "200+150*x"
+    },
+    "cooltime": {
+      "_dirType": "string",
+      "_value": "10"
+    },
+    "impactY": {
+      "_dirType": "string",
+      "_value": "650"
+    },
+    "time": {
+      "_dirType": "string",
+      "_value": "10+x"
+    },
+    "y": {
+      "_dirType": "string",
+      "_value": "-10-x"
+    }
+  }
+}

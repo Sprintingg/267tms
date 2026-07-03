@@ -1,0 +1,95 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "adventure"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "special"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "[武陵道場]在寧靜的中心呼喊升級"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "身心修練館內達成200級"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "epic"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "uiForm": {
+        "_dirType": "string",
+        "_value": "basic"
+      },
+      "gauge": {
+        "_dirType": "string",
+        "_value": "mission_count"
+      }
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "[武陵道場]身心修練館內達成200級"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "user_lvup": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            },
+            "type": {
+              "_dirType": "string",
+              "_value": "counting"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub",
+            "field": {
+              "_dirType": "sub",
+              "field_id": {
+                "_dirType": "int",
+                "_value": "925080000"
+              }
+            },
+            "character": {
+              "_dirType": "sub",
+              "character_level": {
+                "_dirType": "sub",
+                "min": {
+                  "_dirType": "int",
+                  "_value": "200"
+                },
+                "max": {
+                  "_dirType": "int",
+                  "_value": "200"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

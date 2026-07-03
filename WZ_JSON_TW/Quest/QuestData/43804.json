@@ -1,0 +1,186 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 投骰遊戲DAY"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "只有1月 30日一天，\r\n完成#e投骰遊戲DAY#n 活動的話，\r\n就會贈送#e4 里程#n 和 #i2433134#   #e#t2433134##n。\r\n\r\n#r#e任務完成後，1月30日23點 59分之前！#k\r\n#b去向波明領取獎勵！#k"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "只有1月 30日一天，\r\n完成#e投骰遊戲DAY#n 活動的話，\r\n就會贈送#e4 里程#n 和 #i2433134#   #e#t2433134##n。\r\n\r\n#r#e任務完成後，1月30日23點 59分之前！#k\r\n#b去向波明領取獎勵！#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "只有1月 30日一天，\r\n完成#e投骰遊戲DAY#n 活動的話，\r\n就會贈送#e4 里程#n 和 #i2433134#   #e#t2433134##n。\r\n\r\n#r#e任務完成後，1月30日23點 59分之前！#k\r\n#b去向波明領取獎勵！#k"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#參加投骰遊戲#R43732ExToCountRef43804# / 12\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "starPlanet": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1540200"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201501300000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201501310000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "43803"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1540200"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "43732"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "12"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "參加投骰遊戲"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "ToCount"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "豬！狗 ！羊！牛！馬！\\n投骰遊戲進行12次以上了嗎？"
+      },
+      "yesEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "就像波比說的一樣，#b#h0##k真的很會玩呢？竟然這麼努力享受星星競技場！你充分具有領取獎勵的資格。"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "獎勵可以向新星世界入場大廳的#b波明#k領取，\\n波明最近應該很忙吧。"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "noEsc": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "儘管投骰遊戲DAY今天就結束了， \\n星星競技場一直都開放，下次見了~"
+          }
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "如果不再更勤勞一點，投骰遊戲DAY 活動說不定就會這樣結束。"
+          }
+        }
+      }
+    }
+  }
+}

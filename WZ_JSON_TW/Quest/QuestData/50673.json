@@ -1,0 +1,165 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[十字獵人] 出發吧！前往艾納斯"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "降魔十字旅團"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "拜訪#b#p9120206##k之後，就能接受十字旅團的指令。出發前往維多利亞島上的城鎮吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "我收到了來自十字旅團的指令，指示我們幫忙冰原雪域山脈地區。去拜訪冰原雪域山脈的#b#p9120208##k吧。冰原雪域山脈是從#b#m104020000##k前往#b#m104020100##k，搭乘往天空之城方向的船就能抵達。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "十字旅團的冰原雪域山脈地區登錄完畢。"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\n#i4310018:# #t4310018:# 3個\n可以前往任務「資助的條件」\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "long",
+            "_value": "4310018"
+          },
+          "count": {
+            "_dirType": "long",
+            "_value": "3"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9120206"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "50672"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q50673s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "39"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9120208"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4310018"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "노멀"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好啊，#b#h0##k。\\r\\n歡迎你來到冰原雪域山脈地區。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我想你已經收到了新指令吧。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

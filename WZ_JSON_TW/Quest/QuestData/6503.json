@@ -1,0 +1,168 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 作出驚訝的表情。"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "被大發企劃代表#b#p1052121##k遷就要接受#b演技課程#k. 是哪個課程? 向#b弓箭手村市場, 美髮店旁邊#k站著的#p1052121#進行對話."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "這次決定學驚訝的表情。雖然跟在#b#m101000000##k的#b#p1103003##k說話就可以學到那個表情…但要獲得#b#t4000013##k。\r\n\r\n #i4000013##t4000013#  #b#c4000013# / 350#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "看到#p1103003#之後學到作出驚訝的表情方法。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052121"
+      },
+      "charmMin": {
+        "_dirType": "int",
+        "_value": "35"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "6502"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1103003"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q6503e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000013"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "350"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000013"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-350"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "好久不見，#h0#。變得更有魅力了。那麼我們接著上下一堂演技課程啊？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這是第二個演技課程。這次就學習驚訝的表情吧。這是…對，仔細觀察 #b#m101000000##k的#b#p1103003##k就能學到。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "只是你空手過去很難學到。找來#b#t4000013# 350個#k當做禮物送給 #p1103003#吧。那就更容易學習表情的。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "看來還沒體會到演員的樂趣啊。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒出發到#b#m101000000##k嗎？找來#b#t4000013# 350個#k當做禮物送給#b#p1103003##k吧。能學到好表情的。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "別跟我說話！別靠近！你看起來太可疑了！就像#r#o3230100##k ！"
+          }
+        }
+      }
+    }
+  }
+}

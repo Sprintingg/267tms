@@ -1,0 +1,151 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[次元圖書館] 女皇的最後一項委託"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "82"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "已經成為耶雷弗女皇的西格諾斯想要委託最後一項任務.和她交談吧."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "這是最後一次了.參加戰場拯救耶雷弗吧.\\r\\n#b(和奇里盧交談,搭乘飛行船前往戰場.)#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "感應到黑色翅膀的入侵了.參加戰場拯救耶雷弗吧."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#戰場中取得勝利 (#R32627Excheck2Ref32625#)\\r\\n"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#h0#,我知道這段時間你幫了許多忙.但是,可以再答應我最後一項要求嗎?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "就算我獲得神獸的力量,靠目前的兵力要和黑色翅膀的入侵者對抗,說不定會對我們造成重創.所以請一定要參加戰場保護耶雷弗."
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "謝謝你.願神獸的神護與你同在...\\r\\n#b(和奇里盧交談,搭乘飛行船前往戰場.)#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請幫助耶雷弗脫離危險."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請拯救耶雷弗吧!\\r\\n#b(和奇里盧交談,搭乘飛行船前往戰場.)#k"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2520001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32624"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2520001"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "32627"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q32625e"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "clear"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "在戰場中獲勝"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "check2"
+          }
+        }
+      }
+    }
+  }
+}

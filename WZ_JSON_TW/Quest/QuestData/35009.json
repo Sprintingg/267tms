@@ -1,0 +1,157 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[와호장룡] 사형들과 인사하기"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "연무장에서 첫째 사형이 기다리고 있다고 한다. 무릉마을에 있는 황룡파 도장문을 이용하여 도장으로 이동하자."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "첫째 사형 오공이 황룡파도장 주위를 둘러 보고, 다른 사형들에게 인사를 하고 오라고 한다.\\r\\n#b둘째 사형 : 바위계곡 수련장\\r셋째 사형 : 대나무 수련장"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "황룡파 도장을 둘러 보면서 마스터와 다른 사형들과 인사를 하였다. 다들 좋은 사람들 같다."
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "네 사형들은 모두 수련장에서 수련중일 거야. 인사하고 오도록 해. 이곳에서 오른쪽 끝에 있는 포탈을 이용하면#b 바위계곡 수련장#k과 #b대나무 수련장#k으로 이동할 수 있어."
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2091113"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q35009s"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201510150000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201510150000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "35008"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2091113"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q35009e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npcSpeech": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2091107"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q35009_midNPC1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2091108"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q35009_midNPC2"
+          }
+        }
+      }
+    }
+  }
+}

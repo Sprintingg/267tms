@@ -1,0 +1,179 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[簽到] 每日簽到挑戰！"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "協助微微安擊退怪物吧！開啟左側簽到簿，透過 '挑戰'鍵開始簽到吧！\n\n\\r\\n#e[簽到活動日期]\\n#b> 2014年08月14日 ~ 2014年08月27日#k#n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "簽到開始~！狩獵#o9101025#300隻吧！\n\n\\n★#e#o9101025#是什麼呢？\\n#n以角色的等級為基準，#r-10級到 +20級範圍#k的怪物，舉例來說，角色的等級如果是 50級，40級~70級的怪物就屬於 #e等級範圍怪物#n。\n\\r\\n#e[簽到活動日期]\\n#b> 2014年08月14日 ~ 2014年08月27日#k#n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "協助微微安擊退了怪物！開啟左側簽到簿，透過 '領取禮物'鍵領取豐富的禮物吧！\n\n\\r\\n#e[簽到活動日期]\\n#b> 2014年08月14日 ~ 2014年08月27日#k#n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o9101025# #a145171#\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010010"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201408140000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201408280000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201408140000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201408280000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "14516"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "interval_t": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010010"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q14517e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9101025"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "300"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好，#b#h0##k！\\r\\n你是來挑戰簽到的吧？要立刻開始嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "擊退#b#e#o9101025# 300隻#k#n後開啟簽到簿吧！可以確認別人偷偷蓋下的簽到章，好了，那就快點解決吧！\\r\\n★#e#o9101025#是什麼呢？\\n#n以角色的等級為基準， #r-10級到 +20級範圍#k內的怪物，舉例來說，角色的等級如果是 50級，40級~70級的怪物就屬於 #e等級範圍怪物#n。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你不是想要參加簽到嗎？我已經準備了豐富的禮物，若是改變心意，隨時可以再挑戰！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "原來還沒擊退 #b#e#o9101025# 300隻#k#n！請加油一點！\\r\\n★#e#o9101025#是什麼呢？\\n#n以角色的等級為基準， #r-10級到 +20級範圍#k內的怪物，舉例來說，角色的等級如果是 50級，40級~70級的怪物就屬於 #e等級範圍怪物#n。"
+          }
+        }
+      }
+    }
+  }
+}

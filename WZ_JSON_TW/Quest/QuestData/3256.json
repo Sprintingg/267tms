@@ -1,0 +1,206 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[玩具城]別被可愛的外貌欺騙"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "36"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去找玩具城#b#m220010500##k的#b#p2040003##k吧。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o3000005# #a32561#\r\n#questorder1##o3110101# #a32562#\r\n#questorder1##o3210203# #a32563#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 704,860\r\n#fUI/UIWindow2.img/QuestIcon/6/0# 2\r\n可進行「送玩具給孩子們」任務\r\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "曾助教不喜歡在玩具城 #b雲彩露臺#k和#b天空露臺#k普遍看到的可愛發條熊. 不久前, 據說因為可愛靠近發條熊時, 被發條熊的前腳打到耳光...? 被打耳光後告知天下發條熊很兇暴, 也站出來打倒發條熊... 為了幫忙他的報酬打倒#r#o3000005##k, #r#o3110101##k, #r#o3210203##k各 #r100隻#k. "
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "依照曾助教的拜託打倒了#r#o3000005##k, #r#o3110101##k, #r#o3210203##k各#r100隻#k."
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "704860"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2040003"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "110"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2040003"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3000005"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3110101"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3210203"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "pop": {
+        "_dirType": "int",
+        "_value": "2"
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "704860"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "喂~那個，你。剛經過這裡嗎？那麼我要給你一個警告。不要因為這裡的怪物長得可愛就靠得太近。有別於可愛的外貌，是兇殘的傢伙。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "我在不久前，也被褐色發條熊可愛的外型騙了，靠近之後臉頰…！！！！被打了一巴掌。真的好痛喔。用棉花做的，力氣怎麼會這麼大………………………………"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "#e呃越想越生氣！！！！！！！！！！#n\\呃呃呃…這樣看來，你的似乎很有力氣。很好～！有適合你的工作，想試試看嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我除了警告經過的路人這裡的#r發條熊很兇悍#k還要一併進行#r發條熊擊退活動#k。可是發條熊看起來很強悍，一定要跟像你一樣強的人一起進行。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "希望你可以跟這團體會合... 不難, 只要一回打倒 #r#o3000005##k, #r#o3110101##k, #r#o3210203##k各#r100隻#k就可以了. 當然成功打倒就會提供不少的獎勵. "
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不想的話就算了。可是要給你一個忠告。小心這裡的#r發條熊#k。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "喔~已經擊退回來了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "有沒有受傷？太好了。\\n因為你的努力對於#r發條熊擊退活動#k有了不小的幫助。本來的活動獎勵只給予經驗值，給你特別獎勵提升你的名聲，請確認。哈哈~"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "打倒#r#o3000005##k, #r#o3110101##k, #r#o3210203##k各 #r100隻#k."
+          }
+        }
+      }
+    }
+  }
+}

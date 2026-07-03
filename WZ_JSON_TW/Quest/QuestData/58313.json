@@ -1,0 +1,199 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[初音未來合作] 收集演唱會道具吧"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "為了取回被怪物們偷走的演唱會道具！首先試著與初音未來演唱會會場的活動導遊說話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了取回被怪物們偷走的演唱會道具！\n為了取回被偷走的道具，首先就從與自己的等級相符的怪物開始懲罰。 (打倒介於角色等級+20、-10的怪物來取回道具吧。) "
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "將被怪物偷走的演唱會道具還給了活動導遊。雖然只是舉手之勞，但演唱會似乎變得更熱鬧了。再加把勁把道具找回來吧！"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4034178:# #t4034178:# #c4034178# / 100\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9136002"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "58361"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "99"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201508252359"
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201507290000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9136002"
+      },
+      "ItemOrOption": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034178"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q58313e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "準備好了嗎？因為怪物們把便當或螢光棒分著帶走了…我想就先從等級相符的怪物開始處罰比較好。 (打倒介於角色等級+20、-10的怪物來取回道具吧。) "
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "然後我有個請求…"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "其實，應該要交給大家的道具在來這裡的途中被怪物奪走了。"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "可以幫我抓住怪物取回道具嗎？"
+      },
+      "4": {
+        "_dirType": "string",
+        "_value": "這都是為了初音未來大人。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那麼，我會等著你的。請不要太勉強呀！因為你的身體也很重要。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "似乎還沒有準備好呢。由於怪物很棘手，慎重地準備也沒什麼不好喔。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "到底在哪裡…！"
+          }
+        }
+      }
+    }
+  }
+}

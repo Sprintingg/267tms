@@ -1,0 +1,168 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[櫻花城] 偵探那格雷"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "18"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "和太驚訝而失神的薩伊交談。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "告訴薩伊忍者全都是由人偶變身而成的之後，薩伊表示這件事實在非比尋常，還說不久前城內有一個人四處打聽忍者的事情，要求將這件事告訴那名男子。他的名字叫做「那格雷」。就是葵提過的那個人！"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "告訴薩伊忍者全都是由人偶變身而成的之後，薩伊表示這件事實在非比尋常，還說不久前城內有一個人四處打聽忍者的事情，要求將這件事告訴那名男子。他的名字叫做「那格雷」。就是葵提過的那個人！去城內尋找那格雷，然後和他交談。將薩伊的話轉達那格雷。對方說自己的猜測果然沒錯，同時表示可以逃跑的時候最好就快點逃跑！"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 20,000\r\n可進行 '調查中級忍者' 任務\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "20000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2200008"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4318"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2200002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "20000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "實在太奇怪了…這件事非比尋常。沒錯！不久前有一名男子四處打聽關於忍者的事情，那個人一定在調查這件事。我有拜託他若是查出什麼事情，記得跟我聯絡…你就去告訴他這件事吧。我會繼續進行調查的。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那個人是…啊… 叫做什麼名字來著…對了！他叫做#b#e那格雷#n#k。他戴著斗笠，我也不清楚他現在身處何地。他說自己是身份崇高的人派來執行任務的偵探。他好像去天守閣那邊了… 總之，快去找他吧！\\r\\n#b(「那格雷就是葵所說的那個人。得快點找到他才行。」)"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你不認為這件事太奇怪了嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "有什麼事情嗎？竟然在這種地方見到他，真是太巧了。總之真是令人高興~\\r\\n#L0##b薩伊叫我轉告你一件事情。城內的下級忍者們…全都不是人類。是利用咒術創造出來的木頭。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "果然我想得是對的。真的感覺不到一點人情…為了傳達這句話還來到這，真得辛苦了。但你也該離開了 。現在你也了解了吧？這裡是很危險的地方所以可逃避時趕快逃避是最好的打算。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "那個人是…啊… 叫做什麼名字來著…對了！他叫做#b#e那格雷#n#k。他戴著斗笠，我也不清楚他現在身處何地。好像往天守閣那邊去了。總之快點去找那個人吧！"
+          }
+        }
+      }
+    }
+  }
+}

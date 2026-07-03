@@ -1,0 +1,268 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[獅子王城]莫特的信件"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "獅子王塔樓的幽靈說請聽聽他的故事…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "雖然找到獅子王的獎牌進入了獅子王城，但是因為獅子王的詛咒，變成了無法離開城的幽靈的#p2161004#說，請幫他把信件交給冰原雪域的亞凱斯特。\r\n\r\n#i4032859##t4032859##b#c4032859##k/1"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "將#t04032859#交給亞凱斯特。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4032859:# #t4032859:# #c4032859# / 1\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "經驗值682,200\r\n可進行「亞凱斯特的水晶」任務\r\n*完成「亞凱斯特的水晶」任務時，可購買#b凡雷恩套裝道具#k"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "221"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "682200"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2161004"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q3181s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "115"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3139"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2020005"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q3181e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032859"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "info": {
+        "_dirType": "string",
+        "_value": "a"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032859"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032859"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "682200"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "拜託…如果有人聽到我的聲音…只要一下…一下下就好請聽聽我的述說！！"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你聽到我的聲音嗎？呼…太好了…我好擔心就這樣沒有人聽到我的述說該怎麼辦…"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "我的名字是 #b#p2161004##k…我是尋找傳說中的 #b獅子王的獎牌#k來到這裡…在城各處尋找獎牌時…突然間城搖動，開始出現了怪物…我費盡力氣到處躲避怪物…突然在我前面出現了一個男人…"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "那個男人說他是 #b獅子王凡雷恩#k，就是這城的主人…然後，就說我未經許可進入城內，所以把我變成了幽靈…再加上不知是詛咒還是怎樣已經變成幽靈的身體，還能感受到冰雪寒風的刺骨像刀刺般的疼痛難耐，甚至無法行動…就像現在這樣說話都覺得很痛苦…"
+        },
+        "3": {
+          "_dirType": "string",
+          "_value": "雖然我變成這樣…但是至少我想把這封信交給遠方的家人…你願意幫我把這封信交給冰原雪域的 #b亞凱斯特#k嗎？亞凱斯特會把信交給我的家人…"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "喔喔…難道是聽不到我的聲音嗎…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嗯…給我的信？是誰寄的呢？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "呵呵…這個人…就是不聽我的警告，結果難逃厄運…嘖嘖…"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "幾天前去找獅子王獎牌，前往獅子王城的 #p2161004#到達城之前來到了這村莊。從不久前我感覺到城內非比尋常的氣息，就阻止他進城，結果他趁深夜還是進城去了 。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "為了帶他回來雖然派遣過救援隊，但是因怪物突然出現而沒有帶他回來，結果就變成這樣…"
+        },
+        "3": {
+          "_dirType": "string",
+          "_value": "這封信我會交給他的家人…"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請把這封信交給亞凱斯特…他會把這封信交給我的家人 。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "到底信件在哪裡…你在尋我開心嗎…"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "把信件弄丟了？呼…還好我有多寫一份。請把這個帶去吧。"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[進化系統] 假想世界2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "32"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "到現在為止還是陌生的假想世界，向#p9075007#問問接下來應該要做什麼才好。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "首先，先進行Link1的暖身計畫吧。\\n階段1。 #e點擊怪物生成器並開始進行#n後，\\n階段2。 清除10隻#e#b#o9306000#。#n#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "結束暖身計畫之後，從#p9075007#那裡得到了#b#t3601201# 核#k。\\n進化系統結束之後，裝備核之後再次進行進化系統，看看和之前有無變化。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o9306000# #a18061#"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3601000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9075007"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1805"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9075007"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9306000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3601000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "進化系統 熱身程式進行。熱身程式在連結1進行。#e[基礎程式]熱身#n可以開始了嗎?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "下方可看見的#b怪物生產器啟動#k的話，怪物就會開始產生..\\n適應假想世界兼除掉#e#b#o9306000# 10隻#k#n左右 "
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "為了適應假想世界，推薦進行熱身程式。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#o9306000# 10隻全部清除了嗎?"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "熱身程式成功完成。用這種方式在各連結移動，在這個連結，完成可進行程式即可。 "
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "給予變更怪物表皮核心 1個。進化系統結束後，核心裝設後，再連線的話，就可體驗變化。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "怪物生產器啟動後，#o9306000# 10隻清除。\\r\\n"
+          }
+        }
+      }
+    }
+  }
+}

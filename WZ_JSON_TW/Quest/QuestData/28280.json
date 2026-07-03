@@ -1,0 +1,172 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[消滅]清除嫩寶！"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#m102000000##k的#b#@1022007:##k想請你幫個忙。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "你已經清除#b#m102000000##k附近的嫩寶！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o100101##a282801#\\r\\n#o130101##a282802#"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 600\r\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "她說嫩寶的數量已經到氾濫的地步了，想請你消除10隻#r紅寶#k和10隻#r藍寶#k。\\n\\n完成之後，向#b#m102000000##k的義安回報。"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "600"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "600"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "正如我所料，這對你來說非常簡單。\\n謝謝你，這附近的嫩寶少多了。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請打敗30隻#r紅寶#k和30隻#r藍寶#k。"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嫩寶屬於較為弱小的怪物，但是數量卻很驚人。\\n我常在路上遇到他們。\\n\\n我在想你有沒有辦法減少這邊的嫩寶數量。意下如何？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請打倒30隻#r紅寶#k和30隻#r藍寶#k。\\n他們到處都是，你不用擔心找不到。\\n注意四周！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我以為這是個簡單的任務。對你來說太難了嗎？"
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022007"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "100101"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "130101"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022007"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      }
+    }
+  }
+}

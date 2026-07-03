@@ -1,0 +1,257 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[埃德爾斯坦] 黑色翅膀的祕密傳點"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "24"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "在礦山前面閒逛時，發現了一個奇怪的機械？看起來像是傳點卻沒有驅動。是什麼目的產生的傳點呢，搭上傳點會前往哪裡呢，還有怎樣才能使用傳點呢去問問#b傳送點管理者#p2153001##k吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "這裡的傳點似乎是黑色翅膀的幹部為了前往維多利亞島製作的。所以除非是黑色翅膀的成員，尤其是若非幹部，就無法使用…一直逼問有什麼方法時，#p2153001#卻說那就先答應他的一個委託。他的委託就事擊退#r#o3150002##k。\n\r\n#i4000607##t4000607##b#c4000607#/100#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "擊退#o3150002#之後#p2153001#非常的滿意。"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032766"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2153001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "35"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201012291200"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201012291200"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2153001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000607"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000607"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-100"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032766"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "恩…有點陌生的面孔啊。不像村民，是新手黑色翅膀？那樣有可能對裝置有不懂的地方。你覺得這裝置是什麼？\\r\\n#L0##b這個是不是傳點？#l\\n#L1#這個是不是攻擊武器？#l\\n#L2#這個是不是洗手間？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "對。這裝置是為了讓黑色翅膀幹部往維多利亞島去活動的時候使用製造的傳點。當然跟維多利亞島連接著。\\r\\n#L0##b哇，黑色翅膀的技術也很厲害啊。利用這#l\\n#L1#裝置的幹部有誰啊？#l\\n#L2#我也可以去維多利亞島嗎？#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "幹部有可能，普通成員不需要去那麼遠的地方。所以也沒必要使用啊！去執行任務，給我看任務單就可以…\\r\\n#L0##b任務單弄丟了！因為想念留在#l\\n#L1#維多利亞島的孩子…#l\\n#L2#不送我去，就吃了你！#l\\n#k"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "哎呀…看起來很年輕，原來有孩子啊。分離了肯定會想，可憐啊。本來不能這麼做…那麼這一次就送你去？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "攻擊武器？有像這樣的攻擊武器，真想看一看。"
+          },
+          "2": {
+            "_dirType": "string",
+            "_value": "洗，洗手間？絕對不是！不會是想要在這周圍方便吧？絕對不允許！"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "0": {
+            "_dirType": "string",
+            "_value": "當然厲害。因為花了很多錢請來了有名的科學家。"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "那是祕密事項。"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "0": {
+            "_dirType": "string",
+            "_value": "那麼重新要過來吧。給我看任務單就讓你使用。"
+          },
+          "2": {
+            "_dirType": "string",
+            "_value": "戰鬥嗎？沒有退縮的想法！"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那也不能那麼送，接受我一個委託吧。這週邊有很多叫#o3150002#的傢伙，我非常討厭他們。所以你去把#r#o3150002##k消滅後，拿來#b那證據#k#b100個#k，就讓你使用傳點。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "咦？拒絕嗎？人家給你看好意，得懂得接受啊。嘖嘖嘖…最近的年輕人啊。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "把#t4000607#都拿來了啊。呼呼呼…看著這個，心情不知不覺的變好。那麼讓你使用傳點吧。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "剛才#p2152008#有了#t4032766#就可以自由的利用傳點了。好好利用吧，還有不要忘記把我的故事講給你的孩子。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒找到#b#t4000607#100個#k嗎？我非常討厭#r#o3150002##k傢伙。看那沒品味的長相…"
+          }
+        }
+      }
+    }
+  }
+}

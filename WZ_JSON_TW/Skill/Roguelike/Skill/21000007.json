@@ -1,0 +1,332 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "400021067 스피릿 오브 스노우"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "5thSpiritOfSnow"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub"
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "400021067"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "SummonZone"
+      },
+      "zoneType": {
+        "_dirType": "string",
+        "_value": "self"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "duration": {
+          "_dirType": "int",
+          "_value": "20"
+        },
+        "z": {
+          "_dirType": "int",
+          "_value": "9000"
+        }
+      },
+      "zones": {
+        "_dirType": "sub",
+        "Anim": {
+          "_dirType": "sub",
+          "LayerSlots": {
+            "_dirType": "sub",
+            "Slot0": {
+              "_dirType": "sub",
+              "Segment:summoned": {
+                "_dirType": "sub",
+                "StartPos": {
+                  "_dirType": "int",
+                  "_value": "0"
+                }
+              },
+              "Segment:stand": {
+                "_dirType": "sub",
+                "StartPos": {
+                  "_dirType": "int",
+                  "_value": "810"
+                }
+              },
+              "Segment:attack": {
+                "_dirType": "sub",
+                "StartPos": {
+                  "_dirType": "int",
+                  "_value": "2160"
+                }
+              },
+              "Segment:die": {
+                "_dirType": "sub",
+                "StartPos": {
+                  "_dirType": "int",
+                  "_value": "2970"
+                }
+              }
+            }
+          },
+          "Notifies": {
+            "_dirType": "sub",
+            "attack": {
+              "_dirType": "sub",
+              "TriggerTime": {
+                "_dirType": "int",
+                "_value": "2340"
+              }
+            },
+            "sound": {
+              "_dirType": "sub",
+              "TriggerTime": {
+                "_dirType": "int",
+                "_value": "2340"
+              },
+              "Notify": {
+                "_dirType": "sub",
+                "!class": {
+                  "_dirType": "string",
+                  "_value": "WZ2RLAnimNotify_PlaySkillSound"
+                },
+                "SkillID": {
+                  "_dirType": "int",
+                  "_value": "400021067"
+                }
+              }
+            }
+          },
+          "Sections": {
+            "_dirType": "sub",
+            "summonned": {
+              "_dirType": "sub"
+            },
+            "stand": {
+              "_dirType": "sub",
+              "StartTime": {
+                "_dirType": "int",
+                "_value": "810"
+              },
+              "NextSectionName": {
+                "_dirType": "string",
+                "_value": "attack"
+              }
+            },
+            "attack": {
+              "_dirType": "sub",
+              "StartTime": {
+                "_dirType": "int",
+                "_value": "2160"
+              },
+              "NextSectionName": {
+                "_dirType": "string",
+                "_value": "stand"
+              }
+            },
+            "die": {
+              "_dirType": "sub",
+              "StartTime": {
+                "_dirType": "int",
+                "_value": "2970"
+              }
+            }
+          }
+        }
+      },
+      "attack": {
+        "_dirType": "sub",
+        "constants": {
+          "_dirType": "sub",
+          "attackPower1Rate": {
+            "_dirType": "string",
+            "_value": "100+80*x"
+          },
+          "mobCount": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "attackCount": {
+            "_dirType": "string",
+            "_value": "9"
+          },
+          "lt": {
+            "_dirType": "vector",
+            "_x": -600,
+            "_y": -600
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 600,
+            "_y": 100
+          }
+        },
+        "hit": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "sub",
+            "pos": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "onlyOnce": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "delayShowDamage": {
+              "_dirType": "int",
+              "_value": "720"
+            }
+          },
+          "1": {
+            "_dirType": "sub",
+            "pos": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "onlyOnce": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "delayShowDamage": {
+              "_dirType": "int",
+              "_value": "720"
+            }
+          },
+          "2": {
+            "_dirType": "sub",
+            "pos": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "onlyOnce": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "delayShowDamage": {
+              "_dirType": "int",
+              "_value": "720"
+            }
+          }
+        },
+        "type": {
+          "_dirType": "string",
+          "_value": "Attack"
+        },
+        "hitSoundSkillID": {
+          "_dirType": "int",
+          "_value": "400031004"
+        }
+      },
+      "die": {
+        "_dirType": "sub",
+        "constants": {
+          "_dirType": "sub",
+          "mobCount": {
+            "_dirType": "string",
+            "_value": "6+x"
+          },
+          "attackCount": {
+            "_dirType": "string",
+            "_value": "5"
+          },
+          "lt": {
+            "_dirType": "vector",
+            "_x": -300,
+            "_y": -385
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 300,
+            "_y": 20
+          },
+          "attackPower1Rate": {
+            "_dirType": "string",
+            "_value": "100+5*x"
+          }
+        },
+        "hit": {
+          "_dirType": "sub"
+        },
+        "type": {
+          "_dirType": "string",
+          "_value": "Attack"
+        }
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "3"
+    },
+    "cooltime": {
+      "_dirType": "int",
+      "_value": "60"
+    },
+    "Tags": {
+      "_dirType": "sub",
+      "onlyOnConvex": {
+        "_dirType": "sub"
+      }
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "10"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "9"
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "100+80*x"
+    },
+    "duration": {
+      "_dirType": "int",
+      "_value": "20"
+    }
+  }
+}

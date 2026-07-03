@@ -1,0 +1,229 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 吉姆的委託"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去找後街吉姆。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "吉姆收到委託了. 在地鐵打倒#b#o4230102# 50隻#k後, 收集#b怪藥 20個#k拿到#r藥店, 最左邊抽屜#k."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "按照吉姆的指示，在藥店抽屜裡放進怪藥。 委託人會是誰呢？ 挺好奇的？"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000036:# #t4000036:# #c4000036# / 20\r\n#o4230102# #a28631#\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "12938"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "43"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2852"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052129"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000036"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4230102"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "12938"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000036"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "正常"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1472001"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "正常"
+          },
+          "job": {
+            "_dirType": "int",
+            "_value": "16400"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "有件事情要委託你。 沒問題吧？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "首先，去地鐵裡消滅#b大幽靈 50隻#k，並收集#b怪藥 20個#k。 然後，再把怪藥放進#r藥店左側最下面抽屜#k裡。 報酬就在那抽屜裡。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "沒什麼難度吧？ 那就快些去吧。 把藥放進藥店後不必再來找我了。 \\r\\n對了，那之後沒有和內拉發生什麼吧？ 不要相信那個女的。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "接受委託還想挑三揀四嗎？ 那樣可不行哦。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "把怪藥放進抽屜裡，拿出報酬。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "忘記是哪個抽屜了嗎？ #r藥店，左側最下面抽屜#k。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "怪藥的數量不夠。 需要放進20個怪藥。"
+          }
+        }
+      }
+    }
+  }
+}

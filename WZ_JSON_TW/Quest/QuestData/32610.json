@@ -1,0 +1,171 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[次元圖書館] 尼克斯的禮物"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "82"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": " 試著和#b#p2520021##k交談吧."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": " #b#p2520021##k給了一本看起來相當古老的古書和單眼眼鏡,並且吩咐說要交給那因哈特.\\r\\n#b(和奇里盧說話,然後回去找那因哈特.)#k\\r\\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": " #b#p2520021##k給了一本看起來相當古老的古書和單眼眼鏡,並且吩咐說要交給那因哈特.\\r\\n"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033960"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033961"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "好,在這邊.這本書是從很久以前艾麗亞女皇流傳下來的.那是一本非常古老的珍貴書籍,一定要小心保管."
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "啊,單眼眼鏡是我個人送給那因哈特的禮物.因為那小子是一個和我不分上下的書蟲,不久後一定會需要這個物品?就這樣轉告他吧.\\r\\n#b(和奇里盧說話,回去找那因哈特吧.)#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不需要嗎?你要不要重新思考一下自己來這邊的理由呢?"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "啊,單眼眼鏡是我個人送給那因哈特的禮物.因為那小子是一個和我不分上下的書蟲,不久後一定會需要這個物品?就這樣轉告他吧.\\r\\n#b(和奇里盧說話,回去找那因哈特吧.)#k"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "拜託你的東西帶來了嗎?\\r\\n#b(去向米納爾森林的尼克斯取得物品.若是弄丟的話,只要再向尼克斯說話就能夠取得.)#k"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "真是的,怎能讓珍貴的物品隨便掉落呢?"
+        },
+        "yes": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "真是粗心大意的小子... 被我撿到算你好運!"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2520021"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32609"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2520000"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q32610e"
+      }
+    }
+  }
+}

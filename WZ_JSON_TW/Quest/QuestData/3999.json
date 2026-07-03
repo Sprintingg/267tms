@@ -1,0 +1,216 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[納希沙漠] 沙影團的第4個任務"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "43"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o2110300# #a39991#\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "為了#m260000000#居民們所努力的 沙影團。現在既已成為 沙影團的一員，應該要來接收任務了吧？先去找#b#p2101010##k吧。 "
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "必須處置妨礙納希沙漠居民糧食調度的怪物。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "處置了防礙調度不足物資的怪物。"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "192284"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "returnMapID": {
+      "_dirType": "int",
+      "_value": "260000201"
+    },
+    "targetType": {
+      "_dirType": "int",
+      "_value": "-1"
+    },
+    "demand": {
+      "_dirType": "sub",
+      "explain": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2101010"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "85"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3998"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2101010"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2110300"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "260020700"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "192284"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "有沙影團必須進行的新任務。這個任務想要交代給你。怎麼樣？你做得到嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "上次本來期望透過你的幫忙，能讓糧食運送變的順利，但因為#o2110300#的攻擊依然是困難重重啊。希望你能去消滅#b#o2110300#100隻#k。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "雖然無法全部根除，但若減少這些數量的怪物的話，糧食調度上，應該就不會有問題了。那就拜託你了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "依你目前的實力還無法委託任務給你。。。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哎呀，你來啦。身為沙影團的你已完成任務了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "太好了。現在食糧的調度更加順利了。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "嗯．．．還沒消滅#b#o2110300#100隻#k嗎？只要能減少礙事的怪物，就能讓#m260000000#居民不必為糧食擔憂一陣子了．．．"
+          }
+        }
+      }
+    }
+  }
+}

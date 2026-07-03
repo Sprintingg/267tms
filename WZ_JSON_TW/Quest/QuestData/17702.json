@@ -1,0 +1,278 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[克梅勒茲共和國] 尋找魚人巢穴"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "84"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "雷恩說他在調查未知結界內部時一直有種在鬼打牆的奇怪感覺。而且說要把他在魚人消失的地方撿到的物品給我看。要不要跟雷恩再說說話呢？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "雷恩說他在調查未知結界內部時一直有種在鬼打牆的奇怪感覺。而且說要把他在魚人消失的地方撿到的物品給我看。 雷恩給我看的東西好像是地圖的碎片。決定尋找剩下的碎片。除掉魚人，收集魚人巢穴地圖碎片吧！"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "雷恩說他在調查未知結界內部時一直有種在鬼打牆的奇怪感覺。而且說要把他在魚人消失的地方撿到的物品給我看。 雷恩給我看的東西好像是地圖的碎片。決定尋找剩下的碎片。除掉魚人。收集魚人巢穴地圖碎片。\r\n\r\n收集地圖碎片完成了地圖。完成的地圖好像可以進入運河地下深處。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4033993:# #t4033993:# #c4033993# / 10\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 793,937\r\n#i4033994:# #t4033994:# 1 個\r\n可進行 '[克梅勒茲] 海之子的憤怒' 任務\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "793937"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "long",
+            "_value": "4033994"
+          },
+          "count": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "793937"
+      },
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "17703"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033993"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "normal"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033994"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "normal"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "sayEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "找到了!你看看!"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "我也要看! ....可圖被剪掉了.好像是地圖的一部分?"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "對吧? 好像是魚人所留下的. 感覺像是地圖的碎片,去找剩下的碎怎麼樣?"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那從魚人身上尋找地圖碎片後再見面吧!\r\n碎片10個的話,可以做一個地圖的!"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我自己一個人也要去找地圖的碎片才可.\r\n假如想一起的話再跟我說吧!\r\n"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "找到魚人的地圖碎片了嗎?都找到了?真厲害 !那我們拼拼看碎片吧?"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "(…拼碎片中)"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "都拼完了!你看! 我們所在的地方跟圖的某一部分一致!這應該是這裡的地圖才對. 跟著這地圖的話,可以馬上找到魚人基地的!"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒找到魚人的地圖碎片嗎? 感覺大該有10個才可以做一個地圖你覺得呢?碎片不夠耶.."
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390245"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "17701"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "140"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390245"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033993"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

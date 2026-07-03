@@ -1,0 +1,172 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[比叡山] 異常的聯軍士兵 -貳-"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "比叡山調查 - 劍斗"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "3"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "95"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "該如何讓聯軍士兵恢復原狀呢？莫非這名少年知道些什麼？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "雖然沒有使被洗腦的士兵清醒的方法，但似乎有留下遺言表示希望能把靈魂收納於陰陽師的壺子中。陰陽師的壺子有 #i4034155:##t4034155:#、#i4034156:##t4034156:#、#i4034157:##t4034157:# 這三個。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "將陰陽師的共3個壺子帶來給他了。接下來只要把士兵們的靈魂收集到各自的壺子裡就好。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4034155:# #t4034155:# #c4034155# / 1\r\n#questorder1##i4034156:# #t4034156:# #c4034156# / 1\r\n#questorder1##i4034157:# #t4034157:# #c4034157# / 1\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9130107"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "58929"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q58930s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "140"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201412310000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9130107"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034155"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034156"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034157"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q58930e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "陰陽師是非常危險的存在。請一定要擊退。"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[精靈之王，精靈遊俠] 菲利屋司的請託"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "8"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "因黑魔法師的詛咒餘波，不管是精靈遊俠本人 #m101050000# 全部都被冰凍著。全部結冰之前， 封印村莊似乎會比較好。從#b魔法長老 #p1033100##k獲得封印的方法吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "運轉櫻花處入口的魔法陣就可以完成封印，前往後根據 #p1033100#的請託，進入#b左邊的村莊入口後，使魔法陣自動運轉。#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "魔法陣已經自動運轉，現在在這裡要看出有#m101050000#存在的事情也很困難。"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "merTutor3"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "3"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1033202"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "24001"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2002"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1033202"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q24002e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "24004"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "封印魔法沒什麼困難，精靈遊俠。 只要啟動村莊門上刻的魔法陣就會發動至少 100年任何人不准進入村莊的強大魔法。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "能做這件事的人只有你。 因為除了王之外無法因他人的力量啟動的魔法陣。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "只要封印#b左邊的門#k就可以了。 因為只有櫻花處右邊的修煉場。 啟動魔法陣對王來說是很簡單的事… 所以請加快腳步。 精靈遊俠… "
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "唯有你才能控制這村莊的一切，精靈遊俠。 只要是你精靈之王的託付即使是河水也會改道而行…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "也許這是幸運。 因黑魔法師荒廢的新楓之谷，我們就像暫時離開的一樣。 當我們再回來時這塊土地會變成什麼樣子呢…"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "我們期待他… 所以這詛咒不只是壞處而已… 祝你… 好夢…"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有往 #b門#k那邊去嗎？精靈遊俠？ 不要忘記該做的事，我們的王…"
+          }
+        }
+      }
+    }
+  }
+}

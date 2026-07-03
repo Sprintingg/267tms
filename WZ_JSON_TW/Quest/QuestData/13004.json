@@ -1,0 +1,196 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[運動會] 運動會的搗蛋鬼"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "在楓之谷夏季運動會中，溫莉有話要說。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "把妨礙運動會的怪物們好好教訓一頓吧!\\n在限制的 #b10分鐘內#k擊敗跟我的等敵一樣的#b怪物 200隻#k吧。比我的等級 #r低11級以上或是高21級的怪物是無法進行攻擊的，#k請注意。"
+    },
+    "timeLimit": {
+      "_dirType": "int",
+      "_value": "600"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把所有妨礙楓之谷夏季運動會的怪物們全部擊敗了。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o9101025# #a130041#"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n"
+    },
+    "timerUI": {
+      "_dirType": "string",
+      "_value": "default"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4310030"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010039"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201305220000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201306050000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201305220000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201306050000"
+      },
+      "dayN": {
+        "_dirType": "int",
+        "_value": "30"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010039"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q13004e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9101025"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "200"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好 #b#h0##k！ 楓葉夏季運動會有趣嗎? 現在運動會的氣氛已到高峰。我也可以吃到好吃的便當。但是那些偷走我便當的壞怪物，隨意進入運動會場，防礙運動會。可以幫忙一下嗎?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "10分後，會有各村莊派出代表的接力賽，去擊退可能會防礙競賽的怪物200隻。但，#r比你的等級11等級以上低或21等級以上高的怪物#k不是犯人。#e#b一定要在10分內#清除。#k#n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不是每日都有的楓葉夏季運動會。改變心意的話，再跟我說。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有擊退怪物200隻的樣子?"
+          }
+        }
+      }
+    }
+  }
+}

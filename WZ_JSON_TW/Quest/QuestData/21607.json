@@ -1,0 +1,258 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[過去的英雄，狂狼勇士] 幼狼的青春期"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "6"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#m140000000##k的企鵝#b#p1202007##k好像又有話要說…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "對#p1202007#的狼做了一些研究，發現狼也有青春期。如果不好好照顧處於青春期的狼，會不利於狼的成長…#p1202007#為了好好照顧#t1902015#，希望能幫忙打聽一下有關資訊。\\r\\n\\r\\n#y21608##b(#u21608#)#k\\r\\n#y21610##b(#u21610#)#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "聽取所有好的提議後，#t1902016#才成長了一些。要好好照顧這個青年#t1902016#。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1202007"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "21604"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2000"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2100"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2110"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2111"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2112"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "2113"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "2114"
+        }
+      },
+      "skill": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "80001312"
+          },
+          "acquire": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1202007"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q21607e"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "21608"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "21610"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1902015"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1902016"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "英雄，你好？#t1902015#過的還好嗎？柳虎最近是不是反抗期？自從把狼託付給英雄之後，我還繼續研究了狼，發現狼也有青春期。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "沒有過好青春期的小狼就無法正常成長。所以想讓它正常成長，就要好好照顧#t1902015#才行…怎樣才好呢？聽別人的提議會不會有什麼辦法？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "從那些瞭解狼的人那裡，得到養青春期小狼的時候的提議之後再去執行吧。聽#b#p2060000##k和#b#p2020007##k的提議就行了。那#t1902015#的青春期就拜託你了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯，難道英雄你覺得哺育要自己一個人想的嗎？別的不說，哺育是不能有半點疏忽的，最好要把聽別人的提議全部聽取。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "聽完人的提議了嗎？怎麼樣？對#t1902015#有幫助嗎？看看#t1902015#長多大了。給我看#t1902015#。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "哎呀，#t1902016#比以前長了很多。已經不再是小狼了？青春期都過了是不是改叫青少年啊？"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "多虧英雄對#t1902016#的青春期時的細心照顧，請繼續養好#t1902016#吧。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒聽完對小狼的提議嗎？聽完##p2060000##k和#b#p2020007#提議後行動吧。只有這樣才能讓#t1902015#，平安度過青春。"
+          }
+        }
+      }
+    }
+  }
+}

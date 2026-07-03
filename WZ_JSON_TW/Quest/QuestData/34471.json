@@ -1,0 +1,219 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[阿爾卡娜]前往木琴蓮池"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "277"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "放下複雜的思緒，前往尋找下一個充滿自然產物的地方吧！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "前往有下一個天然物的#b#m450005300##k吧。\r\n離開#b#m940200216##k後，往右邊持續前進後，可以在#b#m450005240##k找到入口。\r\n和在#b#m450005300##k等我的#r小精靈#k聊聊更詳細的事吧"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "拋下複雜的情緒前往下一個自然產物所在地木琴蓮池。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "8"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "225"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "7683396"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "225"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003325"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34470"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1465"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q34471s"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003312"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q34471e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "7683396"
+      },
+      "transferField": {
+        "_dirType": "int",
+        "_value": "940200252"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "現在開始動身去找下一個自然物吧？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yesEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "下一個目的地木琴蓮池，前往木琴蓮池吧！"
+          },
+          "npcID": {
+            "_dirType": "int",
+            "_value": "3003350"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這邊還有些事情必須要做？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這裡就是木琴蓮池。"
+      },
+      "yesEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "照這樣看來以前這裡一定有很多蓮池，雖然現在莖葉都已經乾枯殆盡……"
+          },
+          "npcID": {
+            "_dirType": "int",
+            "_value": "3003350"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "下一個目的地木琴蓮池，前往木琴蓮池吧！"
+          }
+        }
+      }
+    }
+  }
+}

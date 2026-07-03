@@ -1,0 +1,207 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[異世界四重奏] 拉姆的請求"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "據說供餐委員拉姆要為了肚子餓的學生製作餐點。\\r\\n詢問看看他是否需要幫忙吧！\\r\\n\\r\\n#e#b<活動時間>#n#k\\r\\n2020年4月1日上午9點00分 - 2020年4月28日下午11點59分"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "據說供餐委員拉姆要為了肚子餓的學生製作餐點，為了讓肉變得更加美味，特地把肉放在鍋子裡要進行熟成，幫忙保管一下鍋子再拿給拉姆吧！據說過了15分鐘就可以熟成完成，熟成後還給拉姆吧！2020年4月1日上午9點00分 - 2020年4月28日下午11點59分"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "據說供餐委員拉姆要為了肚子餓的學生製作餐點，為了讓肉變得更加美味，特地把肉放在鍋子裡要進行熟成，幫忙保管一下鍋子再拿給拉姆吧！據說過了15分鐘就可以熟成完成，熟成後還給拉姆吧！2020年4月1日上午9點00分 - 2020年4月28日下午11點59分"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i3996196:#  #t3996196:# #c3996196# / 1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\\r\\n\n#i2630962:#  #t2630962:# x1\n"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q64670x"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9100030"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "500827"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "q5Set"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q64670s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "202004010900"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "202004282359"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9100030"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3996196"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q64670e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "setEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "qrID": {
+            "_dirType": "int",
+            "_value": "16260"
+          },
+          "key": {
+            "_dirType": "string",
+            "_value": "step"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "6"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "qrID": {
+            "_dirType": "int",
+            "_value": "16260"
+          },
+          "key": {
+            "_dirType": "string",
+            "_value": "state"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "2"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "目前肉類還沒完全熟成耶！稍微忍耐一下吧。"
+          }
+        }
+      }
+    }
+  }
+}

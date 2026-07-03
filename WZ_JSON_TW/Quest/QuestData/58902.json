@@ -1,0 +1,141 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "該如何詢問新來的武將來到這裡的來龍去脈呢？再問一次#p9130102#吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "新來的武將似乎被施上了某種咒術。而且，寫有關於咒術內容的信似乎遺失了。為了知道是什麼樣的咒術，從#m811000001#、#m811000002#、#m811000003#的#o9450024#、#o9450025# 收集來 #i4034126:##t4034126:# 吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "收集來#p9130102# 所拜託的 #i4034126:##t4034126:# ，並交給了他。居然還會使用咒術…織田軍好像愈來愈強大了，令人擔心。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4034126:# #t4034126:# #c4034126# / 30\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "95"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "[濃姬] 武田信玄的請求 -壹-"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "咒術書太少了。收集100卷裡的30卷，有那麼辛苦嗎？"
+          }
+        },
+        "quest": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "只有這點量，無法進行分析啊。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9130102"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q58902s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "180"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "58901"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9130102"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q58902e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034126"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

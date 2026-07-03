@@ -1,0 +1,190 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[弓箭手村] 勇士的考試"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 4,600\r\n可進行 '事情內幕' 任務\r\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000499:##t4000499:##c4000499#/20\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "請拜見菇菇國王的#b#p1300005##k。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了證明具有拯救菇菇王國的英雄資質，在#b#m106020100##k擊敗#r#o3300000##k收集#b#t4000499#20個#k交給#p1300005#。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "已證明證明擁有拯救菇菇國王的實力。"
+    },
+    "summary": {
+      "_dirType": "string",
+      "_value": "擊敗#r#o3300000##k收集#b變種芽孢20個#k交給#p1300005#。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "25"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "4600"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1300005"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1300005"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000499"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "4600"
+      },
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "2313"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000499"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "勇士。現在我們的王國面臨空前絕對的危機。所以我們需要強悍的勇士，勇士才會受推薦來到這個地方。但是，似乎得判斷勇士你是否具備拯救我們王國的資格。若是不介意的話，可以拜託你一件事嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "只要去#b#m106020100##k的話，就會遇到背叛菇菇王國的 #r#o3300000##k。就是背叛我們王國，投靠敵人的叛徒們。請去教訓他們一頓吧。請帶 #b#t4000499##k #b20個#k回來當作證據。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "哼… 看起來沒有自信。 總之產生挑戰的勇氣就來找我。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "已經去教訓#r#o3300000##k了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "真是了不起。很抱歉我小看了勇士，希望你能幫助我們菇菇王國走出危機。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "這樣不夠。 在#b#m106020100##k擊敗#r#o3300000##k取得 #b#t4000499# 20個#k。"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[黃金寺廟] 太陽火花"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "3"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "敲打#b#m252020700##k的#b考驗之門#k，向第二個考驗挑戰。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "重新敲打考驗之門，在腦海中又一次傳來了聲音。從廢棄的地下寺廟裡的鬼怪和加內西身上獲取#b#t4033176##k帶回去，這就是考驗之門的第二個考驗。得到#t4033176#，再回到考驗之門吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "重新敲打考驗之門，在腦海中又一次傳來了聲音。從廢棄的地下寺廟裡的鬼怪和加內西身上獲取#b#t4033176##k帶回去，這就是考驗之門的第二個考驗。得到#t4033176#，再回到考驗之門了。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4033176:# #t4033176:# #c4033176# / 1\n"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "廢棄寺廟的惡魔"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "9"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 1,798,560\r\n可透過「惡魔六手邪神」任務進行\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1798560"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000098"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3861"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000098"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q3862e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033176"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033176"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "1798560"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#b（腦海中又傳來聲音。）\\n\\n「你是準備好的人嗎？」"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b（腦海中又傳來聲音。）\\n\\n「第二個考驗是找來 #e#t4033176##n。為了從六手邪神祭壇的惡魔力量中守護靈魂，獻出祭品吧。找來寺廟內的鬼們攜帶的 #e#t4033176##n吧．．．」\\n#i4033176# #t4033176#\\n\\n（腦海中的聲音又消失了。）"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b「無法接受沒有準備的人。\\n\\n（腦海中的聲音隨即消失了。）"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b（腦海中又傳來聲音。）\\n\\n「第二個測試是找來 #e#t4033176##n。找來寺廟內鬼怪們攜帶的 #e#t4033176##n…」\\n\\n（腦海中的聲音又消失了。）"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[消滅]四處破壞的兇猛肥肥"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#m120000300##k的#b#@1092001:##k說她需要你的幫助。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "肥肥到處衝撞和破壞船隻，她要你消滅30隻#r肥肥#k。你可以在#b#m100030000##k輕鬆找到它們。\\n\\n完成之後，向#b#m120000300##k的#b#@1092001:##k回報。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "你已經消滅30隻破壞船隻的#r肥肥#k！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o1210100##a282781#"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 450\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "450"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "450"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我累了。我一直在修理我的船，可是怎麼也修不好！水不斷地跑進船上！\\n這都是因為那些#r肥肥#k的關係。他們不停朝著船衝撞，把船尾撞出了一個洞！\\n\\n你能幫我個忙嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "事情很簡單。你只要打倒30隻衝撞船隻的#r肥肥#k就可以了。\\n你可以在#b#m100030000##k找到不少肥肥！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我不是聖人…不過我會為了鯨魚號犧牲自己。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你除掉全部的#r肥肥#k了嗎？現在外面沒有撞擊的聲音了。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "太棒了！我今晚終於能好好休息了，真是感謝你！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你還沒有打倒30隻#r肥肥#k嗎？還沒嗎？我好累…"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1092001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1210100"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1092001"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      }
+    }
+  }
+}

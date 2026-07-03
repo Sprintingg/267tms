@@ -1,0 +1,149 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "5011008 캐논 점프"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "cannonJump"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "5011008"
+          }
+        }
+      },
+      "effect1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "socketName": {
+              "_dirType": "string",
+              "_value": "None"
+            }
+          }
+        }
+      },
+      "effect2": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "130+40*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "3"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "6"
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "200"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -60,
+          "_y": -80
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 60,
+          "_y": 80
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub"
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "5011008"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "3"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "6"
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "130+40*x"
+    },
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "cooltime": {
+      "_dirType": "int",
+      "_value": "3"
+    },
+    "impactX": {
+      "_dirType": "string",
+      "_value": "150"
+    },
+    "impactY": {
+      "_dirType": "string",
+      "_value": "1000+30*x"
+    }
+  }
+}

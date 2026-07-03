@@ -1,0 +1,267 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[天空之城] 奈洛的禮物"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "要去見天空之城的幫傭艾瑪。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "艾利遜為了要送禮物給喵咪製作禮物需要材料. 尋找材料."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "從艾瑪那裡得到貓咪奈咪這禮物. 向艾利遜把奈咪的禮物交出."
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "34"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000060:##t4000060:##c4000060#/50, \n\n10000楓幣"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "110050"
+      },
+      "meso": {
+        "_dirType": "int",
+        "_value": "-10000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031199"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2012010"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "72"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3045"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031199"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2012010"
+      },
+      "endmeso": {
+        "_dirType": "int",
+        "_value": "10000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000060"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "money": {
+        "_dirType": "int",
+        "_value": "-10000"
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "110050"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031199"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000060"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "艾利遜想要送自己貓咪小小禮物嗎?  #t4031199#? 製作#t4031199#嗎?"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "艾利遜說要和自己的貓一起玩所以沒空嗎？嗯...這麼辦怎麼樣？就是做一個送給貓的小禮物帶過去。這樣的話艾利遜也會因為感激為您製作食人花汁的～"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "主人也不在就當作打工幫忙. 我有些手藝擅長製作#b#t4031199##k.\\r\\n為了製作星月手鐲需要的是#t4000060# 50個#k. 還有, 向我支付酬勞 #b1萬楓幣#k就可以製作."
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "把這個送給艾利遜的貓咪一定會很開心。為了製作星月手鐲，需要#t4000060#50個#k。還有要給我#b1萬楓幣#k當作酬勞，我就會替你製作。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不願意就沒辦法了…想通了再來找我吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "把所有材料都弄來了啊，辛苦了～請稍等會兒，馬上就為您做出手鐲。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "在這裡. 拿著這個去找艾利遜, 艾利遜一定會喜歡."
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "材料還沒收集好。我再跟你說一次。需要#t4000060#50個#k和10,000楓幣~"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "材料還沒收集好。我再跟你說一次。需要#t4000060#50個#k和10,000楓幣~"
+          }
+        }
+      }
+    }
+  }
+}

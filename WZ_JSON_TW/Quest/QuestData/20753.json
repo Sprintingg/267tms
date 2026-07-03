@@ -1,0 +1,236 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇家騎士團] 阿卡伊農的結界"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "向#p1103006#詢問下一個任務是什麼。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "要取得解除阿卡伊農的防禦結界的材料。\n\n解除結界的方法\n\n1.從那因哈特那裡取得精靈之光。\n2.獵殺神木村、龍森林地區的怪物，蒐集龍之氣息50個。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "將需要的材料拿去給#p1103006#。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i2430564:# #t2430564:# #c2430564# / 1\r\n#i4033118:# #t4033118:# #c4033118# / 50\r\n"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1103006"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "120"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20752"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "5112"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "5113"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1103006"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2430564"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033118"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033118"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2430564"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "雖然知道通道了…可是這樣進入會很危險。不曉得是不是阿卡伊農施了特別的咒語，我在那裡完全無法使用特殊能力、隱藏、躲避、尋找安全地方..."
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "總之似乎有必要阻止阿卡伊農的咒語。倘若不這樣做，守護兵和神官察覺到入侵者，就會立刻追過來。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "你的下一個任務是為了入侵次元的縫隙做準備！"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "首先去找位於耶雷弗的那因哈特，將裝有精靈之光的玻璃瓶拿給他。還有獵殺神木村、龍森林地區的怪物蒐集龍之氣息。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "居然拒絕… 拒絕呢？不要這樣！ 我不喜歡開玩笑！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我說的東西全部都帶來了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "果然是個值得信賴的人。請稍候。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "只要取回精靈之光 1個和龍之氣息50個即可。快一點！ "
+          }
+        }
+      }
+    }
+  }
+}

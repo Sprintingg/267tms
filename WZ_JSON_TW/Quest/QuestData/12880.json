@@ -1,0 +1,199 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[風暴] 挑戰！獵殺怪物 200隻！"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "尤莉亞好像有什麼煩惱..."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "拜託除掉200隻妨礙愉快的風暴嘉年華的一般怪物。但是把不能比自己的等級低11以上，或是高21以上的怪物當作對象，首先要確認怪物的等級。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "獵殺怪物從尤莉亞那裡領取禮物。10分鐘可以幫忙她一次，下次一定要再幫忙！"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o9101025# #a128801#\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4310057"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2001512"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201302200000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201302200000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201302060000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201302060000"
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "10"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q12880e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9101025"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "200"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好 #h0#！來的正好。有一件事情一定要委託你。相當重要的事情，你會答應吧？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "最近正是楓之谷風暴慶典如火如荼展開的時候，可是怪物的導彈也越來越嚴重。所以去修理妨礙慶典的普通怪物 200隻吧。但是 #b比你的等級11以上低或21以上高等級的怪物#k 除外。那麼我等你回來！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯…真的很重要！如果改變主意一定要重新和我對話！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有消滅怪物 200隻嗎？"
+          }
+        }
+      }
+    }
+  }
+}

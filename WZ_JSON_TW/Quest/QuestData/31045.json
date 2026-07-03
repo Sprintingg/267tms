@@ -1,0 +1,164 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[每日]挑戰!園丁打工2階段"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#每日任務分數 #R31035ExscoreRef31045# / 500\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#e玫瑰庭園 : 每日任務#n\r\n\r\n玫瑰庭園所有行動將記錄成分數。\r\n - 狩獵一般怪物 : 3分\r\n - 綻放玫瑰花 / 解放靈魂 : 10分\r\n - 狩獵黃金蜜蜂 : 25分\r\n - 狩獵超級要塞巨人 : 50分\r\n\r\n#r目標分數 : 500分#k"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#e玫瑰庭園 : 每日任務#n\r\n\r\n玫瑰庭園所有行動將記錄成分數。\r\n - 狩獵一般怪物 : 3分\r\n - 綻放玫瑰花 / 解放靈魂 : 10分\r\n - 狩獵黃金蜜蜂 : 25分\r\n - 狩獵超級要塞巨人 : 50分\r\n\r\n#r目標分數 : 500分#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "執行第二項每日任務了."
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "221"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "1|0"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "except": {
+        "_dirType": "sub",
+        "lvmin": {
+          "_dirType": "int",
+          "_value": "1"
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2162000"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "31035"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "115"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "x"
+          }
+        }
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2162000"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "31035"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q31045e"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "500"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "接受每日任務"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "score"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#e玫瑰庭園 : 每日任務#n\\r\\n - 狩獵一般怪物 : 3分\\n - 綻放玫瑰花 / 解放靈魂 : 10分\\n - 狩獵黃金蜜蜂 : 25分\\n - 狩獵超級要塞巨人 : 50分\\r\\n#r目標分數 : 500分#k"
+          }
+        }
+      }
+    }
+  }
+}

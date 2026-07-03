@@ -1,0 +1,148 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "memory"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "[合成]1加1是1+"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "將沒有潛能的兩個道具合成，獲得有潛在能力的道具"
+    },
+    "keyword": {
+      "_dirType": "string",
+      "_value": "特定道具合成"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "epic"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "uiForm": {
+        "_dirType": "string",
+        "_value": "baisc"
+      },
+      "gauge": {
+        "_dirType": "string",
+        "_value": "mission_count"
+      }
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "將沒有潛能的兩個道具合成，獲得有潛在能力的道具"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "makingskill_synthesize": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            },
+            "type": {
+              "_dirType": "string",
+              "_value": "counting"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub",
+            "item": {
+              "_dirType": "sub",
+              "condition": {
+                "_dirType": "string",
+                "_value": "and"
+              },
+              "values": {
+                "_dirType": "sub",
+                "0": {
+                  "_dirType": "sub",
+                  "item_potential": {
+                    "_dirType": "sub",
+                    "item_potential_grade": {
+                      "_dirType": "sub",
+                      "min": {
+                        "_dirType": "int",
+                        "_value": "0"
+                      },
+                      "max": {
+                        "_dirType": "int",
+                        "_value": "0"
+                      }
+                    }
+                  }
+                },
+                "1": {
+                  "_dirType": "sub",
+                  "item_potential": {
+                    "_dirType": "sub",
+                    "item_potential_grade": {
+                      "_dirType": "sub",
+                      "min": {
+                        "_dirType": "int",
+                        "_value": "0"
+                      },
+                      "max": {
+                        "_dirType": "int",
+                        "_value": "0"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "makingskill_result": {
+              "_dirType": "sub",
+              "is_success": {
+                "_dirType": "int",
+                "_value": "1"
+              },
+              "item": {
+                "_dirType": "sub",
+                "condition": {
+                  "_dirType": "string",
+                  "_value": "or"
+                },
+                "values": {
+                  "_dirType": "sub",
+                  "0": {
+                    "_dirType": "sub",
+                    "item_potential": {
+                      "_dirType": "sub",
+                      "item_potential_grade": {
+                        "_dirType": "sub",
+                        "min": {
+                          "_dirType": "int",
+                          "_value": "1"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

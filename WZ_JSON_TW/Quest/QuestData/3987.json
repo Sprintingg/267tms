@@ -1,0 +1,172 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[阿斯旺反抗戰] 解放的阿斯旺"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "43"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p2183001#好像有話要說。跟他對話吧！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2183001#想要對上次阿斯旺反抗戰發生的事情進行一番說明。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "雖然還沒能擊退希拉，不過阿斯旺的解放也初具規模了。關於留在阿斯旺的殘黨，向#p2183002#問一下。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2183001"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201203050000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201301020000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201202100000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201401020000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3986"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2183002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好，異方人。感謝來到阿斯旺。包括異方人在內的很多人的幫助下，阿斯旺的百姓終於擺脫希拉，找回了和平。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "現在剩下的就是躲到地下深處的希拉和還沒有擺脫她的部分百姓。詳細內容去問問 #b#p2183002##k 宰相吧？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b#p2183002##k 材商在我旁邊，所以不需找他。 對這外人希望有自然的保護…"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "之前幫的忙，非常感激。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "大概聽#p2183001#說過了，很多冒險家找來，為阿斯旺的解放獻出了力量。最終，大部分地區和百姓都從希拉手中救了出來。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "不過，阿斯旺還沒有完全解放。還剩下躲到阿斯旺地下深處的希拉，還有痛苦呻吟的百姓。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "想到剩下的百姓，讓我心痛不已啊。請稍後再來吧。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請去找#p2183002# 宰相吧。"
+          }
+        }
+      }
+    }
+  }
+}

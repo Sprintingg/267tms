@@ -1,0 +1,179 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "35121003 워머신 : 타이탄"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "msummon2"
+          }
+        },
+        "Segment1": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "msummon2"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "long",
+              "_value": "3"
+            },
+            "socketName": {
+              "_dirType": "string",
+              "_value": "None"
+            }
+          }
+        }
+      },
+      "effect2": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "socketName": {
+              "_dirType": "string",
+              "_value": "None"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AEAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "35121003"
+          }
+        }
+      },
+      "attack": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "2880"
+        }
+      }
+    },
+    "sequenceLength": {
+      "_dirType": "int",
+      "_value": "3000"
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "attack": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "damage": {
+          "_dirType": "string",
+          "_value": "350+5*x"
+        },
+        "attackCount": {
+          "_dirType": "int",
+          "_value": "8"
+        },
+        "mobCount": {
+          "_dirType": "int",
+          "_value": "15"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -710,
+          "_y": -550
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 140,
+          "_y": 50
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub"
+        },
+        "1": {
+          "_dirType": "sub"
+        },
+        "2": {
+          "_dirType": "sub"
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "35121003"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "damage": {
+      "_dirType": "string",
+      "_value": "350+5*x"
+    },
+    "attackCount": {
+      "_dirType": "int",
+      "_value": "8"
+    },
+    "mobCount": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -710,
+      "_y": -550
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 140,
+      "_y": 50
+    },
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "30"
+    }
+  }
+}

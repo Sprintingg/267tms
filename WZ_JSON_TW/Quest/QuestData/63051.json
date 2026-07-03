@@ -1,0 +1,148 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[艾芙特領域]只有孩子們的世界"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "121"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "看起來很愉悅的純真之地，在其中看起來很幸福的家。\\r\\n試著與純真之地的孩子們對話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了與孩子們對話，朝向孩子們走去，但孩子們在看到變蒼白的我後，覺得我很可憐而哭了起來。 當孩子開始哭起來的同時，天空也開始下起了雨。\\r\\n\\r\\n為了讓孩子們的哭聲停止，請試著去外面找一些零食給他們吃吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "為了讓看到蒼白的我而哭起來的孩子們停止哭泣，找來了#t4034997#。 神奇的是#t4034997#的效果，還真是立即見效！ \\r\\n就在孩子們的哭聲停止後，天空也停止下雨了。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4034997:# #t4034997:# #c4034997# / 30\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400224"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "63049"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q63051s"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400224"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034997"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q63051e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "defaultEx": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "sub",
+            "msg": {
+              "_dirType": "string",
+              "_value": "嗚嗚嗚～！"
+            }
+          },
+          "1": {
+            "_dirType": "sub",
+            "msg": {
+              "_dirType": "string",
+              "_value": "#b為了讓孩子們的哭聲停止，去找來 10個零食吧。"
+            },
+            "userSay": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "imgPos": {
+              "_dirType": "int",
+              "_value": "1"
+            }
+          }
+        }
+      }
+    }
+  }
+}

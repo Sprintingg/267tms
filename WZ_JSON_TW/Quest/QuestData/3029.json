@@ -1,0 +1,277 @@
+{
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "sayEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "其實, 在墳墓附近有發現像是老舊的地圖碎片. 在這有 '戒指', '鑰匙'單字... 想要撿起的瞬間被風...把碎片吹走了. 這附近的野狼應該撿到了."
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "這是我知道的所有. 發現戒指的墳墓上也有舊地圖碎片... "
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "那, 這地圖好像是尋找上古魔書的決定性的提示..."
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        },
+        "3": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "上古魔書?"
+          }
+        },
+        "4": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "其實, 是受在冰原雪域的亞凱斯特所託尋找上古魔書. "
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        },
+        "5": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "這周圍的野狼會拿著地圖碎片. 找到後交給亞凱斯特就可以知道些什麼."
+          }
+        }
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "找到所有4張地圖碎片後拿給亞凱斯特好了. 對了... 還有你擁有的#b#t4031053##k可能會是重要的鑰匙, 要小心保管."
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "要放棄找上古魔書嗎?"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "從野狼身上找到 4張地圖碎片後拿給亞凱斯特看好了. 還有你擁有的#b#t4031053##k可能會是重要的鑰匙, 要小心保管."
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "有查出些有關#b#t4031056##k的行蹤了嗎? 表情很奇怪..是弄丟什麼似的表情. 之前有見到誰, 去找那個人詢問看看好了.\\r\\n"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2030001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "75"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3020"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2020005"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031054"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "4"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "82054"
+      },
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "3032"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031054"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-4"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[冰原雪域山脈] 分散的地圖碎片"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "尋找《上古魔書》"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "尋找被冰原雪域冷冽的風所分散的#b4個地圖碎片#k，然後回去找亞凱斯特吧？地圖碎片可以從#r野狼#k那裡獲得。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "亞凱斯特應該知道四個地圖碎片要做什麼吧。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "33"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "詢問巴伯下士關於知道戒指的事情."
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "returnMapID": {
+      "_dirType": "int",
+      "_value": "211000000"
+    },
+    "returnPN": {
+      "_dirType": "string",
+      "_value": "2020005"
+    },
+    "targetType": {
+      "_dirType": "int",
+      "_value": "-1"
+    },
+    "returnType": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "82054"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

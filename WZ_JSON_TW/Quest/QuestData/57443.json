@@ -1,0 +1,215 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[Kanna] Forest Happenings"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "58"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "Ask Tae Soo if he has any information on the suspicious group."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "Tae Soo has no idea why the Oda Army came to Mu Lung. He suggested you visit Do Gong in Mu Lung. Do Gong is at the Mu Lung Temple."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "Do Gong in the Mu Lung Temple has somehow already heard about the recent events. They don't call him master for nothing."
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic# #fUI/UIWindow2.img/QuestIcon/8/0# 1,536,020Can proceed to the Mu Lung's Energy quest"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1536020"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2091003"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "57442"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q57443s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "135"
+      },
+      "job": {
+        "_dirType": "sub"
+      },
+      "job_SG": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "4200"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "4210"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "4211"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "4212"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "4002"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "4213"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "4214"
+        }
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2091001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q57443e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1536020"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "Perhaps they were just envious of the peachy aroma wafting through the air. Not everyone can whip up a killer harvest like this, you know."
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "Why not ask Do Gong in Mu Lung Temple? He keeps an eye on everything in Mu Lung."
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "Mu Lung Temple is to the right of Mu Lung. Do Gong is the wisest of the masters. I'd be surprised if he doesn't have something worthwhile to say."
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "You're better off asking Do Gong for more info. I'm just a simple peach man."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "No need to speak. I already know what you seek."
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "Punish the Peach Monkeys and Reindeer before they ruin the farm."
+          }
+        }
+      }
+    }
+  }
+}

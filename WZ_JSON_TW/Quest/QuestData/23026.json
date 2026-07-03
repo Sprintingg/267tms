@@ -1,0 +1,234 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[末日反抗軍] 岩石熊試驗？"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽祕密廣場的煉獄巫師教官赫力泰說話。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "煉獄巫師教官赫力泰說向2轉的煉獄巫師詢問SP是否不足，倘若通過簡單的試驗就會給予不足的SP。\\n赫力泰的試驗是證明擁有擊退大岩石熊和小岩石熊的能力。這種程度只不過是鍛鍊身體的水準罷了。朝著礦山前進。\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "煉獄巫師教官赫力泰說向 2次轉職的煉獄巫師詢問SP是否不足，只要通過簡單的試驗就會給予不足的SP。\\n赫力泰的試驗是證明擁有擊退大岩石熊和小岩石熊的能力。\\n輕鬆的擊退怪物，取得 #e#b2轉 SP 6個#k#n。\n"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o3150001# #a230261#\r\n#o3150002# #a230262#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 8,000\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "disableAtCompleteTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "16"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "8000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2151001"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "3210"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "3211"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "3212"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2151001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3150001"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3150002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "25"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "8000"
+      },
+      "sp": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "sp_value": {
+            "_dirType": "int",
+            "_value": "6"
+          },
+          "job": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "int",
+              "_value": "3210"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "恭喜你2轉。可是不累嗎？就算認真的升級，也無法全部熟悉2轉技能。煉獄巫師不是個簡單的職業。要做的事相當多，因此SP當然會不夠。因此我有一個提議。如果你能展現出煉獄巫師的能力，我就給你不足的SP。如何？可以展現出身為煉獄巫師的能力嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "前往礦山入口附近，就能看到小岩石熊和大岩石熊的怪物。身體由堅硬的岩石組成不容易對付。你將怪物分別擊退50隻、25隻我就肯定你身為煉獄巫師的能力，給予2轉  SP  6個。我會觀察你，不要讓我失望。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "是啊！安於現狀也沒什麼不好。可是倘若我們末日反抗軍安於現狀，就無法得到永遠的自由。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這種程度就能充分看出你的能力。果然是個未來相當看好的煉獄巫師。那麼按照約定給你2轉 SP。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "提升你的能力。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "前往礦山入口附近，就能看到小岩石熊和大岩石熊的怪物。身體由堅硬的岩石組成不容易對付。你將怪物分別擊退50隻、25隻我就肯定你身為煉獄巫師的能力，給予2轉  SP  6個。我會觀察你，不要讓我失望。"
+          }
+        }
+      }
+    }
+  }
+}

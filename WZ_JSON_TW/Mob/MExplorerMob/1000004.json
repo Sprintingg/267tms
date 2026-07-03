@@ -1,0 +1,265 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "maxHP": {
+      "_dirType": "int",
+      "_value": "350"
+    },
+    "speed": {
+      "_dirType": "int",
+      "_value": "-10"
+    },
+    "attackPower": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "reward": {
+      "_dirType": "string",
+      "_value": "m1000004"
+    },
+    "MExplorerMob": {
+      "_dirType": "sub",
+      "mobType": {
+        "_dirType": "string",
+        "_value": "Normal"
+      }
+    },
+    "Chase": {
+      "_dirType": "sub",
+      "SearchRect": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": -628,
+          "_y": -436
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 515,
+          "_y": 202
+        }
+      },
+      "distanceX": {
+        "_dirType": "int",
+        "_value": "60"
+      }
+    }
+  },
+  "DefaultAnims": {
+    "_dirType": "sub",
+    "move": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "AnimReference": {
+              "_dirType": "sub"
+            }
+          }
+        }
+      }
+    },
+    "stand": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "AnimReference": {
+              "_dirType": "sub"
+            }
+          }
+        }
+      }
+    },
+    "hit": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "AnimReference": {
+              "_dirType": "sub",
+              "tag": {
+                "_dirType": "string",
+                "_value": "hit"
+              }
+            }
+          }
+        }
+      },
+      "Notifies": {
+        "_dirType": "sub",
+        "sound": {
+          "_dirType": "sub",
+          "Notify": {
+            "_dirType": "sub",
+            "!class": {
+              "_dirType": "string",
+              "_value": "WZ2AnimNotify_PlaySound"
+            },
+            "SoundPath": {
+              "_dirType": "string",
+              "_value": "Sound/MExplorer.img/Mob/1000004/hit1"
+            }
+          }
+        }
+      }
+    },
+    "die": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "AnimReference": {
+              "_dirType": "sub",
+              "tag": {
+                "_dirType": "string",
+                "_value": "die"
+              },
+              "repeat": {
+                "_dirType": "int",
+                "_value": "0"
+              }
+            }
+          }
+        }
+      },
+      "Notifies": {
+        "_dirType": "sub",
+        "sound": {
+          "_dirType": "sub",
+          "Notify": {
+            "_dirType": "sub",
+            "!class": {
+              "_dirType": "string",
+              "_value": "WZ2AnimNotify_PlaySound"
+            },
+            "SoundPath": {
+              "_dirType": "string",
+              "_value": "Sound/MExplorer.img/Mob/1000004/die1"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Skills": {
+    "_dirType": "sub",
+    "attack1": {
+      "_dirType": "sub",
+      "Anim": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub",
+              "AnimReference": {
+                "_dirType": "sub"
+              }
+            }
+          }
+        },
+        "Notifies": {
+          "_dirType": "sub",
+          "attack": {
+            "_dirType": "sub",
+            "TriggerTime": {
+              "_dirType": "int",
+              "_value": "1140"
+            }
+          },
+          "sound": {
+            "_dirType": "sub",
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/MExplorer.img/Mob/1000004/attack1"
+              }
+            }
+          }
+        }
+      },
+      "Events": {
+        "_dirType": "sub",
+        "attack": {
+          "_dirType": "sub",
+          "hit": {
+            "_dirType": "sub"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "lt": {
+              "_dirType": "vector",
+              "_x": -150,
+              "_y": -105
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": -45,
+              "_y": -10
+            },
+            "damage": {
+              "_dirType": "int",
+              "_value": "100"
+            },
+            "attackCount": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "mobCount": {
+              "_dirType": "int",
+              "_value": "1"
+            }
+          }
+        }
+      },
+      "common": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": -150,
+          "_y": -105
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": -45,
+          "_y": -10
+        },
+        "damage": {
+          "_dirType": "int",
+          "_value": "100"
+        },
+        "cooltime": {
+          "_dirType": "string",
+          "_value": "2"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "mobCount": {
+          "_dirType": "int",
+          "_value": "1"
+        }
+      }
+    }
+  }
+}

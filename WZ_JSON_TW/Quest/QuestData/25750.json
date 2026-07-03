@@ -1,0 +1,203 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[凱撒] 攻擊阻止"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "22"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "梅格耐斯的攻擊比想像中還快 #p3000000#非常驚慌。根據偵察兵的報告保護罩的北邊界線似乎有幽靈入侵。和#p3000000#對話吧！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "防禦準備的期間阻止梅格耐斯的攻擊。前往保護罩北邊界線，將該地的#b遊擊隊幽靈全部擊退#k爭取時間。\n#r失敗時可放棄任務再次開始#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "北邊先入侵的兵力幾乎都擊退了，雖然還不夠，但是爭取時間。然而現在只是開始罷了。"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 13,000\r\n可進行 '幽靈的正式進攻' 任務\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "13000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3000000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q25750s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "25"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "25749"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "6100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "6110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "6111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "6112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "6113"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "6114"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3000000"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "25797"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "13000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "太了不起了！雖然比不上梅格耐斯的軍隊，但已經重整防禦軍隊了。在恢復保護罩之前，不知道是否能夠爭取到時間。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "大事不妙了。我們還沒準備好... 請快點去擊退保護罩北方邊界的幽靈偵查兵。\n\n#b(倘若沒有完成戰場地圖就回來，就得放棄任務重新進行。)#k"
+          }
+        },
+        "quest": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "大事不妙了。我們還沒準備好... 請快點去擊退保護罩北方邊界的幽靈偵查兵。\n\n#b(倘若沒有完成戰場地圖就回來，就得放棄任務重新進行。)#k"
+          }
+        }
+      }
+    }
+  }
+}

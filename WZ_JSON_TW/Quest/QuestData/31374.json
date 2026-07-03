@@ -1,0 +1,197 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[奇幻主題樂園] 變強的訊號"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "與在終極站<3>等待的 #b松羅密#k進行對話。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在終極站<3>的人群中問一下誰拿著蝴蝶結胸針。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "斗篷娃娃面具說等一下再跟他對話。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "與#questorder1##r#p2192027##k進行對話\\r\\n與#questorder2##r#p2192028##k進行對話\\r\\n與#questorder3##r#p2192018##k進行對話\\r\\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "439216"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "120"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2192008"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31373"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2192018"
+      },
+      "npcSpeech": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2192027"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "talk_littleGirl"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2192028"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "talk_man"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2192018"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "talk_solo"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "439216"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這裡訊號最強但人群分散不知道是誰拿著。這些人中好像有誰拿著胸針，可以請你去問問看嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "從那個 #b小女孩#k問問看好了。因為女孩都愛蝴蝶結阿，像我們松茱麗。哈哈～"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "該不會害羞吧？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "不知道是不是我拿的這個。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "比起我好像是要找其他人的樣子吧..？"
+          }
+        }
+      }
+    }
+  }
+}

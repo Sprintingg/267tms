@@ -1,0 +1,257 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2060006"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "75"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2012017"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000158"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000159"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "230010200"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "169400"
+      },
+      "pop": {
+        "_dirType": "int",
+        "_value": "3"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000158"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-100"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000159"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-100"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你!你把#t4000158#和#t4000159#帶來做什麼!現在就賣掉!還能值幾個錢...什麼？是受了#p2060006##委託而來?"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "啊哈哈哈!不愧是#p2060006##啊。連這種小事也這麼操心。別害怕，我正愁沒有研究材料呢，這下正好，多謝了。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "現在我又可以開始我的研究了，製造解毒劑...馬上就要成功了。我才是天才#p2012017#啊!啊哈哈哈!"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "看來你還沒去#p2012017#那裡啊…請收集#b#t4000158#100個#k和#b#t4000159#100個#k然後交給#b#p2012017##k。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "什麼事啊?如果不是什麼重要的事情，不要打斷我#p2012017#進行研究工作!"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "您好,冒險家先生...我不知道您在海邊是否受到過怪物的襲擊。特別是#o4230201#還是有毒的，如果被攻擊是很危險的事情。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "不久前您委託科學家#b#p2012017##k幫忙製作可以解#o4230201#之毒的解毒劑，據說將要製作完成了。只要有解毒劑您就可以放心去大海旅行了。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "但要繼續這項研究還需要一些材料支援。既然這項研究有利於所有去大海旅行的冒險家...那麼您是否能幫一下忙呢?也不是什麼困難的事情，您不是也想去大海旅行嗎。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "啊,真是太感謝了。解毒劑研究材料包括#b#t4000158##k和#b#t4000159##k，只要各收集#b100個#k就好了,據#p2012017#先生說對研究工作會有很大的幫助.拜託您收集這些材料然後交給#p2012017#...拜託了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "看來您很忙啊..."
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[水世界]秀茲的新研究"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#p2060006##k似乎需要幫助..."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了幫助到大海旅行的旅行者，#p2060006#委託#p2012017#研製可以解除#o4230201#之毒的解毒劑。為了繼續研究#p2060006#請求你到#b#p2012017##k處收集#b#t4000158#100個#k和#b#t4000159#100個#k。\\n\\n#i4000158##t4000158##b#c4000158##k/100\\n#i4000159##t4000159##b#c4000159##k/100"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "交給#p2012017#研究所需的材料.本來以為他只是位孤僻的科學家，想不到也會做好事..."
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "35"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "169400"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "returnMapID": {
+      "_dirType": "int",
+      "_value": "200082301"
+    },
+    "targetType": {
+      "_dirType": "int",
+      "_value": "-1"
+    },
+    "returnPN": {
+      "_dirType": "string",
+      "_value": "2012017"
+    },
+    "returnType": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demand": {
+      "_dirType": "sub",
+      "explain": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

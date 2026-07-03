@@ -1,0 +1,141 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[艾芙特領域]畫畫的小孩"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "121"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "安靜畫著畫的小孩，這小孩好像也覺得我很神奇，因此瞧了我一眼。 試著也去與畫畫的小孩對話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "畫畫的小孩#p9400222#說我就像是一張空白的圖畫紙一樣，很羨慕我能夠隨意的著上顏色。 去尋找充分的色素給#p9400222#，好讓他在我身上塗顏色。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在找來色素給#p9400222#後，他開始在我的身上著色了。 當他開始著色後，神奇的事情發生了，全身開始恢復到被搶走顏色之前的模樣了！\\r\\n#p9400222#說如果身體又再次變成白色的圖畫紙時，請再來找他。\\r\\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4036013:# #t4036013:# #c4036013# / 1\r\n"
+    },
+    "resignedTogetherQuest": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "int",
+        "_value": "63056"
+      }
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400222"
+      },
+      "QuestRecordAndOption": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "63054"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q63055s"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400222"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036013"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q63055e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "色素好像還不太夠。"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2101008"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2040052"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "85"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3913"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3900"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#m260000000#的#p2101008#嗎…看來她有困難啊。竟然有知道這麼多故事的人！這#m222020000#擁有的故事，也不少啊。當然可以借。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "但是...這赫爾奧斯塔圖書館有個規矩。借出一本書，要相應的存一本。想要借書，要存進同樣數量的書。所以先生要收集新書來交換…可以嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "要收集這圖書館沒有的書，可不是容易的事，能答應真是太感謝了。那麼冒險家收集新書的時候，我會在這裏幫#p2101008#挑選出需要的書。…啊！我想到一個好方法了。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "把#b#p2101008##k知道的故事，寫成書不就可以了嗎？這方法比找書容易的多了嘛。只要以後這麼做要借給你就方便多了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "要收集#m222020000#沒有的書，可是很難的事呀…冒險家拒絕也可以理解的。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "看來是從#m222020000#回來了。那裏的圖書館員是什麼樣的人？他借給你書了嗎...？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "借出一本書，就要存進一本…原來#m222020000#有這樣的規則啊。那麼...好吧。我把知道的故事寫在了紙上，把那些編成書就可以了。請稍後再來找我吧..."
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒去找#b#p2101008##k嗎？#b#m260000000##k離這裏很遠，還是早點出發的好啊？"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "260000000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "77280"
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[納希沙漠] 向懷玆借書"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "講故事人沙惠拉吉德"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "聽完故事的#p2040052#答應把書借給#p2101008#。但#m222020000#說需要用其他書代替拿出來的書放進原位置上，這是規定...要不把#b#p2101008##k知道的故事做成書給他？"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "向#p2101008#傳達#p2040052#的話後，她馬上答應說給他寫好故事的書。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "43"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "77280"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

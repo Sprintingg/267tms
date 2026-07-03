@@ -1,0 +1,141 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "照#p9130102:# 所拜託的，收集 #t4034126:# ，詢問解開咒術的方法吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "收集#t4009286:#，栽培生長在隱藏原野上的藥草，獲得藥草的果實#t4034128:#吧。\\r\\n#b<栽培藥草獲得果實的方法>\\r\\n1. 獲得#o9450026#、#o9450027##掉落的3個#i4009286##t4009286:#。\\r\\n2. #m811000006#的藥草前方，掉落出#t4009286#，栽培藥草。\\r\\n3. 若藥草都長大了，可點擊獲得#i4034128##t4034128:#。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "得到1個#i4034128##t4034128:# ，帶給#p9130102# 了。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4034128:# #t4034128:# #c4034128# / 1\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "95"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "[濃姬] 武田信玄的請求 -貳-"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "栽培#i4034128##t4034128:#需要用心照料。請拿來1個就好。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "栽培#i4034128##t4034128:#需要用心照料。請拿來1個就好。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9130102"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q58903s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "180"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "58902"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9130102"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q58903e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034128"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 怨恨、埋怨、冤魂"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "惡靈森林"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "3"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1040002#說#m910100000#的入口在#m100040105#裡。如想見到潘喜說的那個幽靈，就去#r#m910100000##k吧。但好像幽靈是定時出現的…聽說是在#r下午5點至第二天上午7點之間#k出現，我們按照此時間去就可以了。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "受咒森林的幽靈#t1032107#。他好像不停的在詛咒某個人…"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "！＠＃￥%＆＊…\\n\\r#L0##b（他在嘀咕什麼呢。靠近去聽聽）#l#K"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "我不會原諒你…艾溫…艾溫……艾溫………"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒找到#b#m910100000##k嗎？要仔細地去找啊。在#b巫婆森林#k裡空間扭曲的地方就是詛咒之林的入口。"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "終於找到#b#m910100000##k的入口啦！入口就在#b#m100040105##k！正是那裡的奇怪#b幽靈#k操縱著#o5220002#，快去找到他們！"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "前往#m910100000#的道路由於黑暗力量的影響而發生扭曲，所以很好尋找，不過操縱#o5220002#的幽靈只在#r下午5點至明天上午7點之間#k才會出現，如果時間不對可是找不到的哦！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "喵嗚.…？你害怕具有邪惡氣息的森林？"
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1040002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "50"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2223"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1032107"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  }
+}

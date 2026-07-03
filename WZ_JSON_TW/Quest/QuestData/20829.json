@@ -1,0 +1,172 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇家騎士團] 第3課程 – 基本戰鬥1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "點擊戰鬥教官奇加對話後開始訓練。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "打敗#b#o9300730# 3隻#k後，向奇加報告。\r\n\r\n可以點擊#rCtrl鍵打怪。#k\r\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "使用一般攻擊擊敗了 #o9300730# 3隻。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o9300730# #a208291#\r\n"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1102102"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q20829s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20828"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "1000"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1102102"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9300730"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我是教你戰鬥的奇加。你的名字叫做#h0#吧？\\r\\n以後好好加油。要馬上開始嗎？\\r\\n"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "從最基本的攻擊方法開始教你。\r\n基本中的基本攻擊法就是 #r利用Ctrl鍵的一般攻擊#k。 到怪物的附近按下 Ctrl 鍵就可以攻擊。 HP和 MP都不會消耗。試試看吧。 擊敗練武場裡的 #b#o9300730# 3隻#k吧。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯？什麼啊～不想快點變強嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "做的好。 用那方式靠近怪物按下 Ctrl鍵可以攻擊。憑這股氣勢繼續訓練嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "呼呼， 奇慕使眼色了。好，給你休息時間。休息一下再繼續吧。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "用#r利用Ctrl鍵的一般攻擊#k擊敗 #b#o9300730# 3隻#k吧。"
+          }
+        }
+      }
+    }
+  }
+}

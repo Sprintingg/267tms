@@ -1,0 +1,268 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1102000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20006"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20010"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20011"
+          }
+        },
+        "3": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20012"
+          }
+        },
+        "4": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20013"
+          }
+        },
+        "5": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20014"
+          }
+        },
+        "6": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20015"
+          }
+        },
+        "7": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20016"
+          }
+        },
+        "8": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20017"
+          }
+        },
+        "9": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20018"
+          }
+        },
+        "10": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20019"
+          }
+        },
+        "11": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20020"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "1000"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1102000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "100124"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "已經達到基礎修煉的最後階段了。你的進步非常的神速？那就當作驗收這次修煉，與稍微困難的提提戰鬥吧。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "前往修煉森林5，可以看到 #m0100124#，他與其他提提相比不僅強大而且體力又高。做好萬全準備後只要狩獵3隻就好了。那麼，就辛苦你嚕。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "看到是測試就嚇到了嗎？ 不要擔心。你的力量已經足以通過考驗了。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "750"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "已經達到基礎修煉的最後階段了。你的進步非常的神速？那就當作驗收這次修煉，與稍為困難的提提戰鬥吧。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "去#b#m130010200##k有個叫#o0100124#的傢伙，他在相比之下不僅強大而且體力又高。做好萬全準備之後，獵捕#r#o0100124#3隻#k就好了。那麼，就辛苦你嚕。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "看到是測試就嚇到了嗎？不要擔心。你的力量已經足以通過考驗了。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "狩獵#o0100124#後安全回來了！真的很棒！像你這樣進步神速的貴族非常少見…#p1101002#會很高興的。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有狩獵#r#o0100124#3隻#k嗎？啊，原來是我沒有告訴#b#m130010200##k的位置…還以為你應該知道…從#m130000100#利用左邊的傳送門出去就有#m130010200#。去那裡獵捕#o0100124#吧。"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇家騎士團] 奇酷的最後一個修煉"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "開始進行#b修煉教官#p1102000##k的第五個修煉吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1102000#說到目前修煉進行的很好，最後只要獵捕#b#o0100124#3隻#k就可以了。但是#o0100124#與其他提提相比，體力超強因此需要嚴加戒備…\\n\\n#o0100124##r#a200071##k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "捕獲#o0100124#後返回。#p1102000#哈哈笑著說現在有資格做修煉騎士了，再回去找#p1101002#吧。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "750"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

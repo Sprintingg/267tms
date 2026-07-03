@@ -1,0 +1,133 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[生命的搖籃卡爾西溫] 為了新的開始"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "252"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "以拉米事件為契機，#b#p 3006530##k好像有事要拜託我。 聽聽在#b#m 410007607##k的#p 3006530#想說什麼。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "羅帕將透過戰士們的追悼儀式宣告新的生命循環的開始。 按照羅帕的請求，擊敗#b黑暗降臨的樹幹#k地區的幽靈們並收集蛇戰士們的遺物。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "羅帕把蛇戰士們的遺物收集起來。 羅帕告知了將與烏龜阿尼瑪們一起進行追悼儀式。 #b埃托#k為了準備追悼儀式似乎需要幫助…？"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4037200:# #t4037200:# #c4037200# / 10\r\n"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3006530"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q38714s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "285"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "38713"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3006530"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q38714e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4037200"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "defaultEx": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "sub",
+            "msg": {
+              "_dirType": "string",
+              "_value": "戰士們的遺物好像不夠。"
+            },
+            "imgPos": {
+              "_dirType": "int",
+              "_value": "1"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[櫻花城] 隱密的委託"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "18"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去櫻花城找楓屋。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在村莊裡見到了楓屋。他表示上次真的很感謝自己幫忙，同時認為自己是實力出眾的旅人，於是拜託去擊退欺負村民的妖怪 #b#e#o6500001##k#n，並且收集河童持有的 #e#b#t4000697# 20個#k#n。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在村莊裡見到了楓屋。他表示上次真的很感謝自己幫忙，同時認為自己是實力出眾的旅人，於是拜託去擊退欺負村民的妖怪 #b#e#o6500001##k#n，並且收集河童持有的 #e#b#t4000697# 20個#k#n。依照他的請託收集了#t4000697#，他表示村民會感激自已，他的表情讓人感覺到莫名的厭惡感。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000697:# #t4000697:# #c4000697# / 100\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 90,000\r\n可進行 '商人的女兒' 任務\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "90000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2200000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4312"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2200000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000697"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "90000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000697"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "天啊~！原來是曾經幫過我的人。能夠再見到你真的很高興。多虧有你的幫忙，我才能平安回來。\\r\\n#L0##b真是太好了。烏鴉為何會攻擊你呢？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "一定是 #b#o6500001##k做的。櫻花城附近的竹林居住著一個叫做 #o6500001#的妖怪，因為很愛惡作劇和欺負人，所以大家感到很困擾。他會利用動物攻擊人，也會將物品藏起來或引發洪水，\\r\\n#L0##b唉…真是太惡劣了。#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "所以我有事情想拜託你，你要不要為了村民們去擊退 #b#o6500001##k呢？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "真是了不起。#o6500001#居住在村子東邊的竹林當中。那是一座365天都會持續夜晚的詛咒森林。擊敗#b#e#o6500001##n#k，然後帶 #b#e#t4000697# 20個#k#n回來當作證據。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我本來以為你不會對有困難的人見死不救，真是令人失望。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "你回來了！你拿 #t4000697#…不，你消滅河童了嗎？\\r\\n#L0##b，雖然有點辛苦 ，但之後河童不會欺負人類的。還有這裡也拿了 #t4000697#。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "噢噢！真是了不起！了不起！村民們一定會很高興。那個毒囊由我來處理吧！那是河童惡作劇時使用的毒，若是中毒的話，會引發腹瀉或發高燒，進而導致要躺好幾天，是相當特殊的毒。我不會讓其他人碰到毒的，快點交給我吧。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "看到這個，領主也會很高興…不對，聽到這個消息，領主應該也會很高興。畢竟減少了村子的麻煩。那麼，你就去慢慢參觀村子吧。櫻花城的美麗櫻花相當有名。呵呵呵…\\n#b(楓屋冷笑的樣子，不知為何讓人覺得毛骨悚然…那說不出來的鬱悶感是什麼呢？)"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#o6500001#居住在村子東邊的竹林中。是一座365天都只有夜晚的詛咒森林。擊敗#b#e#o6500001##n#k，然後帶 #b#e#t4000697# 20個#k#n回來當作證據。"
+          }
+        }
+      }
+    }
+  }
+}

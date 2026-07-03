@@ -1,0 +1,219 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[雷本礦山]嘗試逃脫"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "24"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p2153003#似乎成功的潛入了礦山內部。和位於#b#m310050000##k的#b#p2153003##k見面吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "穿上#t1003134#的#p2153003#雖然成功的潛入，但是因為看守#p2154004#的手下#p2154005#無法帶他出來。如果稍微支開#b#p2154005##k，就可以把裡面的#p2154004#救出來…擊倒#r#o6150000##k顯示出#b#t4000608##k之後，告訴他裡面有入侵者吧。\n\r\n#i4000608##t4000608##b#c4000608#/30#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "終於把#p2154005#救出來了！"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "109800"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2154016"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "80"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201012291200"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201012291200"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2154005"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q23951e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000608"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "109800"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000608"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "노멀"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "(用低聲)…朋友！來的好！托你的福礦山入侵成功了！叫#t1003134#的東西很了不起啊，守門人真沒阻擋！"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "(用低聲)到進入為止挺好，但之後是問題。#p2154004#姐姐旁邊總是有叫#b#p2154005##k的傢伙，無法帶她出去。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "(用低聲)所以說，你能不能把#p2154005#甩開一下？#p2154005#出去一下，就可以帶著#p2154004#姐姐走了！雖然有個叫樂帝艾的女子…但軟弱，應該能阻擋住！"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好。那麼告訴你甩開#p2154005#的方法。就說礦山深處有入侵者。消滅#r#o6150000##k後給看#b30個#k左右#b#t4000608##k並說好像有入侵者，肯定會相信。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "噢噢…幫我，朋友！就剩最後難關！完成這個就可以救出#p2154004#姐姐！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "啊？什麼事？\\r\\n#L0##b裡有機器人…！#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "機器人只有一兩個嗎？說明白點！\\r\\n#L0##b裡有警備機器人…！#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "警備機器人什麼？再說一次！\\r\\n#L0##b裡有警備機器人…！#l\\n#k"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "越來越變成不知原型的詞！你是不是以為我是兔子，就看扁我？雖然是兔子，但我的職位比你高！用敬語好好說！在\\r\\n#L0##b裡發現了摔壞的#o6150000#！是入侵者！#l\\n#k"
+      },
+      "4": {
+        "_dirType": "string",
+        "_value": "什麼？為什麼現在才說？快去看看吧！"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub"
+        },
+        "1": {
+          "_dirType": "sub"
+        },
+        "2": {
+          "_dirType": "sub"
+        },
+        "3": {
+          "_dirType": "sub"
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "哼，不要以為我是兔子就看扁我。怎麼說我也在黑色翅膀內部也是職位算高！"
+          }
+        }
+      }
+    }
+  }
+}

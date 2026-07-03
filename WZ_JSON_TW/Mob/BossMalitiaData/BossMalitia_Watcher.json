@@ -1,0 +1,253 @@
+{
+  "!class": {
+    "_dirType": "string",
+    "_value": "ABossMalitiaPhase1Watcher"
+  },
+  "Avatar": {
+    "_dirType": "sub",
+    "MoveActionAnimSet": {
+      "_dirType": "sub",
+      "stand": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub",
+              "z": {
+                "_dirType": "int",
+                "_value": "-1"
+              }
+            }
+          }
+        }
+      },
+      "move": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub",
+              "z": {
+                "_dirType": "int",
+                "_value": "-1"
+              }
+            }
+          }
+        }
+      },
+      "die": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub",
+              "z": {
+                "_dirType": "int",
+                "_value": "-1"
+              }
+            }
+          }
+        },
+        "Notifies": {
+          "_dirType": "sub",
+          "sound": {
+            "_dirType": "sub",
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/Redmoon.img/Mob/9602104/die"
+              }
+            }
+          }
+        }
+      },
+      "appear": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub",
+              "z": {
+                "_dirType": "int",
+                "_value": "-1"
+              }
+            }
+          }
+        },
+        "Notifies": {
+          "_dirType": "sub",
+          "sound": {
+            "_dirType": "sub",
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/Redmoon.img/Mob/9602104/regen"
+              }
+            }
+          }
+        }
+      },
+      "!class": {
+        "_dirType": "string",
+        "_value": "WZ2AnimMontageSet"
+      },
+      "attack": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub",
+              "z": {
+                "_dirType": "int",
+                "_value": "-1"
+              }
+            }
+          }
+        },
+        "Notifies": {
+          "_dirType": "sub",
+          "sound": {
+            "_dirType": "sub",
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/Redmoon.img/Mob/9602104/attack"
+              }
+            }
+          }
+        },
+        "Sections": {
+          "_dirType": "sub",
+          "Aim": {
+            "_dirType": "sub"
+          },
+          "Waiting": {
+            "_dirType": "sub",
+            "StartTime": {
+              "_dirType": "string",
+              "_value": "1860"
+            }
+          },
+          "Attack": {
+            "_dirType": "sub",
+            "StartTime": {
+              "_dirType": "string",
+              "_value": "2400"
+            }
+          }
+        }
+      }
+    }
+  },
+  "attack": {
+    "_dirType": "sub",
+    "type": {
+      "_dirType": "string",
+      "_value": "Attack"
+    },
+    "constants": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": -1000,
+        "_y": -15
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": -20,
+        "_y": 15
+      },
+      "patternID_normal": {
+        "_dirType": "string",
+        "_value": "300200003"
+      },
+      "patternID_extreme": {
+        "_dirType": "string",
+        "_value": "300202003"
+      }
+    },
+    "!class": {
+      "_dirType": "string",
+      "_value": "WZ2MapleSkillAction"
+    }
+  },
+  "laserAnim": {
+    "_dirType": "sub",
+    "LayerSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "z": {
+            "_dirType": "int",
+            "_value": "0"
+          },
+          "origin": {
+            "_dirType": "vector",
+            "_x": 0,
+            "_y": 0
+          }
+        },
+        "Segment1": {
+          "_dirType": "sub",
+          "z": {
+            "_dirType": "int",
+            "_value": "0"
+          },
+          "origin": {
+            "_dirType": "vector",
+            "_x": 0,
+            "_y": 0
+          }
+        }
+      }
+    },
+    "Sections": {
+      "_dirType": "sub",
+      "Waiting": {
+        "_dirType": "sub",
+        "NextSectionName": {
+          "_dirType": "string",
+          "_value": "Waiting"
+        }
+      },
+      "Shoot": {
+        "_dirType": "sub",
+        "StartTime": {
+          "_dirType": "string",
+          "_value": "960"
+        }
+      }
+    },
+    "!class": {
+      "_dirType": "string",
+      "_value": "WZ2AnimMontage"
+    }
+  }
+}

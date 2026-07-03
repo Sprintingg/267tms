@@ -1,0 +1,197 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[我的小屋]總是慶典氛圍！"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|3"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#e[我的小屋春節]#n\r\n伊森突然想到一些能夠帶動慶典氛圍的點子，要仔細聽聽看嗎？\r\n\r\n#e - 獎勵 - #n\r\n #i2671071:##t2671071:#\r\n\r\n#e - 可執行期間 - #n\r\n#DL|myHome_NewYear|start|2#\r\n～ #DL|myHome_NewYear|end2|2#\r\n\r\n#b※ 伺服器內各帳號僅限執行１次的任務。\r\n#b※ 東洋風建築與家具僅可於活動期間內進行購物。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#e[我的小屋春節]#n\r\n伊森突然想到一些能夠帶動慶典氛圍的點子，只要幫忙收集好材料就可以製作隨時可以用到的鞭炮裝飾，艾咪跟阿爾文說要親自收集材料耶．．．\r\n慶典期間內購物東洋風建築與家具10次以上並收集材料吧！\r\n\r\n#e - 獎勵 - #n\r\n #i2671071:##t2671071:#\r\n\r\n#e - 可執行期間 - #n\r\n#DL|myHome_NewYear|start|2#\r\n～ #DL|myHome_NewYear|end2|2#\r\n\r\n#b※ 伺服器內各帳號僅限執行１次的任務。\r\n#b※ 東洋風建築與家具僅可於活動期間內進行購物。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#e[我的小屋春節]#n\r\n已在迎新年期間內收集到充分的材料，伊森依依製作了可使用的特殊鞭炮裝飾。\r\n\r\n#e - 獎勵 - #n\r\n #i2671071:##t2671071:#\r\n\r\n#e - 可執行期間 - #n\r\n#DL|myHome_NewYear|start|2#\r\n～ #DL|myHome_NewYear|end2|2#"
+    },
+    "demand": {
+      "_dirType": "sub",
+      "explain": {
+        "_dirType": "sub"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400923"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q500928s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "61"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "#DL|myHome_NewYear|start#"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "#DL|myHome_NewYear|end#"
+      },
+      "worldList": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "0"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "3"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "4"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "6"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "30"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "45"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "49"
+        }
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400923"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "500928"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "10"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "我的小屋東洋風購物完成"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "cnt"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q500928e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒準備好材料嗎？萬一慶典結束可就不好囉！"
+          }
+        }
+      }
+    }
+  }
+}

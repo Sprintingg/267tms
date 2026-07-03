@@ -1,0 +1,226 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[卡蒂娜] 分部的規則"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "214"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "肯似乎還有事情要嘮叨。\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "懲罰是閱讀#b分部的規則#k。\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "看完#b分部的規則#k後回去報告了。就在這個時候，肯發現左手的傷口。\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "3"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001202"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34601"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "6400"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "6410"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "6411"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "6412"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "6413"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "6002"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "6414"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001202"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "做錯事就得受罰啊！嗯，忘記規則的人就該是這種下場！\\r\\n"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "再去看一下分部的規則吧！應該是在背包裡吧。既然被發現了，那你應該也做好準備要受罰了吧？\\r\\n"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "仔細閱讀，並且思考身為分部成員該有的行動吧。\\r\\n"
+        }
+      },
+      "noEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#b(呼啊，頭有點痛…待會接受懲罰會比較好吧。)#k\\r\\n"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "如何，分部成員的領悟應該多少都有聽過了吧？先從第一個規則開始說說看吧。\\r\\n#L0##b#r時常不忘身為商團的驕傲。#k#l\\n#L1#不做沒有任何利益的爭鬥。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "很好，那麼接下來就說說看第4個規則吧。\\r\\n#L0##b#r需一直維持互相往來的交易狀態。#k#l\\n#L1#禁止影子商團間的爭鬥。#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "好，千萬別忘記這份意志！不過，你左手臂上的傷口…"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "真是受不了。為何每次都要我幫你善後呢？"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "糟糕！看來得再去看一下分部的規則才行？"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "糟糕！看來得再去看一下分部的規則才行？"
+          }
+        },
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "再去看一下#b分部的規則#k吧！應該是在背包裡吧。出去時你應該就做好準備要受罰了吧？\\r\\n"
+          }
+        }
+      }
+    }
+  }
+}

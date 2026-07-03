@@ -1,0 +1,116 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[最初的敵對者]熟練助教的示範"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "在一次都未被攻擊的狀態下困難最初的敵對者1擊殺"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "100"
+    },
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "battle"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "boss"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "legendary"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "gauge": {
+        "_dirType": "string",
+        "_value": "submission_info"
+      },
+      "gaugeSubMission": {
+        "_dirType": "string",
+        "_value": "mob_kill"
+      }
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "在一次都未被攻擊的狀態下困難最初的敵對者1擊殺"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "mob_kill": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "long",
+              "_value": "1"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub",
+            "mob": {
+              "_dirType": "sub",
+              "mob_id": {
+                "_dirType": "int",
+                "_value": "8881775"
+              }
+            },
+            "party": {
+              "_dirType": "sub",
+              "party_member_count": {
+                "_dirType": "sub",
+                "min": {
+                  "_dirType": "int",
+                  "_value": "1"
+                },
+                "max": {
+                  "_dirType": "int",
+                  "_value": "1"
+                }
+              },
+              "enter_fieldset_party_member_count": {
+                "_dirType": "sub",
+                "min": {
+                  "_dirType": "int",
+                  "_value": "1"
+                },
+                "max": {
+                  "_dirType": "int",
+                  "_value": "1"
+                }
+              }
+            },
+            "fieldset": {
+              "_dirType": "sub",
+              "fieldset_user_hit_count": {
+                "_dirType": "sub",
+                "min": {
+                  "_dirType": "int",
+                  "_value": "0"
+                },
+                "max": {
+                  "_dirType": "int",
+                  "_value": "0"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "battle"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "boss"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "[戴米安]好好休息吧，弟弟"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "以4轉以上惡魔殺手或惡魔復仇者職業在困難戴米安2階段給予最大傷害後，透過最後一擊將其擊倒"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "unique"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "40"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "gauge": {
+        "_dirType": "string",
+        "_value": "submission_info"
+      },
+      "gaugeSubMission": {
+        "_dirType": "string",
+        "_value": "mob_kill"
+      }
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "以4轉以上惡魔殺手或惡魔復仇者職業在困難戴米安2階段給予最大傷害+最後一擊"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "mob_kill": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "long",
+              "_value": "1"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub",
+            "mob": {
+              "_dirType": "sub",
+              "mob_id": {
+                "_dirType": "int",
+                "_value": "8880101"
+              }
+            },
+            "character": {
+              "_dirType": "sub",
+              "values": {
+                "_dirType": "sub",
+                "0": {
+                  "_dirType": "sub",
+                  "character_jobcode": {
+                    "_dirType": "int",
+                    "_value": "3112"
+                  }
+                },
+                "1": {
+                  "_dirType": "sub",
+                  "character_jobcode": {
+                    "_dirType": "int",
+                    "_value": "3122"
+                  }
+                }
+              }
+            },
+            "is_max_damage_user": {
+              "_dirType": "short",
+              "_value": "-1"
+            },
+            "is_last_attack": {
+              "_dirType": "short",
+              "_value": "-1"
+            }
+          }
+        }
+      }
+    }
+  }
+}

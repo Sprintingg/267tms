@@ -1,0 +1,188 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "祕密兵器測試"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "黃金富豪的祕密兵器已經完成，但由於黃金富豪的不小心而把#t4032812#遺失了。好像丟在了不遠的地方，找到啟動鑰匙，並對祕密兵器進行測試。\r\n\r\n#i4032812##t4032812##b#c4032812##k/1"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "找到了黃金富豪的啟動鑰匙並對祕密兵器進行了測試，但結果爆炸了。"
+    },
+    "autoCancel": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2084001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201103140000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201104040000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201008300000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201009270000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "10842"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "dayOfWeek": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "Friday"
+        }
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000085"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q10841e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032812"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "dayOfWeek": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "Friday"
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032812"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊~是黃金富豪先生派來的助手啊。你來的正好。雖然我知道對剛到的人這樣要求很不禮貌，但是我還是希望你能現在就幫我做一件事。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊啊…真希望能快點完成啊…。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "啊~是黃金富豪先生派來的助手嗎？什麼，你說你還帶來了怪物紫色結晶是嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "盡快取得啟動鑰匙進行祕密兵器的測試。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "若要啟動系統需要有 #b#t4032812#才#k可以。請由周圍的怪物身上取得啟動鑰匙交給我。"
+          }
+        }
+      }
+    }
+  }
+}

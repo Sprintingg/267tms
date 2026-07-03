@@ -1,0 +1,226 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[* 赫力席母] 格蘭迪斯的影子"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "259"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "與出現在#b#m401020300##k的 #b#p3001004##k交談吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b#p3001004##k說若從 #b#m401030200##k的 #r#o2400105##k收集#b#t4033579##k給他就可以得到情報。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把動物的尖牙交給#b#p3001004##k聽到了第一個情報。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4033579:# #t4033579:# #c4033579# / 40\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 207,600\r\n可進行「羅梅洛的登場」任務\r\n"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "returnMapID": {
+      "_dirType": "int",
+      "_value": "401020300"
+    },
+    "targetType": {
+      "_dirType": "int",
+      "_value": "-1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "119"
+      }
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "16"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "207600"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001004"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "90"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31821"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001004"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q31823e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033579"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "40"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "401030200"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "207600"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033579"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-40"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你說過需要都市中心地區與梅格耐斯軍的相關情報吧？ 雖然我很想直接將情報給你，但畢竟我是商人。如果免費提供情報，就如同是捨棄商人的自豪。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "因此，想要取得情報的話，希望你能夠答應我對等的要求。因為維持施與受的交易型態是商人團的自豪。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "我要給你一件簡單的工作。#b#t4033579##k是非常受歡迎的要塞武器材料，也能當作裝飾品。異族先生如果能幫我取得那個東西，我就要來做點小生意。幫我收集#b40個#k就好了。就用那個當作情報費吧。怎麼樣？不錯吧？\\r\\n#r#e(同意時，自動移動至該地圖。)"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "一路順風，異族先生。保重身體。我要在這邊悠閒地看書。是#b#t4033579#40個#k。#b#m401030200##k是#r#o2400105##k的棲息地。別忘了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果沒有對等的東西交換，就無法傳達情報。對我來說什麼都可以買賣。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  }
+}

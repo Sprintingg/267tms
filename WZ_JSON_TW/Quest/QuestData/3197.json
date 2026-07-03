@@ -1,0 +1,176 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[專門技術] 諾本的採礦課程"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽一聽諾本的採礦課程吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "去村莊右邊諾本的礦山尋找#t4010008#吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "下面來學習冶煉礦石的方法吧。"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4010008"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "好，那麼現在開始學習採礦吧？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "學習採礦技能的話,#b#t1512000##k算是平常礦物採集就套用著的基本裝備.如果有其他種類的#b#t1512000##k在道具欄裡的話,則會使用放置位置在最上面的那一個."
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "在採集農場各處發現#b礦脈#k，只要按下SPACE鍵(NPC對話/採集)即可。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "好，那乘坐村子右側的傳送點到我的礦山去採集 #b#t4010008##k吧。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果想聽我的講解，可以再來找我。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哎呀~ 竟然這麼容易就找到 #t4010008#了。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那麼現在就告訴你提煉礦物原石的方法。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "乘坐最右側的傳送點到我的礦山採集#b#t4010008##k吧。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9031002"
+      },
+      "skill": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "92010000"
+          },
+          "level": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "levelCondition": {
+            "_dirType": "string",
+            "_value": "以上"
+          },
+          "acquire": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9031002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4010008"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

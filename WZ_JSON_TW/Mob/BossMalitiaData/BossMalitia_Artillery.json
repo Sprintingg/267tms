@@ -1,0 +1,1104 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "ImmuneTo": {
+      "_dirType": "sub",
+      "knockBack": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "!class": {
+    "_dirType": "string",
+    "_value": "ABossMalitiaUserRiding"
+  },
+  "crew": {
+    "_dirType": "sub",
+    "driver": {
+      "_dirType": "sub",
+      "pos": {
+        "_dirType": "vector",
+        "_x": 138,
+        "_y": -97
+      },
+      "action": {
+        "_dirType": "string",
+        "_value": "rope"
+      },
+      "z": {
+        "_dirType": "int",
+        "_value": "-7"
+      },
+      "curPos": {
+        "_dirType": "sub",
+        "origin": {
+          "_dirType": "vector",
+          "_x": 138,
+          "_y": -97
+        }
+      }
+    },
+    "gunner": {
+      "_dirType": "sub",
+      "pos": {
+        "_dirType": "vector",
+        "_x": -137,
+        "_y": -100
+      },
+      "action": {
+        "_dirType": "string",
+        "_value": "rope"
+      },
+      "curPos": {
+        "_dirType": "sub",
+        "origin": {
+          "_dirType": "vector",
+          "_x": -137,
+          "_y": -100
+        }
+      },
+      "z": {
+        "_dirType": "int",
+        "_value": "-7"
+      }
+    },
+    "bomber": {
+      "_dirType": "sub",
+      "pos": {
+        "_dirType": "vector",
+        "_x": 0,
+        "_y": -60
+      },
+      "action": {
+        "_dirType": "string",
+        "_value": "rope"
+      },
+      "curPos": {
+        "_dirType": "sub",
+        "origin": {
+          "_dirType": "vector",
+          "_x": 0,
+          "_y": -60
+        }
+      },
+      "z": {
+        "_dirType": "int",
+        "_value": "-7"
+      },
+      "Skills": {
+        "_dirType": "sub",
+        "shoot": {
+          "_dirType": "sub",
+          "Montage": {
+            "_dirType": "sub",
+            "LayerSlots": {
+              "_dirType": "sub",
+              "Slot0": {
+                "_dirType": "sub",
+                "Segments:charge": {
+                  "_dirType": "sub",
+                  "z": {
+                    "_dirType": "int",
+                    "_value": "-2"
+                  },
+                  "origin": {
+                    "_dirType": "vector",
+                    "_x": 0,
+                    "_y": -130
+                  }
+                },
+                "Segments:charging": {
+                  "_dirType": "sub",
+                  "z": {
+                    "_dirType": "int",
+                    "_value": "-2"
+                  },
+                  "origin": {
+                    "_dirType": "vector",
+                    "_x": 0,
+                    "_y": -130
+                  }
+                },
+                "Segments:chargeComplete": {
+                  "_dirType": "sub",
+                  "z": {
+                    "_dirType": "int",
+                    "_value": "-2"
+                  },
+                  "origin": {
+                    "_dirType": "vector",
+                    "_x": 0,
+                    "_y": -130
+                  }
+                },
+                "Segments:readyLoop": {
+                  "_dirType": "sub",
+                  "z": {
+                    "_dirType": "int",
+                    "_value": "-2"
+                  },
+                  "origin": {
+                    "_dirType": "vector",
+                    "_x": 0,
+                    "_y": -130
+                  }
+                },
+                "Segments:fire": {
+                  "_dirType": "sub",
+                  "z": {
+                    "_dirType": "int",
+                    "_value": "-2"
+                  },
+                  "origin": {
+                    "_dirType": "vector",
+                    "_x": 0,
+                    "_y": -130
+                  }
+                },
+                "Segments:cancel": {
+                  "_dirType": "sub",
+                  "z": {
+                    "_dirType": "int",
+                    "_value": "-2"
+                  },
+                  "origin": {
+                    "_dirType": "vector",
+                    "_x": 0,
+                    "_y": -130
+                  }
+                }
+              }
+            },
+            "Notifies": {
+              "_dirType": "sub",
+              "jumpToChargeComplete": {
+                "_dirType": "sub",
+                "TriggerTime": {
+                  "_dirType": "string",
+                  "_value": "480"
+                },
+                "EndTriggerTime": {
+                  "_dirType": "string",
+                  "_value": "1200"
+                },
+                "Notify": {
+                  "_dirType": "sub",
+                  "!class": {
+                    "_dirType": "string",
+                    "_value": "WZ2AnimNotify_JumpToSection"
+                  },
+                  "SectionName": {
+                    "_dirType": "string",
+                    "_value": "ChargeComplete"
+                  },
+                  "ReqElapsedTime": {
+                    "_dirType": "string",
+                    "_value": "5000"
+                  }
+                }
+              },
+              "shoot": {
+                "_dirType": "sub",
+                "TriggerTime": {
+                  "_dirType": "string",
+                  "_value": "2400"
+                }
+              },
+              "sound": {
+                "_dirType": "sub",
+                "TriggerTime": {
+                  "_dirType": "string",
+                  "_value": "2400"
+                },
+                "Notify": {
+                  "_dirType": "sub",
+                  "!class": {
+                    "_dirType": "string",
+                    "_value": "WZ2AnimNotify_PlaySound"
+                  },
+                  "SoundPath": {
+                    "_dirType": "string",
+                    "_value": "Sound/MobPattern.img/MalitiaTank/Shoot"
+                  }
+                }
+              }
+            },
+            "!class": {
+              "_dirType": "string",
+              "_value": "WZ2AnimMontage"
+            },
+            "Sections": {
+              "_dirType": "sub",
+              "Charge": {
+                "_dirType": "sub",
+                "nextSectionName": {
+                  "_dirType": "string",
+                  "_value": "Charging"
+                }
+              },
+              "Charging": {
+                "_dirType": "sub",
+                "startTime": {
+                  "_dirType": "int",
+                  "_value": "480"
+                },
+                "nextSectionName": {
+                  "_dirType": "string",
+                  "_value": "Charging"
+                }
+              },
+              "ChargeComplete": {
+                "_dirType": "sub",
+                "startTime": {
+                  "_dirType": "int",
+                  "_value": "1200"
+                }
+              },
+              "ReadyLoop": {
+                "_dirType": "sub",
+                "startTime": {
+                  "_dirType": "int",
+                  "_value": "1680"
+                },
+                "nextSectionName": {
+                  "_dirType": "string",
+                  "_value": "ReadyLoop"
+                }
+              },
+              "Fire": {
+                "_dirType": "sub",
+                "startTime": {
+                  "_dirType": "int",
+                  "_value": "2400"
+                },
+                "nextSectionName": {
+                  "_dirType": "string",
+                  "_value": ""
+                }
+              },
+              "Cancel": {
+                "_dirType": "sub",
+                "startTime": {
+                  "_dirType": "int",
+                  "_value": "3360"
+                }
+              }
+            }
+          },
+          "TankMontage": {
+            "_dirType": "sub",
+            "LayerSlots": {
+              "_dirType": "sub",
+              "Slot3": {
+                "_dirType": "sub",
+                "Segments:charge": {
+                  "_dirType": "sub",
+                  "z": {
+                    "_dirType": "int",
+                    "_value": "-10"
+                  }
+                },
+                "Segments:charging": {
+                  "_dirType": "sub",
+                  "z": {
+                    "_dirType": "int",
+                    "_value": "-10"
+                  }
+                },
+                "Segments:chargeComplete": {
+                  "_dirType": "sub",
+                  "z": {
+                    "_dirType": "int",
+                    "_value": "-10"
+                  }
+                },
+                "Segments:readyLoop": {
+                  "_dirType": "sub",
+                  "z": {
+                    "_dirType": "int",
+                    "_value": "-10"
+                  }
+                },
+                "Segments:fire": {
+                  "_dirType": "sub",
+                  "z": {
+                    "_dirType": "int",
+                    "_value": "-10"
+                  }
+                },
+                "Segments:cancel": {
+                  "_dirType": "sub",
+                  "z": {
+                    "_dirType": "int",
+                    "_value": "-10"
+                  }
+                }
+              }
+            },
+            "Notifies": {
+              "_dirType": "sub",
+              "jumpToChargeComplete": {
+                "_dirType": "sub",
+                "TriggerTime": {
+                  "_dirType": "string",
+                  "_value": "480"
+                },
+                "EndTriggerTime": {
+                  "_dirType": "string",
+                  "_value": "1200"
+                },
+                "Notify": {
+                  "_dirType": "sub",
+                  "!class": {
+                    "_dirType": "string",
+                    "_value": "WZ2AnimNotify_JumpToSection"
+                  },
+                  "SectionName": {
+                    "_dirType": "string",
+                    "_value": "ChargeComplete"
+                  },
+                  "ReqElapsedTime": {
+                    "_dirType": "string",
+                    "_value": "5000"
+                  }
+                }
+              },
+              "shoot": {
+                "_dirType": "sub",
+                "TriggerTime": {
+                  "_dirType": "string",
+                  "_value": "2400"
+                }
+              },
+              "sound": {
+                "_dirType": "sub",
+                "TriggerTime": {
+                  "_dirType": "string",
+                  "_value": "2400"
+                },
+                "Notify": {
+                  "_dirType": "sub",
+                  "!class": {
+                    "_dirType": "string",
+                    "_value": "WZ2AnimNotify_PlaySound"
+                  },
+                  "SoundPath": {
+                    "_dirType": "string",
+                    "_value": "Sound/MobPattern.img/MalitiaTank/Shoot"
+                  }
+                }
+              }
+            },
+            "!class": {
+              "_dirType": "string",
+              "_value": "WZ2AnimMontage"
+            },
+            "Sections": {
+              "_dirType": "sub",
+              "Charge": {
+                "_dirType": "sub",
+                "nextSectionName": {
+                  "_dirType": "string",
+                  "_value": "Charging"
+                }
+              },
+              "Charging": {
+                "_dirType": "sub",
+                "startTime": {
+                  "_dirType": "int",
+                  "_value": "480"
+                },
+                "nextSectionName": {
+                  "_dirType": "string",
+                  "_value": "Charging"
+                }
+              },
+              "ChargeComplete": {
+                "_dirType": "sub",
+                "startTime": {
+                  "_dirType": "int",
+                  "_value": "1200"
+                }
+              },
+              "ReadyLoop": {
+                "_dirType": "sub",
+                "startTime": {
+                  "_dirType": "int",
+                  "_value": "1680"
+                },
+                "nextSectionName": {
+                  "_dirType": "string",
+                  "_value": "ReadyLoop"
+                }
+              },
+              "Fire": {
+                "_dirType": "sub",
+                "startTime": {
+                  "_dirType": "int",
+                  "_value": "2400"
+                },
+                "nextSectionName": {
+                  "_dirType": "string",
+                  "_value": ""
+                }
+              },
+              "Cancel": {
+                "_dirType": "sub",
+                "startTime": {
+                  "_dirType": "int",
+                  "_value": "3360"
+                }
+              }
+            }
+          },
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2BossMalitiaUserRidingAbilitySkill"
+          },
+          "SkillActionContainer": {
+            "_dirType": "sub",
+            "!class": {
+              "_dirType": "string",
+              "_value": "WZ2SkillActionContainer"
+            },
+            "shoot": {
+              "_dirType": "sub",
+              "type": {
+                "_dirType": "string",
+                "_value": "Attack"
+              },
+              "constants": {
+                "_dirType": "sub",
+                "fixDamR": {
+                  "_dirType": "string",
+                  "_value": "3"
+                },
+                "lt": {
+                  "_dirType": "vector",
+                  "_x": -750,
+                  "_y": -50
+                },
+                "rb": {
+                  "_dirType": "vector",
+                  "_x": 0,
+                  "_y": 50
+                },
+                "attackCount": {
+                  "_dirType": "string",
+                  "_value": "7"
+                }
+              },
+              "hit": {
+                "_dirType": "sub",
+                "fixAlphaLocal": {
+                  "_dirType": "int",
+                  "_value": "255"
+                },
+                "randomHitOrigin": {
+                  "_dirType": "int",
+                  "_value": "100"
+                }
+              },
+              "hitSoundSkillID": {
+                "_dirType": "int",
+                "_value": "400051008"
+              },
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2BossMalitiaUserRidingSkillAction"
+              },
+              "lt": {
+                "_dirType": "vector",
+                "_x": -750,
+                "_y": -50
+              },
+              "rb": {
+                "_dirType": "vector",
+                "_x": 20,
+                "_y": 50
+              },
+              "effect": {
+                "_dirType": "sub",
+                "dir": {
+                  "_dirType": "string",
+                  "_value": "forward"
+                }
+              }
+            }
+          },
+          "common": {
+            "_dirType": "sub",
+            "lt": {
+              "_dirType": "vector",
+              "_x": -1000,
+              "_y": -1000
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 1000,
+              "_y": 1000
+            },
+            "maxLevel": {
+              "_dirType": "int",
+              "_value": "10"
+            },
+            "cooltime": {
+              "_dirType": "int",
+              "_value": "3"
+            },
+            "crew": {
+              "_dirType": "string",
+              "_value": "gunner"
+            }
+          },
+          "NetExecutionPolicy": {
+            "_dirType": "string",
+            "_value": "ServerOnly"
+          },
+          "NetSecurityPolicy": {
+            "_dirType": "string",
+            "_value": "ServerOnly"
+          },
+          "ChargeMinTime": {
+            "_dirType": "string",
+            "_value": "5"
+          }
+        }
+      }
+    }
+  },
+  "Parts": {
+    "_dirType": "sub",
+    "cannon": {
+      "_dirType": "sub",
+      "AnimSet": {
+        "_dirType": "sub",
+        "stand": {
+          "_dirType": "sub",
+          "origin": {
+            "_dirType": "vector",
+            "_x": 0,
+            "_y": -130
+          },
+          "repeat": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "z": {
+            "_dirType": "int",
+            "_value": "-12"
+          }
+        },
+        "move": {
+          "_dirType": "sub",
+          "origin": {
+            "_dirType": "vector",
+            "_x": 0,
+            "_y": -130
+          },
+          "repeat": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "z": {
+            "_dirType": "int",
+            "_value": "-12"
+          }
+        },
+        "die": {
+          "_dirType": "sub",
+          "z": {
+            "_dirType": "int",
+            "_value": "-12"
+          },
+          "LayerSlots": {
+            "_dirType": "sub",
+            "Slot0": {
+              "_dirType": "sub",
+              "Segment0": {
+                "_dirType": "sub",
+                "z": {
+                  "_dirType": "int",
+                  "_value": "51"
+                },
+                "origin": {
+                  "_dirType": "vector",
+                  "_x": 0,
+                  "_y": -130
+                }
+              }
+            }
+          }
+        },
+        "!class": {
+          "_dirType": "string",
+          "_value": "WZ2AnimMontageSet"
+        },
+        "move2": {
+          "_dirType": "sub",
+          "origin": {
+            "_dirType": "vector",
+            "_x": 0,
+            "_y": -130
+          },
+          "repeat": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "z": {
+            "_dirType": "int",
+            "_value": "-12"
+          }
+        }
+      },
+      "origin": {
+        "_dirType": "vector",
+        "_x": 0,
+        "_y": -130
+      },
+      "z": {
+        "_dirType": "int",
+        "_value": "-12"
+      },
+      "maxAngle": {
+        "_dirType": "int",
+        "_value": "45"
+      },
+      "minAngle": {
+        "_dirType": "int",
+        "_value": "-45"
+      },
+      "emitStart": {
+        "_dirType": "vector",
+        "_x": 0,
+        "_y": -290
+      },
+      "emitEnd": {
+        "_dirType": "vector",
+        "_x": 0,
+        "_y": -300
+      },
+      "angularSpeed": {
+        "_dirType": "vector",
+        "_x": 30,
+        "_y": 0
+      }
+    }
+  },
+  "AnimSet": {
+    "_dirType": "sub",
+    "!class": {
+      "_dirType": "string",
+      "_value": "WZ2AnimMontageSet"
+    },
+    "stand": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-6"
+            },
+            "EndPos": {
+              "_dirType": "int",
+              "_value": "1440"
+            }
+          }
+        },
+        "Slot1": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-8"
+            }
+          }
+        },
+        "Slot2": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-9"
+            }
+          }
+        },
+        "Slot3": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-10"
+            },
+            "EndPos": {
+              "_dirType": "int",
+              "_value": "1440"
+            }
+          }
+        },
+        "Slot4": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-11"
+            },
+            "EndPos": {
+              "_dirType": "int",
+              "_value": "1440"
+            }
+          }
+        },
+        "Slot5": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-13"
+            },
+            "EndPos": {
+              "_dirType": "int",
+              "_value": "1440"
+            }
+          }
+        }
+      },
+      "!class": {
+        "_dirType": "string",
+        "_value": "WZ2AnimMontage"
+      }
+    },
+    "move": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-6"
+            }
+          }
+        },
+        "Slot1": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-8"
+            }
+          }
+        },
+        "Slot2": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-9"
+            }
+          }
+        },
+        "Slot3": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-10"
+            },
+            "EndPos": {
+              "_dirType": "int",
+              "_value": "1440"
+            }
+          }
+        },
+        "Slot4": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-11"
+            },
+            "EndPos": {
+              "_dirType": "int",
+              "_value": "1440"
+            }
+          }
+        },
+        "Slot5": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-13"
+            },
+            "EndPos": {
+              "_dirType": "int",
+              "_value": "1440"
+            }
+          }
+        }
+      },
+      "Notifies": {
+        "_dirType": "sub",
+        "sound": {
+          "_dirType": "sub",
+          "Notify": {
+            "_dirType": "sub",
+            "!class": {
+              "_dirType": "string",
+              "_value": "WZ2AnimNotify_PlaySound"
+            },
+            "SoundPath": {
+              "_dirType": "string",
+              "_value": "Sound/MobPattern.img/MalitiaTank/Move"
+            }
+          }
+        }
+      },
+      "!class": {
+        "_dirType": "string",
+        "_value": "WZ2AnimMontage"
+      }
+    },
+    "move2": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-6"
+            }
+          }
+        },
+        "Slot1": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-8"
+            }
+          }
+        },
+        "Slot2": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-9"
+            }
+          }
+        },
+        "Slot3": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-10"
+            },
+            "EndPos": {
+              "_dirType": "int",
+              "_value": "1440"
+            }
+          }
+        },
+        "Slot4": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-11"
+            },
+            "EndPos": {
+              "_dirType": "int",
+              "_value": "1440"
+            }
+          }
+        },
+        "Slot5": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-13"
+            },
+            "EndPos": {
+              "_dirType": "int",
+              "_value": "1440"
+            }
+          }
+        }
+      },
+      "Notifies": {
+        "_dirType": "sub",
+        "sound": {
+          "_dirType": "sub",
+          "Notify": {
+            "_dirType": "sub",
+            "!class": {
+              "_dirType": "string",
+              "_value": "WZ2AnimNotify_PlaySound"
+            },
+            "SoundPath": {
+              "_dirType": "string",
+              "_value": "Sound/MobPattern.img/MalitiaTank/Move"
+            }
+          }
+        }
+      },
+      "!class": {
+        "_dirType": "string",
+        "_value": "WZ2AnimMontage"
+      }
+    },
+    "die": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-6"
+            }
+          }
+        },
+        "Slot1": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-8"
+            }
+          }
+        },
+        "Slot2": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-9"
+            }
+          }
+        },
+        "Slot3": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-10"
+            }
+          }
+        },
+        "Slot4": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-11"
+            }
+          }
+        },
+        "Slot5": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-13"
+            }
+          }
+        }
+      },
+      "Notifies": {
+        "_dirType": "sub",
+        "effect": {
+          "_dirType": "sub",
+          "Notify": {
+            "_dirType": "sub",
+            "!class": {
+              "_dirType": "string",
+              "_value": "WZ2AnimNotify_LayerEffect"
+            },
+            "Effect": {
+              "_dirType": "sub",
+              "z": {
+                "_dirType": "int",
+                "_value": "10"
+              }
+            }
+          }
+        },
+        "sound": {
+          "_dirType": "sub",
+          "Notify": {
+            "_dirType": "sub",
+            "!class": {
+              "_dirType": "string",
+              "_value": "WZ2AnimNotify_PlaySound"
+            },
+            "SoundPath": {
+              "_dirType": "string",
+              "_value": "Sound/MobPattern.img/MalitiaTank/Die"
+            }
+          }
+        }
+      },
+      "!class": {
+        "_dirType": "string",
+        "_value": "WZ2AnimMontage"
+      },
+      "SequenceLength": {
+        "_dirType": "int",
+        "_value": "2040"
+      }
+    }
+  },
+  "CameraRelPos": {
+    "_dirType": "vector",
+    "_x": 0,
+    "_y": -400
+  },
+  "MaxHP": {
+    "_dirType": "int",
+    "_value": "1000"
+  },
+  "MovementAttribute": {
+    "_dirType": "sub",
+    "walkSpeed": {
+      "_dirType": "int",
+      "_value": "2"
+    }
+  }
+}

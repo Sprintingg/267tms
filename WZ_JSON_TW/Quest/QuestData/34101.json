@@ -1,0 +1,267 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[消逝的旅途]回復記憶之樹的方法"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "272"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "村民們失魂落魄，渡過忘卻之湖的船隻也停止航行。只有那艘船才能渡過那座湖…為了繼續前進，必須要經過忘卻之湖。再與卡歐對話，找找其他方法吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "如果讓記憶之樹恢復原狀，村民的心情是否能恢復呢？ 這樣，船應該也會再次行駛吧？ 為了往前進，並拯救陷入失落的村民與卡歐，決定讓記憶之樹恢復原狀。去找村長雷加多詢問方法吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "只要找回四散的記憶放回樹上，就會恢復原來的樣子。根據村長雷卡托所說，四散後的記憶散落在村莊周邊。問題是，那些東西已經在強悍的艾爾達斯肚子裡了…"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "8"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "200"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5885404"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "200"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003131"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34100"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q34101s"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003111"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q34101e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5885404"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "sayEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "你說要經過這裡？船就停在這裡了，這該怎麼辦… 我到底…我正在尋找失去的記憶… 搶走其他人的珍貴之物，連你也…"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "都是我的錯。該怎麼辦呢…"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#b（卡歐看起來很心煩， 試著冷靜地討論解決辦法吧。）#k"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yesEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#b如果說記憶之樹是一切事情的開始，那麼把樹木恢復原狀，應該就能解決所有問題吧。#k"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "雖然這樣很好，但該如何找到已經四散各處的記憶呢…"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "…首先，不是應該先去找這邊的村長嗎？ 說不定可以打聽出什麼來。 雖然不知道會不會理我們…"
+          }
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我完全沒有去找村長的勇氣。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "sayEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "啊！你是不久前那個…不是呢… 雖然長得一模一樣，但你不是那時的朋友啊！"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "嗯…那麼你們是為了什麼…來找我的理由是什麼？"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#b（告訴村長想把記憶之樹恢復原狀，並渡過忘卻之湖。）#k"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果想讓記憶之樹恢復原狀，只要找到四散的記憶放回去就可以了。 只要收集四散的記憶… 只要這樣就可以…"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "四散之處是村莊周邊… 但已經被強悍的艾爾達斯給吞掉了。 就算找回來也實在… 像我們這樣的弱者會被艾爾達斯給…"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "但是你看起來很堅強。 除了我之前來的朋友之外，就是你。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "村長搞不好會知道些什麼。"
+          }
+        }
+      }
+    }
+  }
+}

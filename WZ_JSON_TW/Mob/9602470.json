@@ -1,0 +1,2872 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "level": {
+      "_dirType": "int",
+      "_value": "250"
+    },
+    "maxHP": {
+      "_dirType": "int",
+      "_value": "2100000000"
+    },
+    "maxMP": {
+      "_dirType": "int",
+      "_value": "100000"
+    },
+    "mpRecovery": {
+      "_dirType": "int",
+      "_value": "10000"
+    },
+    "speed": {
+      "_dirType": "int",
+      "_value": "-20"
+    },
+    "PADamage": {
+      "_dirType": "int",
+      "_value": "22000"
+    },
+    "MADamage": {
+      "_dirType": "int",
+      "_value": "24000"
+    },
+    "PDRate": {
+      "_dirType": "int",
+      "_value": "380"
+    },
+    "MDRate": {
+      "_dirType": "int",
+      "_value": "380"
+    },
+    "acc": {
+      "_dirType": "int",
+      "_value": "9999"
+    },
+    "elemAttr": {
+      "_dirType": "string",
+      "_value": "P2H2F2I2S2L2D2"
+    },
+    "eva": {
+      "_dirType": "int",
+      "_value": "750"
+    },
+    "pushed": {
+      "_dirType": "int",
+      "_value": "1000000000"
+    },
+    "fs": {
+      "_dirType": "float",
+      "_value": "10"
+    },
+    "exp": {
+      "_dirType": "int",
+      "_value": "0"
+    },
+    "summonType": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "int",
+      "_value": "8"
+    },
+    "firstAttack": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "mobType": {
+      "_dirType": "string",
+      "_value": "7N"
+    },
+    "boss": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "defaultHP": {
+      "_dirType": "string",
+      "_value": "無法計算"
+    },
+    "defaultMP": {
+      "_dirType": "string",
+      "_value": "無法計算"
+    },
+    "showNotRemoteDam": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "isRemoteRange": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "ignoreMoveImpact": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "delAtomOnDead": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "ignoreFieldOut": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "ex": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "ignoreSlow": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "firstAttackRange": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": -2500,
+        "_y": -2500
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 2500,
+        "_y": 2500
+      }
+    },
+    "patternSys": {
+      "_dirType": "sub",
+      "category": {
+        "_dirType": "int",
+        "_value": "3008"
+      },
+      "difficulty": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "FrameworkMob": {
+      "_dirType": "sub",
+      "!class": {
+        "_dirType": "string",
+        "_value": "ABossMalitiaMobAgent"
+      },
+      "ShareHPGroupID": {
+        "_dirType": "int",
+        "_value": "2"
+      },
+      "!script": {
+        "_dirType": "string",
+        "_value": "BossMalitia/BossMalitiaPhase2Peron"
+      },
+      "SkillActionContainer": {
+        "_dirType": "sub",
+        "!class": {
+          "_dirType": "string",
+          "_value": "WZ2SkillActionContainer"
+        },
+        "ProjectileSmallRock": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "Projectile"
+          },
+          "onProjectileDestroy": {
+            "_dirType": "string",
+            "_value": "AttackBySmallProjectile"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "time": {
+              "_dirType": "string",
+              "_value": "5"
+            },
+            "emitSpeed": {
+              "_dirType": "string",
+              "_value": "100+rand(50,200)"
+            },
+            "emitCount": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "emitAngle": {
+              "_dirType": "string",
+              "_value": "90"
+            },
+            "destroyHitCount": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "boundLT": {
+              "_dirType": "vector",
+              "_x": -30,
+              "_y": -30
+            },
+            "boundRB": {
+              "_dirType": "vector",
+              "_x": 30,
+              "_y": 30
+            },
+            "forwardAccel": {
+              "_dirType": "string",
+              "_value": "150"
+            },
+            "destroyOnHitFoothold": {
+              "_dirType": "string",
+              "_value": "FallingOnly"
+            }
+          },
+          "balls": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimMontage"
+              }
+            },
+            "1": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimMontage"
+              }
+            },
+            "2": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimMontage"
+              }
+            }
+          },
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2MapleSkillAction"
+          },
+          "ProjectileClass": {
+            "_dirType": "string",
+            "_value": "ABossMalitiaSkillProjectile"
+          }
+        },
+        "ProjectileMediumRock": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "Projectile"
+          },
+          "onProjectileDestroy": {
+            "_dirType": "string",
+            "_value": "AttackByMediumProjectile"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "time": {
+              "_dirType": "string",
+              "_value": "5"
+            },
+            "emitSpeed": {
+              "_dirType": "string",
+              "_value": "100+rand(50,200)"
+            },
+            "emitCount": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "emitAngle": {
+              "_dirType": "string",
+              "_value": "90"
+            },
+            "destroyHitCount": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "boundLT": {
+              "_dirType": "vector",
+              "_x": -50,
+              "_y": -50
+            },
+            "boundRB": {
+              "_dirType": "vector",
+              "_x": 50,
+              "_y": 50
+            },
+            "forwardAccel": {
+              "_dirType": "string",
+              "_value": "150"
+            },
+            "destroyOnHitFoothold": {
+              "_dirType": "string",
+              "_value": "FallingOnly"
+            }
+          },
+          "balls": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimMontage"
+              }
+            },
+            "1": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimMontage"
+              }
+            },
+            "2": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimMontage"
+              }
+            }
+          },
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2MapleSkillAction"
+          },
+          "ProjectileClass": {
+            "_dirType": "string",
+            "_value": "ABossMalitiaSkillProjectile"
+          }
+        },
+        "ProjectileLargeRock": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "Projectile"
+          },
+          "onProjectileDestroy": {
+            "_dirType": "string",
+            "_value": "AttackByLargeProjectile"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "time": {
+              "_dirType": "string",
+              "_value": "5"
+            },
+            "emitSpeed": {
+              "_dirType": "string",
+              "_value": "100+rand(50,200)"
+            },
+            "emitCount": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "emitAngle": {
+              "_dirType": "string",
+              "_value": "90"
+            },
+            "destroyHitCount": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "boundLT": {
+              "_dirType": "vector",
+              "_x": -100,
+              "_y": -75
+            },
+            "boundRB": {
+              "_dirType": "vector",
+              "_x": 100,
+              "_y": 75
+            },
+            "forwardAccel": {
+              "_dirType": "string",
+              "_value": "150"
+            },
+            "destroyOnHitFoothold": {
+              "_dirType": "string",
+              "_value": "FallingOnly"
+            }
+          },
+          "balls": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimMontage"
+              }
+            },
+            "1": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimMontage"
+              }
+            }
+          },
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2BossMalitiaSkillAction_SpawnLargrRock"
+          },
+          "ProjectileClass": {
+            "_dirType": "string",
+            "_value": "ABossMalitia_FallingLargeRock"
+          }
+        },
+        "AttackBySmallProjectile": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "Attack"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "patternID": {
+              "_dirType": "string",
+              "_value": "300800000"
+            },
+            "subSkillIndex": {
+              "_dirType": "string",
+              "_value": "0"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": -35,
+              "_y": -50
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 45,
+              "_y": 30
+            },
+            "userRidingDamage": {
+              "_dirType": "string",
+              "_value": "10"
+            }
+          },
+          "effect": {
+            "_dirType": "sub"
+          },
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2BossMalitiaSkillAction"
+          },
+          "bAttackUserRiding": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "AttackByMediumProjectile": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "Attack"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "patternID": {
+              "_dirType": "string",
+              "_value": "300800000"
+            },
+            "subSkillIndex": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": -80,
+              "_y": -80
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 80,
+              "_y": 80
+            },
+            "userRidingDamage": {
+              "_dirType": "string",
+              "_value": "20"
+            }
+          },
+          "effect": {
+            "_dirType": "sub"
+          },
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2BossMalitiaSkillAction"
+          },
+          "bAttackUserRiding": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "AttackByLargeProjectile": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "Attack"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "patternID": {
+              "_dirType": "string",
+              "_value": "300800000"
+            },
+            "subSkillIndex": {
+              "_dirType": "string",
+              "_value": "2"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": -120,
+              "_y": -120
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 120,
+              "_y": 120
+            },
+            "userRidingDamage": {
+              "_dirType": "string",
+              "_value": "50"
+            }
+          },
+          "effect": {
+            "_dirType": "sub"
+          },
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2BossMalitiaSkillAction"
+          },
+          "bAttackUserRiding": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "SpreadFireZone": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "SummonZone"
+          },
+          "zoneType": {
+            "_dirType": "string",
+            "_value": "self"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "duration": {
+              "_dirType": "string",
+              "_value": "4.32"
+            },
+            "count": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "z": {
+              "_dirType": "int",
+              "_value": "20000"
+            },
+            "searchDistanceY": {
+              "_dirType": "string",
+              "_value": "150"
+            }
+          },
+          "zones": {
+            "_dirType": "sub",
+            "attackZone": {
+              "_dirType": "sub",
+              "LayerSlots": {
+                "_dirType": "sub",
+                "Slot0": {
+                  "_dirType": "sub",
+                  "Segment:stand": {
+                    "_dirType": "sub"
+                  },
+                  "Segment:loop": {
+                    "_dirType": "sub"
+                  },
+                  "Segment:die": {
+                    "_dirType": "sub"
+                  }
+                }
+              },
+              "Notifies": {
+                "_dirType": "sub",
+                "FireZoneAttack": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "string",
+                    "_value": "480"
+                  },
+                  "TriggerInterval": {
+                    "_dirType": "string",
+                    "_value": "480"
+                  },
+                  "EndTriggerTime": {
+                    "_dirType": "string",
+                    "_value": "1440"
+                  }
+                }
+              },
+              "Sections": {
+                "_dirType": "sub",
+                "stand": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "0"
+                  }
+                },
+                "loop": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "480"
+                  },
+                  "NextSectionName": {
+                    "_dirType": "string",
+                    "_value": "loop"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "1440"
+                  }
+                }
+              },
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimMontage"
+              }
+            },
+            "attackZone2": {
+              "_dirType": "sub",
+              "LayerSlots": {
+                "_dirType": "sub",
+                "Slot0": {
+                  "_dirType": "sub",
+                  "Segment:stand": {
+                    "_dirType": "sub"
+                  },
+                  "Segment:loop": {
+                    "_dirType": "sub"
+                  },
+                  "Segment:die": {
+                    "_dirType": "sub"
+                  }
+                }
+              },
+              "Notifies": {
+                "_dirType": "sub",
+                "FireZoneAttack": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "string",
+                    "_value": "480"
+                  },
+                  "TriggerInterval": {
+                    "_dirType": "string",
+                    "_value": "480"
+                  },
+                  "EndTriggerTime": {
+                    "_dirType": "string",
+                    "_value": "1440"
+                  }
+                }
+              },
+              "Sections": {
+                "_dirType": "sub",
+                "stand": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "0"
+                  }
+                },
+                "loop": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "480"
+                  },
+                  "NextSectionName": {
+                    "_dirType": "string",
+                    "_value": "loop"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "1440"
+                  }
+                }
+              },
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimMontage"
+              }
+            },
+            "attackZone3": {
+              "_dirType": "sub",
+              "LayerSlots": {
+                "_dirType": "sub",
+                "Slot0": {
+                  "_dirType": "sub",
+                  "Segment:stand": {
+                    "_dirType": "sub"
+                  },
+                  "Segment:loop": {
+                    "_dirType": "sub"
+                  },
+                  "Segment:die": {
+                    "_dirType": "sub"
+                  }
+                }
+              },
+              "Notifies": {
+                "_dirType": "sub",
+                "FireZoneAttack": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "string",
+                    "_value": "480"
+                  },
+                  "TriggerInterval": {
+                    "_dirType": "string",
+                    "_value": "480"
+                  },
+                  "EndTriggerTime": {
+                    "_dirType": "string",
+                    "_value": "1440"
+                  }
+                }
+              },
+              "Sections": {
+                "_dirType": "sub",
+                "stand": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "0"
+                  }
+                },
+                "loop": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "480"
+                  },
+                  "NextSectionName": {
+                    "_dirType": "string",
+                    "_value": "loop"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "1440"
+                  }
+                }
+              },
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimMontage"
+              }
+            }
+          },
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2MapleSkillAction"
+          }
+        },
+        "FireZoneAttack": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "Attack"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "patternID": {
+              "_dirType": "string",
+              "_value": "300800003"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": -99,
+              "_y": -38
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 102,
+              "_y": -2
+            },
+            "userRidingDamage": {
+              "_dirType": "string",
+              "_value": "1"
+            }
+          },
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2BossMalitiaSkillAction"
+          },
+          "bAttackUserRiding": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "hit": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          },
+          "bDestroyRampage": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "FRONTAL_RUSH_Small": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "Attack"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "patternID": {
+              "_dirType": "string",
+              "_value": "300800001"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": -350,
+              "_y": -600
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 350,
+              "_y": 200
+            },
+            "mobCount": {
+              "_dirType": "string",
+              "_value": "10"
+            },
+            "userRidingDamage": {
+              "_dirType": "string",
+              "_value": "300"
+            },
+            "subSkillIndex": {
+              "_dirType": "string",
+              "_value": "0"
+            }
+          },
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2BossMalitiaSkillAction"
+          },
+          "bAttackUserRiding": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "hit": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          },
+          "bDestroyRampage": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "FRONTAL_RUSH_Large": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "Attack"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "patternID": {
+              "_dirType": "string",
+              "_value": "300800001"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": -500,
+              "_y": -800
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 500,
+              "_y": 400
+            },
+            "mobCount": {
+              "_dirType": "string",
+              "_value": "10"
+            },
+            "userRidingDamage": {
+              "_dirType": "string",
+              "_value": "200"
+            }
+          },
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2BossMalitiaSkillAction"
+          },
+          "bAttackUserRiding": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "hit": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          },
+          "bDestroyLargeRock": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "FRONTAL_RUSH_warningZone": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "SummonZone"
+          },
+          "zoneType": {
+            "_dirType": "string",
+            "_value": "self"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "duration": {
+              "_dirType": "string",
+              "_value": "2"
+            },
+            "count": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "z": {
+              "_dirType": "int",
+              "_value": "20000"
+            },
+            "searchDistanceY": {
+              "_dirType": "string",
+              "_value": "150"
+            }
+          },
+          "zones": {
+            "_dirType": "sub",
+            "warningZone": {
+              "_dirType": "sub",
+              "LayerSlots": {
+                "_dirType": "sub",
+                "Slot0": {
+                  "_dirType": "sub",
+                  "Segment:stand": {
+                    "_dirType": "sub"
+                  },
+                  "Segment:loop": {
+                    "_dirType": "sub"
+                  },
+                  "Segment:die": {
+                    "_dirType": "sub"
+                  }
+                }
+              },
+              "Sections": {
+                "_dirType": "sub",
+                "stand": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "0"
+                  }
+                },
+                "loop": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "480"
+                  },
+                  "NextSectionName": {
+                    "_dirType": "string",
+                    "_value": "loop"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "1440"
+                  }
+                }
+              },
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimMontage"
+              }
+            }
+          },
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2MapleSkillAction"
+          }
+        },
+        "DARKNESS_BREATH": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "Attack"
+          },
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2BossMalitiaSkillAction"
+          },
+          "bDestroyRampage": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "patternID": {
+              "_dirType": "string",
+              "_value": "300800002"
+            },
+            "mobCount": {
+              "_dirType": "string",
+              "_value": "10"
+            },
+            "polygon": {
+              "_dirType": "vector",
+              "_x": 100,
+              "_y": -50
+            },
+            "polygon_1": {
+              "_dirType": "vector",
+              "_x": -250,
+              "_y": -100
+            },
+            "polygon_2": {
+              "_dirType": "vector",
+              "_x": -500,
+              "_y": -120
+            },
+            "polygon_3": {
+              "_dirType": "vector",
+              "_x": -500,
+              "_y": 120
+            },
+            "polygon_4": {
+              "_dirType": "vector",
+              "_x": -250,
+              "_y": 100
+            },
+            "polygon_5": {
+              "_dirType": "vector",
+              "_x": 100,
+              "_y": 50
+            },
+            "userRidingDamage": {
+              "_dirType": "string",
+              "_value": "20"
+            }
+          },
+          "bAttackUserRiding": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "DIAGONAL_ASSAULT_Right2Left": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "SummonZone"
+          },
+          "zoneType": {
+            "_dirType": "string",
+            "_value": "self"
+          },
+          "zones": {
+            "_dirType": "sub",
+            "attackZone": {
+              "_dirType": "sub",
+              "LayerSlots": {
+                "_dirType": "sub",
+                "Slot0": {
+                  "_dirType": "sub",
+                  "Segment:warning": {
+                    "_dirType": "sub",
+                    "z": {
+                      "_dirType": "int",
+                      "_value": "10"
+                    },
+                    "origin": {
+                      "_dirType": "vector",
+                      "_x": -400,
+                      "_y": 0
+                    }
+                  },
+                  "Segment:loop": {
+                    "_dirType": "sub",
+                    "z": {
+                      "_dirType": "int",
+                      "_value": "10"
+                    },
+                    "origin": {
+                      "_dirType": "vector",
+                      "_x": -400,
+                      "_y": 0
+                    }
+                  }
+                }
+              },
+              "SpineSlots": {
+                "_dirType": "sub",
+                "Slot0": {
+                  "_dirType": "sub",
+                  "Segment:attack": {
+                    "_dirType": "sub",
+                    "AnimReference": {
+                      "_dirType": "sub",
+                      "SpinePath": {
+                        "_dirType": "string",
+                        "_value": "Mob\\BossPattern\\BossMalitia.img\\3001\\000\\smash"
+                      },
+                      "animationName": {
+                        "_dirType": "string",
+                        "_value": "R_L"
+                      },
+                      "Location": {
+                        "_dirType": "string",
+                        "_value": "300, 0"
+                      },
+                      "bNoOverlay": {
+                        "_dirType": "int",
+                        "_value": "1"
+                      },
+                      "ZOrder": {
+                        "_dirType": "string",
+                        "_value": "60000"
+                      }
+                    },
+                    "startPos": {
+                      "_dirType": "int",
+                      "_value": "1320"
+                    },
+                    "AnimPlayRate": {
+                      "_dirType": "float",
+                      "_value": "1.5"
+                    }
+                  }
+                }
+              },
+              "Notifies": {
+                "_dirType": "sub",
+                "DIAGONAL_ASSAULT_Attack": {
+                  "_dirType": "sub",
+                  "triggerTIme": {
+                    "_dirType": "int",
+                    "_value": "1320"
+                  },
+                  "endTriggerTime": {
+                    "_dirType": "int",
+                    "_value": "2280"
+                  }
+                },
+                "JumpToDieSection": {
+                  "_dirType": "sub",
+                  "Notify": {
+                    "_dirType": "sub",
+                    "!class": {
+                      "_dirType": "string",
+                      "_value": "WZ2AnimNotify_JumpToSection"
+                    },
+                    "SectionName": {
+                      "_dirType": "string",
+                      "_value": "die"
+                    },
+                    "ReqElapsedTime": {
+                      "_dirType": "string",
+                      "_value": "1920"
+                    }
+                  },
+                  "TriggerTime": {
+                    "_dirType": "string",
+                    "_value": "360"
+                  },
+                  "EndTriggerTime": {
+                    "_dirType": "string",
+                    "_value": "1320"
+                  }
+                }
+              },
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimMontage"
+              },
+              "Sections": {
+                "_dirType": "sub",
+                "warning": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "0"
+                  }
+                },
+                "loop": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "360"
+                  },
+                  "NextSectionName": {
+                    "_dirType": "string",
+                    "_value": "loop"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "1320"
+                  }
+                }
+              }
+            }
+          },
+          "constants": {
+            "_dirType": "sub",
+            "duration": {
+              "_dirType": "string",
+              "_value": "0"
+            },
+            "count": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "z": {
+              "_dirType": "int",
+              "_value": "20000"
+            },
+            "searchDistanceY": {
+              "_dirType": "string",
+              "_value": "150"
+            },
+            "rotation": {
+              "_dirType": "string",
+              "_value": "-30"
+            },
+            "dir": {
+              "_dirType": "string",
+              "_value": "Left"
+            },
+            "scale": {
+              "_dirType": "string",
+              "_value": "1.2"
+            }
+          },
+          "bDestroyOnAnimationEnd": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2MapleSkillAction"
+          }
+        },
+        "DIAGONAL_ASSAULT_Left2Right": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "SummonZone"
+          },
+          "zoneType": {
+            "_dirType": "string",
+            "_value": "self"
+          },
+          "zones": {
+            "_dirType": "sub",
+            "attackZone": {
+              "_dirType": "sub",
+              "LayerSlots": {
+                "_dirType": "sub",
+                "Slot0": {
+                  "_dirType": "sub",
+                  "Segment:warning": {
+                    "_dirType": "sub",
+                    "z": {
+                      "_dirType": "int",
+                      "_value": "10"
+                    },
+                    "origin": {
+                      "_dirType": "vector",
+                      "_x": 400,
+                      "_y": 0
+                    }
+                  },
+                  "Segment:loop": {
+                    "_dirType": "sub",
+                    "z": {
+                      "_dirType": "int",
+                      "_value": "10"
+                    },
+                    "origin": {
+                      "_dirType": "vector",
+                      "_x": 400,
+                      "_y": 0
+                    }
+                  }
+                }
+              },
+              "SpineSlots": {
+                "_dirType": "sub",
+                "Slot0": {
+                  "_dirType": "sub",
+                  "Segment:attack": {
+                    "_dirType": "sub",
+                    "AnimReference": {
+                      "_dirType": "sub",
+                      "SpinePath": {
+                        "_dirType": "string",
+                        "_value": "Mob\\BossPattern\\BossMalitia.img\\3001\\000\\smash"
+                      },
+                      "animationName": {
+                        "_dirType": "string",
+                        "_value": "L_R"
+                      },
+                      "Location": {
+                        "_dirType": "string",
+                        "_value": "-300, 0"
+                      },
+                      "bNoOverlay": {
+                        "_dirType": "int",
+                        "_value": "1"
+                      },
+                      "ZOrder": {
+                        "_dirType": "string",
+                        "_value": "60000"
+                      }
+                    },
+                    "startPos": {
+                      "_dirType": "int",
+                      "_value": "1320"
+                    },
+                    "AnimPlayRate": {
+                      "_dirType": "float",
+                      "_value": "1.5"
+                    }
+                  }
+                }
+              },
+              "Notifies": {
+                "_dirType": "sub",
+                "DIAGONAL_ASSAULT_Attack": {
+                  "_dirType": "sub",
+                  "triggerTIme": {
+                    "_dirType": "int",
+                    "_value": "1320"
+                  },
+                  "endTriggerTime": {
+                    "_dirType": "int",
+                    "_value": "2280"
+                  }
+                },
+                "JumpToDieSection": {
+                  "_dirType": "sub",
+                  "Notify": {
+                    "_dirType": "sub",
+                    "!class": {
+                      "_dirType": "string",
+                      "_value": "WZ2AnimNotify_JumpToSection"
+                    },
+                    "SectionName": {
+                      "_dirType": "string",
+                      "_value": "die"
+                    },
+                    "ReqElapsedTime": {
+                      "_dirType": "string",
+                      "_value": "1920"
+                    }
+                  },
+                  "TriggerTime": {
+                    "_dirType": "string",
+                    "_value": "360"
+                  },
+                  "EndTriggerTime": {
+                    "_dirType": "string",
+                    "_value": "1320"
+                  }
+                }
+              },
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimMontage"
+              },
+              "Sections": {
+                "_dirType": "sub",
+                "warning": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "0"
+                  }
+                },
+                "loop": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "360"
+                  },
+                  "NextSectionName": {
+                    "_dirType": "string",
+                    "_value": "loop"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "1320"
+                  }
+                }
+              }
+            }
+          },
+          "constants": {
+            "_dirType": "sub",
+            "duration": {
+              "_dirType": "string",
+              "_value": "0"
+            },
+            "count": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "z": {
+              "_dirType": "int",
+              "_value": "20000"
+            },
+            "searchDistanceY": {
+              "_dirType": "string",
+              "_value": "150"
+            },
+            "rotation": {
+              "_dirType": "string",
+              "_value": "30"
+            },
+            "dir": {
+              "_dirType": "string",
+              "_value": "Left"
+            },
+            "scale": {
+              "_dirType": "string",
+              "_value": "1.2"
+            }
+          },
+          "bDestroyOnAnimationEnd": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2MapleSkillAction"
+          }
+        },
+        "DIAGONAL_ASSAULT_Attack": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "Attack"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "patternID": {
+              "_dirType": "string",
+              "_value": "300800000"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": -1191,
+              "_y": -250
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 1191,
+              "_y": 250
+            },
+            "mobCount": {
+              "_dirType": "string",
+              "_value": "10"
+            },
+            "userRidingDamage": {
+              "_dirType": "string",
+              "_value": "5"
+            }
+          },
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2BossMalitiaSkillAction"
+          },
+          "bDestroyLargeRock": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "bAttackUserRiding": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "FLAME_AREA_BREATH": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "Attack"
+          },
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2BossMalitiaSkillAction"
+          },
+          "bDestroyRampage": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "patternID": {
+              "_dirType": "string",
+              "_value": "300800003"
+            },
+            "mobCount": {
+              "_dirType": "string",
+              "_value": "10"
+            },
+            "polygon": {
+              "_dirType": "vector",
+              "_x": 100,
+              "_y": -50
+            },
+            "polygon_1": {
+              "_dirType": "vector",
+              "_x": -500,
+              "_y": -200
+            },
+            "polygon_2": {
+              "_dirType": "vector",
+              "_x": -500,
+              "_y": 200
+            },
+            "polygon_3": {
+              "_dirType": "vector",
+              "_x": 100,
+              "_y": 50
+            },
+            "userRidingDamage": {
+              "_dirType": "string",
+              "_value": "20"
+            }
+          },
+          "bAttackUserRiding": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "bPeronAgent": {
+        "_dirType": "short",
+        "_value": "1"
+      },
+      "Mode": {
+        "_dirType": "string",
+        "_value": "AlternateCharacter"
+      },
+      "MoveActionAnimSet": {
+        "_dirType": "sub",
+        "!class": {
+          "_dirType": "string",
+          "_value": "WZ2AnimMontageSet"
+        },
+        "stand": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimMontage"
+          },
+          "SpineSlots": {
+            "_dirType": "sub",
+            "Slot0": {
+              "_dirType": "sub",
+              "Segment0": {
+                "_dirType": "sub",
+                "AnimReference": {
+                  "_dirType": "sub",
+                  "SpinePath": {
+                    "_dirType": "string",
+                    "_value": "Mob\\BossMalitiaData\\Peron2PhaseBack.img"
+                  },
+                  "animationName": {
+                    "_dirType": "string",
+                    "_value": "stand"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "move": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimMontage"
+          },
+          "SpineSlots": {
+            "_dirType": "sub",
+            "Slot0": {
+              "_dirType": "sub",
+              "Segment0": {
+                "_dirType": "sub",
+                "AnimReference": {
+                  "_dirType": "sub",
+                  "SpinePath": {
+                    "_dirType": "string",
+                    "_value": "Mob\\BossMalitiaData\\Peron2PhaseFront.img"
+                  },
+                  "animationName": {
+                    "_dirType": "string",
+                    "_value": "stand"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "appear": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimMontage"
+          },
+          "SpineSlots": {
+            "_dirType": "sub",
+            "Slot0": {
+              "_dirType": "sub",
+              "Segment0": {
+                "_dirType": "sub",
+                "AnimReference": {
+                  "_dirType": "sub",
+                  "SpinePath": {
+                    "_dirType": "string",
+                    "_value": "Mob\\BossMalitiaData\\Peron2PhaseBack.img"
+                  },
+                  "animationName": {
+                    "_dirType": "string",
+                    "_value": "in"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "rush": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimMontage"
+          },
+          "SpineSlots": {
+            "_dirType": "sub",
+            "Slot0": {
+              "_dirType": "sub",
+              "Segment0": {
+                "_dirType": "sub",
+                "AnimReference": {
+                  "_dirType": "sub",
+                  "SpinePath": {
+                    "_dirType": "string",
+                    "_value": "Mob\\BossMalitiaData\\Peron2PhaseBack.img"
+                  },
+                  "animationName": {
+                    "_dirType": "string",
+                    "_value": "rush1"
+                  }
+                }
+              },
+              "Segment1": {
+                "_dirType": "sub",
+                "AnimReference": {
+                  "_dirType": "sub",
+                  "SpinePath": {
+                    "_dirType": "string",
+                    "_value": "Mob\\BossMalitiaData\\Peron2PhaseBack.img"
+                  },
+                  "animationName": {
+                    "_dirType": "string",
+                    "_value": "rush2"
+                  },
+                  "0": {
+                    "_dirType": "sub",
+                    "delay": {
+                      "_dirType": "int",
+                      "_value": "4500"
+                    },
+                    "z": {
+                      "_dirType": "int",
+                      "_value": "1"
+                    }
+                  },
+                  "1": {
+                    "_dirType": "sub",
+                    "delay": {
+                      "_dirType": "int",
+                      "_value": "4500"
+                    },
+                    "z": {
+                      "_dirType": "int",
+                      "_value": "20000000"
+                    }
+                  },
+                  "2": {
+                    "_dirType": "sub",
+                    "delay": {
+                      "_dirType": "int",
+                      "_value": "1000"
+                    },
+                    "z": {
+                      "_dirType": "int",
+                      "_value": "0"
+                    }
+                  },
+                  "bNoOverlay": {
+                    "_dirType": "int",
+                    "_value": "1"
+                  }
+                }
+              }
+            },
+            "Slot1": {
+              "_dirType": "sub",
+              "Segment0": {
+                "_dirType": "sub",
+                "AnimReference": {
+                  "_dirType": "sub",
+                  "SpinePath": {
+                    "_dirType": "string",
+                    "_value": "Mob\\BossMalitiaData\\Peron2PhaseFront.img"
+                  },
+                  "animationName": {
+                    "_dirType": "string",
+                    "_value": "rush2_eff"
+                  },
+                  "z": {
+                    "_dirType": "string",
+                    "_value": "20000"
+                  },
+                  "0": {
+                    "_dirType": "sub",
+                    "delay": {
+                      "_dirType": "int",
+                      "_value": "4500"
+                    },
+                    "z": {
+                      "_dirType": "string",
+                      "_value": "20000"
+                    }
+                  },
+                  "1": {
+                    "_dirType": "sub",
+                    "delay": {
+                      "_dirType": "int",
+                      "_value": "2000"
+                    },
+                    "z": {
+                      "_dirType": "int",
+                      "_value": "20000000"
+                    }
+                  },
+                  "bNoOverlay": {
+                    "_dirType": "int",
+                    "_value": "1"
+                  }
+                },
+                "StartPos": {
+                  "_dirType": "int",
+                  "_value": "5000"
+                }
+              }
+            }
+          },
+          "notifies": {
+            "_dirType": "sub",
+            "target": {
+              "_dirType": "sub",
+              "TriggerTime": {
+                "_dirType": "string",
+                "_value": "900"
+              },
+              "TriggerInterval": {
+                "_dirType": "string",
+                "_value": "300"
+              },
+              "EndTriggerTime": {
+                "_dirType": "string",
+                "_value": "5400"
+              }
+            },
+            "warning": {
+              "_dirType": "sub",
+              "triggerTime": {
+                "_dirType": "int",
+                "_value": "7200"
+              }
+            },
+            "rush": {
+              "_dirType": "sub",
+              "NotifyState": {
+                "_dirType": "sub",
+                "!class": {
+                  "_dirType": "string",
+                  "_value": "WZ2AnimNotifyState_Name"
+                },
+                "BeginNotifyName": {
+                  "_dirType": "string",
+                  "_value": "detach"
+                },
+                "TickNotifyName": {
+                  "_dirType": "string",
+                  "_value": "approaching"
+                }
+              },
+              "triggerTime": {
+                "_dirType": "int",
+                "_value": "9000"
+              },
+              "endTriggerTime": {
+                "_dirType": "int",
+                "_value": "9540"
+              }
+            },
+            "attack": {
+              "_dirType": "sub",
+              "triggerTime": {
+                "_dirType": "int",
+                "_value": "9540"
+              }
+            },
+            "rollback": {
+              "_dirType": "sub",
+              "NotifyState": {
+                "_dirType": "sub",
+                "!class": {
+                  "_dirType": "string",
+                  "_value": "WZ2AnimNotifyState_Name"
+                },
+                "BeginNotifyName": {
+                  "_dirType": "string",
+                  "_value": "startRollback"
+                },
+                "EndNotifyName": {
+                  "_dirType": "string",
+                  "_value": "attach"
+                },
+                "TickNotifyName": {
+                  "_dirType": "string",
+                  "_value": "rollback"
+                }
+              },
+              "triggerTime": {
+                "_dirType": "int",
+                "_value": "12240"
+              },
+              "endTriggerTime": {
+                "_dirType": "int",
+                "_value": "15000"
+              }
+            },
+            "headBox": {
+              "_dirType": "sub",
+              "NotifyState": {
+                "_dirType": "sub",
+                "!class": {
+                  "_dirType": "string",
+                  "_value": "WZ2AnimNotifyState_Name"
+                },
+                "BeginNotifyName": {
+                  "_dirType": "string",
+                  "_value": "disableHead"
+                },
+                "EndNotifyName": {
+                  "_dirType": "string",
+                  "_value": "enableHead"
+                }
+              },
+              "triggerTime": {
+                "_dirType": "int",
+                "_value": "2800"
+              },
+              "endTriggerTime": {
+                "_dirType": "int",
+                "_value": "13500"
+              }
+            }
+          },
+          "sections": {
+            "_dirType": "sub",
+            "start": {
+              "_dirType": "sub"
+            },
+            "approaching": {
+              "_dirType": "sub",
+              "startTime": {
+                "_dirType": "int",
+                "_value": "9000"
+              }
+            },
+            "wait": {
+              "_dirType": "sub",
+              "startTime": {
+                "_dirType": "string",
+                "_value": "9300"
+              }
+            },
+            "rollback": {
+              "_dirType": "sub",
+              "startTime": {
+                "_dirType": "string",
+                "_value": "12240"
+              }
+            }
+          },
+          "BlendIn": {
+            "_dirType": "float",
+            "_value": "0.1"
+          },
+          "BlendOut": {
+            "_dirType": "float",
+            "_value": "0.1"
+          }
+        },
+        "tracking": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimMontage"
+          },
+          "SpineSlots": {
+            "_dirType": "sub",
+            "Slot0": {
+              "_dirType": "sub",
+              "Segment0": {
+                "_dirType": "sub",
+                "AnimReference": {
+                  "_dirType": "sub",
+                  "SpinePath": {
+                    "_dirType": "string",
+                    "_value": "Mob\\BossMalitiaData\\Peron2PhaseBack.img"
+                  },
+                  "animationName": {
+                    "_dirType": "string",
+                    "_value": "tracking"
+                  }
+                }
+              }
+            }
+          },
+          "Notifies": {
+            "_dirType": "sub",
+            "target": {
+              "_dirType": "sub",
+              "TriggerTime": {
+                "_dirType": "string",
+                "_value": "150"
+              },
+              "TriggerInterval": {
+                "_dirType": "string",
+                "_value": "300"
+              },
+              "EndTriggerTime": {
+                "_dirType": "string",
+                "_value": "750"
+              }
+            },
+            "attack": {
+              "_dirType": "sub",
+              "triggerTime": {
+                "_dirType": "int",
+                "_value": "1050"
+              }
+            }
+          },
+          "BlendIn": {
+            "_dirType": "float",
+            "_value": "0.1"
+          },
+          "BlendOut": {
+            "_dirType": "float",
+            "_value": "0.1"
+          }
+        },
+        "breath_left": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimMontage"
+          },
+          "SpineSlots": {
+            "_dirType": "sub",
+            "Slot0": {
+              "_dirType": "sub",
+              "Segment0": {
+                "_dirType": "sub",
+                "AnimReference": {
+                  "_dirType": "sub",
+                  "SpinePath": {
+                    "_dirType": "string",
+                    "_value": "Mob\\BossMalitiaData\\Peron2PhaseBack.img"
+                  },
+                  "animationName": {
+                    "_dirType": "string",
+                    "_value": "out"
+                  },
+                  "!class": {
+                    "_dirType": "string",
+                    "_value": "WZ2AnimSpineAttachmentSequence"
+                  }
+                }
+              },
+              "Segment1": {
+                "_dirType": "sub",
+                "AnimReference": {
+                  "_dirType": "sub",
+                  "SpinePath": {
+                    "_dirType": "string",
+                    "_value": "Mob\\BossMalitiaData\\Peron2PhaseBack.img"
+                  },
+                  "animationName": {
+                    "_dirType": "string",
+                    "_value": "breathA_left"
+                  },
+                  "bNoOverlay": {
+                    "_dirType": "int",
+                    "_value": "1"
+                  },
+                  "ZOrder": {
+                    "_dirType": "string",
+                    "_value": "-60000"
+                  }
+                }
+              },
+              "Segment2": {
+                "_dirType": "sub",
+                "AnimReference": {
+                  "_dirType": "sub",
+                  "SpinePath": {
+                    "_dirType": "string",
+                    "_value": "Mob\\BossMalitiaData\\Peron2PhaseBack.img"
+                  },
+                  "animationName": {
+                    "_dirType": "string",
+                    "_value": "in"
+                  }
+                }
+              }
+            },
+            "Slot1": {
+              "_dirType": "sub",
+              "Segment0": {
+                "_dirType": "sub",
+                "AnimReference": {
+                  "_dirType": "sub",
+                  "SpinePath": {
+                    "_dirType": "string",
+                    "_value": "Mob\\BossMalitiaData\\Peron2PhaseFront.img"
+                  },
+                  "animationName": {
+                    "_dirType": "string",
+                    "_value": "breathA_left_eff"
+                  },
+                  "z": {
+                    "_dirType": "string",
+                    "_value": "1"
+                  },
+                  "!class": {
+                    "_dirType": "string",
+                    "_value": "WZ2AnimSpineAttachmentSequence"
+                  }
+                },
+                "StartPos": {
+                  "_dirType": "int",
+                  "_value": "5000"
+                }
+              }
+            }
+          },
+          "notifies": {
+            "_dirType": "sub",
+            "target": {
+              "_dirType": "sub",
+              "TriggerTime": {
+                "_dirType": "string",
+                "_value": "200"
+              },
+              "TriggerInterval": {
+                "_dirType": "string",
+                "_value": "300"
+              },
+              "EndTriggerTime": {
+                "_dirType": "string",
+                "_value": "4700"
+              }
+            },
+            "reposition": {
+              "_dirType": "sub",
+              "NotifyState": {
+                "_dirType": "sub",
+                "!class": {
+                  "_dirType": "string",
+                  "_value": "WZ2AnimNotifyState_Name"
+                },
+                "BeginNotifyName": {
+                  "_dirType": "string",
+                  "_value": "relocate"
+                },
+                "EndNotifyName": {
+                  "_dirType": "string",
+                  "_value": "rollback"
+                }
+              },
+              "triggerTime": {
+                "_dirType": "int",
+                "_value": "5000"
+              },
+              "endTriggerTime": {
+                "_dirType": "int",
+                "_value": "14000"
+              }
+            },
+            "attack": {
+              "_dirType": "sub",
+              "triggerTime": {
+                "_dirType": "int",
+                "_value": "9240"
+              },
+              "TriggerInterval": {
+                "_dirType": "string",
+                "_value": "120"
+              },
+              "endTriggerTime": {
+                "_dirType": "int",
+                "_value": "11400"
+              }
+            },
+            "fireZone": {
+              "_dirType": "sub",
+              "triggerTime": {
+                "_dirType": "int",
+                "_value": "9240"
+              },
+              "TriggerInterval": {
+                "_dirType": "string",
+                "_value": "240"
+              },
+              "endTriggerTime": {
+                "_dirType": "int",
+                "_value": "11400"
+              }
+            }
+          },
+          "BlendIn": {
+            "_dirType": "float",
+            "_value": "0.1"
+          },
+          "BlendOut": {
+            "_dirType": "float",
+            "_value": "0.1"
+          },
+          "headBox1": {
+            "_dirType": "sub",
+            "NotifyState": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotifyState_Name"
+              },
+              "BeginNotifyName": {
+                "_dirType": "string",
+                "_value": "disableHead"
+              },
+              "EndNotifyName": {
+                "_dirType": "string",
+                "_value": "enableHead"
+              }
+            },
+            "triggerTime": {
+              "_dirType": "int",
+              "_value": "2000"
+            },
+            "endTriggerTime": {
+              "_dirType": "int",
+              "_value": "6500"
+            }
+          },
+          "headBox2": {
+            "_dirType": "sub",
+            "NotifyState": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotifyState_Name"
+              },
+              "BeginNotifyName": {
+                "_dirType": "string",
+                "_value": "disableHead"
+              },
+              "EndNotifyName": {
+                "_dirType": "string",
+                "_value": "enableHead"
+              }
+            },
+            "triggerTime": {
+              "_dirType": "int",
+              "_value": "12500"
+            },
+            "endTriggerTime": {
+              "_dirType": "int",
+              "_value": "16000"
+            }
+          }
+        },
+        "breath_right": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimMontage"
+          },
+          "SpineSlots": {
+            "_dirType": "sub",
+            "Slot0": {
+              "_dirType": "sub",
+              "Segment0": {
+                "_dirType": "sub",
+                "AnimReference": {
+                  "_dirType": "sub",
+                  "SpinePath": {
+                    "_dirType": "string",
+                    "_value": "Mob\\BossMalitiaData\\Peron2PhaseBack.img"
+                  },
+                  "animationName": {
+                    "_dirType": "string",
+                    "_value": "out"
+                  }
+                }
+              },
+              "Segment1": {
+                "_dirType": "sub",
+                "AnimReference": {
+                  "_dirType": "sub",
+                  "SpinePath": {
+                    "_dirType": "string",
+                    "_value": "Mob\\BossMalitiaData\\Peron2PhaseBack.img"
+                  },
+                  "animationName": {
+                    "_dirType": "string",
+                    "_value": "breathA_right"
+                  },
+                  "bNoOverlay": {
+                    "_dirType": "int",
+                    "_value": "1"
+                  },
+                  "ZOrder": {
+                    "_dirType": "string",
+                    "_value": "-60000"
+                  }
+                }
+              },
+              "Segment2": {
+                "_dirType": "sub",
+                "AnimReference": {
+                  "_dirType": "sub",
+                  "SpinePath": {
+                    "_dirType": "string",
+                    "_value": "Mob\\BossMalitiaData\\Peron2PhaseBack.img"
+                  },
+                  "animationName": {
+                    "_dirType": "string",
+                    "_value": "in"
+                  }
+                }
+              }
+            },
+            "Slot1": {
+              "_dirType": "sub",
+              "Segment0": {
+                "_dirType": "sub",
+                "AnimReference": {
+                  "_dirType": "sub",
+                  "SpinePath": {
+                    "_dirType": "string",
+                    "_value": "Mob\\BossMalitiaData\\Peron2PhaseFront.img"
+                  },
+                  "animationName": {
+                    "_dirType": "string",
+                    "_value": "breathA_right_eff"
+                  },
+                  "z": {
+                    "_dirType": "string",
+                    "_value": "1"
+                  }
+                },
+                "StartPos": {
+                  "_dirType": "int",
+                  "_value": "5000"
+                }
+              }
+            }
+          },
+          "notifies": {
+            "_dirType": "sub",
+            "target": {
+              "_dirType": "sub",
+              "TriggerTime": {
+                "_dirType": "string",
+                "_value": "200"
+              },
+              "TriggerInterval": {
+                "_dirType": "string",
+                "_value": "300"
+              },
+              "EndTriggerTime": {
+                "_dirType": "string",
+                "_value": "4700"
+              }
+            },
+            "reposition": {
+              "_dirType": "sub",
+              "NotifyState": {
+                "_dirType": "sub",
+                "!class": {
+                  "_dirType": "string",
+                  "_value": "WZ2AnimNotifyState_Name"
+                },
+                "BeginNotifyName": {
+                  "_dirType": "string",
+                  "_value": "relocate"
+                },
+                "EndNotifyName": {
+                  "_dirType": "string",
+                  "_value": "rollback"
+                }
+              },
+              "triggerTime": {
+                "_dirType": "int",
+                "_value": "5000"
+              },
+              "endTriggerTime": {
+                "_dirType": "int",
+                "_value": "14000"
+              }
+            },
+            "attack": {
+              "_dirType": "sub",
+              "triggerTime": {
+                "_dirType": "int",
+                "_value": "9240"
+              },
+              "TriggerInterval": {
+                "_dirType": "string",
+                "_value": "120"
+              },
+              "endTriggerTime": {
+                "_dirType": "int",
+                "_value": "11400"
+              }
+            },
+            "fireZone": {
+              "_dirType": "sub",
+              "triggerTime": {
+                "_dirType": "int",
+                "_value": "9240"
+              },
+              "TriggerInterval": {
+                "_dirType": "string",
+                "_value": "240"
+              },
+              "endTriggerTime": {
+                "_dirType": "int",
+                "_value": "11400"
+              }
+            },
+            "headBox1": {
+              "_dirType": "sub",
+              "NotifyState": {
+                "_dirType": "sub",
+                "!class": {
+                  "_dirType": "string",
+                  "_value": "WZ2AnimNotifyState_Name"
+                },
+                "BeginNotifyName": {
+                  "_dirType": "string",
+                  "_value": "disableHead"
+                },
+                "EndNotifyName": {
+                  "_dirType": "string",
+                  "_value": "enableHead"
+                }
+              },
+              "triggerTime": {
+                "_dirType": "int",
+                "_value": "2000"
+              },
+              "endTriggerTime": {
+                "_dirType": "int",
+                "_value": "6500"
+              }
+            },
+            "headBox2": {
+              "_dirType": "sub",
+              "NotifyState": {
+                "_dirType": "sub",
+                "!class": {
+                  "_dirType": "string",
+                  "_value": "WZ2AnimNotifyState_Name"
+                },
+                "BeginNotifyName": {
+                  "_dirType": "string",
+                  "_value": "disableHead"
+                },
+                "EndNotifyName": {
+                  "_dirType": "string",
+                  "_value": "enableHead"
+                }
+              },
+              "triggerTime": {
+                "_dirType": "int",
+                "_value": "12500"
+              },
+              "endTriggerTime": {
+                "_dirType": "int",
+                "_value": "16000"
+              }
+            }
+          },
+          "BlendIn": {
+            "_dirType": "float",
+            "_value": "0.1"
+          },
+          "BlendOut": {
+            "_dirType": "float",
+            "_value": "0.1"
+          }
+        },
+        "breath_bottom": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimMontage"
+          },
+          "SpineSlots": {
+            "_dirType": "sub",
+            "Slot0": {
+              "_dirType": "sub",
+              "Segment0": {
+                "_dirType": "sub",
+                "AnimReference": {
+                  "_dirType": "sub",
+                  "SpinePath": {
+                    "_dirType": "string",
+                    "_value": "Mob\\BossMalitiaData\\Peron2PhaseBack.img"
+                  },
+                  "animationName": {
+                    "_dirType": "string",
+                    "_value": "out"
+                  }
+                }
+              },
+              "Segment1": {
+                "_dirType": "sub",
+                "AnimReference": {
+                  "_dirType": "sub",
+                  "SpinePath": {
+                    "_dirType": "string",
+                    "_value": "Mob\\BossMalitiaData\\Peron2PhaseBack.img"
+                  },
+                  "animationName": {
+                    "_dirType": "string",
+                    "_value": "breathB_bottom"
+                  },
+                  "bNoOverlay": {
+                    "_dirType": "int",
+                    "_value": "1"
+                  },
+                  "ZOrder": {
+                    "_dirType": "string",
+                    "_value": "-60000"
+                  }
+                }
+              },
+              "Segment2": {
+                "_dirType": "sub",
+                "AnimReference": {
+                  "_dirType": "sub",
+                  "SpinePath": {
+                    "_dirType": "string",
+                    "_value": "Mob\\BossMalitiaData\\Peron2PhaseBack.img"
+                  },
+                  "animationName": {
+                    "_dirType": "string",
+                    "_value": "in"
+                  }
+                }
+              }
+            },
+            "Slot1": {
+              "_dirType": "sub",
+              "Segment0": {
+                "_dirType": "sub",
+                "AnimReference": {
+                  "_dirType": "sub",
+                  "SpinePath": {
+                    "_dirType": "string",
+                    "_value": "Mob\\BossMalitiaData\\Peron2PhaseFront.img"
+                  },
+                  "animationName": {
+                    "_dirType": "string",
+                    "_value": "breathB_bottom_eff"
+                  },
+                  "z": {
+                    "_dirType": "string",
+                    "_value": "1"
+                  }
+                },
+                "StartPos": {
+                  "_dirType": "int",
+                  "_value": "5000"
+                }
+              }
+            }
+          },
+          "notifies": {
+            "_dirType": "sub",
+            "target": {
+              "_dirType": "sub",
+              "TriggerTime": {
+                "_dirType": "string",
+                "_value": "200"
+              },
+              "TriggerInterval": {
+                "_dirType": "string",
+                "_value": "300"
+              },
+              "EndTriggerTime": {
+                "_dirType": "string",
+                "_value": "4700"
+              }
+            },
+            "reposition": {
+              "_dirType": "sub",
+              "NotifyState": {
+                "_dirType": "sub",
+                "!class": {
+                  "_dirType": "string",
+                  "_value": "WZ2AnimNotifyState_Name"
+                },
+                "BeginNotifyName": {
+                  "_dirType": "string",
+                  "_value": "relocate"
+                },
+                "EndNotifyName": {
+                  "_dirType": "string",
+                  "_value": "rollback"
+                }
+              },
+              "triggerTime": {
+                "_dirType": "int",
+                "_value": "5000"
+              },
+              "endTriggerTime": {
+                "_dirType": "int",
+                "_value": "14000"
+              }
+            },
+            "attack": {
+              "_dirType": "sub",
+              "triggerTime": {
+                "_dirType": "int",
+                "_value": "9240"
+              },
+              "TriggerInterval": {
+                "_dirType": "string",
+                "_value": "120"
+              },
+              "endTriggerTime": {
+                "_dirType": "int",
+                "_value": "11400"
+              }
+            },
+            "spreadFlame": {
+              "_dirType": "sub",
+              "triggerTime": {
+                "_dirType": "int",
+                "_value": "9540"
+              }
+            },
+            "headBox1": {
+              "_dirType": "sub",
+              "NotifyState": {
+                "_dirType": "sub",
+                "!class": {
+                  "_dirType": "string",
+                  "_value": "WZ2AnimNotifyState_Name"
+                },
+                "BeginNotifyName": {
+                  "_dirType": "string",
+                  "_value": "disableHead"
+                },
+                "EndNotifyName": {
+                  "_dirType": "string",
+                  "_value": "enableHead"
+                }
+              },
+              "triggerTime": {
+                "_dirType": "int",
+                "_value": "2000"
+              },
+              "endTriggerTime": {
+                "_dirType": "int",
+                "_value": "6500"
+              }
+            },
+            "headBox2": {
+              "_dirType": "sub",
+              "NotifyState": {
+                "_dirType": "sub",
+                "!class": {
+                  "_dirType": "string",
+                  "_value": "WZ2AnimNotifyState_Name"
+                },
+                "BeginNotifyName": {
+                  "_dirType": "string",
+                  "_value": "disableHead"
+                },
+                "EndNotifyName": {
+                  "_dirType": "string",
+                  "_value": "enableHead"
+                }
+              },
+              "triggerTime": {
+                "_dirType": "int",
+                "_value": "12500"
+              },
+              "endTriggerTime": {
+                "_dirType": "int",
+                "_value": "16000"
+              }
+            }
+          },
+          "BlendIn": {
+            "_dirType": "float",
+            "_value": "0.1"
+          },
+          "BlendOut": {
+            "_dirType": "float",
+            "_value": "0.1"
+          }
+        },
+        "DIAGONAL_ASSAULT": {
+          "_dirType": "sub",
+          "SpineSlots": {
+            "_dirType": "sub",
+            "Slot0": {
+              "_dirType": "sub",
+              "Segment0": {
+                "_dirType": "sub",
+                "AnimReference": {
+                  "_dirType": "sub",
+                  "SpinePath": {
+                    "_dirType": "string",
+                    "_value": "Mob\\BossMalitiaData\\Peron2PhaseBack.img"
+                  },
+                  "animationName": {
+                    "_dirType": "string",
+                    "_value": "out"
+                  },
+                  "!class": {
+                    "_dirType": "string",
+                    "_value": "WZ2AnimSpineAttachmentSequence"
+                  }
+                }
+              },
+              "Segment2": {
+                "_dirType": "sub",
+                "AnimReference": {
+                  "_dirType": "sub",
+                  "SpinePath": {
+                    "_dirType": "string",
+                    "_value": "Mob\\BossMalitiaData\\Peron2PhaseBack.img"
+                  },
+                  "animationName": {
+                    "_dirType": "string",
+                    "_value": "in"
+                  }
+                },
+                "startPos": {
+                  "_dirType": "int",
+                  "_value": "6420"
+                }
+              }
+            }
+          },
+          "BlendIn": {
+            "_dirType": "float",
+            "_value": "0.1"
+          },
+          "BlendOut": {
+            "_dirType": "float",
+            "_value": "0.1"
+          },
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimMontage"
+          },
+          "notifies": {
+            "_dirType": "sub",
+            "attack": {
+              "_dirType": "sub",
+              "triggerTime": {
+                "_dirType": "int",
+                "_value": "3000"
+              }
+            },
+            "drop_rock": {
+              "_dirType": "sub",
+              "triggerTime": {
+                "_dirType": "int",
+                "_value": "6000"
+              }
+            },
+            "tremble": {
+              "_dirType": "sub",
+              "notify": {
+                "_dirType": "sub",
+                "!class": {
+                  "_dirType": "string",
+                  "_value": "WZ2AnimNotify_TrembleScreen"
+                }
+              },
+              "triggerTime": {
+                "_dirType": "int",
+                "_value": "6000"
+              }
+            },
+            "headBox": {
+              "_dirType": "sub",
+              "NotifyState": {
+                "_dirType": "sub",
+                "!class": {
+                  "_dirType": "string",
+                  "_value": "WZ2AnimNotifyState_Name"
+                },
+                "BeginNotifyName": {
+                  "_dirType": "string",
+                  "_value": "disableHead"
+                },
+                "EndNotifyName": {
+                  "_dirType": "string",
+                  "_value": "enableHead"
+                }
+              },
+              "triggerTime": {
+                "_dirType": "int",
+                "_value": "2400"
+              },
+              "endTriggerTime": {
+                "_dirType": "int",
+                "_value": "8000"
+              }
+            }
+          }
+        }
+      },
+      "InitialMovementAttribute": {
+        "_dirType": "sub",
+        "flyAcc": {
+          "_dirType": "float",
+          "_value": "1"
+        },
+        "flySpeed": {
+          "_dirType": "float",
+          "_value": "1"
+        },
+        "bFlyWithoutGravity": {
+          "_dirType": "int",
+          "_value": "1"
+        }
+      },
+      "PeronHeadRect": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": -180,
+          "_y": -126
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 222,
+          "_y": 144
+        }
+      },
+      "PeronHeadRectAttachSocketName": {
+        "_dirType": "string",
+        "_value": "Slot0"
+      },
+      "PeronHeadRectAttachBoneName": {
+        "_dirType": "string",
+        "_value": "jaw"
+      },
+      "Skeleton": {
+        "_dirType": "string",
+        "_value": "Mob/BossMalitiaData/Peron2PhaseBack.img:Skeleton"
+      },
+      "ShareDeathGroupID": {
+        "_dirType": "int",
+        "_value": "2"
+      },
+      "DeadLifeTime": {
+        "_dirType": "int",
+        "_value": "6"
+      }
+    }
+  },
+  "stand": {
+    "_dirType": "sub"
+  },
+  "move": {
+    "_dirType": "sub"
+  },
+  "hit1": {
+    "_dirType": "sub"
+  },
+  "die1": {
+    "_dirType": "sub"
+  },
+  "skill1": {
+    "_dirType": "sub"
+  },
+  "skill2": {
+    "_dirType": "sub"
+  },
+  "skill3": {
+    "_dirType": "sub"
+  },
+  "skill4": {
+    "_dirType": "sub"
+  },
+  "skill5": {
+    "_dirType": "sub"
+  },
+  "skill6": {
+    "_dirType": "sub"
+  }
+}

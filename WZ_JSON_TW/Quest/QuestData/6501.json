@@ -1,0 +1,163 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 你才是演藝人員"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "大發企劃代表#b#p1052121##k突然向我說話. 有什麼事情呢?"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1052121#說你就是自己一直在尋找的人, 來到弓箭手村市場露個面.\r\n\r\nTip. 拉娜在弓箭手村市場, 美髮店前面."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p1052121#說你的魅力在新楓之谷世界一定是被接受的，並建議成為一個演藝人員。但是這需要冒一次險…？就這樣拒絕吧 #p1052121#也許會有一天改變想法，最好先去上一些演技課程。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052121"
+      },
+      "charmMin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "6500"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052121"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#h0#？是這個名字嗎？唉，太好了。你好。我是超強企劃的代表#p1052121#。突然的聯繫嚇到你了吧？我們公司負責人看到你的臉大吃一驚，要我一定要聯繫到你。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "現在想想好像能知道為什麼會說出這些話了. 你就是我們在尋找許久的那個人! 如果不忙可以到#b弓箭手村嗎#k? 想要實際看到實物來確認."
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我在弓箭手村市場美髮店裡."
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "啊…拒絕嗎？真可惜啊。如果在超強企劃的話，肯定能實現你的才能…請再考慮一下吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "來了！哦哦，人士負責人果然沒錯！你才是我們超強企劃找到那個臉！#h0#，不想成為藝人嗎？\\r\\n#L0##b啊，藝人？太突然了。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "啊啊，嚇到了吧。對不起。如果是你的話，肯定能在新楓之谷世界紅的！怎麼樣？快丟掉那個武器走演藝道路…\\r\\n#L0##b有點困難。還要冒險…#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "冒險…是啊。原來你已經有要走的路啊…啊啊，可惜啊。你這樣 人應該當藝人啊…那，那我可以提一個意見嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不用馬上就成為藝人。只要在有時間的時候，偶爾接受#b演技課程#k怎麼樣？等你改變了主意再說吧。這樣沒關係吧？"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

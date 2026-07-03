@@ -1,0 +1,147 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[專門技術] 採礦的達人1"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "採礦的達人"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "到哈姆梅爾學習成為採礦達人的方法"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "帶著通過提煉才能獲得的#b#t4007003##k去找哈姆梅爾吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "採礦等級達到6後，再去找哈姆梅爾吧。"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "噢，你來了？ 之所以把你叫來，是為了在你通向採礦達人的道路上對你能有所幫助。 在這之前，為了證明你的實力，拿回來一樣材料吧。 對了，就選 #b#t4007003##k吧。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "如果是你的話，以目前為止積累下來的採礦和提煉經驗，應該沒問題的。 如何？ "
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b#t4007003##k可在提煉#r#t4010002##k或 #r#t4004002##k或#r#t4020003##k的時候得到。 因為比較稀有，需要一定的耐心才能發現。 那麼，祝你好運。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "給你充裕的時間，隨時都可以再來找我進行挑戰。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "我還沒想好要說些什麼，等我全部都準備好之後再來吧。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9031000"
+      },
+      "skill": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "92010000"
+          },
+          "level": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "levelCondition": {
+            "_dirType": "string",
+            "_value": "以上"
+          },
+          "acquire": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9031000"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q7935e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4007003"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

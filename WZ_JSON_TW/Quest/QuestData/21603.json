@@ -1,0 +1,265 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[過去的英雄，狂狼勇士] 幼狼的名字是柳虎"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "6"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#t4032332#應該完成了？去#b#m230010201##k找#b#p2060000##k吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2060000#給了完成的#t4032332#。只要有了這個，養大幼狼應該沒有問題了。趕快到#b#m140000000##k把營養餐交給#b#p1202007##k吧。#b雪平原２#k附近某處會有噗尼的。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "吃了營養餐的幼狼好像很喜歡我…#p1202007#把幼狼#t1902015#給我了。我要好好養大。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2060000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "50"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "21601"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2000"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2100"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2110"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2111"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2112"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "2113"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "2114"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1202007"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032332"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032332"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032332"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033917"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "job": {
+            "_dirType": "int",
+            "_value": "201195583"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這，#t4032331#完成了！只要把這個給小狼吃，那狼的健康就沒問題了！要直接把營養餐拿走嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那趁熱給小狼吃吧。以後對於養狼有疑問，隨時可以問我吧，我應該可以給你幫助的。那養好狼吧～"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "#b(為狼的營養餐已經拿到了。快回到噗尼那裡。噗尼在被雪覆蓋的平原2周圍。)#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "營養餐涼了就不好吃了…再想想吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊，英雄回來了！見到#p2060000#了嗎？哎…這是#t4032332#？為小狼準備的嗎！哇！謝謝！（餵食中）…哇哦，真的有效呢！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "哇，小狼睜開眼睛了！好像營養餐確實有效啊！…哎？但是小狼好像想跟英雄走啊？"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "好像小狼知道誰救了自己的命特別喜歡英雄，這怎麼辦…沒辦法小狼只有英雄你來養。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "這隻幼狼的名字叫做#t1902015#.是個很不錯的名字吧?幼狼就交給英雄您了,請好好照顧他啊.對了,那孩子目前大概可以乘載一名英雄,有機會的話請騎乘看看吧."
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有轉交 #t4032332#嗎？ 因為還是小孩若繼續餓肚子很快就避得很脆弱。 趕快去找 #b負責幼狼的人#k吧。 動作要快。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒去找#b#p2060000##k？#p2060000#一定知道怎樣才能讓小狼變的健康的方法的…"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "哎呀，是否丟了#t4032332#？怪不得做那麼多，就是為了應付這種情況。剩下的營養餐也給你，快拿走吧。"
+        }
+      }
+    }
+  }
+}

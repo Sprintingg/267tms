@@ -1,0 +1,232 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[星光之塔] 聆聽美好音樂的回饋"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "211"
+    },
+    "selfStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4036018:# #t4036018:# #c4036018# / 15\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "在#r星光之塔大廳#k見到了街頭藝人#b露比#k，雖然技巧不夠純熟，但他充滿能量的嗓音，讓所有路人都為他喝采。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "既然聽了好的音樂，那就該幫忙加油！收集#b#i4036018:# #t4036018:##k #b15個#k交給露比吧。溫暖的加油可向#r星光之塔的所有怪物#k取得。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "對於音樂人來說觀眾的支持是最大的動力！雖然技巧不足，但率性的露比在午後的夕陽襯托下散發出耀眼光芒。"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "3098601"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "145"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34439"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052207"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036018"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "15"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "3098601"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036018"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-15"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "sayEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#b(觀眾們向街頭藝人投以熱烈歡呼，有種不得不替他鼓掌的氣氛。)#k"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#b(雖然技巧不夠純熟，但音色充滿活力，看來具有成為明星的特質，要給街頭藝人露比#t4036018:#嗎？)#k"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b(聽見好音樂後，幫忙加油是人之常情。收集#i4036018:# #t4036018:#15個交給露比吧。)#k\\r\\n\\r\\n#r※ #t4036018:#可從星光之塔的所有怪物身上取得。"
+        }
+      },
+      "noEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#b(哼嗯，還有其他事情嗎？)#k"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "(將#b#i4036018:# #t4036018:##k交給露比。)"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "第一次現場表演就獲得如此熱烈地回響一定會很感動吧？不過，難不成你已經變成我的粉絲了嗎？"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "嘻嘻，開玩笑的啦，真的很謝謝你！對表演者來說觀眾的歡呼是演出的價值！在你的支持下，未來我會更努力唱歌！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b(聽見好音樂後，幫忙加油是人之常情。收集#i4036018:# #t4036018:#15個交給露比吧。)#k\\r\\n\\r\\n#r※ #t4036018:#可從星光之塔的所有怪物身上取得。"
+          }
+        }
+      }
+    }
+  }
+}

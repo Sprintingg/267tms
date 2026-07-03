@@ -1,0 +1,2882 @@
+{
+  "Skills": {
+    "_dirType": "sub",
+    "normalAttack": {
+      "_dirType": "sub",
+      "Anim": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub",
+              "z": {
+                "_dirType": "int",
+                "_value": "-1"
+              }
+            }
+          }
+        },
+        "Notifies": {
+          "_dirType": "sub",
+          "attack": {
+            "_dirType": "sub",
+            "TriggerTime": {
+              "_dirType": "int",
+              "_value": "1170"
+            }
+          },
+          "attack2": {
+            "_dirType": "sub",
+            "TriggerTime": {
+              "_dirType": "int",
+              "_value": "1170"
+            }
+          },
+          "sound": {
+            "_dirType": "sub",
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/RoguelikeWz2.img/Mob/9601769/Attack1"
+              }
+            },
+            "TriggerTime": {
+              "_dirType": "int",
+              "_value": "210"
+            }
+          }
+        }
+      },
+      "Events": {
+        "_dirType": "sub",
+        "attack": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "Attack"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "lt": {
+              "_dirType": "vector",
+              "_x": -391,
+              "_y": -339
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": -126,
+              "_y": 42
+            },
+            "attackPower1Rate": {
+              "_dirType": "string",
+              "_value": "50"
+            },
+            "attackCount": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "mobCount": {
+              "_dirType": "int",
+              "_value": "1"
+            }
+          },
+          "hit": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "sub",
+              "z": {
+                "_dirType": "int",
+                "_value": "2"
+              }
+            }
+          }
+        },
+        "attack2": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "Attack"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "lt": {
+              "_dirType": "vector",
+              "_x": -126,
+              "_y": -50
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 10,
+              "_y": 40
+            },
+            "attackPower1Rate": {
+              "_dirType": "string",
+              "_value": "50"
+            },
+            "attackCount": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "mobCount": {
+              "_dirType": "int",
+              "_value": "1"
+            }
+          },
+          "hit": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "sub"
+            }
+          }
+        }
+      },
+      "common": {
+        "_dirType": "sub",
+        "maxLevel": {
+          "_dirType": "int",
+          "_value": "20"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -380,
+          "_y": -301
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 20,
+          "_y": 40
+        },
+        "cooltime": {
+          "_dirType": "string",
+          "_value": "3"
+        }
+      }
+    },
+    "bullet": {
+      "_dirType": "sub",
+      "Anim": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub"
+            }
+          }
+        },
+        "Notifies": {
+          "_dirType": "sub",
+          "bulletSpread": {
+            "_dirType": "sub",
+            "TriggerTime": {
+              "_dirType": "int",
+              "_value": "1320"
+            },
+            "EndTriggerTime": {
+              "_dirType": "string",
+              "_value": "4560"
+            },
+            "TriggerInterval": {
+              "_dirType": "string",
+              "_value": "360"
+            }
+          },
+          "sound": {
+            "_dirType": "sub",
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/RoguelikeWz2.img/Mob/9601769/Attack2"
+              }
+            }
+          }
+        }
+      },
+      "Events": {
+        "_dirType": "sub",
+        "bulletSpread": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "Projectile"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "emitCount": {
+              "_dirType": "string",
+              "_value": "6"
+            },
+            "emitSpeed": {
+              "_dirType": "string",
+              "_value": "400"
+            },
+            "emitAngle": {
+              "_dirType": "string",
+              "_value": "-50 + i * 20"
+            },
+            "emitToTarget": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "emitMinAngle": {
+              "_dirType": "string",
+              "_value": "-359"
+            },
+            "emitMaxAngle": {
+              "_dirType": "string",
+              "_value": "359"
+            },
+            "_permanentAccY": {
+              "_dirType": "string",
+              "_value": "100"
+            },
+            "_permanentAccX": {
+              "_dirType": "string",
+              "_value": "100"
+            },
+            "chaseTargetType": {
+              "_dirType": "string",
+              "_value": "0"
+            },
+            "emitPosRadius": {
+              "_dirType": "string",
+              "_value": "50"
+            },
+            "emitPosAngle": {
+              "_dirType": "string",
+              "_value": "-50 + i * 20"
+            },
+            "maxSpeed": {
+              "_dirType": "string",
+              "_value": "400"
+            },
+            "emitInterval": {
+              "_dirType": "string",
+              "_value": "0"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": -1200,
+              "_y": -600
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 1200,
+              "_y": 200
+            },
+            "boundLT.X": {
+              "_dirType": "string",
+              "_value": "-20"
+            },
+            "boundLT.Y": {
+              "_dirType": "string",
+              "_value": "-20"
+            },
+            "boundRB.X": {
+              "_dirType": "string",
+              "_value": "20"
+            },
+            "boundRB.Y": {
+              "_dirType": "string",
+              "_value": "20"
+            },
+            "emitPos.X": {
+              "_dirType": "string",
+              "_value": "-150"
+            },
+            "emitPos.Y": {
+              "_dirType": "string",
+              "_value": "-490"
+            },
+            "chaseAccel": {
+              "_dirType": "string",
+              "_value": "300"
+            }
+          },
+          "ball": {
+            "_dirType": "sub"
+          },
+          "onProjectileHit": {
+            "_dirType": "string",
+            "_value": "bulletSpreadAttack"
+          }
+        },
+        "bulletSpreadAttack": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "Attack"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "attackPower1Rate": {
+              "_dirType": "string",
+              "_value": "30"
+            },
+            "attackCount": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "hitCount": {
+              "_dirType": "string",
+              "_value": "1"
+            }
+          },
+          "hit": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          },
+          "hitSoundSkillID": {
+            "_dirType": "int",
+            "_value": "2221012"
+          }
+        }
+      },
+      "common": {
+        "_dirType": "sub",
+        "maxLevel": {
+          "_dirType": "int",
+          "_value": "20"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -1092,
+          "_y": -608
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": -280,
+          "_y": -8
+        },
+        "cooltime": {
+          "_dirType": "string",
+          "_value": "15"
+        }
+      }
+    },
+    "bullet2": {
+      "_dirType": "sub",
+      "Anim": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub"
+            }
+          }
+        },
+        "Notifies": {
+          "_dirType": "sub",
+          "bulletToTarget": {
+            "_dirType": "sub",
+            "TriggerTime": {
+              "_dirType": "int",
+              "_value": "1320"
+            },
+            "EndTriggerTime": {
+              "_dirType": "string",
+              "_value": "2760"
+            },
+            "TriggerInterval": {
+              "_dirType": "string",
+              "_value": "720"
+            }
+          },
+          "sound": {
+            "_dirType": "sub",
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/RoguelikeWz2.img/Mob/9601769/Attack2"
+              }
+            }
+          }
+        }
+      },
+      "Events": {
+        "_dirType": "sub",
+        "bulletToTarget": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "Projectile"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "emitCount": {
+              "_dirType": "string",
+              "_value": "3"
+            },
+            "emitSpeed": {
+              "_dirType": "string",
+              "_value": "500"
+            },
+            "emitAngle": {
+              "_dirType": "string",
+              "_value": "0"
+            },
+            "emitToTarget": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "emitMinAngle": {
+              "_dirType": "string",
+              "_value": "-359"
+            },
+            "emitMaxAngle": {
+              "_dirType": "string",
+              "_value": "359"
+            },
+            "emitInterval": {
+              "_dirType": "string",
+              "_value": "0.1"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": -1200,
+              "_y": -600
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 1200,
+              "_y": 200
+            },
+            "boundLT.X": {
+              "_dirType": "string",
+              "_value": "-20"
+            },
+            "boundLT.Y": {
+              "_dirType": "string",
+              "_value": "-20"
+            },
+            "boundRB.X": {
+              "_dirType": "string",
+              "_value": "20"
+            },
+            "boundRB.Y": {
+              "_dirType": "string",
+              "_value": "20"
+            },
+            "emitPos.X": {
+              "_dirType": "string",
+              "_value": "-150"
+            },
+            "emitPos.Y": {
+              "_dirType": "string",
+              "_value": "-490"
+            }
+          },
+          "ball": {
+            "_dirType": "sub"
+          },
+          "onProjectileHit": {
+            "_dirType": "string",
+            "_value": "bulletToTargetAttack"
+          }
+        },
+        "bulletToTargetAttack": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "Attack"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "attackPower1Rate": {
+              "_dirType": "string",
+              "_value": "30"
+            },
+            "attackCount": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "hitCount": {
+              "_dirType": "string",
+              "_value": "1"
+            }
+          },
+          "hit": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          },
+          "hitSoundSkillID": {
+            "_dirType": "int",
+            "_value": "2221012"
+          }
+        }
+      },
+      "common": {
+        "_dirType": "sub",
+        "maxLevel": {
+          "_dirType": "int",
+          "_value": "20"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -1038,
+          "_y": -552
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 1017,
+          "_y": 126
+        },
+        "cooltime": {
+          "_dirType": "string",
+          "_value": "15"
+        }
+      }
+    },
+    "magma": {
+      "_dirType": "sub",
+      "Anim": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub",
+              "z": {
+                "_dirType": "int",
+                "_value": "-1"
+              }
+            }
+          }
+        },
+        "Notifies": {
+          "_dirType": "sub",
+          "magma": {
+            "_dirType": "sub",
+            "TriggerTime": {
+              "_dirType": "int",
+              "_value": "1890"
+            },
+            "EndTriggerTime": {
+              "_dirType": "string",
+              "_value": "4410"
+            },
+            "TriggerInterval": {
+              "_dirType": "string",
+              "_value": "720"
+            }
+          },
+          "sound": {
+            "_dirType": "sub",
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/RoguelikeWz2.img/Mob/9601769/Attack3"
+              }
+            }
+          }
+        }
+      },
+      "Events": {
+        "_dirType": "sub",
+        "magma": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "SummonZone"
+          },
+          "zoneType": {
+            "_dirType": "string",
+            "_value": "target"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "lt": {
+              "_dirType": "vector",
+              "_x": -1200,
+              "_y": -600
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 1200,
+              "_y": 200
+            },
+            "duration": {
+              "_dirType": "string",
+              "_value": "5"
+            },
+            "count": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "z": {
+              "_dirType": "int",
+              "_value": "9000"
+            }
+          },
+          "zones": {
+            "_dirType": "sub",
+            "attackZone": {
+              "_dirType": "sub",
+              "LayerSlots": {
+                "_dirType": "sub",
+                "Slot0": {
+                  "_dirType": "sub",
+                  "Segment::stand": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "0"
+                    }
+                  },
+                  "Segment:attack": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "1620"
+                    }
+                  },
+                  "Segment:die": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "4860"
+                    }
+                  }
+                }
+              },
+              "Notifies": {
+                "_dirType": "sub",
+                "attack": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "int",
+                    "_value": "1620"
+                  }
+                },
+                "attackLoop": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "int",
+                    "_value": "1980"
+                  },
+                  "TriggerInterval": {
+                    "_dirType": "string",
+                    "_value": "360"
+                  },
+                  "EndTriggerTime": {
+                    "_dirType": "string",
+                    "_value": "4140"
+                  }
+                }
+              },
+              "Sections": {
+                "_dirType": "sub",
+                "stand": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "0"
+                  }
+                },
+                "attack": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "1620"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "4860"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "attack": {
+          "_dirType": "sub",
+          "constants": {
+            "_dirType": "sub",
+            "mobCount": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "attackCount": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": -60,
+              "_y": -500
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 60,
+              "_y": 0
+            },
+            "cooltime": {
+              "_dirType": "string",
+              "_value": "5"
+            },
+            "attackPower1Rate": {
+              "_dirType": "string",
+              "_value": "70"
+            }
+          },
+          "hit": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-3"
+            }
+          },
+          "type": {
+            "_dirType": "string",
+            "_value": "Attack"
+          }
+        },
+        "attackLoop": {
+          "_dirType": "sub",
+          "constants": {
+            "_dirType": "sub",
+            "mobCount": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "attackCount": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": -60,
+              "_y": -500
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 60,
+              "_y": 0
+            },
+            "cooltime": {
+              "_dirType": "string",
+              "_value": "5"
+            },
+            "attackPower1Rate": {
+              "_dirType": "string",
+              "_value": "30"
+            }
+          },
+          "hit": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-3"
+            }
+          },
+          "type": {
+            "_dirType": "string",
+            "_value": "Attack"
+          }
+        },
+        "die": {
+          "_dirType": "sub"
+        }
+      },
+      "common": {
+        "_dirType": "sub",
+        "maxLevel": {
+          "_dirType": "int",
+          "_value": "20"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -809,
+          "_y": -393
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 672,
+          "_y": 76
+        },
+        "cooltime": {
+          "_dirType": "string",
+          "_value": "30"
+        }
+      }
+    },
+    "magmaFoot": {
+      "_dirType": "sub",
+      "Anim": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub",
+              "z": {
+                "_dirType": "int",
+                "_value": "-1"
+              }
+            }
+          }
+        },
+        "Notifies": {
+          "_dirType": "sub",
+          "magma1": {
+            "_dirType": "sub",
+            "TriggerTime": {
+              "_dirType": "int",
+              "_value": "630"
+            }
+          },
+          "magma2": {
+            "_dirType": "sub",
+            "TriggerTime": {
+              "_dirType": "int",
+              "_value": "1350"
+            }
+          },
+          "magma3": {
+            "_dirType": "sub",
+            "TriggerTime": {
+              "_dirType": "int",
+              "_value": "1350"
+            }
+          },
+          "sound1": {
+            "_dirType": "sub",
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/RoguelikeWz2.img/Mob/9601769/Attack3"
+              }
+            },
+            "TriggerTime": {
+              "_dirType": "int",
+              "_value": "630"
+            }
+          },
+          "sound2": {
+            "_dirType": "sub",
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/RoguelikeWz2.img/Mob/9601769/Attack3"
+              }
+            },
+            "TriggerTime": {
+              "_dirType": "int",
+              "_value": "1350"
+            }
+          },
+          "sound3": {
+            "_dirType": "sub",
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/RoguelikeWz2.img/Mob/9601769/Attack3"
+              }
+            },
+            "TriggerTime": {
+              "_dirType": "int",
+              "_value": "1350"
+            }
+          }
+        }
+      },
+      "Events": {
+        "_dirType": "sub",
+        "magma1": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "SummonZone"
+          },
+          "zoneType": {
+            "_dirType": "string",
+            "_value": "self"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "lt": {
+              "_dirType": "vector",
+              "_x": -1200,
+              "_y": -600
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 1200,
+              "_y": 200
+            },
+            "duration": {
+              "_dirType": "string",
+              "_value": "5"
+            },
+            "count": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "z": {
+              "_dirType": "int",
+              "_value": "9000"
+            }
+          },
+          "zones": {
+            "_dirType": "sub",
+            "attackZone": {
+              "_dirType": "sub",
+              "LayerSlots": {
+                "_dirType": "sub",
+                "Slot0": {
+                  "_dirType": "sub",
+                  "Segment::stand": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "0"
+                    }
+                  },
+                  "Segment:attack": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "1620"
+                    }
+                  },
+                  "Segment:die": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "4860"
+                    }
+                  }
+                }
+              },
+              "Notifies": {
+                "_dirType": "sub",
+                "attack": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "int",
+                    "_value": "1620"
+                  }
+                },
+                "attackLoop": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "int",
+                    "_value": "1980"
+                  },
+                  "TriggerInterval": {
+                    "_dirType": "string",
+                    "_value": "360"
+                  },
+                  "EndTriggerTime": {
+                    "_dirType": "string",
+                    "_value": "4140"
+                  }
+                }
+              },
+              "Sections": {
+                "_dirType": "sub",
+                "stand": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "0"
+                  }
+                },
+                "attack": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "1620"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "4860"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "magma2": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "SummonZone"
+          },
+          "zoneType": {
+            "_dirType": "string",
+            "_value": "self"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "lt": {
+              "_dirType": "vector",
+              "_x": -1200,
+              "_y": -600
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 1200,
+              "_y": 200
+            },
+            "duration": {
+              "_dirType": "string",
+              "_value": "5"
+            },
+            "count": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "z": {
+              "_dirType": "int",
+              "_value": "9000"
+            },
+            "summonXpos": {
+              "_dirType": "int",
+              "_value": "-200"
+            }
+          },
+          "zones": {
+            "_dirType": "sub",
+            "attackZone": {
+              "_dirType": "sub",
+              "LayerSlots": {
+                "_dirType": "sub",
+                "Slot0": {
+                  "_dirType": "sub",
+                  "Segment::stand": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "0"
+                    }
+                  },
+                  "Segment:attack": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "1620"
+                    }
+                  },
+                  "Segment:die": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "4860"
+                    }
+                  }
+                }
+              },
+              "Notifies": {
+                "_dirType": "sub",
+                "attack": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "int",
+                    "_value": "1620"
+                  }
+                },
+                "attackLoop": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "int",
+                    "_value": "1980"
+                  },
+                  "TriggerInterval": {
+                    "_dirType": "string",
+                    "_value": "360"
+                  },
+                  "EndTriggerTime": {
+                    "_dirType": "string",
+                    "_value": "4140"
+                  }
+                }
+              },
+              "Sections": {
+                "_dirType": "sub",
+                "stand": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "0"
+                  }
+                },
+                "attack": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "1620"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "4860"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "magma3": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "SummonZone"
+          },
+          "zoneType": {
+            "_dirType": "string",
+            "_value": "self"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "lt": {
+              "_dirType": "vector",
+              "_x": -1200,
+              "_y": -600
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 1200,
+              "_y": 200
+            },
+            "duration": {
+              "_dirType": "string",
+              "_value": "5"
+            },
+            "count": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "z": {
+              "_dirType": "int",
+              "_value": "9000"
+            },
+            "summonXpos": {
+              "_dirType": "int",
+              "_value": "200"
+            }
+          },
+          "zones": {
+            "_dirType": "sub",
+            "attackZone": {
+              "_dirType": "sub",
+              "LayerSlots": {
+                "_dirType": "sub",
+                "Slot0": {
+                  "_dirType": "sub",
+                  "Segment::stand": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "0"
+                    }
+                  },
+                  "Segment:attack": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "1620"
+                    }
+                  },
+                  "Segment:die": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "4860"
+                    }
+                  }
+                }
+              },
+              "Notifies": {
+                "_dirType": "sub",
+                "attack": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "int",
+                    "_value": "1620"
+                  }
+                },
+                "attackLoop": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "int",
+                    "_value": "1980"
+                  },
+                  "TriggerInterval": {
+                    "_dirType": "string",
+                    "_value": "360"
+                  },
+                  "EndTriggerTime": {
+                    "_dirType": "string",
+                    "_value": "4140"
+                  }
+                }
+              },
+              "Sections": {
+                "_dirType": "sub",
+                "stand": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "0"
+                  }
+                },
+                "attack": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "1620"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "4860"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "attack": {
+          "_dirType": "sub",
+          "constants": {
+            "_dirType": "sub",
+            "mobCount": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "attackCount": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": -60,
+              "_y": -500
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 60,
+              "_y": 0
+            },
+            "cooltime": {
+              "_dirType": "string",
+              "_value": "5"
+            },
+            "attackPower1Rate": {
+              "_dirType": "string",
+              "_value": "70"
+            }
+          },
+          "hit": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-3"
+            }
+          },
+          "type": {
+            "_dirType": "string",
+            "_value": "Attack"
+          }
+        },
+        "attackLoop": {
+          "_dirType": "sub",
+          "constants": {
+            "_dirType": "sub",
+            "mobCount": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "attackCount": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": -60,
+              "_y": -500
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 60,
+              "_y": 0
+            },
+            "cooltime": {
+              "_dirType": "string",
+              "_value": "5"
+            },
+            "attackPower1Rate": {
+              "_dirType": "string",
+              "_value": "30"
+            }
+          },
+          "hit": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-3"
+            }
+          },
+          "type": {
+            "_dirType": "string",
+            "_value": "Attack"
+          }
+        },
+        "die": {
+          "_dirType": "sub"
+        }
+      },
+      "common": {
+        "_dirType": "sub",
+        "maxLevel": {
+          "_dirType": "int",
+          "_value": "20"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -151,
+          "_y": -259
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 124,
+          "_y": 6
+        },
+        "cooltime": {
+          "_dirType": "string",
+          "_value": "10"
+        }
+      }
+    },
+    "beamAttack": {
+      "_dirType": "sub",
+      "Anim": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub",
+              "z": {
+                "_dirType": "int",
+                "_value": "-1"
+              }
+            }
+          }
+        },
+        "Notifies": {
+          "_dirType": "sub",
+          "attack": {
+            "_dirType": "sub",
+            "TriggerTime": {
+              "_dirType": "int",
+              "_value": "1920"
+            },
+            "TriggerInterval": {
+              "_dirType": "string",
+              "_value": "120"
+            },
+            "EndTriggerTime": {
+              "_dirType": "string",
+              "_value": "2640"
+            }
+          },
+          "sound": {
+            "_dirType": "sub",
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/RoguelikeWz2.img/Mob/9601769/Attack4"
+              }
+            }
+          }
+        }
+      },
+      "Events": {
+        "_dirType": "sub",
+        "attack": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "Attack"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "lt": {
+              "_dirType": "vector",
+              "_x": -1262,
+              "_y": -228
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": -255,
+              "_y": -35
+            },
+            "attackPower1Rate": {
+              "_dirType": "string",
+              "_value": "100"
+            },
+            "attackCount": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "mobCount": {
+              "_dirType": "int",
+              "_value": "1"
+            }
+          },
+          "hit": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "sub",
+              "z": {
+                "_dirType": "int",
+                "_value": "2"
+              }
+            }
+          }
+        }
+      },
+      "common": {
+        "_dirType": "sub",
+        "maxLevel": {
+          "_dirType": "int",
+          "_value": "20"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -1262,
+          "_y": -228
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": -255,
+          "_y": -30
+        },
+        "cooltime": {
+          "_dirType": "string",
+          "_value": "30"
+        }
+      }
+    },
+    "lightning": {
+      "_dirType": "sub",
+      "Anim": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub",
+              "z": {
+                "_dirType": "int",
+                "_value": "-1"
+              }
+            }
+          }
+        },
+        "Notifies": {
+          "_dirType": "sub",
+          "lightning": {
+            "_dirType": "sub",
+            "TriggerTime": {
+              "_dirType": "int",
+              "_value": "2250"
+            },
+            "EndTriggerTime": {
+              "_dirType": "string",
+              "_value": "6570"
+            },
+            "TriggerInterval": {
+              "_dirType": "string",
+              "_value": "1440"
+            }
+          },
+          "sound": {
+            "_dirType": "sub",
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/RoguelikeWz2.img/Mob/9601769/Attack5"
+              }
+            }
+          }
+        }
+      },
+      "Events": {
+        "_dirType": "sub",
+        "lightning": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "SummonZone"
+          },
+          "zoneType": {
+            "_dirType": "string",
+            "_value": "random"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "lt": {
+              "_dirType": "vector",
+              "_x": -1200,
+              "_y": -600
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 1200,
+              "_y": 200
+            },
+            "duration": {
+              "_dirType": "string",
+              "_value": "3"
+            },
+            "count": {
+              "_dirType": "string",
+              "_value": "7"
+            },
+            "z": {
+              "_dirType": "int",
+              "_value": "9000"
+            }
+          },
+          "zones": {
+            "_dirType": "sub",
+            "attackZone1": {
+              "_dirType": "sub",
+              "LayerSlots": {
+                "_dirType": "sub",
+                "Slot0": {
+                  "_dirType": "sub",
+                  "Segment:stand": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "0"
+                    },
+                    "7": {
+                      "_dirType": "uol",
+                      "_value": "0"
+                    },
+                    "8": {
+                      "_dirType": "uol",
+                      "_value": "1"
+                    },
+                    "9": {
+                      "_dirType": "uol",
+                      "_value": "2"
+                    },
+                    "10": {
+                      "_dirType": "uol",
+                      "_value": "3"
+                    },
+                    "11": {
+                      "_dirType": "uol",
+                      "_value": "4"
+                    },
+                    "12": {
+                      "_dirType": "uol",
+                      "_value": "5"
+                    },
+                    "13": {
+                      "_dirType": "uol",
+                      "_value": "6"
+                    }
+                  },
+                  "Segment:attack": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "1260"
+                    }
+                  },
+                  "Segment:die": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "2180"
+                    }
+                  }
+                }
+              },
+              "Notifies": {
+                "_dirType": "sub",
+                "attack": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "int",
+                    "_value": "1260"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "int",
+                    "_value": "2180"
+                  }
+                }
+              },
+              "Sections": {
+                "_dirType": "sub",
+                "stand": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "0"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "2180"
+                  }
+                }
+              }
+            },
+            "attackZone2": {
+              "_dirType": "sub",
+              "LayerSlots": {
+                "_dirType": "sub",
+                "Slot0": {
+                  "_dirType": "sub",
+                  "Segment:stand": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "0"
+                    },
+                    "7": {
+                      "_dirType": "uol",
+                      "_value": "0"
+                    },
+                    "8": {
+                      "_dirType": "uol",
+                      "_value": "1"
+                    },
+                    "9": {
+                      "_dirType": "uol",
+                      "_value": "2"
+                    },
+                    "10": {
+                      "_dirType": "uol",
+                      "_value": "3"
+                    },
+                    "11": {
+                      "_dirType": "uol",
+                      "_value": "4"
+                    },
+                    "12": {
+                      "_dirType": "uol",
+                      "_value": "5"
+                    },
+                    "13": {
+                      "_dirType": "uol",
+                      "_value": "6"
+                    }
+                  },
+                  "Segment:attack": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "1260"
+                    }
+                  },
+                  "Segment:die": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "2180"
+                    }
+                  }
+                }
+              },
+              "Notifies": {
+                "_dirType": "sub",
+                "attack": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "int",
+                    "_value": "1260"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "int",
+                    "_value": "2180"
+                  }
+                }
+              },
+              "Sections": {
+                "_dirType": "sub",
+                "stand": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "0"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "2180"
+                  }
+                }
+              }
+            },
+            "attackZone3": {
+              "_dirType": "sub",
+              "LayerSlots": {
+                "_dirType": "sub",
+                "Slot0": {
+                  "_dirType": "sub",
+                  "Segment:stand": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "0"
+                    },
+                    "7": {
+                      "_dirType": "uol",
+                      "_value": "0"
+                    },
+                    "8": {
+                      "_dirType": "uol",
+                      "_value": "1"
+                    },
+                    "9": {
+                      "_dirType": "uol",
+                      "_value": "2"
+                    },
+                    "10": {
+                      "_dirType": "uol",
+                      "_value": "3"
+                    },
+                    "11": {
+                      "_dirType": "uol",
+                      "_value": "4"
+                    },
+                    "12": {
+                      "_dirType": "uol",
+                      "_value": "5"
+                    },
+                    "13": {
+                      "_dirType": "uol",
+                      "_value": "6"
+                    }
+                  },
+                  "Segment:attack": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "1260"
+                    }
+                  },
+                  "Segment:die": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "2180"
+                    }
+                  }
+                }
+              },
+              "Notifies": {
+                "_dirType": "sub",
+                "attack": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "int",
+                    "_value": "1260"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "int",
+                    "_value": "2180"
+                  }
+                }
+              },
+              "Sections": {
+                "_dirType": "sub",
+                "stand": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "0"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "2180"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "attack": {
+          "_dirType": "sub",
+          "constants": {
+            "_dirType": "sub",
+            "mobCount": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "attackCount": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": -60,
+              "_y": -500
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 60,
+              "_y": 0
+            },
+            "cooltime": {
+              "_dirType": "string",
+              "_value": "5"
+            },
+            "attackPower1Rate": {
+              "_dirType": "string",
+              "_value": "200"
+            }
+          },
+          "hit": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "3"
+            }
+          },
+          "type": {
+            "_dirType": "string",
+            "_value": "Attack"
+          },
+          "hitSoundSkillID": {
+            "_dirType": "int",
+            "_value": "2221012"
+          }
+        },
+        "die": {
+          "_dirType": "sub"
+        }
+      },
+      "common": {
+        "_dirType": "sub",
+        "maxLevel": {
+          "_dirType": "int",
+          "_value": "20"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -1200,
+          "_y": -600
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 1200,
+          "_y": 200
+        },
+        "cooltime": {
+          "_dirType": "string",
+          "_value": "60"
+        }
+      }
+    },
+    "teleport": {
+      "_dirType": "sub",
+      "Anim": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub",
+              "z": {
+                "_dirType": "int",
+                "_value": "-1"
+              }
+            }
+          }
+        },
+        "Notifies": {
+          "_dirType": "sub",
+          "teleport": {
+            "_dirType": "sub",
+            "TriggerTime": {
+              "_dirType": "string",
+              "_value": "2400"
+            }
+          },
+          "sound": {
+            "_dirType": "sub",
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/RoguelikeWz2.img/Mob/9601769/Special1"
+              }
+            }
+          },
+          "sound2": {
+            "_dirType": "sub",
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/RoguelikeWz2.img/Mob/9601769/Special2"
+              }
+            },
+            "TriggerTime": {
+              "_dirType": "string",
+              "_value": "2400"
+            }
+          }
+        }
+      },
+      "Events": {
+        "_dirType": "sub",
+        "teleport": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "Teleport"
+          },
+          "subType": {
+            "_dirType": "string",
+            "_value": "Random"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "lt": {
+              "_dirType": "vector",
+              "_x": -1000,
+              "_y": -200
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 1000,
+              "_y": 10
+            }
+          }
+        }
+      },
+      "common": {
+        "_dirType": "sub",
+        "maxLevel": {
+          "_dirType": "int",
+          "_value": "20"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -2184,
+          "_y": -1094
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 2029,
+          "_y": 191
+        },
+        "cooltime": {
+          "_dirType": "string",
+          "_value": "30"
+        }
+      }
+    },
+    "summonCast": {
+      "_dirType": "sub",
+      "Anim": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub",
+              "z": {
+                "_dirType": "int",
+                "_value": "-1"
+              }
+            }
+          }
+        },
+        "Notifies": {
+          "_dirType": "sub",
+          "summonZone": {
+            "_dirType": "sub",
+            "TriggerTime": {
+              "_dirType": "int",
+              "_value": "810"
+            }
+          },
+          "sound": {
+            "_dirType": "sub",
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/RoguelikeWz2.img/Mob/9601769/Special3"
+              }
+            }
+          }
+        }
+      },
+      "Events": {
+        "_dirType": "sub",
+        "summonZone": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "SummonZone"
+          },
+          "zoneType": {
+            "_dirType": "string",
+            "_value": "random"
+          },
+          "zones": {
+            "_dirType": "sub",
+            "summonZone_9601749": {
+              "_dirType": "sub",
+              "LayerSlots": {
+                "_dirType": "sub",
+                "Slot0": {
+                  "_dirType": "sub",
+                  "Segment:stand": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "0"
+                    }
+                  },
+                  "Segment:die": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "630"
+                    }
+                  }
+                }
+              },
+              "Notifies": {
+                "_dirType": "sub",
+                "summonMob_9601749": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "int",
+                    "_value": "630"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "int",
+                    "_value": "720"
+                  }
+                }
+              },
+              "Sections": {
+                "_dirType": "sub",
+                "stand": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "0"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "720"
+                  }
+                }
+              }
+            },
+            "summonZone_9601750": {
+              "_dirType": "sub",
+              "LayerSlots": {
+                "_dirType": "sub",
+                "Slot0": {
+                  "_dirType": "sub",
+                  "Segment:stand": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "0"
+                    }
+                  },
+                  "Segment:die": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "630"
+                    }
+                  }
+                }
+              },
+              "Notifies": {
+                "_dirType": "sub",
+                "summonMob_9601750": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "int",
+                    "_value": "630"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "int",
+                    "_value": "720"
+                  }
+                }
+              },
+              "Sections": {
+                "_dirType": "sub",
+                "stand": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "0"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "720"
+                  }
+                }
+              }
+            },
+            "summonZone_9601751": {
+              "_dirType": "sub",
+              "LayerSlots": {
+                "_dirType": "sub",
+                "Slot0": {
+                  "_dirType": "sub",
+                  "Segment:stand": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "0"
+                    }
+                  },
+                  "Segment:die": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "630"
+                    }
+                  }
+                }
+              },
+              "Notifies": {
+                "_dirType": "sub",
+                "summonMob_9601751": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "int",
+                    "_value": "630"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "int",
+                    "_value": "720"
+                  }
+                }
+              },
+              "Sections": {
+                "_dirType": "sub",
+                "stand": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "0"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "720"
+                  }
+                }
+              }
+            },
+            "summonZone_9601754": {
+              "_dirType": "sub",
+              "LayerSlots": {
+                "_dirType": "sub",
+                "Slot0": {
+                  "_dirType": "sub",
+                  "Segment:stand": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "0"
+                    }
+                  },
+                  "Segment:die": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "630"
+                    }
+                  }
+                }
+              },
+              "Notifies": {
+                "_dirType": "sub",
+                "summonMob_9601754": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "int",
+                    "_value": "630"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "int",
+                    "_value": "720"
+                  }
+                }
+              },
+              "Sections": {
+                "_dirType": "sub",
+                "stand": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "0"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "720"
+                  }
+                }
+              }
+            },
+            "summonZone_9601755": {
+              "_dirType": "sub",
+              "LayerSlots": {
+                "_dirType": "sub",
+                "Slot0": {
+                  "_dirType": "sub",
+                  "Segment:stand": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "0"
+                    }
+                  },
+                  "Segment:die": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "630"
+                    }
+                  }
+                }
+              },
+              "Notifies": {
+                "_dirType": "sub",
+                "summonMob_9601755": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "int",
+                    "_value": "630"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "int",
+                    "_value": "720"
+                  }
+                }
+              },
+              "Sections": {
+                "_dirType": "sub",
+                "stand": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "0"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "720"
+                  }
+                }
+              }
+            },
+            "summonZone_9601765": {
+              "_dirType": "sub",
+              "LayerSlots": {
+                "_dirType": "sub",
+                "Slot0": {
+                  "_dirType": "sub",
+                  "Segment:stand": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "0"
+                    }
+                  },
+                  "Segment:die": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "630"
+                    }
+                  }
+                }
+              },
+              "Notifies": {
+                "_dirType": "sub",
+                "summonMob_9601765": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "int",
+                    "_value": "630"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "int",
+                    "_value": "720"
+                  }
+                }
+              },
+              "Sections": {
+                "_dirType": "sub",
+                "stand": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "0"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "720"
+                  }
+                }
+              }
+            },
+            "summonZone_9601766": {
+              "_dirType": "sub",
+              "LayerSlots": {
+                "_dirType": "sub",
+                "Slot0": {
+                  "_dirType": "sub",
+                  "Segment:stand": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "0"
+                    }
+                  },
+                  "Segment:die": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "630"
+                    }
+                  }
+                }
+              },
+              "Notifies": {
+                "_dirType": "sub",
+                "summonMob_9601766": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "int",
+                    "_value": "630"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "int",
+                    "_value": "720"
+                  }
+                }
+              },
+              "Sections": {
+                "_dirType": "sub",
+                "stand": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "0"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "720"
+                  }
+                }
+              }
+            }
+          },
+          "constants": {
+            "_dirType": "sub",
+            "lt": {
+              "_dirType": "vector",
+              "_x": -1200,
+              "_y": -600
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 1200,
+              "_y": 200
+            },
+            "duration": {
+              "_dirType": "string",
+              "_value": "3"
+            },
+            "count": {
+              "_dirType": "string",
+              "_value": "7"
+            },
+            "z": {
+              "_dirType": "int",
+              "_value": "9000"
+            }
+          }
+        },
+        "summonMob_9601749": {
+          "_dirType": "sub",
+          "constants": {
+            "_dirType": "sub",
+            "mobID": {
+              "_dirType": "string",
+              "_value": "9601749"
+            }
+          },
+          "type": {
+            "_dirType": "string",
+            "_value": "Summon"
+          }
+        },
+        "summonMob_9601750": {
+          "_dirType": "sub",
+          "constants": {
+            "_dirType": "sub",
+            "mobID": {
+              "_dirType": "string",
+              "_value": "9601750"
+            }
+          },
+          "type": {
+            "_dirType": "string",
+            "_value": "Summon"
+          }
+        },
+        "summonMob_9601751": {
+          "_dirType": "sub",
+          "constants": {
+            "_dirType": "sub",
+            "mobID": {
+              "_dirType": "string",
+              "_value": "9601751"
+            }
+          },
+          "type": {
+            "_dirType": "string",
+            "_value": "Summon"
+          }
+        },
+        "summonMob_9601754": {
+          "_dirType": "sub",
+          "constants": {
+            "_dirType": "sub",
+            "mobID": {
+              "_dirType": "string",
+              "_value": "9601754"
+            }
+          },
+          "type": {
+            "_dirType": "string",
+            "_value": "Summon"
+          }
+        },
+        "summonMob_9601755": {
+          "_dirType": "sub",
+          "constants": {
+            "_dirType": "sub",
+            "mobID": {
+              "_dirType": "string",
+              "_value": "9601755"
+            }
+          },
+          "type": {
+            "_dirType": "string",
+            "_value": "Summon"
+          }
+        },
+        "summonMob_9601765": {
+          "_dirType": "sub",
+          "constants": {
+            "_dirType": "sub",
+            "mobID": {
+              "_dirType": "string",
+              "_value": "9601765"
+            }
+          },
+          "type": {
+            "_dirType": "string",
+            "_value": "Summon"
+          }
+        },
+        "summonMob_9601766": {
+          "_dirType": "sub",
+          "constants": {
+            "_dirType": "sub",
+            "mobID": {
+              "_dirType": "string",
+              "_value": "9601766"
+            }
+          },
+          "type": {
+            "_dirType": "string",
+            "_value": "Summon"
+          }
+        }
+      },
+      "common": {
+        "_dirType": "sub",
+        "maxLevel": {
+          "_dirType": "int",
+          "_value": "20"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -2000,
+          "_y": -800
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 2000,
+          "_y": 800
+        },
+        "cooltime": {
+          "_dirType": "string",
+          "_value": "30"
+        }
+      }
+    }
+  },
+  "Info": {
+    "_dirType": "sub",
+    "Chase": {
+      "_dirType": "sub",
+      "SearchRect": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": -2000,
+          "_y": -800
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 2000,
+          "_y": 800
+        }
+      },
+      "distanceX": {
+        "_dirType": "int",
+        "_value": "100"
+      }
+    },
+    "ImmuneTo": {
+      "_dirType": "sub",
+      "knockBack": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "stun": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "reward": {
+      "_dirType": "string",
+      "_value": "mob_boss2"
+    },
+    "hpColorIndex": {
+      "_dirType": "int",
+      "_value": "12"
+    },
+    "boss": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "constants": {
+      "_dirType": "sub",
+      "maxHP": {
+        "_dirType": "long",
+        "_value": "3000"
+      },
+      "speed": {
+        "_dirType": "long",
+        "_value": "100"
+      },
+      "attackPower1": {
+        "_dirType": "long",
+        "_value": "30"
+      },
+      "attackSpeed": {
+        "_dirType": "long",
+        "_value": "-2"
+      }
+    },
+    "DurationPolicy": {
+      "_dirType": "string",
+      "_value": "Instant"
+    }
+  },
+  "AnimSet": {
+    "_dirType": "sub",
+    "stand": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      }
+    },
+    "move": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      }
+    },
+    "die": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      },
+      "Notifies": {
+        "_dirType": "sub",
+        "sound": {
+          "_dirType": "sub",
+          "Notify": {
+            "_dirType": "sub",
+            "!class": {
+              "_dirType": "string",
+              "_value": "WZ2AnimNotify_PlaySound"
+            },
+            "SoundPath": {
+              "_dirType": "string",
+              "_value": "Sound/RoguelikeWz2.img/Mob/9601769/Die"
+            }
+          }
+        }
+      }
+    },
+    "hit": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      },
+      "Notifies": {
+        "_dirType": "sub",
+        "sound": {
+          "_dirType": "sub",
+          "Notify": {
+            "_dirType": "sub",
+            "!class": {
+              "_dirType": "string",
+              "_value": "WZ2AnimNotify_PlaySound"
+            },
+            "SoundPath": {
+              "_dirType": "string",
+              "_value": "Sound/RoguelikeWz2.img/Mob/9601769/Hit"
+            }
+          }
+        }
+      }
+    },
+    "jump": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      }
+    },
+    "appear": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      }
+    }
+  }
+}

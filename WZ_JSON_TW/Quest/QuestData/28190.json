@@ -1,0 +1,317 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[職業] 送交感冒藥"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "3"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b弓箭手村#k的#b#@1012003:##k說她必須將#r感冒藥#k交給#b#@1012100:##k。我們到#b#@1012003:##k那邊吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "將感冒藥交給#b弓箭手村#k的#b#@1012100:##k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "你送交的#r感冒藥#k幫助了#b弓箭手村#k的村民。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4032490:##t4032490:##c4032490#/1\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 1,130\r\n可進行 '咳個不停的達克魯' 任務\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "1130"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1130"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032490"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "對了，#b弓箭手村#k的弓箭手轉職教官#b#p1012100##k也感冒了。你可以把#r感冒藥水#k拿給她嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝你，法師。\\n先跟你說，她住在#b弓箭手村#k深處，所以你可能有一大段路要走。好幾次我建議她搬到交通方便的地方居住，但她就是要省錢。哈哈！總之，這就拜託你交給她了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你不想幫幫無助的老人家嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "(咳咳)喔，#b#p1012003##k終於為我調配了#r感冒藥水#k。快點給我#r感冒藥水#k吧！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "呀呼！這#r感冒藥水#k果然是藥到病除！\\n我已經好很多了！嘻嘻。\\n你是從魔法森林來的法師吧。那裡真的是很遙遠的地方。感謝你不辭千里前來拿藥水給我。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b#p1012100##k在#b弓箭手村#k。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你需要#r感冒藥水#k。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012100"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032490"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012003"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "40"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "28189"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "200"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "210"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "220"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "230"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "211"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "221"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "231"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "212"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "222"
+        },
+        "9": {
+          "_dirType": "int",
+          "_value": "232"
+        },
+        "10": {
+          "_dirType": "int",
+          "_value": "1200"
+        },
+        "11": {
+          "_dirType": "int",
+          "_value": "1210"
+        },
+        "12": {
+          "_dirType": "int",
+          "_value": "1211"
+        },
+        "13": {
+          "_dirType": "int",
+          "_value": "1212"
+        },
+        "14": {
+          "_dirType": "int",
+          "_value": "2200"
+        },
+        "15": {
+          "_dirType": "int",
+          "_value": "2210"
+        },
+        "16": {
+          "_dirType": "int",
+          "_value": "2211"
+        },
+        "17": {
+          "_dirType": "int",
+          "_value": "2212"
+        },
+        "18": {
+          "_dirType": "int",
+          "_value": "2213"
+        },
+        "19": {
+          "_dirType": "int",
+          "_value": "2214"
+        },
+        "20": {
+          "_dirType": "int",
+          "_value": "2215"
+        },
+        "21": {
+          "_dirType": "int",
+          "_value": "2216"
+        },
+        "22": {
+          "_dirType": "int",
+          "_value": "2217"
+        },
+        "23": {
+          "_dirType": "int",
+          "_value": "2218"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[精靈之王，精靈遊俠] 三大長老和國王"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "8"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "終於#b精靈的三大長老#k都甦醒了，賢明的#p1033100#， 活力的#p1033101#，溫和的#p1033102#…如果結合他們的力量，其他百姓都可以覺醒了吧？和他們說話看看。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1033100#， #p1033101#， #p1033102#的力量結合後，雖然使用可以解開詛咒的#b純白淨化#k但是一點變化都沒有…為甚麼？因為我們力量還是很弱的樣子？向#p1033100#詢問看看。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p1033100#因為說不定是因為我們力量變弱的關係，但比起這個似乎還有其他理由的樣子，請調查無法解開詛咒的理由。#p1033101#和#p1033102#會守護村莊，並觀察是否有人甦醒過來。 "
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "4"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "4000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1033100"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q24065s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "25"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "24064"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2300"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2310"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2311"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2312"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2313"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "2314"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1033100"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "4000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "…什麼… 這…\\r\\n#L0##b怎麼會這樣呢？ 難道失敗了？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "…嗯… 好像是失敗了… 可是很奇怪…\\r\\n#L0##b果然… 還是因為我們的力量太弱了？ 如果我再加強修煉恢復力量，長老的力量像從前一樣強就會成功嗎？#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "不，不是這樣。 精靈遊俠。 就像#p1033102#所說純白的淨化是和力量的強弱沒有關係的魔法。 實際上執行魔法的本身並沒有問題…"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "到精靈的精神共鳴為止已經成功了。 這樣幾乎是完成了一半的魔法。 他們返回去的原因是在其他的地方。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "quest": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "那是怎麼回事呢？ 沒有人醒來… 詛咒依舊。 是魔法失敗了嗎？ 問#p1033100#看看吧。"
+          }
+        }
+      }
+    }
+  }
+}

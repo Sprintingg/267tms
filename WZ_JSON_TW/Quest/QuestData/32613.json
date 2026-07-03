@@ -1,0 +1,196 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[次元圖書館] 正式收集珍珠 1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "82"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "為了製作西格諾斯的新服裝,於是便來到水世界.在海裡真的能夠取得材料嗎?詳細內容去詢問奇加吧."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "奇加要我帶來來自水世界的白珍珠。狩獵#b長牙海豹#k和#b短牙海豹#k後，收集#b水世界產白珍珠5顆#k吧。\\r\\n#b(可以下跳到奇加站的地板的下方。)#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "收集白珍珠,並且交給了奇加."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4033962:# #t4033962:# #c4033962# / 5\r\n"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "32613"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "233711"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2520007"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32612"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2520007"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033962"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "233711"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033962"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-5"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "根據情報來看,這邊的海洋可以取得白珍珠.只要沿著梯子下去我腳底下的地方,就能找到長牙海豹和菲瑞爾."
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "可以狩獵長牙海豹和短牙海豹，收集5個#b水世界產白珍珠#k後帶來嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我在這裡等你。唉唷，大海真的非常壯觀...\\r\\n#b(狩獵長牙海豹和短牙海豹，收集5顆水世界產白珍珠5個。)#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那麼,和我一起玩水吧!"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "珍珠收集好了嗎?"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好,白珍珠這樣就夠了.現在去找右邊的#b奇亞#k吧.我要去玩水了!"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#i4033962#\\r\\n帶來5個長這樣的#r#t4033962##k。\\r\\n#b(可以下跳到奇加站的地板的下方。)#k"
+          }
+        }
+      }
+    }
+  }
+}

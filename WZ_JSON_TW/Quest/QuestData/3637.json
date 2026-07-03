@@ -1,0 +1,296 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[童話村] 鑑定斧頭"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "按照山神所說，從黑斧木妖處拿回斧頭，並交給山神進行鑑定。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "山神告訴我從#r#o2130100##k處拿回的#b斧頭#是否是樵夫的鐵斧，我要從黑斧木妖的斧頭中挑選一把交給山神"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "山神會告訴我拿回的是什麼斧頭，找到樵夫的鐵斧後歸還給森林的樵夫。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "40"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000215"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031315"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "prop": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031316"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "prop": {
+            "_dirType": "int",
+            "_value": "18"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031317"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "prop": {
+            "_dirType": "int",
+            "_value": "18"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "3": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031318"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "prop": {
+            "_dirType": "int",
+            "_value": "18"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "4": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031319"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "prop": {
+            "_dirType": "int",
+            "_value": "18"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "5": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031320"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "prop": {
+            "_dirType": "int",
+            "_value": "18"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "斧頭拿來了。給我看看。靠近一點看才能看清楚是不是樵夫的鐵斧。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "稍等一下喔。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "把斧頭拿給我看，才知道是不是。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這裡寫著字呢。我看不清楚，你幫我看看。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好好看。如果是樵夫的鐵斧，就把斧頭送到住在烏山某處的#b#p2071011##k那兒。如果不是樵夫鐵斧，再去找別的斧頭。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "把#r#o2130100##k給你的斧頭拿過來，我幫你確認是不是#b#t4031315##k。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2071010"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2071010"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "55"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3636"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031315"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000215"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    }
+  }
+}

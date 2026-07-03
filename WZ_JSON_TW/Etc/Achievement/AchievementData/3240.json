@@ -1,0 +1,137 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[林波] 我不會聽從弱者的命令"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "以亞克職業造成最多傷害並擊敗一般林波"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "100"
+    },
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "battle"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "boss"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "legendary"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "gauge": {
+        "_dirType": "string",
+        "_value": "submission_info"
+      },
+      "gaugeSubMission": {
+        "_dirType": "string",
+        "_value": "mob_kill"
+      }
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "以亞克職業造成最多傷害並擊敗一般林波"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "mob_kill": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "long",
+              "_value": "1"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            },
+            "type": {
+              "_dirType": "string",
+              "_value": "counting"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub",
+            "character": {
+              "_dirType": "sub",
+              "condition": {
+                "_dirType": "string",
+                "_value": "or"
+              },
+              "values": {
+                "_dirType": "sub",
+                "0": {
+                  "_dirType": "sub",
+                  "character_jobcode": {
+                    "_dirType": "int",
+                    "_value": "15500"
+                  }
+                },
+                "1": {
+                  "_dirType": "sub",
+                  "character_jobcode": {
+                    "_dirType": "int",
+                    "_value": "15510"
+                  }
+                },
+                "2": {
+                  "_dirType": "sub",
+                  "character_jobcode": {
+                    "_dirType": "int",
+                    "_value": "15511"
+                  }
+                },
+                "3": {
+                  "_dirType": "sub",
+                  "character_jobcode": {
+                    "_dirType": "int",
+                    "_value": "15512"
+                  }
+                }
+              }
+            },
+            "mob": {
+              "_dirType": "sub",
+              "condition": {
+                "_dirType": "string",
+                "_value": "or"
+              },
+              "mob_id": {
+                "_dirType": "sub",
+                "values": {
+                  "_dirType": "sub",
+                  "0": {
+                    "_dirType": "int",
+                    "_value": "8881325"
+                  },
+                  "1": {
+                    "_dirType": "int",
+                    "_value": "8881320"
+                  }
+                }
+              }
+            },
+            "is_max_damage_on_fieldset_user": {
+              "_dirType": "short",
+              "_value": "-1"
+            }
+          }
+        }
+      }
+    }
+  }
+}

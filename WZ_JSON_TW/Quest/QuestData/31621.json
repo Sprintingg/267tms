@@ -1,0 +1,188 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[* 赫力席母] 無預告的炮擊留下的"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "259"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "還擔心打到我方讓我提心吊膽，結果是擊破了敵人隱藏的基地？ 呼～真是幸運啊。趕快報告 #b#p3001000##k吧～"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b#p3001000##k請求消滅掉丟下補給基地逃亡的敵人。好吧，那就去看看吧？\n#b#e(這是戰場任務，失敗時必須放棄後重新執行。)#k#n\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "痛快的擊倒了丟下敵陣逃跑的幽靈。從此真的完成了整頓幽靈基地！"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 194,058\r\n可進行 '需要更強大一些。' 任務\r\n可進行 '尤蘭斯？ 這是誰呀？' 任務\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "119"
+      }
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "16"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "194058"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001000"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q31621s"
+      },
+      "dressChanged": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "90"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31620"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001000"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "31622"
+      },
+      "dressChanged": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "194058"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "全部都解決了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "太厲害了。這樣戰況應該對我們比較有利。我們還沒能夠完全掌握森林地區，所以要感謝你的話，我還是先保留下來吧。總之，#b補給機度現在已經一團混亂了，那敵人應該有一陣子無法行動了吧#k。你也請再多加接受修練。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒能全部解決啊。\n\n#b#e(戰場任務在失敗時，必須要放棄任務後再重新接取才行。)#k#n"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 大亂鬥勝利的主角"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "戰鬥廣場解說員羅茲弟說有挑戰大亂鬥挑戰這項任務…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "戰鬥廣場解說員羅茲弟說今日內於大亂鬥紅藍對戰下，只要獲得3次勝利的話就會送出獎項。趕緊去挑戰吧。\\r\\n\\r\\n#rTip！必須要一天內完成3次以上勝利才行。要是中途離開或者當天結束的話，任務就算無法完成。\\r\\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "於大亂鬥紅藍對戰模式之下達到3次勝利即可獲得獎項。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9070005"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q11053s"
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9070005"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "11056"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q11053e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "3"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好 #h0#~我是戰鬥廣場嚮導羅茲弟。當您完成我給予的挑戰任務時，會給予您禮物。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "咦？你說是什麼任務？那個就是～今天內從團隊遊戲上勝利3場就可以喔。怎麼樣呢？我覺得你應該是可以成功的呢…"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不行忘了喔。 今天一天內必須在小隊對抗獲勝3次喔。因過了今天後會初始化而無法得到禮物請注意。那麼就期待你那帥氣的樣子！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "沒自信嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哎呀！已經達成任務了呢！從團隊比賽中勝利3場應該不是簡單的事情的說，真的太厲害了！那麼做為禮物，給你我準備好的禮物吧。在大亂鬥上可以很適用的來利用他喔。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "來，請加油也挑戰看看其他任務！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒能達成任務嗎？只要在小隊對抗獲勝3次即可，請趕快挑戰看看。"
+          }
+        },
+        "quest": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒能達成任務嗎？只要在小隊對抗獲勝3次即可，請趕快挑戰看看。"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[過去的英雄，狂狼勇士] 武器會給主人添麻煩"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "6"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "達到60時 #b#p1201000##k突然過來交談..."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1201000#說矛又有一些奇怪的反應，好像有話要對我說。現在關係好像挺不錯了，能有什麼問題呢？去#b#m140000000##k看看吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "莉琳說矛又有反應，回來看看之後也不過說些不重聽的話，這\"武器\"的個性真難拿捏…不過看樣子似乎真的有事情，再問\"他\"看看好了…"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[轉職]"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1201000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q21300s"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2110"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1201002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "修煉還順利嗎？ 嗯… 等級 60了啊... 雖然還有不足，但是和第一次在冰中見面時你那像魚乾的樣子相比進展很多啊。如果照這樣下去一定會找回從前的力量。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "但是之前先暫時回#m140000000#。#b因為你的矛又有異常反應。好像有話要說。#k有可能發覺你的能力，快回來吧。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "以為有自我意識的武器有多厲害呢，還真麻煩。不聽自己的話就哭…啊，這些話跟矛保密吧，省的找更多麻煩。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你知道嗎？ 60級以後若為了以後的轉職，繼續升級努力累積 SP但是它並無法使用在 3轉技能。嗯，雖然不是說 #p1201001#一定要幫你轉職 ... 我只是說這樣而已。給你做參考。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你把我丟在這裡到底去哪裡現在才回來呢？ 什麼？ 修煉？ 原來已經60級了！呵呵！和之前不可能聽到我的聲音時候相比的確很有進展吧？ 厲害...不，這不是重點！"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒去矛那裡嗎？他就像你頭上任務的電燈泡一樣一直一閃一閃的，害我根本不能睡覺…快去問一下到底有什麼事…"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "還不習慣海盜職業嗎？那是因為你的經驗不足，對於海盜來說經驗是很重要的。獨自升級累積經驗是很困難的。需要我幫助你進行修煉嗎？\\r\\n#L0##b好吧，我接受。.#k#l\\n#L1##b我可以自己修煉！#k#l"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "只有承認自身的不足，才能變得更加強大。我會幫助你成為強大的海盜的！"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "看來還沒做好修煉的準備啊..."
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "還不熟悉短刀和槍的使用方法？那麼我們從狩獵肥肥開始熟悉基本的海盜戰鬥方法。嘗試著消滅#r11隻肥肥#k。肥肥在鯨魚號碼頭附近有很多，附近的弓箭手村也不少。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "看來還沒做好修煉的準備啊..."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "消滅了11隻肥肥。不錯～但是如果就此滿足是無法變得強大的，這只是通往海盜之路的第一步。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果我認為你可以進行下一階段的修煉，會再找你。要加油喔…"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有消滅#r11隻肥肥#k啊？想要變得強還得努力了。"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "還沒習慣海盜這個職業嗎？剛開始沒甚麼經驗是理所當然的，經驗真的非常重要。如果你沒辦法獨自累積經驗。我可以幫一點忙，你要接受訓練嗎？\\r\\n#L0##b 要訓練。#k#l \\n#L1##b我可以靠自己的力量。#k#l"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "能夠認清自我極限的態度，才是變強的基礎。我會幫你成為強大的海盜。"
+      },
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "1": {
+            "_dirType": "string",
+            "_value": "看來你還沒做好訓練準備的樣子…"
+          },
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "230"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2000000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "job": {
+            "_dirType": "int",
+            "_value": "32"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2000003"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "job": {
+            "_dirType": "int",
+            "_value": "63"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1090000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1210100"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "11"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1090000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "15"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "500"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "510"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "520"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "511"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "521"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "512"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "522"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓之谷世界的冒險家] 初級海盜的第一次修煉"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "剛剛轉職為海盜的你，對下一步做什麼可能還一無所知...快去找海盜轉職教官卡伊琳學習吧！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "卡伊琳說基礎修煉先從打倒簡單的怪物開始，她要求我打倒#r11隻肥肥#k。那些肥肥常出沒於弓箭手村周圍，很好找...\\n\\n#o1210100##r#a21931##k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "打倒11頭肥肥後向卡伊琳報告。哼...這也太簡單了？！"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "77"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "230"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

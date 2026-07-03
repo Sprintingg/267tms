@@ -1,0 +1,240 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[Hayato] The Demon's Lair 2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "57"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "The battle rages on. Now that the allied forces are inside the temple, talk to Takeda Shingen."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "Shingen wants you to find and defeat 300 Samurai Captains."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "The Oda troops are running around with no leadership! Victory is at hand!"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o9421563# #a571591#\\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\\n#fUI/UIWindow2.img/QuestIcon/8/0# 5,711,777\\nCan proceed to the The Demon's Lair 3 quest"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5711777"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9130076"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "57158"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q57159s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "150"
+      },
+      "job": {
+        "_dirType": "sub"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "job_SG": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "4100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "4110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "4111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "4112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "4113"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "4114"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9130076"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q57159e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9421563"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "300"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5711777"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "The real fight starts here. I'm sending in my best men to begin the assault, and I want you alongside them. Ready for some action?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "Fight your way deeper into the battlefield and take care of the samurai captains. I can't wait to watch them scrambling around without their bosses."
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "Could you take care of 300 Oda Samurai Captains? It's the only way to win a battle."
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "What happened, did somebody cut off your power? I knew I couldn't trust those camp barbers..."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "How fares the battle?"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "See that? The enemies are scattering! Their base is crumbling! I can feel the winds of victory ruffling my mustache. Today is the day I feel like a king!"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "Disrupt the enemy chain of command by defeating 300 Oda Samurai Captains."
+          }
+        }
+      }
+    }
+  }
+}

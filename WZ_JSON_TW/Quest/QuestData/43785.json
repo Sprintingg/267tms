@@ -1,0 +1,229 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[簽到] 每天到新星世界簽到！"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "365天一直都充滿活動與玩樂的空間！\r\n獲得35星星點數，簽到後領取豐富的禮物！\r\n\r\n#r（※注意！簽到是每個世界只能進行1次的任務， 獎勵只有一個角色能領取。）"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "365天一直都充滿活動與玩樂的空間！\r\n獲得35星星點數，簽到後領取豐富的禮物！\r\n\r\n#r（※注意！簽到是每個世界只能進行1次的任務， 獎勵只有一個角色能領取。）"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "365天一直都充滿活動與玩樂的空間！\r\n獲得35星星點數，簽到後領取豐富的禮物！\r\n\r\n#r（※注意！簽到是每個世界只能進行1次的任務， 獎勵只有一個角色能領取。）"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#獲得星星點數 35以上（滿足條件時，可以確認自動完成通知。）\n"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "starPlanet": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1540100"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201501280000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201502120000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201408280000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201409190000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "43788"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "done"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "0"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "state"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1540100"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "43788"
+      },
+      "QuestRecordAndOption": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "35"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "獲得星星點數 35以上"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "count"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "state"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好？#b#h0##k，\\r\\n你是來挑戰簽到的嗎？要立刻開始嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "現在開始 #b35獲得星星點數#k後打開出席簿吧。透過 新星世界的力量可確認出席簿上的印章。 好, 那享受好玩得小遊戲吧！"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "對了！\\r\\n星星點數可以在星星競技場中取得！\\r\\n除此之外還有各種方法，關於新星世界的疑問請透過各個地方的NPC進行確認。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你不是要挑戰簽到嗎？ \\r\\n新星世界的簽到準備了更特殊的禮物，如果改變心意就再來找我。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "看來你還沒獲得星星點數 35分， \\r\\n請多加油一點吧！"
+          }
+        }
+      }
+    }
+  }
+}

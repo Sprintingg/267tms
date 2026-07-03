@@ -1,0 +1,148 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[伊利恩] 準備前往村外探險"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "215"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必要]"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "disableAtStartTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "好不容易離開村莊了。進入更危險的地方之前，試著和里幽交談吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了確保外部地區的安全，裝備事先準備的護腕吧。千萬別忘記使用藥水補充體力。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "裝備護腕且補充體力了，現在就去取得零件吧？"
+    },
+    "partnerQuest": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "3"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001330"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q34800s"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "34800"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "out"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001330"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q34800e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2000046"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請試著恢復體力吧。開啟背包#b雙擊#t2000046:##k就能補充體力了。"
+          }
+        }
+      }
+    }
+  }
+}

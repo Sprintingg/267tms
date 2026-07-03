@@ -1,0 +1,133 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓之谷探險隊] 身為探險隊員的資質證明"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "136"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "探險隊長海多妮看起來還有事要跟我說。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "探險隊的補給責任官#b庫勒米#k看起來不是很滿意笨拙實力的探險隊員。為了證明有成為被招募進來的隊員的資格，看起來得成功完成#b模擬訓練#k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "探險隊的補給責任官#b庫勒米#k看起來不是很滿意笨拙實力的探險隊員。為了獲得#b庫勒米#k的信賴，完成#b模擬訓練#k，來證明自己能夠成為有能力的探險隊員。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "和#questorder1##r#p9401217##k對話"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9401216"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "65632"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q65633s"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9401217"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q65633e"
+      },
+      "npcSpeech": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9401217"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "speech": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "string",
+              "_value": "看來你就是隊長所說的那個傢伙呢。"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有完成訓練嗎？連模擬訓練場合格標準也無法通過的小鬼，是沒有前去勘查的資格。"
+          }
+        }
+      }
+    }
+  }
+}

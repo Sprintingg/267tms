@@ -1,0 +1,166 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 狂狼勇士迷濛的痕跡"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "若對狂狼勇士有疑問就去找#b尤莉亞#k吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "據說若要對他們有所了解就需要找到迷濛的痕跡。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "收集了狂狼勇士的痕跡，如果收集到12個會怎樣呢？"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4032367:##t4032367:##c4032367#/20"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "200907090000"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "200906260000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "200907090000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "200906260000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "10343"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q10344e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032367"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "啊！#b#h0##k為什麼要看到我就笑呢？難道…看了我的相簿嗎？\\r\\n#b#L0#(啊…怎麼會知道的呢？……)啊！不可能啦！#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "沒錯吧？該不會看到我小時後的照片吧？那麼～就去找狂狼勇士的痕跡吧？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "啊，現在我也想不太起來了。他們的痕跡…都很…模糊了…啊！只要收集到#b#t4032367##k#b20個#k就可以想起來了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "什麼？難道你看到我的照片嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "收集#b#t4032367##k20個，真的很難嗎？"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[強化程序] 強化戰鬥力"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "32"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#e[強化程序] 強化戰鬥力#n必須打到擁有強大力量和體力的#b#o9306101# 20隻#k才行。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#e[強化程序] 強化戰鬥力#n必須打到擁有強大力量和體力的#b#o9306101# 20隻#k才行。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#e[強化程序] 強化戰鬥力#n#b#e任務完成#n#k"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o9306101# #a18291#"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "straightStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "validField": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "int",
+        "_value": "957010000"
+      },
+      "1": {
+        "_dirType": "int",
+        "_value": "957011000"
+      },
+      "2": {
+        "_dirType": "int",
+        "_value": "957012000"
+      },
+      "3": {
+        "_dirType": "int",
+        "_value": "957013000"
+      },
+      "4": {
+        "_dirType": "int",
+        "_value": "957014000"
+      },
+      "5": {
+        "_dirType": "int",
+        "_value": "957015000"
+      },
+      "6": {
+        "_dirType": "int",
+        "_value": "957016000"
+      },
+      "7": {
+        "_dirType": "int",
+        "_value": "957017000"
+      },
+      "8": {
+        "_dirType": "int",
+        "_value": "957018000"
+      },
+      "9": {
+        "_dirType": "int",
+        "_value": "957019000"
+      }
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9075208"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "fieldEnter": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "957018000"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9075208"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q1829e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9306101"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#eLink9#n可進行戰鬥力強化程式。\\r\\n要開始了嗎?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "除掉有強大力量和體力的#e#b#o9306101# 20隻#n#k。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "準備好進行強化程式的話，再跟我說話。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#o9306101# 20隻除掉了嗎?"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "戰鬥力強化程式成功結束。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#e[強化程式] 戰鬥力強化#n除掉有強大力量和體力的#e#b#o9306101# 20隻#k#n。"
+          }
+        }
+      }
+    }
+  }
+}

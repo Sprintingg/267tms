@@ -1,0 +1,215 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2101010"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031570"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2101010"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "85"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3937"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "成為沙影團，可是卻沒任務非常無聊嗎？這次決定要搶奪王妃購買的絲綢…我想把這個任務交給你。怎麼樣？你做得到嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "直接取得王妃的物品太危險了，要計劃不同的方法。寶物會由守衛兵#p2101004#向村莊外的商人取得，變裝成#p2101004#帶走物品吧。怎麼樣？很厲害的計畫吧？"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "已經向魔法森林的法師取得變身藥。可是若要變身為特定人物還需要一樣東西。就是那個人的頭髮。因此你去取回 #p2101004#的頭髮。那麼就立刻製作 #p2101004# 變身藥給你。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "還沒辦法接受任務的樣子…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "77280"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031570"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哦哦，這就是#p2101004#的髮根…嗯？不像頭髮呀。什麼？鬍子？…反正都是毛，應該沒問題吧。那麼製造好變身藥，請您等一下。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "哦…看來還沒找來#p2101004#的頭髮嘛。哪怕一根也可以，請快快找來。"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "加入沙影團後沒接受到任務，是不是很無聊啊？這次準備搶奪王妃要買的絲綢…我想把這任務交給你。怎麼樣？能做到嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "要直接偷走王妃的東西非常危險，所以想出了一個方法。警衛兵會去找村外的商人#p2101004#取絲綢，你假扮成#p2101004#後取來東西怎麼樣？是不是好注意？"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "已經從#m101000000#的魔法師處取來了變身藥。但要變成特定人物，還需要一樣東西。是他的頭髮。請您去找來#b#p2101004#的頭髮#k。我會馬上給你製造#p2101004#變身藥的。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "看來還不能給你任務..."
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[納希沙漠] 第一個任務"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "沙影團的第一個任務"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "為#m260000000#居民奮鬥的沙影團。現在成為了沙影團員，該接受任務了吧？去找#b#p2101010##k看看。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2101010#說這次他想偷王妃打算要買的昂貴的絲綢分給居民。具體計畫是變身為替王妃取東西的守衛兵，從商人身上接收東西！據說只要帶來#b#p2101004#的髮根#k，#p2101010#就能製造出變身藥。\\n\\n#i4031570##t4031570##b#c4031570#/#k1#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把#p2101004#的髮根..不是，把#p2101004#的鬍子給了#p2101010#。現在等變身藥完成就可以了…會是什麼樣的藥呢？"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "43"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "77280"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

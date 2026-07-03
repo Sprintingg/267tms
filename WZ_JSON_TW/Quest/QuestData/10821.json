@@ -1,0 +1,205 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 末日反抗軍開放紀念活動：補給品支援！"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "新的楓之谷世界裡出現了新末日反抗軍！與末日反抗軍一起還會提供有助於提高力量來對抗黑魔法師的補給品，快去找找尤莉亞。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "尤莉亞正在提供補給品！\n聽說正在給玩家提供能夠對抗黑魔法師的補給品，快去找尤莉亞。\n不過，要在限定時間內去才能得到補給品。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "從尤莉亞那裡得到了補給品。\n早日適應新的環境，培養力量與新末日反抗軍末日反抗軍一起打敗黑魔法師！"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2430133"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "10822"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201008141430"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201101020000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q10821s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201007242000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201008141430"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "gift0101"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2430133"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "dateExpire": {
+            "_dirType": "string",
+            "_value": "2010123100"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "原來是剛才沒有拿到補給品的傢伙啊。這次做好接受補給品的準備了嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你能在規定的時間內到達，真是幸運啊。你稍等一下。我馬上去拿補給品箱子給你。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "還沒有做好接受補給品箱子的準備嗎？過了今天下午8點之後，就不能拿了，你不要忘了。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "給，這是你的補給品箱子。你先確認一下你的道具欄吧。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "可以點擊補給品箱子，來取得箱子中的補給品使用。希望能對你有所幫助。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "事前準備怎麼可以這麼差啊…嘖嘖…"
+          }
+        }
+      }
+    }
+  }
+}

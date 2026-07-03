@@ -1,0 +1,174 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[聯盟任務] 遠征隊任務 - 氣流變化觀察 : 怪物擊殺"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "223"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "月之橋上經常發生氣流不穩定而產生旋風的現象。為了在發生氣流時，能夠讓遠征隊繼續前進，狩獵怪物並跟 #b#p3003564##k進行報告完成任務吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "月之橋上經常發生氣流不穩定而產生旋風的現象。為了在發生氣流時，能夠讓遠征隊繼續前進，狩獵怪物並跟 #b#p3003564##k進行報告完成任務吧。\r\n\r\n#b在地圖上進行狩獵時，會產生的小規模旋風地區中擊殺怪物吧。#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在發生氣流中，狩獵怪物而成功本次遠征隊任務了。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#發生氣流中，擊殺怪物 #R35120Ex1Ref35124# / 1000\r\n"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "10000 心願"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003564"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "35119"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "999"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "not"
+          }
+        }
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201901230900"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201902060000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003564"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "35120"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q35124e"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1000"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "發生氣流中怪物擊殺"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "發生氣流時，為了讓遠征隊可以更專注的前進，再麻煩狩獵怪物。"
+          }
+        }
+      }
+    }
+  }
+}

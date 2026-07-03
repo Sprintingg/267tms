@@ -1,0 +1,179 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 對決！打擊達人 DAY"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "只有2月 1日一天，\r\n只要完成對決！打擊達人 DAY 活動，\r\n就會贈送#e4 里程  #n和#i2433134#   #e#t2433134##n。\r\n\r\n#r#e任務完成後，2月1日23點59分之前！#k\r\n#b去向波明領取獎勵！#k"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "只有2月 1日一天，\r\n只要完成對決！打擊達人 DAY 活動，\r\n就會贈送#e4 里程  #n和#i2433134#   #e#t2433134##n。\r\n\r\n#r#e任務完成後，2月1日23點59分之前！#k\r\n#b去向波明領取獎勵！#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "只有2月 1日一天，\r\n只要完成對決！打擊達人 DAY 活動，\r\n就會贈送#e4 里程  #n和#i2433134#   #e#t2433134##n。\r\n\r\n#r#e任務完成後，2月1日23點59分之前！#k\r\n#b去向波明領取獎勵！#k"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#進行對決！打擊達人 #R43731ExToCountRef43806# / 12\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "starPlanet": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1540204"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201502010000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201502020000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "43803"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1540204"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "43731"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "12"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "進行對決！打擊達人 "
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "ToCount"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "比眼睛更快的手感！\\n完成對決！打擊達人 12次了嗎？"
+      },
+      "yesEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "成為對決！打擊達人勝利者之後，通常都會展現如同動物般的打字能力，透過這次的對決！打擊達人 DAY，我大致上已經掌握了你的能力。"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "不管怎麼樣， \\n今天一整天已經享受過對決！打擊達人了，獎勵請去向新星世界入場大廳的#b波明#k透過#b[活動] 對決！打擊達人 DAY 獎勵#k任務領取。"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "noEsc": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "和對手進行12次對決並非容易的事情，機會只有今天而已。"
+          }
+        }
+      }
+    }
+  }
+}

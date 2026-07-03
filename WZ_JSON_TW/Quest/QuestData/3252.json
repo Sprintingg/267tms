@@ -1,0 +1,190 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[玩具城] 噩夢的表"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "36"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去找#b#m220050000##k的#b掛鐘#k。正在找能夠消除噩夢的人…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b#m220050000##k的#b掛鐘#k每天晚上都做噩夢…原因就是周圍的#r#o3230306##k、#r#o4230114##k、#r#o4230115##k發出的奇怪的聲音！！為了#b掛鐘#k，除掉#r#o3230306##k、#r#o4230114##k、#r#o4230115##k各#r50個#k吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "為了#b掛鐘#k除掉了#r#o3230306##k、#r#o4230114##k、#r#o4230115##k。數量減少了，做惡夢的次數也會減少吧？"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o3230306# #a32521#\r\n#o4230114# #a32522#\r\n#o4230115# #a32523#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "經驗值 701,472"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "701472"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2040029"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "110"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2040029"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3230306"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4230114"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4230115"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "701472"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你…你好嗎？怎麼看起來一付很無力的樣子？沒睡好才這樣。不管是人，動物或時鐘…要好好的睡才會有力氣。最近這附近有#r妖魔#k發出奇怪的聲音，睡覺時會不斷的做噩夢，睡也睡不好。如果你有空的話可以幫幫忙嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝你。那麼請擊退這附近的#r#o3230306##k、#r#o4230114##k、#r#o4230115##k#r50隻#k。數量減少的話就不用擔心了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你很忙吧！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哇啊~已經擊退了嗎。確實將數量減少了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "總之，謝謝你。擊退150隻是否有效，今天晚上睡覺的時候就能知道了！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "將四周的#r#o3230306##k、#r#o4230114##k、#r#o4230115##k分別擊退#r50隻#k。"
+          }
+        }
+      }
+    }
+  }
+}

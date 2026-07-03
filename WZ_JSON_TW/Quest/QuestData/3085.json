@@ -1,0 +1,250 @@
+{
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "讓您久等了。料理已經做好了，請把它帶給#b#p2060000##k吧。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "還有你一定要記住。這食物是熱的時候吃才好吃。所以我用很多東西來包裝後放在箱子裡。但不管我包裝過 #r1小時#k的話，食物會涼的。所以一定要在  #r1小時#k 內把他交給納努克才可以！一定 ！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#p2060000#肯定在苦苦等待著…得快點送去給他才行啊…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哇！這麼香的味道！一定是#p2060006#做出那個料理來了吧？沒錯吧？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "哇~!還是熱呼呼的耶，非常感謝，我還以為這輩子吃不到這個料理了呢，謝謝您為我做的一切。魔法卷軸拿到了嗎？和您的幫助相比那真是微不足道呢，請好好利用它喔。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "趕快到 #p2060000#吧。 #r時間#k內沒有到達的話， 食物會涼的。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "好吃的料理拿來了嗎？"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "哎哎，您怎麼沒能在#r1小時#k內拿給#b#p2060000##k啊。我不是告訴過您，一定要在限定時間內拿過去的嗎。不過還好，您帶來的材料很充足，我再做一個給您。這次一定要在#r1小時#k內拿給#b#p2060000##k哦。"
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031281"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "period": {
+            "_dirType": "int",
+            "_value": "60"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "200"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2040805"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031281"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2060006"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "95"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3084"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2060000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031281"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[水世界] 妙斯的料理"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p2060006#的料理做好了？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "用我帶去的材料，#p2060006#做出了非常可口的料理。雖然放在箱子裡看不到，但聞起來就能知道肯定是非常好吃的料理。#p2060006#提醒說這要趁熱吃，必須在變涼之前將食物帶給#b#p2060000##k。#r1小時#k內能夠送給#b#p2060000##k嗎？"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把#p2060006#做出的料理交給了#p2060000#。為了在1小時內到達，跑得好辛苦哦。呼~看到#p2060000#吃的津津有味的樣子，我也想要吃一口耶。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "35"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "200"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2040805"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[次元圖書館] 消失的艾琳"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "82"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "艾琳留下這張紙條就消失了.讀取紙條吧."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "試著尋找艾琳吧.會不會是陷入危險了呢?\\r\\n#b(出去歐洛拉大神殿正門外面一趟吧 : 消滅奧門 15隻)#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "艾琳失去意識了.\\r\\n同時說快點逃離那個地方..."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "去尋找消失的艾琳吧."
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "findingArin"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "試著尋找艾琳吧.會不會是陷入危險了呢?\\r\\n#b(出去歐洛拉大神殿正門外面一趟吧)#k"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "艾琳的狀態看起來很危險.\\r\\n#b(消滅周圍所有的奧門,然後再次觀察艾琳的狀況.)#k"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2510028"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q32644s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32643"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2510029"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q32644e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8230047"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "15"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

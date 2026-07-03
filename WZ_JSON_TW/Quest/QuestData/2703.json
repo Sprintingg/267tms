@@ -1,0 +1,194 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[懸賞] 藍菇菇"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "藍菇菇的森林被建立了懸賞標誌板。 \n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "藍菇菇的森林中被立了藍菇菇懸賞告示板. 打倒藍菇菇20隻後來領取懸賞金!"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "藍菇菇的森林上#p1012119#立了藍菇菇懸賞告示板. 打倒藍菇菇20隻後領取了懸賞金. 但是到底怎麼知道我有沒有真的打倒藍菇菇的呢?\r\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o2220100# #a27031#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 434\r\n#i1032009:# #t1032009:# 1 個\r\n可進行 '[懸賞] 僵屍菇菇' 任務\r\n"
+    },
+    "disableAtStartTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "434"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012128"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012128"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2220100"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "434"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1032009"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "正常"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#eWANTED#n\\n#i3800226#\\n懸賞最近出沒在藍菇菇樹林騷擾行人的藍菇菇 20隻。 \\n罪狀： 妨礙通行，詐欺"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "<附件>\\n掃蕩藍菇菇20隻的人找到藍菇菇的森林的#p1012128#報告.\r\n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "<追申>\\n- 損毀佈告時，徵收罰金10萬楓幣。\\n- 請勿在此丟棄垃圾。」\\r\\n"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "<附件>\\n掃蕩藍菇菇20隻的人找到藍菇菇的森林的#p1012128#報告. 會給懸賞金.\\r\\n#L0##b掃蕩藍菇菇20隻後來領取懸賞金了.#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "支付懸賞金."
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "<附件>\\n掃蕩藍菇菇20隻的人找到藍菇菇的森林的#p1012128#報告."
+          }
+        }
+      }
+    }
+  }
+}

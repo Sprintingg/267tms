@@ -1,0 +1,113 @@
+{
+  "Events": {
+    "_dirType": "sub",
+    "Test": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "RemoveBuff"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": -320,
+          "_y": -260
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 414,
+          "_y": 223
+        }
+      },
+      "targetingType": {
+        "_dirType": "string",
+        "_value": "Friendly"
+      },
+      "RemoveBuffQuery": {
+        "_dirType": "sub",
+        "EffectTagQuery": {
+          "_dirType": "sub",
+          "op": {
+            "_dirType": "string",
+            "_value": "AnyTags"
+          },
+          "0": {
+            "_dirType": "string",
+            "_value": "RLGame.Debuff"
+          }
+        }
+      },
+      "targetingIncludeSelf": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "Test2": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "TeleportTarget"
+      },
+      "subType": {
+        "_dirType": "string",
+        "_value": "NearSelf"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": -320,
+          "_y": -260
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 414,
+          "_y": 223
+        }
+      },
+      "targetingType": {
+        "_dirType": "string",
+        "_value": "Friendly"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "100"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "4"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "6"
+    },
+    "Tags": {
+      "_dirType": "sub",
+      "availableOnLadderOrRope": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "Notifies": {
+      "_dirType": "sub",
+      "Test": {
+        "_dirType": "sub"
+      }
+    },
+    "SequenceLength": {
+      "_dirType": "int",
+      "_value": "30"
+    }
+  }
+}

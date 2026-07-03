@@ -1,0 +1,276 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[過去的英雄，狂狼勇士] 洞穴暗號是？"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "6"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "第四個情報收集活動. 雖然發現人偶師的洞穴可知道暗號才可進去. \r\n\r\n#b#m101030000##k的 #b#p1040002##k的話,可能會知道一些東西. 跟#p1040002#對話看看吧."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "耳朵靈的 #p1040002#是知道洞穴的暗號.假如想知道的話,請拿回 #b#t4000007# 30個#k.\r\n身為一個貓要求奇怪的東西.首先 尋找 #t4000007#吧.\r\n\r\n#i4000007# #t4000007# #b#c4000007# / 30#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p1040002#告知暗號了.暗號是  #r浦藍西斯是天才 人偶師!#k 請留意不要錯空格和感嘆號."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4000007:# #t4000007:# #c4000007# / 30\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1040002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "25"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "21729"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2113"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "2114"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1040002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000007"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5000"
+      },
+      "transferField": {
+        "_dirType": "int",
+        "_value": "104000004"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000007"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "甚麼是呢喵?\\r\\n#L0##b(說人偶師和他所居住的洞裡的事情後,詢問是否暗號的事情.)#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "暗號? 喵喵.....這樣想進到洞裡的時候,人類說了奇怪的話喵, 我想起來了喵! \\r\\n#L0##b喔, 告訴我!#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "沒有免費的喔喵. 你不知等價交換嗎喵? 打獵#o2230100#尋找 #b#t4000007##k #b30個#k前我會當世界上最沉默的貓的喵!"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b(還有斑西是真的沒有講話. 真的要做斑西想要的東西嗎...)#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "等價交換是原本人類所製作的法律喵! 人類的話要守護人類的法律喵!"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "謝謝喵~ 收到東西了為了報答你告訴你想知道的東西~\\r\\n那時我聽到的暗號是......"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "#e#bOOOO是天才人偶師!#k#n 喵!"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "其實沒有聽到最前面的話喵. 好像是人的名字喵......."
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "無論如何#e#bOOOO是天才人偶師!#k#n喵.\r\n連感嘆符號也不能遺漏喵!"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "#b(既然已經猜出密碼，就回到特魯所在位置吧！)#k\\r\\n #r ※ 自動移動至任務地圖。#k"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b斑西只顆顆笑, 感覺他不想講話.趕快尋找 #t4000007# 30個.)#k"
+          }
+        }
+      }
+    }
+  }
+}

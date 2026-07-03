@@ -1,0 +1,153 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[等級衝刺]想要快點長大。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "在活動期間內送給製作新角色的人#r精靈的項墜#k。透過#b活動提示#k聽#b楓之谷GM#k的故事吧！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在活動期間內送給製作新角色的人#r精靈的項墜#k。透過#b活動提示#k聽#b楓之谷GM#k的故事吧！"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "參加等級衝刺活動，角色產生紀念得到精靈的項墜。"
+    },
+    "autoPreComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "11911"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201110110000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201110290000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201110050000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201110290000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1122017"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "period": {
+            "_dirType": "int",
+            "_value": "43200"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好嗎 #b#h0##k。 #r等級衝刺！#k活動期間創造新角色的人配戴時，會得到每隔一段時間經驗值獲得量增加的#b#e#t1122017#(30天)#k#n作為禮物 現在要領取嗎？\\n#i1122017:# #b#t1122017# "
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "精靈的項墜只能在活動期間內領取。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "配戴精靈的項墜時#b每過1小時，經驗值獲得量增加10%#k，#r最多可獲得 30%#k的經驗值。 期待看見#h0#快速的成長！"
+        }
+      }
+    }
+  }
+}

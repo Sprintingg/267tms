@@ -1,0 +1,145 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓之島] 借來莎麗的鏡子"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "莎麗的鏡子"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去找希娜。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在菇菇村見到了希娜，她正在擔心太陽會把她的皮膚給曬傷。所以希娜要從她姐姐莎麗那裡借來鏡子。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "受到希娜的請求，要去找莎麗借鏡子。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "20"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "1001"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "是位新的旅行者吧？還很陌生吧？我會告訴你一些，好好聽著，跟我一起做。首先，如果想跟我們說話的話請用滑鼠#b雙擊#k我們。按下#b左、右方向鍵#k可以移動，按下#bAlt鍵#k就可以跳躍。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "和方向鍵一同按下的話可以對角線跳躍。回頭練習一下吧。想要到達目的地，有時候還需要用到繩索或梯子。按下#r方向鍵↑#k的話可以從繩索或梯子上去。這些都很重要，請好好記住。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "啊~太陽曬的好厲害哦。我這白玉般的皮膚都要壞掉了...有件事情想要拜託您，可以嗎...?請去找離這裡不遠處正在曬衣服的#r#p2100#姐姐#k借來#b鏡子#k吧。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝。#r#p2100#姐姐#k應該在東部小山正努力曬衣服呢...#i4031003#是這樣的鏡子。\\n\\n...哦對了！如果想知道剛剛接到的#b任務#k內容，可按下鍵盤的#b快捷鍵Q#k進行確認。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不想接受我的請求嗎？唔~如果改變心意的再來找我吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有去見#r#p2100#姐姐#k嗎？應該就在東部小山那裏啊...離這裡很近，應該很容易找到的。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2100"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2101"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "200703220100"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "200703220300"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "200703220100"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "200703220300"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "0"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "growth"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "stat"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "[能力] 慢工出細活"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "名聲值累積消耗10,000,000"
+    },
+    "parentId": {
+      "_dirType": "int",
+      "_value": "108"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "rare"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "20"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "uiForm": {
+        "_dirType": "string",
+        "_value": "basic"
+      },
+      "gauge": {
+        "_dirType": "string",
+        "_value": "submission_info"
+      },
+      "gaugeMissionIndex": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "gaugeSubMission": {
+        "_dirType": "string",
+        "_value": "ability_change"
+      }
+    },
+    "prior": {
+      "_dirType": "sub",
+      "condition": {
+        "_dirType": "string",
+        "_value": "or"
+      },
+      "values": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "achievement_id": {
+            "_dirType": "int",
+            "_value": "105"
+          },
+          "achievement_state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "名聲值累積消耗10,000,000"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "ability_change": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "int",
+              "_value": "10000000"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            },
+            "type": {
+              "_dirType": "string",
+              "_value": "sum"
+            },
+            "setValue": {
+              "_dirType": "string",
+              "_value": "honor_exp_dec"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[Kanna] Honnou-ji Infiltration 1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "58"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "Plan out the Honnou-ji infiltration with Shingen."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "You should climb the eastern Honnou-ji wall then sneak in through the eastern temple wing. Kanetsugu will keep you company. Get to the eastern Honnou-ji walls by heading north from Momijigahara then rendezvous with Kanetsugu."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "You met up with Kanetsugu at the eastern Honnou-ji wall. This wall is all that separates you from the princess!"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\\n#fUI/UIWindow2.img/QuestIcon/8/0# 15,927\\nCan proceed to the Honnou-ji Infiltration 2 quest"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[Required]"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "15927"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9130000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "57435"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q57436s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "28"
+      },
+      "job": {
+        "_dirType": "sub"
+      },
+      "job_SG": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "4200"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "4210"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "4211"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "4212"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "4002"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "4213"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "4214"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9130093"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q57436e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "15927"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "Hello, Kanna. My hair warned me of your approach."
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b#p9130093##k is already at the eastern Honnou-ji walls. Honnou-ji is to the north of Momijigara 2. Unfortunately,  my hair can't teleport you right now. The dry air here seems to have sapped some of its power, so you're stuck walking. My apologies."
+          }
+        }
+      }
+    }
+  }
+}

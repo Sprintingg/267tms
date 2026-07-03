@@ -1,0 +1,123 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "增加聲望值！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "這次#b領袖阿爾#k出的課題是#r聲望值達到1,000#k！這不是個簡單的目標。領袖阿爾說若沒有領路人，或是不仔細照顧跟隨者絕對無法達到這個數值。領袖阿爾給的提示是協助跟隨者取得經驗值，並且幫助他們升級。經驗值…升級…該如何給予幫助呢？\\n\\n#r領路人達到1,000#k\\n(開啟家族視窗確認聲望值)"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "聲望值終於達到1,000了！…真心感謝奮發向上的跟隨者。"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "傳授領袖阿爾的知識"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "disableAtCompleteTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "disableAtStartTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "disableAtPerformTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "disableAtNPC": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你這麼積極的行動，對家族活動也有很大的幫助！你不要失去這樣的信念，多關心跟隨者，這樣你的名聲傳遍楓之谷的那一天就不遠了。你要執行下一個課題嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我要給你的下一個課題是#r聲望值達到1,000#k。這不是件簡單的事。給你一個提示，給予跟隨者所有幫助，幫助他們成長。要是成功了，你相信會變成比我更好的領路人。只要達成目標就來告訴我。不曉得你有沒有忘記，聲望值可開啟#r家族視窗[快捷鍵:F]#k後確認。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "是啊…一般人都會像你一樣猶豫不絕。這是正常反應，不要失去自信。算了…我的家族不會收留你的。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002103"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2232"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q2233e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  }
+}

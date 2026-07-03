@@ -1,0 +1,178 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[專門技術] 情報商人的委託I"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b維多利亞港#k的#b情報商人特魯#k好像有話要說…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "特魯說情報商人的工作太危險了，最好還是要備一些武器。之前見過使用鐵戟的人，那個看起來蠻強的。特魯拜託我幫他尋找個鐵戟。最好是有名的匠人製作的…\r\n\r\n#i1442003##t1442003#  #b#c1442003# / 1#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "給特魯拿回了鐵戟。但是太重了，不知道能不能使用…"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1300"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002104"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "35"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002104"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1442003"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1300"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1442003"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "有什麼需要的情報嗎？還是…啊，難道是來幫助我的？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "要求很簡單，找來一個武器就可以。不是讓你找像逆轉武器之類的東西，請放心。因為想找的是為我的護身而使用的適當的武器。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "獲取情報的事情本來有點微妙…會有很多危險的瞬間。不久前還經歷了危險，所以想弄一個武器練一下。覺得自己的身體要自己守護。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "需要的武器是#b斧戟#k。矛這東西看起來不錯…吼。不用是最好的，但可以的話想要個自己製作的。不能自己製作買來裝備製作者的也可以。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "恩…奇怪。難道我的情報有誤…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哦，找到斧戟了。看一下…哇塞！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "呵…這個比看起來更重。之前看到有些人輕巧的使用…嘿咻！能，能揮動嗎？不管怎樣，感謝你。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒找到#b斧戟#k…吼。啥，不好找從商人那裡買來也不錯。"
+          }
+        }
+      }
+    }
+  }
+}

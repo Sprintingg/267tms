@@ -1,0 +1,182 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[星星力量] 變異的血腥哈維"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "41"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "墜落在米納爾森林的流星讓 #p2081003#相當煩惱，聽聽看他有什麼煩惱吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2081003#說自己因為大聲喧鬧的 #o8140003# 而無法入睡，為了無法入睡的 #p2081003#消滅變異的#o8140003#吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "因為流星而變異的#o8140003#一直大聲喧鬧，為了無法入睡的 #p2081003#消滅了#o8140003#，希望他能夠睡得好了…… \r\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o8140003# #a38771#\r\n"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "#m240010600#\r\n#m240010520#\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "189230"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2081003"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3875"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2081003"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8140003"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "189230"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嗯嗯，吵死了！我根本沒辦法睡覺！你也聽見了吧？那是 #r#o8140003##k的哭聲，聲音吵到讓我的頭都震動起來了，為了照顧蛋，體力很重要，這樣下去我會先倒下的，所以請你幫幫我！ \\r\\n"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "看來星星的力量也有讓聲音增強的效果，在我倒下之前，請去解決#r#o8140003##k。從聲音聽起來，至少得狩獵 #b50隻#k，那一切拜託了。 \\r\\n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "有看見我眼睛底下的黑眼圈嗎？明天大概就會延伸到膝蓋吧。 \\r\\n"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#o8140003#全都解決了嗎？聲音好像變小了。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "終於能好好睡一覺了，那我現在要睡了，你也辛苦了，謝……謝….Zzz"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "看來 #r#o8140003##k們似乎在合唱，至少要狩獵 #b50隻#k才能讓我好好睡一覺。"
+          }
+        }
+      }
+    }
+  }
+}

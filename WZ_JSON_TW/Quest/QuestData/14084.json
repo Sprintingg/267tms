@@ -1,0 +1,225 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[RED]噗通噗通在哪裡!"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "開始尋找寶箱的旅程吧."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "很稀有的露出原本樣子的#e#b寶箱!#k#n聽說標示不會常看到的傳說中的寶箱位置的寶物地圖藏在礦石和藥草長出來的隙縫裡.採取礦石和藥草後收集#e#b#t3994856#20個#k#n後拿給尤莉亞吧."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "很稀有的露出原本樣子的#e#b寶箱!#k#n聽說標示不會常看到的傳說中的寶箱位置的寶物地圖藏在礦石和藥草長出來的隙縫裡.採取礦石和藥草後收集#e#b#t3994856#20個#k#n後拿給尤莉亞時,他解釋寶物地圖後告知他在的位置.\\r\\n趕快!30分內不到達的話,有可能被誰偷走的!"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i3994856:##t3994856:##c3994856#/20\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#Wselect#\r\n#i2028237:# #t2028237:# 1 個\r\n#i2028222:# #t2028222:# 1 個\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201401010000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201401010000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q14084e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994856"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994856"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2028237"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "prop": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2028222"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "prop": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#b#h0##k!有聽說了嗎?\\n最近楓之谷世界出現不知名的寶箱!寶箱裡有世界的珍貴寶物?我們要不要來去找寶箱的冒險呢?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "挖礦石和藥草的話,夾縫會有標示寶箱位置的#b#e寶物地圖#k#n.寶物地圖全部分為#b#e20片#k#n,你把寶物地圖20個取來的話,我解讀地圖,告訴你寶箱的位置.如何?公平吧?那麼趕快!快點!收集寶物地圖!\\r\\n#i3994856##t3994856#20個"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "竟然是害怕冒險的#e無聊傢伙#n...對你真失望."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "挖礦石和藥草的話,夾縫會有標示寶箱位置的#b#e寶物地圖#k#n.寶物地圖全部分為#b#e20片#k#n,你把寶物地圖20個取來的話,我解讀地圖,告訴你寶箱的位置.如何?公平吧?那麼趕快!快點!收集寶物地圖!\\r\\n#i3994856##t3994856#20個"
+          }
+        }
+      }
+    }
+  }
+}

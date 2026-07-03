@@ -1,0 +1,195 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[生命的搖籃卡爾西溫] 卡爾西溫公共事業 2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "252"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "盧帕莫說為了修復由凱伊拉的力量形成的結界，需要與凱伊拉的力量同樣程度的力量。 為了修復結界，聽聽詳細的內容吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在通往永恆之樹的#b四個地方的關口#k必須使用結界石。 盧帕莫說如果我接觸結界石，世界的心臟自然會喚醒結界石…？\\r\\n#fNpc/3006481.img/info/default#"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "使用所有卡爾西溫的結界石。 盧帕莫說要給什麼謝禮…"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#使用第一個結界石(#R38718Exclear0Ref38718#)\r\n#questorder2#使用第二個結界石(#R38718Exclear1Ref38718#)\r\n#questorder3#使用第三個結界石(#R38718Exclear2Ref38718#)\r\n#questorder4#使用第四個結界石(#R38718Exclear3Ref38718#)\r\n"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q38718x"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3006555"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q38718s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "285"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "38717"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3006555"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q38718e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "38718"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "c0"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "使用第一個結界石"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "clear0"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "c1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "使用第二個結界石"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "clear1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "c2"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "使用第三個結界石"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "clear2"
+          }
+        },
+        "3": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "4"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "c3"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "使用第四個結界石"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "clear3"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "嗯？結界石還在嗎？"
+          }
+        }
+      }
+    }
+  }
+}

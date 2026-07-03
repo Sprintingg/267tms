@@ -1,0 +1,194 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[玫瑰庭園]被監禁的靈魂們"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#解放靈魂#R31041ExcountRef31041#/5\\r\\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "玫瑰庭園的賽西莉亞想要拜託下一個委託."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "只要消滅鑰匙看守者魯索,就能取得#b魯索的鑰匙#k,帶著鑰匙點擊#b被監禁的靈魂#k就能夠解放靈魂.收集#b被解放的靈魂結晶#k五個,然後回去找賽西莉亞吧."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "依照賽西莉亞的委託,解放了被監禁的靈魂."
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "221"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "546584"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2162000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "115"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31040"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2162000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "31041"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "5"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "靈魂解放"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "count"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "546584"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你知道最可憐的是誰嗎?是被捲入戰爭砲火中的孩子們啊.此處原本充滿孩子們的歡笑...除了伊菲亞以外,當時哀痛的回憶也在這城裡所有居民的心中留下陰影."
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "在這層意義上,接下來想拜託你解放至今仍在玫瑰庭園徘徊的#b孩子們的靈魂#k."
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "消滅#b鑰匙守護者魯索#k就能取得魯索的鑰匙,帶著它點擊#b被監禁的靈魂#k就能解放靈魂.拾取5個#b解放的靈魂結晶#k,任務就完成了.怎樣,不難吧?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那這次也拜託你五次囉.\\r\\n#b(前往靈魂被束縛之處.帶著魯索的鑰匙點擊靈魂就能取得解放的靈魂結晶.)#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "都到這個地步了還要放棄嗎?又不是什麼難事..."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "解放孩子們的靈魂了嗎?"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝.這樣孩子們應該稍微舒服一點了吧?"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "消滅鑰匙守護者魯索就能取得魯索的鑰匙,帶著它點擊被監禁的靈魂即可解放.拾取5個解放的靈魂結晶,任務就完成了.怎樣,不難吧?"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[十字獵人] 前往時間的神殿"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "264"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "為了要前往時間神殿，必須要變身為龍飛在天空上才行。根據#p2144006#所說的，在過去的神木村某處，一定還存在有像#p2082003#一樣，能夠讓人變身為龍的矮人族的…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "長得像#p2082003#的矮人族#b#p2144009##k在聽過委託內容之後，表示願意幫你變身為龍。為了獲得他的協助，首先要先消滅周遭的怪物。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "現在前往時間神殿的準備都結束了。為阻止阿卡伊農的陰謀，前往時間神殿吧。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o8220018# #a311771#\r\n#questorder1##o8220017# #a311772#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "可進行「[十字獵人] 陰謀的真相」任務\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "140"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "149"
+      }
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "16"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "18548393"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2144009"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "140"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31175"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q31177s"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2144009"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8220018"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8220017"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "18548393"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "咻。 現在終於鎮定下來了。 你來這裡有什麼事情嗎？\\r\\n#L0##b(這樣看你，和#p2082003#還真像。 該不會達米是克隆的…?)#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "現在你感到很驚訝嗎？ 為什麼不回答？\\r\\n#L0##b啊，對不起。我有事要前往時間神殿，只要讓我變身為龍就可以了。#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "什麼？ 時間神殿？ 你瘋了嗎？那裡現在受到黑魔法師的影響變成非常危險的地方。隨便靠近可能連骨頭都挑不出來。\\r\\n#L0##b就算那樣還是得去。 因為有一定要前往那裡的事情。#l\\n#k"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "…好。 如果真是這樣，那也沒辦法了。 不過我也有一個條件。 請你協助我能夠安全地逃離這裡，替我消滅這附近的怪物。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不要說那麼多了，只要幫我抓#b#o8220018# 30隻#k和#b#o8220017# 30隻#k就行了。既然你可以找到這裡來，相信這事情不會花你太久時間的。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果你不願意的話，那我也不會幫你的。 反正這附近矮人族就我自己一個人而已。 哼。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "請透過這個讓我能夠安全地離開這裡。 謝謝你。 你的實力比我想像的還要好呢！？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果再次與我對話的話，我就替你變身為龍。 嘻嘻。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還有很多怪物啊！如果你沒有替我抓到我要求的數量的話，那我也不會幫助你的！"
+          }
+        }
+      }
+    }
+  }
+}

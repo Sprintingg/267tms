@@ -1,0 +1,169 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[阿斯旺反抗戰]補給模式"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "43"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "向清隆聽取有關阿斯旺反抗戰的故事。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "參加阿斯旺反抗戰補給模式取得阿斯旺的補給箱。\\n\\n#i4033160##t4033160##b#c4033160#/100"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "完成補給模式。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033160"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-100"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "歡迎你來當我們的補給士兵。如果你覺得阿斯旺的激烈戰鬥讓你感到害怕，那麼當作補給士兵來協助我們，也沒有關係。這裡是比較沒有那麼危險的地方…當然，相對的可以獲得的報酬就比較少了。不過，性命不管對誰來說，都是最重要的，不是嗎？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "請你去替我找來希拉士兵們所持有的#b補給箱子100個#k。這可以讓我們獲得補給，同時也截斷敵人的補給…這是件非常重要的事情。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果想要看到更激烈的戰爭，那個應該也不錯。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你還沒找到補給箱子啊…"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2183002"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "3974"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "possible"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "fieldEnter": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "262023000"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2183002"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q3973e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033160"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

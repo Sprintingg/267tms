@@ -1,0 +1,146 @@
+{
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "alert9"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "socketName": {
+              "_dirType": "string",
+              "_value": "None"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_PlaySound"
+          },
+          "SoundPath": {
+            "_dirType": "string",
+            "_value": "Sound/Redmoon.img/Skill/121/Use"
+          }
+        }
+      },
+      "selfBuff": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "AreaBuff"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "10"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -320,
+          "_y": -220
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 0,
+          "_y": 80
+        }
+      },
+      "targetBuffID": {
+        "_dirType": "int",
+        "_value": "120"
+      },
+      "targetingType": {
+        "_dirType": "string",
+        "_value": "Hostile"
+      }
+    },
+    "selfBuff": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "SelfBuff"
+      },
+      "selfBuffAction": {
+        "_dirType": "string",
+        "_value": "Apply"
+      },
+      "selfBuffID": {
+        "_dirType": "int",
+        "_value": "124"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "cooltime": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "Tags": {
+      "_dirType": "sub",
+      "cannotDestroy": {
+        "_dirType": "sub"
+      },
+      "interruptable": {
+        "_dirType": "sub"
+      }
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -320,
+      "_y": -220
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 0,
+      "_y": 80
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "10"
+    }
+  },
+  "SkillTags": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "string",
+      "_value": "RLGame.Skill.Basic"
+    }
+  }
+}

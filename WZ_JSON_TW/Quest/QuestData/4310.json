@@ -1,0 +1,253 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[櫻花城] 太公的委託：漂流而來的物品"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "18"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "在水之路悠閒釣魚的 #e#p2060002##n說自己撿到一本順著海流漂來的書。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在水之路悠閒釣魚的 #e#p2060002##n撿到一本順著海流漂來的書，因為實在看不懂書上的文字，而且對自己毫無用處，於是他便交給赫爾奧斯塔圖書館的 #b#e圖書館員懷茲#k#n。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在水之路悠閒釣魚的#e#p2060002##n撿到一本順著海流的書，因為實在看不懂書上的文字，而且對自己毫無用處，於是他便交給赫爾奧斯塔圖書館的 #b#e圖書館員懷茲#k#n。聽到消息而來的圖書館員懷茲說那似乎是遙遠的島國文字，然後仔細地看了書中的內容。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4033291:# #t4033291:# #c4033291# / 1\n"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 20,000\r\n可進行 '島國的故事' 任務\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "20000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2060002"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "70"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201212190000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201212190000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2040052"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033291"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033291"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "resignRemove": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "20000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033291"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "喂~我有事情要拜託你。可以挪出一點時間嗎？我是一個喜歡悠閒釣魚的人，但是剛才卻釣到一個奇怪的東西。好像是一本書的樣子… 上面寫著生平第一次看到的文字，我根本看不懂，\\n我知道有人能夠解決這種事情，可以替我將書轉交給他嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "真是親切的年輕人。既然如此，請將這本書交給 #b赫爾奧斯塔圖書館的 #e圖書管理員懷茲#k#n。一輩子都和書身影不離的他說不定會知道這個來路不明的文字。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "唉，要拜託別人… 獨角尼莫群很快就會冒出水面了，所以我沒辦法抽身。因為這是能夠釣到大魚的好機會。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "太公釣到的 #e陌生書#k是不是在你身上呢？啊，我忘記自我介紹了。我是在赫爾奧斯塔圖書館管理書籍的 #e圖書管理員懷茲#n。\\n太公說他撿到一本寫有未知文字的書，於是我便拋下手邊的工作專程去找他，結果他說已經拜託一名年輕人將書帶來給我了，\\r\\n#L0##b嗯。我就是那個人！我本來想去找你，沒想到會這樣碰面。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "呼~幸虧我們有遇到。因為我實在太想知道那是什麼書，所以便親自來了。你拿的那本就是太公的書嗎？我想要更詳細地瀏覽。可以交給我嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "噢噢~這確實是島國的文字。我曾經在古文獻中看過。這本書有研究的價值。真想知道到底寫了些什麼，好奇心甚至讓我焦躁起來了。我要回去圖書館仔細調查這本書了。能夠遇見你，真的很高興。下次再會。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "將我給的書交給 #b赫爾奧斯塔圖書館的 #e圖書管理員懷茲#k#n。一輩子都和書身影不離的他說不定會知道這個來路不明的文字。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "太公說有東西拜託你轉交，東西在哪裡呢？"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "將我給的書交給 #b赫爾奧斯塔圖書館的 #e圖書管理員懷茲#k#n。一輩子都和書身影不離的他說不定會知道這個來路不明的文字。"
+        }
+      }
+    }
+  }
+}

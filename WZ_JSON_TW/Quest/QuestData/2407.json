@@ -1,0 +1,275 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓之谷世界的冒險家] 遺失的表揚狀"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽說王年海遺失了表彰狀。去修煉場幫幫忙吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "一定是被修煉場裡的怪物拿走了。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "找出表彰狀，並交給王年海。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4032377:##t4032377:##c4032377#/1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "77"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "225"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012118"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "20"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2403"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "300"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "310"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "320"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "311"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "321"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "312"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "322"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012118"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032377"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "225"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032377"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "啊！！沒了！！沒了！！我的表彰狀沒了！去哪裡了？\\r\\n#b#L0#那個…修煉什麼時候？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "修煉？現在那個重要嗎！啊…不對。好！新手冒險家！第一個修煉！打倒這裡的怪物找回我的表彰狀！\\r\\n#b#L0#呃？？？那是第一次修煉？#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "是…是啊！！怎麼不願意嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好！那麼打倒這裡的怪物找回表彰狀！我呢繼續在這裡找！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "啊！！別在這裡妨礙我，讓開！！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "找到了嗎？哦~好！第一次修煉做得好\\r\\n#b#L0#怎麼像個急躁的修煉啊…#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "什麼話！看！這表彰狀…等一下，好像有什麼東西黏在表彰狀上？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "得給你看乾淨的表彰狀！！在這附近打倒怪物們吧。我先把這個斑點擦擦！擦完了開始修煉！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "喂，找到了沒？不要從第一次修煉開始耍要領！！"
+          }
+        }
+      }
+    }
+  }
+}

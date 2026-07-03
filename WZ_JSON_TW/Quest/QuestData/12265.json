@@ -1,0 +1,184 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[3！3！3！活動] 消滅怪物300隻"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o9101025# #a122651#\n"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "從3月22日開始到4月4日為止#b[3！3！3！活動] 進行消滅怪物300隻任務的#k活動。去聽聽正在進行活動的GM說明吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "從3月22日開始到4月4日為止#b[3！3！3！活動] 進行消滅怪物300隻任務的#k活動。去聽聽正在進行活動的GM說明吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "從3月22日開始到4月4日為止#b[3！3！3！活動] 進行消滅怪物300隻任務的#k活動。去聽聽正在進行活動的GM說明吧。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2430695"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201204050000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201204050000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "10"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q12265e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9101025"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "300"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好 #b#h0##k ！幸運的3！3！3！你感覺活動還有趣嗎？  這次 3！3！3！活動當中有一個可以領取 #r特別禮物#k的活動你願意去參加嗎？ "
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "特別的活動就是#b消滅怪物300隻#k任務。\n\n任務方法是#r消滅300隻怪物就完成！#k\n\n很簡單吧？ "
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "不過，倘若獵捕等級比 #b#h0##k低 #r11以上或高21以上的怪物#k也是不被認可的，所以請事先確認怪物的等級。\n \n#b完成300隻任務3次#k時可以追加獲得#r特殊獎勵#k，所以不要忘了一定的成功！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這是可以領取特別禮物的絕佳機會…\n如果想法有變更的話再來找我吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "看來似乎還未能將300隻怪物全都清除掉？"
+          }
+        }
+      }
+    }
+  }
+}

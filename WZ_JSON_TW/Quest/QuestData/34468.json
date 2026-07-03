@@ -1,0 +1,207 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[阿爾卡娜]恢復樹藤豎琴2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "277"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4036100:# #t4036100:# #c4036100# / 50\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "光靠#t4036099:#似乎有些不夠，需要其他更強烈的聲音。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "決定利用#r#o8644006##k製作的#b#i4036100:##t4036100:##k來改變樹木生長的方向。只要#r50個#k應該就夠了。\r\n\r\n如果材料都收集好了，就回到在#b#m940200216##k的#r小精靈#k身邊吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "已使用#t4036100:#改變樹木生長的方向，很快地藤條豎琴也會重回原本的樣貌吧！"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "8"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "225"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "23050188"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "225"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003325"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34467"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q34468s"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003325"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q34468e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036100"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "23050188"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036100"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "標準"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "如果就連致命性的慘叫都不足以……哼，那麼，就得收集炸裂精靈的悲鳴聲囉！"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "可以幫我收集，#r#o8644006##k製作出的#b#i4036100:# #t4036100:##k嗎？想說#r50個#k 應該就夠了。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "只要是具有爆發性的慘叫一定可以改變方向的！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "恩阿，突然感到害怕了嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "可以幫我收集，#r#o8644006##k製作出的#b#i4036100:# #t4036100:##k嗎？想說#r50個#k 應該就夠了。"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[獅子王城] 哭泣的王妃"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "獅子王城，第五座塔。聽到某處傳來女子的哭聲。難道這是幽靈？回應一下哭聲吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "因無法傳達自己的聲音而傷心的女子，#p2161001#。她的身分是什麼呢？她想說話的對象是誰呢？前往#b第五座塔樓#k去#p2161001#看看吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "正在哭泣的美麗女幽靈，#p2161001#自我介紹是獅子王的夫人。就是這座成的王妃…怎麼她也不在獅子王的身邊呢。到底這獅子王是怎麼一個人呢？"
+    },
+    "autoStart": {
+      "_dirType": "string",
+      "_value": "1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "260"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "120"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "124"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "682200"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2161001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "115"
+      },
+      "fieldEnter": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "211060900"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "211061000"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "211061001"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2161001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "682200"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嗯…為什麼沒有回答呢。他以前不是這樣…難道是他聽不到我的聲音嗎？還是說變成幽靈的我對他已失去意義了嗎？嗚…請幫助我。拜託請把…我的聲音轉告他。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "啊！這，真的是有人回答我。數百年來不曾有人進入這座城…請問你是冒險家嗎 ？如果你願意幫我，就請到我這裡來。這裡是 #b第五座塔，塔樓#k。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "是我幻聽嗎…？寂靜數百年的城裡怎麼可能聽到人類的聲音呢…嗚…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "你，你來了！ 真的… 活生生的人… 沒錯吧？對不起。數百年來我都在這座城內自言自語。可以和別人對話這件事讓我太吃驚了。\\r\\n#L0##b是 #p2161002#提到的 #p2161001#嗎？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "啊… 真抱歉。我太晚才自我介紹了！ 我的名字叫 #p2161001#… 這座城的主人，凡雷恩#p2161000#的妻子 #p2161001#。如果他還記得我的話，會叫我王妃吧… 如果還記得的話！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "要不要跟我一起聊天？我在 #r#m211061001##k。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

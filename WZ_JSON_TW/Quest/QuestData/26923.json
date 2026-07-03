@@ -1,0 +1,161 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[로얄스타일] 내가 바로 명품 조련사!"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "나의 It Item, 방울을 알아본 건가? \r\n레이디 블레어가 조련사 콘테스트에 관해 얘기해준다. \r\n콘테스트에서 우승하면 #i3015089# #t3015089#를 받을 수 있다니 구미가 당기는군!!\r\n#r(※주의! 해당 이벤트는 월드 당 1회 수행 가능한 퀘스트로, 수락 이후 진행 도중 포기 시 재 시작을 할 수 없습니다.)#k\r\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "조련사 콘테스트에 참가하기 위해선 #b꼬마 조련사 세트#k를 모두 갖추어야 한다. \r\n\r\n#e[꼬마 조련사 세트]\r\n\\n#e[모자]#n#i1004468#  #t1004468#\\r\\n#e[한벌옷]#n#i1050362#  #t1050362#(남)#i1051432#  #t1051432#(여)\\r\\n#e[망토]#n#i1102816#   #t1102816#\\r\\n#e[신발]#n#i1073050#  #t1073050#\\r\\n#e[무기]#n#i1702574# #t1702574#\r\n\t\r\n#r(※주의! 해당 이벤트는 월드 당 1회 수행 가능한 퀘스트로, 수락 이후 진행 도중 포기 시 재 시작을 할 수 없습니다.)#k\r\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "조련사 콘테스트에 참가하여 명품 조련사로 선정 되었다.\r\n동물들의 재주도 보고, 편히 쉴 수 있는 #i3015089# #t3015089#도 받았으니\r\n다음 기회에도 꼭 참여해야지!\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "3|0"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000216"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "18463"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q26923s"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201502180000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201503090000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201502020000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201502130000"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "0"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "state"
+          }
+        }
+      },
+      "equipSelectNeed": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "1004468"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "1051432"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "1050362"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "1073050"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "1102816"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "1702574"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000216"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q26923e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "아직 꼬마 조련사 세트를 모두 입지 않으셨네요.\\r\\n다시 한 번 확인해 주시겠어요?\\r\\n\\r\\n#e[모자]#n#i1004468#  #t1004468#\\r\\n#e[한벌옷]#n#i1050362#  #t1050362#(남)#i1051432#  #t1051432#(여)\\r\\n#e[망토]#n#i1102816#   #t1102816#\\r\\n#e[신발]#n#i1073050#  #t1073050#\\r\\n#e[무기]#n#i1702574# #t1702574#"
+          }
+        }
+      }
+    }
+  }
+}

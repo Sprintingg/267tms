@@ -1,0 +1,152 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[過去的英雄，狂狼勇士] 英雄的歸來"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "6"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "這裡是哪裡？…我是誰？\\r\\n\\r\\n什麼也想不起來。能夠認出連自己名字都想不起的我的人，只有在洞穴裡遇到的少女#p1201000#。雖然不知道到底發生了什麼事情，但只要跟著去村子裡就能得到解釋，那就先跟著#p1201000#去村子裡吧。\\r\\n\\r\\n可是，那個是…企鵝？去跟#b#p1202001##k對話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1202001#很興奮地說見到英雄非常高興。什麼英雄…我是英雄？#p1201000#也說過，看來我可能就是一個英雄吧。不過還是什麼都想不起來…\\r\\n\\r\\n先吃了#p1202001#給的藥水恢復體力吧。#b點擊I鍵打開物品欄後，在消耗欄裡雙擊藥水就可以了#k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "喝了藥水後體力恢復到一定程度了。雖然還沒搞清楚狀況，可是看到親切的人們，對我應該沒有惡意。就這樣回到村子裡應該不會有什麼問題…"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n可進行 '消失的武器' 任務\r\n"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1202001"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q21010s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "21001"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2000"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1202001"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q21010e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2000022"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "不要客氣，多喝點藥水吧！雖然不是什麼好東西，但是對生命恢復會有點效果的。"
+          }
+        }
+      }
+    }
+  }
+}

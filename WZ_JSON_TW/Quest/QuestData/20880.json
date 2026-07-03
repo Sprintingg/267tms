@@ -1,0 +1,183 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "祕密任務"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[轉職]"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p1101002#似乎有新任務要交代..."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "前往#b#m222020000##k把古代之書拿到耶雷弗。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "圖書館員 懷玆曾經提到過藏書的地方。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1101002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "notInTeleportItemLimitedField": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20886"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "1110"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "1210"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "1310"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "1410"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "1510"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2040052"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "222020100"
+      },
+      "portalName": {
+        "_dirType": "string",
+        "_value": "in01"
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "有要託付給你的任務。要盡可能悄悄又迅速地完成。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "往#b#m222020000##k跟 圖書館員懷玆接收一本書.你說這是甚麼書? 你不需知道.這很緊急的關係請盡快行動喔.\\r\\n我把你送到圖書館入口."
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "什麼…雖然不知道你是因為什麼而那樣，但是這件事是非常重要的事。期待你有著像個騎士團員的判斷力。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "是皇家騎士團啊。看第一眼就知道了。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "最近雖然耳朵變得有點不好聽不太清楚，但我可是算有眼力的人。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請稍等一下。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請去找玩具城圖書館裡的圖書館員懷玆。"
+          }
+        }
+      }
+    }
+  }
+}

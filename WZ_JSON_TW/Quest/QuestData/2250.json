@@ -1,0 +1,201 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 殭屍菇菇的信號體系2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "NPC－記憶者說，關於刺菇菇的研究已經結束了，但由於模糊的信號，還是沒弄清變得粗暴的原因。並提議對殭屍菇菇的研究。\\r\\n\n#i4000008:##t4000008:##c4000008#/50\n"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "奇怪的菇菇"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "記憶者雖然結束了刺菇菇的相關研究，只憑模糊的訊號無法得知變狂暴的原因。"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 1,100\r\n可進行 '殭屍菇菇的信號體系3' 任務\r\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "協助殭屍菇菇研究"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1100"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1061011"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "24"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2249"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1061011"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000008"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1100"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000008"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "不過我說啊…這「嘰嘰」的聲音你確定嗎？我聽到的好像是不同的聲音…\\r\\n#b#L0#嗯…我不太擅長聽聲音……#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "所以我準備了東西，能夠裝入聲音的東西…不過還沒有完成…有沒有可以裝這個的東西。對了，裝在殭屍菇菇的符咒怎麼樣？如果能找來符咒50個，就給你製作能夠裝聲音的符咒！50個啊！"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "對不起，我好像太常使喚你了，我知道了。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我馬上做給你，等一下。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "不是那種聲音…"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,312 @@
+{
+  "AnimSet": {
+    "_dirType": "sub",
+    "appear": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      },
+      "Notifies": {
+        "_dirType": "sub",
+        "sound": {
+          "_dirType": "sub",
+          "Notify": {
+            "_dirType": "sub",
+            "!class": {
+              "_dirType": "string",
+              "_value": "WZ2AnimNotify_PlaySound"
+            },
+            "SoundPath": {
+              "_dirType": "string",
+              "_value": "Sound/Redmoon.img/Mob/9602103/regen"
+            }
+          }
+        }
+      }
+    },
+    "stand": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      }
+    },
+    "move": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      }
+    },
+    "hit": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      }
+    },
+    "die": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      },
+      "Notifies": {
+        "_dirType": "sub",
+        "sound": {
+          "_dirType": "sub",
+          "Notify": {
+            "_dirType": "sub",
+            "!class": {
+              "_dirType": "string",
+              "_value": "WZ2AnimNotify_PlaySound"
+            },
+            "SoundPath": {
+              "_dirType": "string",
+              "_value": "Sound/Redmoon.img/Mob/9602102/die"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Skills": {
+    "_dirType": "sub",
+    "attack": {
+      "_dirType": "sub",
+      "Anim": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub",
+              "z": {
+                "_dirType": "int",
+                "_value": "-1"
+              }
+            }
+          }
+        },
+        "Notifies": {
+          "_dirType": "sub",
+          "attack": {
+            "_dirType": "sub",
+            "TriggerTime": {
+              "_dirType": "int",
+              "_value": "450"
+            }
+          },
+          "sound": {
+            "_dirType": "sub",
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/Redmoon.img/Mob/9602103/attack"
+              }
+            }
+          }
+        }
+      },
+      "Events": {
+        "_dirType": "sub",
+        "attack": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "Attack"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "lt": {
+              "_dirType": "vector",
+              "_x": -84,
+              "_y": -79
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 76,
+              "_y": 81
+            },
+            "attackPower1Rate": {
+              "_dirType": "string",
+              "_value": "200"
+            },
+            "attackCount": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "mobCount": {
+              "_dirType": "int",
+              "_value": "3"
+            }
+          },
+          "hit": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "sub",
+              "z": {
+                "_dirType": "int",
+                "_value": "2"
+              }
+            }
+          }
+        }
+      },
+      "common": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": -55,
+          "_y": -48
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 57,
+          "_y": 51
+        },
+        "cooltime": {
+          "_dirType": "string",
+          "_value": "2"
+        }
+      }
+    }
+  },
+  "Info": {
+    "_dirType": "sub",
+    "Chase": {
+      "_dirType": "sub",
+      "SearchRect": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": -3000,
+          "_y": -3000
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 3000,
+          "_y": 3000
+        }
+      },
+      "distanceX": {
+        "_dirType": "int",
+        "_value": "30"
+      }
+    },
+    "Patrol": {
+      "_dirType": "sub",
+      "PatrolRect": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": -260,
+          "_y": -200
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 260,
+          "_y": 180
+        }
+      }
+    },
+    "reward": {
+      "_dirType": "string",
+      "_value": "mob_normal_redmoon"
+    },
+    "fly": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "constants": {
+      "_dirType": "sub",
+      "maxHP": {
+        "_dirType": "long",
+        "_value": "20"
+      },
+      "speed": {
+        "_dirType": "long",
+        "_value": "400"
+      },
+      "attackPower1": {
+        "_dirType": "long",
+        "_value": "20"
+      },
+      "flyAcc": {
+        "_dirType": "string",
+        "_value": "0.3"
+      },
+      "flySpeed": {
+        "_dirType": "string",
+        "_value": "1"
+      }
+    },
+    "DurationPolicy": {
+      "_dirType": "string",
+      "_value": "Instant"
+    }
+  },
+  "Tags": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "string",
+      "_value": "RLGame.Mob.Small"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "RLGame.Mob.Flying"
+    }
+  }
+}

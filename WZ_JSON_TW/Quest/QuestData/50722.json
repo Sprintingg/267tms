@@ -1,0 +1,190 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[神木村] 飛向天空！"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "飛天騎寵"
+    },
+    "area": {
+      "_dirType": "string",
+      "_value": "41"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b天空的渡口#k的 #b尤莉亞#k知道騎乘怪物的方法。\\n如果和她見面的話，我不就也能知道怎麼做嗎？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了向尤莉亞 學習#b飛天騎寵#k技能，需要#b古代龍的翅膀鱗片#k。\\n#b古代龍的翅膀鱗片#k要從 #b弓箭手村#k的 #b歐思特#k裡才能獲得的樣子。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "習得飛天騎寵的技能。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032969"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "有怪物騎乘技能的話，就可以知道騎乘怪物的方法。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "但你知道在騎乘的怪物裡，有可以飛翔的怪物這件事嗎？"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "如果想要騎乘怪物並飛向天空的話，騎乘者必須知道飛行技術才行。\\n這飛行技術也被稱為騎乘技能。"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "如果有古代龍鱗片的話，你也可以習得騎乘技能。\\n覺得如何呢？要不要試試看啊？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "有興趣了嗎？那麼請帶來古代龍鱗片。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "古代龍鱗片被可以從在弓箭手村歐思特那邊獲得。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "真的嗎？我以為你全部都想學習呢？！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "準備了古代龍鱗片嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "來，閉上眼睛。你已經騎怪物後，一起按下箭頭向上的方向鍵和跳躍鍵後，\\n就可以騎乘怪物往天空飛去。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "來，你已經學會了騎乘技能。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "飛天騎乘技能有限制怪物，像紅龍、神鳥都是屬於可以騎乘的怪物類。"
+        },
+        "3": {
+          "_dirType": "string",
+          "_value": "還有每隻怪物有固定的飛行時間，另外請不要忘記，飛行中一定要不時地按下跳躍鍵來維持飛行。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "沒有古代龍的鱗片呢，\\n請向在弓箭手村的歐思特索取吧。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q50722e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032969"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

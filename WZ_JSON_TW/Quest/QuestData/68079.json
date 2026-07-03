@@ -1,0 +1,179 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[紅月之森] 請找回[紅月之森]遺失的日記本！"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "disableAtCompleteTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b--------微風村公告欄--------#k\r\n\r\n<公告文>\r\n在微風村發生的遺失物，\r\n請保管在公告欄下方。\r\n請趕快去找！\r\n\r\n#r※ 公告：\r\n可能會產生遺失物保管費用。\r\n\r\n#b-----------------------------------"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b--------微風村公告欄--------#k\r\n\r\n咦? 誰這麼不小心到處掉筆記本啊～\r\n不過這本看起來有點眼熟…\r\n雖然不知道是誰的，但\r\n我，德伊親切地幫你撿起來了！\r\n快來找吧！\r\n\r\n#r※ 公告：\r\n遺失物名稱：日記\r\n遺失物保管費用：100,000,000楓幣\r\n\r\n#b-----------------------------------"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#b--------微風村公告欄--------#k\r\n\r\n<公告文>\r\n在微風村莊發生的遺失物，\r\n都會保管在公告欄下方。\r\n\r\n如果發現遺失物，請一定要拿給我！\r\n說不定是主人焦急地在找的東西。\r\n\r\n#r※ 注意：\r\n可能會產生遺失物保管費用。\r\n\r\n#b-----------------------------------"
+    },
+    "demand": {
+      "_dirType": "sub",
+      "base": {
+        "_dirType": "string",
+        "_value": "#questorder1##fUI/UIWindow2.img/QuestIcon/7/0# 需要100,000,000"
+      },
+      "explain": {
+        "_dirType": "sub"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2639351"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9402054"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "68078"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2639351"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q68079s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "250"
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9402054"
+      },
+      "endmeso": {
+        "_dirType": "int",
+        "_value": "100000000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q68079e"
+      },
+      "failscript": {
+        "_dirType": "string",
+        "_value": "q68079f"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2639351"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  }
+}

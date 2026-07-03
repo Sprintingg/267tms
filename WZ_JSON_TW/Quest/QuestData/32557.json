@@ -1,0 +1,130 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[任務]要贏的話,要先了解敵人"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "81"
+    },
+    "disableAtStartTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "disableAtCompleteTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "需要針對侵攻克里提亞斯的希拉軍團的力量泉源進行研究.除了阿斯旺的幽靈以外,請擊退希拉軍團的士兵們,蒐集#t4033951#8個帶去吧."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4033951:##t4033951:##c4033951#/8\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "160"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2231002"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "32525"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "p"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2231002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q32557e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033951"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "8"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你好像還沒能完成任務喔.任務是從希拉軍團士兵（阿斯旺的幽靈除外）身上收集8個#t4033951#."
+          }
+        }
+      }
+    }
+  }
+}

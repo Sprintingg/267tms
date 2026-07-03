@@ -1,0 +1,82 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "growth"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "personality"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "[感性]今天的感性已提升至最高了"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "用一個角色獲得感性每日經驗值500以上"
+    },
+    "keyword": {
+      "_dirType": "string",
+      "_value": "今日的感性達成500"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "gauge": {
+        "_dirType": "string",
+        "_value": "submission_info"
+      },
+      "gaugeSubMission": {
+        "_dirType": "string",
+        "_value": "nc_stat_exp_up"
+      }
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "用一個角色獲得感性每日經驗值500以上"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "nc_stat_exp_up": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "long",
+              "_value": "500"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            },
+            "type": {
+              "_dirType": "string",
+              "_value": "set"
+            },
+            "setValue": {
+              "_dirType": "string",
+              "_value": "nc_stat_exp_today"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub",
+            "nc_stat_type": {
+              "_dirType": "string",
+              "_value": "sense"
+            }
+          }
+        }
+      }
+    }
+  }
+}

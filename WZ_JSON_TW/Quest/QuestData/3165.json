@@ -1,0 +1,252 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[獅子王城] 第一座塔的鑰匙"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "弟弟雖然救出了，然而為了幫助探險答應留在塔內的鎖匠#p2161003#。為了調查前往塔樓，需要#p2161003#的鑰匙。若想取得#t4032832#和#b#p2161003##k對話。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2161003#知道怎樣可以製作鑰匙，所以只請我們找製作鑰匙的材料。消滅#r#o8210000##k後找到#b#t4000625##k吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "得到#t4000625#的#p2161003#製作#t4032832#。用手藝好的鎖匠#p2161003#製作的鑰匙，開啟第一個塔樓進入擊退#o8840002#。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4000625:# #t4000625:# #c4000625# / 50\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "260"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "120"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "124"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "682200"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032832"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2161003"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3164"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3139"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2161003"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000625"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "682200"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000625"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "노멀"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032832"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "노멀"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "請問需要 #t4032832#嗎？那我幫你製作。嗯，這沒什麼大不了的。既然沒有像你這樣強大的力量，所以至少要會做這個吧。之前到處去找弟弟時，利用裝死已經知道是什麼鑰匙了。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "但是製作鑰匙需要有材料。當我試驗做各種鑰匙時，把所有材料都用完了。你去消滅#r#o8210000##k就可以得到適當的材料… 對你來說應該沒問題？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那就去取得#b#t4000625##k#b50個#k吧。我事先準備好鑰匙了，只要備妥材料就能立刻製作。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "咦？我也無法擊倒 #o8210000#？ 咦，怎麼會。不然你是怎麼來到這裡的？難道你也只會裝死？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "已經收集好了#t4000625#嗎？哈，果然。冒險家就是不一樣。那我就馬上做鑰匙了。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#t4032832#。如果你用丟了記得要回來，我會重新幫你製作。嗯…反正我沒什麼事做 。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒湊齊#b#t4000625#50個#k嗎？像你這麼強的冒險家也難以對付#r#o8210000##k嗎...嗯．．．"
+          }
+        }
+      }
+    }
+  }
+}

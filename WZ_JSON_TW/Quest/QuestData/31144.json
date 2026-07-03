@@ -1,0 +1,139 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[未來之門] 被孤立的村莊"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "47"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "長老阿勒斯說有事要拜託。去找阿勒斯吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "說受到西格諾斯攻擊與別的村莊斷了聯繫，拜託我去查看六條岔道，看看有沒有能和其他地區連接的路。 "
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "六條岔道已經被破壞了，沒有其他可以移動到另外一個村莊的方法了。別的區域會是什麼狀態呢？"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我有事情要拜託給你，來的正好，會幫忙吧？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你也知道由於西格諾斯的攻擊，目前無法與其他地區取得聯繫。因為怪物變得非常兇暴，很難接近六條岔道。由於我們不斷的努力，總算可以去那裡了。你去查看一下六條岔道的情況吧。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我需要你的幫助。等改變了主意隨時再來。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "六條岔道完全被破壞了。要找到和其他地區聯繫的方法。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "希望會有生存下來的人…我們要聚集力量。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2142001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "170"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31106"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2142001"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "31144"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "find"
+          }
+        }
+      }
+    }
+  }
+}

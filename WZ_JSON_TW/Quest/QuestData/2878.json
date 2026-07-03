@@ -1,0 +1,174 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 查看沼澤小屋"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "後街吉姆說有委託的事情。 去找一下他吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "要替後街吉姆去一趟沼地小屋，確認一下弄倒的垃圾桶裡面。\n沼地小屋在 #m103030100#。\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把沼地小屋突然出現怪物的事情告訴了吉姆。 吉姆的表情變得很嚴肅。 到底是什麼事情呢？"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "18864"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "45"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2873"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052002"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "2878"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "check"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "18864"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "前往#m103030100#的沼地小屋，把藏在倒下的垃圾桶裡的文件拿給我。 這件事原本應該是我親自去處理，但因為有些事情，所以才拜託你去。 願意接受嗎？ "
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這是必須祕密進行的事情。 因為你的優異表現，信任你的能力，才會把這件事情交給你去做，不要有所閃失。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這是很重要的請托。 報酬非常豐厚。 好好考慮一下，再來找我。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "文件拿回來了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "什麼？ 沼地小屋那邊什麼都沒有？ 而且還遭到了怪物的突然襲擊..？ 讓我獨自一人想一想。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "大約知道是什麼了. 內拉和馬提厄斯想要挖洞給我跳... 不管怎樣辛苦了."
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "去調查一下沼地小屋的倒下的垃圾桶。"
+          }
+        }
+      }
+    }
+  }
+}

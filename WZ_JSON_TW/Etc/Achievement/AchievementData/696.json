@@ -1,0 +1,111 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "battle"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "boss"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "[比艾樂]紅色帽子？藍色帽子？"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "普通比艾樂10次擊殺"
+    },
+    "parentId": {
+      "_dirType": "int",
+      "_value": "699"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "normal"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "uiForm": {
+        "_dirType": "string",
+        "_value": "basic"
+      },
+      "gauge": {
+        "_dirType": "string",
+        "_value": "submission_info"
+      },
+      "gaugeMissionIndex": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "gaugeSubMission": {
+        "_dirType": "string",
+        "_value": "mob_kill"
+      }
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "普通比艾樂10次擊殺"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "mob_kill": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "int",
+              "_value": "10"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            },
+            "type": {
+              "_dirType": "string",
+              "_value": "counting"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub",
+            "mob": {
+              "_dirType": "sub",
+              "mob_id": {
+                "_dirType": "sub",
+                "condition": {
+                  "_dirType": "string",
+                  "_value": "or"
+                },
+                "values": {
+                  "_dirType": "sub",
+                  "0": {
+                    "_dirType": "int",
+                    "_value": "8900100"
+                  },
+                  "1": {
+                    "_dirType": "int",
+                    "_value": "8900101"
+                  },
+                  "2": {
+                    "_dirType": "int",
+                    "_value": "8900102"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[水世界]幽靈出現了！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "35"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4000870:# #t4000870:# #c4000870# / 300\r\n#questorder1##o9390009# #a171171#\r\n"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "既然來了，就去幫助安吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "剛才... 好像看到幽靈了。安好像很開心有新的研究材料。在安的委託之下，去擊退幽靈，把幽靈的持有品帶回來。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "已經擊退所有幽靈了。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "5000000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5000000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000870"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-300"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊，是你啊。我正在等你.. 喝！！  看到了嗎？你看到了嗎？你看到了嗎？你沒看到剛才有奇怪的形體經過嗎？！"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "不是我看到幻影，一定就是幽靈！ 這個地方好奇怪！ 喂！你！ 呆呆的在看些什麼！ 快點去擊敗幽靈吧！"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請你盡快去擊退那些#r幽靈#k！ 你說要擊退多少？不管不管！ 總之越多越好！ 真是的，幹嘛老是要打破砂鍋問到底啊！ 那就去擊退500隻吧！ "
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "慢著！！..... 不對，仔細想想，那些東西(?)應該能成為好的研究材料。既然要擊退他們，那就將他們持有的物品帶回來幾個吧。大約... 300個左右就可以了。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "因為我害怕一個人，所以快去快回吧！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "喂，都已經跟來這裡還要這樣嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "來了嗎？？怎麼樣呢？是幽靈沒錯吧？不過，真的有 1000隻嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "果然！ 我早猜到會是這樣了！ 嗚... 竟然會有這種地方。不管怎樣，已經帶來了嗎？像是幽靈們持有的...物品... 不管什麼東西，至少會有些什麼不是嗎？"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "嗯？這個歐尼斯是...？我先了解一下，可以待會再來找我嗎？因為很恐怖，不要跑太遠！！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "幽靈應該不是窮光蛋吧?"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "什麼啊!!幽靈來是很多啊!!趕快幫忙處理!!"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390007"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "200"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "17116"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390007"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000870"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "300"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9390009"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "500"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

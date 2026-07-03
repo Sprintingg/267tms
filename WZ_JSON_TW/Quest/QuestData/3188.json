@@ -1,0 +1,176 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[冰原雪域山脈] 殭屍的襲擊"
+    },
+    "area": {
+      "_dirType": "string",
+      "_value": "33"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "有發生冰原雪域上的殭屍襲擊事件. 史卡圖勒因為此事情有拜託的事情..."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "亞凱斯特暫時離開冰原雪域的之間，有發生殭屍襲擊村莊的事情，還好都有擊退。為了村莊的安全想要打倒殭屍，打倒#b殭屍 150隻#k後報告給在#r#m211041400##k的#b皮斯特#k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "打倒殭屍150隻後向在#m211041400#的皮斯特報告了。"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "受詛咒的祭司"
+    },
+    "order": {
+      "_dirType": "string",
+      "_value": "1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 551,961\r\n可進行 '殭屍的祕密' 任務\r\n可進行 '禁忌魔法的跡象' 任務\r\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o5130107# #a31881#\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "551961"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2020007"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "120"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9073005"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "5130107"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "150"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "3190"
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "551961"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "冰原雪域發生了一件大事。你知道嗎？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "不久前, 亞凱斯特暫時離開冰原雪域的期間有大量的#b殭屍#k襲擊了村莊. 還好有從村莊擊退殭屍... 但是差點村莊存滿殭屍了."
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "現在亞凱斯特回來了，還有我在冰原雪域就不會有問題，但是不知道什麼時候又有這種事情發生。所以想請你幫忙一下。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "當然為了村莊的安全，好像需要打倒某種程度的#b殭屍#k。#b150隻#k 左右感覺應該就很充份...打倒殭屍後向在#r#m211041400##k的#b皮斯特#k報告。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "能為這個村莊出面的人，果然只有我嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b打倒殭屍150隻#k後，向在#r#m211041400##k的#b皮斯特#k報告吧。"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還可以看到#b殭屍#k的徘徊. 打倒150隻後再來..."
+          }
+        }
+      }
+    }
+  }
+}

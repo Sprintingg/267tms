@@ -1,0 +1,186 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[蒐集]唉唷，是噁心的綠水靈！"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#m101000000##k的#b#@1032106:##k想請你幫忙…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "一些滿是黏液的怪物讓森林中幾乎看不見穿梭飛舞的妖精們。\\n\\n他要你消滅#r綠水靈#k，並帶回20個#r綠液球#k。\\n\\n蒐集好所有物品之後，向#b#m101000000##k的#b#@1032106:##k回報。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "你已經替#b#p1032106##k蒐集了20個#r綠液球#k。他由衷地感謝你，使得妖精們能在森林裡自由地穿梭。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000004:##t4000004:##c4000004#/20\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 530\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "530"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "530"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000004"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "幾天前，我到森林旅行時差一點就受到重傷。我一邊哼著歌一邊在森林裡飛行，突然有奇怪的綠色液體噴向我。黏呼呼的液體害我無法飛行，結果摔了下來。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "幸好我掉在滿地的樹葉上才沒受傷。\\n\\n後來我去看那是什麼東西，結果是#r綠水靈#k噴的#r綠液球#k。真噁心！"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "所以我想請你打敗#r綠水靈#k，然後收集20滴#r綠液球#k。我會把他們拿去燒掉！\\n\\n這些#r綠水靈#k到處都是，所以很容易就可找到他們的行蹤。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你怎麼忍心拒絕？！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你帶回了！我看看，我看看！\\n\\n真噁心。\\n\\n給我吧。我會把他們燒個精光！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好噁心啊，燃燒時還是這麼臭。\\n\\n不過我終於可以自由自在地在森林裡飛翔了！謝謝你。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "打倒#r綠水靈#k後帶給我20個#r綠液球#k。如果你做不到這件事，不要來找我！"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1032106"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000004"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1032106"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      }
+    }
+  }
+}

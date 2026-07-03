@@ -1,0 +1,234 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[墮落城市] 音樂準備"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "說要準備在公演要用的音樂。再次去找#b拉娜#k具體的了解需要什麼。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "要準備赫一要唱的歌。在#r101大樓7~8層#k唱片賣場取得CD轉交給#b拉娜#k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "說果然只靠現有歌曲是不足，去找#b諾馬耶#k拿新曲回來。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000528:##t4000528:##c4000528#/15\r\n#i4000529:##t4000529:##c4000529#/15\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 7,700\r\n可進行 '拜託新曲' 任務\r\n"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "28"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "7700"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052121"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "35"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2284"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052121"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000528"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "15"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000529"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "15"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "7700"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000528"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-15"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000529"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-15"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "來，現在是該準備赫一要唱的歌曲。首先那種歌曲好得要新曲…聽很多歌的話會比較好吧？可以在這101大樓唱片賣場取回CD嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#r101大樓7~8層#k是唱片賣場。 在那裡取得 #b最新曲 CD 15張和退流行的歌曲CD 15章#吧！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "沒有音樂的話，無法進行準備到現在的公演。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "已經準備了CD回來嗎？來，給我看看。要聽聽歌才可以。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯，雖然滿喜歡現有的歌曲…可是用這些歌曲是無法掌握住大眾吧。還是覺得需要製作一首為了赫一的新曲呢。雖然有點沒有禮帽，可是，是一個天才作曲家的諾馬耶。若是那孩子的新曲的話，赫一應該一定會成為超級明星吧。去#b諾馬耶#k獲得一首新歌曲吧。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b最新曲CD15張與退流行的歌曲CD15張#k請在101大樓7～8層取回來。"
+          }
+        }
+      }
+    }
+  }
+}

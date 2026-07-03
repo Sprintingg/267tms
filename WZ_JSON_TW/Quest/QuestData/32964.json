@@ -1,0 +1,159 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[嫩寶] 冒險家志願生信的日記"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "到嫩寶的地區尋找新的情報吧。跟#b#p9000292##k對話就能進行移動。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "狩獵嫩寶來尋找新的情報吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "知道了三隻嫩寶技能的起源。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4034144:# #t4034144:# #c4034144# / 1\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000292"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q32964s"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201509020000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201509020000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32963"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201506240000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201506240000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000292"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q32964e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034144"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034144"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有找到可以充分成為線索的東西. 想要再移動到有蝸牛地方 #r放棄任務#k後再跟我說話."
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有找到可以充分成為線索的東西. 想要再移動到有蝸牛地方 #r放棄任務#k後再跟我說話."
+          }
+        }
+      }
+    }
+  }
+}

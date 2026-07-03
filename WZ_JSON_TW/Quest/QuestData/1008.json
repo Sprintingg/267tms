@@ -1,0 +1,218 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "10000"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "0"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031162"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031161"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "money": {
+        "_dirType": "int",
+        "_value": "200"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031162"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031161"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊…一般人不是常常會把還有用的東西扔掉嗎？我看村落到處都有很多能再使用的物品。你可以收集那些物品後給我嗎？\\n我會給你充份的報酬。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "對了﹗你在楓之島收集一些人家扔掉的東西給我。我就會給你適當的報酬。哈哈哈﹗﹗"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "嗯…你來這裡的時候有在四周見到被扔掉的木製箱嗎？看見了？就是要破壞那些箱子然後收集箱子裡的垃圾。破壞木製箱子會得到#t4031162#、#t4031161#等東西。你收集各1個來吧。\\n\\n#i4031161##b1個#k#t4031161#\\n#i4031162##b1個#k#t4031162#"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "哎~你試看看吧。這不難的，你打我旁邊的箱子試試，很容易啊！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嗯？你都收集齊了？來來~給我看一下。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "哇~果然有這麼多還能使用的東西~但一般人都很容易把這些東西給扔掉。謝謝﹗有你的幫助，收集這些東西變得容易多了。希望像你這樣的人會越來越多。那再見了﹗"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "不是~不是~再次確認一下。按下Q，你可以打開任務欄。打開任務欄後確認你現在要做的任務是什麼。"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓之島] 皮奧資源回收"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽說位在#b#m1010000##k的#b#p10000##k，需要搜集一些東西..."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在#m1010000#見到了皮奧，聽說他擅長修理各種故障的物品。#p10000#希望可以幫他蒐集在村莊各處的箱子裡面的物品，蒐集#b#t4031161##k和#b#t4031162##k後交給他。這麼一說…好像真的有許多毫無用處的箱子在落在四處....\\n\\n#i4031162##t4031162##b#c4031162##k/1\\n#i4031161##t4031161##b#c4031161##k/1"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "受到#p10000#所託，清理在村莊四處的廢棄箱子，並且蒐集了一些資源回收的物品給他。這些被遺棄的箱子內，有不少有用的東西，蒐集這些還滿有趣的！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "20"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "meso": {
+        "_dirType": "int",
+        "_value": "200"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

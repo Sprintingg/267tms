@@ -1,0 +1,182 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[櫻花城] 烏鴉群的襲擊"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "18"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "有一名看起來很困擾的男子。去幫助他吧！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": " 一進入書中，就掉落在充滿櫻花樹的森林當中。那似乎是個和村莊有些許距離的地方，在那邊遇到了一名因為烏鴉群而進退不能且感到相當困擾的男子。穿著和外觀真的都相當特別。他說自己受到烏鴉群攻擊，結果無法脫困，要求去趕走烏鴉。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": " 一進入書中，就掉落在充滿櫻花樹的森林當中。那似乎是個和村莊有些許距離的地方，在那邊遇到了一名因為烏鴉群而進退不能且感到相當困擾的男子。穿著和外觀真的都相當特別。他說自己受到烏鴉群攻擊，結果無法脫困，要求去趕走烏鴉。\\n一趕走烏鴉後，他表示自己是在櫻花城做生意的商人，如果有去櫻花城，記得一定要找他。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o6500000# #a43121#\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 80,000\r\n可進行 '隱密的委託' 任務\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "80000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2200012"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4311"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2200012"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "6500000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "80000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "請幫忙我吧！烏鴉們突然變得很殘暴！村莊就在前面，結果我卻沒辦法回去，只能被困在這個地方。我會給你豐厚的謝禮，請替我趕走烏鴉群！"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "太好了！請趕走#b#o6500000# 30隻#k！如此一來，其他烏鴉說不定也會因為害怕而逃跑！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "天啊，別這麼做！難道你就不能幫忙我嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "真是謝謝你！差點忘記自我介紹了。我是在櫻花城做生意的 #b#p2200000##k。你應該聽說過我的名字吧？\\r\\n#L0##b啊，真是抱歉！我不是這個地方的人。我沒聽說過你的名字。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "呵呵呵，沒關係。原來如此，你是從遙遠的地方來的。總之，你幫了我大忙，我想要答謝你。現在我沒東西可以送你，若是你有來村子，一定要來找我。那我有急事，就先告辭了。下次見吧！"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "太好了！請趕走#b#o6500000# 30隻#k！如此一來，其他烏鴉說不定也會因為害怕而逃跑！"
+          }
+        }
+      }
+    }
+  }
+}

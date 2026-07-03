@@ -1,0 +1,200 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 被污染的迷宮！<1-火獨眼獸>"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "據說北邊叢林的某處有警告怪物的標示牌…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "打倒#b33隻#k#o2230100#之後，去找#b奇幻村#k的#rNPC－記憶者#k。\\n\\n#o2230100##r#a21081##k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "就算消滅#o2230100#，但它的數量卻沒減少。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "440"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2000006"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1063005"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "18"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1061011"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2230100"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "33"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "集中精神！差一點～空中漂浮修行一不小心就會一切歸於泡影。開始空中漂浮修行有多久了…？反正以後都不能妨礙我的空中漂浮修行，要小聲說話哦。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "你找我什麼事？有急事嗎？…啊！你找到被污染的怪物了嘛。可怕的被污染的氣息把善良的怪物變成怪物了。好可怕…哇！你竟然能消滅#b#o2230100#33隻#k。你的背後有33隻#o2230100#圍繞著你。你沒感到後背不舒服嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我相信你不是為了獎金而做的，但你幫助了弱者，我給你點獎勵吧。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "不是想在這裡結束旅行吧？村外有很多危險的怪物。我在很多地方設置了標示牌，去看看吧。給你豐厚的獎勵！要小心怪物！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "消滅後向#r記憶者#k報告吧！"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "哎～修行差點歸於泡影了。說話小聲點。啊！你說你不懂我掛的標示牌的內容？消滅#b火獨眼獸33隻#k後，再來找我就可以。"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "去除掉33隻吧！#r-#p1061011#-"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "消滅後向#r#p1061011##k報告吧！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "…"
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "440"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2000006"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  }
+}

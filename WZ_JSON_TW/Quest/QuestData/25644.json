@@ -1,0 +1,185 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[夜光] 尋找黑魔法師的痕跡"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "12"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "selfComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "組織透過幹員N聯絡。有什麼事嗎？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "找到#b100個黑魔法師的痕跡#k向組織 聯絡。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "找到黑魔法師的痕跡交給組織。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4033338:# #t4033338:# #c4033338# / 100\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1032212"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "70"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "25643"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2711"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2712"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q25644e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033338"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "你好？ 我是幹員 N。我和那個在其他地方出差的幹員 M長得有點相像而已所以請不要誤會。\\r\\n#L0##b(...你是在撇清部是雙胞胎嗎？) 不需任何裝置就能對話，組織的技術也太厲害了。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "只是運用了一下外星人的技術而已。其實是因為和委託的情報有關的事情所以連絡的。根據我們的調查，目前棲息在楓之谷的大部分怪物都受到黑魔法師的影響。\\r\\n#L0##b已經到這種地步嗎？#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "所以尋找黑魔法師的下落沒有預期的容易。所以需要更明確的描繪黑魔法師的特徵。狩獵怪物的時候，若發現黑魔法師的痕跡就收集起來後再跟我連絡。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "黑魔法師的痕跡需要 100個。狩獵楓之谷內的普通怪物時可以取得。但是，等級差異太大的怪物則除外。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這樣我方也無法再繼續提供情報了。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  }
+}

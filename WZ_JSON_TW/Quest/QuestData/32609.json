@@ -1,0 +1,151 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[次元圖書館] 尼克斯的委託"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "82"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": " 試著和#b#p2520021##k交談吧."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": " #b#p2520021##k拜託去處理那些打擾自己讀書的妨礙者.\\r\\n#b(往右邊的傳送點前進,消滅眼前出現的所有怪物.)#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "已經教訓妨礙#b#p2520021##k讀書的傢伙們了.這種事情難道不能直接處理嗎?"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "答應尼克斯的委託"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "雖然我很想直接把書交給你,但既然來了,那就幫我一個忙吧.那我就將書交給你."
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "這附近有太多吵鬧的傢伙了,讓我根本就無法專心讀書.透過右邊的傳送點出去,然後將眼前的怪物全都消滅.怎麼樣呢?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯,我很滿意!我會準備好書等你來.\\r\\n#b(透過右邊的傳送點出去,消滅所有登場的怪物.)#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "若是不願意就滾吧,\\r\\n那因哈特... 我還以為你是聰明人,結果結交了一個和你一樣令人心寒的傢伙."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "我會在這邊等.\\r\\n#b(透過右邊的傳送點出去,消滅所有登場的怪物.)#k"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2520021"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32608"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2520021"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q32609e"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "32627"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "clear"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "check1"
+          }
+        }
+      }
+    }
+  }
+}

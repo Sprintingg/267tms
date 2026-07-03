@@ -1,0 +1,233 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓之島] 給希娜弄來鏡子"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "莎麗的鏡子"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "找到正在晾衣的莎麗借到了鏡子。現在要把這個鏡子拿給希娜。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "找到正在晾衣的莎麗借來鏡子拿給了希娜。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "20"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031003"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031003"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊！#p2100#你帶姐姐的鏡子來了！非常感謝。看看…皮膚有沒有被曬黑吧…？哦呵~"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "右邊可以看到發出藍色光芒的地點，那就是#b可以到達其它地方的傳送點#k。在那地方前面站著按著鍵盤的#b方向鍵↑#k，你就能到別的地方。祝你一路順風~"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你把鏡子弄丟了嗎？還是還沒收下鏡子？你按下#bI#k鍵可以確認道具欄裡有什麼東西，請你確認看看，如果沒有，再去找姐姐吧，讓她幫忙找一下。"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這什麼時候才能曬完啊…唉呀…啊？你是說我的鏡子？是不是#p2101#託你來的...？"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "哎呀~都不會親自來拿…真的是懶到骨子裡去了。這是我的鏡子。"
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這要曬到哪時候呢…哀…恩？我的鏡子嗎？難到是接受 #p2101#的請求而來的嗎？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "哎呀~都不會親自來拿…真的是懶到骨子裡去了。這是我的鏡子。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2101"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031003"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2100"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "200203220200"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "200203220600"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "200203220200"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "200203220600"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1000"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "0"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

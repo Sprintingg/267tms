@@ -1,0 +1,223 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[龍使者，龍魔導士] 追趕後院的狐狸"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "7"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必需]"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#p1013101##k似乎有什麼話想說。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1013101#說最近在#b#m100030103##k狐狸似乎變多，打算要擊退#r#o9300385##k。#p1013101#說之後會追趕，請我先去#m100030103#開始擊退…"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p1013101#結果沒有幫助。#o9300385#10隻雖然簡單…反正#p1013101#不太能相信。"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "22008"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "returnMapID": {
+      "_dirType": "int",
+      "_value": "100030102"
+    },
+    "returnPN": {
+      "_dirType": "string",
+      "_value": "1013101"
+    },
+    "targetType": {
+      "_dirType": "int",
+      "_value": "-1"
+    },
+    "returnType": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1013101"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q22008s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "7"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "22007"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2200"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2210"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2211"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2212"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2213"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "2214"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "2215"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "2216"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "2217"
+        },
+        "9": {
+          "_dirType": "int",
+          "_value": "2218"
+        },
+        "10": {
+          "_dirType": "int",
+          "_value": "2219"
+        },
+        "11": {
+          "_dirType": "int",
+          "_value": "2001"
+        },
+        "12": {
+          "_dirType": "int",
+          "_value": "2220"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1013101"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q22008e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9300385"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "22009"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "不覺得奇怪嗎？最近雞和以前都不一樣了。以前，#t4032451#數量比現在多，可是現在卻漸漸減少了。難道是狐狸變多的原因？如果真是這樣，那麼必須要儘快採取行動了。不是嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有開始消滅#r#o9300385#10隻#k嗎？我在背後接應你！不要擔心，快去向#b#m100030103##k突擊~"
+          }
+        }
+      }
+    }
+  }
+}

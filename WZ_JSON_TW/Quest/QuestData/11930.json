@@ -1,0 +1,192 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[萬聖節]不給糖果的話他們會搗蛋~！"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "迎接萬聖節在楓之谷世界出現的鬼怪！不給糖果的話，他們就會搗蛋…去找尤莉亞聽詳細的故事。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "獵殺符合自己的等級的怪物，收集50顆萬聖節糖果，拿去給尤莉亞。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "來，我現在給你糖果。不會向我搗蛋吧！"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i3994450:##t3994450:##c3994450#/50\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2550001"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201311060000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201311060000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201310230000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201310230000"
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "10"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q11930e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994450"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#b#h0##k，萬聖節快樂~！ 迎接萬聖節，楓之谷世界到處都是鬼怪，有慶典的氣氛。 可是鬼怪們很喜歡搗蛋，真的好擔心。 如果不給好吃的糖果，可能會對人們搗蛋、 你可以幫幫忙嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "果然，你隨時都擔心著楓之谷世界。鬼怪所喜歡的萬聖節糖果， 只要狩獵平原的一般怪物的話就可以容易取得。收集#r萬聖節糖果50個#k的話，就算任務完成！"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "啊，還有#b比本身的等級11以上低或21以上高的怪物#k不會有糖果，請先確認怪物的等級。那麼拜託你了！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "啊，因為這些鬼怪的玩笑，可能會使楓之谷世界陷入混亂！改變心意的話，再跟我說話。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "好像還沒收集到r50顆萬聖節糖果的樣子？"
+          }
+        }
+      }
+    }
+  }
+}

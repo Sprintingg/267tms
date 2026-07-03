@@ -1,0 +1,232 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 特奧回想舊時回憶"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去找維多利亞港的特奧可以得到幫助…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在維多利亞港和#b特奧#k見面。特奧說他一看到我就想起年輕時期吃了許多苦，還說想幫助我。他說若能收集到#b#t4000016#50個#k和#b#t4000004#30個#k就能肯定我有發展的可能性，並且給予幫助…呼！對於我這種帥氣冒險家，這根本不算什麼。\\n\\n#t4000016##b#c4000016##k/50\\n\\n#t4000004##b#c4000004##k/30"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "向在維多利亞港相遇的特奧展現我身為冒險家的資質。特奧肯定我的能力，並且給予旅行所需資金。還說要用這些資金成為帥氣的冒險家。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "meso": {
+        "_dirType": "int",
+        "_value": "30000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "money": {
+        "_dirType": "int",
+        "_value": "30000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000016"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000004"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "喂……你要去冒險了嗎？不過看起來還蠻弱的…我年輕的時候…也曾經為了看看這世界到處旅行…真想念那時候，因為沒有什麼事比冒險更有趣的了。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "不過剛開始沒有經驗，準備也不夠的話有點辛苦…我看到你就想到我年輕時候冒險，我也經歷過很多辛苦啊…"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "我是因為喜歡你才這樣說，我承認了你冒險家的資質，我就會支持你這個冒險家，怎樣？要不要試試？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好，這樣的話收集#b#t4000016#50個#k和#b#t4000004#30個#k後再給我吧，你如果全部收集到，我就承認你的能力。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "是嗎？我本來想幫助你…如果你改變想法再來找我吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "沒想到你竟然全部拿到了，我果然沒看錯人，你以後一定會變成一位厲害的冒險家，我相信你。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "有拿到錢嗎？雖然沒多少，但是對你剛要開始的冒險家來說，應該是綽綽有餘，希望下次見到你的時候你會變得更強。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "嗯…你還沒全部拿到啊？是我太高估你了嗎？…快點收集#b#t4000016#50個#k和#b#t4000004#30個#k吧，你一定可以的。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000016"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000004"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "worldmin": {
+        "_dirType": "string",
+        "_value": "17"
+      },
+      "worldmax": {
+        "_dirType": "string",
+        "_value": "17"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "200603010000"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "200512211000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "200603010000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "200512211000"
+      }
+    }
+  }
+}

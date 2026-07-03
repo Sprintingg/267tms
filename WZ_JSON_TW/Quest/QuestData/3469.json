@@ -1,0 +1,164 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[拉圖斯]一切的元兇"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "36"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p2041023#說自己研究分散之星的碎片時取得了重要線索，聽聽看是什麼線索吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2041023#發現分散之星的碎片中含有時空的裂縫碎片，這是 #o8500002#又闖禍的證據，將此一事實轉告 #p2041021#吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p2041023#的研究查出分散之星的碎片中蘊含有時空的裂縫碎片，聽到此一事實的 #p2041021#得知 #o8500002#又闖禍後感到相當驚訝。 \r\n"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "#m220050300#"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "16"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "481572"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2041023"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "115"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3468"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2041021"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "481572"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我早猜到會是這樣了，這不可能是偶然發生的事情，分散之星的碎片中發現了些許的時空的裂縫碎片，這就是最重要的線索，好，快點將這件事情轉告#p2041021#吧。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請去告訴#r#p2041021##k， #b#o8500002##k又闖禍了，分散之星的碎片中埋有時空的裂縫碎片，這就表示那小子又開始作亂了。好，現在就出發吧！ \\r\\n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "目前的情況非常緊急，必須趁 #b#o8500002##k闖下大禍之前阻止這一切。 \\r\\n"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "為了掌握變異的鐘塔最下層的狀況，我忙到暈頭轉向呢，你有話要跟我說嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "什麼？時空的裂縫碎片嗎？ #o8500002#又闖禍了嗎？天啊！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請去轉告#r#p2041021##k，說#o8500002#又闖禍了。"
+          }
+        }
+      }
+    }
+  }
+}

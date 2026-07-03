@@ -1,0 +1,285 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[幻獸師] 通往其他地方的門"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "85"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#p9390352##k好像還是有事要拜託.先跟他說清楚我要求的條件好了.\r\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "根據#b#p9390354##k的調查, 在其他門邊中找到三處有 #b崔斯坦的劍#k的地方..\\r\\n但是,鑰匙們被怪物們吃掉了對吧? 首先先從第一個出入口追蹤到的位置中蒐集到越多鑰匙碎片越好.\\r\\n組合方式為付費倉庫中蒐集到的第一個鑰匙碎片滿滿累積並使用看看? \\r\\n若要得到鑰匙 #b#p9390353##k往入口周邊的地方前就就可以了. \n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在第一個位置什麼都沒找到."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4034020:# #t4034020:# #c4034020# / 1\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "88617"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "88617"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034020"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#b#p9390354##k最近調查的內容在這邊.另一扇門那邊聽說可能埋有崔斯坦的劍有三個地方."
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "但是,正確的位置無從得知.再加上,這三個地方的所有鑰匙都被怪物給吃掉了."
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "先從第一個場所開始吧.抓住#b寺院入口#k周圍的#b魔龍#k群的話,就可取得#b崔斯坦的第一個鑰匙碎片#k.把這些合起來就可組成鑰匙."
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yesEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "盡可能收集最多的鑰匙碎片來使用.這樣的話機率也可以更加提升吧?"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "noEsc": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "該怎麼做才能使用呢?"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "noEsc": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "呵呵,都已經幾級了還不知道怎麼使用道具? 鑰匙碎片會放在倉庫的'消耗'裡面. 雙擊即可使用. 但, 想要提升機率的話就要多收集道具才可使用."
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "noEsc": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "3": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "要製作鑰匙的話, 前往#b寺院入口#k方向. 去見凱那莉."
+          }
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "為什麼?"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "取來鑰匙了嗎?\\r\\n"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "找到鑰匙了.拿來看看!在這邊用看看.\r\n"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "真是的....沒有.應該不是這邊.\r\n"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "該怎辦.這些行李快重死了,何時能找到下一個入口呢?"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "去找凱那莉."
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "真是的,盡量收集到最多的鑰匙碎片."
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390352"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "59130"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub"
+      },
+      "job_TW": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "11212"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "11213"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390353"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034020"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

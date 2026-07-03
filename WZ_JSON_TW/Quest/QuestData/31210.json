@@ -1,0 +1,196 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[艾靈森林] 懶惰的德斯2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "39"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "請去找亞泰爾營地,於左邊守護結界石的德斯。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "必須代替德斯消滅遠古木妖，並且收集營區需要的#e#b#t4000438#50個#k#n。\r\n遠古木妖主要棲息在#m300020000#、#m300020100#。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": " 消滅遠古木妖後，收集營區需要的#t4000438#50個，並且交給了德斯。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4000438:# #t4000438:# #c4000438# / 50\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "272850"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2131007"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "95"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31209"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2131007"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000438"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "272850"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000438"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "卡奧～你來了啊。 我有話要跟你說，你可以幫我一個忙嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "就如同你知道的一樣，我負責守護亞泰爾營地這項重要的任務，所以我無法擅自離開崗位。只要幫我去消滅遠古木妖，取得#b藤條#k就好了。大約#b50個#k左右？那就拜託你了。#m300020000#、#m300020100#應該會有很多遠古木妖。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "卡奧，你好像變了…竟然拒絕我的請求…如果你改變心意的話，請再來找我。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#t4000438#全部找來了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "喔呵～辛苦你了，卡奧。 我會拿去給洛哈的。 那嘮叨鬼現在應該沒有話說了吧！？ 卡奧，為了我們亞泰爾營地的居民，你真的幫了個大忙啊。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒能湊齊遠古木妖的#t4000438#50個嗎？只要去#m300020000#、#m300020100#，應該會有很多。"
+          }
+        }
+      }
+    }
+  }
+}

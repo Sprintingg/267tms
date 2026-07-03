@@ -1,0 +1,209 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓之谷世界的冒險家] 調查達克魯"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "大概是知道你轉職為盜賊吧，鴻亞傳來了聯絡。應該會重新告知任務吧？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "鴻亞下令去幫助墮落城市的居民，並且調查達克魯的名聲。調查對象是#b內拉#k、#b後街吉姆#k、髮型店的#b錢老闆#k。依序去一趟吧。\r\n\r\n#y2614# #b(#u2614#)#k\r\n#y2616# #b(#u2616#)#k\r\n#y2617# #b(#u2617#)#k\r\n\r\n#rTip.想和墮落城市變親近所需要的物品可向#m103050300#的#p1055002#取得。#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "調查了鴻亞說的目標。但很難掌握有關達克魯違法勾當的相關證據..."
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "2613"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "77"
+    },
+    "selfStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "targetMapID": {
+      "_dirType": "int",
+      "_value": "103000000"
+    },
+    "targetPN": {
+      "_dirType": "string",
+      "_value": "1052103"
+    },
+    "targetType": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "returnType": {
+      "_dirType": "int",
+      "_value": "-1"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    },
+    "selfComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q2613s"
+      },
+      "subJobFlags": {
+        "_dirType": "int",
+        "_value": "2"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2609"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "400"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q2613e"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2614"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2616"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2617"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "quest": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "達克魯的調查還沒有結束嗎？ 如果你不知道要調查誰，那麼就請你打開任務視窗看看吧。"
+          }
+        }
+      }
+    }
+  }
+}

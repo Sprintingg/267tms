@@ -1,0 +1,226 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[時間神殿] 奇怪的雕刻盒"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "46"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "站在三扇門前的#b#p2140000##k好像有話要說。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "需要找到奇怪的雕刻盒，並把裡面的神殿管理人的墨水取回來。\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "奇怪的雕刻盒的位置和裡面的物品每天都會發生變化，看來要經常去尋找才行。說不定能得到什麼貴重的東西哦…？"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4033170:# #t4033170:# #c4033170# / 1\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "979000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2140000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "130"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3546"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2140000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033170"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "979000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033170"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "可是，我的羽毛筆是在哪裡了？就如\\r\\n#L0##b所說。在刻著女神雕像的牆壁旁邊的雕刻盒裡找到的。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "是嗎？ 裡面，沒有墨水嗎？\\r\\n#L0##b是啊，好像沒有墨水…只顧著找羽毛筆，沒仔細看。#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "可能是時間神殿裡的時間出現異常，雕刻盒的位置和裡面裝著的東西每天都會有變化。不經意把東西放在雕刻盒裡，總是找不到，真是心煩啊。能幫我個忙嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請幫忙找回我的#b墨水#k。找到雕刻盒的位置不容易，它們主要出現在神殿內刻著女神雕像的牆壁前，去附近找找吧！運氣好的話，還能在雕刻盒裡獲得不錯的東西。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你覺得難就沒辦法了。只能拜託其他人了。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "墨水找到了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝你。小心不要弄丟了。偶爾在時間神殿見到雕刻盒的話，打開看看吧。說不定能找到不錯的東西。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒找到雕刻盒嗎？ 仔細查看刻著女神雕像的牆壁附近吧。"
+          }
+        }
+      }
+    }
+  }
+}

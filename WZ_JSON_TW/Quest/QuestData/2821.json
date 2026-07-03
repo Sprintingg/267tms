@@ -1,0 +1,196 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 遺失的設計圖"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "在#b#m102030100##k遇到以路痴有名的遺跡發掘隊員#b吉米#k。但是表情有些暗沉…去問問發生了什麼事情吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "消滅週圍的怪物後，找到吉米丟失的設計圖。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "吉米感謝我讓他得以解渴和找回了丟失的設計圖的事，並說現在開始要自己去找路。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4033055:# #t4033055:# #c4033055# / 1\r\n#questorder1##o4230103# #a28211#\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "50173"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022106"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "55"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022106"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033055"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4230103"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "150"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "50173"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033055"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "正常"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊，這當我丟掉水桶的時候好像遺失了很重要的東西。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "怎麼辦呢！ 修安前輩一定不會放過我！ 請幫幫我吧！\\r\\n"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那．．那重要的設計圖不見了！應該是這周圍的怪物拿走了吧？！若能打倒鋼之肥肥從他們手中找回設計圖，我會非常感激你的！雖然我也可以直接做，但現在是體力枯竭的狀態，真的啦！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "赫，你拒絕我！ 你拒絕我！ 你怎麼可以這樣呢？ 你不覺得在這荒蕪之地被陽光快要曬乾的我很可憐嗎？ 如果你置之不理，那本世紀難得一見的天才可能就會消失在修安前輩的手裡！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這個！ 是我遺失的設計圖！！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝！ 看到設計圖我就有力量了。 找到遺跡發掘絕對不成問題！ 因為我沒有迷路！…可是北方在哪一邊呢？"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "噢！還沒有找到我遺失的設計圖嗎？ 拜託你！ 一定要找到！"
+          }
+        }
+      }
+    }
+  }
+}

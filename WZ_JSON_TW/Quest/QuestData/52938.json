@@ -1,0 +1,273 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[傳說裝備] 鍛鍊的開始"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "開始鍛鍊傳說的盔甲吧."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "開始鍛鍊傳說的盔甲吧."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "開始鍛鍊傳說的盔甲吧."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i3994902:# #t3994902:# #c3994902# / 30\r"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#i1052715:# #t1052715:# 1 個\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "3|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "long",
+            "_value": "1052715"
+          },
+          "count": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1052715"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1052714"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我給的盔甲怎麼樣, 沒有感受到無止盡的潛力嗎?₩r\\n呵呵呵, 看你的眼睛好像是在懷疑我的樣子"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "好 現在開始鍛鍊盔甲, 打敗跟你等級相當的怪物就會給你鍛鍊盔甲的鋼鐵鐵塊, 我會讓你看到我的鐵匠技術不會讓你有一絲疑心的"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那麼我會等你的"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "改變想法的話就來找我, 時間不多了"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "全部都拿來了嗎?現在該我出場了, 稍等一下"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "全部都拿來了嗎?現在該我出場了, 稍等一下"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "原來在這 可以感受到更加強一層的盔甲力量"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "現在該正式開始鍛鍊了,\\n以後的訓練若是用平凡的鐵塊會很辛苦, 因為我們要對抗的敵人很不平凡\\n\\n話說太多了, 鍛鍊需要的材料有黑龍鐵塊 , 藏有強烈怪物力量的神祕的礦物, 只要找到這個我會使出我全身的力量來鍛鍊盔甲"
+        },
+        "3": {
+          "_dirType": "string",
+          "_value": "那麼就拜託了, 透過鍛鍊盔甲的能力會達到某種程度上的界限值, 告訴你突破的方法 \\n\\n(使用黑龍鐵塊可以鍛鍊盔甲)"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "鋼鐵鐵塊還是不夠."
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9031003"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1052715"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1052714"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "202512100900"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "202512240900"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "9031003"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994902"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

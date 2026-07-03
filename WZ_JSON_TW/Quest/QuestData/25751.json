@@ -1,0 +1,210 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[凱撒] 幽靈的正式進攻"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "22"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "雖然組成防禦軍，可是還不足以抵擋梅格耐斯的攻勢。在保護罩恢復之前只能抵抗。偵察兵似乎帶來新的消息。去找#p3000000#。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "幽靈的本隊正是攻擊了。前往保護罩東邊界線阻止敵人的本隊。保護罩逐漸變強了#b將變弱的幽靈盾牌兵和變弱的戰士幽靈全部擊退#k爭取時間。可是這有可能嗎？\n#r失敗時可放棄任務再次開始#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "敵人的本隊太弱了。梅格耐斯的攻比想像中還弱？"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 15,000\r\n可進行 '阻止召喚儀式' 任務\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "15000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3000000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q25751s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "25"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "25750"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "6100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "6110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "6111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "6112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "6113"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "6114"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3000000"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "25798"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "15000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "辛苦了。看來幾乎已經殲滅敵人的本隊了。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "但是梅格耐斯的本隊只有這點程度嗎？ 都能佔領赫力席母了，但攻擊卻顯得太弱了。難道敵人別有用心嗎？ 還是梅格耐斯的軍隊比想像中的弱呢？"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "聽說敵人的本隊出現在保護罩北方邊界，不過你在這邊做什麼呢？ \n\n#b(倘若沒有完成戰場地圖就回來，就得放棄任務重新進行。)#k"
+          }
+        },
+        "quest": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "聽說敵人的本隊出現在保護罩北方邊界，不過你在這邊做什麼呢？ \n\n#b(倘若沒有完成戰場地圖就回來，就得放棄任務重新進行。)#k"
+          }
+        }
+      }
+    }
+  }
+}

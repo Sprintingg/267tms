@@ -1,0 +1,387 @@
+{
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "前往水世界的途中有看到什麼奇怪的事情嗎？最近水世界的動物好像變得有些怪怪的。雖然還不是很明顯，但有的看起來毫無生氣，有的則變得非常暴躁..."
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "難道是我太過於敏感了嗎？可是，自從颱風過後就開始出現這樣的異常現象，總是讓人憂心忡忡。我想進行調查，您可以幫助我嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這麼爽快就答應幫助我，非常感謝您。想拜託您幫我收集一些水世界動物的細胞樣本。雖然目前還不是很確定動物們發生了什麼事，但是可以從細胞樣本的變化去了解。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "研究動物們的細胞樣本，也許就能發現一些線索。請收集#r綠海馬、黃金海馬、海膽#k的#b細胞樣本#k#b各1個#k。\\n\\n#i4031259##t4031259#1個\\n#i4031260##t4031260#1個\\n#i4031261##t4031261#1個"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "有可能需要很長的時間，如果改變心意的話隨時可以來找我，好嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "拜託您的細胞樣本都收集到了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "非常感謝您不嫌麻煩的幫助我，以後可能還要麻煩您。到時候也會像現在這樣幫助我吧？"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "拜託您的細胞樣本還沒有收集齊全嗎？需要收集的是#b#t4031259#,#t4031260#,#t4031261##k各#b1個#k。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2060005"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "75"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2060005"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031259"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031260"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031261"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[水世界]坎特的海洋生物調查1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "水世界動物園的寵物訓練師#p2060005#有一個煩惱的事情，去找他看看。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "出色的水世界動物園寵物訓練師#b#p2060005##k正在擔心水世界的動物們, 因為颱風過後牠們產生了某種變化. 在我看來好像沒什麼改變, 不過以專家的角度觀察好像有所不同? \\n#b#p2060005##k要進行調查, 拜託我帶來一些水世界動物們的細胞樣本."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "將水世界動物們的細胞樣本帶給水世界動物園的寵物訓練師#p2060005#。如果照他所說的，颱風過後確實發生了某種變化，這樣一來透過調查或許就能發現些什麼？"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "35"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4031259:# #t4031259:# #c4031259# / 1\r\n#questorder1##i4031260:# #t4031260:# #c4031260# / 1\r\n#questorder1##i4031261:# #t4031261:# #c4031261# / 1\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "145200"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "returnMapID": {
+      "_dirType": "int",
+      "_value": "230000003"
+    },
+    "returnPN": {
+      "_dirType": "string",
+      "_value": "2060005"
+    },
+    "targetType": {
+      "_dirType": "int",
+      "_value": "-1"
+    },
+    "returnType": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demand": {
+      "_dirType": "sub",
+      "explain": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2060005"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "17"
+      },
+      "transferField": {
+        "_dirType": "int",
+        "_value": "230030200"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "145200"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031259"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031260"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031261"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "3": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2002002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "job": {
+            "_dirType": "int",
+            "_value": "1073873921"
+          }
+        },
+        "4": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2002005"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "job": {
+            "_dirType": "int",
+            "_value": "8396808"
+          },
+          "jobEx": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        },
+        "5": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2002001"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "job": {
+            "_dirType": "int",
+            "_value": "1074922497"
+          }
+        },
+        "6": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2002004"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "job": {
+            "_dirType": "int",
+            "_value": "-2145384446"
+          }
+        },
+        "7": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2002000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "job": {
+            "_dirType": "int",
+            "_value": "49200"
+          },
+          "jobEx": {
+            "_dirType": "int",
+            "_value": "8"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[墮落城市] 薰衣草香味"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "說小蒼蘭香味與女生模特兒的假髮很配合拉娜。去找#b拉拉#k告訴他。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在薰衣草香味消失前去找#b拉娜#k取得與男生模特兒的紳士帽適不適合的許可。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#b拉娜#k說薰衣草香味和紳士帽雖然不是那麼配，但也不是太壞，說就這樣進行。去找\\r\\n#b拉娜#k了解下個要準備的東西。"
+    },
+    "timeLimit": {
+      "_dirType": "int",
+      "_value": "40"
+    },
+    "timerUI": {
+      "_dirType": "string",
+      "_value": "default"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 1,500\r\n可進行 '音樂準備' 任務\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "28"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1500"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052119"
+      },
+      "exceptbuff": {
+        "_dirType": "string",
+        "_value": "2022632"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "35"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2283"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2285"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052121"
+      },
+      "buff": {
+        "_dirType": "string",
+        "_value": "2022633"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "buffItemID": {
+        "_dirType": "int",
+        "_value": "2022633"
+      },
+      "message": {
+        "_dirType": "string",
+        "_value": "香甜的薰衣草香味包圍全身時，開始變得頭痛欲裂，腳步也變得沉重了。在香味消失之前去找拉娜。"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "2285"
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "1500"
+      },
+      "charmEXP": {
+        "_dirType": "int",
+        "_value": "10"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "是嗎？假髮的話小蒼蘭香嗎？好。這樣的話…現在剩下的就是紳士帽與藍香水…不知為何似乎不是很配。不會嗎？\\r\\n#L0##b反正我也不曉得。但是現在也不是有香水呀？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "就算這樣，這個好像真的不行，雖然很抱歉，但可以最後一次幫我問#b拉娜#k嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "為您噴了藍香水。在甜美薰衣草香味消失之前，請詢問#b拉娜#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那個最後的請託～"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "恩，又要選適合衣服的嗎？\\r\\n#L0##b是。現在剩下的是男生模特兒的紳士帽與我所發出的薰衣草香味而已。但是拉拉怎麼都覺得不適合，所以叫我向拉娜詢問。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "這甜美的香味…紳士帽不知為何似乎適合柑橘香。。但是沒有剩下的香水…好！就將薰衣草香水用在紳士帽上。反正還有要準備的東西，無法再遲延時間。就用這個吧。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我會轉達給#b拉拉#k，你得要幫忙準備下個東西。恩…下個需要什麼呢？(又再次看一覽表的拉娜…)恩，漏掉音樂了啊。需要決定赫一要唱的歌才可以。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "是什麼？這味道…向拉拉拜託噴灑香水如何？"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "在香味消失之前，請向#b拉娜#k詢問。"
+          }
+        }
+      }
+    }
+  }
+}

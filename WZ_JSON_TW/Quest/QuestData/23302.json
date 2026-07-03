@@ -1,0 +1,216 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[末日反抗軍] 銀惡魔徽章"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "16"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "若是想再次取得#b#t1190700##k就去和#b喵怪仙人#k交談吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "若是想再次取得#b#t1190700##k就去和#b喵怪仙人#k交談吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "若是想再次取得#b#t1190700##k就去和#b喵怪仙人#k交談吧。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##fUI/UIWindow2.img/QuestIcon/7/0#需要 580,000\\r\\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "meso": {
+        "_dirType": "int",
+        "_value": "-580000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2151009"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "23300"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1190700"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "3111"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "3121"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2151009"
+      },
+      "endmeso": {
+        "_dirType": "int",
+        "_value": "580000"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "money": {
+        "_dirType": "int",
+        "_value": "-580000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1190700"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#b#ho##k。你有什麼事嗎？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "啊，你遺失了我之前給你的徽章嗎？沒關係，剛好我可以用剩下的材料製作徽章。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "但一定需要的材料還是有點不足…所以需要尋找材料才可以。 #e#b580,000楓幣#k#n的話可尋找材料的…你準備好材料費用的話再來找我吧。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "需要#b#t1190700##k的話，請隨時來找我喔。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這是我重新製作的 腰帶。假如遺失的話又需要尋找材料，所以小心又遺失喔 。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "不好意思。你的楓幣不足。我是貓咪的身體所以很難取得楓幣 。你有充分的楓幣時再來找我喔 。"
+          }
+        }
+      }
+    }
+  }
+}

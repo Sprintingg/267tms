@@ -1,0 +1,266 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[櫻花城] 進入櫻花城…"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "18"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "試著和守衛蘇助交談。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "詢問蘇助是否可以讓自己進入城內後，蘇助便不斷詢問自己是否是可疑的人物。詢問是否是葵拜託去找人的之後，他表示葵是美代子公主的朋友，所以可以特別允許出入。不過，由於城內四處都是來自外地的忍者，所以他叮嚀說要特別小心。\\n而且他還拜託進入城內後，將其他忍者使用的鏢轉交給兒子。他說那是他省吃儉用好不容易準備的。\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "詢問蘇助是否可以讓自己進入城內後，蘇助便不斷詢問自己是否是可疑的人物。詢問是否是葵拜託去找人的之後，他表示葵是美代子公主的朋友，所以可以特別允許出入。不過，由於城內四處都是來自外地的忍者，所以他叮嚀說要特別小心。\\n而且他還拜託進入城內後，將其他忍者使用的鏢轉交給兒子。他說那是他省吃儉用好不容易準備的。去找蘇助的兒子薩伊，然後將蘇助的禮物轉交給他。\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4033290:# #t4033290:# #c4033290# / 1\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 20,000\r\n可進行 '奇怪的徵兆' 任務\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "20000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2200007"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4316"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2200008"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033290"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033290"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "resignRemove": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "20000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033290"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "唉，請回去吧。我無法讓身份不明的人進去，\\r\\n#L0##b我受葵的拜託，得去見那格雷。有信息要轉達美代子公主。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "你是葵小姐派來的人？葵小姐確實是美代子公主的朋友，但是你要如何證明自己是葵小姐派來的呢？\\r\\n#L0##b真是個困難的問題。但是我一定得進城去找那格雷。葵說一定要見到那個人。#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "你知道關於那格雷的事情嗎？很少人知道關於他的事情，好吧！我就相信你吧。我就特別允許你進城，\\n不過你要答應我一件事。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "進入城後，會遇到許多忍者。那是領主帶來的傭兵，我兒子說想要成為忍者，然後就進入城內，後來就一直沒有回家。為了自己的夢想努力是好事情，不過卻也讓人很擔心…我有東西想要交給他。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "請將我給的雷之鏢轉交給 #e#b薩伊#k#n。那是忍者們必備的物品。雖然沒用的父親無法給他太多的幫助，但我希望至少能盡一點心力。我也很擔心他會被其他忍者排擠或欺負。那就拜託了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我也答應你的要求了，你也應該答應我一件事不是嗎？很抱歉，我無法讓你進城。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "嗯啊，嚇我一跳！有什麼事嗎？嗯？你不是忍者？你是怎麼進來的呢？這裡並不是任何人都能進來的地方，\\r\\n#L0##b我是受蘇助的委託，將這個東西送來給你的。而且蘇助和卯助已經答應讓我進城了。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "我父親他答應你進城？他是一個非常有原則的人，不會輕易讓陌生人進出，真是太稀奇了。他送了什麼東西給我呢？哇啊！這是非常好的飛鏢！正巧我在煩惱練習用的飛鏢全都壞了，果然只有父親能夠依賴…我一定要更加努力修練成為一名偉大的忍者！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "雖然你應該是有事才會進城，不過若是可以的話，最好快點回去。城內的忍者們都是些毫無幽默感的人。稍有不慎可能會惹火他們，千萬要小心。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請將我給的雷之鏢轉交給 #e#b薩伊#k#n。那是忍者們必備的物品。雖然沒用的父親無法給他太多的幫助，但我希望至少能盡一點心力。我也很擔心他會被其他忍者排擠或欺負。那就拜託了。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "我正在進行忍者的修行！請不要妨礙我。但是這個飛鏢太久了，所以根本就毫無用處。刀刃很鈍…若是有新的飛鏢就好了。"
+          }
+        }
+      }
+    }
+  }
+}

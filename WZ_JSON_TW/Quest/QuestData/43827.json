@@ -1,0 +1,176 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[萬聖節] 試著成為萬聖節跳舞機器吧！"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "露明要說明萬聖節動作技能的相關內容。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在萬聖節舞會每當一次成功 18個回合時，\r\n就會傳授萬聖節動作技能。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "去詢問露明哪裡可以學習萬聖節動作技能吧。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#一次的舞會中，成功的回合數18個以上 #R43830Ex27countRef43827# / 18\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "萬聖節動作技能1個"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "新星世界"
+    },
+    "summary": {
+      "_dirType": "string",
+      "_value": "#b(此一任務總共可反覆 3次。)"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "starPlanet": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1540102"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201410020000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201411130900"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201410020000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201411060000"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q43827s"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1540102"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "43830"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q43827e"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "18"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "一次的舞會成功回合是18個以上"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "27count"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "嗯，一次要成功18次以上嗎？\\r沒辦法，畢竟萬聖節舞蹈並不是輕易就能學會的。"
+          }
+        }
+      }
+    }
+  }
+}

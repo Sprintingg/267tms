@@ -1,0 +1,200 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓葉冒險奇談] 尋找嘟嘟！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "205"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "透過任務圖示確認這本書的內容！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "透過書本回到過去，在弓箭手村的看板貼上尋找嘟嘟的傳單。\n把事件紀錄在書本上，要確認下一段內容了嗎？"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在弓箭手村的看板上貼好傳單了，要馬上確認這本書的下一個內容嗎？"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#貼傳單1 (#R59746Exchk1Ref59704#)\r\r\n#questorder1#貼傳單2 (#R59746Exchk2Ref59704#)\r\r\n#questorder1#貼傳單3 (#R59746Exchk3Ref59704#)\r"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400031"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "59703"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q59704s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "notInTeleportItemLimitedField": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400031"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "59746"
+      },
+      "QuestRecordAndOption": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "貼傳單1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "chk1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "貼傳單2"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "chk2"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "貼傳單3"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "chk3"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q59704e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "透過書本看到過去，弓箭手村的告示牌上有尋找嘟嘟的傳單。繼續進行故事才能看到下一個內容？"
+          }
+        }
+      }
+    }
+  }
+}

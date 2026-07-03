@@ -1,0 +1,173 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇家騎士團] 騎士的資格證明"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "遇見了在修練騎士考場等待的奇亞。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "擊破分散在地圖中的箱子就會出現怪物，打敗這些怪物後，搜集試煉的象徵 3個。\r\n\r\n箱子可使用一般攻擊Ctrl擊破。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "順利通過奇亞的測試，現在我也成為了真正的西格諾斯騎士了！"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4033670:# #t4033670:# #c4033670# / 3\r\n"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "q20838"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1102104"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q20838s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20837"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "1000"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1102104"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q20838e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033670"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033670"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-3"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "拿來了試煉的印記 3個了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "喔喔～跟聽到的一樣。現在我給你的，是直接做好的椅子，有效地使用吧。累的時候按下 X坐下休息剛剛好。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "我到處做這個做那個有點忙。一次好好聽清楚，通過測試的話多好？\r\n\n我再跟你說一次，好好聽清楚。\r\n找到地圖裡的箱子後用一般攻擊可以打破。之後再打敗從箱子裡跑出來的怪物。 怪物會掉出測驗的道具。用快捷鍵Z把那個撿起來後交給我就可以了。"
+          }
+        }
+      }
+    }
+  }
+}

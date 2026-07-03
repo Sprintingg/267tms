@@ -1,0 +1,128 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "item"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "enchantment"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "[星力]知道這種感覺～"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "星力成功1,000次達成"
+    },
+    "parentId": {
+      "_dirType": "int",
+      "_value": "958"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "rare"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "20"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "uiForm": {
+        "_dirType": "string",
+        "_value": "basic"
+      },
+      "gauge": {
+        "_dirType": "string",
+        "_value": "submission_info"
+      },
+      "gaugeMissionIndex": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "gaugeSubMission": {
+        "_dirType": "string",
+        "_value": "starforce_enchant"
+      }
+    },
+    "prior": {
+      "_dirType": "sub",
+      "block": {
+        "_dirType": "string",
+        "_value": "hide"
+      },
+      "condition": {
+        "_dirType": "string",
+        "_value": "and"
+      },
+      "values": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "achievement_id": {
+            "_dirType": "int",
+            "_value": "955"
+          },
+          "achievement_state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "星力成功1,000次達成"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "starforce_enchant": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "int",
+              "_value": "1000"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            },
+            "type": {
+              "_dirType": "string",
+              "_value": "counting"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub",
+            "starforce_enchant": {
+              "_dirType": "sub",
+              "starforce_enchant_result": {
+                "_dirType": "sub",
+                "condition": {
+                  "_dirType": "string",
+                  "_value": "or"
+                },
+                "values": {
+                  "_dirType": "sub",
+                  "0": {
+                    "_dirType": "string",
+                    "_value": "success"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

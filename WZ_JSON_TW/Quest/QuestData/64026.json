@@ -1,0 +1,211 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[MONAD：第一個徵兆] 烏蘭的寵物"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "125"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "烏蘭在村莊四處奔走，尋找著什麼。與烏蘭交談。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "烏蘭說他在找自己飼養的鼻斗兒與鼻順兒。\r\n鼻斗兒是在守衛哨所上救到的象鼩，鼻順兒是身軀龐大的象鼩。#e幫助烏蘭尋找鼻斗兒與鼻順兒。#n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "烏蘭強忍著淚返回村莊。\r\n希望鼻斗兒與鼻順兒沒事..."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#跟著烏蘭往村外去 (#R64026Exchk1Ref64026#)\r\n#questorder2#尋找鼻斗兒與鼻順兒 (#R64026Exchk2Ref64026#)\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400588"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "64025"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "64031"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q64026s"
+      },
+      "worldList": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "0"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "3"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "4"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "6"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "30"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "45"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "49"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400588"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "64026"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "跟著烏蘭往村外去"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "chk1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "2"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "尋找鼻斗兒與鼻順兒"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "chk2"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q64026e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "鼻斗兒！！鼻順兒！！！！"
+          }
+        }
+      }
+    }
+  }
+}

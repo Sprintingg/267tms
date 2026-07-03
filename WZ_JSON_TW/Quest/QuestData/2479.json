@@ -1,0 +1,168 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 擊退藍色緞帶肥肥"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "黃金海灘的旅遊嚮導#b佩森#k需要幫忙。\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "佩森說最近#b藍色蝴蝶結海岸#k的#b#o1210104##k數量增多，使前往黃金海灘的遊客減少，因此委託擊退#b#o1210104##k。幫助佩森擊退#b#o1210104#50隻#k吧。\\n\\n#o1210104##r#a24791##k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "擊退藍色緞帶肥肥50隻後，向佩森報告結果。佩森很高興的說終於可以有遊客。"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 180\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "180"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "15"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1210104"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "180"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "假如不忙，能不能幫我呢？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "能幫我真感謝你。不知道是不是打擾你了。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "就是最近往黃金海灘的旅客變少了…好像是因為在這前面#b藍色緞帶海岸#k棲息的#b#o1210104##k，冒險者害怕才不來的。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "所以，你幫我處理那#b#o1210104##k的事。大概消滅#b50隻#k左右就可以了。拜託了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯嗯…那就沒辦法。不好意思，打擾了繁忙的你。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "50隻#k#b#o1210104#全部消滅了啊。辛苦了。現在冒險者通行也安全了吧？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝你答應委託。現在可以安心的向冒險者介紹黃金海灘了。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還有剩餘的#b#o1210104##k。那樣的話，冒險者們害怕就不會來往的，趕快處理吧。"
+          }
+        }
+      }
+    }
+  }
+}

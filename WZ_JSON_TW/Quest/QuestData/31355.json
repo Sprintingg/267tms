@@ -1,0 +1,196 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[岩壁巨人] 皇家果涷真好吃"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "67"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "雖然已經要求了1個皇家果凍，但是吉米好像並不滿足。去尋找迷路的探險家吉米吧。\\r\\n#b(吉米在蜂群的棲息地3。)#k"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "迷路的探險家吉米想要更多皇家果凍。到蜂群的棲息地3從將軍大黃蜂身上取得皇家果凍10個吧！ \\r\\n#b(吉米位於蜂群的棲息地3。)#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "給了吉米10個皇家果凍。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4030017:# #t4030017:# #c4030017# / 10\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "10019000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "150"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2210012"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31354"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2210012"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4030017"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "10019000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4030017"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "那麼，要試試味道嗎…\\r\\n哇哇！\\r\\n這滋味…我找不到辭彙形容了！好像年輕了10歲啊。就好像天上的美味在我的舌間輕輕掠過後化開了啊。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "萬事拜託了。請盡可能地為我帶來#r皇家果凍#k吧。如果可以的話，大概#r10個#k左右。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝！我這輩子都不會忘記你為我帶來皇家果凍的恩情的。\\r\\n#b(到蜂群的棲息地3狩獵將軍大黃蜂，取得皇家果凍吧。)#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "再考慮一下吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "皇家果凍…真的帶來了？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "呵…眼眶濕了呢。真想再品嘗一次這種美味。總之，謝謝你了。我會記得你的恩情的！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "找到的話，這次帶給我10個如何？我一定會給你報酬的。\\r\\n#b(消滅黃蜂取得皇家果凍吧。)#k"
+          }
+        }
+      }
+    }
+  }
+}

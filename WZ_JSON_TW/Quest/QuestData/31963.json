@@ -1,0 +1,201 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[黃昏的勇士之村] 魔法提煉2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "268"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "向在忘卻之路上的#b魔法提煉師#k詢問有關忘卻迷霧的事吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "魔法提煉師說要幫我提煉忘卻迷霧。 進入魔法提煉師的提煉室，幫他提煉。 \r\n#e#b進入魔法提煉師的提煉室"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "幫魔法提煉師成功提煉忘卻精華。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#魔法提煉完畢 (#R31966ExyesRef31963#)\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "185"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "189"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "243683459"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2140002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "185"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31962"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2140002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "31966"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "fog"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "魔法提煉完畢"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "yes"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "243683459"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "說要用於夢的世界？呼哦…恩…那樣的話可以理解。 但是什麼都有。 要想製造出如此強大的忘卻迷霧，就必須從頭再提煉。 如果要從那裡開始做的話，可以做給你。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好，那就提煉一下忘卻迷霧吧。 去我的提煉室吧。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "問我去那裡要做什麼？ 那個親自去試試就知道了。 快點動起來吧。 我的#b提煉室就在左邊#k。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不願意幫我提煉了？ 放棄用錢可以買任何東西的想法。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "不錯不錯。 你果然有用。 多虧了你，我才能進行有趣的研究。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "啊，當然不是只有我的研究結束了。 我還做了你想要的忘卻精華。等我一下，我幫你裝進珠子裡。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "問我去那裡要做什麼？ 那個親自去試試就知道了。 快點動起來吧。 我的#b提煉室就在左邊#k。"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[童話村] ?????"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "?????"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "NPC????????????????????????????????."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "???????????????????????????????????????????."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "?????????????????????????????.???????????????????????????."
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "9600"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2030002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2030012"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "9600"
+      },
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "9191"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2030002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2030012"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "去見天空之城的艾瑪並問候她中秋節過的好不好，可以嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝。要去天空之城必須用到船。開往天空之城的船可以在魔法森林或玩具城乘坐。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "在那之前~!我會出一道問題，解開之後再出發吧。#b做好準備之後就要和我說話。#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "覺得去天空之城很勉強嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "為了見到艾瑪就必須前往天空之城。前往天空之城時乘坐的船在維多利亞島的哪個地方才能乘坐呢？\\r\\n#b#L0#魔法森林#l\\r\\n#L1#墮落城市#l\\r\\n#L2#弓箭手村#l\\r\\n#L3#勇士之村#k#l"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "對了，在維多利亞島可在魔法森林的碼頭坐上開往天空之城的船。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "墮落城市的話，會為了轉職成為盜賊而前往那裡。"
+          },
+          "2": {
+            "_dirType": "string",
+            "_value": "弓箭手村的話是弓箭手居住的村子吧？"
+          },
+          "3": {
+            "_dirType": "string",
+            "_value": "勇士之村又被稱作是劍士2轉考驗場.."
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "41"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "200710080000"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "200709200000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "200710080000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "200709200000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9180"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "43200"
+      }
+    }
+  }
+}

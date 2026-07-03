@@ -1,0 +1,155 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 達到50分"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p9070005#好像還有話要說。 跟#b#m960000000##的 #b#p9070005##k說話。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "戰鬥廣場嚮導#p9070005#解說開業活動不管是什麼模式儘管達到 #b50分#k…趕緊挑戰吧。\n\n#rTip！完整的結束一場才能結算分數，中間出來的話分數不會被計算完成不了任務。#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "達到50分，從 #p9070005#那裡得到獎勵。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9070005"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201107130000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201101280000"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201106290000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201106290000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "11008"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9070005"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q11009e"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "11020"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "50"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "入場之前稍等一下~現在進行紀念大亂鬥開始活動中，不管是那個模式，挑戰大亂鬥達到#b50分#k就送禮物。50分不是很簡單嗎？挑戰一下吧~"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "雖然參加大亂鬥攻擊成功後獲得分數，但只憑這個是不能完成任務的。#b完成一次所有關卡後，最後得分結算後才可以確認獲得的分數#k。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "那麼，期待你帥氣的樣子！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "對得到50分沒信心嗎？據說開始了比想的容易多了~"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒達到#b50分#k嗎？不管什麼模式找#b#p9070000##k挑戰大亂鬥吧！"
+          }
+        }
+      }
+    }
+  }
+}

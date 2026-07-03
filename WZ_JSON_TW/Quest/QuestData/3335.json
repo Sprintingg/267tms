@@ -1,0 +1,237 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[瑪迦提亞]雪原的玫瑰"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "想成為人類的休曼諾伊德"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2111003#說#t4031695#的花差不多也該開了，但只有人類溫暖的手才能摘那種花，所以拜託幫忙去摘#t4031695#且送給#b#p2111004##k。露出非常悲傷的表情... \\n\\n若是想讓#t4031695#綻放，需要準備#t4000361#，取得#b#t4000361##k後就和#b#p2111003#交談，說你想讓#k#t4031695#開花。\r\n\r\nTip.#t4000361#可向#b#o7110301##k取得。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把#t4031695#交給了#p2111004#，收到#t4031695#的她露出相當驚訝的表情，看來心情相當複雜的#p2111004#...#p2111003#的愛情有可能開花結果嗎？"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "43"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4031695:# #t4031695:# #c4031695# / 1\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "237600"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2111003"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3334"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "237600"
+      },
+      "senseEXP": {
+        "_dirType": "int",
+        "_value": "35"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031695"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2111004"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031695"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2111003"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "85"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3334"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你嗎？感謝你之前的幫忙。因為你的幫助，我才能夠順利種下#t4031695#。看來…花應該快要開了。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "#t4031695#冰冷無比，但就因為如此，只有透過人類溫暖的雙手才能摘下來。若用休曼諾伊德的手去摘花，它就會變得破碎不堪。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "那麼…拜託你了…請你幫我摘下#t4031695#，並拿給#p2111004#。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#t4031695#是無法靠自己力量綻放的脆弱花朵。\\r\\n你向#b哈門庫魯#k取得#b#t4000361##k後，告訴我你想讓玫瑰開花，我就會送你前往孵化器所在的地方。\\r\\n請在#t4031696#沉睡的培養皿上放置#b#t4000361##k。只要摘下開花的#r#t4031695##k，並且交給#r#p2111004##k就行了。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "若你已做好讓雪原玫瑰開出花朵的準備時，請你再來見我吧！我會告訴種下雪原玫瑰的地方。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "若有什麼困難，那就沒辦法了！若我是人類，就根本不需要向你提出這樣的要求…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "…有什麼事嗎？這是…花？是#t4031695#耶！這是非常珍貴的花…為什麼要送給我呢？什麼？是#p2111003#送給我的禮物？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這是…我最喜歡的花。可是…他為什麼要給我這個呢？#p2111003#…是好人…不…應該說是好的休曼諾伊德，但是我已經結婚了…"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "好像還沒有去 #b#p2111004##k 這啊. 找到#b#t4031695##k交給她. #t4031695#需要#b#t4000361##k才能開出完整的花. #t4000361#可以從#b#o7110301##k獲得."
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "有什麼事嗎？請你最好不要跟我說話…"
+          }
+        }
+      }
+    }
+  }
+}

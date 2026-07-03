@@ -1,0 +1,180 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[懸賞] 蘑菇王"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "蘑菇王的森林小徑裡建立了懸賞標誌板。 \n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "蘑菇王的森林小徑中立了蘑菇王懸賞告示板. 打倒蘑菇王1隻後領取懸賞金. \r\n\r\n蘑菇王的森林小徑可以在哼聲森林小徑移動.\r\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "蘑菇王的森林小徑中 #p1012119#立了蘑菇王懸賞告示板. 打倒蘑菇王1隻後領取了懸賞金. 但是怎麼知道我真的有沒有真正打倒蘑菇王呢?\r\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o6130101# #a27051#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 558\r\n#fUI/UIWindow2.img/QuestIcon/7/0# 5,000\r\n"
+    },
+    "disableAtStartTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "558"
+      },
+      "meso": {
+        "_dirType": "int",
+        "_value": "5000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012130"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012130"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "6130101"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "558"
+      },
+      "money": {
+        "_dirType": "int",
+        "_value": "5000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#eWANTED#n\\n#i3800228#\\n懸賞最近出沒在蘑菇王森林小徑騷擾行人的蘑菇王 1隻。 \\n罪狀： 妨礙通行，私自佔有共有地"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "<附件>\\n掃蕩蘑菇王1隻的人到菇菇歌唱森林:蘑菇王的森林小徑中找到 #p1012130#報告.\\r\\n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "<追申>\\n- 損毀佈告時，徵收罰金10萬楓幣。\\n- 請勿在此丟棄垃圾。」\\r\\n"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "<附件>\\n掃蕩蘑菇王1隻的人到菇菇歌唱森林:蘑菇王的森林小徑中找到 #p1012130#報告. 會給懸賞金.\\r\\n#L0##b蘑菇王 1隻來領取懸賞金了.#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "確認完畢. 支付懸賞金."
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "<附件>\\n掃蕩蘑菇王1隻的人到菇菇歌唱森林:蘑菇王的森林小徑中找到 #p1012130#報告.\\r\\n"
+          }
+        }
+      }
+    }
+  }
+}

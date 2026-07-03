@@ -1,0 +1,272 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[職業] 找尋線索"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "3"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#m100000000##k的#b#@1012003:##k需要有人幫他調查這個事件。我們去和他談一談。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在遭到攻擊時，那個可疑者掉了某樣東西，不過當時他被擊昏了，什麼都記不起來。\\n\\n他建議你前往並調查#b#m104040002##k。他說附近的怪物也許已經把它吞進肚子了，如果你能繼續獵捕這些怪物，或許可以找到一些線索。\\n\\n完成之後，向#b#m100000000##k的#b#@1012003:##k回報。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "你聽到造成#b#m100000000##k的#b#p1012003##k如此憤怒的原因，並已澄清誤會。但對於那個可疑者，目前仍毫無頭緒。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4001341:##t4001341:##c4001341#/1\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 2,250\r\n可進行 '登上鯨魚號！' 任務\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "2250"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2250"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我想請你幫我找出襲擊我的人，辦得到嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我記得我是在這裡遭到襲擊的。而且襲擊我的人好像掉了什麼。當然，因為我被打暈了，所以不記得是誰襲擊我，也不記得他掉了什麼。如果他掉的東西不在那裡，那很可能是被怪物給吃下肚了。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "如果在#b#m104040002##k打倒怪物，可以找到一些蛛絲馬跡。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你是想要再讓我生氣嗎？！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我就知道怪物吞下它了！做得好。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這鐵片…嗯，我要好好研究一下。你先去休息，讓我來仔細研究一下。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "沒發現任何線索嗎？"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012003"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001341"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012003"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "40"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "28171"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "120"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "130"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "111"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "121"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "131"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "112"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "122"
+        },
+        "9": {
+          "_dirType": "int",
+          "_value": "132"
+        },
+        "10": {
+          "_dirType": "int",
+          "_value": "1100"
+        },
+        "11": {
+          "_dirType": "int",
+          "_value": "1110"
+        },
+        "12": {
+          "_dirType": "int",
+          "_value": "1111"
+        },
+        "13": {
+          "_dirType": "int",
+          "_value": "1112"
+        },
+        "14": {
+          "_dirType": "int",
+          "_value": "2100"
+        },
+        "15": {
+          "_dirType": "int",
+          "_value": "2110"
+        },
+        "16": {
+          "_dirType": "int",
+          "_value": "2111"
+        },
+        "17": {
+          "_dirType": "int",
+          "_value": "2112"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

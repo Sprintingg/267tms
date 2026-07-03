@@ -1,0 +1,318 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[職業] 妖精喜歡的是…"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b弓箭手村#k的#b#@1012003:##k說他會告訴你這些妖精喜歡什麼。我們去找他談一談。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "妖精非常喜歡陶笛的聲音。\\n\\n\\n\\n#b#@1012003:##k說他願意幫你製作陶笛，只要你幫他帶回以下物品。\\n\\n#r樹枝#k(從#r木妖#k身上掉落，你可以在#b#m100050000##k輕鬆找到它們)\\n#r魔法森林木頭#k(從#r黑木妖#k身上掉落，你可以在#b#m100040000##k輕鬆找到它們)\\n\\n蒐集好所有物品之後，返回#b弓箭手村#k向#b#@1012003:##k回報。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "如果你將陶笛交給#b魔法森林#k的#b#@1032101:##k，她將會非常歡迎你的到來。我們去見她吧。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4001347:##t4001347:##c4001347#/1\r\n#i4000003:##t4000003:##c4000003#/10\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 2,250\r\n#i4032481:# #t4032481:# 1 個\r\n可進行 '所羅門之弓' 任務\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "2250"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "long",
+            "_value": "4032481"
+          },
+          "count": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2250"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000003"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001347"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032481"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "沒錯，你聽到的都是真的。妖精不喜歡和陌生人交談，尤其是人類，因為他們防衛心很重。不過你可以想想他們喜歡什麼？美食？藥水？水？你沒想過他們喜歡音樂嗎？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "是的，妖精喜愛音樂，尤其是陶笛演奏的音樂。如果你帶回這些所需材料，我可以幫你製作。意下如何？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "打敗#r木妖#k並收集10根#r樹枝#k，打敗#r黑木妖#k並收集1個#r魔法森林木頭#k。如果你帶回這些物品，我可以很快幫你製作。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你若不想去，我也無所謂。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你沒寫下來，卻記得我要你收集的每項物品。\\n\\n"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "雖然外觀不漂亮，但音色清透悠揚。\\n妖精一定會愛死。\\n\\n如#b#p9201118##k建議的，去#b魔法森林#k找#b#p1032101##k。別忘了演奏陶笛。哈哈！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "帶10個#r樹枝#k和1個#r魔法森林木頭#k給我。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012003"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001347"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000003"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012003"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "40"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "28228"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "300"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "310"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "320"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "311"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "321"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "312"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "322"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "1300"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "1310"
+        },
+        "9": {
+          "_dirType": "int",
+          "_value": "1311"
+        },
+        "10": {
+          "_dirType": "int",
+          "_value": "1312"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

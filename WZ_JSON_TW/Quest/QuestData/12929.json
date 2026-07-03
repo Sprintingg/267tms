@@ -1,0 +1,205 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[메이플스쿨] 미션 : 체육관의 유령"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "체육관에 숨어든 유령을 찾아보자."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "또 다시 나타난 유령 #p9000128#! 나의 재능을 눈여겨본 무도서클 회장이 입단을 권유한다. 하지만 무도서클 회장은 유령이다. 체육관을 차지하고 체육수업을 방해하면서 자신과 겨뤄서 이기면 더 이상 귀찮게 하지 않겠다고 하는데…"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "또 다시 나타난 유령 #p9000128#! 나의 재능을 눈여겨본 무도서클 회장이 입단을 권유한다. 하지만 무도서클 회장은 유령이다. 체육관을 차지하고 체육수업을 방해하면서 자신과 겨뤄서 이기면 더 이상 귀찮게 하지 않겠다고 하는데…\\n유령 #p9000128#을 퇴치하고 체육관의 평화를 되찾았다."
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o9101034# #a129291#\r\n"
+    },
+    "disableAtCompleteTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2430990"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "4"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2431023"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000127"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201209200000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201209200000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "12928"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000127"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q12929e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9101034"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "完了！聽說體育館的幽靈又出現了。他似乎忘了被你打敗的事實…我們只能靠你了。你願意趕出那幽靈嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "自己小心。這幽靈和其它幽靈不同好像練了一身的好武術。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "昨天的一場雨使操場變成了爛泥，所以不奪回體育館就無法上體育課了。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "自己小心。這幽靈和其它幽靈不同好像練了一身的好武術。"
+          }
+        }
+      }
+    }
+  }
+}

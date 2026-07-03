@@ -1,0 +1,183 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[克梅勒茲交易所] 在露娜地區進行交易"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "84"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "交易的準備都完成了。為了真正的航海，去找克梅勒茲交易所的#p9390220#吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "露娜地區如果也可以進行交易的話，就可以賺更多的錢了。在道堤地區進行5次以上交易的話，就可以在露娜地區開始進行交易了。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "平順地完成道堤地區的5次以上交易，便可以在露娜地區開始進行交易了！"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "[道堤地區] 進行5次交易"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n可進行 '[克梅勒茲交易所] 羅莎 地區的交易' 任務\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好。#h0#。來這裡有什麼事嗎？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "什麼？你說想快點成為有錢人…這個嘛，我們公會可以告訴你。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "進行5次道堤地區的貿易，就可以到下一個露娜地區進行貿易。聽說可以得到更多黃金和經驗值。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果是#h0#，應該可以比別人還快進行到下一階段的貿易地。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "看來你有事要忙呀。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#h0#現在還未進行5次道堤地區貿易。 將滑鼠移到貿易UI上就可以確認至今進行的次數。 "
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390220"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "140"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "17007"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390220"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "17018"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q17019e"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "5"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "0"
+          }
+        }
+      }
+    }
+  }
+}

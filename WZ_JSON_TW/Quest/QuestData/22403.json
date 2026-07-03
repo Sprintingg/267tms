@@ -1,0 +1,216 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[龍使者，龍魔導士] 尋找漂亮的馬鞍"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "7"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "進入騎乘新騎寵的人的故鄉——#b#m130000000##k之後，突然有人和我說話。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#m130000000#的策士#p1101002#說這裡是騎士的島，叫我趕快出去。說只要告訴我哪裡能找到馬鞍就走之後，他說騎士團騎寵的馬鞍都是#b#m230000000##k的#b#p2060005##k製作的……不知道他能不能製作龍的馬鞍。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "去#m230000000#見到了#p2060005#。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1101002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q22403s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "22402"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2200"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2210"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2211"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2212"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2213"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "2214"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "2215"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "2216"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "2217"
+        },
+        "9": {
+          "_dirType": "int",
+          "_value": "2218"
+        },
+        "10": {
+          "_dirType": "int",
+          "_value": "2219"
+        },
+        "11": {
+          "_dirType": "int",
+          "_value": "2001"
+        },
+        "12": {
+          "_dirType": "int",
+          "_value": "2220"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2060005"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "22404"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "是誰竟然不經允許就進入了#m130000000#？請說出，你的名字和職業，以及島上來的目的。凡是說謊或目的不純的人，一律無法進入島內。\\r\\n#b#L0#嗯？這裡是禁止出入的地區嗎？我看其他人好像可以隨意來往啊？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "這裡是只有冒險騎士團的騎士們可以出入的地方。看來你是不知道吧？這次我就饒恕你。你快點離開吧。\\r\\n#b#L0#等，等等！我能問一個問題嗎？#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "嗯？你來這裡有事嗎？我還以為你是閑著沒事呢？看來是有事情啊。那麼請說出你的名字、職業和訪問目的。\\r\\n#b#L0#我叫黑魔龍，我的職業是黑魔龍！我想為龍配一個馬鞍。聽說來這裡就能找到漂亮的馬鞍……你能幫我想想辦法嗎？#l\\n#k"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "……黑魔龍？是召喚強化聖龍的魔法師嗎？\\r\\n#b#L0#不，不是的……#l\\n#k"
+      },
+      "4": {
+        "_dirType": "string",
+        "_value": "……嗯，真是個奇怪的人。黑魔龍……冒險家之中竟然還有這種職業……嗯，我打聽一下應該就知道了。你說你需要馬鞍？\\r\\n#b#L0#是的！你知道在什麼地方能製作馬鞍嗎？#l\\n#k"
+      },
+      "5": {
+        "_dirType": "string",
+        "_value": "騎士們的馬鞍不是在這裡製作的，因為這裡人手不夠。所以我們委託外面的人製作馬鞍。你去那邊問問看吧。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub"
+        },
+        "1": {
+          "_dirType": "sub"
+        },
+        "2": {
+          "_dirType": "sub"
+        },
+        "3": {
+          "_dirType": "sub"
+        },
+        "4": {
+          "_dirType": "sub"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "歡迎來到#m230000000#~你是冒險家嗎？找我有事嗎？嗯？你是說想騎旁邊的這個生物，所以想製作馬鞍？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "騎士們的馬鞍全都是#b#m230000000##k的#b#p2060005##k製作的馬鞍。如果你對馬鞍感興趣的話，請到那裡去。不要在#m130000000#閒逛。"
+          }
+        }
+      }
+    }
+  }
+}

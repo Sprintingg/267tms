@@ -1,0 +1,140 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[偵探雷夫的事件日誌] 純真又可憐的壞人"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "226"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o2400334# #a371141#\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "似乎在鬥陣俱樂部舉辦大型比賽的樣子，優勝商品好像聽說是公司製的生化兵器，好像是我們在尋找的東西。\r\n\r\n在#b鬥陣俱樂部的入口#k跟馬羅尼對話看看吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "馬羅尼說在 #b危險的鬥陣俱樂部1#k中，請跟隨我進行戰鬥呢。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "我有依照馬羅尼所命令的指示進行了行動。在#b鬥陣俱樂部的入口#k跟馬羅尼進行對話後，確認關於參加比賽的事情。"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q37114x"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "175"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "179"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3004042"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q37114s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "37113"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3004042"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q37114e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2400334"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "我不是說過了，去#b危險的鬥陣俱樂部1#k進行戰鬥後回來。"
+          }
+        }
+      }
+    }
+  }
+}

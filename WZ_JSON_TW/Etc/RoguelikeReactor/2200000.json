@@ -1,0 +1,129 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "info": {
+      "_dirType": "string",
+      "_value": "회전가시"
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "overlapAttack": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": -5,
+          "_y": -145
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 75,
+          "_y": 2
+        },
+        "damage": {
+          "_dirType": "string",
+          "_value": "3"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "z": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    }
+  },
+  "AnimSet": {
+    "_dirType": "sub",
+    "stand": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "AnimReference": {
+              "_dirType": "sub"
+            }
+          }
+        }
+      },
+      "Notifies": {
+        "_dirType": "sub",
+        "overlapAttack": {
+          "_dirType": "sub",
+          "TriggerTime": {
+            "_dirType": "int",
+            "_value": "210"
+          }
+        }
+      }
+    },
+    "disabled": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "AnimReference": {
+              "_dirType": "sub"
+            }
+          }
+        }
+      },
+      "Sections": {
+        "_dirType": "sub",
+        "Start": {
+          "_dirType": "sub",
+          "StartTime": {
+            "_dirType": "int",
+            "_value": "0"
+          },
+          "NextSectionName": {
+            "_dirType": "string",
+            "_value": "Loop"
+          }
+        },
+        "Loop": {
+          "_dirType": "sub",
+          "StartTime": {
+            "_dirType": "int",
+            "_value": "360"
+          },
+          "NextSectionName": {
+            "_dirType": "string",
+            "_value": "Loop"
+          }
+        }
+      }
+    },
+    "appear": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "AnimReference": {
+              "_dirType": "sub"
+            }
+          }
+        }
+      }
+    }
+  }
+}

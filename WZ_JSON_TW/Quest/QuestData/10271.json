@@ -1,0 +1,192 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 가가의 사랑 편지3"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "수줍음 많은 #p9000021#에게 고민거리가 하나 있다는데, #p9000021#를 찾아가 고민을 들어보자."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p9000021#는 #p9020000#가 자신을 어떻게 생각하는지 궁금하다. 자신의 마음을 들키지 않고 마음을 전하고 싶은데... 일단 가가가 편지를 쓸 수 있도록 재료를 준비해주자. 거절한다면 만우절의 거짓말이라고 하면 될 테니까!"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "愛情果然需要純潔的心與真正的勇氣。別因為害怕受傷就和我一樣在愚人節告白，鼓起勇氣真心告白吧。"
+    },
+    "summary": {
+      "_dirType": "string",
+      "_value": "가가에게 편지 쓸 재료를 구해다 주자!"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4032279:# #t4032279:# #c4032279# / 10\r\n#i4032282:# #t4032282:# #c4032282# / 10\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000021"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "51"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "80"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "2009030100"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "2009041300"
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000021"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q10271e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032279"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032282"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032282"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032279"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "저 실은..#p9020000#의 마음을 알아보고 싶지만 용기가 나지 않아요. 싫다고 하면 어쩌죠?"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "‘만우절의 거짓말이었어’라고 하면 상처가 덜하지 않을까요? 빨리 편지를 써야겠어요. 저를 좀 도와주시겠어요?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "예쁘게 편지를 쓰려면 편지지와 연필이 필요해요. 지금 빨리 #b#t4032279# 10장#k과 #b#t4032282# 10개#k를 구해주시겠어요?"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#p9020000#의 마음이 궁금한데, 도와주세요~"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "“누..누난 내여자니깐… from #p9000021#”, 이렇게 쓰면 될까요?"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "\"To #p9000021#, 이런 식의 장난은 곤란합니다. From #p9020000#\" 답장이 왔는데.... 역시 진실된 고백을 해야 했어요. 만우절이라고 사람의 마음을 떠보는 거짓말은 어리섞은 짓 같아요."
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "사랑하는 사람이 있다면 저처럼 마음을 떠보지 마시고 용기내어 진심으로 고백해보세요."
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "아직 재료가 다 모이지 않았어요! 편지를 쓸 수 있게  도와주세요."
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[克拉奇亞] T-1337補給品第2步驟"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "122"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#m600000000#裡的#p9201052#會需要你幫忙為#p9201101#收集補給品。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#m600000000#裡的#p9201052#招募你獵捕怪物並收集補給品。當你完成時，跟#p9201101#談話。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "你已協助#p9201052#和#p9201101#拿取補給品。此任務可在完成24小時後再次進行。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4032025:# #t4032025:# #c4032025# / 2\r\n#questorder1##o9400543# #a614721#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 113,743"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "113743"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9201052"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "5647"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "102"
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "1440"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9201101"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032025"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q61472e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9400543"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嘿，你！你看來夠強在這時代生存。或許你能協助我的好友#p9201101# ，獵捕一些怪物並收集牠們掉落的補給品。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "獵捕下列怪物：\\n#o9400543# (100)\\r並收集下列他們落的物品：\\n#t4032025# (2)"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好，好。完成時就跟#p9201101#說話。它會給你它特製的調配品作為獎勵。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果你改變心意，你完成時，他會給你一個很棒的增益道具。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "感謝你的協助，新人類朋友。這滿足了我目前的需要─請收下此物品做為獎勵。/r經過24小時後，我或許還會需要你的協助。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "好，好。完成時就跟#p9201101#說話。它會給你它特製的調配品作為獎勵。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "獵捕下列怪物：\\n#o9400543# (100)\\r並收集下列他們落的物品：\\n#t4032025# (2)"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "獵捕下列怪物：\\n#o9400543# (100)\\r並收集下列他們落的物品：\\n#t4032025# (2)"
+          }
+        }
+      }
+    }
+  }
+}

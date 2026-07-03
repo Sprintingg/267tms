@@ -1,0 +1,212 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[奇幻村]遺棄紙條的主人"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "地板上有一張奇怪的紙條閃入眼簾。撿起來看看。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "迷宮中撿到了奇怪的紙條。得把紙條還給主人。紙條的主人會不會是武英？"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "迷宮中撿到了奇怪的紙條。得把紙條還給主人。紙條的主人會不會是武英？把奇怪的紙條交給地下神殿裡的武英。"
+    },
+    "summary": {
+      "_dirType": "string",
+      "_value": "把路上撿到的紙條還給主人。會不會是武英的？"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4032250:##t4032250:##c4032250#/1"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "被丟棄的紙條"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 14,450\r\n\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "31"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "14450"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1063014"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "68"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1061014"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032250"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032250"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "14450"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032250"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "地上有奇怪的紙。要撿來看看嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "紙條上寫有不明單字。\\r\\n#b黑暗魔王、地下神殿、盲目的年輕人、封印之鑰…我的死#k\\r\\n怎麼也看不懂是什麼意思。在四周找不到紙條的主人。也許紙條的主人就是麥吉的弟子武英。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "是有人扔的垃圾？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嗯？那是什麼？不是我的。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "尋找紙條的主人。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "找我有什麼事…"
+          }
+        }
+      }
+    }
+  }
+}

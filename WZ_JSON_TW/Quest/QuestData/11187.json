@@ -1,0 +1,235 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "休菲凱曼的託付"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "怪物公園的休菲凱曼似乎有事情想要拜託的樣子。\r\n這就趕緊去找他，打聽看到底是有什麼事情吧！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在怪物公園副本要中若發現到某種奇怪的東西，那就是想要拜託你拿來的東西。不過絕對不能把發現到的東西打開來看。\r\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "依照休菲凱曼的請託，在此把#t2430290#給帶來了。到底這裡面有著什麼東西呢。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i2430290:# #t2430290:# #c2430290# / 1\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#i4310020:# #t4310020:# 5 個\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4310020"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9071000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9071000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2430290"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2430290"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4310020"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "呵呵呵。 最近過得如何呢？ 有沒有不便的事？？我最近有很小的煩惱，你能幫我嗎？\\r\\n#L0##b好，我會的。是什麼事呢？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "好，太好了。想起這怪物公園給你的愉快，也該稍微報答我吧！如果你在怪物公園發現了什麼不對勁的東西，就立即帶來給我。比如說像#b#t2430290##k的東西。\\r\\n#L0##b#t2430290#嗎？那是什麼？#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "你不用知道，絕對不可以打開。絕對！絕對！絕對！\\r\\n#L0##b(越那樣講就更好奇裡面裝有什麼…找得到話偷偷打開看看？…) 是，我知道了。#l\\n#k"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "好，那麼發現時立即帶來給我。#r絕對不可以打開喔！#k"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "比起外表還要冷淡呢。我知道了，快去吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "好，帶來不對勁的東西了嗎？我指#t2430290# 。你應該沒有打開來看過吧？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "呵呵呵。好，謝謝。別好奇在信封內裝有什麼。 那麼祝你在怪物公園度過愉快的時間～"
+        }
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

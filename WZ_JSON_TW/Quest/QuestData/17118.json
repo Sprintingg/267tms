@@ -1,0 +1,245 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[水世界]做什麼用的物品呢"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "35"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4000869:# #t4000869:# #c4000869# / 200\r\n#questorder1##o9390010# #a171181#\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p9390007#的幽靈歐尼斯調查結束了嗎？去看看吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "光靠一種歐尼斯似乎難以進行調查。得收集其他種類的歐尼斯才行。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "請取得其他種類的歐尼斯。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "5000000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5000000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000869"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-200"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "喔，來了啊。這歐尼斯啊... 擁有非常強烈的負能量。那些幽靈到底是誰，怎麼會擁有這種東西的呢。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "所以說啊！有事要拜託你。請收集其他種類的歐尼斯"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯...我在猜會不會有其他怪物或幽靈。從這邊稍微往前走的話，就會出現 #b#m860000021##k，在那邊也同樣感受到不輸給這邊的強烈負能量。大概只要去那邊就可以取得。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "數量適當就好...可以請你找來#e#r200個#n#k嗎？那麼這次也拜託你了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "要給多少錢才會接受呢"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你來了！ 比想像中還快。如何？有其他怪物嗎？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "你… 又是不同的幽靈啊。根據很久以前的紀錄文件指出，在水世界還沒有變成這樣之前，事實上有某艘船在這裡遇難了。那艘船是比想像中還要龐大的船... 所以我在想，這該不會是當時死去的船員的靈魂吧。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "總之，辛苦了。我現在得來找找看有關這兩個歐尼斯的資料了。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "你現在可以去休息了。等一會再見面。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "讓我來看看…好像還不夠耶?"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "才擊敗這些能做什麼啊?"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390007"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "200"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "17117"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390007"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000869"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "200"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9390010"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "500"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[伊露納]你就是我真正的對手！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p9400462#問自己有沒有想要成為她真正的對手。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "完成#p9400462#的委託30次，成為她真正的好對手吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "成為#p9400462#真正的對手了！"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#進行委託 #R63570ExcountRef63567# / 30\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\\r\\n#i2436828:##t2436828:# 50個"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "long",
+            "_value": "2436828"
+          },
+          "count": {
+            "_dirType": "long",
+            "_value": "50"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400462"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "63570"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "count"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q63567s"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201708300000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400462"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "63570"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "30"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "進行委託"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "count"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q63567e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你到目前為止已經進行了 #R63570ExcountRef63567#次委託。你在加油一下吧。只要完成30次就會把你當成是我的好敵手喔！"
+          }
+        }
+      }
+    }
+  }
+}

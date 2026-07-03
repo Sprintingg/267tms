@@ -1,0 +1,304 @@
+{
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot1": {
+        "_dirType": "sub",
+        "fly": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "fly"
+          },
+          "StartPos": {
+            "_dirType": "int",
+            "_value": "0"
+          },
+          "EndPos": {
+            "_dirType": "int",
+            "_value": "1200"
+          },
+          "LoopingCount": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "fly": {
+        "_dirType": "sub"
+      },
+      "resetVelocity": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_ResetVelocity"
+          }
+        }
+      },
+      "jumpToEndSection": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "30"
+        },
+        "EndTriggerTime": {
+          "_dirType": "string",
+          "_value": "750"
+        },
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_JumpToSection"
+          },
+          "SectionName": {
+            "_dirType": "string",
+            "_value": "end"
+          },
+          "ReqElapsedTime": {
+            "_dirType": "string",
+            "_value": "2160"
+          }
+        }
+      },
+      "effect1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          }
+        },
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "30"
+        }
+      },
+      "effect2": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-2"
+            }
+          }
+        },
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "30"
+        }
+      },
+      "end": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "751"
+        }
+      },
+      "attack": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "30"
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_PlaySound"
+          },
+          "SoundPath": {
+            "_dirType": "string",
+            "_value": "Sound/Redmoon.img/Skill/212/Use"
+          }
+        }
+      }
+    },
+    "Sections": {
+      "_dirType": "sub",
+      "initiate": {
+        "_dirType": "sub",
+        "StartTime": {
+          "_dirType": "int",
+          "_value": "0"
+        },
+        "NextSectionName": {
+          "_dirType": "string",
+          "_value": "fly"
+        }
+      },
+      "fly": {
+        "_dirType": "sub",
+        "StartTime": {
+          "_dirType": "int",
+          "_value": "30"
+        },
+        "NextSectionName": {
+          "_dirType": "string",
+          "_value": "fly"
+        },
+        "EndTime": {
+          "_dirType": "int",
+          "_value": "750"
+        }
+      },
+      "end": {
+        "_dirType": "sub",
+        "StartTime": {
+          "_dirType": "int",
+          "_value": "751"
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "fly": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "SelfBuff"
+      },
+      "selfBuffID": {
+        "_dirType": "int",
+        "_value": "211"
+      },
+      "selfBuffAction": {
+        "_dirType": "string",
+        "_value": "ApplyAndRemoveOnEnd"
+      }
+    },
+    "attack": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "400"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "6"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -250,
+          "_y": -230
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 250,
+          "_y": 140
+        },
+        "buffLevel": {
+          "_dirType": "string",
+          "_value": "2"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub"
+        }
+      },
+      "hitSoundPath": {
+        "_dirType": "string",
+        "_value": "Sound/Redmoon.img/Skill/212/Hit"
+      },
+      "eventTags": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "RLGame.Effect.Shock"
+        }
+      },
+      "targetBuffID": {
+        "_dirType": "string",
+        "_value": "502"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "Keydown": {
+      "_dirType": "sub",
+      "KeyUpJumpToSections": {
+        "_dirType": "sub",
+        "fly": {
+          "_dirType": "string",
+          "_value": "end"
+        }
+      }
+    },
+    "Tags": {
+      "_dirType": "sub",
+      "cannotDestroy": {
+        "_dirType": "sub"
+      },
+      "movable": {
+        "_dirType": "sub"
+      },
+      "interruptable": {
+        "_dirType": "sub"
+      },
+      "turnable": {
+        "_dirType": "sub"
+      }
+    },
+    "cooltime": {
+      "_dirType": "string",
+      "_value": "15"
+    },
+    "time": {
+      "_dirType": "string",
+      "_value": "7.5"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "6"
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "400"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "3"
+    }
+  },
+  "SkillTags": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "string",
+      "_value": "RLGame.Skill.Basic"
+    }
+  }
+}

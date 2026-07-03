@@ -1,0 +1,191 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 開始種西瓜看看吧！"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoPreComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p9000021#說要在天空漸漸暗下的時間開始種植西瓜。尋找看看#r#p9000021##k吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "從#p9000021#手上獲得#t04162002#。現在就去拿#b#t2440004##k和#b#t2440005##k吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "從#p9000021#手上獲得#t04162002#。現在就去拿#b#t2440004##k和#b#t2440005##k吧。"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#i4162002:# #t4162002:# 1 個\r\n可進行 '西瓜農日記不見了嗎？' 任務\r\n可進行 '每日送西瓜花盆！' 任務\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4162002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000021"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201106160000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201106160000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000021"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4162002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "dateExpire": {
+            "_dirType": "string",
+            "_value": "2011063000"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "你好，#b#h0##k！有什麼事呢？\\r\\n#L0##b聽說開始種西瓜了…#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "啊，風聲已傳到#h0#了啊！果然在新楓之谷是沒有祕密的。是，對的。現在天氣漸漸熱了，今年夏天的西瓜一定很棒的，所以先開始種西瓜了。#h0#也要開始種種看西瓜嗎？那麼請先收下#r#t4162002##k。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "收下#t4162002#才能給2個你西瓜花盆，所以請先收下#t4162002#。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "點擊其他欄位#t4162002#即可確認寫的西瓜農日記的日期獎勵和寫了多少西瓜農日記。種植我每天給的#t2440004#，得到 #b#t2430381#後每天可寫一次#k西瓜農日記，也可以種植#r#t2440005#。#k"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "那麼我會準備要給#e#b#h0##k#n的#t2440004#和#t2440005#，馬上來找我說話或#b點擊左邊的活動通知#k來跟我說話！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請確認看看其他欄位是否還空有1格以上？"
+          }
+        }
+      }
+    }
+  }
+}

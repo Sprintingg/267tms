@@ -1,0 +1,211 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 內拉的委託"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽說有了新的事情。 去找一下內拉吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "得要消滅沼澤泥怪物後，找回被搶的急救箱，送到給墮落城市醫院。\n\nTip。 沼澤泥怪物主要棲息在 #m103030300#。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把急救箱放回到墮落城市醫院。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4033045:# #t4033045:# #c4033045# / 1\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "21731"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052103"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "45"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2878"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052105"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033045"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "21731"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033045"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "正常"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "往墮落城市配送緊急藥品的篤伊經過沼澤時把藥品被沼澤爛泥怪物搶走的事故發生了."
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "消滅#m103030300#的沼澤爛泥怪物，把丟失的#b急救箱#k找回來。 沒問題吧？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那麼，小心一些。 啊！ 急救箱不必拿給我，可以拿到#b墮落城市醫院#k嗎？ 墮落城市醫院裡陰森森的感覺讓人覺得非常討厭…那就，拜託了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "再考慮一下，願意的話再來找我。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好。 你好啊，好久不見。 來這裡有什麼事？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "啊，我聽說了。 據說會把急救箱拿到這裡來…"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "交給我吧。 我知道應該放在哪里。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "急救箱我已經放好了。 現在還是覺得非常冷非常孤獨…若能有朋友該多好…"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "消滅沼澤爛泥怪物，找回丟失的急救箱， 並把急救箱拿到墮落城市醫院是本次任務內容。"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "拿到墮落城市醫院吧。 我對進入那裡面有點…只好繼續麻煩你了。"
+          }
+        }
+      }
+    }
+  }
+}

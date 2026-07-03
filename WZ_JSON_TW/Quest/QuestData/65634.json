@@ -1,0 +1,169 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓之谷探險隊] 古代石板的解讀 : 魔力的源泉"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "136"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "已證明去#b幻影島#k探險的資格。去和海多妮對話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "海多妮請求在#b幻影島#k實際進行勘查後，回報調查結果。 在島上#b生存一天以上#k，建設#b生存工作台#k，向總部傳送無線電後返回。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "根據勘查所接收的情報，在幻影島內，有個名叫#b大地手杖#k的寶物沉睡於此。但是#b大地的血#k是什麼，#b大地的心臟#k又是指什麼呢？ "
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#在幻影島生存一天以上 #R65634ExsurviveRef65634# / 1\r\n#questorder1#架設生存工作台 #R65634Ex2000Ref65634# / 1\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9401216"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "65633"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q65634s"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9401216"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "65634"
+      },
+      "QuestRecordAndOption": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "在幻影島生存一天以上"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "survive"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "架設生存工作台"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "2000"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q65634e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "勘查還順利嗎？\r\n在勘察中為了和總部通信，別忘了建造#b生存工作台#k！"
+          }
+        }
+      }
+    }
+  }
+}

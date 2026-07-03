@@ -1,0 +1,181 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[童話村] 烏山的烈火"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "40"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#尋找火災的根源地 (#R30450Exm1Ref30450#)\r\n#questorder2#調查洞穴內部 (#R30450Exm2Ref30450#)\r"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "#m224000100#"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "發生了跟幾年前的大火災一樣的狀況。\n到底是什麼事呢？\n在其他人跟火災奮鬥的這段期間，快去尋找引起火災的原因吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "發生了跟幾年前的大火災一樣的狀況。\n到底是什麼事呢？\n在其他人跟火災奮鬥的這段期間，快去尋找引起火災的原因吧。\r\n去火災的根源地看看吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "發生了跟幾年前的大火災一樣的狀況。\n到底是什麼事呢？\n在其他人跟火災奮鬥的這段期間，快去尋找引起火災的原因吧。\n好像是從烏山入口的隱藏洞穴裡開始的。"
+    },
+    "summary": {
+      "_dirType": "string",
+      "_value": "回收最後的猜忌之玉後，拯救陷入危機的童話村吧。"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 340,943"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "340943"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "125"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2074000"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q30450s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "30449"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2074000"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "30450"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "尋找火災的根源地"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "m1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "調查洞穴內部"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "m2"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "要去找#b第一次失火的地方#k才可以！\\r(聽姚美說， 已都燒光的#b左邊的山#k感覺有點奇怪。)"
+          }
+        }
+      }
+    }
+  }
+}

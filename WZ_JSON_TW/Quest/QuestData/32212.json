@@ -1,0 +1,186 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓之谷世界的冒險家] 準備好去冒險了嗎?"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "77"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "跟楓之港的船長,霸西力說話吧."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "楓之港的船長,霸西力說香格里拉號還沒準備結束,請先等一下就出發."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "楓之港的船長,霸西力說香格里拉號還沒準備結束,請先等一下就出發.不過,有一個很慌張的少女來找霸西力."
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 210\r\n可進行 '呆呆的冒險家' 任務\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "210"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "10305"
+      },
+      "subJobFlags": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32211"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "0"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "10306"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "999999999"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "210"
+      },
+      "transferField": {
+        "_dirType": "int",
+        "_value": "999999999"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "為歡迎初步冒險家,所有的冒險家們都可以免費使用香格里拉號.但是...剛好船還沒有完全準備好.在準備好以前,先在村莊裡等待吧."
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝.任務也一個一個接受看起來,麥加的新人教育做的很好.時間不會花很久,去逛一下村莊吧."
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯,麥加連拒絕的方法都教我了呢.......但是還能怎麼辦呢,船還沒準備好呢.無法就這樣使用狀態不佳的船草率出航啊."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "那..那個.......那個.......\\r\\n#L0##b(少女的聲音太小聲了，霸西力聽不見)#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "那...那個......"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那...那個......這裡...."
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

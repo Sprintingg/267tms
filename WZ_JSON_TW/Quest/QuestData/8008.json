@@ -1,0 +1,137 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[世界] 美代子的請求"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "美代子，貓和雨珠子"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "3"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去找正在派出所前面哭泣的#b美代子#k。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b美代子#k請求我去找偷走雨珠子的#b波斯貓#k要回雨珠子。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "幫#b美代子#k要回#b雨珠子#k，可以得到一個詛咒的強化書的獎勵。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "45"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "8009"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "看起來他應該就是搶走美代子寶物的貓咪吧。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那就跟他對話看看吧，不知道他聽不聽的懂人類的話，要是聽不懂就得去請教受傷的貓了。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我父親去城市賺錢，偶爾回來一次。每次回來，都會買漂亮的禮物給我…。但是父親給的，很漂亮的雨珠子被貓咪搶走了。怎麼辦啊~~！是我的寶物啊…。拜託了！幫我找回我的寶物吧！"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝！那就拜託了~！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "抱歉提出過分的請求。那樣的話…原來你是真的很忙…知道啦~！不過，如果下次有空的話能不能幫我忙啊？"
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9120011"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "40"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8018"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9120013"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[特別周末] 提供時空石"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "可提供周末可以使用的時空石。 "
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "可提供周末可以使用的時空石。 "
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "可提供周末可以使用的時空石。 "
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q13697s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201310090001"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201303210000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2431571"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "dayOfWeek": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "Saturday"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "Sunday"
+        }
+      },
+      "dayOfWeek_t": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "Saturday"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "Sunday"
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2431571"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "untilMidNight": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "您好 #b#h0##k， 特別的週末，每週末提供可以在大陸上任何一個村莊移動的 #e#b#t2431571##k#n。現在要馬上領取嗎？\\r\\n#i2431571:#  #t2431571# 1個"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯…改變心意的話再來跟我說話吧。但，在週末才會提供的時空石一定要來拿喔！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b#e#t2431571##n#k每 20分鐘可使用一次，如果弄丟的話，週末可以隨時來拿，所以請放心地好好使用吧。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請確認消耗欄是否有空格後重新試一次。"
+          }
+        }
+      }
+    }
+  }
+}

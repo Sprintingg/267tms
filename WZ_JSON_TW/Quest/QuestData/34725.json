@@ -1,0 +1,215 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[* 赫力席母] 前往黃金地帶"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "259"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#完成戰場 (#R34725ExRef34725#)\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "接下來只要進入黃金地帶就行了。和#b伊黛亞#k交談吧。\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "擊敗敵人奪回黃金地帶吧！\\r\\n#r ※ 因為是戰場任務，失敗時必須放棄再次執行。#k\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "奪回黃金地帶了。在黃金地帶黑市遇見了伊黛亞。\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "119"
+      }
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "16"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "193655"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001000"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q34725s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "90"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34724"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "6400"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "6410"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "6411"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "6412"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "6413"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "6414"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001100"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "34725"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "完成戰場"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "193655"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "平安歸來了啊。真的是場苦戰。我想這應該可以看做跨越了奪回赫力席母的重要階段。\\r\\n"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "但是光奪回這裡還不能放心。敵人的殘黨還沒有完全撤離。\\r\\n"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "關於這件事，目前由 #b皮塔斯#k大人在應付，你可以先去找他看看。這段時間我會先擬其他策略。\\r\\n"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "走吧，前往這個階段的最後戰場。準備好要為前進黃金地帶進行最後戰役了嗎？\\r\\n#r※失敗時需放棄後重新執行。#k\\r\\n"
+          }
+        }
+      }
+    }
+  }
+}

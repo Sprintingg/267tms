@@ -1,0 +1,154 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[LINE FRIENDS] LINE FRIENDS真正的朋友"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "兔兔好像還有什麼話要說的樣子。去跟兔兔對話看看吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "聽取兔兔的照片攝影請求１０次，收集完所有LINE FRIENDS貼圖特效的話，兔兔說可以獲得特別準備的額外獎勵。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "兔兔為了一直無條件幫忙的勇士，準備了特別的勳章。要好好收藏這個裝滿兔兔心意的勳章。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#LINE FRIENDS貼圖特效10種全部收集(#R64547ExRewardStringRef64524#)"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400841"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q64524s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "61"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "64509"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201903270900"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201904240000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400841"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "64547"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "complete"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "LINE FRIENDS貼圖特效10種全部收集"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "RewardString"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q64524e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "好像還沒收集完#bLINE FRIENDS 貼圖特效10種#k！還差得遠呢！"
+          }
+        }
+      }
+    }
+  }
+}

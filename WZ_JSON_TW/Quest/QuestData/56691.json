@@ -1,0 +1,209 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 【羊群牧場】以成為羊群牧場正職員工為目標！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "羊群牧場主人『阿利亞斯』正在募集正職員工。聽說只有正職員工可以得到特別禮物，再去找他看看吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "進行打工抓羊40次，就可以成為牧場的正職員工。成為正職員工後，聽說可以取得特別的禮物，再挑戰看看吧！"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "進行打工?羊40次後，再去?阿利亞斯時，他說已經?到正職員工了…這?是晴天霹靂！不過作?道?的回禮，還是拿到了一般只給正職員工的 #i3015053##t3015053#和#i4001832##t4001832#。 "
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "打工次數：#b#jcount@56693##k / 40次"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic# \r\r\n#i3015053:# #t3015053:#\\n#i4001832:# #t4001832:# 50個"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "long",
+            "_value": "4001832"
+          },
+          "count": {
+            "_dirType": "long",
+            "_value": "50"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "目前還沒完成 40次呢，再辛苦一下吧！"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "9310478"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q56691e"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "56693"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "40"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "count"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q56691s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "9310478"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201502250000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201502250000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201503180000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201503180000"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "56693"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "count"
+          }
+        }
+      }
+    }
+  }
+}

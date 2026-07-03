@@ -1,0 +1,226 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[埃德爾斯坦] 準備楓幣吧"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "24"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#p2153000##k的祕密提議會是什麼呢。聽聽看吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2153000#說他願意賣出自己擁有的#b#t1003134##k。既然是黑色翅膀的成員，只要是有進入礦山權限的幹部衣服，那麼守門人一定會允許通過…可是衣服要#b100000楓幣#k。\r\n\r\n#b100000楓幣#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p2153000#笑著說如果遺失#t1003134#時，可以再賣一次，所以隨時可以找他。雖然是讓人很討厭的男人，但是終於可以進入礦山內部了。"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "meso": {
+        "_dirType": "int",
+        "_value": "-100000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2153000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "23198"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "M"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "demand"
+          }
+        }
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "23198"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1003134"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2153000"
+      },
+      "endmeso": {
+        "_dirType": "int",
+        "_value": "100000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "money": {
+        "_dirType": "int",
+        "_value": "-100000"
+      },
+      "setEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "qrID": {
+            "_dirType": "int",
+            "_value": "23198"
+          },
+          "key": {
+            "_dirType": "string",
+            "_value": "quest"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "M"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "qrID": {
+            "_dirType": "int",
+            "_value": "23198"
+          },
+          "key": {
+            "_dirType": "string",
+            "_value": "demand"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "clear"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "果然如此。呵呵呵...價格是#b100000楓幣#k。什麼，不貴吧？ 當然，我是免費得到的..."
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "啊？那樣做也行嗎？反正黑色翅膀的幹部中沒人去確認這些。還有世上錢是最好的。那爛村子也給不了錢，至少得賺點啊。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我會等你的，準備好錢後再來找我吧。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不是為了衣服才來的嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "帶來1000000楓幣了嗎？好，好。那我就給你帽子。請稍後和我對話。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "什麼？還沒湊齊#b100000楓幣#k？這這，挑錯客人了呢…你不是想進礦山嗎？！"
+          }
+        }
+      }
+    }
+  }
+}

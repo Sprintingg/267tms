@@ -1,0 +1,173 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[次元圖書館] 妖精女王"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "82"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "根據情報，最後發現白魔法師的地方是艾靈森林．．． 應該能夠找到線索。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "去找妖精的女王艾畢奈亞吧.\\r\\n#b(去艾靈森林尋找艾畢奈亞的巢穴吧.)#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "見到妖精女王艾畢奈亞了.她毫不掩飾地表達了對人類的敵意."
+    },
+    "selfStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "gofqueen"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "77904"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q32632s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32631"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2510002"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q32632e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "77904"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "有什麼事嗎?我對無禮的人類沒有什麼好說的.立刻消失吧!\\r\\n#L0##b(談論黑暗怪物的事情吧.)#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "黑暗的怪物?那種東西有什麼好畏懼呢?對我們來說,比黑暗怪物更恐怖的就是人類了.他們綁架了我們的同族,並且竊取我們的寶物!就只是因為錢的關係!\\r\\n#L0##b(試著談論白魔法師的事情吧.)#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "#b(聽到白魔法師的名字後,艾畢奈亞的表情顯得有些奇怪.)#k\\r\\n白魔法師...?為什麼要找白魔法師呢?"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "他是我唯一見過的善良人類.我很喜歡在一旁看著他研究魔法的樣子...他是理想主義者.比任何人都還要具備熱忱.他一定能夠創造出更好的世界."
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "但我不能輕易說出他的居住處.因為我無法相信你並非壞人."
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你是誰呢?"
+          }
+        }
+      }
+    }
+  }
+}

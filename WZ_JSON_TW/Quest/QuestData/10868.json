@@ -1,0 +1,235 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 遺失的月光小夜曲"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "黃金富豪說，雖然他收購了這樂譜沒有錯，但是在運送到金庫的途中，受到怪物的襲擊後樂譜就不見了。問他是被什麼怪物襲擊，他卻說已經不記得是什麼怪物了...難道就先抓了怪物再說吧...。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "黃金富豪說，將樂譜運送到金庫的途中，受到怪物襲擊後樂譜不見了…經過狩獵怪物後，終於將樂譜重新拿到手中。雖然想馬上拿給老爺爺月妙，但是樂譜封的很緊，如果勉強打開可能會撕裂。只能先把樂譜交給黃金富豪處理了。"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "月光小夜曲"
+    },
+    "order": {
+      "_dirType": "string",
+      "_value": "3"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4032827:# #t4032827:# #c4032827# / 1\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 500\r\n可進行 '音樂盒的材料' 任務\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "500"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "500"
+      },
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "10869"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032827"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "所以你要的就是那個樂譜嗎？\\r\\n#L0##b我是因老爺爺月妙的委託來的。可以讓我看看那個樂譜嗎#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "嗯…這不太方便。我不是因為不想給你看。我有難言之隱…呼嗚～其實不久前我拿到了夢寐以求的 #b月光小夜曲的樂譜#k。但是當我運送到金庫的途中，受到怪物的襲擊就被偷走了。如果你幫我從怪物那裡找到這樂譜，我就給你看樂譜吧。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我對襲擊我的怪物一無所知。所以應該說所有的怪物都有嫌疑。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "有來有往。這才是交易的基本 。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "難以置信！！你真的幫我找回了樂譜！！"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "我對襲擊我的怪物一無所知。所以應該說所有的怪物都有嫌疑。但是我確定是怪物拿走了#b月光小夜曲的樂譜#k。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "我對襲擊我的怪物一無所知。所以應該說所有的怪物都有嫌疑。但是我確定是怪物拿走了#b月光小夜曲的樂譜#k。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2084001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201010040000"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201009150000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201009080000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201009150000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "10867"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2084001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032827"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

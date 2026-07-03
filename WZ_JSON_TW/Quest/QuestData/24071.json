@@ -1,0 +1,225 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[精靈之王，精靈遊俠] 襲擊者1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "8"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "像現在似乎找回理性的#b#p1012100##k對話，聽了現在我的情況和#p1012100#的情況以後，判斷我們該如何行動。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "告知#p1012100#我是如何醒過來，現在村莊的情況如何等內容全部說明完畢後，並詢問有關新楓之谷世界的狀況。\r\n\r被封印的黑魔法師再次甦醒的傳聞，還有讓黑魔法師復活的黑色翅膀組織，為了阻止他的#p1101000#騎士團，失去記憶的狂狼勇士…很多事情說完後，#p1012100#說想要前往 #b#m101050000##k看看…\r"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "往外出去的瞬間就受到攻擊，使用機器的少年…#p1012100#說似乎是黑色翅膀的手下，我們的事情似乎都聽到的樣子。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "6000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012100"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q24071s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "25"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "24070"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2300"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2310"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2311"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2312"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2313"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "2314"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012100"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "24095"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "6000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "你沒事吧，精靈遊俠？！ 沒有受傷嗎？\\r\\n#L0##b只是嚇到身體沒事。 …你呢？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "我也沒事。 哈… 還好。 \\r\\n#L0##b可是那些傢伙是什麼呢？ 為什麼會突然襲擊我們呢？#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "你看到他們頭上帶的翅膀標誌嗎？ "
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "是。 他們就是想要讓黑魔法師復活的人… 是#r黑色翅膀#k！ 雖然不過是餘黨…"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "啊… 請等一下。 我忘了一件事。 我先整理物品請你在外面等等我。 精靈遊俠。"
+          }
+        }
+      }
+    }
+  }
+}

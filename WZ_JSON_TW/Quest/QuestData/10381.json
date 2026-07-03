@@ -1,0 +1,232 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 莉琳的禮物"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "等級達到70後，#b#p9010000##k突然來對話…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p9010000#的等級已達到70，能夠獲得#p1201000#準備的#b特殊禮物#k。從\\n\\n#i1112405:#\\n\\n前往#b#m140000000##k找#b#p1201000##k對話。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p1201000#給了#t1112405#。在同屬性內能夠隨便移動的特殊戒指。不只對狂狼勇士，對所有人來說都是非常實用的禮物。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "70"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201003010200"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201003010200"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "50220"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2000"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2100"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2110"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2111"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2112"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1201000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1112414"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1112405"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1112414"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "您好，#h0#恭喜您的等級已到70級！（鼓掌）！不知道您知不知道，對於等級到達70級的狂狼勇士是會有特殊的禮物的。那就是我和#p1201000#合力造出來的戒指！啊？問我是什麼樣的戒指嗎？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "#i1112405:##t1112405#\\n#t1112405#是這樣的道具！雖然不能與玩家交易，但是通過倉庫帳號可以移動，所以只要是在相同帳號裡的角色都可以使用，這就是它的特徵。\\r\\n\r\n"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "那，現在應該理解了吧？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這活動是到2010年6月23日維護前，所以在那之前快到#b#m140000000##k，見#p1201000#吧！#p1201000#在等著你呢。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "難道還不理解嗎？那我就再給你說明一次，請重新與我對話吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "再給你這個禮物之前，必須在道具欄位要有我上次給你的50級用的莉琳戒指。"
+        }
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "來了啊，狂狼勇士。就像你知道的那樣…有一個與#p9010000#一起準備的禮物，給，就是這個戒指。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不，不只是為了使你開心而準備的，而是因為你變強的話我們也會高興所以才送給你！給，戴著它好好修煉吧！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "難道你好沒去找#p1201000#嗎？在#b#m140000000##k，#b#p1201000##k正急切的等著你。"
+          }
+        }
+      }
+    }
+  }
+}

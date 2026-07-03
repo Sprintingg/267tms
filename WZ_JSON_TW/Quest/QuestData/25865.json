@@ -1,0 +1,215 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[天使破壞者] 幽靈的正式進攻"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "23"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "首先抵擋了梅格耐斯的軍隊。防備下一次的攻擊吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "梅格耐斯的軍隊似乎發動了總攻擊。地點是 #m400010200#。一定要抵抗好守住 #m400000000#！\n#r若要重新進行請放棄任務後重新開始。#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "梅格耐斯部隊的規模只有這樣而已嗎？ 奇怪。#p3000000#也好像很不可思議。總之我們勝利了！！"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 16,000\r\n可進行 '敵人的聲東擊西' 任務\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "16000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3000000"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q25865s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "dressChanged": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "25864"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "6500"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "6510"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "6511"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "6512"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "6513"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "6514"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3000000"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "25797"
+      },
+      "dressChanged": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "16000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "表現得很好。利用敵人的損害，擋住了梅格耐斯的總攻擊了。但是，總覺得讓人有些不安。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "以總攻擊來說，敵人的數量實在太少了。雖然是在保護罩內部，不過敵人似乎變弱了... 總之，看來梅格耐斯也毫無看頭可言。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "若是不阻止幽靈的總攻擊，#m400000000#就會很危險。若是想要重新進行的話，就要放棄任務，重新進行。"
+          }
+        }
+      }
+    }
+  }
+}

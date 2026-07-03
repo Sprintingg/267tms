@@ -1,0 +1,182 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇家騎士團] 安靜的庭院"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "跟著小鳥去的地方見到了少女，看上去不像新騎士團員，是誰呢？ \r\n點擊少女對話。\r\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "少女和女王和騎士團聊天中突然人潮擁來，帶眼鏡的那個人是騎士團長鹰眼?! \r\n與帶眼鏡的人對話。\r\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "跟那因哈特和騎士團長，正式打招呼吧。"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1102106"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q20834s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20833"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "1000"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1102107"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "20835"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "你好。你是為了成為騎士來的啊。\\r\\n#L0##b是，我是#h0#。 第一次來到這裡。耶雷弗真的是個很美麗的地方。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "耶雷弗是個和平又美麗的地方。訓練不會太艱難嗎？\\r\\n#L0##b是的，雖然還有很多不足的地方，不管遇到什麼困難都要堅強努力的戰勝它，成為優秀的騎士。所以我有想要用我的手來守護楓之谷世界的決心！應該…#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "不管是多困難的路，都是必須走的路。大家要全力以赴。\\r\\n#L0##b但是，你是誰？看打扮好像不是皇家騎士團的人…#l\\n#k"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "嗯，我是…"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "女皇大人，原來在這裡。在旁邊那位是誰呢？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "那因哈特， 這位是#h0#。 \r\n#h0#，跟那因哈特和其他騎士團長們問好。"
+          }
+        }
+      }
+    }
+  }
+}

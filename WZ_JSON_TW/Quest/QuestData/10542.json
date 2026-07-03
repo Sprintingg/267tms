@@ -1,0 +1,212 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 무릉의 월동준비"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "무릉의 태상이 겨울을 따뜻하게 지낼 수 있는 비기에 대해 알고 있다고 한다. 그에게 찾아가서 그 방법을 전수받아 보는 것은 어떨까?"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "무릉의 태상은 겨울을 따뜻하게 나는 제일 좋은 방법은 신체를 단련하는 것이지만, 약간의 도술로 더욱 따뜻하게 지낼 수 있는 방법이 있다고 했다. 바로 ‘화염비기’라는 도술인데 몸에 흐르는 기를 마찰시켜서 몸 안에서 열을 내는 비기라고 하면서 무릉 몬스터들이 가지고 있는 화염비기를 구해오라고 했다."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "태상이 말한 화염비기를 가져다 주었다. 태상은 이 비기만 몸에 익힌다면 추운 겨울도 끄떡없다면서 당장 수련에 들어갔다."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4032571:# #t4032571:# #c4032571# / 20\r\n"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "경험치 3,000\r\n#Wbasic#\r\n#i4310014:# #t4310014:# 1 개\r\n#b눈꽃선물받기 이벤트 자동 응모#k"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "3000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4310014"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2091002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "75"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201101270000"
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201101270000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "90"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2091002"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q10542e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032571"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "3000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032571"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4310014"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "온 몸이 꽁꽁 얼은 것 같군. 그렇다고 그렇게 어깨를 움추리고 다녀서야 되겠나? 겨울의 추위가 싫다면 자네도 화염비기를 배워보는 것이 어떤가? 무릉의 선인들은 겨울이 되면 화염비기를 몸에 익히지. 자네도 배우고 싶나?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "화염비기는 몸 속의 기를 순환시켜서 열을 발생시키는 술법으로 요즘처럼 추운 겨울에는 아주 유용하게 쓰이지 그렇다면 우선 화염비기의 서를 직접 얻어오게. 무릉의 몬스터들은 누구나 #e#b화염비기#k#n를 가지고 있다네. 화염비기를 얻으면 곧장 내게로 오게.\\n\\n#b#i4032571# #t4032571# 20개"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "화염비기를 익히면 편리한 점이 아주 많다네."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "화염비기는 몸 속의 기를 순환시켜서 열을 발생시키는 술법으로 요즘처럼 추운 겨울에는 아주 유용하게 쓰이지 그렇다면 우선 화염비기의 서를 직접 얻어오게. 무릉의 몬스터들은 누구나 #e#b화염비기#k#n를 가지고 있다네. 화염비기를 얻으면 곧장 내게로 오게.\\n\\n#b#i4032571# #t4032571# 20개"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "화염비기는 몸 속의 기를 순환시켜서 열을 발생시키는 술법으로 요즘처럼 추운 겨울에는 아주 유용하게 쓰이지 그렇다면 우선 화염비기의 서를 직접 얻어오게. 무릉의 몬스터들은 누구나 #e#b화염비기#k#n를 가지고 있다네. 화염비기를 얻으면 곧장 내게로 오게.\\n\\n#b#i4032571# #t4032571# 20개"
+          }
+        }
+      }
+    }
+  }
+}

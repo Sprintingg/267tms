@@ -1,0 +1,261 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[幻獸師] 熱鍵登錄方法 "
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "85"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[幻獸師]"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#p9390300##k會說明在#b快速鍵#k登錄技能方法."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b#p9390300##k 告訴我 #b熱鍵#k的使用方法.\n任何技能或道具 #用滑鼠拖曳#k登錄熱鍵看看."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#b#p9390300##k會說明登錄在快速鍵的方法."
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#i2000001:# #t2000001:# 50 個\r\n#i2000006:# #t2000006:# 50 個\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "long",
+            "_value": "2000001"
+          },
+          "count": {
+            "_dirType": "long",
+            "_value": "50"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "long",
+            "_value": "2000006"
+          },
+          "count": {
+            "_dirType": "long",
+            "_value": "50"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2000001"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2000006"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "喵!! 難不成,你不知道把技能或道具安裝在#b快捷欄位#k並 #b使用快捷鍵#k的方法嗎喵?"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "看到我用兩隻腳站立很簡單喵!\\r\\n把技能或道具#b拖曳#k到快捷欄位上安裝即可.\\r\\n#i3800631#"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "這樣使用安裝在快捷欄位的 #b符合快捷欄位的快捷鍵#k即可#b馬上使用#k技能或道具了!\\r\\n一點也不難吧?\\r\\n"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "現在試著安裝一次快捷欄位吧?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那現在就試著在技能或道具中#b安裝任何一個到快捷欄位#k 看看吧!"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好好使用快捷欄位的話就可以成為英雄般的人!\\r\\n有問題的話再來和我對話!"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你使用過快捷鍵了嗎?喵"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "做的非常好!這樣做就可以了!"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "最後不要忘記快捷欄位分別使用#b4種模式#k的事哦!"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "點擊技能或道具,然後拖曳!\\r\\n接著#b放到快捷欄位上#k!"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390300"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "job": {
+        "_dirType": "sub"
+      },
+      "job_TW": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "11212"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "11213"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390300"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "quick"
+          }
+        }
+      }
+    }
+  }
+}

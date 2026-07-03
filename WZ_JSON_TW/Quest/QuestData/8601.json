@@ -1,0 +1,220 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[世界] 台北街道清掃"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽說...黃綠紅被選為台北街道清潔的宣導大使，最近在西門町進行宣導活動。也許會需要大家的幫忙…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "需在西門町各地蒐集#b100個小狗仔的尾巴#k和#b60個帥氣狗仔的墨鏡#k後，交給黃綠紅。\\n\\n#t4000198##b#c4000198##k/100\\n#t4000199##b#c4000199##k/60"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把小狗仔的尾巴和帥氣狗仔的墨鏡交給黃綠紅，就會收到的獎賞。希望藉著大家的力量，能夠將台北街道變得一塵不染。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "45"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "50"
+      },
+      "meso": {
+        "_dirType": "long",
+        "_value": "2000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "50"
+      },
+      "money": {
+        "_dirType": "int",
+        "_value": "2000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000198"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-100"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000199"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-60"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "大家好~我是黃綠紅。這次很高興有機會擔任台北街道清潔的宣導大使，當然！我正為了盡到宣導大使的責任而努力著，可是…發生了一點問題…不曉得這位市民是否可以幫我一下呢？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "感謝你熱心的幫忙~果然是位熱愛台北的市民！其實我這次被選為台北街道清潔的宣導大使，必須要與台北市民一同清掃街道，但最近的宣傳行程排的太緊湊了，實在沒有辦法抽空出來。所以希望你能替我打倒讓街道凌亂的狗仔們，並蒐集『小狗仔的尾巴』100個和『帥氣狗仔的墨鏡』60個，蒐集完成後拿來給我吧。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "原來你現在也沒空啊…維持街道的清潔是每個市民的責任喔！若下次有機會，還是歡迎你再來找我。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "台北~YO~！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "YO~！東西都蒐集齊全了嗎？真是太棒了！這是我的心意，希望你能收下，看來宣導大使的活動也能夠順利進行囉！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "看來你還沒蒐集到『小狗仔的尾巴』100個和『帥氣狗仔的墨鏡』60個...，最近台北街道變得愈來愈凌亂了，那就請你再多多加油喔！"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330006"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "15"
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "1440"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330006"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000198"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000199"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "60"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

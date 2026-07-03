@@ -1,0 +1,229 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[[鏡子世界] 瑪迦提亞城] 充滿愛的便當"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "74"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "陷入愛河的女人茱麗葉,他為了戀人準備了東西.去找茱麗葉吧."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "茱麗葉請求將他為愛人_羅密歐所做的便當轉交送過去.不知道為什麼,便當看起來有點奇怪,但是充滿了愛的便當,應該不會不好吃吧!"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "吃了茱麗葉的便當後,羅密歐與猶利塔都倒下了.難道這是便當殺人事件?!"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4033840:##t4033840:##c4033840#/1\r\n"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "[村莊]瑪迦提亞城"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "deleteItem": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "int",
+        "_value": "4033840"
+      }
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2460002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "150"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "40950"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "10100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "10110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "10111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "10112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "10113"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "10114"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2460003"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q41251e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033840"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033840"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "resignRemove": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "愛情真的很神奇對吧?會讓人做從來都沒做過的事.誰想的到呢?我竟然會為了我愛的人做便當."
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "雖然很想看吃著我做的美味便當的羅密歐,但是如你所見,我為了做便當而熬夜,黑眼圈竟然腫大成這個樣子.我無法讓羅密歐看見我這個樣子.所以,可以麻煩你幫我把便當轉交給他嘛?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請把#r#t4033840##k交給羅密歐.這是充滿我的愛的便當.啊,提著去的路上一定要小心.我用豌豆做了愛心的形狀,不能弄散喔."
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "啊,應該只能讓羅密歐看到美好的樣子......"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "真是,肚子有點餓?就算是零食也好,應該要給我一點吃的吧."
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "羅密歐應該會很美味的享用便當吧......"
+          }
+        }
+      }
+    }
+  }
+}

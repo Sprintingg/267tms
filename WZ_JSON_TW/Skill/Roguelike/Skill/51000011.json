@@ -1,0 +1,300 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "5121013 전함 노틸러스"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "AnimReference": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "sub",
+              "action": {
+                "_dirType": "string",
+                "_value": "bombExplosion"
+              },
+              "frameIdx": {
+                "_dirType": "int",
+                "_value": "0"
+              }
+            }
+          },
+          "StartPos": {
+            "_dirType": "int",
+            "_value": "0"
+          },
+          "EndPos": {
+            "_dirType": "int",
+            "_value": "90"
+          }
+        },
+        "Segment1": {
+          "_dirType": "sub",
+          "AnimReference": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "sub",
+              "action": {
+                "_dirType": "string",
+                "_value": "bombExplosion"
+              },
+              "frameIdx": {
+                "_dirType": "int",
+                "_value": "1"
+              }
+            }
+          },
+          "StartPos": {
+            "_dirType": "int",
+            "_value": "90"
+          },
+          "EndPos": {
+            "_dirType": "int",
+            "_value": "180"
+          }
+        },
+        "Segment2": {
+          "_dirType": "sub",
+          "AnimReference": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "sub",
+              "action": {
+                "_dirType": "string",
+                "_value": "bombExplosion"
+              },
+              "frameIdx": {
+                "_dirType": "int",
+                "_value": "2"
+              }
+            }
+          },
+          "StartPos": {
+            "_dirType": "int",
+            "_value": "180"
+          },
+          "EndPos": {
+            "_dirType": "int",
+            "_value": "540"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "summonZone": {
+        "_dirType": "sub"
+      },
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          }
+        }
+      },
+      "screenEffect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "10000"
+            },
+            "socketName": {
+              "_dirType": "string",
+              "_value": "Screen"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "5121013"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "summonZone": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "SummonZone"
+      },
+      "zoneType": {
+        "_dirType": "string",
+        "_value": "self"
+      },
+      "zones": {
+        "_dirType": "sub",
+        "Anim": {
+          "_dirType": "sub",
+          "LayerSlots": {
+            "_dirType": "sub",
+            "Slot0": {
+              "_dirType": "sub",
+              "Segment:all": {
+                "_dirType": "sub",
+                "StartPos": {
+                  "_dirType": "int",
+                  "_value": "0"
+                }
+              },
+              "Segment:die": {
+                "_dirType": "sub",
+                "StartPos": {
+                  "_dirType": "int",
+                  "_value": "3000"
+                }
+              }
+            }
+          },
+          "Notifies": {
+            "_dirType": "sub",
+            "attack": {
+              "_dirType": "sub",
+              "TriggerTime": {
+                "_dirType": "int",
+                "_value": "1950"
+              }
+            }
+          }
+        }
+      },
+      "constants": {
+        "_dirType": "sub",
+        "duration": {
+          "_dirType": "int",
+          "_value": "4"
+        },
+        "z": {
+          "_dirType": "int",
+          "_value": "9000"
+        }
+      }
+    },
+    "attack": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "460+350*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "7"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "15"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -500,
+          "_y": -450
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 500,
+          "_y": 250
+        },
+        "stunDuration": {
+          "_dirType": "string",
+          "_value": "2"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "randomHitOrigin": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "useZ": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "z": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "5121013"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "3"
+    },
+    "cooltime": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "460+350*x"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "7"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "15"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -500,
+      "_y": -450
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 500,
+      "_y": 250
+    }
+  }
+}

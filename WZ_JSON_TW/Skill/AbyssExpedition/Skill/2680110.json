@@ -1,0 +1,161 @@
+{
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "snipingNew"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "long",
+              "_value": "3"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AEAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "3221007"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "cooltime": {
+          "_dirType": "string",
+          "_value": "20-5*d(x/10)"
+        },
+        "damage": {
+          "_dirType": "string",
+          "_value": "430+50*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "5+d(x/10)"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "range": {
+          "_dirType": "string",
+          "_value": "550"
+        },
+        "ballSpeed": {
+          "_dirType": "string",
+          "_value": "200"
+        },
+        "piercing": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "BossDamageRatio": {
+          "_dirType": "string",
+          "_value": "70"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "randomHitOrigin": {
+            "_dirType": "int",
+            "_value": "25"
+          }
+        }
+      },
+      "ball": {
+        "_dirType": "sub"
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "3221007"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "cooltime": {
+      "_dirType": "string",
+      "_value": "20-5*d(x/10)"
+    },
+    "damage": {
+      "_dirType": "string",
+      "_value": "430+50*x"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "5+d(x/10)"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "1"
+    },
+    "range": {
+      "_dirType": "string",
+      "_value": "530"
+    },
+    "ballSpeed": {
+      "_dirType": "string",
+      "_value": "150"
+    },
+    "piercing": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "BossDamageRatio": {
+      "_dirType": "string",
+      "_value": "70"
+    }
+  },
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "3221007 스나이핑"
+  },
+  "combatOrders": {
+    "_dirType": "int",
+    "_value": "1"
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 達到100分"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "50分太簡單了。挑戰100分吧。跟戰鬥廣場嚮導 #b#p9070005##k說話就可以。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "戰鬥廣場嚮導#p9070005#解說開業活動不管是什麼模式儘管達到 #b100分#k…趕緊挑戰吧。\n\n#rTip！完整的結束一場才能結算分數，中間出來的話分數不會被計算完成不了任務。#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "達到100分，從 #p9070005#那裡得到獎勵。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9070005"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201107130000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201101280000"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201106290000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201106290000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "11009"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9070005"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q11010e"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "11020"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "100"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "達到50分怎麼樣呢？簡單的都快打哈欠了？有為了那樣的你而準備的活動！這次是達到100分。怎麼樣？要馬上挑戰嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不管什麼模式，達到#b100分#k後再來找我吧。送你準備的禮物！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯嗯… 50分很難嗎？這可怎麼辦…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒達到#b100分#k嗎？啊啊，那樣就不能送禮了啊… 怎麼辦？"
+          }
+        }
+      }
+    }
+  }
+}

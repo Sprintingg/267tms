@@ -1,0 +1,378 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[職業] 感冒藥的材料"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000001:##t4000001:##c4000001#/20\r\n#i4000002:##t4000002:##c4000002#/10\r\n#i4000010:##t4000010:##c4000010#/2\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 2,250\r\n可進行 '送交感冒藥' 任務\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b弓箭手村#k的#b#@1012003:##k想製作感冒藥，想請你尋找一些材料。我們去找她談一談。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b弓箭手村#k的#b#@1012003:##k想製作感冒藥，想請你尋找一些材料。\\n\\n#r菇菇寶貝傘#k(從#r菇菇寶貝#k身上掉落)\\n#r蝴蝶結#k(從#r緞帶肥肥#k身上掉落)\\n#r綠水靈珠#k(從#r綠水靈#k身上掉落)\\n\\n我們返回#b弓箭手村#k向#b#@1012003:##k回報。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#b弓箭手村#k的#b#@1012003:##k說她必須將#r感冒藥#k交給#b#@1012100:##k。我們到#b#@1012003:##k那邊吧。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "2250"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2250"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000001"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000010"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-2"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "收集完了嗎？你真的有法師的天賦！\\n多虧你，我可以開始調配#r感冒藥水#k。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我調配好感冒藥水了。\\n\\n(喝下#r感冒藥水#k。)\\n\\n哇！\\n\\n我感覺好多了！哈哈！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "我需要20個#r菇菇寶貝傘#k、10條#r蝴蝶結#k及2顆#r綠水靈珠#k。"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "(咳咳)你看，這次感冒真的讓我很頭痛。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "我需要更多材料才能調配#r感冒藥水#k。可以幫我收集嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這裡記載了調配#r感冒藥水#k的配方，是#b弓箭手村#k世世代代流傳下來的祖傳配方呢！\\n\\n「先將#r菇菇寶貝傘#k與#r綠水靈珠#k攪拌均勻，再將粹取物裝進繫有#r蝴蝶結#k的容器中，最後，再把它埋進土裡一整天。」"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "其實我不懂為什麼要繫上#r蝴蝶結#k，我真的很想問問發明配方的人。但據我所知，這是調配藥水的不二法則，所以還是請你幫我收集以下材料：\\n\\n20個#r菇菇寶貝傘#k\\n10條#r蝴蝶結#k\\n2顆#r綠水靈珠#k。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "咳咳…咳咳…咳咳！"
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012003"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "40"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "28188"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "200"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "210"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "220"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "230"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "211"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "221"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "231"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "212"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "222"
+        },
+        "9": {
+          "_dirType": "int",
+          "_value": "232"
+        },
+        "10": {
+          "_dirType": "int",
+          "_value": "1200"
+        },
+        "11": {
+          "_dirType": "int",
+          "_value": "1210"
+        },
+        "12": {
+          "_dirType": "int",
+          "_value": "1211"
+        },
+        "13": {
+          "_dirType": "int",
+          "_value": "1212"
+        },
+        "14": {
+          "_dirType": "int",
+          "_value": "2200"
+        },
+        "15": {
+          "_dirType": "int",
+          "_value": "2210"
+        },
+        "16": {
+          "_dirType": "int",
+          "_value": "2211"
+        },
+        "17": {
+          "_dirType": "int",
+          "_value": "2212"
+        },
+        "18": {
+          "_dirType": "int",
+          "_value": "2213"
+        },
+        "19": {
+          "_dirType": "int",
+          "_value": "2214"
+        },
+        "20": {
+          "_dirType": "int",
+          "_value": "2215"
+        },
+        "21": {
+          "_dirType": "int",
+          "_value": "2216"
+        },
+        "22": {
+          "_dirType": "int",
+          "_value": "2217"
+        },
+        "23": {
+          "_dirType": "int",
+          "_value": "2218"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012003"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000001"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000010"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[遺物大會]發掘遺跡大會的公告"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "發掘遺跡大會公告出來了！來確認看看內容吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "挖掘遺跡大會公告出來了！來確認看看內容吧！\\r\\n參與挖掘遺跡大會，#b#e#R11368##n#k天中\\n達成挖掘遺跡大會分數 #b#e#R11360##n / 1000 #k分\\r\\n#e<挖掘遺跡大會公告>\\n#n針對在遺跡挖掘隊裡進行的挖掘遺跡活動，進行說明。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "確認發掘遺跡大會的公告，達到發掘遺跡分數的#b1000#k分之後，就可以獲得參加挖掘大會的資格。\\r\\n參予挖掘大會#b#e#R11368##n#k天\\r\\n#e<發掘遺跡大會參加者商品>#n\\n#e 第一天#n\\n   #i1142305:# #t1142305#\\r\\n#e  第二天#n\\n   #i1003230:# #t1003230#(5天)\\n   #i1022119:# #t1022119#(5天)\\r\\n#e  第3天~第5天#n\\n   #i2028076# #t2028076#\\r\\n#e  第六天#n\\n   #i1003225:# #t1003225#\\n   #i1022118:# #t1022118#    中 選1\\r\\n#e  第七天#n\\n   #i1142334:# #t1142334#"
+    },
+    "autoCompleteAction": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000021"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "11368"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201206131200"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201206271200"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201206131200"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201106271200"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "6"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000021"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "11360"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1000"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "info": {
+        "_dirType": "string",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好 #b#e#h0##n#k。\\n#r從6月13日起至6月27日為止#k進行遺跡發掘大會。\\n一天閱讀一次遺跡發掘大會公告的話，即可參加遺跡發掘大會。你會閱讀遺跡發掘大會公告並且參加遺跡發掘大會嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#e<遺跡發掘大會公告>\\n#n介紹關於遺跡發掘隊主辦遺跡發掘大會期間。獲得可從怪物得到的#b#t2430010##k後即可得到遺跡發掘分數，一天內獲得遺跡發掘分數#b1000分#k以上後即認定為參加遺跡發掘大會，被認定參加後每一天都會給予獎品。#r\\n●唯有每一天清楚都遺跡發掘大會公告的玩家們才會發現#t2430010#。\\n● 可在#t2430010#發現很稀少且神祕的遺物。\\r\\n#k希望大家多參加。\\n                                                   - 遺跡發掘隊 #e修安#n -"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "歡迎參加遺跡發掘大會。從現在開始狩獵怪物的話即可從楓之谷世界所有的怪物得到#b#t2430010#。獲得\\n#t2430010##k後即可累積遺跡發掘分數，遺跡發掘分數在一天內超過#b1000分#k後即認定為參與遺跡發掘大會。\\n遺跡發掘大會會根據參加了幾天來給予每一天的禮物，所以請多多參與。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "得確認遺跡發掘大會公告才能參加遺跡發掘大會，所以想法變了後請再跟我說。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "發現了很多新遺物了嗎？遺物就像是從過去流傳到現在的禮物吧？不覺得每一天都像找到新禮物的樣子嗎？"
+          }
+        }
+      }
+    }
+  }
+}

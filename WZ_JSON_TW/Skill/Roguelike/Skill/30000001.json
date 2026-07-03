@@ -1,0 +1,419 @@
+{
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot1": {
+        "_dirType": "sub",
+        "Segment:start": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "RL_Bowman_KeydownPrep"
+          }
+        },
+        "Segment:KeydownLoop": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "RL_Bowman_KeydownLoop"
+          }
+        },
+        "Segment:end": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "RL_Bowman_KeydownEnd"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_PlaySound"
+          },
+          "SoundPath": {
+            "_dirType": "string",
+            "_value": "Sound/RoguelikeWz2.img/Skill/30000001/Use"
+          }
+        }
+      },
+      "attackLoop": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "360"
+        },
+        "EndTriggerTime": {
+          "_dirType": "string",
+          "_value": "1320"
+        },
+        "TriggerInterval": {
+          "_dirType": "string",
+          "_value": "240"
+        }
+      },
+      "guidedArrowLoop": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "1200"
+        }
+      }
+    },
+    "Sections": {
+      "_dirType": "sub",
+      "start": {
+        "_dirType": "sub"
+      },
+      "KeydownLoop": {
+        "_dirType": "sub",
+        "NextSectionName": {
+          "_dirType": "string",
+          "_value": "KeydownLoop"
+        },
+        "StartTime": {
+          "_dirType": "int",
+          "_value": "360"
+        }
+      },
+      "end": {
+        "_dirType": "sub",
+        "StartTime": {
+          "_dirType": "int",
+          "_value": "1320"
+        }
+      }
+    },
+    "LayerSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment:start": {
+          "_dirType": "sub",
+          "AnimReference": {
+            "_dirType": "sub"
+          },
+          "EndPos": {
+            "_dirType": "int",
+            "_value": "360"
+          }
+        },
+        "Segment:KeydownLoop": {
+          "_dirType": "sub",
+          "AnimReference": {
+            "_dirType": "sub"
+          }
+        },
+        "Segment:end": {
+          "_dirType": "sub",
+          "AnimReference": {
+            "_dirType": "sub"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "attackLoop": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Projectile"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "time": {
+          "_dirType": "string",
+          "_value": "0.5"
+        },
+        "emitAngle": {
+          "_dirType": "string",
+          "_value": "0"
+        },
+        "emitSpeed": {
+          "_dirType": "string",
+          "_value": "1200"
+        },
+        "emitCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "maxSpeed": {
+          "_dirType": "string",
+          "_value": "1200"
+        },
+        "destroyHitCount": {
+          "_dirType": "string",
+          "_value": "3"
+        },
+        "hitIntervalPerTarget": {
+          "_dirType": "long",
+          "_value": "240"
+        },
+        "boundLT.X": {
+          "_dirType": "string",
+          "_value": "-230"
+        },
+        "boundRB.X": {
+          "_dirType": "string",
+          "_value": "-90"
+        },
+        "boundLT.Y": {
+          "_dirType": "string",
+          "_value": "-55"
+        },
+        "boundRB.Y": {
+          "_dirType": "string",
+          "_value": "-15"
+        },
+        "emitPos.X": {
+          "_dirType": "string",
+          "_value": "60"
+        },
+        "emitPos.Y": {
+          "_dirType": "string",
+          "_value": "-2"
+        }
+      },
+      "onProjectileHit": {
+        "_dirType": "string",
+        "_value": "AttackByProjectile"
+      },
+      "ball": {
+        "_dirType": "sub"
+      }
+    },
+    "guidedArrowLoop": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Projectile"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "time": {
+          "_dirType": "string",
+          "_value": "3"
+        },
+        "emitAngle": {
+          "_dirType": "string",
+          "_value": "-20+i*40"
+        },
+        "emitSpeed": {
+          "_dirType": "string",
+          "_value": "600"
+        },
+        "_permanentAccY": {
+          "_dirType": "string",
+          "_value": "200"
+        },
+        "emitCount": {
+          "_dirType": "string",
+          "_value": "2"
+        },
+        "emitPosRadius": {
+          "_dirType": "string",
+          "_value": "200"
+        },
+        "maxSpeed": {
+          "_dirType": "string",
+          "_value": "600"
+        },
+        "rotatable": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "emitPosAngle": {
+          "_dirType": "string",
+          "_value": "-20+i*40"
+        },
+        "destroyHitCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "boundLT.X": {
+          "_dirType": "string",
+          "_value": "25"
+        },
+        "boundRB.X": {
+          "_dirType": "string",
+          "_value": "125"
+        },
+        "boundLT.Y": {
+          "_dirType": "string",
+          "_value": "-10"
+        },
+        "boundRB.Y": {
+          "_dirType": "string",
+          "_value": "10"
+        },
+        "emitPos.X": {
+          "_dirType": "string",
+          "_value": "-0"
+        },
+        "emitPos.Y": {
+          "_dirType": "string",
+          "_value": "-35"
+        },
+        "chaseAccel": {
+          "_dirType": "string",
+          "_value": "3000"
+        },
+        "chaseTargetType": {
+          "_dirType": "string",
+          "_value": "DragToTarget"
+        }
+      },
+      "ball": {
+        "_dirType": "sub"
+      },
+      "onProjectileHit": {
+        "_dirType": "string",
+        "_value": "AttackByProjectile2"
+      },
+      "hitSoundPath": {
+        "_dirType": "string",
+        "_value": "Sound/RoguelikeWz2.img/Skill/30000001/Use2"
+      },
+      "skillSoundUOL": {
+        "_dirType": "string",
+        "_value": "Sound/RoguelikeWz2.img/Skill/30000001/Use2"
+      }
+    },
+    "AttackByProjectile": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "120"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "2"
+        },
+        "stunDuration": {
+          "_dirType": "string",
+          "_value": "0.05"
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "100"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "onlyOnce": {
+            "_dirType": "string",
+            "_value": "1"
+          }
+        }
+      },
+      "hitSoundPath": {
+        "_dirType": "string",
+        "_value": "Sound/RoguelikeWz2.img/Skill/30000001/Hit"
+      }
+    },
+    "AttackByProjectile2": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "50"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "3"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub"
+        }
+      },
+      "hitSoundPath": {
+        "_dirType": "string",
+        "_value": "Sound/RoguelikeWz2.img/Skill/30000001/Hit2"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "120"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "2"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "3"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -700,
+      "_y": -350
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 500,
+      "_y": 250
+    },
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "Keydown": {
+      "_dirType": "sub"
+    },
+    "Tags": {
+      "_dirType": "sub",
+      "turnable": {
+        "_dirType": "sub"
+      },
+      "movable": {
+        "_dirType": "sub"
+      },
+      "cannotDestroy": {
+        "_dirType": "sub"
+      },
+      "interruptable": {
+        "_dirType": "sub"
+      }
+    },
+    "x1": {
+      "_dirType": "string",
+      "_value": "50"
+    },
+    "x2": {
+      "_dirType": "string",
+      "_value": "2"
+    },
+    "x3": {
+      "_dirType": "string",
+      "_value": "2"
+    }
+  }
+}

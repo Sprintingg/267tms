@@ -1,0 +1,193 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "13121052 몬순"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "HY1312monsoon"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "13121052"
+          }
+        }
+      },
+      "screenEffect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "10000"
+            },
+            "dir": {
+              "_dirType": "string",
+              "_value": "Left"
+            },
+            "socketName": {
+              "_dirType": "string",
+              "_value": "Screen"
+            }
+          }
+        }
+      },
+      "sound1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_PlaySound"
+          },
+          "SoundPath": {
+            "_dirType": "string",
+            "_value": "Sound/Skill.img/13121052/special"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "260+150*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "12"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "15"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -550,
+          "_y": -300
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 550,
+          "_y": 300
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "200"
+        },
+        "stunDuration": {
+          "_dirType": "string",
+          "_value": "2"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "randomHitOrigin": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "useZ": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "z": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "13121052"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "3"
+    },
+    "cooltime": {
+      "_dirType": "int",
+      "_value": "20"
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "260+150*x"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "12"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "15"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -550,
+      "_y": -300
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 550,
+      "_y": 300
+    }
+  }
+}

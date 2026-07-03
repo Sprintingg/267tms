@@ -1,0 +1,165 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[專門技術] 煉金術的達人3"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "煉金術的達人"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "到哈姆梅爾那裡學習成為煉金術達人的方法吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "煉金術達到8級時再去找哈姆梅爾。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "拿哈姆梅爾所講過的#b#t2003005#100個#k後,去找哈姆梅爾吧."
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "歡迎。 努力修煉煉金術很辛苦吧，感謝你能來找我。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "我之所以把你叫來，是為了在你成為煉金術達人的道路上給你有所幫助。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "只要你能拿來我說的一些東西，就給你一份獎勵。 怎樣？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不錯，想的很好。帶來#b#t2003005# 100個，我會提高你的熟練度，快去快回。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "沒辦法。 有空的話一定要再來找我。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "我還沒想好要說些什麼，等我全部都準備好之後再來吧。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9031000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "7951"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "skill": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "92040000"
+          },
+          "level": {
+            "_dirType": "int",
+            "_value": "7"
+          },
+          "levelCondition": {
+            "_dirType": "string",
+            "_value": "以上"
+          },
+          "acquire": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9031000"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q7952e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2003005"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

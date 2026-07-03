@@ -1,0 +1,189 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 陰謀的始末"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#m103000000#陰謀…那只不過是#p9020000#的失誤而已。告訴#b吉姆#k事情的真實吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "吉姆說陰謀事件就此結束，去幫他消滅#o6220000#。臉色很不好，看上去一下老了10年似的。可憐的吉姆…\\n\\n#o6220000##r#a22211##k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "消滅#o6220000#後，向吉姆報告了。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1200"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "消滅#o6220000#了嗎？呼...謝謝你。為了這件事，你真是辛苦了，特別是在消滅鱷魚的過程中收集情報…呼，真是不好意思。做為報答，我來稍微提高一點兒你的名聲。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這件事情帶給我們幾點教訓，就是不要讓小問題釀成大錯誤，要成為一名情報分析研判的專家，還有就是不要相信#r#p9020000#。#k…呼，你辛苦了。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "看來是還沒有遇到#o6220000#啊，它們就隱藏在沼澤的某處，快去消滅它們吧。"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "好吧，拉克里斯說了什麼？…他也承認自己是罪魁禍首？這愚蠢的女人！同樣的錯誤她都犯了幾次了！難道又是因為超級綠水靈暴走，#o6220000#才會召喚冒險家們？目前的超級綠水靈還沒處理完，怎麼又？！到底她什麼時間才能清醒啊！\\n\\r#L0##b嘖，鎮靜一下吧…#k#l"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "呼，不錯…正是如此，你辛苦了，由於那個愚蠢女人的失誤令你受了很多苦。哈啊…不管怎樣也不能放任怪物四處橫行。這項陰謀竟然能已經揭穿，快去打敗#r#o6220000##k吧…"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "呼…陰謀終於結束了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "沒有自信嗎？我們是為了#p9020000#的善後處理才招募冒險家…你不願意試試嗎？"
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "6220000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "23"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2220"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "pop": {
+        "_dirType": "int",
+        "_value": "12"
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "1200"
+      }
+    }
+  }
+}

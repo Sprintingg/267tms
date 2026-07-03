@@ -1,0 +1,756 @@
+{
+  "info": {
+    "_dirType": "sub"
+  },
+  "!class": {
+    "_dirType": "string",
+    "_value": "ARLRide"
+  },
+  "crew": {
+    "_dirType": "sub",
+    "gunner": {
+      "_dirType": "sub",
+      "pos": {
+        "_dirType": "vector",
+        "_x": 1,
+        "_y": -105
+      },
+      "action": {
+        "_dirType": "string",
+        "_value": "sit"
+      },
+      "origin": {
+        "_dirType": "vector",
+        "_x": 0,
+        "_y": -130
+      },
+      "Skills": {
+        "_dirType": "sub",
+        "shootCannon": {
+          "_dirType": "sub",
+          "Anim": {
+            "_dirType": "sub",
+            "LayerSlots": {
+              "_dirType": "sub",
+              "CannonSlot": {
+                "_dirType": "sub",
+                "Segments": {
+                  "_dirType": "sub",
+                  "origin": {
+                    "_dirType": "vector",
+                    "_x": 0,
+                    "_y": -130
+                  },
+                  "z": {
+                    "_dirType": "int",
+                    "_value": "0"
+                  }
+                }
+              }
+            },
+            "Notifies": {
+              "_dirType": "sub",
+              "shoot": {
+                "_dirType": "sub"
+              }
+            },
+            "!class": {
+              "_dirType": "string",
+              "_value": "WZ2AnimMontage"
+            }
+          },
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLRideSkill"
+          },
+          "defaultTags": {
+            "_dirType": "short",
+            "_value": "0"
+          },
+          "Events": {
+            "_dirType": "sub",
+            "shoot": {
+              "_dirType": "sub",
+              "type": {
+                "_dirType": "string",
+                "_value": "Projectile"
+              },
+              "constants": {
+                "_dirType": "sub",
+                "emitSpeed": {
+                  "_dirType": "string",
+                  "_value": "500"
+                },
+                "emitCount": {
+                  "_dirType": "string",
+                  "_value": "1"
+                },
+                "destroyHitCount": {
+                  "_dirType": "string",
+                  "_value": "1"
+                },
+                "hitIntervalPerTarget": {
+                  "_dirType": "long",
+                  "_value": "400"
+                },
+                "boundLT.X": {
+                  "_dirType": "string",
+                  "_value": "-145"
+                },
+                "boundRB.X": {
+                  "_dirType": "string",
+                  "_value": "130"
+                },
+                "boundLT.Y": {
+                  "_dirType": "string",
+                  "_value": "-130"
+                },
+                "boundRB.Y": {
+                  "_dirType": "string",
+                  "_value": "130"
+                },
+                "emitPos.X": {
+                  "_dirType": "string",
+                  "_value": "0"
+                },
+                "emitPos.Y": {
+                  "_dirType": "string",
+                  "_value": "0"
+                },
+                "initialVelocity.X": {
+                  "_dirType": "string",
+                  "_value": "-50"
+                },
+                "initialVelocity.Y": {
+                  "_dirType": "string",
+                  "_value": "0"
+                },
+                "rotatable": {
+                  "_dirType": "string",
+                  "_value": "1"
+                },
+                "flipByVelDir": {
+                  "_dirType": "string",
+                  "_value": "1"
+                }
+              },
+              "ball": {
+                "_dirType": "sub",
+                "z": {
+                  "_dirType": "int",
+                  "_value": "1"
+                },
+                "!class": {
+                  "_dirType": "string",
+                  "_value": "WZ2AnimMontage"
+                },
+                "repeat": {
+                  "_dirType": "short",
+                  "_value": "-1"
+                }
+              },
+              "onProjectileHit": {
+                "_dirType": "string",
+                "_value": "Attack"
+              },
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2RLSkillEntityEventAction"
+              }
+            },
+            "Attack": {
+              "_dirType": "sub",
+              "type": {
+                "_dirType": "string",
+                "_value": "Attack"
+              },
+              "constants": {
+                "_dirType": "sub",
+                "attackPower1Rate": {
+                  "_dirType": "string",
+                  "_value": "60+30*x"
+                },
+                "attackCount": {
+                  "_dirType": "string",
+                  "_value": "4"
+                },
+                "mobCount": {
+                  "_dirType": "string",
+                  "_value": "24"
+                },
+                "stunDuration": {
+                  "_dirType": "string",
+                  "_value": "0.5"
+                },
+                "knockBackImpactX": {
+                  "_dirType": "string",
+                  "_value": "100"
+                }
+              },
+              "hit": {
+                "_dirType": "sub"
+              },
+              "hitSoundSkillID": {
+                "_dirType": "int",
+                "_value": "400051008"
+              },
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2RLSkillEntityEventAction"
+              }
+            }
+          },
+          "EmitInfo": {
+            "_dirType": "sub",
+            "origin": {
+              "_dirType": "vector",
+              "_x": 0,
+              "_y": -130
+            },
+            "emitStart": {
+              "_dirType": "vector",
+              "_x": -4,
+              "_y": -397
+            },
+            "emitEnd": {
+              "_dirType": "vector",
+              "_x": -4,
+              "_y": -454
+            }
+          },
+          "common": {
+            "_dirType": "sub",
+            "attackCount": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "mobCount": {
+              "_dirType": "string",
+              "_value": "4"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": -1000,
+              "_y": -1000
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 1000,
+              "_y": 1000
+            },
+            "maxLevel": {
+              "_dirType": "int",
+              "_value": "10"
+            },
+            "cooltime": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "attackPower1Rate": {
+              "_dirType": "string",
+              "_value": "150+50*x"
+            },
+            "crew": {
+              "_dirType": "string",
+              "_value": "gunner"
+            }
+          },
+          "targetPartName": {
+            "_dirType": "string",
+            "_value": "cannon"
+          },
+          "SkillTags": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "string",
+              "_value": "RLGame.Riding.Skill.Slot2"
+            }
+          },
+          "BlockSkillsWithTag": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "string",
+              "_value": "RLGame.Riding.Skill.Slot2"
+            }
+          }
+        },
+        "shootHarpoon": {
+          "_dirType": "sub",
+          "Anim": {
+            "_dirType": "sub",
+            "LayerSlots": {
+              "_dirType": "sub",
+              "Slot0": {
+                "_dirType": "sub",
+                "Segments0": {
+                  "_dirType": "sub",
+                  "z": {
+                    "_dirType": "int",
+                    "_value": "0"
+                  },
+                  "origin": {
+                    "_dirType": "vector",
+                    "_x": 0,
+                    "_y": -130
+                  },
+                  "EndPos": {
+                    "_dirType": "int",
+                    "_value": "1080"
+                  }
+                },
+                "Segments1": {
+                  "_dirType": "sub",
+                  "z": {
+                    "_dirType": "int",
+                    "_value": "0"
+                  },
+                  "origin": {
+                    "_dirType": "vector",
+                    "_x": 0,
+                    "_y": -130
+                  },
+                  "EndPos": {
+                    "_dirType": "int",
+                    "_value": "1560"
+                  }
+                }
+              },
+              "Slot1": {
+                "_dirType": "sub",
+                "Segments0": {
+                  "_dirType": "sub",
+                  "z": {
+                    "_dirType": "int",
+                    "_value": "1"
+                  },
+                  "origin": {
+                    "_dirType": "vector",
+                    "_x": 0,
+                    "_y": -130
+                  }
+                },
+                "Segments1": {
+                  "_dirType": "sub",
+                  "z": {
+                    "_dirType": "int",
+                    "_value": "1"
+                  },
+                  "origin": {
+                    "_dirType": "vector",
+                    "_x": 0,
+                    "_y": -130
+                  }
+                }
+              }
+            },
+            "Notifies": {
+              "_dirType": "sub",
+              "shoot": {
+                "_dirType": "sub",
+                "TriggerTime": {
+                  "_dirType": "string",
+                  "_value": "1080"
+                }
+              }
+            },
+            "!class": {
+              "_dirType": "string",
+              "_value": "WZ2AnimMontage"
+            }
+          },
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLRideSkill"
+          },
+          "defaultTags": {
+            "_dirType": "short",
+            "_value": "0"
+          },
+          "Events": {
+            "_dirType": "sub",
+            "shoot": {
+              "_dirType": "sub",
+              "type": {
+                "_dirType": "string",
+                "_value": "Projectile"
+              },
+              "constants": {
+                "_dirType": "sub",
+                "time": {
+                  "_dirType": "string",
+                  "_value": "12"
+                },
+                "emitSpeed": {
+                  "_dirType": "string",
+                  "_value": "1000"
+                },
+                "emitCount": {
+                  "_dirType": "string",
+                  "_value": "1"
+                },
+                "destroyHitCount": {
+                  "_dirType": "string",
+                  "_value": "1"
+                },
+                "hitIntervalPerTarget": {
+                  "_dirType": "long",
+                  "_value": "400"
+                },
+                "emitPos.X": {
+                  "_dirType": "string",
+                  "_value": "0"
+                },
+                "emitPos.Y": {
+                  "_dirType": "string",
+                  "_value": "0"
+                },
+                "initialVelocity.X": {
+                  "_dirType": "string",
+                  "_value": "-50"
+                },
+                "initialVelocity.Y": {
+                  "_dirType": "string",
+                  "_value": "0"
+                },
+                "rotatable": {
+                  "_dirType": "string",
+                  "_value": "1"
+                },
+                "boundLT": {
+                  "_dirType": "vector",
+                  "_x": -54,
+                  "_y": -8
+                },
+                "boundRB": {
+                  "_dirType": "vector",
+                  "_x": 56,
+                  "_y": 10
+                }
+              },
+              "ball": {
+                "_dirType": "sub",
+                "z": {
+                  "_dirType": "int",
+                  "_value": "-1"
+                },
+                "!class": {
+                  "_dirType": "string",
+                  "_value": "WZ2AnimMontage"
+                },
+                "repeat": {
+                  "_dirType": "short",
+                  "_value": "-1"
+                }
+              },
+              "onProjectileHit": {
+                "_dirType": "string",
+                "_value": "Attack"
+              },
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2RLSkillEntityEventAction"
+              }
+            },
+            "Attack": {
+              "_dirType": "sub",
+              "type": {
+                "_dirType": "string",
+                "_value": "Attack"
+              },
+              "constants": {
+                "_dirType": "sub",
+                "attackPower1Rate": {
+                  "_dirType": "string",
+                  "_value": "60+30*x"
+                },
+                "attackCount": {
+                  "_dirType": "string",
+                  "_value": "4"
+                },
+                "mobCount": {
+                  "_dirType": "string",
+                  "_value": "24"
+                },
+                "stunDuration": {
+                  "_dirType": "string",
+                  "_value": "0.5"
+                },
+                "knockBackImpactX": {
+                  "_dirType": "string",
+                  "_value": "100"
+                }
+              },
+              "hit": {
+                "_dirType": "sub"
+              },
+              "hitSoundSkillID": {
+                "_dirType": "int",
+                "_value": "400051008"
+              },
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2RLSkillEntityEventAction"
+              }
+            }
+          },
+          "EmitInfo": {
+            "_dirType": "sub",
+            "origin": {
+              "_dirType": "vector",
+              "_x": 0,
+              "_y": -130
+            },
+            "emitStart": {
+              "_dirType": "vector",
+              "_x": -67,
+              "_y": -373
+            },
+            "emitEnd": {
+              "_dirType": "vector",
+              "_x": -67,
+              "_y": -438
+            }
+          },
+          "common": {
+            "_dirType": "sub",
+            "attackCount": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "mobCount": {
+              "_dirType": "string",
+              "_value": "4"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": -1000,
+              "_y": -1000
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 1000,
+              "_y": 1000
+            },
+            "maxLevel": {
+              "_dirType": "int",
+              "_value": "10"
+            },
+            "cooltime": {
+              "_dirType": "int",
+              "_value": "2"
+            },
+            "attackPower1Rate": {
+              "_dirType": "string",
+              "_value": "150+50*x"
+            },
+            "crew": {
+              "_dirType": "string",
+              "_value": "gunner"
+            }
+          },
+          "targetPartName": {
+            "_dirType": "string",
+            "_value": "cannon"
+          },
+          "SkillTags": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "string",
+              "_value": "RLGame.Riding.Skill.Slot2"
+            }
+          },
+          "BlockSkillsWithTag": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "string",
+              "_value": "RLGame.Riding.Skill.Slot2"
+            }
+          }
+        }
+      },
+      "z": {
+        "_dirType": "int",
+        "_value": "-1"
+      },
+      "maxAngle": {
+        "_dirType": "int",
+        "_value": "90"
+      },
+      "minAngle": {
+        "_dirType": "int",
+        "_value": "-90"
+      },
+      "targetPartName": {
+        "_dirType": "string",
+        "_value": "cannon"
+      },
+      "hidePlayer": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "hasInputControl": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "angularSpeed": {
+        "_dirType": "vector",
+        "_x": 50,
+        "_y": 0
+      }
+    }
+  },
+  "Parts": {
+    "_dirType": "sub",
+    "cannon": {
+      "_dirType": "sub",
+      "AnimSet": {
+        "_dirType": "sub",
+        "stand": {
+          "_dirType": "sub",
+          "origin": {
+            "_dirType": "vector",
+            "_x": 0,
+            "_y": -130
+          },
+          "repeat": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "z": {
+            "_dirType": "int",
+            "_value": "0"
+          }
+        },
+        "!class": {
+          "_dirType": "string",
+          "_value": "WZ2AnimMontageSet"
+        }
+      },
+      "origin": {
+        "_dirType": "vector",
+        "_x": 0,
+        "_y": -130
+      },
+      "z": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    }
+  },
+  "AnimSet": {
+    "_dirType": "sub",
+    "!class": {
+      "_dirType": "string",
+      "_value": "WZ2AnimMontageSet"
+    },
+    "stand": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "0"
+            }
+          }
+        },
+        "Slot1": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "1"
+            }
+          }
+        },
+        "Slot2": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          }
+        }
+      }
+    },
+    "move": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "0"
+            }
+          }
+        },
+        "Slot1": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "1"
+            }
+          }
+        },
+        "Slot2": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          }
+        }
+      }
+    },
+    "die": {
+      "_dirType": "sub"
+    }
+  },
+  "InitialStat": {
+    "_dirType": "sub",
+    "!class": {
+      "_dirType": "string",
+      "_value": "WZ2RLBuff"
+    },
+    "DurationPolicy": {
+      "_dirType": "string",
+      "_value": "Instant"
+    },
+    "constants": {
+      "_dirType": "sub",
+      "maxHP": {
+        "_dirType": "string",
+        "_value": "2000"
+      },
+      "attackPower1": {
+        "_dirType": "string",
+        "_value": "100"
+      },
+      "stance": {
+        "_dirType": "string",
+        "_value": "100"
+      },
+      "energy": {
+        "_dirType": "string",
+        "_value": "50"
+      },
+      "maxEnergy": {
+        "_dirType": "string",
+        "_value": "100"
+      }
+    }
+  }
+}

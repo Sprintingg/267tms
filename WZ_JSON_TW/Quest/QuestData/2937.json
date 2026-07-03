@@ -1,0 +1,189 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[鯨魚號] 製作阿膠"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "巴勒圖能製作 #b#t04033013##k但現在既沒有做好的，也沒有重新製作的材料啊。 這可怎麼辦啊？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "阿膠的主要材料可用 #b#t04000045 ##k來製作。 阿膠的背甲可從生活在黃金海灘沙灘上的烏龜上獲得。\n\n不知道船會什麼時候沉下去，所以最好趕緊找來吧。\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "利用#b#t04000045 ##k巴勒圖製作#b#t04033013##k。 "
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000045:# #t4000045:# #c4000045# / 30\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 1,250\r\n可進行 '給寶妮帶去阿膠吧' 任務\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "29"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1250"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1092011"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "28"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2936"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1092011"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000045"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1250"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000045"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "正常"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "製作#b#t04033013##k所需的主要材料是#b#t04000045 ##k。\\r\\n聽說過烏龜嗎？ 那是居住在黃金海灘的長相酷似烏龜一樣的怪物。 去狩獵烏龜並收集#b#t04000045 ##k拿給我，只要#r30個#k就行。 可以辦到嗎？\\r\\n"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "趁這段時間我會做好製作#b#t04033013##k的準備的。 沒多少時間了，一定要快點。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "一旦船沉下去那我們大家就都完蛋了！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "怎麼這麼慢。 快把#b#t04000045 ##k給我。\\r\\n把#b#t04000045 ##k放進去… 念念有詞… 好了。 再凝固一些就大功告成了。 \\r\\n"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "製作阿膠的準備已經做好了。\\r\\n快去弄來#b#t04000045 ##k，需要#r30個#k。"
+          }
+        }
+      }
+    }
+  }
+}

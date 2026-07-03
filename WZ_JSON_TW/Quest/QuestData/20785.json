@@ -1,0 +1,255 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[光之騎士] 無法相信的事實"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "13"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "和槍手講話吧。去打聽看看他們的目的是什麼吧。點擊\\n#b帳棚去到有槍手的地方吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "調查帳篷時被槍手襲擊了。消滅和父母親有關聯的槍手後收集線索。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "收集槍手們留下的線索調查了一下，但沒有任何幫助。槍手們說騎士雷神之錘是卑鄙的膽小鬼，那番話是真的嗎？"
+    },
+    "selfComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4033222:# #t4033222:# #c4033222# / 10\r\n"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "尋找騎士雷神之錘的行蹤…"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "8"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 1,000\r\n可進行 '事實和真相' 任務\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1106007"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "15"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q20785s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20784"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "5100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "5110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "5111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "5112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "5113"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033222"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033222"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "呵…果然不能小看。你是說你是雷神索爾的兒子嗎？\\r\\n#L0##b你是誰呢？ 你知道我是誰？ 為什麼要攻擊我？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "呵呵呵呵…原來你不記得了。也是那時候太小大概不會記得。\\r\\n#L0##b什麼不記得…難道你們…你們是殺死我母親的那些人？#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "這個…怎麼能說是我們殺死的呢？ 我們明明就有跟雷神索爾說。他想進行的那件事！如果他肯放棄就會放過他太太。但是他沒有來。他逃走了。就像卑鄙的膽小鬼一樣。所以殺死你母親的人就是你的父親雷神索爾。\\r\\n#L0##b這是不可能的！#l\\n#k"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "這個嘛… 雖然你想否認但這是事實。還有你太懦弱了!聽說雷神索爾的兒子出現，原本還想來看看是怎樣的傢伙，結果只是虛驚一場。你太傻呼呼的了。告訴你事實你卻不相信？ 那麼我就消失了。你這輩子就埋怨丟下母親的父親活著吧 呵呵呵\\r\\n#b（蒙面漢從古木妖之間逃跑了。快追！）"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "阿…無法再用這些東西來進行追蹤…雖然很可惜看來已經錯過了呢…"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "可是他們說的話是真的嗎？我父親…騎士雷神之錘真的是丟棄了他的妻子嗎？很多人都成為他是善良的騎士，可是卻不是這樣的嗎？所以，因罪惡感而成為廢人的嗎？…阿，腦海一片混亂呢…"
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

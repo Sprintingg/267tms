@@ -1,0 +1,218 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[懸賞] 僵屍菇菇"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "幽靈菇菇路上建立了懸賞標誌板。 \n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "幽靈菇菇路上建立了僵屍菇菇懸賞標誌板。 消滅僵屍菇菇 20隻後，去找#m100020000#的 #p1012119#報告。\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在幽靈菇菇路的#p1012119#建立了僵屍菇菇懸賞標誌板。 消滅僵屍菇菇 20隻後，去找#m100020000#的 #p1012119#報告，就獲得了懸賞金。 可是怎麼知道我有沒有消滅僵屍菇菇呢？\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o2230101# #a27041#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 600\r\n#i1072026:# #t1072026:# 1 個\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "25"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "600"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012129"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2703"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012119"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2230101"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "600"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1072026"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "正常"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#eWANTED#n\\n#i3800227#\\n懸賞最近出沒在幽靈菇菇路騷擾行人的殭屍菇菇  20隻。 \\n罪狀： 妨礙通行，違反食品衛生法"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "<追申>\\n掃蕩殭屍菇菇 20隻的人請向菇菇歌唱森林:#m100020000#的 #p1012119#回報。\\r\\n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "<追申>\\n- 損毀佈告時，徵收罰金10萬楓幣。\\n- 請勿在此丟棄垃圾。」\\r\\n"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "你來這裡有什麼事嗎？\\r\\n#L0##b我已掃蕩殭屍菇菇 20隻前來領取懸賞金。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "噢！ 原來是真的？ 好，就把懸賞金給你。 有你的幫忙惱人的殭屍菇菇應該減少很多了！ 哈哈哈！\\r\\n"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#m100000000# 附近的菇菇總是令人頭痛。 進入更深處的菇菇歌唱森林就會看到更多我設立的懸賞佈告請找找看吧。 當然我會給你合理的報酬所以你不需要擔心獎金～\\r\\n\\r\\n"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "<追申>\\n掃蕩殭屍菇菇 20隻的人請向菇菇歌唱森林:#m100020000#的 #p1012119#回報。\\r\\n"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你是看到幽靈菇菇路設立的殭屍菇菇懸賞佈告來的嗎 ？ 若要領取獎金需要先掃蕩殭屍菇菇 20隻。\\r\\n"
+          }
+        }
+      }
+    }
+  }
+}

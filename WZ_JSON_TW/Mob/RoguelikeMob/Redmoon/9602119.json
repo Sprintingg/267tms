@@ -1,0 +1,510 @@
+{
+  "Skills": {
+    "_dirType": "sub",
+    "attack1": {
+      "_dirType": "sub",
+      "Anim": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub",
+              "z": {
+                "_dirType": "int",
+                "_value": "-1"
+              },
+              "16": {
+                "_dirType": "uol",
+                "_value": "0"
+              },
+              "17": {
+                "_dirType": "uol",
+                "_value": "1"
+              },
+              "18": {
+                "_dirType": "uol",
+                "_value": "2"
+              },
+              "19": {
+                "_dirType": "uol",
+                "_value": "3"
+              },
+              "20": {
+                "_dirType": "uol",
+                "_value": "4"
+              },
+              "21": {
+                "_dirType": "uol",
+                "_value": "5"
+              },
+              "22": {
+                "_dirType": "uol",
+                "_value": "6"
+              },
+              "23": {
+                "_dirType": "uol",
+                "_value": "7"
+              },
+              "24": {
+                "_dirType": "uol",
+                "_value": "8"
+              },
+              "25": {
+                "_dirType": "uol",
+                "_value": "9"
+              },
+              "26": {
+                "_dirType": "uol",
+                "_value": "10"
+              },
+              "27": {
+                "_dirType": "uol",
+                "_value": "11"
+              },
+              "28": {
+                "_dirType": "uol",
+                "_value": "12"
+              },
+              "29": {
+                "_dirType": "uol",
+                "_value": "13"
+              },
+              "30": {
+                "_dirType": "uol",
+                "_value": "14"
+              },
+              "31": {
+                "_dirType": "uol",
+                "_value": "15"
+              }
+            }
+          }
+        },
+        "Notifies": {
+          "_dirType": "sub",
+          "Projectile": {
+            "_dirType": "sub"
+          },
+          "sound": {
+            "_dirType": "sub",
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/Redmoon.img/Mob/9602104/hit"
+              }
+            }
+          },
+          "sound1": {
+            "_dirType": "sub",
+            "TriggerTime": {
+              "_dirType": "string",
+              "_value": "540"
+            },
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/Redmoon.img/Mob/9602101/hit"
+              }
+            }
+          },
+          "sound2": {
+            "_dirType": "sub",
+            "TriggerTime": {
+              "_dirType": "string",
+              "_value": "1080"
+            },
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/Redmoon.img/Mob/9602101/hit"
+              }
+            }
+          }
+        }
+      },
+      "Events": {
+        "_dirType": "sub",
+        "Projectile": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "Projectile"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "time": {
+              "_dirType": "string",
+              "_value": "3"
+            },
+            "emitSpeed": {
+              "_dirType": "string",
+              "_value": "250"
+            },
+            "emitCount": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "emitAngle": {
+              "_dirType": "string",
+              "_value": "rand(180)"
+            },
+            "boundLT.X": {
+              "_dirType": "string",
+              "_value": "-20"
+            },
+            "boundLT.Y": {
+              "_dirType": "string",
+              "_value": "-12"
+            },
+            "boundRB.X": {
+              "_dirType": "string",
+              "_value": "7"
+            },
+            "boundRB.Y": {
+              "_dirType": "string",
+              "_value": "15"
+            },
+            "emitPos.X": {
+              "_dirType": "string",
+              "_value": "0"
+            },
+            "emitPos.Y": {
+              "_dirType": "string",
+              "_value": "0"
+            },
+            "destroyHitCount": {
+              "_dirType": "string",
+              "_value": "1"
+            }
+          },
+          "ball": {
+            "_dirType": "sub"
+          },
+          "onProjectileHit": {
+            "_dirType": "string",
+            "_value": "Attack"
+          }
+        },
+        "Attack": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "Attack"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "attackPower1Rate": {
+              "_dirType": "string",
+              "_value": "30"
+            },
+            "attackCount": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "mobCount": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": -120,
+              "_y": -82
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 130,
+              "_y": 79
+            }
+          },
+          "hit": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          },
+          "hitSoundSkillID": {
+            "_dirType": "int",
+            "_value": "2221012"
+          }
+        }
+      },
+      "common": {
+        "_dirType": "sub",
+        "cooltime": {
+          "_dirType": "string",
+          "_value": "2"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -800,
+          "_y": -600
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 200,
+          "_y": 600
+        }
+      }
+    }
+  },
+  "Info": {
+    "_dirType": "sub",
+    "Chase": {
+      "_dirType": "sub",
+      "SearchRect": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": -3000,
+          "_y": -3000
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 3000,
+          "_y": 3000
+        }
+      },
+      "distanceX": {
+        "_dirType": "int",
+        "_value": "400"
+      }
+    },
+    "Patrol": {
+      "_dirType": "sub",
+      "PatrolRect": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": -260,
+          "_y": -200
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 260,
+          "_y": 160
+        }
+      }
+    },
+    "reward": {
+      "_dirType": "string",
+      "_value": "mob_normal_redmoon"
+    },
+    "fly": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "constants": {
+      "_dirType": "sub",
+      "maxHP": {
+        "_dirType": "long",
+        "_value": "15"
+      },
+      "speed": {
+        "_dirType": "long",
+        "_value": "200"
+      },
+      "attackPower1": {
+        "_dirType": "long",
+        "_value": "40"
+      },
+      "flyAcc": {
+        "_dirType": "string",
+        "_value": "1"
+      },
+      "flySpeed": {
+        "_dirType": "string",
+        "_value": "1"
+      }
+    },
+    "DurationPolicy": {
+      "_dirType": "string",
+      "_value": "Instant"
+    },
+    "flyingByPreciseInput": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "script": {
+      "_dirType": "string",
+      "_value": "Redmoon/Mob_TutorialDrone"
+    }
+  },
+  "Parts": {
+    "_dirType": "sub",
+    "laser": {
+      "_dirType": "sub",
+      "origin": {
+        "_dirType": "vector",
+        "_x": 0,
+        "_y": 0
+      }
+    }
+  },
+  "Tags": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "string",
+      "_value": "RLGame.Mob.Small"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "RLGame.Mob.Flying"
+    }
+  },
+  "AnimSet": {
+    "_dirType": "sub",
+    "stand": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      }
+    },
+    "move": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      }
+    },
+    "die": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      },
+      "Notifies": {
+        "_dirType": "sub",
+        "sound": {
+          "_dirType": "sub",
+          "Notify": {
+            "_dirType": "sub",
+            "!class": {
+              "_dirType": "string",
+              "_value": "WZ2AnimNotify_PlaySound"
+            },
+            "SoundPath": {
+              "_dirType": "string",
+              "_value": "Sound/Redmoon.img/Mob/9602104/die"
+            }
+          }
+        }
+      }
+    },
+    "hit": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      },
+      "Notifies": {
+        "_dirType": "sub",
+        "sound": {
+          "_dirType": "sub",
+          "Notify": {
+            "_dirType": "sub",
+            "!class": {
+              "_dirType": "string",
+              "_value": "WZ2AnimNotify_PlaySound"
+            },
+            "SoundPath": {
+              "_dirType": "string",
+              "_value": "Sound/Redmoon.img/Mob/9602104/hit"
+            }
+          }
+        }
+      }
+    },
+    "appear": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      },
+      "Notifies": {
+        "_dirType": "sub",
+        "sound": {
+          "_dirType": "sub",
+          "Notify": {
+            "_dirType": "sub",
+            "!class": {
+              "_dirType": "string",
+              "_value": "WZ2AnimNotify_PlaySound"
+            },
+            "SoundPath": {
+              "_dirType": "string",
+              "_value": "Sound/Redmoon.img/Mob/9602104/regen"
+            }
+          }
+        }
+      }
+    }
+  },
+  "MobClass": {
+    "_dirType": "string",
+    "_value": "ARLMob_Zeppelin"
+  }
+}

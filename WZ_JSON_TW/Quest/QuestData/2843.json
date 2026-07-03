@@ -1,0 +1,180 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 鋼之黑肥肥狩獵"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "disableAtStartTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o4230400# #a28431#\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "在#b#m102030200##k建立懸賞告示板。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在#b#m102030200##k建立懸賞告示板。狩獵#b鋼之黑肥肥#k150隻後，領取懸賞金吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在#b#m102030200##k武術教練放置了懸賞告示板。狩獵#b鋼之黑肥肥#k150隻獲得懸賞金。"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "34046"
+      },
+      "meso": {
+        "_dirType": "int",
+        "_value": "50000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022116"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "55"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022116"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4230400"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "150"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "34046"
+      },
+      "money": {
+        "_dirType": "int",
+        "_value": "50000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#eWANTED#n\\n懸賞最近出沒在#b#m102030200##k，#b#m102030300##k妨礙旅行者的#b#o4230400##k150隻。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "<備註>\\n發放懸賞金給處置#b#o4230400##k150隻的人。\\r\\n\\r前往在#b#m102030200##k的勇士之村警告標示。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "<備註>\\n- 警告標示毀損時，需徵收10萬楓幣。\\n- 請勿把垃圾丟在這裡。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "<備註>\\n處置完#b鋼之黑肥肥#k150隻的人，去找在#b#m102030200##k的勇士之村警告標示進行提報吧。\\r\\n處置完#L0##b鋼之黑肥肥150隻來拿懸賞金的。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "已確認完畢，發放懸賞金。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "<備註>\\n將發放懸賞金給處置#b鋼之黑肥肥#k150隻的人。\\r\\n去找到在#b#m102030200##k勇士之村警告標示吧。"
+          }
+        }
+      }
+    }
+  }
+}

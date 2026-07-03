@@ -1,0 +1,146 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[過去的英雄，狂狼勇士] 請救出小孩1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "6"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "方舟上突然傳來某人的尖叫聲，說是丟了一個小孩，可是不能留下孩子就走掉，這該怎麼辦？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1209000#說孩子可能在樹林裡，並請求幫忙找回孩子，雖然受了傷不過還是希望能夠得到幫助，因為除了我就沒有人能夠做這件事…#b進入樹林救出小孩！#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在樹林裡好不容裡找到了小孩。趕快把小孩帶回去。"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "targetType": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "returnType": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "targetMapID": {
+      "_dirType": "int",
+      "_value": "914000300"
+    },
+    "targetPN": {
+      "_dirType": "string",
+      "_value": "1209006"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1209000"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q21000s"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "21002"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2000"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1209006"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "21001"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊…哭泣哭泣。啊…是狂狼勇士？是來救我的嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "孩子呢…？孩子呢？！在方舟出發之前得把孩子找回來！請到森林，去把孩子找回來！"
+          }
+        }
+      }
+    }
+  }
+}

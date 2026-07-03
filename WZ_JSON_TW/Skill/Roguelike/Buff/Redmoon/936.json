@@ -1,0 +1,107 @@
+{
+  "memo": {
+    "_dirType": "string",
+    "_value": "복수 : 공격력 100% 증가, 이속증가, 공속증가"
+  },
+  "maxLevel": {
+    "_dirType": "int",
+    "_value": "1"
+  },
+  "hide": {
+    "_dirType": "int",
+    "_value": "1"
+  },
+  "constants": {
+    "_dirType": "sub",
+    "time": {
+      "_dirType": "string",
+      "_value": "3"
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "100"
+    },
+    "attackSpeed": {
+      "_dirType": "string",
+      "_value": "-3"
+    },
+    "speed": {
+      "_dirType": "string",
+      "_value": "30"
+    }
+  },
+  "effects": {
+    "_dirType": "sub",
+    "small_number": {
+      "_dirType": "sub",
+      "tagRequirements": {
+        "_dirType": "sub",
+        "TagQuery": {
+          "_dirType": "sub",
+          "op": {
+            "_dirType": "string",
+            "_value": "AnyTags"
+          },
+          "0": {
+            "_dirType": "string",
+            "_value": "RLGame.Mob.Small"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "RLGame.Mob.Medium"
+          }
+        }
+      },
+      "repeat": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "dir": {
+        "_dirType": "string",
+        "_value": "left"
+      }
+    },
+    "medium_number": {
+      "_dirType": "sub",
+      "tagRequirements": {
+        "_dirType": "sub",
+        "requireTags": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "RLGame.Mob.Large"
+          }
+        }
+      },
+      "repeat": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "dir": {
+        "_dirType": "string",
+        "_value": "left"
+      }
+    },
+    "large_number": {
+      "_dirType": "sub",
+      "tagRequirements": {
+        "_dirType": "sub",
+        "requireTags": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "RLGame.Mob.Huge"
+          }
+        }
+      },
+      "repeat": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "dir": {
+        "_dirType": "string",
+        "_value": "left"
+      }
+    }
+  }
+}

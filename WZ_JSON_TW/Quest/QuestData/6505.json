@@ -1,0 +1,125 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 作出想吐的表情。"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "被大發企劃代表#b#p1052121##k遷就要接受#b演技課程#k. 是哪個課程? 向#b弓箭手村市場, 美髮店旁邊#k站著的#p1052121#進行對話."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "這次決定學想吐的表情。跟#b鯨魚號#k的料理師#b#p1092000##k說想吃#p1052121#委託的食物，就可以學到表情，那麼去找#p1092000#。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "學到想吐的表情。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052121"
+      },
+      "charmMin": {
+        "_dirType": "int",
+        "_value": "45"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "6504"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1092000"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q6505e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好，#h0#。越來越出色的演技，真是讓人高興啊。那麼我們開始課程吧？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "第四個課程。這次課程要學習想吐的表情。演員大部分都很漂亮且很有魅力，所以很難擺出這種表情。不過真正的演員也要擺出醜陋的樣子。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "去找#b鯨魚號#k的廚師 #b#p1092000##k吧。有我之前預定的料理，去說想吃#p1052121#預定的料理，他會給你的。吃了那個料理後再與#p1092000#說話，就能學到想吐的表情。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我知道不簡單，但請不要客氣。你有才能。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒去找#b#p1092000##k嗎？他就是#b鯨魚號#k 的廚師。"
+          }
+        }
+      }
+    }
+  }
+}

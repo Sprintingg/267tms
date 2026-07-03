@@ -1,0 +1,200 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 吸取海洋氣息生存的螢火蟲1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "居住在鯨魚號的下層走廊的查理斯王子又在為什麼事而憂心。究竟是什麼事呢？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "從查理斯王子處聽說了神奇的海洋螢火蟲的事情。除了鯨魚號上的發光石還有很多有趣的東西啊。但似乎是螢火蟲們的力量削弱的關係，為此查理斯王子非常擔心。要幫助查理斯王子就得去找居住在#b維多利亞港#k的#b坤#k，並從他的魔法瓶中獲得#b海洋的氣息#k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "從坤那裡得到了海洋氣息裝進魔法瓶裡。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031841"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031841"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "查理斯王子已經聯繫過我。請把王子給的魔法瓶給我吧？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "要收集海洋氣息的話，需要一點時間。能不能稍等一下？"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "妙斯大人居住在水世界內。快去取得海洋的氣息吧。拜託了！"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "魔法瓶破裂了？那是玻璃製品你要小心些。我可以再給你一個，快去取得海洋的氣息吧。"
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "啊！你好啊？你不就是曾感受發光石力量的人嗎！最近有沒有感覺光線越來越暗啊？那是因為負責鯨魚號照明的海洋螢火蟲的力量在減弱。\\r\\n#L0##b海洋螢火蟲？#k#l"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "是啊.海洋螢火蟲是一種在深海吸取海洋的氣息後放出光芒的神祕動物。由於船舶從停靠在維多利亞近海後再沒有前往深海，所以螢火蟲的力量也在不斷減弱。如果你有時間，可以為海洋螢火蟲和卡伊琳大人取回海洋的氣息嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "大海的精氣是可以跟 #b維多利亞港的坤#k獲得喔。在這魔法瓶裡裝滿 #b大海的精氣#k後，再回來吧。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你說你很忙？哦…這可難辦了…"
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002101"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031841"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1092003"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "25"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2166"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    }
+  }
+}

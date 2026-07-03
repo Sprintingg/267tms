@@ -1,0 +1,211 @@
+{
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "誰，你是？為何在宮殿前鬼鬼祟祟？這地方不是任何人都可以進去的！這裡是#m260000000#的國王居住的地方。什麼？想進宮殿？憑什麼相信你這種外來的冒險家？絕對不行！但是…"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "但你若是一定要進入宮殿，也可以。只要你表示對國王的忠誠，就讓你進去。該怎麼做？嗯嗯，很簡單，交#b2000楓幣#k就行。作為對#m260000000#和國王的貢獻。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "什麼？不想交2000楓幣嗎？不會是對國王反抗吧？要是沒楓幣，就馬上滾開！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嘿嘿。好。你確實是對國王忠誠的人。那麼給你這個#t4031582#。只要有這個就可以隨意出入王宮任何地方。感謝我吧。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果丟了#t4031582#，就來找我吧。可以再給你。當然還要交#b2000楓幣#k。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "什麼？楓幣不夠啊？想進宮殿就交#b2000楓幣#k。起碼要表示點誠意呀。"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[納希沙漠] 宮殿守衛兵提肯"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽說#m260000000#的宮殿前有個很機警的警衛，所以想進入有點困難。但非進入宮殿裏面不可…請宮殿守衛隊長#b#p2101004##k幫忙吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2101004#堅決的說無法進入宮殿。但他說為了表示對國王的忠誠,只要交出少量楓幣，就可以給王宮進入許可書…交出#b2000楓幣#k不是大問題，但這好像私人送禮似的…？"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "向#p2101004#支付2000楓幣後，獲得了王宮進入許可書。雖然這很像私人送禮，但還是能進入宮殿裏面了..."
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "43"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "meso": {
+        "_dirType": "int",
+        "_value": "-2000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031582"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2101004"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "85"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3900"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031582"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2101004"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "什麼？你？為什麼在宮殿前面鬼鬼祟祟地偷看呢？這裡不是隨隨便便的人能進入的地方！#m260000000#的國王待的地方！什麼？想進入宮殿嗎？怎麼能相信你這種外界的冒險家，隨便讓你進入呢？絕對不行！可是…"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "如果你一定要進入皇城，我可以讓你進去。如果你能表示對國王忠誠，我就能讓你進入。但該怎麼做呢？呵呵。這很簡單。只要交出#b2000楓幣#k。表示對#m260000000#和國王忠誠。"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "什麼？你不想交出2000楓幣嗎？你該不會是想要反抗國王吧？沒有楓幣的話就快滾蛋！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "money": {
+        "_dirType": "int",
+        "_value": "-2000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031582"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  }
+}

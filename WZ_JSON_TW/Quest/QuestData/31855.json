@@ -1,0 +1,178 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[赫力席母] 解放被詛咒的凱撒利恩"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "21"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "處置掉梅格耐斯後，再次獲得他曾拿著的巨大劍器。雖然能感受到某種強大的氣息，但不知是不是被詛咒導致無法使用這個武器。如果是#b#p3001015##k的話，也許能了解更詳細的情報。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "解除凱撒利恩的詛咒果然不是這麼簡單啊。雖然艱辛有漫長的旅程歷歷在目。。。但我絕對不會放棄的！趕快收集5個 #r#e#t4036105# 5個#k#n，去找在#b#m401040000##k的#b#p3001100##k吧！\n#r#e[放棄任務時，#t4036105#全部都會消失。]#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "得到傳說的 凱撒利恩了。。。竟然握住了這強大的劍。。。 真是無限感慨啊。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##fUI/UIWindow2.img/QuestIcon/7/0# 需要100,000,000\r\n#questorder1##i1402179:# #t1402179:# #c1402179# / 1\r\n#questorder1##i4036105:# #t4036105:# #c4036105# / 5\r\n"
+    },
+    "deleteItem": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "int",
+        "_value": "4036105"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001100"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31849"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1402179"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "175"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q31855s"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001100"
+      },
+      "endmeso": {
+        "_dirType": "int",
+        "_value": "100000000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1402179"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036105"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q31855e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#r#t1402179##k或#r#t4036105##k不足，此外其他材料領取費用也需要1億楓幣。\\r\\n目前#h0##k持有#b#t4036105##k#b#c4036105#個#k。集滿#b#e5個#k#n之後再向我搭話吧！"
+          }
+        }
+      }
+    }
+  }
+}

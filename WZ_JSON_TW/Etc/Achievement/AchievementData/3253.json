@@ -1,0 +1,127 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[巴德利斯] 君子報仇數百年也不晚"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "以阿戴爾職業造成最多傷害後擊破普通巴德利斯"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "100"
+    },
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "battle"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "boss"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "legendary"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "gauge": {
+        "_dirType": "string",
+        "_value": "submission_info"
+      },
+      "gaugeSubMission": {
+        "_dirType": "string",
+        "_value": "mob_kill"
+      }
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "以阿戴爾職業造成最多傷害後擊破普通巴德利斯"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "mob_kill": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "long",
+              "_value": "1"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            },
+            "type": {
+              "_dirType": "string",
+              "_value": "counting"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub",
+            "character": {
+              "_dirType": "sub",
+              "values": {
+                "_dirType": "sub",
+                "0": {
+                  "_dirType": "sub",
+                  "character_jobcode": {
+                    "_dirType": "int",
+                    "_value": "15100"
+                  }
+                },
+                "1": {
+                  "_dirType": "sub",
+                  "character_jobcode": {
+                    "_dirType": "int",
+                    "_value": "15110"
+                  }
+                },
+                "2": {
+                  "_dirType": "sub",
+                  "character_jobcode": {
+                    "_dirType": "int",
+                    "_value": "15111"
+                  }
+                },
+                "3": {
+                  "_dirType": "sub",
+                  "character_jobcode": {
+                    "_dirType": "int",
+                    "_value": "15112"
+                  }
+                }
+              },
+              "condition": {
+                "_dirType": "string",
+                "_value": "or"
+              }
+            },
+            "mob": {
+              "_dirType": "sub",
+              "mob_id": {
+                "_dirType": "int",
+                "_value": "8881621"
+              },
+              "condition": {
+                "_dirType": "string",
+                "_value": "or"
+              }
+            },
+            "is_max_damage_on_fieldset_user": {
+              "_dirType": "short",
+              "_value": "-1"
+            }
+          }
+        }
+      }
+    }
+  }
+}

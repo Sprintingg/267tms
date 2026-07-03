@@ -1,0 +1,143 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[墮落城市] 回到從前的樣子吧"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "28"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "向赫一的朋友俊伊問問可以使赫一回復原狀的方法。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "俊伊說赫一最近有點奇怪。好像突然變成另一個人似的，跟他講以前的事情他也不記得，或是對朋友很不尊重等等，頻頻做出不尋常的動作。仔細想想這些事情都是在赫一買了一把吉他之後才發生的事情呢... 去向赫一問問那把吉他的事吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "一向赫一問關於吉他的事之後，赫一嚇了好大一跳，說話的態度感覺好像在隱藏些什麼呢..."
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2700"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9310165"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q2669s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2668"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9310167"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "3111000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "嗯… 你從剛剛就一直在那裡動來動去真的很煩。可不可以請你去看不見的地方？ \\r\\n#L0##b(去問問赫一新買的吉他在那裡。)#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "吉，吉他嗎？！那有什麼吉他？沒有買吉他之類的。不是，要不要買吉他關你什麼事。請你走開。 "
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "也許你不知道但請幫忙找找看赫一這小子。他其實不是什麼壞人好好說明的話會振作精神的。"
+          }
+        }
+      }
+    }
+  }
+}

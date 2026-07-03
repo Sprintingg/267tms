@@ -1,0 +1,207 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 內拉的提議"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "據說墮落城市的內拉有話要說。 去找一下內拉吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "接受了內拉的委託。 要消滅小幽靈後，收集使用在防禦具製作的桌布。\n\nTip。 小幽靈主要棲息在 #r地鐵站 #m103020200##k或者 #r#m103020300##k。\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "給內拉拿去委託的物品，至此完成了委託。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4000035:# #t4000035:# #c4000035# / 50\r\n#questorder1##o3230101# #a28591#\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "18114"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052103"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "43"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052103"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000035"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3230101"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "150"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "18114"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000035"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "正常"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我是這個城市裡的百事通，#b內拉#k。 這裡發生的各種事情，都瞞不過我"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "怎麼樣，想不想跟我一起做？ 我知道你已經找過吉姆了。 和我做生意，需要再多收取一些手續費哦。 怎麼樣？ 想不想和我一起做生意？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "很好. 請先處理緊急的委託. 打倒棲息在地鐵 #m103020200#或是#m 103020300#的#b小幽靈大幽靈 150隻#k後, 收集#b桌布 50個#k."
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "讓我看看你的實力~我會好好酬謝你的。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "對你來說應該沒什麼損失~ 如果改變心意，隨時都可以來找我！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "回來的比我想像的還要快哦？ 我看人的眼光果然很準嘛~ 很好！ 既然順利完成了委託內容，就要好好答謝囉。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "再有事情要做的時會找你的。 辛苦了~"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "需要桌布 50個. 還沒有收集啊. 收集完畢後再來找我. 等你的消息."
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有打倒小幽靈大幽靈 150隻啊. 展現你的實力吧."
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "噓，小聲點。不能被別人發現…找我什麼事？\\r\\n#L0##b你是沙影團的人？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "...沙影團？沙影團...問這做什麼？看你樣子不像王妃的兵士...\\r\\n#L0##b我是來幫助沙影團的。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "哈哈哈！原來是這樣啊。對，我就是沙影團團員！你能幫我嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "呼呼呼...你應該很瞭解沙影團做的事吧？沙影團的任務是搶奪王妃的寶物。現在的計畫是攻擊運輸王妃寶物的運輸隊，我們需要繩子，但現在缺乏製造繩子的材料。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "聽說在沙漠會使用#b#t4000329##k製作成繩索。#t4000329#只要曬乾後，就能製成堅韌的繩索。請消滅#r#o2100102##k，幫我取得#t4000329#。大概#b40個#k左右應該就夠了。那我會等你的。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "什麼？既然不想幫我，為什麼跟我對話？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "…你是？啊啊！之前說想幫助沙影團的那個人啊！呼呼呼…找來#t4000329#了嗎？看來你都找來了嘛。呼呼呼..."
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝你。這對我們沙影團幫助很大。有你這樣的人，我對執行沙影團任務更有信心了。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "唔。我好像是說要收集#b#t4000329#40個#k...？如果想幫忙沙影團，至少要湊齊那種程度的數量。因為可向#r#o2100102##k取得，所以我認為應該不算是難事吧。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2101020"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000329"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "40"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2101020"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "85"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3900"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "噓。小聲一點。不能被人們發現…有什麼事嗎？ \\r\\n#L0# #b 你是沙影團的人嗎？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "…沙影團？沙影團…為什麼這樣問？看起來不像王妃的土兵… \\r\\n#L0# #b 想幫忙沙影團的工作。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "哈哈哈！這樣啊！沒錯！我正是沙影團的團員！那麼你會幫忙我的工作嗎？"
+      },
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "144021"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000329"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-40"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[納希沙漠] 沙影團員的委託?!1"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "沙影團員的委託?!"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "在#b#m260000000##k村莊外部的#b#p2101012##k...或許他會是#m260000000#的祕密組織沙影團？要不去看看。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2101012#自己說出他是沙影團員, 拜託尋找搶奪王妃寶物所需要的材料.想要使用#b#t4000329##k製作繩子, 趕快去打倒 #r#o2100102##k."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "從#p2101012#取得 #t4000329# 50個. 雖然不是嚴重的事情, 不過這樣應該有幫忙沙影團了吧?"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "43"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4000329:# #t4000329:# #c4000329# / 40\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "144021"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

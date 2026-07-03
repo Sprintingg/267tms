@@ -1,0 +1,179 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "290"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3006847"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q36786s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "36785"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3006847"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q36786e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "36786"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "c"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "確認第二條記錄"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "clr1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "c"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "確認第三條記錄"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "clr2"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[塔拉哈特] 幻影的記錄 2"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聚集古代神的力量後，再次啟動了水晶球。與諾納談談吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "跟諾納對話後，似乎能透過水晶球看到新的幻影。按照諾納所說，最好每個幻影至少確認一次。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "這兩個幻影分別記錄了普拉加與璐耶的故事。似乎能更理解普拉加背叛的經過與璐耶的心境。"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q36786x"
+    },
+    "demand": {
+      "_dirType": "sub",
+      "base": {
+        "_dirType": "string",
+        "_value": "#questorder1#確認第二條記錄 (#R36786Exclr1Ref36786#)\r\n#questorder2#確認第三條記錄 (#R36786Exclr2Ref36786#)\r\n"
+      },
+      "explain": {
+        "_dirType": "sub"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "看來您還沒看完所有記錄呢？"
+          }
+        }
+      }
+    }
+  }
+}

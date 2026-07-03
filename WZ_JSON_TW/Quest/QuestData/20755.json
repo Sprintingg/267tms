@@ -1,0 +1,206 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇家騎士團] 潛入"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "和#p1103006#再次對話。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "入侵次元的縫隙，將守護在該地的墮落守護兵全部除掉，雙擊精靈之光破壞結界。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "入侵次元的縫隙，將守護在該地的墮落守護兵全部除掉，用精靈之光破壞結界。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "破壞阿卡伊農的結界：#R20755#"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1103006"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "120"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20753"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "5112"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "5113"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1103006"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "20755"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "succeed"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "info": {
+        "_dirType": "string",
+        "_value": "進行中"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2430564"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "現在都準備好了。再給你精靈之光。是你出馬的時候了！ 什麼？為什麼不給龍之氣息？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "啊！ 這是我需要的…在那麼危險的地方隨時進出，我真的很不安，只要有龍之氣息，就好像可以產生勇氣。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "總之，現在是真正的任務！"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "進入次元的縫隙將在該地守護的墮落的守護兵全部除掉。還有使用精靈之光消除阿卡伊農的結界。\n啊！ 你聽說精靈之光的使用方法了嗎？非常簡單。在次元的縫隙內雙擊即可。那麼就拜託了！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "居然拒絕… 拒絕呢？不要這樣！ 我不喜歡開玩笑！ 現在才這樣讓人很為難！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "次元的縫隙的結界被破壞了？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "呼呼，真厲害。果然是新的騎士團長。其他守護兵沒追來，應該是成功了。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "進入次元的縫隙將在該地守護的墮落的守護兵全部除掉。不讓要其他地區的守護兵察覺，進入次元的縫隙後立刻使用精靈之光。"
+          }
+        }
+      }
+    }
+  }
+}

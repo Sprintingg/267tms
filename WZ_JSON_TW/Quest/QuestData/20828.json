@@ -1,0 +1,136 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇家騎士團] 第2課程 – 體力鍛鍊"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "跟奇慕一起開始基礎體力訓練吧。問奇慕詳細了解一下具體怎麼做。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "開始做簡單的基礎體力訓練吧。\r\n練習走繩索，跳躍等，轉到目標地點。\r"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "順利完成基礎體力訓練。"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1102114"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20827"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1102101"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q20828e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "畫面左側上方可以看到小地圖吧？小地圖裡可以看到我以外的其他 NPC 標示。 那裡是目標地點。移動到那地方就可以了。\\r\\n那麼要開始嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "仔細看畫面上的指引，在那位置按下的話可以很容易就移動到的。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "還沒準備好嗎？ 給你一點時間，等一下重新跟我說話吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請加油。 可以到達目標地點的。一定要身體抵達目標地點旗幟！ 在遠處伸手是不行的！"
+          }
+        },
+        "quest": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請加油。 可以到達目標地點的。一定要身體抵達目標地點旗幟！ 在遠處伸手是不行的！"
+          }
+        }
+      }
+    }
+  }
+}

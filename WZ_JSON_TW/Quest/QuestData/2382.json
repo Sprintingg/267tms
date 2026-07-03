@@ -1,0 +1,192 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓之谷世界的冒險家] 聽取後街吉姆的意見"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必需]"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "吉姆果然知道一些。聽#b後街吉姆#k仔細說。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "吉姆說對村裡瞭解最多的就是#b權達開#k，建議去找他。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "聽權達開說，好像對達克魯比較瞭解。"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 100\r\n可進行 '聽權達開的意見' 任務\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "77"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052002"
+      },
+      "subJobFlags": {
+        "_dirType": "int",
+        "_value": "2"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "12"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2381"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000008"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "2383"
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "100"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "不知從哪一天開始，大膽地在墮落城市到處偷東西了。可是奇怪的是到底偷了什麼誰也不知道。不久之前好像還動過達克魯的東西…估計達克魯拼了命地找那個傢夥就是因為這個事情…"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "有趣的是達克魯也不說丟了什麼東西。總之最近墮落城市居民們對無法抓住流氓菇菇仔的達克魯，表示不滿的人也不少。當然不會表現出來。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "好情報就這些！走好朋友！什麼？好奇達克魯的年紀？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那你最好去找#b權達開#k。他應該會知道達克魯的年紀。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我聽錯了嗎？如果沒事情，趕快回去吧！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "對我有話說？奇怪。你想說什麼？\\r\\n#L0##b達克魯年紀多大了？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "達克魯的年紀？偶爾有人會問這個問題。外地人以為達克魯是一個人，其實達克魯不是人，而是指墮落城市的長老。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "達克魯的年紀，不是讓你去問#b權達開#k了嗎？"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[森林迷宮] 可用巴洛古的皮製造的東西"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "與可疑男子對話。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "可疑男子說只要找來20個巴洛古的皮碎片，就可以幫忙製造實驗性作品。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "使用巴洛古的皮碎片製造了卷軸。"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "可疑男子的身分"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "summary": {
+      "_dirType": "string",
+      "_value": "收集20個巴洛古的皮碎片後，去找可疑男子吧。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4001261:##t4001261:##c4001261#/20"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 12,060\r\n#fUI/UIWindow2.img/QuestIcon/7/0# 300,000\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "31"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "12060"
+      },
+      "meso": {
+        "_dirType": "int",
+        "_value": "300000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1061016"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "68"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2242"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1061016"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001261"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "12060"
+      },
+      "money": {
+        "_dirType": "int",
+        "_value": "300000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001261"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "讓你大開眼界。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請帶來20個巴洛古的皮碎片。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不願意？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "哈哈哈。以後想碰碰運氣，就來找我吧。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "是20個巴洛古的皮碎片。"
+          }
+        }
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "來～這次也會失敗嗎…即使是這樣也只能接受吧。"
+      }
+    }
+  }
+}

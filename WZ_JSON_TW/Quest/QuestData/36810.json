@@ -1,0 +1,213 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[訪客] 轉達禮物"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "凱莉想送隊員們什麼裝備呢？好像正好完成裝備了。和凱莉對話。\r\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "凱莉決定以我告訴他的資訊為基礎，製作適合每個人的新型裝備送給隊員們。照凱莉的請託，把每件禮物交給隊員們吧。和剛才一樣，按順序和#b艾爾琳#k、#b卡普迪#k、#b伊克爾#k對話就行了。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "艾爾琳和卡普迪都很喜歡禮物，但#b伊克爾#k說不能收下禮物。到底怎麼回事？聽聽凱莉怎麼說吧。\r\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "與#questorder1##r#p3006781##k對話\r\n與#questorder2##r#p3006782##k對話\r\n與#questorder3##r#p3006780##k對話\r\n"
+    },
+    "disableAtCompleteTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "disableAtStartTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q36810x"
+    },
+    "demand": {
+      "_dirType": "sub",
+      "base": {
+        "_dirType": "string",
+        "_value": "與#questorder1##r#p3006995##k對話\r\n與#questorder2##r#p3006996##k對話\r\n與#questorder3##r#p3006994##k對話\r\n"
+      },
+      "explain": {
+        "_dirType": "sub"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "deleteItem": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "int",
+        "_value": "4037397"
+      },
+      "1": {
+        "_dirType": "int",
+        "_value": "4037398"
+      },
+      "2": {
+        "_dirType": "int",
+        "_value": "4037399"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "subJobFlags": {
+        "_dirType": "int",
+        "_value": "15"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3006997"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q36810s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "36809"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3006997"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q36810e"
+      },
+      "npcSpeech": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3006995"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q36810_MidNpc1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3006996"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q36810_MidNpc2"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3006994"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q36810_MidNpc3"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "似乎還沒把禮物都送完？"
+          }
+        }
+      }
+    }
+  }
+}

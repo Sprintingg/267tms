@@ -1,0 +1,282 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "14101028 스타더스트"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "NWstardust"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "14111022"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Projectile"
+      },
+      "onProjectileHit": {
+        "_dirType": "string",
+        "_value": "ProjectileAttack"
+      },
+      "onProjectileDestroy": {
+        "_dirType": "string",
+        "_value": "ProjectileDestroy"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "time": {
+          "_dirType": "string",
+          "_value": "0.5"
+        },
+        "emitAngle": {
+          "_dirType": "string",
+          "_value": "0"
+        },
+        "emitSpeed": {
+          "_dirType": "string",
+          "_value": "1000"
+        },
+        "emitCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "maxSpeed": {
+          "_dirType": "string",
+          "_value": "1000"
+        },
+        "destroyHitCount": {
+          "_dirType": "string",
+          "_value": "3"
+        },
+        "hitIntervalPerTarget": {
+          "_dirType": "long",
+          "_value": "1000"
+        },
+        "boundLT.X": {
+          "_dirType": "string",
+          "_value": "-40"
+        },
+        "boundRB.X": {
+          "_dirType": "string",
+          "_value": "40"
+        },
+        "boundLT.Y": {
+          "_dirType": "string",
+          "_value": "-70"
+        },
+        "boundRB.Y": {
+          "_dirType": "string",
+          "_value": "10"
+        }
+      },
+      "ball": {
+        "_dirType": "sub"
+      }
+    },
+    "ProjectileAttack": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "230+60*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "3"
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "100"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "6"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -55,
+          "_y": -90
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 55,
+          "_y": 20
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "randomHitOrigin": {
+            "_dirType": "int",
+            "_value": "15"
+          },
+          "onlyOnce": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "14101028"
+      }
+    },
+    "ProjectileDestroy": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "230+60*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "3"
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "300"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -100,
+          "_y": -145
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 100,
+          "_y": 65
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "6"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "useZ": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "randomHitOrigin": {
+            "_dirType": "int",
+            "_value": "15"
+          },
+          "z": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "randomHitAngle": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "effect": {
+        "_dirType": "sub"
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "14101029"
+      },
+      "skillSoundUOL": {
+        "_dirType": "string",
+        "_value": "Sound/Skill.img/14101029/Use2"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "230+40*x"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "3"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "6"
+    },
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "cooltime": {
+      "_dirType": "int",
+      "_value": "7"
+    },
+    "x1": {
+      "_dirType": "string",
+      "_value": "6"
+    },
+    "x2": {
+      "_dirType": "string",
+      "_value": "230+40*x"
+    },
+    "x3": {
+      "_dirType": "string",
+      "_value": "3"
+    }
+  }
+}

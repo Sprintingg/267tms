@@ -1,0 +1,150 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 祝福活動"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽說為了慶祝楓之谷1週年.在楓之谷世界出現了GM...快點去找她!"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "回答GM的問題之後，就會得到GM的祝福喔！"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "受到了GM的祝福，所有能力值都大大的提升了"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "buffItemID": {
+        "_dirType": "int",
+        "_value": "2002099"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哈囉，你知道楓之谷滿週年了嗎？為了感謝各位冒險者的支持，楓之谷將七月命名為慶生月，除了有各種線上活動慶祝外，還將有一個大型的夏日萬人樂園『楓之谷週年慶』等著你來參加喔！並且只要回答正確下面的問題，將可以讓你獲得意想不到的好處喔！"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好.現在請你回答我的問題吧！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "是嗎?...但以後還有機會.你改天再試試吧."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "請問楓之谷到目前為止是第幾週年？\\r\\n#b#L0#一週年#l\\r\\n#L1#二週年#l\\r\\n#L2#三週年#l\\r\\n#L3#四週年#l#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "恭喜你答對囉！從現在開始一小時內，你的能力值因為接受祝福而提升囉！祝你冒險愉快！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好！你已經受到我的祝福，在一段時間內，能力值都會提升喔！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "哎呀~你答錯囉！真是可惜啊~別放棄啦！還是有機會的~"
+          },
+          "2": {
+            "_dirType": "string",
+            "_value": "哎呀~你答錯囉！真是可惜啊~別放棄啦！還是有機會的~"
+          },
+          "3": {
+            "_dirType": "string",
+            "_value": "哎呀~你答錯囉！真是可惜啊~別放棄啦！還是有機會的~"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "200607120000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "200607270000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "200607120000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "200607270000"
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "1440"
+      }
+    }
+  }
+}

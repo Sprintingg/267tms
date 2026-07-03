@@ -1,0 +1,126 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[艾芙特領域]尋找鑰匙的下落"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "121"
+    },
+    "selfComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去找#p9400214#，詢問看看有關他看到的鑰匙的事情吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p9400214#不久前在村莊外討伐怪物時，看到了一個#e散發出金色光芒、鑰匙模樣的小墜飾#n掛在巴洛古的脖子上。 到村莊外找找看脖子上掛有鑰匙的巴洛古吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "消滅#o9402055#，獲得了#t4034992#。 \\r\\n#t4034992#好像太小了，看來不像是能打開掛在艾芙特之門上的鎖的鑰匙。 看起來只像是可以打開掛在筆記本上的鎖。\\r\\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4034992:# #t4034992:# #c4034992# / 1\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400214"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "63030"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q63031s"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034992"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q63031e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "去找#o94002055#吧。"
+          }
+        }
+      }
+    }
+  }
+}

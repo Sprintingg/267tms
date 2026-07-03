@@ -1,0 +1,212 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[* 赫力席母] 在戰場中間"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "259"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#完成戰場 (#R34732ExRef34732#)\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "敵人發動總攻勢了。前往戰場中央吧。\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在戰場上擊退敵人吧！\\r\\n#r ※ 因為是戰場任務，失敗時必須放棄再次執行。#k\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "作戰成功了，但皮塔斯卻受了重傷。\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "119"
+      }
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "16"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "209793"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001100"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q34732s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "90"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34731"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "6400"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "6410"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "6411"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "6412"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "6413"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "6414"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001100"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "34732"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "完成戰場"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "940100003"
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "209793"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "平安歸來了啊。作戰成功了。 …但是 #b皮塔斯#k受了重傷。\\r\\n"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "目前正在 #b萬神殿治療所#k接受治療。勇士也和他在戰場一起作戰過，最好也去一趟看看。\\r\\n #r ※ 自動移動到該地圖。#k"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "我已經給士兵信號了。該輪到勇士大人出擊了。現在立刻到戰場中央吧。\\r\\n#r ※ 失敗時須放棄後重新執行。#k"
+          }
+        }
+      }
+    }
+  }
+}

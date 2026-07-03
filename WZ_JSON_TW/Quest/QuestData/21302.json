@@ -1,0 +1,197 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[過去的英雄，狂狼勇士] 製作紅珠玉"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "6"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "看來要重新製作#p1201002#遺失的#t4032312#了。不過都不知道用什麼材料和製作方法…#b#p1201000##k應該會知道些什麼吧？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1201000#說前往#m140030000#，使用心願之鏡，應該能看到製作#t4032312#的方法。看來只有這個辦法了…前往 #b#m140030000##k。 \\r\\n\\r\\n#i4032312# #t4032312# #b#c4032312# / 1#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "按照從心願之鏡看到的方法製作了#t4032312#。還好#p1201002#很滿意。找回寶石之力的#p1201002#也稍微找回了一些過去的力量。"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[轉職]"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "returnMapID": {
+      "_dirType": "int",
+      "_value": "140000000"
+    },
+    "returnPN": {
+      "_dirType": "string",
+      "_value": "1201002"
+    },
+    "targetType": {
+      "_dirType": "int",
+      "_value": "-1"
+    },
+    "returnType": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1201000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "21301"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2110"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1201002"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q21302e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032312"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "140030000"
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這次有什麼事情嗎？吼…要製作鐵戟的寶石嗎？只是個武器而已，也不是小姐，真得很挑剔。但也不能歧視。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "應該#t4032312#的寶石是扮演暴增武器力量的重要角色。所以鐵戟想要的#t4032312#來製作。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "是？不知道材料？很簡單啊。跟自己有關的事，正確的構成，具體的希望。有這三種條件，使用#b心願之鏡#k就可以。"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "你該不會已經忘記許願鏡在哪邊了吧？從村莊出去左邊走到底，它就在冰崖的#m140030000#裡面，在那邊可以取得#b#t4032312##k。\\r\\n\\r\\n#b(接受時移動至#m140030000#。)#k"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "…是？為什麼？心願之鏡有什麼副作用嗎？或者還是不喜歡嗎？拒絕抱怨。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有找到鐵戟所想要的東西嗎？使用心願之鏡的話，可以找得到。已經忘記往 #m140030000#的方法嗎？在村莊裡出去之後往佐邊直走的話就可以啊。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "忘記製作#b#t4032312##k的方法…怎麼會有這種主人呢…夢和希望都沒有了…"
+          }
+        }
+      }
+    }
+  }
+}

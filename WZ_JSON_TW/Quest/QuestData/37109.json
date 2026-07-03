@@ -1,0 +1,140 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[偵探雷夫的事件日誌] 去吧，華生君！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "226"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4036491:# #t4036491:# #c4036491# / 25\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "可憐的古勒葛處於危險的時候，雷夫有救了它們。危險的黑市之惹事份子們聽到東西的主人是佩龍就頭也不回就跑掉了。\r\n\r\n去跟雷夫詢問該怎麼處理吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "要教訓#b危險的黑市小巷1#k的惹事份子後，找回 #b來路不明的零件#k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "找回的來路不明的零件就是我們正在找的那東西。現在要去跟佩龍確認是否有剩下的部分。回到#b黑市#k吧。"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q37109x"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "175"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "179"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3004039"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q37109s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "37108"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3004039"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q37109e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036491"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "25"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "去教訓危險的黑市之惹事份子後，收集來路不明的零件吧。我？目前在思考這次的事件呢。"
+          }
+        }
+      }
+    }
+  }
+}

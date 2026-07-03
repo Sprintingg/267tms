@@ -1,0 +1,132 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 作出放電的表情。"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "被大發企劃代表#b#p1052121##k遷就要接受#b演技課程#k. 是哪個課程? 向#b弓箭手村市場, 美髮店旁邊#k站著的#p1052121#進行對話."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "這次決定學放電的表情。#b#m260000000##k的舞女#b#p2101000##k的話會教比誰都棒的眨眼…但可能不是免費的。 去#m260000000#見#p2101000#。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "學到放電的表情。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052121"
+      },
+      "charmMin": {
+        "_dirType": "int",
+        "_value": "75"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "6510"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2101000"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q6511e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好，#h0#。超強企劃也正轉變成不錯的公司了。只要你進來…好，那開始演技課程吧？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "第十個演技課程。這次要學習的表情是放電，是最能突出人的魅力的表情，但是這種表情沒想像中容易，要經常練習。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "#b#m260000000##k的舞姬#b#p2101000##k的職業畢竟是在人們面前跳舞的，所以表情也很豐富。去找#p2101000#學習放電吧。只是#r說不定是免費的呢，要注意#k哦。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "課程越來越難了吧？不過你的魅力也越來越高了。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒去#b#m260000000##k嗎？如果是#m260000000#的舞姬#b#p2101000##k，肯定能教你很好的表情。"
+          }
+        },
+        "quest": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你好？什麼事情？什麼？想要學放電的方法。嗯…不是免費哦。舞姬的放電很貴哦。只要給 #b100000楓幣#k就告訴你放電的方法。"
+          }
+        }
+      }
+    }
+  }
+}

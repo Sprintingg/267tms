@@ -1,0 +1,168 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[消滅]善於偽裝的綠水靈"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#m120000200##k的#b#@1092011:##k說他想請你幫個忙。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "他說森林裡的#r綠水靈#k與綠葉相似到讓人難以區分，那些害怕怪物的人根本不敢進入森林。\\n\\n打倒30隻#r綠水靈#k。你可以在#b#m100040000##k輕鬆找到它們。\\n\\n完成之後，向#b#m120000200##k的#b#@1092011:##k回報。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#b#m120000200##k的#r綠水靈#k最喜歡突然冒出來嚇人，你已經替#b#m120000200##k的#b#p1092011##k消滅30隻讓他感到害怕的#b#p1092011##k。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o210100##a282771#"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 530\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "530"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "530"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我那時正在前往#b#m101000000##k的路上。正當我邊唱邊走的時候，我一腳踩到某種黏黏的東西！我往下看，結果發現我踩到了#r綠水靈#k！"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "*啜泣聲*我真的很怕那些怪物。我尤其討厭隱藏在森林植物中的#r綠水靈#k，這讓我很難發現他們！\\n\\n所以我想請你幫我個忙。\\n你能不能打倒#r綠水靈#k，好讓我不用擔心會在森林裡碰到他們？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你能夠打倒30隻#r綠水靈#k嗎？\\n你可以在#b#m100040000##k找到很多綠水靈。\\n祝你好運！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這實在有點難開口…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你已經把他們全部打倒了？你真是厲害啊！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我現在可以放心在森林裡散步了，謝謝你。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你之前答應的速度很快，所以我想你很有把握。結果你到現在還沒打倒30隻#r綠水靈#k？"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1092011"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "210100"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1092011"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      }
+    }
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031229"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031229"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2072001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031229"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2071005"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "55"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好啊，第一次見面，應該是外地來的吧。我和生活在這個村莊的弟弟一起種田過日子，不久前有了收成。可是有件事讓我掛心，雖然把收成的稻米和弟弟平分了，事後想想弟弟的子女比我還要多..."
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "我想給弟弟 #t4031229#，但他一定不會接受的。所以你偷偷的把 #t4031229# 一個放在弟弟加前面的稻穗裡嗎？我弟弟七誠家是住在村莊東邊末段。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那就拜託了，千萬不要被弟弟發現啊~"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "讓第一次見面的人接受我這樣的請求，看來我還是欠缺考慮啊。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "看到七南家院子內的稻米堆了，把帶來的裝米布袋悄悄放在那裡。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "七南的稻米。"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "忘了把#t4031229#帶走了。"
+        },
+        "yes": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "小心不要被七南發現啊。"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[童話村] 兄弟倆的稻米搬運1"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "感情深厚的兩兄弟"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去找住在童話村的七誠。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "住在童話村的七誠和七南是兩兄弟。七誠說弟弟七南的糧食好像不夠，託我把自家的一堆稻米悄悄拿到弟弟家前面的稻米堆中。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "將七誠交給我的稻米放在了七南家院子內的稻米堆中。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "40"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

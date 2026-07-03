@@ -1,0 +1,202 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[強化程序] 偽裝術"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "32"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#e[強化程式] 偽裝術#n\r\n\r\n1階段. #e#t4033451# 1廢礦區收集#n\r\n (消滅#o9306001#後可以獲得。)\r\n\r\n2階段. #b#e有限的時間內接近控制裝置#n#k\r\n(如果不是變身為#o9306001#的狀態，會被守衛怪物趕走。)"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#e[強化程式] 偽裝術#n\r\n\r\n1階段. #b#e#t4033451# 1廢礦區收集#n#k\r\n (消滅Link2的#o9306001#後可以獲得。)\r\n\r\n2階段. 接近控制裝置\r\n(如果不是變身為#o9306001#的狀態，會被守衛怪物趕走。)"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#e[強化程序] 偽裝術#n#b#e階段1任務完成#n#k"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4033451:# #t4033451:# #c4033451# / 20"
+    },
+    "disableAtCompleteTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "straightStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "validField": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "int",
+        "_value": "957010000"
+      },
+      "1": {
+        "_dirType": "int",
+        "_value": "957011000"
+      },
+      "2": {
+        "_dirType": "int",
+        "_value": "957012000"
+      },
+      "3": {
+        "_dirType": "int",
+        "_value": "957013000"
+      },
+      "4": {
+        "_dirType": "int",
+        "_value": "957014000"
+      },
+      "5": {
+        "_dirType": "int",
+        "_value": "957015000"
+      },
+      "6": {
+        "_dirType": "int",
+        "_value": "957016000"
+      },
+      "7": {
+        "_dirType": "int",
+        "_value": "957017000"
+      },
+      "8": {
+        "_dirType": "int",
+        "_value": "957018000"
+      },
+      "9": {
+        "_dirType": "int",
+        "_value": "957019000"
+      }
+    },
+    "deleteItem": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "int",
+        "_value": "4033451"
+      }
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9075201"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "fieldEnter": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "957011000"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9075201"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q1821e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033451"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#eLink2#n強化程式 - 可進行偽裝訓練。\\r\\n要開始了嗎?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "強化程式進行2階段，\\r\\n\\r\\n第1階段。想要啟動外貌變形系統，就要消滅 #o9306001#收集 #t4033451# 。\\r\\n\\r\\n第2階段。以改變外貌的狀態去欺騙守衛怪物，並且接近控制裝置。\\r\\n\\r\\n想要啟動變形系統，必須消滅 #o9306001#取得 #e#b#t4033451# 1廢礦區#k#n。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "準備好進行程式的話，再跟我說話。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "想要啟動外貌變形系統，需要 #i4033451# #e#t4033451# 1廢礦區#n。\\r\\n"
+          }
+        }
+      }
+    }
+  }
+}

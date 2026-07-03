@@ -1,0 +1,160 @@
+{
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "holyshield"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          }
+        }
+      },
+      "effect1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_PlaySound"
+          },
+          "SoundPath": {
+            "_dirType": "string",
+            "_value": "Sound/Redmoon.img/Skill/223/Use"
+          }
+        }
+      },
+      "healBuff": {
+        "_dirType": "sub"
+      },
+      "healBuff2": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "healBuff": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "AreaBuff"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": -400,
+          "_y": -200
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 400,
+          "_y": 200
+        }
+      },
+      "targetBuffID": {
+        "_dirType": "int",
+        "_value": "223"
+      },
+      "targetingType": {
+        "_dirType": "string",
+        "_value": "Friendly"
+      },
+      "targetingIncludeSelf": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "healBuff2": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "AreaBuff"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": -400,
+          "_y": -200
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 400,
+          "_y": 200
+        }
+      },
+      "targetBuffID": {
+        "_dirType": "int",
+        "_value": "224"
+      },
+      "targetingType": {
+        "_dirType": "string",
+        "_value": "Friendly"
+      },
+      "targetingIncludeSelf": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "cooltime": {
+      "_dirType": "string",
+      "_value": "30"
+    }
+  },
+  "SkillTags": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "string",
+      "_value": "RLGame.Skill.Basic"
+    }
+  }
+}

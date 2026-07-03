@@ -1,0 +1,219 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 調查蝴蝶精"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "雖然找到了蓓蒂博士，但是剛好沒有樣本所以無法進行研究。幫忙蓓蒂博士收集#b#t4000068##k與#b#t4000620##k各#b30個#k吧。\n\r\n#i4000068##t4000068##b#c4000068##k/30\r\n#i4000620##t4000620##b#c4000620##k/30"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "就幫蓓蒂博士收集到了研究樣本#b#t4000068##k與#b#t4000620##k。現在可以借用報告了吧？"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "幫忙寫作業2"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n可進行 '蝴蝶精調查報告' 任務\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1032104"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "15"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2480"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1032104"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000068"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000620"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "2482"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000068"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000620"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "翅膀委託你來的？可怎麼辦？研究還在進行中，報告書還沒…正好沒了用在研究的蝴蝶精樣品。找樣品來給我的話，就可以繼續研究了。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "因為研究需要的蝴蝶精樣本剛好用盡了，沒有的研究只能停擺。如果幫我找到樣本，就可以繼續研究了。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "是維英請你來的嗎？可是這該怎麼辦呢？研究還在進行中，所以報告還沒完成…因為目前蝴蝶精的樣本剛好沒了。如果幫我找到樣本，就可以繼續研究了。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝。需要的樣本是#b#t4000068##k和#b#t4000620##k，各找來#b30個#k就可以了。那麼拜託了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "需要#b#t04032801##k嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b#t4000068##k和#b#t4000620##k，各#b30個#k。沒忘了吧？"
+          }
+        }
+      }
+    }
+  }
+}

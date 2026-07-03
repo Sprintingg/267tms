@@ -1,0 +1,156 @@
+{
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "sanctuaryNew"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "long",
+              "_value": "3"
+            },
+            "socketName": {
+              "_dirType": "string",
+              "_value": "None"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AEAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "1221011"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "damage": {
+          "_dirType": "string",
+          "_value": "120+30*x"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -500,
+          "_y": -400
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 400,
+          "_y": 250
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "4+d(x/5)"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "7"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "randomHitOrigin": {
+            "_dirType": "int",
+            "_value": "25"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "randomHitOrigin": {
+            "_dirType": "int",
+            "_value": "25"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "randomHitOrigin": {
+            "_dirType": "int",
+            "_value": "25"
+          }
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "1221011"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "damage": {
+      "_dirType": "string",
+      "_value": "120+30*x"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -500,
+      "_y": -400
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 400,
+      "_y": 250
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "4+d(x/5)"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "7"
+    },
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "30"
+    }
+  },
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "1221011 생츄어리"
+  },
+  "combatOrders": {
+    "_dirType": "int",
+    "_value": "1"
+  }
+}

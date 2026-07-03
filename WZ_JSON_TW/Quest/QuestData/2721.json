@@ -1,0 +1,230 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[弓箭手村] 長老的 純情"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#m100000000#的長老斯坦好像在為夫人準備禮物。 去找一下長老斯坦吧。\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#m100000000#的長老斯坦不久前因為忙著村莊的事情，就忘記了妻子的生日。 雖然對業務很仔細，但好像對家人有些不關心。 他為了表示道歉，想給妻子準備禮物。 他想要準備的東西是，喜歡料理的明明夫人想找的藍菇菇傘10個…雖然不清楚這能否成為禮物…\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#m100000000#的長老斯坦不久前因為忙著村莊的事情，就忘記了妻子的生日。 雖然對業務很仔細，但好像對家人有些不關心。 他為了表示道歉，想給妻子準備禮物。 他想要準備的東西是，喜歡料理的明明夫人想找的藍菇菇傘10個…。雖然不清楚這能不能成為禮物，但按照請託找到之後，拿給明明夫人。\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000009:# #t4000009:# #c4000009# / 10\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 550\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "25"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "550"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "長老的家族"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012003"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012106"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000009"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "550"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000009"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "正常"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嗯…你先聽我說好嗎？ 嗯嗯?有件是讓我很難以開口。 不久前是我太太的生日。 可是我一不小心忘記了。 我太太好像因為這件是很生氣所以我最近也很難過。 所以我想送個禮物會不會好一點可是你看村裡的事又這麼多?我又不行離開位子。 我看你的手藝不錯，而且每天當修練經常去森林所以你可以幫我帶個可以送太太的禮物嗎？\\r\\n"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我太太很喜歡做料理不久前他很擔心說藍菇菇傘個價格太高了你就幫我收集一些這個好嗎。 菇菇歌唱森林深處有一處藍菇菇經常出現的藍菇菇樹林你去那裡收集藍菇菇傘 10個交給我太太吧。 你不知道我太太是誰嗎？ 你應該有見過他。 人們都稱他為「明明夫人」。\\r\\n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯嗯…是這樣啊？ 唉…這…不就麻煩了嗎。 那我要委託誰呢\\r\\n…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "唉唷！ 這麼多的藍菇菇傘。 你從那裡弄這麼多呀？ 我一直很努力的找它可是最近物價實在太高了。\\r\\n#L0##b這是長老送給夫人的禮物。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "什麼？ 這個人？ 什麼，這也叫做禮物嗎 ？\\r\\n#L0##b是。他是這樣說…l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "我真無話可說。 難怪最近一直在察言觀色原來是要準備這麼不像話的禮物。 這該說他可愛呢還是愚昧。\\r\\n#L0##b你一點都不懂女人的心理吧。#l\\n#k"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "就是說啊。 丟一堆工作過來這也叫禮物。 都是因為那個人讓你辛苦了。 總之謝謝你。 這些都要修理可能需要一整天的時間吧。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這個人怎麼會這麼單純呢。\\r\\n"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "我太太很喜歡做料理不久前他很擔心說藍菇菇傘個價格太高了你就幫我收集一些這個好嗎。 菇菇歌唱森林深處有一處藍菇菇經常出現的藍菇菇樹林請你去那裡幫我收集藍菇菇傘 10個交給我太太吧。 你不知道我太太是誰嗎？ 你應該有見過他。 人們都稱他為「明明夫人」。\\r\\n"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "最近天氣很好吧？ 想要買個藍菇菇傘但是價格這麼貴怎麼辦呢。\\r\\n"
+          }
+        }
+      }
+    }
+  }
+}

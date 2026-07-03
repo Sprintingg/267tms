@@ -1,0 +1,222 @@
+{
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "真是的…又壞了啦…咦～你好啊？我是在玩具工廠負責修理機器的#b#p2041019##k。與#b#p2041018#、#p2041020##k一同負責這個玩具工廠的維護工作。如果沒有我的話，真難以想像玩具工廠會變成什麼樣子～"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "可是最近我們這裡發生了一件很麻煩的事情。本來這裡的工人做得都不錯，可是最近這幾天，不知道為什麼出現了許多怪物！工廠裡的機器三天二頭就故障！我們正需要像您這樣能夠幫助我們的人…能為我們空出一些時間嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "真是太幸運了！正焦急地尋找能夠幫忙的人呢！之前也說過了～因為機器故障的次數太過頻繁，所以常常都須要修理，但修理的次數過多，導致需要的材料開始短缺，因此想拜託您幫忙收集一些材料。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "需要的物品是#b#t4000115#50個#k。#t4000115#是位於玩具工廠更下層的深處的奇怪的怪物給的，可是我沒去過不太清楚。那麼就拜託了！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好吧～沒辦法…那只好再找找其他人吧！…生?玩具的機器如果不能運轉，會影響我們的供貨量，真是一件令人頭痛的事！如果改變主意了，隨時都可以再來找我喔！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊…又壞掉了…謝天謝地～您終於回來了！您都不知道我多期盼您快點回來呢！有把修理故障機器的零件帶來吧？今天玩具工廠又可以開始運轉了！您為了這工廠那麼辛苦，這份謝禮您就收下吧！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b#t2002010#30個#k都收到了嗎？是工廠長給的，為了提升工作效率，我還有很多。覺得對你有幫助才給你，希望能好好派上用場。好…材料也都拿齊了，差不多該開始修理了呢～那我先告辭啦～！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "呃…機械又出故障了。如果不趕緊找來我說的材料，可能工廠要關門了。去收集#b#t4000115# 50個#k吧。因為零件不夠一直無法修理。那麼請儘快找來材料吧。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2041019"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "110"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2041019"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000115"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[玩具城] 洛基的修理零件"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去見見位在玩具工廠某個地方的修理工-洛基。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在玩具城鐘塔玩具工廠內見到了修理工洛基。洛基說因為突增的怪物，發生故障的機器越來越多，修理時需要很多零件，要求找來修理機器時所需的零件。需要找來的零件有在#b#m220040100##k附近的#r妖魔#k的#b齒輪50個#k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "將搜集到的齒輪和螺絲釘交給了位在玩具工廠內的修理工洛基。確實有不少機器遭到怪物的破獲，應該就可以用這些零件幫他們修理了吧！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "36"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000115:# #t4000115:# #c4000115# / 50\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "經驗值 701,472\r\n#Wbasic#\r\n#i2002010:# #t2002010:# 30 個\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "701472"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2002010"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "demand": {
+      "_dirType": "sub",
+      "explain": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "701472"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000115"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2002010"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  }
+}

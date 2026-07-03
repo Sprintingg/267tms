@@ -1,0 +1,160 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[星星力量] 裂開的流星"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "41"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p2081007#說有關於昨晚流星墜落的相關情報，去找 #p2081007#談談吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2081007#說昨晚流星墜落之前分裂成兩顆，一個飛向 #m240040700#，那邊是闇黑龍王居住的地方耶？！去確認闇黑龍王是否有取得流星的力量吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p2081007#證實昨晚流星墜落之前分裂成兩顆，已經確認一個飛向 #m240040700#，所幸闇黑龍王似乎沒有獲得流星的力量。"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "#m240040700#"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "586787"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2081007"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "130"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3882"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2081006"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "586787"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "對了，我剛想起一件事，流星墜落到溪谷之前 #b分裂成兩個，#k 一個墜落在 #m240040300#，另一個則是往 #r#m240040700##k的方向。既然如此，那邊的怪物應該也會因為流星而產生變化吧？可以請你去確認一下嗎？ \\r\\n"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我看見流星往#r#m240040700##k墜落，但卻不清楚正確的墜落位置，只能希望沒有墜落在闇黑龍王所在的地方。如果闇黑龍王變得更凶殘，這個神木村就真的完蛋了。\\r\\n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那邊有闇黑龍王，所以更加危險，如果闇黑龍王也產生變異的話……光是想像就讓人覺得害怕。 \\r\\n"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這邊，這邊！你也是看到 #r那個東西#k才來的嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "對，就是那個流星！你果然也有看見吧？那是一顆明亮到讓人著迷的星星，對吧？"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "我看見裂開的流星往 #r#m240040700##k移動，希望不要墜落在闇黑龍王所在的地方。"
+          }
+        }
+      }
+    }
+  }
+}

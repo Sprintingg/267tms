@@ -1,0 +1,170 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 變異菇菇的血"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "瑪亞和奇怪的藥"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "4"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在勇士之村見到了麥吉。果然，他說不能免費提供#b變異菇菇的血#k。讓我去黑肥肥領土弄來#b#t04000020#10個#k…簡直不把人放在眼裡呢…感覺被人給約束了呢？"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "麥吉說想要變異菇菇的血就必須拿給他#t04000020#。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000020:##t4000020:##c4000020#/10\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "2006"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000020"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "想得到#b#t4031005##k嗎？那可不是像你這種小孩子能使用的。除非是真正的強者，否則別想把#t4031005#拿到手。如果你想得到它的話，就證明給我看你有多強吧。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "在黑肥肥之地除掉怪物之後，收集#b#t04000020##k#e10#n個吧。你有勇氣去做嗎？"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "對了…#b#t04000020##k是，#i04000020#這樣的東西。這是專門為了給你這種糊塗的人說明，而特別準備的。你得謝謝我。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "太小看你了，你還挺厲害！好吧，按照約定將#t4031005#送給你，我是說到做到的，拿著吧。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "很久以前我親手殺了變異菇菇，將它的血裝在了瓶子裏，希望你用在重要的事情上可是很寶貴的東西啊。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "想要在我這裡取得#t4031005#的話，就去黑肥肥之地收集來#b#t4000020##k#e10#n個吧。在此之前，我是絕對不會把#t4031005#，送給你這種菜鳥的。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000020"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "15"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2004"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    }
+  }
+}

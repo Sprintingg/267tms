@@ -1,0 +1,198 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[米哈逸] 達成50級！請收下米哈逸戒指！"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoPreComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "達成了聖殿騎士米哈逸50級。為了表達祝賀之意，GM準備了禮物…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "達成了聖殿騎士米哈逸50級。為了表達祝賀之意，請收下GM準備的禮物。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "只有在達成聖殿騎士米哈逸50級活動期間得到了米哈逸戒指的禮物。"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#i1112723:# #t1112723:# 1 個\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1112723"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "50"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201210311200"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201210311200"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "5100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "5110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "5111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "5112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "5000"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1112723"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "job": {
+            "_dirType": "int",
+            "_value": "256"
+          },
+          "jobEx": {
+            "_dirType": "int",
+            "_value": "524288"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好. #b#h0##k。終於達成了 #r50級#k！這段時間辛苦你了。為了報答你的努力準備了很棒的禮物，現在要立刻收下嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請不要忘記來我這裡取走禮物哦！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我給你的 #b#i1112723##t1112723##k收到了嗎？ 那麼往後還請你有好的表現！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請確認裝備欄位是否有空間！"
+          }
+        }
+      }
+    }
+  }
+}

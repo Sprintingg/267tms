@@ -1,0 +1,181 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[中秋活動]松糕是我的份"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "媽媽月妙在準備迎接中秋佳節的食物,要為她準備松糕嗎?和小姐月妙一起讓媽媽月妙開心吧.\\r\\n\\r\\n#e#b1天可反覆執行300次#k"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "媽媽月妙在準備迎接中秋佳節的食物,要為她準備松糕嗎?和小姐月妙一起讓媽媽月妙開心吧.\\r\\n\\r\\n獵殺等級範圍內的怪物收集松糕材料,和小姐月妙一起製作松糕吧.\\r\\n#b松糕材料\\r\\n#i4033984##t4033984#\\r\\n#i4033985##t4033985#\\r\\n#i4033986##t4033986#\\r\\n#k★#e#o9101025#是什麼?\\n#n以角色的等級為準#r等級-10到等級+20的範圍內#k的怪物.例如,角色的等級若為50級,等級40～等級70的怪物便是 #e等級範圍怪物#n.)\\r\\n\\r\\n#e#b1天可反覆執行300次#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "為了減輕媽媽月妙準備食物的辛勞,已收集松糕材料製作了松糕.還不夠,再收集幾個裝入同個盤子中吧."
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4033984:# #t4033984:# #c4033984# / 10\r\n#questorder1##i4033985:# #t4033985:# #c4033985# / 10\r\n#questorder1##i4033986:# #t4033986:# #c4033986# / 10\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9001116"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201310170000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201310170000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "dayN": {
+        "_dirType": "int",
+        "_value": "300"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "9001116"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q14206e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033984"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033985"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033986"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好啊?#h0#. 有好好準備中秋佳節嗎?這不是食物充足,隔了好久才能家人齊聚一堂的愉快佳節嗎!\\r\\n"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "但是這麼開心的氣氛是因為有人願意犧牲啊.真擔心全心準備佳節的媽媽月妙是不是太勉強了.\\r\\n我想幫幫忙碌的媽媽月妙,有沒有什麼辦法呢?\\r\\n"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "對!對了,中秋節最重要的就是松糕啊.只要準備好材料,松糕一下子就能做完了.\\r\\n要是你幫忙取得製作松糕的材料,我會做出漂亮的松糕讓你瞧瞧.\\r\\n"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "松糕材料應該就在附近的怪物手中.因為怪物們在中秋節也會做松糕來吃.嘿嘿."
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "別因為這樣就搶奪太過弱小的怪物的材料.\\r\\n#h0#.你要搶奪的對象是等級和你差不多的怪物,那麼我就把水煮開等你的好消息囉.要快點喔!\\r\\n\\r\\n#b松糕材料\\r\\n#i4033984##t4033984# : 10個\\r\\n#i4033985##t4033985# : 10個\\r\\n#i4033986##t4033986# : 10個"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你不相信我揉松糕的手藝嗎?我也想盡點孝道,你不幫忙嗎?"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  }
+}

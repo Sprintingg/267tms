@@ -1,0 +1,213 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[墮落城市] 小蒼蘭香味"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "說在玫瑰香味上是小孩模特兒的兔子衣服的拉娜。去找#b拉拉#k轉達消息。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在小蒼蘭香味消失前去找#b拉娜#k詢問與何種衣服相配。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#b拉娜#k說小蒼蘭香味適合女生模特兒的假髮。去找#b拉拉#k轉達消息。"
+    },
+    "timeLimit": {
+      "_dirType": "int",
+      "_value": "40"
+    },
+    "timerUI": {
+      "_dirType": "string",
+      "_value": "default"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 1,500\r\n可進行 '薰衣草香味' 任務\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "28"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1500"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052119"
+      },
+      "exceptbuff": {
+        "_dirType": "string",
+        "_value": "2022631"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "35"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2282"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2284"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052121"
+      },
+      "buff": {
+        "_dirType": "string",
+        "_value": "2022632"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "buffItemID": {
+        "_dirType": "int",
+        "_value": "2022632"
+      },
+      "message": {
+        "_dirType": "string",
+        "_value": "清爽的小蒼蘭香味包圍全身時，開始變得頭痛欲裂，腳步也變得沉重了。在香味消失之前去找拉娜。"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1500"
+      },
+      "charmEXP": {
+        "_dirType": "int",
+        "_value": "10"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "是嗎？拉娜說玫瑰香味適合小孩模特兒的兔子衣服嗎？好～這樣的話也可以順便問一下黃香水嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "已為您噴了黃香水。在清爽的小蒼蘭香味消失之前，請去找#b拉娜#k詢問"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "因為您所發出的味道而感到害羞嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "又要叫我決定與香味適合的衣服嗎？\\r\\n#L0##b是。女生模特兒的假髮,男生模特兒的紳士帽中，那種好呢？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "這香味。清爽的小蒼蘭～恩～這香味的話女生模特兒的假髮較好。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "快點轉達點#b拉拉#k。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "是什麼？這味道…向拉拉拜託噴灑香水如何？"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "在香味消失之前，請向#b拉娜#k詢問。"
+          }
+        }
+      }
+    }
+  }
+}

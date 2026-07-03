@@ -1,0 +1,233 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[幻影俠盜] 疑惑"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "9"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "封印石安然無恙。叫#p1404001#的少女，一個人在島上等待著英雄，感覺怪可憐的，但是很有志氣啊？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1404001#詢問了對英雄的好奇。核心內容是#b拯救過楓之谷的英雄，到了這個時代竟然被忘了一乾二淨，不覺得奇怪嗎#k…\n\n只有很久以來等待英雄的#p1404001#才能提出來的疑問，確實很奇怪…到#m150000000#去找#p1401002#，請他幫忙收集有關英雄的資料。\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "向#p1401002#委託了有關英雄的資料收集。聯盟之前，人們對英雄瞭解多少呢…"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "4792"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1404001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "42"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q25427s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "25426"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2400"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2410"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2411"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2412"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2413"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "2414"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1401002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "4792"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1362006"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "job": {
+            "_dirType": "int",
+            "_value": "16793616"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "哦，是社長～這一次好像是#p1002104#傳喚的樣子，你是要來問問看有什麼情報的嗎？噗噗…不知怎麼總覺得有什麼新情報的感覺？\\r\\n#L0##b(說出了在瑞恩所經歷的事，以及#p1404001#的疑惑。)#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "哦呵～幸好封印石沒有被奪走啊。可是是誰故意刪掉了關於英雄的記錄呢？#r偽造歷史#k？！是相當巨大的罪刑啊～感覺有陰謀…\\r\\n#L0##b能夠干涉數百年期間或大陸的歷史，應該不是普通的敵人吧。但是要先確認一下歷史是否真的被偽造了。因為還無法確認。#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "那麼我先在大陸整體上收集有關英雄的全部資料吧。只要能取得的記錄、史料、遺物等等，我試著去取得。當然，是聯盟誕生之前的。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "此外，如果有人可以提供相關的什麼證詞的話，我也會去找他的～如果有，我會跟你聯絡的。社長。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "去瑞恩有什麼事嗎？看來沒有別的事?說另外有事，但你看來挺悠閒的。"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[露塔必思每日] 紅玫瑰庭園"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "62"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "把南方庭園的5朵藍色、紫色玫瑰漆成紅色吧！ 雖然有點自欺欺人，不過那也沒辦法。\\n(該任務可以在 #r<一般模式>、<混沌模式>#k中進行)"
+    },
+    "disableAtCompleteTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1064007"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "125"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "30008"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1064007"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q30018e"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "30018"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "5"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "rose"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好。我是管理血腥女王南方庭園的伯爵夫人。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "我們的女王非常喜歡紅玫瑰。不過，南邊庭園只有開藍色、紫色的玫瑰。女王若是看見的話，一定會生氣。所以我需要你的幫忙。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那麼請將南方庭園的藍色、紫色的玫瑰漆成紅色吧！ 今天 #b5個#k就夠了。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "看到庭園的玫瑰全都變紅的話，女王一定也會很高興。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "若是女王生氣的話，說不定會將我抓去吃掉。拒絕女士的拜託是無禮的行為。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請仔細的漆。"
+          }
+        }
+      }
+    }
+  }
+}

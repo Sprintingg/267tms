@@ -1,0 +1,267 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[墮落城市] 不可抄襲"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "就算支付了也作曲費也沒有給新曲。到底為什麼這麼猶豫呢？向#b諾馬耶#k詢問有什麼事。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "隨心所欲的在演奏諾馬耶的曲子？擊退搖滾精神，好好聽取最後所演奏的曲子然後回來。\\r\\n\\r\\n要好好聽演奏的話，在系統選項將效果音稍微設定大聲點會較好吧？"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "依諾馬耶的邀請消滅了搖滾精神。但是作曲筆記沒有拿出來，一直拖延。無法再拖時間了。#b從諾馬耶#k那邊領取新曲吧。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000538:##t4000538:##c4000538#/1\r\n#o4300013##a22881#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 11,500\r\n可進行 '新曲轉達' 任務\r\n可進行 '最後演奏曲' 任務\r\n"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "28"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "11500"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052120"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "35"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2287"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052120"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000538"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4300013"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "2293"
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "11500"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000538"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "我的新曲…新曲被玷污了。\\r\\n#L0##b你說新曲被玷污了？那到底是什麼意思？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "在101大樓某處的搖滾精神！那妖怪隨他高興演奏我的新曲。這樣的話我要給赫一的新曲有可能陷入抄襲糾紛。\\r\\n#L0##b抄襲！那種事真是無法想像！搖滾精神！那種傢伙得由我來消滅了！#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "那是真心嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "搖滾精神！那傢伙是會在很少人徘徊的陰暗的地方。例如說在準備大工程的工地等…應該是會藏在那些地方吧。應該去找墮落廣場理的公益工作人員俊伊拜託一下就可以到那裡吧。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "去那裡消滅 #r搖滾精神#k後，搶回#b搖滾精神的樂譜#k吧。然後，那個妖怪是有可能不太懂樂譜的關係，一定要好好聽完最後演奏的歌曲喔。#b若要仔細聽搖滾精神的最後演奏的話，可以在系統選像裡，把效果音部分調整為大聲喔。#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不管如何就算是那樣也無法免費當曲子。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "擊退了搖滾精神呀？請給我他的樂譜。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "果然是他的樂譜。無法看出來啊。你有記得搖滾精神最後演奏的曲子嗎？雖然就算沒有記得也是會依約定給你我的作曲筆記…啊，筆記放到那去了？"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "隱掉#r搖滾精神#k，拿回#b搖滾精神的樂譜1個#k給我。那妖怪死掉時所演奏的歌曲一定不要忘記要記得才可以。"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "隱掉#r搖滾精神#k，拿回#b搖滾精神的樂譜1個#k給我。那妖怪死掉時所演奏的歌曲一定不要忘記要記得才可以。"
+          }
+        }
+      }
+    }
+  }
+}

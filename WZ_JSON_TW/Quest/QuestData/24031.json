@@ -1,0 +1,242 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[精靈之王，精靈遊俠] 精靈的朋友"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "8"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "離開的朋友， 獨角獸#p1033240#回來了，與看起來很累的他對話看看吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "離開精靈村莊的獨角獸因為黑魔法師而逐漸荒廢的土地上過得很辛苦的模樣，但是仍舊相信精靈會回來…為了飢餓的#p1033240#給予食物吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "吃飽的#p1033240#感到滿足後站了起來，以後絕對不會離開這裡…並決定如果黑魔法師再次出現也會一起戰鬥。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "4"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1033240"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "50"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "24030"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2300"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2310"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2311"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2312"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2313"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "2314"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1033240"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q24031e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032977"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "很高興見到你健康的樣子，精靈遊俠… 你還是老樣子。 不，應該是稍微有成長吧…？ 這麼年輕王看起來更有貴氣了。\\r\\n#L0##b你呢… 看起來很疲倦，#p1033240#。 你受傷了嗎？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "沒有受傷。 只是新楓之谷和從前不一樣了… 因為不是獨角獸居住的好地方了。 尤其是沒有了精靈… 所以有點飢餓… 呵呵…"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "(獨角獸 #p1033240#似乎餓了，去村裡的雜貨店買獨角獸的食物吧。獨角獸最喜歡精靈們製作的食物了，牠一定會很開心。)"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "啊… 這是。。 真的好久沒吃了。 精靈製作的食物… 真的讓我回想起以前？ 當時沒有和你一起離開與黑魔法師戰鬥讓我後悔不已… 你大概無法想像。\\r\\n#L0##b不是約好要回來嗎。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "是啊。 你的那句話，我就相信那一句話在荒廢的新楓之谷等待精靈的歸來。 我相信總有一天會回來在一次伸出雙手… 希望再一次和你奔跑在維多利亞…\\r\\n#L0##b現在… 現在還不行。 新楓之谷還沒有恢復和平。 戰爭沒有結束，我不想拖你下水，#p1033240#。 你願意再等一下嗎？#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "我不能等待。 精靈遊俠…"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我說過了！ 讓你離開後很後悔沒有和你一起… 數百年來看著冰凍的精靈村莊，等待著不回來的精靈遊俠… 我想過很多次。 "
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "黑魔法師再恐怖要戰鬥就該一起戰鬥… 我就是不應該讓你一個人走… 應該在一起到最後… 我心裡想。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "所以這次絕對不放過你。 如果和黑魔法師的戰鬥沒有結束，那我們就一起戰鬥到底。 我的朋友，精靈遊俠。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "(獨角獸的食物在雜貨店販售… 從前村莊內有很多獨角獸…)"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[Friend's Story] 愛情需要搭乘謠言1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "93"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "與頂樓的閃雷悍將對話."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在走廊, 教務室, 正門取得正常照片."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把收集完畢的證據照拿給頂樓的閃雷悍將.\r\n使用這個就可以散播謠言了."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#第一張照片 (#R32843Exph1Ref32805#)\r\n#questorder1#第二張照片 (#R32843Exph2Ref32805#)\r\n#questorder1#第三張照片 (#R32843Exph3Ref32805#)\r\n"
+    },
+    "friendsStory": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1530103"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q32805s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32804"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1530103"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q32805e"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "32843"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "第一張照片"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "ph1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "第二張照片"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "ph2"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "第三張照片"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "ph3"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "照片都收集到了嗎?"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "會成為好的證據照片!"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還不夠. 兩個在一起的照片至少要三張!"
+          }
+        }
+      }
+    }
+  }
+}

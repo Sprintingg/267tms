@@ -1,0 +1,234 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1101006"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "90"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201405150000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201404100000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20600"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "1411"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "1412"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1101006"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032123"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032123"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      },
+      "skill": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "14111005"
+          },
+          "masterLevel": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "job": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "int",
+              "_value": "1411"
+            },
+            "1": {
+              "_dirType": "int",
+              "_value": "1412"
+            }
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇家騎士團] 暗夜行者的新技能"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "好好思想#p1101002#說過的話，好像是說可以向#b#p1101006##k學習新的技能…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1101006#說雖然有新的技能，但是以目前的等級學習太危險，若要學習新的技能必須證明已有足夠的能力。向#m130020000#的#b第三練武場#k取得#b#t4032123##k就可以獲得認證…\\n\\n#i4032123##t4032123##b#c4032123#/1#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "除掉BOSS怪物後，找來了#t4032123#。#p1101006#說確認了學習新技能的資格，傳授了四重閃。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[技能]"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "帶來#t4032123#了。哼嗯…你真是有一套。好，你確定你有學習技能的資格。那就傳授技能給你吧。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "傳授你暗夜行者的新技能，#b四飛閃#k。千萬不可使用在壞事上。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有取得#b#t4032123##k嗎？前往#m130020000#的#b第三練武場#k通過試煉就可以取得。當然，通過試煉才能取得囉。"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "什麼？…嗯？新的技能？哪裡得到的情報…就知道一定是#p1101002#。就他的個性最壞啦，既然把情報給這等級不夠無法學習的傢伙。雖然是有技能但是若你要學習就太危險了。\\n#b#L0#雖然危險我還是想學習技能。#l\\n#L1#既然危險就算嚕…#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "若要學習技能有沒什麼不能教的。但是不需要花力氣在還沒有資格的傢伙身上吧？總之你要先證明可以學習技能啊。雖然性命會有危險…"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "什麼？也不需要就因為這樣就這麼輕易放棄嘛。"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你知道修煉森林盡頭有#m130020000#嗎？進入其中的#b第三練武場#k。參加那裡的試煉取回#b#t4032123##k就傳授技能給你。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "哼嗯。怕到了嗎？不想去就算了。但是以後我就叫你膽小鬼吧。"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[每日任務] 寒冬軍團所帶來的感冒"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p2081000#感覺有話要說。\r\n去找他確認看看。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2081000#說最近寒冬軍團進攻的關係，神木村 村莊人們得了感冒。 寒冬軍團的感冒是使用特別的材料才可治好 。 這就是 #i3996124##t3996124#!!#k\r\n\r\n#p2081000#委託尋找 #b#i3996124##t3996124# 1個#k 。\r\n\r\n\r\n尋找#b*#i3996124##t3996124# 的方法#k\r\n1) 消滅#o9402093#後收集 #i2436166##t2436166# 1個。\r\n2) 除了村莊和傳送點周邊的一般區域裡點擊 #i2436166##t2436166#後使用。\r\n3) 消滅種下#i2436166##t2436166#的位置上所出現 #o9402089#。\r\n4) #o9402089# 消滅時把獲得的#i3996123##t3996123# 30分內好好保管。\r\n5) 30分後 #i3996123##t3996123#會消失,但可獲得#i3996124##t3996124#。\r\n\r\n  #r但，連線結束時 #t3996123#, #t3996124#會消失的關係需要多注意喔!#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p2081000#說最近寒冬軍團進攻的關係，神木村 村莊人們得了感冒。 寒冬軍團的感冒是使用特別的材料才可治好 。 這就是 #i3996124##t3996124#!!#k\r\n\r\n從#p2081000#獲得#b#i3996124##t3996124# 1個#k 。\r\n\r\n#p2081000#說希望明天再來找他。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i3996124:# #t3996124:# #c3996124# / 1\r\n"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoPreComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2081000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "63170"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q63210s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201612070900"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201612280900"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2081000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3996124"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q63210e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "尋找#b#i3996124##t3996124# 1個#k。"
+          }
+        }
+      }
+    }
+  }
+}

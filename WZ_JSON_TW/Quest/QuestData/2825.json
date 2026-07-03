@@ -1,0 +1,196 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 燃燒的地"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#m102030200#的酋長在找幫忙打倒火肥肥的冒險者。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "冒險家在火焰之地出事的頻率增加了。 為了冒險家和勇士之村居民的安全，去消滅#r#m102030300##k、#r#m102030400##k地區的火肥肥吧！"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "已經消滅了火肥肥 200隻，現在這地區應該變得安全一些了吧？"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o3210100# #a28251#\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "53757"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1072000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "55"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2824"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1072000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3210100"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "200"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1072011"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "正常"
+          },
+          "job": {
+            "_dirType": "int",
+            "_value": "-2145384446"
+          }
+        }
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "53757"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "說明你要做的事情. 勇士之村的燃燒的地地區的事故越來越平凡. 是這火肥肥的關係. 為了勇士之村住民和冒險家們的安全再次助一臂之力的準備好了嗎?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "很好。 那就把那裡看到的火肥肥打倒 200隻。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "擁有了力量卻不知道如何使用嗎? 其他冒險家的安全對你來說沒有關係的事情嗎?"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "擊倒了火肥肥200隻了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "經過這附近的時候持續的清除火肥肥，當怪物的數量減少就會稍微安全一點了！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒完成？ 這是為了這一帶的安全必須要做的事。 請擊倒火肥肥200隻。"
+          }
+        }
+      }
+    }
+  }
+}

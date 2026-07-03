@@ -1,0 +1,186 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[勇士之村] 可疑的信賴關係"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "武術教練說有話要轉告10隻魔精靈。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "要替武術教練轉告感謝。 武術教練雖然叫我不要說，但我覺得還是需要去找10隻魔精靈，跟他們說關於「酋長」的實體才行。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "10隻魔精靈認為酋長是好人。 到底是為什麼呢？！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "27"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "386"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "20"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2811"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1103004"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "386"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "請幫我向十隻魔精靈問好吧？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不要說禮物箱內出現怪物的事，只要說謝謝就好了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你願意接受我委託時再和我對話吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "歡迎～！ 上次我委託你的事情怎樣了呢？ 武術教練喜歡我的禮物嗎？\\r\\n#L0##b這?雖然武術教練說不要說出來，但是打開禮物箱時有怪物跑出來。 那個禮物是你親自準備的嗎？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "咦？ 奇怪。 酋長說那是珍貴的劍只要是戰士都會喜愛的珍貴禮物…\\r\\n#L0##b你…好像被利用了吧？#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "嘿，不會吧。 一定是出了什麼差錯。 酋長 他是好人。 總是對我很好?嗯?？ 嗯?請你幫幫我。 請等一下～"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請等一下。 可以等一下再和我對話嗎？"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有向 十隻魔精靈幫我問好…不要傳不相干的話唷。"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 變成奇怪的黏土怪物"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "達克魯說還有一件事要委託。\n說要查出沼澤泥怪物變化的原因，去聽取仔細的內容吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "聽說看到沼澤地帶的沼澤泥怪物變成其他模樣。 有必要去調查形態改變的原因。 消滅#b#o2230115# 150隻#k後，收集 #b#t4000673# 50個#k吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "消滅#o2230115#後，收集 #t4000673#，拿給了達克魯。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000673:# #t4000673:# #c4000673# / 50\r\n#o2230115# #a28861#\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "30183"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "45"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2885"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000673"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2230115"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "150"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "103030400"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "30183"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000673"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "正常"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "還有件事情需要你去辦。 沼澤地裡的怪物們變得有些奇怪。 看起來像是變化成不一樣的形態了。 沼澤爛泥怪物身上竟然會有變異的萌芽…一定快加以確認！ 希望你能著手處理這件事情。 你會做嗎？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "主要是#m103030400# 地區的沼澤爛泥怪物有變換型態. 去這地方打倒#b#o2230115# 150隻#k後 取出#b#t4000673# 50個#k帶回.\\r\\n\\r\\n#e(答應後, #m103030400#移動)#n"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "為什麼？現在不方便嗎？若改變想法就再和我對話吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#t4000673#採集夠了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯，辛苦了。 怎麼會發生這種事情…稍等一下。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "為了進行確認，至少需要#t4000673# 50個。"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "採集#t4000673#的時候，不要忘記也要清除#o2230115#啊。"
+          }
+        }
+      }
+    }
+  }
+}

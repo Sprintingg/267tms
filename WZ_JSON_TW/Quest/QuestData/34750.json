@@ -1,0 +1,168 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[狐狸峽谷]席捲而來的雷雲"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "218"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#與#r#p3002016##k進行對話\r\n#questorder2#與#r#p3002017##k進行對話\r\n#questorder3#與#r#p3002018##k進行對話"
+    },
+    "partnerQuest": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "利用瑪魯做的打噴嚏粉末讓村民吃下做了#r免疫力的鍛鍊訓練#k...怎麼看都好像是瑪魯的惡作劇，感覺不怎麼好。\r\n\r\n與在 #b#m410000100##k的#b#p3002020##k對話看看。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "從遠方開始有烏雲飄來！幫助瑪魯趕緊將此消息告訴在 #b#m940204104##k的村民，並與村民進行對話。\r\n\r\n#r(非正常的路徑離開了村莊時，與在#m410000100#的#p3002020#重新進行對話。)#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "任何人都不相信瑪魯與外地人的我。怎麼辦呢？時間不多了…"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3002020"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q34750s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "185"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34747"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201804250900"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201804250900"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3002020"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q34750e"
+      },
+      "npcSpeech": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3002016"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q34750npc1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3002017"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q34750npc2"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3002018"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q34750npc3"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b#h0##k!快將消息告訴大家!"
+          }
+        }
+      }
+    }
+  }
+}

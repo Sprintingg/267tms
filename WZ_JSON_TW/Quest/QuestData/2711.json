@@ -1,0 +1,211 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[弓箭手村] 菇菇寶貝果汁的材料"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "最近對料理感興趣的卡蜜拉想按照赫麗娜給的料理菜譜製作「菇菇寶貝果汁」，委託我尋找跟料理食譜一樣的菇菇寶貝傘15個。 菇菇寶貝棲息在 #m100000000#北部的歷恩森林，說 #m100010000#，夢見的森林小徑最多。 在#m100000000# 左側的傳送點與歷恩森林連接著。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "最近對料理感興趣的卡蜜拉想按照赫麗娜給的料理菜譜製作「菇菇寶貝果汁」，委託我尋找跟料理食譜一樣的菇菇寶貝傘15個。 在歷恩森林消滅菇菇寶貝，收集菇菇寶貝傘交給了卡蜜拉。 總覺得有柳丁味，菇菇寶貝果汁會是什麼味道呢？"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000001:# #t4000001:# #c4000001# / 15\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 330\r\n可進行 '明明夫人的沙拉料理食譜' 任務\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "25"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "330"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "卡蜜拉的料理百書"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012108"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2710"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012108"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000001"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "15"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "330"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000001"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-15"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "正常"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "「因為我最近對料理很有興趣。 所以我向村裡的大人借了食譜嘗試著做各種料理。 當我拿到新的食譜時就想快點做做看～「菇菇寶貝汁」你不覺得會有柳橙的味道嗎？ 這裡是這樣寫的。\\n#b「新手也很容易上手的製作菇菇寶貝汁?首先預備新鮮的菇菇寶貝傘 15個。」\\n#k嗯?新鮮菇菇寶貝傘?但是因為我還小沒辦法對付菇菇寶貝。 嗚～啊！ 你可以幫幫我嗎？」\\r\\n"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "阿！真的謝謝你！請幫忙再拿 菇菇寶貝傘 15個好嗎？菇菇寶貝是在 歷恩森林裡成長。 歷恩森林是在…\\r\\n#b(卡蜜拉開始用木棒在地上畫畫。)#k\\r\\n往左邊走的話~會有往村莊外的路，那個路就跟 歷恩森林連接著 。 到#m100010000#,做夢的森林小徑的話可容易發現 菇菇寶貝的。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我很好奇按照赫麗娜給的食譜做出的菇菇寶貝汁會是什麼味道，可是我又無法收集到新鮮菇菇寶貝傘難道就這樣放棄嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "歡迎你回來！ 你找到了菇菇寶貝傘嗎？ 沒有很困難的找到吧？ 哇！ 看起來好新鮮。 謝謝。 可以製作好吃的菇菇寶貝汁了。 不好意思我忘記問你的大名了？ 請問你的大名是？我是\\r\\n#L0##b#h0# …。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "#h0#！ 非常感謝你這次幫助我。 以後還希望你多多幫忙！ 好～那就來做做看吧？ 菇菇寶貝傘用果汁機攪拌 ～噁！ 現在發現它的發酵時間需要一週。 所以現在製作只能一週後食用?還想請你喝我做的果汁這下太可惜了。 那就送你橙色藥水做替代吧。 你不覺得它們的味道會很接近嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "還要等一週…唉唷～ 果然料理不是很簡單。 好像一定要有等待與用心。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請幫忙再拿菇菇寶貝傘 15個好嗎？菇菇寶貝是在歷恩森林裡成長。 歷恩森林是在…\\r\\n#b(卡蜜拉開始用木棒在地上畫畫。)#k\\r\\n往左邊走的話~會有村莊外的路，那個路就跟 歷恩森林連接著。 到#m100010000#, 做夢的森林小徑的話可容易發現 菇菇寶貝的。"
+          }
+        }
+      }
+    }
+  }
+}

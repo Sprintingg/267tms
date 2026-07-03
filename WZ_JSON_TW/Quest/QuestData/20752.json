@@ -1,0 +1,184 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇家騎士團] 次元的縫隙"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "在#m270000100#見到#p1103006#。從她那裡仔細的聆聽關於任務的事。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "搜查#m270000000#地區，要去找連結至阿卡伊農所在的次元縫隙的祕密通道。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "告知#p1103006#通過阿卡伊農的祭壇的祕密通道位置。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1103006"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "120"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20751"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "5112"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "5113"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1103006"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "20752"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "find"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊，沒時間閒聊了。那麼就說明任務吧！ 不要太吃驚。是關於時間神殿產生的另一個裂縫的事。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "我正在調查時間神殿產生的另一個次元的通道。調查過去的時間時，偶然進入某個祭壇入口…"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "這裡有阿卡伊農！ 看起來像時間女神優伊娜的樣子，想要仔細的看，那時被阿卡伊農的部下察覺就逃跑了。"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "因此任務是找到前往阿卡伊農所在地的祕密通道！"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "逃亡之後來到有三道門的地方。我有點驚慌失措，因此想不起來了…好像在石像或噴泉附近…總之一定要幫我找！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯… 那個？你不是來幫忙的人嗎？怎麼會拒絕… 拒絕呢？不要這樣！ 我不喜歡開玩笑！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "找到前往阿卡伊農所在地次元的縫隙的通道了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "啊！ 在那裡！ 現在好像想起來了。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "一定有祕密通道！ 仔細的找有三道門的地區。"
+          }
+        }
+      }
+    }
+  }
+}

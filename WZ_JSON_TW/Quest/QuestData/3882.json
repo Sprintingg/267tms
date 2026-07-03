@@ -1,0 +1,182 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[星星力量] 變異的黑翼龍"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "41"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p2081007#聽完流星的相關說明後嘆了一口氣，試著和 #p2081007#交談吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2081007#說目前處於就算受到翼龍攻擊，也只能默默承受的狀況，現在連自己都自顧不暇的 #p2081007#根本無法應付變凶殘的變異的#o8150303#，為了#p2081007#去消滅#o8150303#吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "為了#p2081007#消滅變異的#o8150303#了，#p2081007#說不會被翼龍攻擊，自己也安心多了，並且表示相當感謝。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o8150303# #a38821#"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "#m240040300#\r\n#m240040320#"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "961487"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2081007"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "130"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3881"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2081007"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8150303"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "961487"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "呼，真的已經沒有希望了！別說是執行我給的任務，說不定連要活著回來都有困難。但是，只要你願意幫助我，我同樣不會放棄希望的，你願意幫忙嗎？\\r\\n"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果不消滅#r#o8150303##k，我會非常困擾的，但是，只要你消滅翼龍，至少能保障我的安全，那麼一切拜託了，請去解決變異的#r#o8150303##k吧。 \\r\\n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "向別人尋求幫助，我也會覺得慚愧，但騎士真正的自豪就是即使要拉下自尊也要追求正確的道路。 \\r\\n"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "變異的#o8150303#全都解決了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "一想到翼龍沒有發動攻擊，就放心了許多，但是，我還無法離開這個地方，必須等待我們敢死隊的同伴。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "只要消滅因為流星墜落而變異的#r#o8150303##k，至少就能保障我的安全。 \\r\\n"
+          }
+        }
+      }
+    }
+  }
+}

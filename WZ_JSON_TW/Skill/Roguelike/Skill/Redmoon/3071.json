@@ -1,0 +1,278 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "400031003 하울링 게일"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "5thHowlingGale"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub"
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "400031003"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "SummonZone"
+      },
+      "zoneType": {
+        "_dirType": "string",
+        "_value": "self"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "summonXpos": {
+          "_dirType": "string",
+          "_value": "100"
+        },
+        "duration": {
+          "_dirType": "int",
+          "_value": "10"
+        },
+        "z": {
+          "_dirType": "int",
+          "_value": "9000"
+        }
+      },
+      "zones": {
+        "_dirType": "sub",
+        "Anim": {
+          "_dirType": "sub",
+          "LayerSlots": {
+            "_dirType": "sub",
+            "Slot0": {
+              "_dirType": "sub",
+              "Segment:summoned": {
+                "_dirType": "sub",
+                "StartPos": {
+                  "_dirType": "int",
+                  "_value": "0"
+                }
+              },
+              "Segment:stand": {
+                "_dirType": "sub",
+                "StartPos": {
+                  "_dirType": "int",
+                  "_value": "480"
+                }
+              },
+              "Segment:die": {
+                "_dirType": "sub",
+                "StartPos": {
+                  "_dirType": "int",
+                  "_value": "1560"
+                }
+              }
+            }
+          },
+          "Notifies": {
+            "_dirType": "sub",
+            "attack": {
+              "_dirType": "sub",
+              "TriggerTime": {
+                "_dirType": "int",
+                "_value": "480"
+              },
+              "TriggerInterval": {
+                "_dirType": "string",
+                "_value": "540"
+              },
+              "EndTriggerTime": {
+                "_dirType": "string",
+                "_value": "1620"
+              }
+            },
+            "sound": {
+              "_dirType": "sub",
+              "Notify": {
+                "_dirType": "sub",
+                "!class": {
+                  "_dirType": "string",
+                  "_value": "WZ2RLAnimNotify_PlaySkillSound"
+                },
+                "SkillID": {
+                  "_dirType": "int",
+                  "_value": "400031004"
+                }
+              }
+            }
+          },
+          "Sections": {
+            "_dirType": "sub",
+            "summonned": {
+              "_dirType": "sub"
+            },
+            "stand": {
+              "_dirType": "sub",
+              "NextSectionName": {
+                "_dirType": "string",
+                "_value": "stand"
+              },
+              "StartTime": {
+                "_dirType": "int",
+                "_value": "480"
+              }
+            },
+            "die": {
+              "_dirType": "sub",
+              "StartTime": {
+                "_dirType": "int",
+                "_value": "1560"
+              }
+            }
+          }
+        }
+      }
+    },
+    "attack": {
+      "_dirType": "sub",
+      "constants": {
+        "_dirType": "sub",
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "6"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "3"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -120,
+          "_y": -570
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 120,
+          "_y": 0
+        },
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "20+6*x"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub"
+        },
+        "randomHit": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "1": {
+          "_dirType": "sub"
+        },
+        "2": {
+          "_dirType": "sub"
+        },
+        "3": {
+          "_dirType": "sub"
+        },
+        "4": {
+          "_dirType": "sub"
+        }
+      },
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "400031004"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "cooltime": {
+      "_dirType": "int",
+      "_value": "24"
+    },
+    "Tags": {
+      "_dirType": "sub",
+      "onlyOnConvex": {
+        "_dirType": "sub"
+      }
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "6"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "3"
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "20+6*x"
+    },
+    "duration": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -120,
+      "_y": -570
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 120,
+      "_y": 0
+    }
+  },
+  "SkillTags": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "string",
+      "_value": "RLGame.Skill.Extra"
+    }
+  }
+}

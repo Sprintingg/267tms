@@ -1,0 +1,215 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[夢幻主題樂園] 絕對禁止塗鴉！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "正在牆壁寫名字的時候，主題樂園的職員阿爾西奧奈生氣地瞪著我。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了將塗鴉清理乾淨，需要能清理乾淨的清潔劑。解決位於#m223030000#的 #b潘思#k，取得 #r清潔劑#k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在公共設施上亂塗鴉是錯誤的行為。以後不能再隨意亂塗鴉了。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4033245:# #t4033245:# #c4033245# / 20\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "339100"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2191020"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "120"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31322"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2191020"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033245"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "339100"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033245"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "你在做什麼呢？怎能做出如此無禮的行為呢？這裡可是大家共同使用的公共場所。怎能做出這種事情呢？\\r\\n#L0##b(啊，被發現了！東尼不見了…)對不起。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "請別再做這種事情了！你似乎已經反省了，這次就原諒你吧。但是，記得要將塗鴉清理乾淨！"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你到底是用什麼塗鴉的呢？根本就難以清除。沒辦法了！需要#r清潔溜溜的清潔劑 20個#k。位於#b#m223030000##k的 #b#e潘思#n#k應該有清潔劑。你可別想逃跑。因為我會讓你永遠無法再踏入這個地方…"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你不知道自己做錯什麼吧？好言相勸的時候，你就好好反省吧！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "已經取得清潔溜溜的清潔劑了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這樣就能夠清理塗鴉了。千萬別再做那種事情了！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "解決#m223030000#的潘思，然後取得清潔溜溜的清潔劑20個吧。"
+          }
+        }
+      }
+    }
+  }
+}

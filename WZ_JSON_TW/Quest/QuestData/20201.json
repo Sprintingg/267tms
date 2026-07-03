@@ -1,0 +1,161 @@
+{
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1101003"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032096"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1101003"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20200"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "1100"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇家騎士團] 聖魂劍士的騎士等級試煉"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "根據#p1101002#說，可以向光之騎士團長#b#p1101003##k接受騎士等級試煉。前往耶雷弗與#p1101003#見面。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "騎士等級試煉已經開始。內容很簡單。前往修煉森林盡頭的#b第二練武場#k擊倒那裡的提提之後取回#t4032096#就可以了。尋找#b#t4032096#30個#k回到#p1101003#。\\n\\n#i4032096##t4032096##b#c4032096#/30#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "騎士等級試煉已完成。現在已結束修煉騎士，任命為正式騎士。為了不要愧對皇家騎士團的正式騎士一定要更加努力。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[轉職]"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有收集到#b#t4032096#30個#k嗎。前往#b第二練武場#k去收集#t4032096#30個吧。"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "希望參加騎士等級試煉嗎？考慮到目前為止你對皇家騎士團的貢獻，的確不應該繼續留在修煉騎士。好吧。允許你參加騎士等級試煉。馬上參加試驗嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "試驗的內容很簡單。進入修煉森林盡頭的#b第二練武場#k除掉裡面的提提，找回他的擁有的#b#t4032096##k就可以了。總共要找到#b30個#k帶回來。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "若成功收集#t4032096#回來就會承認你正式騎士的資格。那麼祝你好運。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "若預備好參加試驗就重新與我對話。"
+        }
+      }
+    }
+  }
+}

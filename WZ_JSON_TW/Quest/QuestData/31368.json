@@ -1,0 +1,210 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[奇幻主題樂園] 入場關卡， 膽量測試 1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "第一個計劃場所是 #b幽靈之家#k。與歡樂站 <2>的幽靈之家 服務員 #b奧利弗#k進行對話。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "奧利弗說為了體驗奇幻主題樂園最高刺激的幽靈之家有特別的入場關卡。完成入場關卡測試再與#b奧利弗#k進行對話。\\r\\n\\r\\n#b歡樂站<2> 打敗#r#o8145001##k #b150隻#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "通過膽量測試可以進行幽靈之家。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o8145001# #a313681#\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "732028"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "120"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2192021"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31367"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2192021"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8145001"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "150"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "732028"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "sayEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#r#fn歡迎來到#驚悚的幽靈之家。#k \\r\\n想要體驗幽靈之家嗎？但是這裡是需要高膽量的關係 #e入場有非常嚴格的#n限制。老弱者、孕婦還有 #e身.心.脆.弱.者#n會更嚴格。"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "身心…"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "脆弱者？！ \\n喂，你知道他是誰嗎？"
+          },
+          "npcID": {
+            "_dirType": "int",
+            "_value": "2192004"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        },
+        "3": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "強烈的否認雖然是肯定..但還是需要先證明有膽量的人。通過我給的2種測試就讓你進去。要挑戰看看嗎？"
+          }
+        }
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好。那從幽靈之家前打敗 #r#o8145001##k #b150隻#k吧。幽靈之家裡面的 '東西'會比那更可怕，這種應該小小勇士都能辦得到。可以吧？"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "唉唷，還以為你是有這種勇氣的勇士。恩，改變心意的話再來吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這麼快就完成了？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "打敗#r#o8145001##k #b150隻#k回來吧。#r#o8145001##k在 #b幽靈之家#k 周圍很多。"
+          }
+        }
+      }
+    }
+  }
+}

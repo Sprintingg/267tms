@@ -1,0 +1,160 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[比叡山] 把靈魂裝進藍壺…"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "比叡山調查 - 劍斗"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "95"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "把紅壺裝滿後，下個是要把藍壺裝滿吧？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p9130107:# 請求收集 #o9450032:# 到把壺子裝滿的程度。壺子裡裝滿靈魂後再回來找#p9130107:# 吧。 雖然#p9130107:# 真的是很溫柔的孩子…但總覺得有哪裡怪怪的。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "捉住150隻#o9450032:# 後，藍壺就滿了。靈魂有好好收納在內了嗎？"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o9450032# #a589321#\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9130107"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "58915"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "2"
+          }
+        }
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "58931"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q58932s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "140"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201412310000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9130107"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q58932e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9450032"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "150"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "把這麼小的壺子裝滿也有困難嗎…"
+          }
+        }
+      }
+    }
+  }
+}

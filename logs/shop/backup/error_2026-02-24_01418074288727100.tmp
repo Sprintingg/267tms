@@ -1,0 +1,19 @@
+2026-02-24 19:17:30.934 ERROR --- [ShopPartition-16-Worker-2] : [ShopPartition-16] Exception processing packet for SessionId: a6558979. 
+All Bytes: 12 D7 1E 00 00 01 05 00 31 32 33 34 35 00 10 E0 E0 07 EC A3 06 
+java.lang.StringIndexOutOfBoundsException: offset 7, count 1281, length 21
+	at java.base@17.0.10/java.lang.String.checkBoundsOffCount(String.java:4593)
+	at java.base@17.0.10/java.lang.String.<init>(String.java:523)
+	at com.ms.common.net.endian.InPacket.decodeString(InPacket.java:131)
+	at com.ms.common.net.endian.InPacket.decodeString(InPacket.java:137)
+	at com.ms.shop.net.external.handler.CashShopCashItemHandler.handlePacket(CashShopCashItemHandler.java:266)
+	at com.ms.shop.net.external.handler.CashShopCashItemHandler.handlePacket(CashShopCashItemHandler.java:32)
+	at com.ms.shop.net.external.ShopDispatcher.handleSinglePacket(ShopDispatcher.java:57)
+	at com.ms.common.net.external.router.PacketDispatcher.processSessionWork(PacketDispatcher.java:199)
+	at com.ms.common.net.external.router.PacketDispatcher.workerLoop(PacketDispatcher.java:143)
+	at java.base@17.0.10/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base@17.0.10/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base@17.0.10/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base@17.0.10/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+	at org.graalvm.nativeimage.builder/com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:775)
+	at org.graalvm.nativeimage.builder/com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:203)

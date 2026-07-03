@@ -1,0 +1,205 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[菇菇城堡] 搶救菲歐娜作戰"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "91"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "說著快來救我的菲歐娜. 但是菲歐娜斗笠上的鐵鍊沒有解開的話好像無法逃出的樣子. 與菲歐娜對話看看. "
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了讓菲歐娜逃出需要解開綁住的鐵鍊. 但是無法知道奴隸看守中到底誰握有真正的鑰匙. 總之先收集鑰匙才行. "
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "為了讓菲歐娜逃出所以從奴隸看守那邊搶來了鐵鍊鑰匙. 但是在那麼多的鑰匙中沒有可以解開綁著菲歐娜斗笠鐵鍊的鑰匙. "
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4034112:# #t4034112:# #c4034112# / 20\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 49,856\r\n"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "#m106030700#"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "49856"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1302002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "30065"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1302002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034112"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "49856"
+      },
+      "transferField": {
+        "_dirType": "int",
+        "_value": "106031504"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034112"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "就算是一分鐘也想要快點逃離這個地方, 但要是沒有解開綁住我蕈傘的鐵鍊的話就無法離開這個地方. 但是勇士您會知道怎麼幫我? 會? "
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "奴隸看守拿著鐵鍊鑰匙。但是無法正確知道到底是誰拿著那個鑰匙，但是還是請先找來 #r#t4034112##k #r20個#k. 那之中應該會有一個是對的? "
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "喔, 難道是以這個為理由要跟我結婚, 還是提出這之類的要求嗎? 怎麼會提出這麼不要臉的要求…… "
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "鑰匙全部收集來了嗎? 那麼一個一個開開看. 那之中一定有一個是對的. "
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "嗯? 所有的鑰匙跟鐵鍊都不合嗎? 怎麼會這樣…… 沒時間了. 不久後維京們就會來了. 不行了. 那麼也沒辦法了...... 啪薩!"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "呵呵, 不管怎麼說黑維京應該是不會輕易放過我的. 一定要有#r#t4034112##k才能解開將我所住的鐵鍊. "
+          }
+        }
+      }
+    }
+  }
+}

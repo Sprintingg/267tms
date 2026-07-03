@@ -1,0 +1,186 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[菇菇城堡] 守護城牆2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "91"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "維京的猛烈攻擊好像已經扭轉局勢的樣子. 堂皇的警衛隊長又再次請求幫助. "
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "因為是第一次對抗有翅膀的敵人所以菇菇士兵們很堂皇, 就算使出必殺抵抗好像局勢已經被扭轉了. 幫助菇菇並且打倒想要再次掌握城牆的維京. "
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "因警衛隊長的請求打倒了從其他地方掌握城牆的維京. 雖然菇菇們為了守護城牆非常努力, 但這樣下去沒過多久城牆就會完全被掌握的樣子. "
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o3300103# #a300581#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 48,619"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "#m106030301#/#m106030302#"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "48619"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1302007"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "30057"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1302007"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3300103"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "48619"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "因為是第一次對抗有翅膀的敵人所以菇菇士兵們很惶恐的樣子. 就算使出必殺抵抗好像局勢已經被扭轉了. 此時維京趁機想要完全掌握城牆的樣子. 要再次幫忙守護城牆嗎?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "其他方向的城牆因為維京們的攻擊而非常危險. 所以請打倒 #r#o3300103##k守護城牆. 城牆要是被掌握的話城門也會被衝破的. 你的肩上有著我們菇菇王國的命運!"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "反正這個狀況下你也無法逃出城外. 雖然進來的時候是隨心所欲的,但出去的時候就由不得你了. 既然都這樣了, 就幫忙. "
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "打倒所有想要掌握城牆的維京了嗎?"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我們也知道. 要是就這樣下去城牆就會完全被佔領. 首先先把原來在正門的部分兵力移動到後門. 這是我們現在唯一能做的了.  "
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請打倒想要掌握城牆的 #r#o3300103##k. "
+          }
+        }
+      }
+    }
+  }
+}

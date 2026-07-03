@@ -1,0 +1,235 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓之谷世界的冒險家] 巨大的樹木SUGAR"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "77"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b六條岔道#k有一個看起來很苦惱的冒險家少女.去對話看看."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "想成為魔法師的#b糖果#k因為很怕昆蟲,所以沒辦法過去.幫助糖果除掉#b樹上的昆蟲#k吧.\\r\\n#r（任務失敗的話,必須放棄任務後再開始.）#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "擊倒樹蟲."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o9300801##a322421#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 4,000\r\n可進行 '巨大的樹木傷口' 任務\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "4000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q32242s"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1520000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "25"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32241"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "120"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "130"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "111"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "121"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "131"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "112"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "122"
+        },
+        "9": {
+          "_dirType": "int",
+          "_value": "132"
+        },
+        "10": {
+          "_dirType": "int",
+          "_value": "113"
+        },
+        "11": {
+          "_dirType": "int",
+          "_value": "123"
+        },
+        "12": {
+          "_dirType": "int",
+          "_value": "133"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1520000"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9300801"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "999999999"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "4000"
+      },
+      "transferField": {
+        "_dirType": "int",
+        "_value": "999999999"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "竟然趕走蟲子了!\\r謝謝,現在可以去魔法森林了."
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "......天啊?"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "是否...#h0#也怕蟲?對不起,我好像拜託你為難你的事."
+          }
+        }
+      }
+    }
+  }
+}

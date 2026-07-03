@@ -1,0 +1,198 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[武陵桃園] 卡勒奇沙的記憶"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "44"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽說卡勒奇沙知道菇菇城堡的事。去找他聽取詳情。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "卡勒奇沙說吃了紅蘿蔔就會想起關於菇菇城堡的記憶。\\r\\n\\r\\n#i4000325:##t4000325:##c4000325#/30\\r\\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "收集紅蘿蔔向卡勒奇沙詢問菇菇城堡的相關情報。"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 3,000\r\n可進行 '卡勒奇沙的記憶2' 任務\r\n"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "關於菇菇城堡…"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "3000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2101013"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "26"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "36"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2101013"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000325"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "3000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000325"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "你對回去維多利亞島的特別路線有興趣嗎？\\r\\n#b#L0#難道你知道有關菇菇城堡的事？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "嗯…最近菇菇城堡有很多問題啊，可是重要的消息我都不知道，像「菇菇仔的背叛」我也完全不知道，我一點都不知道！啊！如果我吃紅蘿蔔我就會記起來了…你能拿30個給我嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "狩獵#b公砂兔#k的話，就會出來胡蘿蔔喔。那麼就等著 30個胡蘿蔔吧！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "看來你對菇菇城堡一點興趣都沒有。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嗯？啊！對了，你想要知道菇菇城堡的事吧？讓我想想，菇菇城堡…"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有紅蘿蔔嗎？看來你不想要消息啊…"
+          }
+        }
+      }
+    }
+  }
+}

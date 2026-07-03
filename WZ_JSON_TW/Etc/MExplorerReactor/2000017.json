@@ -1,0 +1,317 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "info": {
+      "_dirType": "string",
+      "_value": "괴물소리 스피커"
+    },
+    "placementArea": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": -30,
+        "_y": -124
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 30,
+        "_y": 0
+      }
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "Tower"
+    },
+    "reward": {
+      "_dirType": "string",
+      "_value": "r2692017"
+    },
+    "demolish": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "maxHP": {
+      "_dirType": "int",
+      "_value": "500"
+    },
+    "targetType": {
+      "_dirType": "string",
+      "_value": "craft"
+    },
+    "firstAttack": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "firstAttackRange": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": -1000,
+        "_y": -600
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 450,
+        "_y": 400
+      }
+    },
+    "attackPower": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "WZ2Lua": {
+      "_dirType": "string",
+      "_value": "Reactor_MonsterSoundSpeaker"
+    }
+  },
+  "Anims": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "stand": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub",
+              "AnimReference": {
+                "_dirType": "sub"
+              }
+            }
+          }
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub",
+              "AnimReference": {
+                "_dirType": "sub"
+              }
+            }
+          }
+        },
+        "Notifies": {
+          "_dirType": "sub",
+          "sound": {
+            "_dirType": "sub",
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/MExplorer.img/Reactor/2000000/0_hit"
+              }
+            }
+          }
+        }
+      },
+      "die": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub",
+              "AnimReference": {
+                "_dirType": "sub"
+              }
+            }
+          }
+        },
+        "Notifies": {
+          "_dirType": "sub",
+          "sound": {
+            "_dirType": "sub",
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/MExplorer.img/Reactor/2000000/0_die"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "Skills": {
+    "_dirType": "sub",
+    "attack1": {
+      "_dirType": "sub",
+      "Anim": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub",
+              "AnimReference": {
+                "_dirType": "sub",
+                "5": {
+                  "_dirType": "uol",
+                  "_value": "0"
+                },
+                "6": {
+                  "_dirType": "uol",
+                  "_value": "1"
+                },
+                "7": {
+                  "_dirType": "uol",
+                  "_value": "2"
+                },
+                "8": {
+                  "_dirType": "uol",
+                  "_value": "3"
+                },
+                "9": {
+                  "_dirType": "uol",
+                  "_value": "4"
+                },
+                "10": {
+                  "_dirType": "uol",
+                  "_value": "0"
+                },
+                "11": {
+                  "_dirType": "uol",
+                  "_value": "1"
+                },
+                "12": {
+                  "_dirType": "uol",
+                  "_value": "2"
+                },
+                "13": {
+                  "_dirType": "uol",
+                  "_value": "3"
+                },
+                "14": {
+                  "_dirType": "uol",
+                  "_value": "4"
+                },
+                "15": {
+                  "_dirType": "uol",
+                  "_value": "0"
+                },
+                "16": {
+                  "_dirType": "uol",
+                  "_value": "1"
+                },
+                "17": {
+                  "_dirType": "uol",
+                  "_value": "2"
+                },
+                "18": {
+                  "_dirType": "uol",
+                  "_value": "3"
+                },
+                "19": {
+                  "_dirType": "uol",
+                  "_value": "4"
+                }
+              }
+            }
+          }
+        },
+        "Notifies": {
+          "_dirType": "sub",
+          "EventDelay": {
+            "_dirType": "sub",
+            "TriggerTime": {
+              "_dirType": "int",
+              "_value": "120"
+            }
+          },
+          "sound": {
+            "_dirType": "sub",
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/MExplorer.img/Reactor/2000017/stand"
+              }
+            }
+          }
+        }
+      },
+      "Events": {
+        "_dirType": "sub",
+        "EventDelay": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "Attack"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "lt": {
+              "_dirType": "vector",
+              "_x": -1000,
+              "_y": -600
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 450,
+              "_y": 400
+            },
+            "mobCount": {
+              "_dirType": "string",
+              "_value": "20"
+            },
+            "attackCount": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "damage": {
+              "_dirType": "string",
+              "_value": "100"
+            },
+            "knockBackImpactX": {
+              "_dirType": "string",
+              "_value": "100"
+            }
+          },
+          "targetBuffID": {
+            "_dirType": "int",
+            "_value": "2997"
+          }
+        }
+      },
+      "common": {
+        "_dirType": "sub",
+        "cooltime": {
+          "_dirType": "string",
+          "_value": "10"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -1000,
+          "_y": -600
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 450,
+          "_y": 400
+        }
+      }
+    }
+  }
+}

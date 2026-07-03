@@ -1,0 +1,238 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[蓮] 第一個委託"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "前往#m410004101#的會長#p3006651#處接受並完成委託吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "聽說亥雷普的船隻停泊在瓦洛拉後，惱躁的長嘴鳥們開始惹事。\r\n奪回#o8645380#從瓦洛拉居民那裡偷走的#t4037404#。\r\n應該能從#m410004106#的#o8645380#那裡得到。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "我從#o8645380#手中奪回#t4037404#並交還給會長。"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "returnMapID": {
+      "_dirType": "int",
+      "_value": "410004101"
+    },
+    "returnPN": {
+      "_dirType": "string",
+      "_value": "3006651"
+    },
+    "targetType": {
+      "_dirType": "int",
+      "_value": "-1"
+    },
+    "returnType": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demand": {
+      "_dirType": "sub",
+      "base": {
+        "_dirType": "string",
+        "_value": "#questorder1##i4037404:# #t4037404:# #c4037404# / 1\r\n#questorder1##o8645380# #a368241#\r\n"
+      },
+      "explain": {
+        "_dirType": "sub"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3006651"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q36824s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "36823"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "16100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "16110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "16111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "16112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "16113"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "16114"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3006651"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q36824e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4037404"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8645380"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "itemEx": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "sub",
+            "msg": {
+              "_dirType": "string",
+              "_value": "沒能找到項鍊嗎？可以從#b#m410004106##k的#b頑皮長嘴鳥#k身上取得。"
+            },
+            "imgPos": {
+              "_dirType": "int",
+              "_value": "1"
+            }
+          }
+        },
+        "mobEx": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "sub",
+            "msg": {
+              "_dirType": "string",
+              "_value": "請去#b#m410004106##k的#b頑皮長嘴鳥#k那裡，修理至少#b10隻#k吧。"
+            },
+            "imgPos": {
+              "_dirType": "int",
+              "_value": "1"
+            }
+          }
+        }
+      }
+    }
+  }
+}

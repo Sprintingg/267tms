@@ -1,0 +1,120 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "growth"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "level"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "[初心者]再也不要無視初心者"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "初心者/貴族/市民職業中一種250級達成"
+    },
+    "keyword": {
+      "_dirType": "string",
+      "_value": "初心者250級達成"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "legendary"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "100"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "gauge": {
+        "_dirType": "string",
+        "_value": "submission_info"
+      },
+      "gaugeSubMission": {
+        "_dirType": "string",
+        "_value": "user_lvup"
+      }
+    },
+    "prior": {
+      "_dirType": "sub",
+      "achievement_id": {
+        "_dirType": "int",
+        "_value": "47"
+      }
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "以初心者/貴族/市民職業250級達成"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "user_lvup": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "long",
+              "_value": "250"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            },
+            "type": {
+              "_dirType": "string",
+              "_value": "set_if_higher"
+            },
+            "setGroup": {
+              "_dirType": "string",
+              "_value": "character"
+            },
+            "setValue": {
+              "_dirType": "string",
+              "_value": "character_level"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub",
+            "character": {
+              "_dirType": "sub",
+              "values": {
+                "_dirType": "sub",
+                "0": {
+                  "_dirType": "sub",
+                  "character_jobcode": {
+                    "_dirType": "int",
+                    "_value": "0"
+                  }
+                },
+                "1": {
+                  "_dirType": "sub",
+                  "character_jobcode": {
+                    "_dirType": "int",
+                    "_value": "1000"
+                  }
+                },
+                "2": {
+                  "_dirType": "sub",
+                  "character_jobcode": {
+                    "_dirType": "int",
+                    "_value": "3000"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

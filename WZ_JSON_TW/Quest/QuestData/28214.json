@@ -1,0 +1,308 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "金色羽毛的祕密"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "4"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b勇士之村#k的#b#@9201119:##k說，你必須準備一些東西，才能辨識#r金色羽毛#k。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "我們必須蒐集以下材料，才能準確辨識#r金色羽毛#k。\\n\\n20片#r葉子#k(從#r黑木妖#k身上掉落的物品。)\\n20個#r打火石#k(從#r黑木妖#k身上掉落的物品。)\\n\\n蒐集好所有物品之後，返回#b勇士之村#k向#b#@9201119:##k回報。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#b勇士之村#k的#b#@9201119:##k要求你將這個消息傳達給#b魔法森林#k的#b#@1032001:##k。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4001356:##t4001356:##c4001356#/20\r\n#i4000005:##t4000005:##c4000005#/20\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 3,380\r\n可進行 '偷竊的惡魔' 任務\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "3380"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "3380"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000005"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001356"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我要的東西你全都帶來了。\\n不如現在就開始念魔法咒語吧。\\n\\n(訓練教官點了火，也點燃了金色羽毛。)\\n\\n這一定是…"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這是什麼鬼東西？\\n看起來像獅子又像騾。\\n\\n就像個惡魔！應該不是真的惡魔吧？這傢伙害我好緊張！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "帶20片#r葉子#k和20個#r打火石#k回來給我。"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這個#r金色羽毛#k讓我心神不寧。\\n對了，我有個祖傳的魔法咒語可以揭開羽毛的祕密。首先，你必須幫我收集一些物品。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我必須升火驅散怪物氣息，因此我需要20片#r葉子#k與20個#r打火石#k。你可以從#r黑木妖#k身上取得這兩樣物品。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "什麼？你說你不願意？"
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9201119"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001356"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000005"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9201119"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "40"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "28213"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "400"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "410"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "420"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "411"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "421"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "412"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "422"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "1400"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "1410"
+        },
+        "9": {
+          "_dirType": "int",
+          "_value": "1411"
+        },
+        "10": {
+          "_dirType": "int",
+          "_value": "1412"
+        },
+        "11": {
+          "_dirType": "int",
+          "_value": "430"
+        },
+        "12": {
+          "_dirType": "int",
+          "_value": "431"
+        },
+        "13": {
+          "_dirType": "int",
+          "_value": "432"
+        },
+        "14": {
+          "_dirType": "int",
+          "_value": "433"
+        },
+        "15": {
+          "_dirType": "int",
+          "_value": "434"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

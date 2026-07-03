@@ -1,0 +1,282 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[職業] 魔法森林竊案的線索"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b魔法森林#k的#b#@1032001:##k說村裡曾經發生過一起重大的竊案。我們去找他談一談。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "我們到#b魔法森林#k尋找#b#@1032104:##k，向她打聽有關#r金色羽毛#k的消息。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#b魔法森林#k的#b#@1032104:##k說她無法確定#r金色羽毛#k的來歷。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4001355:##t4001355:##c4001355#/1\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 1,500\r\n可進行 '不知為何，感覺這根羽毛似乎與勇士之村有關係…' 任務\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "1500"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1500"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001355"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#b魔法森林#k有一個大金庫。\\n由於生活花費不高，不需太多楓幣便可以維持生活水準，但仍需要楓幣發展城鎮。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "鎮民把楓幣存入金庫，並交給我管理，但如今所有楓幣都不見了！\\n\\n我氣瘋了，真不知道該怎麼辦？不過我們有找到一些蛛絲馬跡，可以揪出偷這筆錢的小偷。你願意助我一臂之力嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "金庫附近有一支#r金色羽毛#k，非常顯眼，就好像有人故意放在那兒一樣。\\n\\n你可以到#b魔法森林#k一趟，向#b#p1032104##k打聽#r金色羽毛#k是什麼及它的來歷嗎？她的消息很靈通，或許會知道點什麼也說不定。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "為什麼不能答應呢？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#r金色羽毛#k長得還真奇怪。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請再給我一點時間好好研究。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b#p1032104##k在#b魔法森林#k。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1032104"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001355"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1032001"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "40"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "28211"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "400"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "410"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "420"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "411"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "421"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "412"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "422"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "1400"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "1410"
+        },
+        "9": {
+          "_dirType": "int",
+          "_value": "1411"
+        },
+        "10": {
+          "_dirType": "int",
+          "_value": "1412"
+        },
+        "11": {
+          "_dirType": "int",
+          "_value": "430"
+        },
+        "12": {
+          "_dirType": "int",
+          "_value": "431"
+        },
+        "13": {
+          "_dirType": "int",
+          "_value": "432"
+        },
+        "14": {
+          "_dirType": "int",
+          "_value": "433"
+        },
+        "15": {
+          "_dirType": "int",
+          "_value": "434"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

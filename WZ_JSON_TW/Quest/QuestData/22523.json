@@ -1,0 +1,237 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[龍使者，龍魔導士] 弓箭手村的異變"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "7"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#m100000000# 的 #p1012003# 叔叔好像有事情要拜託我."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1012003# 叔叔說是想要把 #m100000000#中發生的事件傳給其他村莊而提出請求幫忙.\r\n到其他村莊之前先到 #b#m100040000##k的 #b#p1012111##k聽聽建言."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "去跟在#m100040000#研究石巨人的 #p1012111#見面了."
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1500"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012003"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "20"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "22559"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2200"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2210"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2211"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2212"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2213"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "2214"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "2215"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "2216"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "2217"
+        },
+        "9": {
+          "_dirType": "int",
+          "_value": "2218"
+        },
+        "10": {
+          "_dirType": "int",
+          "_value": "2219"
+        },
+        "11": {
+          "_dirType": "int",
+          "_value": "2220"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012111"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "100040000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1500"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "龍魔導士啊, 再拜託一件事情. 好像這次發生的這件事情不只局限在 #m100000000#而有些擔心."
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "也想要向其他村莊把這件事情傳達....... 啊, 那之前可以先傳達給 #b#p1012111##k嗎? 比起空手去帶一些情報過去吧."
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b#p1012111##k會在 #b#m100040000##k研究有關石巨人. 這樣就可以聽取要向誰, 如何?的一些適當的建言."
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "...雖然這話題無關, 這旁邊的蜥蜴不危險嗎? 如果會咬人建議把這傢伙的脖子上繫上繩子. 什麼? 嗯嗯, 不是就還好."
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "有困難嗎? 連#p1012108#都可以找到, 不會無法做到這程度吧? 唉唷, 不要這樣嘛~"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "嗯? 你不是龍魔導士嗎? 有事嗎? 跟我有事嗎?\\r\\n#L0##b(#p1012003#把被拜託的事情傳達了.)#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "是奈洛 長老說也想要把 #m100000000#發生的石巨人們異常現象傳給其他村莊嗎?"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不管怎麼說最近石巨人們的異常行動較顯眼. 我來看看...... 燒等我一下."
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有去 #b#p1012111##k那理嗎? 應該會在#b#m100040000##k研究石巨人."
+          }
+        }
+      }
+    }
+  }
+}

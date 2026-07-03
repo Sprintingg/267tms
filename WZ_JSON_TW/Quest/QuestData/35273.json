@@ -1,0 +1,193 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[聯盟任務] 遠征隊任務 - 真希拉"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "223"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "可以破壞在迷宮盡頭的 #r#o8880400##k後，可以弱化 #r#o8880405##k的影響力。克服迷宮，並擊倒真希拉的幻影，弱化 #o8880405#的力量吧。\r\n\r\n如果有收集更多的心願時，也能與不是幻影的 #r#o8880405##k本人遇見。這情況，對 #r#o8880405##k造成一定量的直接性傷害。\r\n\r\n#r※這任務只能在苦痛迷宮最深處進行，對#o8880405#造成的傷害是退出 #b#m450010500##k#r時被統計。#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "弱化迷宮裡的 #o8880405# 後，成功遠征隊的任務。"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "可以破壞在迷宮盡頭的 #r#o8880400##k後，可以弱化 #r#o8880405##k的影響力。克服迷宮，並擊倒真希拉的幻影，弱化 #o8880405#的力量吧。\r\n\r\n如果有收集更多的心願時，也能與不是幻影的 #r#o8880405##k本人遇見。這情況，對 #r#o8880405##k造成一定量的直接性傷害。\r\n\r\n#r※這任務只能在苦痛迷宮最深處進行，對#o8880405#造成的傷害是退出 #b#m450010500##k#r時被統計。#k"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#擊倒真希拉的幻影 #R35267ExhaluRef35273# / 1\r\n#r或是#k\r\n#questorder1#對真希拉造成一定量以上的傷害 (#R35267ExdamageRef35273#)"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "10000 心願"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "35269"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003564"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "999"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "not"
+          }
+        }
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201902060000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201902192359"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003564"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "35267"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q35273e"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "擊殺真希拉的幻影"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "halu"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "500000000"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "對真希拉造成一定量以上的傷害"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "damage"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "目前需要去迷宮深處對希拉造成傷害。因為希拉非常危險，請務必要小心。如果覺得力量不足的話，只要擊倒希拉的幻影也能夠提供很大的幫助喔。\\r\\n\\r\\n#r※此任務只能在苦痛迷宮最深處進行。#k"
+          }
+        }
+      }
+    }
+  }
+}

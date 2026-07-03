@@ -1,0 +1,240 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[時間神殿]他的名字...？"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "263"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽到記錄者說的內容，神殿管理人好像明白了些什麼。什麼事情？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "看來，要告訴失去記憶的神官，沒辦法幫上忙了呀。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "向失去記憶的神官傳達除了自行找回失去的記憶之外沒有其他的方法時，他突然說記憶祕藥好像有點效果了。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "130"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "139"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "8640858"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2140000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "130"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3555"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q3556s"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2140006"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q3556e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "npcAct": {
+        "_dirType": "string",
+        "_value": "quest"
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "8640858"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "看來我們是幫不上忙了。辛苦你了。\\r\\n#L0##b真的沒有其他辦法了嗎？ 還有，他丟失的時間，到底是什麼意思呢？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "我只是以為沒有允許訪問神殿的人偷偷進來後發生了什麼事故呢。可是，在過去之門發現了她，可能還有其他原因。\\r\\n#L0##b其他原因…？ 難道，失憶的神官難道是屬於其他時間的人？#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "我再沒有話可以說了。去告訴失憶的神官吧。總有一天會找回記憶的…"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "唉，我好想幫不上什麼忙了，不要胡思亂想了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "失憶的神官會不會失望，跟你好像一點關係也沒有。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "來了？ 正有話想告訴你，來的正好。\\r\\n#L0##b啊…那個…我很想幫你找回記憶…#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "那個記憶的祕藥好像有效果。記憶好像一點點回來了。跟著那個戴面具的人，看到了他除掉暴躁的怪物… 還有，在有很多書的圖書館，我偷偷藏了一個像地圖一樣的東西。怎麼樣？ 記憶很快就回來了吧？ 呼呼。然後終於想起了我的名字。\\r\\n#L0##b哦~ 太好了。記憶漸漸恢復了。所以，你叫什麼名字？#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "嘿嘿，想知道我的名字嗎？ 告訴你啊？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "感謝你這段時間的幫助，所以才告訴你的。我的名字是#e#b卡奧#k#n。希望能夠儘快回復所有記憶。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

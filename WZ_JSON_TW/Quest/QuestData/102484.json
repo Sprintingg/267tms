@@ -1,0 +1,200 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[黃昏之光前夜祭] 調查耶芙尼亞1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|3"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "決定幫助耶芙尼亞人民，讓黃昏之光前夜祭活動成功。但是，還不能完全相信村莊的人們，沒有什麼方法嗎？ 向喬安娜尋求建議吧。\r\n\r\n#e#r<黃昏之光前夜祭活動>#k#n\r\n\r\n#e[活動期間]#n\r\n2025年12月03日 維護後 ~\r\n2026年02月24日 下午11時59分止"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "按照喬安娜的建議，決定從來歷不明的商人那裡打聽關於耶芙尼亞的情報。\r\n\r\n#e#r<黃昏之光前夜祭>#k#n\r\n\r\n#e[活動期間]#n\r\n2025年12月03日 維護後 ~\r\n2026年02月24日 下午11點59分為止"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "雖然沒有具體的情況，但耶芙尼亞的人一定有什麼隱瞞的，有沒有人能繼續談一下呢？\r\n\r\n#e#r<黃昏之光前夜祭>#k#n\r\n\r\n#e[活動期間]#n\r\n2025年12月03日 維護後 ~\r\n2026年02月24日 下午11時59分止"
+    },
+    "disableAtCompleteTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q102484x"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "except": {
+        "_dirType": "sub"
+      }
+    },
+    "demand": {
+      "_dirType": "sub",
+      "base": {
+        "_dirType": "string",
+        "_value": "與#questorder1##r#p3007025##k對話\r\n與#questorder2##r#p9063747##k對話\r\n與#questorder3##r#p9063742##k對話\r\n"
+      },
+      "explain": {
+        "_dirType": "sub"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3007020"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q102484s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "101"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "202602242359"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "202602242359"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "102405"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3007023"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q102484e"
+      },
+      "npcSpeech": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3007025"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q102484_MidNpc1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9063747"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q102484_MidNpc2"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9063742"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q102484_MidNpc3"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "找我有什麼事嗎？"
+          }
+        }
+      }
+    }
+  }
+}

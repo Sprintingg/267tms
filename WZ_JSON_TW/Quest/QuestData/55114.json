@@ -1,0 +1,260 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[橘子節] 把我們的意志傳給橘子"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "橘子營運者 說只要挑戰3次拳擊機, 就會給獎勵."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "橘子營運者 說只要挑戰3次拳擊機, 就會給獎勵.\r\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "挑戰3次橘子拳擊機後, 獲得了獎勵."
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "long",
+            "_value": "4310135"
+          },
+          "count": {
+            "_dirType": "long",
+            "_value": "7"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330434"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q55114s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201411050000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201411270000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201411060000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201411270000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "55113"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "dayByDay_t": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330434"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "56472"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "3"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "tCount"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4310135"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "7"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      },
+      "setEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "qrID": {
+            "_dirType": "int",
+            "_value": "56472"
+          },
+          "key": {
+            "_dirType": "string",
+            "_value": "tCount"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "4"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "sayEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "橘子拳擊機! 如何呢?"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "noEsc": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yesEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "哇! 又更新了紀錄嗎? 快來拿獎勵吧. 明天要記得繼續挑戰喔!"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "noEsc": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "defaultEx": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "sub",
+            "msg": {
+              "_dirType": "string",
+              "_value": "還沒去挑戰3次橘子拳擊機.."
+            },
+            "imgPos": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "noEsc": {
+              "_dirType": "int",
+              "_value": "1"
+            }
+          }
+        }
+      }
+    }
+  }
+}

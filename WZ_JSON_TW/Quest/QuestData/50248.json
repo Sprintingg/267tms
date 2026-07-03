@@ -1,0 +1,105 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 適合的打獵場資訊4(25～30等級)"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "又收到莉琳的連絡。應該是下一個打獵場介紹嗎…？去看看吧!"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "這次莉琳告知適合25～30等級等級等級的打獵場。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "透過莉琳的幫忙，找到了最適合的打獵場。不過從31級開始必須自己要去找社合打獵的地方了…"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "要介紹給你適合25～30等級的打獵場嗎…？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "25～30等級的話，推薦#m105070100#、#m260020610##m260020620#、#m105070001#…現在要移動嗎？移動到介紹給你4個地圖中隨機一個。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯…？一個人可以嗎…？那，請小心……"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1201000"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q50248s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "25"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "30"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  }
+}

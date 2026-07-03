@@ -1,0 +1,183 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[遺跡發掘隊] 擊倒發掘中斷地區防礙者"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#m102040100#建立了#p1022111#."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "- 公告 - \\n\\n最近在遺跡挖掘現場出現的怪物阻礙之下，延遲了遺跡挖掘。目前正在等待有勇氣的人來挑戰。 \r\n\r\n#b#m102040000##k : 打倒木面怪人50隻\r\n#b#m102040100##k : 打倒石面怪人50隻"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "已打倒妨礙遺跡發掘作業的木面怪人和石面怪人。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o2230110# #a28381#\r\n#questorder1##o2230111# #a28382#\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "37676"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022111"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022111"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2230110"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2230111"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "37676"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "- 公告 - \\n\\n最近遺跡發掘現場出沒的怪物妨礙遺跡發掘有延遲. 等待有勇氣人的挑戰."
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b#m102040000##k : 打倒木面怪人50隻\\r#b#m102040100##k : 打倒石面怪人50隻"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "隨時等待有勇氣的人來挑戰."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "- 公告 - \\n\\n掃蕩木面怪人和石面怪人的人去找到在#m102040100#的#p1022111#報告.\\r\\n\\r\\n#L0##b成功掃蕩木面怪人和石面怪人50隻了.#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "感謝幫忙遺跡發掘作業."
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "<附件>\\n掃蕩木面怪人和石面怪人的人去找到在#m102040100#的#p1022111#報告.\\r\\n\\r\\n"
+          }
+        }
+      }
+    }
+  }
+}

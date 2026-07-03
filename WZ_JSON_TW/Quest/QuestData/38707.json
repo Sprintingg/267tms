@@ -1,0 +1,163 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[生命的搖籃卡爾西溫] 調查實驗室"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "252"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "掃蕩幽靈餘黨並確保感染體。但是與幽靈的戰鬥中感覺和以前不一樣…。和那因哈特對話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "那因哈特請求調查雷普軍留下的實驗設施，以查明原因。從#b#m410007605##k進入實驗室，登入系統。\\r\\n#r(*如果遺失了卡片鑰匙的話，可能要放棄任務重新進行，或者和那因哈特對話。)"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "使用珈溫的卡片鑰匙登入了實驗室系統。 但是大部分情報已經被刪除了…。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4037197:# #t4037197:# #c4037197# / 1\r\n#questorder1#調查實驗室(#R38707ExclearRef38707#)\r\n"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q38707x"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3006553"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q38707s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "285"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "38706"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3006553"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q38707e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "38707"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "clear"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "調查實驗室"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "clear"
+          }
+        }
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4037197"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "defaultEx": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "sub",
+            "msg": {
+              "_dirType": "string",
+              "_value": "還沒開始調查實驗室嗎？"
+            },
+            "imgPos": {
+              "_dirType": "int",
+              "_value": "1"
+            }
+          }
+        }
+      }
+    }
+  }
+}

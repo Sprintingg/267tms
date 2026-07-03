@@ -1,0 +1,201 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[阿茲莫斯峽谷] 先發隊的證詞"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "293"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "赫麗娜拜託調查回來的冒險家們，了解他們看到了什麼。\r\n\r\n#r(*只能從阿茲莫斯警戒線開始。)#k"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "初次踏上阿茲莫斯峽谷的三個冒險家，因為恐懼而無法傳達正確的情報。 但是獲得了幾個關鍵字。 以這些關鍵字和赫麗娜談談吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "將從先發隊那裡聽到的情報轉告給赫麗娜。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "與#questorder1##r#p9063581##k對話\r\n與#questorder2##r#p9063582##k對話\r\n與#questorder3##r#p9063583##k對話"
+    },
+    "selfStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "260"
+      }
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "32"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q26782s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "260"
+      },
+      "subJobFlags": {
+        "_dirType": "int",
+        "_value": "15"
+      },
+      "fieldID": {
+        "_dirType": "int",
+        "_value": "993261701"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "26781"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9063580"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q26782e"
+      },
+      "npcSpeech": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9063581"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q26782_MidNpc1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9063582"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q26782_MidNpc2"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9063583"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q26782_MidNpc3"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "sayEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#b這個人就這樣一直在嘀咕什麼。#k"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#b因為不知道是不是在嘀咕還是在回答，先聽聽看吧。#k"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[瑪迦提亞城] 琪妮的祕密"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "表情哀傷的妖精#p2111004#…不知她的女兒#p2111005#的病情是否已康復呢？去見見#b#p2111004##k好了！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2111004#表示#p2111005#的病情還沒有好轉，希望幫她再去見見#b#p2012018##k，看是否有其他藥物會對#p2111005#的病情有所幫助。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "看來#p2012018#早已預料到會再去找他…"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "300"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "300"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "喔～你不是…之前幫忙把藥拿給#p2111005#的人嗎？上次真的感謝你，但是…\\r\\n#b#L0##p2111005#的狀況如何呢？#l"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "還是不太好…本來還以為藥有效果，但最後還是老樣子。呼～你願意再幫我一次嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "真的很感謝你！#p2012018#有說，若藥沒有效果，要我再去向他尋求幫助，他好像早已預知會有這樣的結果。所以請你再回到#b#m200000000##k，請#b#p2012018##k製作其他的藥後拿給我吧！那就麻煩你了～"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "說的也是…你應該也有其他的事情要忙，不好意思，讓你為難了～"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "喔喔？你不是之前轉達#p2111004#的消息的人嗎？既然你又出現在這哩，表示#p2111005#的狀況不理想囉！唉～若是妖精，應該就藥到病除的，但那小孩…"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "看來你還沒有去見#b#p2012018##k吧！既然你之前已經有去過一次，應該不會不知道他在哪裡吧？～"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2012018"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2111004"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "85"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3325"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

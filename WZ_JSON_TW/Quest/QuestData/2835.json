@@ -1,0 +1,174 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 消滅遺跡發掘地的怪物2"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#t4000197#的分析好像結束了。 跟溫斯頓詢問一下有沒有發現出現奇怪怪物的理由。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1022006#結束了#t4000197#的分析之後，大吃一驚。 好像發現了什麼，但不告訴我。 得要加快遺跡發掘，還叫我消滅妨礙我們的#o2230111# 150隻。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "雖然溫斯頓說怪物減少了很多，但我覺得一點都沒減少耶。 還有，好像從遺跡發掘地附近感覺到有些奇怪的氣息… 究竟這感覺的來歷是什麼呢？"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o2230111# #a28351#\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "55406"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022006"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2833"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022006"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2230111"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "150"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "55406"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "怎麼會?這是?"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "你，快去消滅那些妨礙發掘遺跡的怪物。 我們時間所剩無幾了。 倘若讓那些怪物繼續妨礙遺跡的發掘，很有可能遭受巨大危險。 馬上去消滅#r#o2230111# 150隻#k。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "要趕快。 要分秒必爭了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不快點結束挖掘作業，會有很大的危險出現。 做完消滅怪物的準備之後一定要回來找我。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "遺跡發掘地的怪物數量明顯減少了。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "辛苦你了。 現在可以放心進行遺跡的發掘作業了。 為了儘早完成發掘作業，以後也要多辛苦你了。 如果經過遺跡發掘地的話，就順道去減少#o2230110#和#o2230111#的數量吧。 請稍等一下。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "需要消滅#r#o2230111# 150隻#k。 現在是刻不容緩的時刻了。"
+          }
+        }
+      }
+    }
+  }
+}

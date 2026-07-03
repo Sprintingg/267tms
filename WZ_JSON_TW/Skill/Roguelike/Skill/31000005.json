@@ -1,0 +1,252 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "33111010 화이트 히트 러시"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "RAwhiteHeatRush"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "socketName": {
+              "_dirType": "string",
+              "_value": "None"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "33111010"
+          }
+        }
+      },
+      "resetVelocity": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_ResetVelocity"
+          }
+        },
+        "TriggerTime": {
+          "_dirType": "int",
+          "_value": "1"
+        }
+      },
+      "resetVelocity2": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_ResetVelocity"
+          }
+        },
+        "TriggerTime": {
+          "_dirType": "int",
+          "_value": "361"
+        }
+      }
+    },
+    "VectorSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "AnimReference": {
+            "_dirType": "sub",
+            "bEnableRootMotion": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "0": {
+              "_dirType": "sub",
+              "delay": {
+                "_dirType": "int",
+                "_value": "270"
+              },
+              "intrpl": {
+                "_dirType": "string",
+                "_value": "Linear"
+              },
+              "pos": {
+                "_dirType": "vector",
+                "_x": 0,
+                "_y": 0
+              }
+            },
+            "1": {
+              "_dirType": "sub",
+              "delay": {
+                "_dirType": "int",
+                "_value": "90"
+              },
+              "intrpl": {
+                "_dirType": "string",
+                "_value": "Linear"
+              },
+              "pos": {
+                "_dirType": "vector",
+                "_x": 0,
+                "_y": 1
+              }
+            },
+            "2": {
+              "_dirType": "sub",
+              "pos": {
+                "_dirType": "vector",
+                "_x": -350,
+                "_y": -350
+              },
+              "delay": {
+                "_dirType": "int",
+                "_value": "300"
+              },
+              "intrpl": {
+                "_dirType": "string",
+                "_value": "Linear"
+              }
+            },
+            "3": {
+              "_dirType": "sub",
+              "pos": {
+                "_dirType": "vector",
+                "_x": -350,
+                "_y": -351
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "SetCollisionBody"
+      },
+      "OnCollisionBodyHit": {
+        "_dirType": "string",
+        "_value": "attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": -100,
+          "_y": -100
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 100,
+          "_y": 100
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "33111010"
+      }
+    },
+    "attack": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "140+80*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "2"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "4"
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "300"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub"
+        }
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "2"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "4"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -215,
+      "_y": -260
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 2,
+      "_y": 5
+    },
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "140+80*x"
+    },
+    "cooltime": {
+      "_dirType": "int",
+      "_value": "3"
+    }
+  }
+}

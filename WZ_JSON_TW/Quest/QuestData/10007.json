@@ -1,0 +1,209 @@
+{
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "目前有來自總部對你的指令，你要現在確認嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "指令的內容是…\"組對任務、幹員C、超機密文件5個\"…你?聽不懂這內容？這項指令是說…要你在組對任務蒐集超機密文件5個後，前往組隊任務的獎勵區域去見幹員C。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "幹員C負責所有情報的處理，目前為了實地勘查被派到組隊任務區域。據可靠消息指出，出現在組隊任務的怪物就是\"Master M\"的手下，請你調查這些怪物，並蒐集超機密文件5個後，在去找幹員C吧！"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "你問我幹員C在哪裡？若你成功完成組隊任務，就會見到他。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那請你晚點再確認吧！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1000"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000021"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "200807100000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "200809050000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "200809050000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "200807100000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "10000"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000033"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001192"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 幹員C的諜報活動"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "變身為祕密幹員的加加向我發來了指令。會是什麼任務呢？心裡好期待啊？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "祕密幹員加加稱從組隊任務地區傳來超機密文件5份，他要我馬上前往組隊任務獎勵地區會見幹員C。\\n\\n#b<幹員C所在組隊任務地區>\\n-月妙的年糕:等級10以上\\n-第一次同行:等級21~等級30\\n-時空裂縫:等級35~等級50\\n-女神的痕跡:等級51~等級70\\n-金鉤海賊王:等級55~等級100\\n-羅密歐和朱莉葉:等級71~等級85\\n-毒霧森林:等級45~55等級"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "祕密幹員加加稱組隊任務地區傳來超機密文件5件，讓我進入獎勵地圖聯絡幹員C。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我正等著你呢。你的任務是調查組隊任務地區出沒的怪物並取回超機密文件5件。這就要看你的能力了。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "在組隊任務地區找到幹員C。"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "從本部傳來了交給你的指令。現在就要確認嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "指令的內容是 #r'組隊任務。特工C。間諜文件 5個'#k 以上喔。你說無法理解我說的內容嗎？簡單說，這指令的意思是在組隊任務上收集#b間諜文件 5個#k後，在去組隊任務獎勵地區找 #r特工C#k的意思喔。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "幹員C擔負著情報處理任務，目前正在組隊任務地區執行任務。據說組隊任務地區出沒的怪物都是#rMasterM#k的手下。調查這些怪物並獲得超機密文件5件交給幹員C。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "幹員C在哪裡？倘若你能順利完成組隊任務，那就能夠見到他！每次取得5個超機密文件時，就能獲得#b幹員C的老舊耳機#k，回收的超機密文件數量每超過100個時，就能獲得#b幹員C的超合金耳機#k。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那就以後再說吧。"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "12101"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1013"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "0"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "12101"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "1015"
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓之島] 瑞恩的測驗6"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "瑞恩的楓之谷測驗"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "6"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "來試著解開#b#p12101##k的第六個問題吧！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "終於到了第6個問題。能夠將我對楓之谷的了解運用到如此地步，實在讓人自豪。來看看第6個題目吧！"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "得知每當等級提升的時候就會獲得5點可提高人物能力值的升級點數(AP)。透過角色資料(S)視窗看到了角色的詳細資料。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "20"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "做的好！可見你對楓之谷相當了解。那麼你每次升級時都有好好分配能力值嗎？若你能好好規劃你的能力值你將會變得更強。你準備好回答第六個問題時就跟我說吧。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "每次升級就會給予角色加強能力的升級點數。那麼每次升級時給予的升級點數是多少？\\n\\n#L0##b2點#l\\n#L1#10點#l\\n#L2#5點#k#l"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "答對了。升級時會給予5點的升級點數。你按下#bS鍵#k可以確認你現在的能力。好好分配你的升級點數，讓你的能力可以有效發揮吧！"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "0": {
+            "_dirType": "string",
+            "_value": "比2點還多哦~你升級時可以按S鍵確認一下。"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "比10點還少哦~你升級時可以按S鍵確認一下。"
+          }
+        }
+      }
+    }
+  }
+}

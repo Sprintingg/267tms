@@ -1,0 +1,208 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[櫻花城] 別宮的女人"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "18"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "試著和那格雷交談。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "那格雷說得將這件事告訴美代子公主，並且要求去與天守閣1樓連接在一起的別宮，將這件事告訴公主。\\n天守閣1樓有上級忍者守著通往別宮的路口，擊退 #b#e上級忍者 120名#k#n，然後去找 #r#e美代子公主#k#n。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "那格雷說得將這件事情告訴美代子公主，並且要求去與天守閣1樓連接在一起的別宮，將這件事告訴公主。\\n天守閣 1樓有上級忍者守著通往別宮的路口，擊退 #b#e上級忍者 120名#k#n，然後去找 #r#e美代子公主#k#n。\\n擊退上級忍者，然後去別宮找公主，將那格雷的話轉達給她了。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o6500004# #a43211#\r\n"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 110,000\r\n可進行 '富士持有的情報' 任務\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "110000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2200002"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4320"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2200004"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "6500004"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "120"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "110000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "要將這件事告訴美代子公主。這件事就交給你了。公主另外吩咐我執行某個任務，所以我無法離開這個地方。拜託你了。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "美代子公主被囚禁在天守閣1樓的別宮。蟾蜍怪擔心自己的真實身份被能看穿事物真相的美代子公主發現，所以便將公主囚禁，\\n去天守閣1樓別宮的路口有上級忍者守著。擊退#b#e上級忍者120名#k#n，然後去找位於別宮的 #e#r美代子公主#n#k。#b只要從這邊往東走，就可以到達天守閣。#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "除了你以外，沒有人能做這件事了，拜託你！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "你是誰呢？為什麼會來這個地方的呢？外面應該有許多恐怖的上級忍者…？\\r\\n#L0##b我已經將上級忍者解決掉了。我受葵和那格雷的委託，專程來找公主的。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "葵和那格雷拜託你來的？既然如此，那就是來告訴我重要消息的吧！你帶來的消息是什麼呢？\\r\\n#L0##b葵的父親楓屋和領主去夜釣回來後，就突然性情大變。來到城內後，我和那格雷進行各種調查，我們認為現在佔領天守閣的領主應該是蟾蜍怪變身而成的。因為我們在中級忍者的毒針中找到蟾蜍的毒。#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "原來如此…那個人果然不是父親。那父親到底在什麼地方呢？難道妖怪將父親…！"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "美代子公主被囚禁在天守閣1樓的別宮。蟾蜍怪擔心自己的真實身份被能看穿事物真相的美代子公主發現，所以便將公主囚禁，\\n去天守閣1樓別宮的路口有上級忍者守著。擊退#b#e上級忍者120名#k#n，然後去找位於別宮的 #e#r美代子公主#n#k。#b只要從這邊往東走，就可以到達天守閣。#k"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你是誰呢？這裡並不是任何人能夠隨便進入的地方。現在房門外有上級忍者正在四處尋找入侵者當中。既然有上級忍者在，那這個地方就很危險。"
+          }
+        }
+      }
+    }
+  }
+}

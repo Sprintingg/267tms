@@ -1,0 +1,101 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[怪物收藏] 朝向草叢，朝向森林"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "怪物收藏獲得400隻"
+    },
+    "keyword": {
+      "_dirType": "string",
+      "_value": "怪物收藏獲得400隻"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "adventure"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "special"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "epic"
+    },
+    "sync": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "uiForm": {
+        "_dirType": "string",
+        "_value": "basic"
+      },
+      "gauge": {
+        "_dirType": "string",
+        "_value": "submission_info"
+      },
+      "gaugeMissionIndex": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "gaugeSubMission": {
+        "_dirType": "string",
+        "_value": "monstercollection_mob_collect"
+      }
+    },
+    "prior": {
+      "_dirType": "sub",
+      "achievement_id": {
+        "_dirType": "int",
+        "_value": "1587"
+      }
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "怪物收藏獲得400隻"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "monstercollection_mob_collect": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "long",
+              "_value": "400"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            },
+            "type": {
+              "_dirType": "string",
+              "_value": "set_if_higher"
+            },
+            "setValue": {
+              "_dirType": "string",
+              "_value": "monstercollection_mob_count"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub"
+          }
+        }
+      }
+    }
+  }
+}

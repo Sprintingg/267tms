@@ -1,0 +1,191 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[簽到] 找回湯寶寶的沾醬炸雞！"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "向#e#o9101025##n取回 #r湯寶寶的沾醬炸雞#k吧！點擊左側的簽到簿圖示的‘挑戰’鍵，展開奪回沾醬炸雞大作戰！\n\n\n#e[怪物最飢餓的期間]\n\n#b> 2014年09月30日 ~ 2014年10月15日#k#n\n\n\n#r(楓之谷世界每個帳號各個世界1天只能執行1次。)#k\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "向#e#o9101025##n回收 #r湯寶寶的沾醬炸雞30個#k吧！\n\n★#e#o9101025#是什麼呢？\\n#n以角色的等級為基準，#r-10級到 +20級範圍#k的怪物，舉例來說，角色的等級如果是 50級，40級~70級的怪物就屬於 #e等級範圍怪物#n。\n\n#e[怪物最飢餓的期間]\n\n#b> 2014年09月30日 ~ 2014年10月15日#k#n\n\n#r(楓之谷世界每個帳號各個世界1天只能執行1次。)#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "向#e#o9101025##n取得#r湯寶寶的沾醬炸雞#k30個了！按下畫面左邊簽到簿圖示的#e‘領取禮物’#n鍵，領取湯寶寶給的謝禮吧！\n\n\n#e[怪物最飢餓的期間]\n\n#b> 2014年09月30日 ~ 2014年10月15日#k#n\n\n#r(楓之谷世界每個帳號各個世界1天只能執行1次。)#k\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4034218:# #t4034218:# #c4034218# / 30\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010010"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201410160000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201409300000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q14522s"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201409300000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201409230000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "14521"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "interval_t": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010010"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q14522e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034218"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034218"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "itemEx": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "sub",
+            "msg": {
+              "_dirType": "string",
+              "_value": "噢，看來還沒從 #e#o9101025##n找回 #r湯寶寶沾醬炸雞30個#k，希望你能多加油一點。"
+            },
+            "npcID": {
+              "_dirType": "int",
+              "_value": "1092000"
+            },
+            "imgPos": {
+              "_dirType": "int",
+              "_value": "1"
+            }
+          }
+        }
+      }
+    }
+  }
+}

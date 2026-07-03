@@ -1,0 +1,251 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[每日] 個人委託 - 幽靈式劇毒"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "21"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#p3001106##k正在尋找執行委託的人。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p3001106#傳達了#p3001105#的個人委託。#p3001105#說要製作解毒劑，希望能獲得#b#t4000731##k。用毒藥來製造解藥，真的可行嗎？\r\n\r\n去#m401040600#或#m401030500#，從#o2400110#們那裡得到即可。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "已執行委託。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000731:# #t4000731:# #c4000731# / 100\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 56,499\r\n#i4310059:# #t4310059:# 1 個\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "1|0"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "except": {
+        "_dirType": "sub",
+        "lvmin": {
+          "_dirType": "int",
+          "_value": "1"
+        }
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "56499"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4310059"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001106"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "31792"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "30"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001105"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000731"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "56499"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4310059"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000731"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-100"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好~我來看看這次的委託。是#b#p3001105##k的個人委託啊。說要結合#r#t4000731##k作新的解毒劑啊？那有可能嗎~"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "雖然不知道#b#p3001105##k會不會成功，但無論如何委託就是委託~那麼，為了#p3001105#，能幫我收集100個#b#t4000731##k嗎~？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝~#b#t4000731##k可在#r#o2400110##k那裡獲得~"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "除了#b#e#h0##k#n，還有很多可以執行的人~"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "看看這是誰啊，這不是#b#e#h0#k#n嗎？是你執行我的委託嗎？真高興啊！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嘿嘿！謝謝。好久沒來一夕致富的感覺了。這次是真的！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#p3001105#在 #m401040000#~"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "什麼？ 我委託的數量是#b100個#k，100個~！100個也沒獲得？ 這樣我怎能相信你。啊？"
+          }
+        }
+      }
+    }
+  }
+}

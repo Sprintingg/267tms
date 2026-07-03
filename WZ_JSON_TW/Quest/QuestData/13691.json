@@ -1,0 +1,157 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[迎春]尤莉亞的迎春風"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "尤莉亞好像有什麼想要拜託的事情呢...."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "狩獵一般怪物,找回#b玩具風車50個#k吧.但是,犯人並不是比自己等級#r低了10級以下、高了20級以上的怪物#k,這點需要多加留意!"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "黃金連休3日間每10分去幫忙尤莉亞吧!"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i3994735:##t3994735:##c3994735#/50\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201303010000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201303040000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201302130000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201303040000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "10"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q13691e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994735"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嗨,#h0#!難得有黃金連休,過的開心嗎?尤莉亞為了黃金連休,想準備迎接春天...你願意幫我嗎?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "其實啊,為了迎接楓之谷春風的到來,我準備了風車,可是前一晚卻被怪物們拿走了.狩獵一般怪物,拿#b#i3994735##t3994735#50個#k給我.但,比你等級低#r10級以上或高20級以上的怪物不是犯人#k.那我就等你回來了!"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "呿...改變心意的話在告訴我吧.我很需要你的幫忙.."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "現在還沒收集到50個風車吧?"
+          }
+        }
+      }
+    }
+  }
+}

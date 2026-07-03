@@ -1,0 +1,167 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[克拉奇亞] 受災鎮的鎮長"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "NLC受到攻擊"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "122"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#p9201050##k需要你的協助！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "克拉奇亞受到一次可怕的地震肆虐。來自各地的楓之谷戰士受邀調查該區，尋找任何可能造成此次災害的原因。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "你決定協助#b#p9201050##k調查地震。"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 60,000"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "60000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9201050"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q28745s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "110"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "notInTeleportItemLimitedField": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9201050"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "60000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "안녕하세요! 이번 해에도 어김없이 사랑을 고백하는 발렌타인 데이가 찾아왔어요. 저한테는 남들의 얘기인 줄만 알았는데, 이번 해에는 왠지 다른 때보다 더 특별하고 마음이 두근거리네요. 사실 조심스럽게 부탁드리고 싶은 게 있는데, 저를 도와주시겠어요?"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "역시 친절한 XX님이시군요! 제가 좋아하는 사람은 사실… 운영자 님이에요!"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "메이플의 여러 행사들을 진행하면서, 항상 성실하게 모든 일들을 적극적으로 진행해 주시는 운영자님의 모습에 마음을 빼앗겨 버렸어요. 이번 기회에 운영자님께 제 마음을 고백하고 싶은데, 그러기 위해서는 선물 포장지 100개가 필요해요. "
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "이번 해는 슬픈 짝사랑으로 끝날 것 같군요"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "市鎮周圍區域搖搖欲墜，半數市民都消失了！都是這些地震害的！我們一定要查個水落石出！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "市鎮周圍區域搖搖欲墜，半數市民都消失了！都是這些地震害的！我們一定要查個水落石出！"
+          }
+        }
+      }
+    }
+  }
+}

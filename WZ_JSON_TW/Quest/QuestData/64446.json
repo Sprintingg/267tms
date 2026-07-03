@@ -1,0 +1,154 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[春節任務] 跟那因哈特製作影像信件"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "已強硬的態度拒絕參加活動的那因哈特，因突然拜訪的吉可穆德而進入沉思的樣子。跟那因哈特再次對話看看吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "那因哈特在錄製影像信件的期間，去收集心願後回來吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在跟那因哈特對話收領完成的影像信件吧。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#收集心願 #R16900ExtodayRef64446# / 10000\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9063001"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "64445"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q64446s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "61"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201902040000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201902050000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9063001"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "16900"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "10000"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "收集心願"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "today"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q64446e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "恩，我在等待邀請客人中呢。\\r\\n#h0#大人已經收集好心願了嗎？\\r\\n"
+          }
+        }
+      }
+    }
+  }
+}

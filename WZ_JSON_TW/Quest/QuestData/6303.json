@@ -1,0 +1,375 @@
+{
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#p2060100#說要把她的手鐲做成鋰礦石手鐲後在拿給她喔?不是很清楚她的#t4031464#是什麼東西，但應該是魔法的東西吧。不過#p2060100#要鋰礦石手鐲有什麼用意嗎?"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "但是#p2060100#的請求…一定要幫她嗎?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "呼呼。那麼沒有辦法。把#t4011002#10個和她的#t4031464#帶來給我。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "要先幫妳保管手鐲嗎?應該從卡勒塔那裡拿到了吧...什麼?她說手鐲也要從格瑞芬多那邊找回來喔?真的很辛苦。反正，手鐲和#t4011002#10個。不要忘記，通通要帶回來喔。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "海魔女#p2060100#。她得罪太多人了。跟那一種人交易…我覺得不是很好的想法。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "把所有材料都帶來了喔。這就是#p2060100#的手鐲…果然。看起來不是普通的手鐲。那麼加工需要一點時間…"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有找好#b#t4011002#10個#k和#b#t04031464##k嗎??要準備所有材料才可以製作#t4031463#喔."
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "200000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031464"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4011002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓之谷世界的冒險家] 製作鋰礦手鐲"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "堅固的意志"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "4"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2040050#果然知道有關#p2060100#的事情…並說和她交易並不是件令人放心的事情…但現在真的非常需要重獲意志！#p2040050#表示…為了製作#p2060100#所要的東西，需要有#b#t04031464##k和#b#t4011002#10個#k，而老舊手鐲…應該就在格瑞芬多的手中。\\n\\n#t4031464##b#c4031464#/1#k\\n#t4011002##b#c4011002#/10#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p2040050#說…加工#t4011002#需要點時間，因此要我晚點再來找他~"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "77"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "200000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2040050"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031464"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4011002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2040050"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "120"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "6302"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "112"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "122"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "132"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "212"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "222"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "232"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "312"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "322"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "412"
+        },
+        "9": {
+          "_dirType": "int",
+          "_value": "422"
+        },
+        "10": {
+          "_dirType": "int",
+          "_value": "434"
+        },
+        "11": {
+          "_dirType": "int",
+          "_value": "512"
+        },
+        "12": {
+          "_dirType": "int",
+          "_value": "522"
+        },
+        "13": {
+          "_dirType": "int",
+          "_value": "532"
+        },
+        "14": {
+          "_dirType": "int",
+          "_value": "1112"
+        },
+        "15": {
+          "_dirType": "int",
+          "_value": "1212"
+        },
+        "16": {
+          "_dirType": "int",
+          "_value": "1312"
+        },
+        "17": {
+          "_dirType": "int",
+          "_value": "1412"
+        },
+        "18": {
+          "_dirType": "int",
+          "_value": "1512"
+        },
+        "19": {
+          "_dirType": "int",
+          "_value": "2112"
+        },
+        "20": {
+          "_dirType": "int",
+          "_value": "2217"
+        },
+        "21": {
+          "_dirType": "int",
+          "_value": "2218"
+        },
+        "22": {
+          "_dirType": "int",
+          "_value": "2312"
+        },
+        "23": {
+          "_dirType": "int",
+          "_value": "2412"
+        },
+        "24": {
+          "_dirType": "int",
+          "_value": "2712"
+        },
+        "25": {
+          "_dirType": "int",
+          "_value": "3212"
+        },
+        "26": {
+          "_dirType": "int",
+          "_value": "3312"
+        },
+        "27": {
+          "_dirType": "int",
+          "_value": "3512"
+        },
+        "28": {
+          "_dirType": "int",
+          "_value": "3612"
+        },
+        "29": {
+          "_dirType": "int",
+          "_value": "6112"
+        },
+        "30": {
+          "_dirType": "int",
+          "_value": "6512"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "11212"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "11213"
+        }
+      },
+      "skill": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1121011"
+          }
+        }
+      }
+    }
+  }
+}

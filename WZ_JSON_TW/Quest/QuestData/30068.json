@@ -1,0 +1,196 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[菇菇城堡] 祕密的船長室"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "91"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "為了擺脫與菲歐娜結婚的危機所以決定出面捉拿總理大臣. 蘑菇國王不知道為何擺出來有些可惜的表情……"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了躲避與菲歐娜結婚所以出面去捉拿總理大臣. 根據菲歐娜所說,為了進入總理大臣所在的船長室,必須收集到維京們所擁有的拼圖碎片才行."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "為了躲避與菲歐娜的結婚所以出面去捉拿總理大臣. 收集進入船長是必要的拼圖碎片後拼起來…… 這, 這是黑維京的自拍照?!"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4034114:# #t4034114:# #c4034114# / 10\n#questorder2#前往船長室 (#R30068ExRef30068#)\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 42,555\r\n'船長的祕密興趣' 任務可進行"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "所有維京飛行船"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "42555"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1302000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "30067"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "30068"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "clear"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "前往船長室"
+          }
+        }
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034114"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這件事全部都是因總理大臣而起, 必須要抓到他才能結束這戰爭. 結果必須要讓好不容易逃回來的你再次接受任務,我的心也不太好受. 但是我相信你. 那麼現在馬上出發嗎? "
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yesEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "總理大臣所在的船長室在地下奴隸室的對面. 還有聽說為了進入船長室裡頭必須要拼出拼圖才行. 我也不知道到底是哪種拼圖…… #r#t4034114##k是 #b飛行船裡頭的維京們#k所持有的. "
+          },
+          "npcID": {
+            "_dirType": "int",
+            "_value": "1302001"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "喔, 那麼果然還是先跟公主舉辦結婚典禮比較好. 那我馬上叫人去準備. "
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "雖然不知道是哪種拼圖, 但還是先從 #b飛行船內的維京們#k開始搶 #r#t4034114##k來拼. "
+          }
+        }
+      }
+    }
+  }
+}

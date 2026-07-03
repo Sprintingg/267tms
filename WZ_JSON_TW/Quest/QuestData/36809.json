@@ -1,0 +1,194 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[訪客] 新裝備？"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "有什麼不錯的點子嗎？繼續聽凱莉說完吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "凱莉說想送驚喜禮物，要我替他問隊員們需要什麼裝備。和普里莫希幹部們交談吧。按順序和#b艾爾琳#k、#b卡普迪#k、#b伊克爾#k對話就行了。\r\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把和普里莫希隊員之間的對話告訴凱莉。凱莉說幸好和自己預想的沒有太大出入…凱莉想準備什麼禮物呢？"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "與#questorder1##r#p3006781##k對話\r\n與#questorder2##r#p3006782##k對話\r\n與#questorder3##r#p3006780##k對話\r\n"
+    },
+    "disableAtCompleteTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "disableAtStartTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demand": {
+      "_dirType": "sub",
+      "base": {
+        "_dirType": "string",
+        "_value": "與#questorder1##r#p3006995##k對話\r\n與#questorder2##r#p3006996##k對話\r\n與#questorder3##r#p3006994##k對話\r\n"
+      },
+      "explain": {
+        "_dirType": "sub"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "subJobFlags": {
+        "_dirType": "int",
+        "_value": "15"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3006997"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q36809s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "36808"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3006997"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q36809e"
+      },
+      "npcSpeech": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3006995"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q36809_MidNpc1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3006996"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q36809_MidNpc2"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3006994"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q36809_MidNpc3"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "嗯？還沒去見過隊員們嗎？"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[櫻花城] 破壞結界的鑰匙"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "18"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "富士似乎瀏覽過全部的祕術書了。詢問解除領主房間咒術的方法。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "富士瀏覽祕術書後表示，想要解除領主房間的結界咒術，需要 #e#b#t4000702# 70個#n#k。取得材料後去領主房間。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "富士瀏覽祕術書後表示，想要解除領主房間的結界咒術，需要 #e#b#t4000702# 70個#n#k。取得材料後去領主房間，然後打破蟾蜍怪設下的結界咒術。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000702:# #t4000702:# #c4000702# / 3\n"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 110,500\r\n可進行 '擊退蟾蜍怪' 任務\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "110500"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2200003"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4323"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2200011"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000702"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "70"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "110500"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000702"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-70"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "找到了。解除房間結界的方法！#b「裝飾鎧甲武士頭具的半月形具備月亮的力量。淨化的象徵月亮會將受汙染的毒氣解開，」#k 蟾蜍怪是具備毒氣的妖怪，所以能用月亮的力量進行淨化。再次拜託你！你能夠幫忙完成這件事吧？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "天守閣5樓領主房間附近應該會有蟾蜍怪帶來的鎧甲武士。竟然召喚出會減弱自身力量的鎧甲武士，蟾蜍怪果然很愚蠢。\\n擊退鎧甲武士，取得 #b#e#t4000702# 70個#k#n來解除領主房門的結界。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請你重新考慮一下。這件事攸關櫻花城所有人的命運。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#b(看見蟾蜍怪的結界了。將#t4000702#帶去結界附近。頭具碎片散發微弱的光芒，結界逐漸變弱，最後完全消失了。)"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b(終於能夠開門了。)#k"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "天守閣5樓領主房間附近應該會有蟾蜍怪帶來的鎧甲武士。竟然召喚出會減弱自身力量的鎧甲武士，蟾蜍怪果然很愚蠢。\\n擊退鎧甲武士，取得 #b#e#t4000702# 70個#k#n來解除領主房門的結界。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b(施有蟾蜍怪的結界咒術。看來需要具備淨化力量的物品。)#k"
+          }
+        }
+      }
+    }
+  }
+}

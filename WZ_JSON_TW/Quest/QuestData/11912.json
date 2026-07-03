@@ -1,0 +1,220 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[等級衝刺]挑戰50級"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "等級衝刺活動達到#b50級#k時，會給予#b#t1022132#(20天)#k。和楓之谷GM對話吧！\\r\\n#i1022132:##t1022132#"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "楓之谷GM說在等級衝刺活動中達到#b50級#k，會給予#b#t1022132#(20天)#k，還說達到#b50級#k時會再度來訪。努力升級達到50級吧！\\r\\n#i1022132:##t1022132#"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "達到#b50級#k可取得#b#t1022132#(20天)#k。\\r\\n#i1022132:##t1022132#"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#b達成50級#k"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#i1022132:# #t1022132:# 1 個\r\n可進行 '[等級衝刺]挑戰70級' 任務\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1022132"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "11911"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201110110000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201110290000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201110050000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201110290000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          }
+        }
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "11910"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "50"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1022132"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "period": {
+            "_dirType": "int",
+            "_value": "28800"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#b#h0##k知道現在是 #r等級衝刺！ 活動#k期間嗎？ 活動期間只要達到#b50級#k，就會給予 #b#t1022132#(20天)#k。 要挑戰看看嗎？\\r\\n#i1022132:# #t1022132#"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "很好。 那麼等#h0#升到 #b50級#k時我會再度出現。 加油！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "等級衝刺活動持續至10月28日。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好#h0#，真的好久不見了。 沒見面的這段期間已經升至#b50級#k了！ 按照約定給予 #b#t1022132#(20天)#k。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "活動期間只要達到#b50級#k，就會給予 #b#t1022132#(20天)#k。"
+          }
+        }
+      }
+    }
+  }
+}

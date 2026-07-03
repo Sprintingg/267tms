@@ -1,0 +1,282 @@
+{
+  "Act": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "458462"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000183"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-150"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000181"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-80"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "230040300"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "你好阿…這世界上有很多我沒吃過得的東西？其中 #p2060006#說要幫我做的那個食物， 一定會很好吃。但我一輩子應該無法看到那個食物 。 \\r\\n#L0##b哪一個料裡？#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "我朋友#p2060006#住在水世界裡，不久前他寄來了一封信，裡面有一張料理的照片。那料理是用大海裡的材料所做的，聽說非常美味...光看著那張照片都能感覺到它的美味啊。\\r\\n#L0##b那你可以買來吃啊？#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "是啊，這還用你說。問題就是#p2060006#說那個料理的材料相當地不好找，所以幾乎是吃不到的。啊~我好想吃一下那個料理喔！\\r\\n#L0##b難道沒有任何的方法嗎？#k"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "#p2060006#說只要能夠找到足夠的材料就願意幫我做，可是...那些材料實在是太難找了...對我來說，要把那些材料都收集齊全簡直比登天還難。如果是有人像您這樣厲害的話也許能辦到呢。可以請您幫我這個忙嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "耶～！ 謝謝你。 #p2060006#說有材料的話可製作，所以拿到材料之後去找 #m230000000#裡的#p2060006#吧。該不會這期間你改變心意了吧？不能改變喔！"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "那個材料只能深海裡獲得，所以有一些難易度。要收集 #b#t4000183# 150個#k和 #b#t4000181# 80個#k但我不敢，但是找的人是你的話應該沒問題的。那拜託了。\\n\\n#i4000183#   #t4000183# #b150#k個\\n#i4000181#  #t4000181# #b80#k個"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "啊...那些材料很難找到，只有您才能辦的到了阿…。我知道深海是非常危險的地方…唉…那個料理到底是什麼味道呢...真的好想知道..."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "唉唷! 要把#t4000183#和#t4000181#這麼多?! 是#p2060000#的委託來的嗎? 啊... 那麼想要吃這食物, 好像拜託你了的樣子啊. 如果是這料理應該就可以製作出美味的料理. "
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "完成的食物會親自拿給納努克. 感謝尋找材料."
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "收集#b#t4000183# 150個#k和 #b#t4000181# 80個#k後，把他拿給 #p2060006#的話，他會製作食物給你的 。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "收集#b#t4000183# 150個#k和#b#t4000181# 80個#k給我，我就來做那料理。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2060000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "105"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2060006"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000181"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "80"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000183"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "150"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[水世界] 納努克的料理材料"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "鯨魚島的#p2060000#非常想吃一樣料理..."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "住在鯨魚島的#p2060000#想要吃到特別的料理。住在#m230000000#的#p2060006#說過只要能收集來材料就能做好吃的料理來給#p2060000#吃...問題是那些材料實在是很難找到耶。為了讓#p2060000#如願就把#b#t4000183#150個#k和#b#t4000181#80個#k收集好拿給#b#p2060006##k吧。\\n\\n#t4000183##b#c4000183##k/150\\n#t4000181##b#c4000181##k/80"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "住在鯨魚島的#p2060000#想吃到特別的料理。只要收集到#t4000183#150個和#t4000181#80個，#p2060006#就能做出料理...收集好材料之後找到了#p2060006#。#p2060006#要我等他把料理做完後，再送去給納努克。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "35"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "458462"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "returnMapID": {
+      "_dirType": "int",
+      "_value": "230000003"
+    },
+    "returnPN": {
+      "_dirType": "string",
+      "_value": "2060006"
+    },
+    "targetType": {
+      "_dirType": "int",
+      "_value": "-1"
+    },
+    "returnType": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demand": {
+      "_dirType": "sub",
+      "explain": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2030001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "75"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q3020s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3018"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2030001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000051"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "戒指的祕密"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "尋找《上古魔書》"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "4"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "巴伯下士好像知道什麼眼神. 說最近狼的皮革價值提升, 所以收集野狼的尾巴 100個就會交還戒指後會告訴他所知道的事情."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "收到了戒指巴伯下士好像知道什麼眼神. 收到野狼的尾巴的巴伯下士把戒指交還且說出他知道的所有事情."
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "33"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "再次向巴伯下士詢問有關戒指的事情."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4000051:# #t4000051:# #c4000051# / 100\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "137155"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031053"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "137155"
+      },
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "3029"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000051"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-100"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "喔喔... 這真是漂亮的戒指... 雖然看起來老舊, 但是好像有附有特殊的力量? 哪裡... 稍微給我看看. 要詳細看看. 告訴有關這戒指? 恩, 好. 不過為了我代替我做件事情. 要怎麼辦?"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "很好！委託相當的簡單。最近野狼的狼皮價格在漲，這些傢伙說現在是險惡的時期，所以無法輕易相信。如果你能收集#b#t4000051#50個跟#t4000052#50個#k給我的話，我就把戒指還給你，同時我也會把我知道的情報都跟你說。你最好不要一直等我呀。我會儘量快點拿來給你的！"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "很好, 交易成立! 暫時這戒指由我保管. 要委託的事情很簡單. 需要狼的皮革, 這傢伙開始凶暴的時期而較難取得. 收集#b#t4000051# 100個#k時會把戒指交還且會告訴我所知道的情報. 不要讓我等太久會比較好. 盡可能快點帶回! "
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不想知道有關戒指的祕密嗎?"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "呼呼... 依約定帶回#b#t4000051# 100個#k了啊. 很好. 按照約定把戒指交還, 也說出我知道的所有."
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "需要狼的皮革 這傢伙開始凶暴的時期而較難取得. 收集#b#t4000051# 100個#k時會把戒指交還且會告訴我所知道的情報. 不要讓我等太久會比較好!"
+          }
+        }
+      }
+    }
+  }
+}

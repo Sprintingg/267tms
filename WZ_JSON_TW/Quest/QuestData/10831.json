@@ -1,0 +1,192 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 楓之谷GM的宅配"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b楓之谷GM#k拜託黃金富豪的#b#t4032803##k由於遭到怪物的襲擊而遺失了。從怪物手上找回#b#t4032803##k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "送宅配物品給楓之谷GM。不過，楓之谷GM拜託黃金富豪的到底是什麼東西呢？"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4032803:##t4032803:##c4032803#/1\r\n"
+    },
+    "autoCancel": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201103140000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201104040000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201008300000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201009270000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "10828"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "dayOfWeek": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "Monday"
+        }
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q10831e"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032803"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "dayOfWeek": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "Monday"
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032803"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊，是黃金富豪先生寄來的東西啊。我正在等這些東西呢。因為這些東西非常重要，必須要在今天之內重新送出去才行。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "幫我送東西的事，真是謝謝你啊。下一個是#b楓之谷GM#k吧？那你得把握時間了。要想在今天之內送到的話…"
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這是我在黃金富豪先生那裡訂購的東西啊。讓你送到這麼遠的地方，真是辛苦你了。現在能不能把那東西交給我啊？因為這些東西，要快點寄出去…"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我聽說，好像是被怪物偷襲的時候弄丟了…總之辛苦你了。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "看不到我的快遞箱子呢。"
+          }
+        }
+      }
+    }
+  }
+}

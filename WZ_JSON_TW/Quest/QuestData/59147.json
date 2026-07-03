@@ -1,0 +1,192 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[幻獸師] 減輕天空之城的重量"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "85"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "跟在#p2032001#的家見到的女孩說話吧."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "見到了在#p2032001#家不知來歷的女孩.他說天空之城漸漸下沉的原因之一是,住在雲上庭院的怪物越來越多.他請我各抓#r#o3230200#, #o4230106##k#b50隻#k."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "照#p2032001#家遇到的女孩請求,抓到了星光精靈和月光精靈各50隻.天空之城下沉的速度雖然減緩了...但還不代表天空之城的危機已經解除了. \r\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o3230200# #a591471#\r\n#questorder1##o4230106# #a591472#\r\n"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好.你跟旁邊#p2032001#所說的話我都聽見了.現在不能煩#p2032001#.現在他想透過冥想,找出可救天空之城的方法."
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "事實上#p2032001#很早以前就預知這件事,因為這個理由花費很多苦心.雖然現在還沒得到很正確的答案,也有可能是天空之城的重量漸漸變重了.所以我想拜託你一件事可以嗎?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "天空之城重量漸漸變重的理由是怪物.怪物的數量慢慢變多了. 首先當務之急是將天空之城的重量減少,減緩下降的速度."
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "現在立刻除掉#o3230200#,#o4230106#各50隻.要除掉這樣的數量,才能減少天空之城的重量."
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "想拜託你阻止看看漸漸下降的天空之城.\r\n"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "難道你就這樣看著天空之城漸漸下沉墜落嗎?\r\n"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2032000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201312201700"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201312201700"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "59146"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub"
+      },
+      "job_TW": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "11212"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "11213"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2032000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q59147e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3230200"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4230106"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

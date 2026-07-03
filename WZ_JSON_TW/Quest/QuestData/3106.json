@@ -1,0 +1,208 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[組隊任務] 傳說中的雪毛怪人"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "雪原的巨人"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "從#p2020007#處得知雪毛怪人的情報了。據#p2020007#所說，那是還滿溫馴的生物，怎麼會攻擊#p2020006#呢？再去問問#b#p2020006##k好了。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "將#p2020007#所說有關#o8220001#的事情，講述給#p2020006#了。但#p2020006#生氣地表示，是#o8220001#先攻擊了他。這和#p2020007#所說內容大有出入，究竟誰說的是事實呢？或者...還別有隱情？再去找#p2020007#瞭解一下吧！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "49"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "32795"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2020007"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "115"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3105"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2020006"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "32795"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "#p2020006#也許是遇到#b#o8220001##k了.\\r\\n#b#L0##o8220001#是什麼呢?#l"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "雪毛怪人長相與雪吉拉極為相似，但它們個頭更大，性格也非常溫順。傳說是由雪精靈與人類結合而誕生的生物。\\r\\n#b#L0#傳說？你能說得更仔細嗎？#l"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "雪毛怪人擁有人類的心靈和怪物的外貌，因此遭到人類的排斥。可憐它們的雪精靈就為它們封起了一整座山脈。\\r\\n#b#L0#整座山脈全部冰封？真是太不可思議了...#l"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "是啊。雪精靈為雪毛怪人冰封的山脈就是這冰原雪域山脈。之後，雪毛怪人為了避開人類就一直隱居在這冰原雪域山脈的深處。人類是鮮少能夠見到它們的.\\r\\n#b#L0#這個傳說是真的嗎？#l"
+      },
+      "4": {
+        "_dirType": "string",
+        "_value": "這個嘛。傳說畢竟是傳說，是真是假已經無從考證了，但是雪毛怪人性情很是溫和，幾乎沒聽說過人類與雪毛怪人發生衝突的事情，杰德這傢伙是不是做了什麼事！？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "3": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "能和隱藏在深山老林的雪毛怪人發生衝突，他這也算是運氣啊？我倒是想見一見呢，幾十年來我都在這裡打獵，但一次也沒見過，你說是不是很奇怪？"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你回去把我的話對他說，也許是有其他什麼事。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "你見過史卡圖勒了嗎？他怎麼說？\\r\\n#b#L0#(講述從史卡圖勒得來的關於雪毛怪人的故事。)#l"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "什麼？溫順？不可能！分明就是它們先攻擊我的！絕談不上什麼性情溫順。史卡圖勒一定是記錯了。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你對杰德說雪毛怪人是很溫順的生物，那傢伙一定是做了什麼事情惹雪毛怪人生氣。"
+          }
+        }
+      }
+    }
+  }
+}

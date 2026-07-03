@@ -1,0 +1,196 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[神木村] 幻龍的角"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "41"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4001401:##t4001401:##c4001401#/1\r\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "村長塔塔曼說有個請求，需要我幫助。從夢幻龍族的身上獵取他的角之後，回來交給塔塔曼村長。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "村長塔塔曼希望我去擊倒幻龍，並且把它的角帶回來。"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "依照村長塔塔曼的委託，蒐集到了幻龍的角，希望對那些受傷的家畜們能有幫助…"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "383306"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2081000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "150"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3757"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2081000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001401"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "383306"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001401"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#b#h0##k，終於弄清楚它的身份了，既然你幫了我這麼多，能否再順便幫我一個忙？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那個傢伙騎著龍，在之前家畜們受到它所攻擊的傷勢一直都沒有好轉，但如果能夠獲得它的角並磨成粉配藥，應該就能好轉起來。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "你能幫我擊敗它，並蒐集1個#b#t4001401##k嗎？拜託你了！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "真的不願意嗎？這是只有你才能解決的問題啊……"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "終於擊敗了它。快！在村里的家畜們死掉之前，快把它的角給我配藥吧。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "真是太感謝你的幫忙了。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請你務必要消滅御龍魔，並把龍頭上的角#b#t4001401##k拿回來。"
+          }
+        }
+      }
+    }
+  }
+}

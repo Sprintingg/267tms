@@ -1,0 +1,242 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓之谷世界的冒險家] 勸解大幽靈"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必需]"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "鴻亞的臉色不太好，不會有什麼事情吧？回去找#b鴻亞#k。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "雪姬小姐說因夢中出現大幽靈晚間無法入睡。要勸解大幽靈嗎？消滅#b墮落城市地下鐵#k的#r大幽靈#k。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o4230102# #a23841#"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "除掉大幽靈讓雪姬小姐安心入睡吧。"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 225\r\n#i2001502:# #t2001502:# 30 個\r\n可進行 '要章魚來進補' 任務\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "77"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "225"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2001502"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1057001"
+      },
+      "subJobFlags": {
+        "_dirType": "int",
+        "_value": "2"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "14"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2355"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1057001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4230102"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "225"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2001502"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "完蛋了。 真的。 這該怎麼辦呢?\\r\\n#L0##b發生什麼事情嗎?感覺臉色也不是很好 。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "雪姬小姐最近怎麼也睡不著，真是擔心啊。因為那些整夜咯咯叫的大幽靈們，總是無法睡覺。我還要監視這裡，你能不能去勸勸那些大幽靈？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "叫大幽靈的幽靈們要想能讓人做噩夢。到墮落城市地鐵深處就能看到#b大幽靈#k。在那裡除掉那些大幽靈吧。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "如果沒信心讓他們沉睡，除掉#r大幽靈10隻#k左右也可以。當然你自己看著辦吧。那我就交給你了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "看來你不擔心雪姬小姐。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊。成功讓大幽靈沉睡了？當然除掉也沒關係。呵呵。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "給，辛苦你了。爽快地喝杯藥水吧。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "讓大幽靈沉睡，如果沒信心可以除掉#r大幽靈10隻#k！到墮落城市地鐵深處應該能見到。"
+          }
+        }
+      }
+    }
+  }
+}

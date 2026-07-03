@@ -1,0 +1,208 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[每日] 掃蕩黑色菇菇團"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#p9000292##k好像需要幫助。去對話看看吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b#p9000292##k請我教訓 #r#o9303142#共 #k #b200隻#k 。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "已經教訓 #r#o9303142##k了。 #b#p9000292##k的研究應該會變得順利些吧。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o9303142# #a329481#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#i4310165:# #t4310165:# 15 個"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4310119"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "15"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000292"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q32948s"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201509020000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201509020000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32917"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201506240000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201506240000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000292"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9303142"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "200"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4310165"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "15"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "喂，人類，聽我說一下。之前碰到的黑菇菇團… 到現在還沒清醒，一直來妨礙我的研究呢。可以幫我去教訓一下他們嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我幫你傳送到有黑菇菇團的地方。就幫我教訓 #b200隻#k吧。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好…好吧。真的很忙就沒辦法了。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "已經幫我教訓黑菇菇團了嗎？那麼給你 #i4310165# #b#t4310165##k 15個吧！謝謝！"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請教訓黑菇菇團200隻。如果想要再次傳送到他們所在的地方，請#r放棄任務後#k，在跟我對話吧。"
+          }
+        }
+      }
+    }
+  }
+}

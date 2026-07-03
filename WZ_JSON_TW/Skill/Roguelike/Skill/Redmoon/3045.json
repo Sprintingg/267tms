@@ -1,0 +1,277 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "카디널 트랜지션 3311002"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "PFCardinalTransition"
+          }
+        },
+        "Segment1": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "PFCardinalTransitionAttack2"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          }
+        }
+      },
+      "effect2": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub"
+          },
+          "z": {
+            "_dirType": "int",
+            "_value": "-2"
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "3311002"
+          }
+        }
+      },
+      "attack": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "390"
+        }
+      },
+      "effect3": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "390"
+        },
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          }
+        }
+      },
+      "teleport": {
+        "_dirType": "sub"
+      },
+      "buff": {
+        "_dirType": "sub"
+      },
+      "attackEffect": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "390"
+        },
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "teleport": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Teleport"
+      },
+      "subType": {
+        "_dirType": "string",
+        "_value": "Directional"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "distance": {
+          "_dirType": "string",
+          "_value": "400"
+        },
+        "initialDirection.X": {
+          "_dirType": "string",
+          "_value": "-1"
+        },
+        "searchDistanceY": {
+          "_dirType": "string",
+          "_value": "400"
+        }
+      }
+    },
+    "attack": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "90+45*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "5"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "6"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -250,
+          "_y": -130
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 250,
+          "_y": 50
+        },
+        "stunDuration": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "50"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "randomHitOrigin": {
+            "_dirType": "int",
+            "_value": "30"
+          }
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "3311003"
+      }
+    },
+    "buff": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "SelfBuff"
+      },
+      "selfBuffID": {
+        "_dirType": "int",
+        "_value": "3041"
+      },
+      "selfBuffAction": {
+        "_dirType": "string",
+        "_value": "Apply"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "90+45*x"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "5"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "6"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -500,
+      "_y": -50
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 0,
+      "_y": 0
+    },
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "cooltime": {
+      "_dirType": "int",
+      "_value": "6"
+    }
+  },
+  "maxCooldownStack": {
+    "_dirType": "int",
+    "_value": "2"
+  },
+  "SkillTags": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "string",
+      "_value": "RLGame.Skill.Extra"
+    }
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[簽到]任務!收集粉紅風扇!"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "炎熱的夏天,不能再繼續受這種酷熱了!去找尤莉亞吧.\r\n\\r\\n#e[夏季出席活動第2季日程]\\n>2013年07月18日~2013年07月31日#k"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "收集能克服酷熱的#i3994855##t3994855#30個,拿去給尤莉亞後可以蓋點名印章和獲得禮物!\r\n\\r\\n#e[夏季點名活動第2季時間表]\\n>2013年07月18日~2013年07月31日#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "呼..每次渡過夏天是一個很難的任務之一.可還是不放棄努力贏過夏天後,也不能放過出席印章和禮物!\n\\r\\n#e[夏天出席活動第2彈行程]\\n>2013年07月18日~2013年07月31日#k"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i3994855:##t3994855:##c3994855#/30\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q14073s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201307180000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201307312359"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201307110000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201307242359"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "interval_t": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q14073e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994855"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒收集到#b#e#i3994855##t3994855#30個#k#n?狩獵平原的一般怪物可以獲得!但,比你等級低#r11級以上或高21級以上的怪物沒有#t3994855#身上沒有#k,要記得啊!"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[克林森烏德城] 與魔族力士的戰鬥"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "66"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "與#p2134012#談論該如何使魔族居民逃脫吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了使魔族居民能逃脫，首先必須擊退魔族力士陣營中的100隻提砰，還有100個魔族力士，清出一條路。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "擊退魔族力士陣營中的100隻提砰，還有100個魔族力士為魔族居民準備了一條逃脫的路線。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o8148000# #a312461#\r\n#questorder1##o8148001# #a312462#\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "1779928"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demand": {
+      "_dirType": "sub",
+      "explain": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2134012"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "130"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31245"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2134012"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8148000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8148001"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1779928"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這麼說的話…你幫我個忙吧。\\r\\n為了讓他們能逃脫，你幫忙吸引士兵和妖魔的注意吧。擊退100隻#b#o8148000#和100隻#o8148001#的話，#k監視網會出現漏洞，居民們應該就能逃出來了…你覺得如何？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我就知道你會接受的。看到那邊的四個門了嗎？進去其中#b右邊的第一個門#k就可以了。就是前面有個手拿劍的戰士銅像的那個門。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "不管你有多強，絕對不能輕敵。\\r\\n#b（通過右邊第一道門，前往戰士的陣營吧。)#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "以你這種程度的力量，應該不太難啊？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "噢，做的好。就算#o8148001#再怎麼強，應該也嚇到了吧？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "現在可以讓居民們開始逃脫了。\r\n#b(到#p2134009#看看吧。)#k"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "現在士兵和妖魔還是太多，居民沒辦法逃。幫忙再多擊退一點吧。#b#o8148000# 100隻和#o8148001# 100個#k的話就可以了。"
+          }
+        }
+      }
+    }
+  }
+}

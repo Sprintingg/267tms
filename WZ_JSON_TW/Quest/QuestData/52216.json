@@ -1,0 +1,117 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 鬥神擂台 5次達成"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "鬥神擂台 1次實在是太簡單了。挑戰鬥神擂台 5次看看吧。向戰鬥廣場解說員#b#p9070005##k對話就可以了。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "戰鬥廣場解說員#p9070005#告知有關 鬥神擂台開幕紀念活動。進入鬥神擂台後，只有完成一次就可以的樣子…快點挑戰看看吧。\r\n\r\n#rTip！ 只要完成一局就可以獲得獎勵的鬥神擂台 參加次數已計算完畢。中間若自行退出的話，無法計算Score且也無法完成任務。#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "鬥神擂台進行5次後，就可以從 #p9070005#領到獎勵。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "達成鬥神擂台 1次感覺如何呢？簡單到像打呵欠一樣吧？那麼為了你而專門準備的下個活動！ 這次是達成 鬥神擂台 5次，如何呢？現在馬上就要來挑戰嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "與任何模式無關。只要達成#b鬥神擂台 5次#k後，就再來找我吧。我會給你準備好的禮物！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "唉噫…鬥神擂台 1次很難嗎？這該怎麼辦…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有達成 #b鬥神擂台 5次#k嗎？啊啊，這樣我也不能給你禮物呢…真是意外……"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9070005"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "52215"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9070005"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q52216e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  }
+}

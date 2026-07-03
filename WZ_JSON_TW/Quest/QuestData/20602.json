@@ -1,0 +1,226 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1101004"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "90"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20600"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "1211"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "1212"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1101004"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032121"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032121"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      },
+      "skill": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "12111004"
+          },
+          "masterLevel": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "job": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "int",
+              "_value": "1211"
+            },
+            "1": {
+              "_dirType": "int",
+              "_value": "1212"
+            }
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇家騎士團] 烈焰巫師的新技能"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "好好思想#p1101002#說過的話，好像是說可以向#b#p1101004##k學習新的技能…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1101004#說雖然有新的技能，但是以目前的等級學習太危險，若要學習新的技能必須證明已有足夠的能力。向#m130020000#的#b第三練武場#k取得#t4032121#就可以…\\n\\n#i4032121##t4032121##b#c4032121#/1#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "擊倒怪物取得了#t4032121#。#p1101004#說已獲得學習新技能的資格。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "來這裡有什麼事？什麼？新的技能？是#p1101002#說的嗎？明明告訴他要保守祕密…！新的技能？雖然是有…但是#h0#要學習的話等級還不夠…太危險無法學習的…\\n#b#L0#雖然危險我還是想學習技能。#l\\n#L1#既然說危險就沒辦法嚕…#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "…若要學習技能有一個方法。就是你要證明你有能力學習這個技能。哈，當然是不容易。可能危及性命。這樣…也沒問題嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "你…放棄了嗎？…其實我希望你回答說危險也要挑戰…"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "前往修煉森林盡頭就有#m130020000#。前往#b第三練武場#k…參加已準備好的試煉後取回#b#t4032121##k。那就傳授技能給你。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "…還好。但是，有一種很遺憾的感覺…不是啦！安全是最重要的！要變的更強是其次…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "拿#t4032121#回來嚕！真了不起！啊啊，還好…我還擔心呢…你有資格學習這技能了！那就傳授技能給你！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "傳授給你烈焰巫師的新技能#b召喚冰魔#k！你要好好的使用它！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有取得#b#t4032121##k的樣子吧...前往#m130020000#的#b第三練武場#k參加預備好的試煉取回#t4032121#吧…因為很危險必須做好萬全準備後進入吧！"
+          }
+        }
+      }
+    }
+  }
+}

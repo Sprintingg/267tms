@@ -1,0 +1,154 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[春節任務] 跟吉可穆德製作影像信件"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "吉可穆德似乎有決心的樣子。再跟她對話看看吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "吉可穆德在錄製影像信件的期間，去收集心願後回來吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "吉可穆德在錄製影像信件的期間，收集了心願後回來了。再跟吉可穆德對話接收完成的影像信件吧。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#收集心願 #R16900ExtodayRef64426# / 10000\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400797"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "64425"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q64426s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "61"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201901300000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201901310000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400797"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "16900"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "10000"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "收集心願"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "today"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q64426e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "恩恩，目前還在拍攝影像信件中呢。看起來你也還沒收集好心願呢？"
+          }
+        }
+      }
+    }
+  }
+}

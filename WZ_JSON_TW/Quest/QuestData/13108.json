@@ -1,0 +1,188 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓之谷城堡] 拉尼亞　小心糖罐!"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "餐廳那裡傳出了奇怪的聲音。在大廳裡的拉尼亞好像坐立難安的樣子呢... "
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "拉尼亞不小心碰著了糖罐的封印，喚來了軟呼呼鮮奶油怪物。清除餐廳裡的軟呼呼鮮奶油怪物吧。 "
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "清除軟呼呼鮮奶油怪物之後將糖罐的封印放在手上。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o9500586# #a131081#"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "q13108"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000139"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201310230000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201310230000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201311060000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201311060000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "13105"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994659"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000139"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q13108e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9500586"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "請幫我！嗚嗚！ 只是拿錯糖罐，餐廳變成焦土。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝。事實上我不太會料理... 想要替大家做一頓好吃的…結果，這全部都是糖罐的關係。我碰了放了太久的糖罐！解開了密封的罐子... "
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "召來了#b#e#o9500586##n#k怪物！可能是沉睡在糖罐很久的怪物。我無法贏怪物。請幫忙。擊倒在餐廳的#b#e#o9500586##n#k！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "等一下！別就這樣走了~~~ "
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "ㅇ"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "ㅇ"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "餐廳還很亂。趕快擊退吧！"
+          }
+        }
+      }
+    }
+  }
+}

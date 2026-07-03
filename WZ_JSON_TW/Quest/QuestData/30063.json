@@ -1,0 +1,187 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[菇菇城堡] 尋找公主1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "91"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽到知道要怎麼進入有著被綁架的菲歐娜的飛行船裡的蘑菇國王非常開心的樣子. 但是進入飛行船內後可以輕易找到菲歐娜嗎? 與蘑菇國王對話看看. "
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "雖然打聽到了進入飛行船裡面的方法, 一堆膽小的菇菇中沒有人要去救出公主. 蘑菇國王一想到嬌弱的菲歐娜會有多麼的辛苦馬上就落下眼淚,並且請求幫忙救出公主. "
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "因蘑菇國王的請求,為了尋找菲歐娜公主,進入了維京的飛行船中. 還有在飛行船的甲板上遇見了被俘虜的菇菇詹姆士. "
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#在城堡後門尋找裝置 (#R30063ExRef30063#)\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 31,215"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "#m106030500# "
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "30063"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "31215"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1302000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "30062"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1302020"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q30063e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "30063"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "clear"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "在城堡後門尋找裝置"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "是你直接拷問俘虜而打聽到情報的嗎? 到底是用什麼方法? 祕密…… 應該是用了什麼惡毒的拷問. 不會再問你了. 總之知道了怎麼上去飛行船的方法,終於看見了救出菲歐娜的希望了. "
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "但是問題應該是誰要去救出公主. 雖然很丟臉但我們菇菇中好像沒有人要出面的樣子. 大概是因為害怕兇殘的維京的樣子. ……為什麼要這樣看? 還不快點接受. "
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "那嬌弱的孩子該有多麼辛苦, 嗚嗚! 現在能相信的只有你了. 只要救回公主的話就給你你所想要的東西. 就是跟菲歐娜結…… 嗯? 已經走了嗎? "
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "呼, 那麼就只能使出最後的方法了. 救回菲歐娜的話就讓你跟他結婚! 這種情況下管你是男的是女的, 是菇菇還是不是菇菇都已經沒有關係了? "
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "一定要跟菲歐娜一起回來才行! 只要平安救回菲歐娜的話你想要什麼都聽你的. "
+          }
+        }
+      }
+    }
+  }
+}

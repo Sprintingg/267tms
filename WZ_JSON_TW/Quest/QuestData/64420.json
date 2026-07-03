@@ -1,0 +1,142 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[春節任務] 曉之陣士兵救援賞金"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "disableAtPerformTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "disableAtCompleteTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "成功救出曉之陣士兵 50名後，從耶願來了聯絡。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400792"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "64496"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "50"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "dawn"
+          }
+        }
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "64414"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q64420s"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201901300000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201902130000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400792"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "太優秀了，現在做的很好呢！\\r\\n託#h0#大人的福，回來了士兵們都請我幫忙轉達感謝的問候呢。\\r\\n阿，下列是目前為止 #h0#大人所救出的士兵數。\\r\\n\\r\\n#questorder1#救出西格諾斯士兵  #R64496ExcygRef64422# / 50\\r\\n#questorder1#救出末日反抗軍士兵 #R64496ExresiRef64422# / 50\\r\\n#questorder1#救出曉之陣士兵 #R64496ExdawnRef64422# / 50\\r\\n#questorder1#救出超新星士兵 #R64496ExnovaRef64422# / 50\\r\\n"
+          }
+        }
+      }
+    }
+  }
+}

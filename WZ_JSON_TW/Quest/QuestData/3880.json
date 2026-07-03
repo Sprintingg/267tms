@@ -1,0 +1,142 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[星星力量] 消失在西邊的光芒"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "41"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#m240000000# 村莊又降下一道光芒了，去找 #p2081000#談談吧。\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2081000#說昨晚又有流星墜落了，這次是墜落在米納爾西邊森林附近，去確認情況吧。\r\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "受#p2081000#拜託而去尋找墜落在米納爾西邊森林附近的星星痕跡，在那邊遇到看見流星的#p2081007#。"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "#m240040400#\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "586787"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2081000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "130"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2081007"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "586787"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "為何會接二連三發生這種不吉利的事情？！不久前墜落在鄰近森林的星星讓村莊發生了一大騷動。沒想到又看到那個星星了，這下該怎麼辦才好呢？噢噢，對了，你願意挺身而出嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "新的星星墜落在 #r米納爾西邊的森林#k，從方向看來，好像是在#b#m240040400##k附近……你去確認一下狀況吧！我因為不安，根本就睡不著。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不要這麼嚴苛，越是艱困的時候，就應該要齊心協力，這樣才能找回以前的和平。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊啊，我在夜晚看見了很神奇的東西，會不會是好預兆呢？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你怎麼知道呢？對，我看到的就是流星，而且是非常巨大、明亮的流星。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "星星墜落的地方好像是 #b#m240040400##k附近，你去確認一下吧。"
+          }
+        }
+      }
+    }
+  }
+}

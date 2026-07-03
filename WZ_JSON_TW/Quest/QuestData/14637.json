@@ -1,0 +1,172 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[발렌타인] 발렌타인 초콜릿 포장하기 "
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "카산드라의 발렌타인 깜짝 이벤트 도와주기! 그 첫번째!\r\n카산드라를 찾아가 자세한 이야기를 들어보자. "
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "레벨범위 몬스터에게서 #i4034308##b#t4034308##k와 #i4034309##b   #t4034309##k를 각 20개씩 빼앗아 카산드라에게 전해주자.\r\n\r\n★레벨범위 몬스터란?\r\n캐릭터의 레벨을 기준으로 -10레벨에서 +20레벨 범위에 해당하는 몬스터. \r\n\r\n★이벤트 기간?\r\n   2015년02월12일 ~ 2015년02월26일\r\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "카산드라를 도와주고 초콜릿 선물을 받았다.\r\n#b사랑의 메신저 화원#k을 방문해 내가 호감 있는 남자에게... 초콜릿을 전달해보자. 아니 뭐 꼭... 주지 않고 사랑의 메신저 화원으로 가 스스로 먹어버려도 상관은 없다. "
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4034308:# #t4034308:# #c4034308# / 20\r\n#questorder1##i4034309:# #t4034309:# #c4034309# / 20\r\n"
+    },
+    "deleteItem": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "int",
+        "_value": "4034308"
+      },
+      "1": {
+        "_dirType": "int",
+        "_value": "4034309"
+      }
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010010"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q14637s"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201502270000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201502120000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "14636"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010010"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q14637e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034308"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034309"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "아직도 다 모은거야? 느려느려!"
+          }
+        }
+      }
+    }
+  }
+}

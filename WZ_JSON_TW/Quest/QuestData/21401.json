@@ -1,0 +1,159 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[過去的英雄，狂狼勇士] 勸解發飆的矛"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "6"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#p1201002##k好像發生了什麼事情。是什麼事情？為什麼這麼難過？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "數百年的歲月裡，沒有主人的陪伴#p1201002#獨自生活的過程中，心裡產生的黑暗使他偶爾會發飆，請求幫忙阻止自己。只要打敗#p1201002#就能阻止發飆…雖然不太容易，不過這是主人應該做的。阻止#r#o9001014##k。\\r\\n\\r\\n#o9001014##r#a214011##k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "打敗#o9001014#了。停止發飆的#p1201002#找回了大部分過去的力量。"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[轉職]"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1201002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q21401s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "21400"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2111"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1201002"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q21401e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9001014"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "…為什麼變成這樣？。不太想說。還是瞞不了主人吧？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "…你被冰裡捆著過數百年的時候我也在冰裡，那麼漫長的時間沒有主人的日子對我來說太…所以我的心裡有了陰影。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "但是你甦醒後陰影完全消失了。覺得主人回來後就沒什麼可惜的就這樣什麼都擺脫了，但覺得都是錯覺。"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "拜託狂狼勇士…阻止我。可以阻止我暴走的只有你。現在我無法抑制我自己了！想辦法打倒我。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "啊啊。沒能打倒暴走的分身嗎？想再試一次先放棄任務再試。"
+          }
+        }
+      }
+    }
+  }
+}

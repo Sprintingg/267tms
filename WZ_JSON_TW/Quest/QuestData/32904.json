@@ -1,0 +1,150 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[粉豆] 粉豆的分身, 迷你啾"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "據說粉豆身邊像分身一樣的迷你啾圍繞著.\r\n智力, 體力, 外貌等所有都從粉豆分出而是個不完整的存在. \r\n想要引誘他們需要5個大肉排嗎?\r\n大肉排聽說聽說可以收集在10週年慶典會場掉出的開發者信就可以交換, 所以先收集大肉排."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在10週年慶典會場收集開發者的信交換5個大肉排."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "收集到所有大肉排了. 只剩下引誘迷你啾的事情!\r\n\r\n#r注意!\\r\\n丟掉#i2432706#   #t2432706# 時無法完成[粉豆]任務.\r\n收集1個開發者的信可向慶典知己菇菇交換大肉排."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i2432706:# #t2432706:# #c2432706# / 5\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000292"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q32904s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201506240000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201509020000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201506240000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201509020000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32903"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q32904e"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000292"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2432706"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有收集到#b#i2432706#   #t2432706##k嗎? 在10週年慶典會場使用5個開發者的信交換就可以了."
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[埃德爾斯坦] 需要細胞樣本"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "24"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "位於礦山#m310060000#黑色翅膀的瘋狂科學家#b#p2154009##k，充滿傲氣的想要進行實驗。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2154009#說對#r#o8105005##k生產的機制非常的好奇，因此請幫忙收集#b#t4032776##k。總之他沉迷在研究似乎有點精神異常。\n\r\n#i4032776##t4032776##b#c4032776#/30"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p2154009#開心的大笑起來。果然不像是正常的人。只要有這細胞樣本複製小礦石依多應該不是夢想…"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "69900"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2154009"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "23966"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201012291200"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201012291200"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2154009"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032776"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "senseEXP": {
+        "_dirType": "int",
+        "_value": "-20"
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "69900"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032776"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "好奇好奇！好奇的要快發瘋！叫#o8105005#生物的機制到底怎麼形成的？吃石頭和岩石，還可以產出礦石！我好奇的快發瘋了！\\r\\n#L0##b(#p2154009#像看不到周圍一樣瘋狂地騷動著。讓人無法接近…)#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "得要查出，有什麼好方法呢？方法還是一個吧？還有你幫我，是吧？對！不會不幫忙的！能在歷史留下的這麼大的研究！"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請你去向 #r#o8105005##k取回 #b細胞樣本#k #b30個#k 吧。它們不但皮膚堅硬，且若體力消耗至某種程度就很容易被消滅，所以不容易取得，但還是會有辦法。我就相信你了！"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "可能會發現驚人的東西！是的！…自言自語…"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "要拒絕是不可能的！阻礙科學偉大發展的壞蛋就在這裡！以正義的名義要毀掉你！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "…自言自語假如狀態是那樣，那麼就用第41假設不是用化學方法改變礦石依多的結構…終於找到#t4032776#了嘛！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "哇哈哈哈哈！是這個！這個！有了這個複製礦石依多就不是夢！我就會是留名青史的名科學家！哇哈哈哈哈！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有收集到 #b#t4032776# 30個#k嗎？啊啊啊！ 太慢，太慢，太慢了！比蝸牛還慢！這樣怎麼跟得上科學的發展呢！"
+          }
+        }
+      }
+    }
+  }
+}

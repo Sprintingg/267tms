@@ -1,0 +1,174 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[進化系統] 殺人鯨的行蹤？"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "87"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#前往進化系統研究所吧 (#R1846Ex1Ref1846#)\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "吉可穆德說殺人鯨消失了，殺人鯨現在應該無法使用任何力量，到底跑去哪了呢？向吉可穆德詢問詳細情況。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "吉可穆德說要再次確保殺人鯨的安全，詢問殺人鯨可能會去的地方後，便立刻想到 #r進化系統研究所#k，總覺得殺人鯨應該會在那個地方…"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "如同預期前往進化系統研究所的殺人鯨. 殺人鯨將ESS誤認為是史烏，但是，知道ESS是仿造史烏外觀的人工智能後相當憤怒…"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2151003"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1845"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2151003"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "1846"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "前往進化系統研究所吧"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "必須快點探聽出殺人鯨的下落，目前以末日反抗軍為首的聯盟所有成員都在尋找殺人鯨，但卻遲遲沒有任何收穫。你有任何想法嗎？\\r\\n#L0##b1. 黑色翅膀本部#l\\n#L1#2. 進化系統研究所#l\\n#L2#3. 耶雷弗#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "#r進化系統研究所#k…嗎？殺人鯨對那個地方存在著不好的回憶，應該不會刻意去那個地方吧？不過還是去確認一下好了，你要去一趟嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "0": {
+            "_dirType": "string",
+            "_value": "那個地方已經確認過了，沒能找到殺人鯨，你有想到其他地方嗎？"
+          },
+          "2": {
+            "_dirType": "string",
+            "_value": "那個地方已經確認過了，沒能找到殺人鯨，你有想到其他地方嗎？"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果發現殺人鯨的話，就立刻通知本部，請在那邊待命。絕對不要刺激到殺人鯨，聽見了嗎？就算失去了力量，不過她是黑色翅膀的首腦，同時也是軍團長，沒有人能預測會有哪些變數。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "對，殺人鯨果然沒有再去那個地方了，既然如此，殺人鯨到底會在哪裡呢？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "殺人鯨那種身體狀態到底跑去哪做了些什麼呢？"
+          }
+        }
+      }
+    }
+  }
+}

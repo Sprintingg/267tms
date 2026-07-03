@@ -1,0 +1,220 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "63101004 스캐터링 샷"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "NAscatteringShot"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          }
+        }
+      },
+      "effect1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "63101004"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Projectile"
+      },
+      "onProjectileHit": {
+        "_dirType": "string",
+        "_value": "ProjectileAttack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "time": {
+          "_dirType": "string",
+          "_value": "0.35"
+        },
+        "emitSpeed": {
+          "_dirType": "string",
+          "_value": "1200"
+        },
+        "emitCount": {
+          "_dirType": "string",
+          "_value": "5"
+        },
+        "maxSpeed": {
+          "_dirType": "string",
+          "_value": "1000"
+        },
+        "emitAngle": {
+          "_dirType": "string",
+          "_value": "-45+i*22.5"
+        },
+        "emitPosRadius": {
+          "_dirType": "string",
+          "_value": "50"
+        },
+        "emitPosAngle": {
+          "_dirType": "string",
+          "_value": "-45+i*22.5"
+        },
+        "rotatable": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "destroyHitCount": {
+          "_dirType": "string",
+          "_value": "2"
+        },
+        "hitIntervalPerTarget": {
+          "_dirType": "long",
+          "_value": "1000"
+        },
+        "boundLT.X": {
+          "_dirType": "string",
+          "_value": "-80"
+        },
+        "boundRB.X": {
+          "_dirType": "string",
+          "_value": "80"
+        },
+        "boundLT.Y": {
+          "_dirType": "string",
+          "_value": "-30"
+        },
+        "boundRB.Y": {
+          "_dirType": "string",
+          "_value": "30"
+        }
+      },
+      "ball": {
+        "_dirType": "sub"
+      }
+    },
+    "ProjectileAttack": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "70+30*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "4"
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "100"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "stunDuration": {
+          "_dirType": "string",
+          "_value": "0.5"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "randomHitOrigin": {
+            "_dirType": "int",
+            "_value": "40"
+          }
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "63101004"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "70+30*x"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "4"
+    },
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "cooltime": {
+      "_dirType": "int",
+      "_value": "7"
+    },
+    "bulletCount": {
+      "_dirType": "string",
+      "_value": "5"
+    },
+    "q": {
+      "_dirType": "string",
+      "_value": "2"
+    }
+  }
+}

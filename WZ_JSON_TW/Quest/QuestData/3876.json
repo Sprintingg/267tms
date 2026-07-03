@@ -1,0 +1,182 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[星星力量] 變異的惡魔綿羊"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "41"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "墜落在米納爾森林的流星讓 #p2081001#非常煩惱，聽聽看他有什麼煩惱吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2081001#喊擔心因為流星而變異的#o8140112#會破壞森林，趁食慾好的#o8140112#吃光森林所有的草之前去降低他們的數量吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "為了擔心因為流星而變異的#o8140112#會破壞森林的#p2081001#消滅了#o8140112#，#p2081001#說為了應對日後會發生的事情，必須強化武器。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o8140112# #a38761#\r\n"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "#m240010510#\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "189230"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2081001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3875"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2081001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8140112"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "189230"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "聽說墜落在森林的流星導致怪物們變凶殘了？真是糟糕，變異的怪物們如果破壞森林該怎麼辦呢？看來得採取措施才行，你能幫忙嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "第一個問題是 #r#o8140112##k，他們的食慾很好，通常都會吃到一滴不剩，現在已經到了我們無法掌控的程度了，所以我希望你去解決 #r#o8140112##k，可以先去狩獵 #b50隻#k左右嗎？ \\r\\n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "現在的米納爾森林生態界不同於前，處於不正常的狀態，如果生態界變更差，很可能會變成任何生物都無法生存的死亡大地。 \\r\\n"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#o8140112# 全都解決了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "終於能稍微安心一點了，但是，如果他們的數量急速增加，到時候真的會發生問題，看來我們也得強化星星力量，藉此削弱他們的力量。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "只要解決#r#o8140112##k  #b50隻#k，就能暫時防止米納爾森林趨向毀滅。"
+          }
+        }
+      }
+    }
+  }
+}

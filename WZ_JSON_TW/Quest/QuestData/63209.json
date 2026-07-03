@@ -1,0 +1,178 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[每日任務] 埃德爾斯坦的防護罩生成器"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p9400352#感覺有話要說。\r\n去找他確認看看。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p9400352#說為了防禦最近進攻埃德爾斯坦的寒冬軍團開發了防護罩生成器。 但，不斷進攻的寒冬軍團是偷走防護罩生成器的燃料後來攻擊。\r\n\r\n#p9400352#委託進行寒冬軍團防禦戰時，叫我每次啟動防護罩生成器。\r\n\r\n透過#b埃德爾斯坦的#p9400370#執行村莊進攻戰1回以上吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p9400352#說為了防禦最近進攻埃德爾斯坦的寒冬軍團開發了防護罩生成器。 但，不斷進攻的寒冬軍團是偷走防護罩生成器的燃料後來攻擊。\n\r\n#p9400352#委託進行寒冬軍團防禦戰時，叫我每次啟動防護罩生成器。\n\r\n透過#b埃德爾斯坦的#p9400370#執行村莊進攻戰1回以上了。\n\r\n#p9400352#希望明天也再來幫他。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#村莊參加防禦戰#R63209ExQnRef63209# / 1"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoPreComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400352"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "63170"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q63209s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201612070900"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201612280900"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400352"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "63209"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "村莊參加防禦戰"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "Qn"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q63209e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "呼, 謝謝你.\\r\\n勇士你說要幫忙，所以埃德爾斯坦安心很多！"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "那參加村莊防禦戰後，正常啟動防護罩生成器後再來找我喔！"
+          }
+        }
+      }
+    }
+  }
+}

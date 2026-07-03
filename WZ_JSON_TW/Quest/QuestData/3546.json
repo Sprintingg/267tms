@@ -1,0 +1,208 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[時間神殿] 遺失的羽毛筆"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "46"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "站在三扇門前的#b#p2140000##k突然傳來了訊息…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "要尋找神殿管理人所遺失的 #b羽毛筆#k。請到時間神殿後，好好觀察女神碎片的牆壁周圍吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在雕刻盒內找到了神殿管理人的羽毛筆。雕刻盒內還有其他物品。這個雕刻盒到底是什麼東西？"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4033169:# #t4033169:# #c4033169# / 1\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "980320"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2140000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "130"
+      },
+      "QuestOrOption": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3533"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3518"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2140000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033169"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "980320"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033169"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "願女神的祝福與你同在。允許出入神殿的你，我想請求一件事。你要幫忙嗎？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "在巡查神殿時，丟失了我心愛的羽毛筆。管理神殿時，這是必需的。最近神殿有很多事情要處理，沒時間親自去找。請幫我找來我的羽毛筆吧。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我一直想不出來把它放在哪裡。請在神間的神殿尋找， #e碎片箱#n。 應該那裡面放了 #b羽毛筆#k。 請觀察女神碎片的牆壁周圍吧"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "做不到就沒辦法。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "喔！找到我的筆了。謝謝你。總算可以認真處理事情了。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你還沒收到嗎？請注意看女神碎片的牆壁周圍吧。"
+          }
+        }
+      }
+    }
+  }
+}

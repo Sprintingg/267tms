@@ -1,0 +1,193 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 發光石"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "韋爾族和鯨魚號"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "鯨魚號動力來源居然是神祕的發光石…很奇怪吧？發光石究竟是什麼呢？去#b鯨魚號動力室#k參觀一下吧！"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "觸摸發光石後忽然感到一股神祕的力量傳遍全身。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "400"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "400"
+      },
+      "npcAct": {
+        "_dirType": "string",
+        "_value": "quest"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "噢…剛才我感覺到發光石的力量了。怎麼樣？是不是全身充滿了力量？？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "發光石就放在動力室。你還沒找到嗎？"
+          }
+        },
+        "quest": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "發光石就放在動力室。你還沒找到嗎？"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "看來你很好奇身為王子的我為什麼會在這裡。我身為韋爾族的王子，也是控制發光石的管理者，所以特地在這裡守護。\\r\\n#b#L0#發光石？？那是什麼？#l"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "發光石是鯨魚號的動力來源。鯨魚號運作的所有能源均來自於動力室的發光石。發光石的力量只有韋爾族人才能控制。我以前曾受到過卡伊琳大人的恩惠，為了報答她才提供發光石並控制其釋放。既然你來到這裡了，就讓你感受一下發光石的力量如何？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "發光石就在我的右側#b鯨魚號動力室#k內。你到了那裡可以看到我的同事們正在控制石頭的力量。你可以下去觸摸一下#b發光石#k，就能感受到它的力量。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "既然來了鯨魚號，為什麼不感受一下發光石的力量呢？…可惜啊！"
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1092003"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2165"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1092003"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "2166"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "5"
+          }
+        }
+      }
+    }
+  }
+}

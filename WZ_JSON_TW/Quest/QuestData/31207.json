@@ -1,0 +1,153 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[艾靈森林] 突然想吃的那個東西？！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "39"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽說你來到這裡第一個見面的優莉絲有事情要拜託我。請你去找優莉絲。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "優莉絲突然說想吃甜甜的東西，因此請你去問他的朋友艾靈是否可以找到甜甜的水果。\n請去找在#r#e#m300030100##n#k的#e艾靈#n，並且向他轉達優莉絲的請求。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "與在#e#m300030100##n的精靈艾靈見面。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "181900"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2131002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "95"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31205"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2133000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "31208"
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "181900"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊！ 突然想吃酸酸甜甜的東西！！  你有可以為我做的事情。 你可以幫助我嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "在不久前，我與原本住在這森林的精靈艾靈成為了朋友。 我本來就是很容易與人相處的人。 \n她應該可以找到好吃又甜蜜的水果的！ 我還有需要分析的機器…你可以代替我去與她見面嗎。 她會在 #r#e#m300030100##k#n的。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯，你現在很忙嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "(呼。 必須要拯救森林…) 有什麼事嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "快去問艾靈吧。 問她是否可以找到又酸又甜的水果！ 艾靈就在#e#m300030100##n。"
+          }
+        }
+      }
+    }
+  }
+}

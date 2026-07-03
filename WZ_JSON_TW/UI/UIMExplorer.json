@@ -1,0 +1,4055 @@
+{
+  "menu": {
+    "_dirType": "sub",
+    "$character": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "角色資訊[快捷鍵:裝備窗]"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "button"
+      }
+    },
+    "$inventory": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "背包[快捷鍵:道具]"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "button"
+      }
+    },
+    "$craft": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "製作[快捷鍵:專門技術]"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "button"
+      }
+    }
+  },
+  "statGauge": {
+    "_dirType": "sub",
+    "$HP": {
+      "_dirType": "sub",
+      "class": {
+        "_dirType": "string",
+        "_value": "ProgressBar"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "請注意當生命力枯竭時，即生存失敗！"
+      },
+      "#warning": {
+        "_dirType": "sub",
+        "condition": {
+          "_dirType": "int",
+          "_value": "30"
+        },
+        "warningScreenMessage": {
+          "_dirType": "string",
+          "_value": "生命力過低！必須尋求恢復的手段！"
+        },
+        "period": {
+          "_dirType": "int",
+          "_value": "30"
+        },
+        "effect": {
+          "_dirType": "sub"
+        }
+      }
+    },
+    "$stamina": {
+      "_dirType": "sub",
+      "class": {
+        "_dirType": "string",
+        "_value": "ProgressBar"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "行動力\r\n可透過休憩或消耗品來恢復。"
+      },
+      "#warning": {
+        "_dirType": "sub",
+        "condition": {
+          "_dirType": "int",
+          "_value": "30"
+        },
+        "warningScreenMessage": {
+          "_dirType": "string",
+          "_value": "行動力不足！請在住處休息或攝取適當消耗品！"
+        },
+        "period": {
+          "_dirType": "int",
+          "_value": "30"
+        },
+        "effect": {
+          "_dirType": "sub"
+        }
+      }
+    },
+    "$satiety": {
+      "_dirType": "sub",
+      "class": {
+        "_dirType": "string",
+        "_value": "ProgressBar"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "飽滿度\r\n可透過食物等恢復。"
+      },
+      "#warning": {
+        "_dirType": "sub",
+        "condition": {
+          "_dirType": "int",
+          "_value": "30"
+        },
+        "warningScreenMessage": {
+          "_dirType": "string",
+          "_value": "飽滿度不足！請攝取食物解決飢餓！"
+        },
+        "period": {
+          "_dirType": "int",
+          "_value": "30"
+        },
+        "effect": {
+          "_dirType": "sub"
+        }
+      }
+    },
+    "$Level": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 35,
+        "_y": 8
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 67,
+        "_y": 18
+      },
+      "font": {
+        "_dirType": "sub"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "TextBlock"
+      }
+    },
+    "Name": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 70,
+        "_y": 6
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 146,
+        "_y": 18
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "Border"
+      },
+      "$Name": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "TextBlock"
+        },
+        "font": {
+          "_dirType": "sub",
+          "size": {
+            "_dirType": "int",
+            "_value": "12"
+          }
+        },
+        "color": {
+          "_dirType": "string",
+          "_value": "FFFFFF"
+        }
+      },
+      "HAlign": {
+        "_dirType": "string",
+        "_value": "Center"
+      },
+      "VAlign": {
+        "_dirType": "string",
+        "_value": "Center"
+      }
+    },
+    "HPText": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 50,
+        "_y": 28
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 140,
+        "_y": 36
+      },
+      "$HPText": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "TextBlock"
+        },
+        "font": {
+          "_dirType": "sub"
+        },
+        "Visibility": {
+          "_dirType": "string",
+          "_value": "HitTestInvisible"
+        }
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "Border"
+      },
+      "HAlign": {
+        "_dirType": "string",
+        "_value": "Center"
+      },
+      "VAlign": {
+        "_dirType": "string",
+        "_value": "Center"
+      }
+    },
+    "StaminaText": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 50,
+        "_y": 41
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 140,
+        "_y": 49
+      },
+      "$StaminaText": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "TextBlock"
+        },
+        "font": {
+          "_dirType": "sub"
+        },
+        "Visibility": {
+          "_dirType": "string",
+          "_value": "HitTestInvisible"
+        }
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "Border"
+      },
+      "HAlign": {
+        "_dirType": "string",
+        "_value": "Center"
+      },
+      "VAlign": {
+        "_dirType": "string",
+        "_value": "Center"
+      }
+    },
+    "SatietyText": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 50,
+        "_y": 54
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 140,
+        "_y": 62
+      },
+      "$SatietyText": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "TextBlock"
+        },
+        "font": {
+          "_dirType": "sub"
+        },
+        "Visibility": {
+          "_dirType": "string",
+          "_value": "HitTestInvisible"
+        }
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "Border"
+      },
+      "HAlign": {
+        "_dirType": "string",
+        "_value": "Center"
+      },
+      "VAlign": {
+        "_dirType": "string",
+        "_value": "Center"
+      }
+    }
+  },
+  "character": {
+    "_dirType": "sub",
+    "btClose": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "CloseWindowButton"
+      }
+    },
+    "$cap": {
+      "_dirType": "sub",
+      "origin": {
+        "_dirType": "vector",
+        "_x": 86,
+        "_y": 103
+      }
+    },
+    "$weapon": {
+      "_dirType": "sub",
+      "origin": {
+        "_dirType": "vector",
+        "_x": 45,
+        "_y": 170
+      }
+    },
+    "$clothes": {
+      "_dirType": "sub",
+      "origin": {
+        "_dirType": "vector",
+        "_x": 85,
+        "_y": 172
+      }
+    },
+    "$shoes": {
+      "_dirType": "sub",
+      "origin": {
+        "_dirType": "vector",
+        "_x": 86,
+        "_y": 211
+      }
+    },
+    "$attackPower": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 49,
+        "_y": 245
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 91,
+        "_y": 255
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "TextBlock"
+      },
+      "font": {
+        "_dirType": "sub",
+        "size": {
+          "_dirType": "int",
+          "_value": "11"
+        }
+      },
+      "color": {
+        "_dirType": "string",
+        "_value": "0,0,130"
+      }
+    },
+    "$defencePower": {
+      "_dirType": "sub",
+      "class": {
+        "_dirType": "string",
+        "_value": "TextBlock"
+      },
+      "font": {
+        "_dirType": "sub",
+        "size": {
+          "_dirType": "int",
+          "_value": "11"
+        }
+      },
+      "color": {
+        "_dirType": "string",
+        "_value": "0,0,130"
+      },
+      "lt": {
+        "_dirType": "vector",
+        "_x": 49,
+        "_y": 263
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 92,
+        "_y": 273
+      }
+    },
+    "$speed": {
+      "_dirType": "sub",
+      "class": {
+        "_dirType": "string",
+        "_value": "TextBlock"
+      },
+      "font": {
+        "_dirType": "sub",
+        "size": {
+          "_dirType": "int",
+          "_value": "11"
+        }
+      },
+      "color": {
+        "_dirType": "string",
+        "_value": "0,0,130"
+      },
+      "lt": {
+        "_dirType": "vector",
+        "_x": 139,
+        "_y": 245
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 181,
+        "_y": 254
+      }
+    },
+    "$jumpPower": {
+      "_dirType": "sub",
+      "class": {
+        "_dirType": "string",
+        "_value": "TextBlock"
+      },
+      "font": {
+        "_dirType": "sub",
+        "size": {
+          "_dirType": "int",
+          "_value": "11"
+        }
+      },
+      "color": {
+        "_dirType": "string",
+        "_value": "0,0,130"
+      },
+      "lt": {
+        "_dirType": "vector",
+        "_x": 138,
+        "_y": 263
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 182,
+        "_y": 273
+      }
+    }
+  },
+  "inventory": {
+    "_dirType": "sub",
+    "btClose": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "CloseWindowButton"
+      }
+    },
+    "$slot": {
+      "_dirType": "sub",
+      "info": {
+        "_dirType": "string",
+        "_value": "#CCFF00: food 컬러\r\n#90BAFF: equip 컬러"
+      },
+      "lt": {
+        "_dirType": "vector",
+        "_x": 13,
+        "_y": 27
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 157,
+        "_y": 208
+      },
+      "slotSize": {
+        "_dirType": "string",
+        "_value": "36,36"
+      },
+      "item": {
+        "_dirType": "sub",
+        "$back": {
+          "_dirType": "sub",
+          "class": {
+            "_dirType": "string",
+            "_value": "WidgetSwitcher"
+          }
+        },
+        "$tooltipBox": {
+          "_dirType": "sub",
+          "slotAnchor": {
+            "_dirType": "string",
+            "_value": "0,0,1,1"
+          }
+        },
+        "$slot": {
+          "_dirType": "sub",
+          "origin": {
+            "_dirType": "vector",
+            "_x": 0,
+            "_y": 34
+          },
+          "slotAutosize": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "slotAnchor": {
+            "_dirType": "string",
+            "_value": "0.05555,0.94444"
+          }
+        },
+        "$itemInfo": {
+          "_dirType": "sub",
+          "slotAutosize": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "slotAnchor": {
+            "_dirType": "string",
+            "_value": "0.05555,0.97222"
+          },
+          "slotAlignment": {
+            "_dirType": "string",
+            "_value": "0,1"
+          }
+        },
+        "$new": {
+          "_dirType": "sub",
+          "class": {
+            "_dirType": "string",
+            "_value": "AnimateImage"
+          },
+          "Timeline": {
+            "_dirType": "sub"
+          },
+          "StartAnimation": {
+            "_dirType": "string",
+            "_value": "Repeat"
+          }
+        },
+        "class": {
+          "_dirType": "string",
+          "_value": "ConstraintCanvas"
+        },
+        "$cooltime": {
+          "_dirType": "sub",
+          "slotAutosize": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "slotAnchor": {
+            "_dirType": "string",
+            "_value": "0,0"
+          },
+          "slotAlignment": {
+            "_dirType": "string",
+            "_value": "0,0"
+          }
+        }
+      }
+    },
+    "#num": {
+      "_dirType": "sub"
+    },
+    "$btSort": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "名稱排序"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "button"
+      }
+    },
+    "$btSort2": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "向上陳列"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "button"
+      }
+    },
+    "$btCraft": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "button"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "製作"
+      }
+    }
+  },
+  "bag": {
+    "_dirType": "sub",
+    "class": {
+      "_dirType": "string",
+      "_value": "ConstraintCanvas"
+    },
+    "#num": {
+      "_dirType": "sub"
+    },
+    "content": {
+      "_dirType": "sub",
+      "top": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "Box"
+        },
+        "HeightOverride": {
+          "_dirType": "int",
+          "_value": "27"
+        },
+        "topContent": {
+          "_dirType": "sub",
+          "class": {
+            "_dirType": "string",
+            "_value": "Canvas"
+          }
+        }
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "VerticalBox"
+      },
+      "SlotAutoMargin": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "back": {
+      "_dirType": "sub",
+      "class": {
+        "_dirType": "string",
+        "_value": "VerticalBox"
+      },
+      "Visibility": {
+        "_dirType": "string",
+        "_value": "HitTestInvisible"
+      },
+      "slotAnchor": {
+        "_dirType": "string",
+        "_value": "0,0,1,1"
+      }
+    },
+    "btClose": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "CloseWindowButton"
+      }
+    },
+    "slotBorder": {
+      "_dirType": "sub",
+      "class": {
+        "_dirType": "string",
+        "_value": "Border"
+      },
+      "slotOffset": {
+        "_dirType": "string",
+        "_value": "0,27"
+      },
+      "slotAnchor": {
+        "_dirType": "string",
+        "_value": "0"
+      },
+      "slotAutosize": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "$slot": {
+        "_dirType": "sub",
+        "info": {
+          "_dirType": "string",
+          "_value": "#CCFF00: food 컬러\r\n#90BAFF: equip 컬러"
+        },
+        "slotSize": {
+          "_dirType": "string",
+          "_value": "36,36"
+        },
+        "item": {
+          "_dirType": "sub",
+          "$back": {
+            "_dirType": "sub",
+            "class": {
+              "_dirType": "string",
+              "_value": "WidgetSwitcher"
+            }
+          },
+          "$tooltipBox": {
+            "_dirType": "sub",
+            "slotAnchor": {
+              "_dirType": "string",
+              "_value": "0,0,1,1"
+            }
+          },
+          "$slot": {
+            "_dirType": "sub",
+            "origin": {
+              "_dirType": "vector",
+              "_x": 0,
+              "_y": 34
+            },
+            "slotAutosize": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "slotAnchor": {
+              "_dirType": "string",
+              "_value": "0.05555,0.94444"
+            }
+          },
+          "$itemInfo": {
+            "_dirType": "sub",
+            "slotAutosize": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "slotAnchor": {
+              "_dirType": "string",
+              "_value": "0.05555,0.97222"
+            },
+            "slotAlignment": {
+              "_dirType": "string",
+              "_value": "0,1"
+            }
+          },
+          "$new": {
+            "_dirType": "sub",
+            "class": {
+              "_dirType": "string",
+              "_value": "AnimateImage"
+            },
+            "Timeline": {
+              "_dirType": "sub"
+            },
+            "StartAnimation": {
+              "_dirType": "string",
+              "_value": "Repeat"
+            }
+          },
+          "class": {
+            "_dirType": "string",
+            "_value": "ConstraintCanvas"
+          }
+        },
+        "numItemsWide": {
+          "_dirType": "int",
+          "_value": "4"
+        },
+        "SlotPadding": {
+          "_dirType": "string",
+          "_value": "12, 0, 11, 10"
+        }
+      }
+    }
+  },
+  "craft": {
+    "_dirType": "sub",
+    "btClose": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "CloseWindowButton"
+      }
+    },
+    "$BtArrowUp": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "button"
+      }
+    },
+    "$BtArrowDown": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "button"
+      }
+    },
+    "#num": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "lack": {
+        "_dirType": "sub"
+      }
+    },
+    "$list": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 79,
+        "_y": 45
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 254,
+        "_y": 366
+      },
+      "item": {
+        "_dirType": "sub",
+        "$icon": {
+          "_dirType": "sub",
+          "lt": {
+            "_dirType": "vector",
+            "_x": 0,
+            "_y": 0
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 37,
+            "_y": 38
+          },
+          "origin": {
+            "_dirType": "vector",
+            "_x": 3,
+            "_y": 35
+          }
+        },
+        "$name": {
+          "_dirType": "sub",
+          "lt": {
+            "_dirType": "vector",
+            "_x": 46,
+            "_y": 13
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 155,
+            "_y": 25
+          },
+          "class": {
+            "_dirType": "string",
+            "_value": "TextBlock"
+          },
+          "font": {
+            "_dirType": "sub",
+            "size": {
+              "_dirType": "string",
+              "_value": "12"
+            },
+            "bold": {
+              "_dirType": "short",
+              "_value": "-1"
+            }
+          },
+          "color": {
+            "_dirType": "string",
+            "_value": "FFFFFF"
+          }
+        }
+      }
+    },
+    "Name": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 276,
+        "_y": 128
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 436,
+        "_y": 148
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "Border"
+      },
+      "$Name": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "TextBlock"
+        },
+        "font": {
+          "_dirType": "sub",
+          "size": {
+            "_dirType": "int",
+            "_value": "12"
+          },
+          "bold": {
+            "_dirType": "short",
+            "_value": "-1"
+          }
+        },
+        "color": {
+          "_dirType": "string",
+          "_value": "FFFFFF"
+        }
+      },
+      "HAlign": {
+        "_dirType": "string",
+        "_value": "Center"
+      },
+      "VAlign": {
+        "_dirType": "string",
+        "_value": "Center"
+      }
+    },
+    "Desc": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 276,
+        "_y": 158
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 436,
+        "_y": 216
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "Border"
+      },
+      "$Desc": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "RichTextBlock"
+        },
+        "lineGap": {
+          "_dirType": "int",
+          "_value": "3"
+        },
+        "mode": {
+          "_dirType": "string",
+          "_value": "ToolTip"
+        }
+      },
+      "HAlign": {
+        "_dirType": "string",
+        "_value": "Center"
+      },
+      "VAlign": {
+        "_dirType": "string",
+        "_value": "Center"
+      }
+    },
+    "ingredient0": {
+      "_dirType": "sub",
+      "origin": {
+        "_dirType": "vector",
+        "_x": 277,
+        "_y": 283
+      },
+      "$ingredient0": {
+        "_dirType": "sub"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "Overlay"
+      }
+    },
+    "ingredient1": {
+      "_dirType": "sub",
+      "origin": {
+        "_dirType": "vector",
+        "_x": 319,
+        "_y": 283
+      },
+      "$ingredient1": {
+        "_dirType": "sub"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "Overlay"
+      }
+    },
+    "ingredient2": {
+      "_dirType": "sub",
+      "origin": {
+        "_dirType": "vector",
+        "_x": 361,
+        "_y": 283
+      },
+      "$ingredient2": {
+        "_dirType": "sub"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "Overlay"
+      }
+    },
+    "ingredient3": {
+      "_dirType": "sub",
+      "origin": {
+        "_dirType": "vector",
+        "_x": 403,
+        "_y": 283
+      },
+      "$ingredient3": {
+        "_dirType": "sub"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "Overlay"
+      }
+    },
+    "result": {
+      "_dirType": "sub",
+      "origin": {
+        "_dirType": "vector",
+        "_x": 324,
+        "_y": 118
+      },
+      "$result": {
+        "_dirType": "sub"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "Overlay"
+      }
+    },
+    "$btCraft": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "button"
+      }
+    },
+    "group": {
+      "_dirType": "sub",
+      "Group0": {
+        "_dirType": "sub",
+        "$Group0": {
+          "_dirType": "sub",
+          "class": {
+            "_dirType": "string",
+            "_value": "CheckBox"
+          },
+          "mouseOver": {
+            "_dirType": "uol",
+            "_value": "normal"
+          },
+          "pressed": {
+            "_dirType": "uol",
+            "_value": "checked"
+          }
+        },
+        "class": {
+          "_dirType": "string",
+          "_value": "Overlay"
+        }
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "Canvas"
+      },
+      "Group1": {
+        "_dirType": "sub",
+        "$Group1": {
+          "_dirType": "sub",
+          "class": {
+            "_dirType": "string",
+            "_value": "CheckBox"
+          },
+          "mouseOver": {
+            "_dirType": "uol",
+            "_value": "normal"
+          },
+          "pressed": {
+            "_dirType": "uol",
+            "_value": "checked"
+          }
+        },
+        "class": {
+          "_dirType": "string",
+          "_value": "Overlay"
+        }
+      },
+      "Group2": {
+        "_dirType": "sub",
+        "$Group2": {
+          "_dirType": "sub",
+          "class": {
+            "_dirType": "string",
+            "_value": "CheckBox"
+          },
+          "mouseOver": {
+            "_dirType": "uol",
+            "_value": "normal"
+          },
+          "pressed": {
+            "_dirType": "uol",
+            "_value": "checked"
+          }
+        },
+        "class": {
+          "_dirType": "string",
+          "_value": "Overlay"
+        }
+      },
+      "Group3": {
+        "_dirType": "sub",
+        "$Group3": {
+          "_dirType": "sub",
+          "class": {
+            "_dirType": "string",
+            "_value": "CheckBox"
+          },
+          "mouseOver": {
+            "_dirType": "uol",
+            "_value": "normal"
+          },
+          "pressed": {
+            "_dirType": "uol",
+            "_value": "checked"
+          }
+        },
+        "class": {
+          "_dirType": "string",
+          "_value": "Overlay"
+        }
+      },
+      "Group4": {
+        "_dirType": "sub",
+        "$Group4": {
+          "_dirType": "sub",
+          "class": {
+            "_dirType": "string",
+            "_value": "CheckBox"
+          },
+          "mouseOver": {
+            "_dirType": "uol",
+            "_value": "normal"
+          },
+          "pressed": {
+            "_dirType": "uol",
+            "_value": "checked"
+          }
+        },
+        "class": {
+          "_dirType": "string",
+          "_value": "Overlay"
+        }
+      },
+      "Group5": {
+        "_dirType": "sub",
+        "$Group5": {
+          "_dirType": "sub",
+          "class": {
+            "_dirType": "string",
+            "_value": "CheckBox"
+          },
+          "mouseOver": {
+            "_dirType": "uol",
+            "_value": "normal"
+          },
+          "pressed": {
+            "_dirType": "uol",
+            "_value": "checked"
+          }
+        },
+        "class": {
+          "_dirType": "string",
+          "_value": "Overlay"
+        }
+      },
+      "Group6": {
+        "_dirType": "sub",
+        "$Group6": {
+          "_dirType": "sub",
+          "class": {
+            "_dirType": "string",
+            "_value": "CheckBox"
+          },
+          "mouseOver": {
+            "_dirType": "uol",
+            "_value": "normal"
+          },
+          "pressed": {
+            "_dirType": "uol",
+            "_value": "checked"
+          }
+        },
+        "class": {
+          "_dirType": "string",
+          "_value": "Overlay"
+        }
+      },
+      "Group7": {
+        "_dirType": "sub",
+        "$Group7": {
+          "_dirType": "sub",
+          "class": {
+            "_dirType": "string",
+            "_value": "CheckBox"
+          },
+          "mouseOver": {
+            "_dirType": "uol",
+            "_value": "normal"
+          },
+          "pressed": {
+            "_dirType": "uol",
+            "_value": "checked"
+          }
+        },
+        "class": {
+          "_dirType": "string",
+          "_value": "Overlay"
+        }
+      }
+    },
+    "$ReqIcon": {
+      "_dirType": "sub",
+      "class": {
+        "_dirType": "string",
+        "_value": "WidgetSwitcher"
+      },
+      "Empty": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "cook": {
+    "_dirType": "sub",
+    "btClose": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "CloseWindowButton"
+      }
+    },
+    "$btHelp": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "button"
+      }
+    },
+    "#cookingEffect": {
+      "_dirType": "sub"
+    },
+    "$CookPanel": {
+      "_dirType": "sub",
+      "Prepare": {
+        "_dirType": "sub",
+        "$slot0": {
+          "_dirType": "sub",
+          "lt": {
+            "_dirType": "vector",
+            "_x": 19,
+            "_y": 38
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 52,
+            "_y": 71
+          },
+          "origin": {
+            "_dirType": "vector",
+            "_x": 1,
+            "_y": 33
+          }
+        },
+        "$slot1": {
+          "_dirType": "sub",
+          "lt": {
+            "_dirType": "vector",
+            "_x": 56,
+            "_y": 38
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 89,
+            "_y": 71
+          },
+          "origin": {
+            "_dirType": "vector",
+            "_x": 1,
+            "_y": 33
+          }
+        },
+        "$slot2": {
+          "_dirType": "sub",
+          "lt": {
+            "_dirType": "vector",
+            "_x": 92,
+            "_y": 38
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 126,
+            "_y": 71
+          },
+          "origin": {
+            "_dirType": "vector",
+            "_x": 1,
+            "_y": 33
+          }
+        },
+        "$btCook": {
+          "_dirType": "sub",
+          "normal": {
+            "_dirType": "sub"
+          },
+          "pressed": {
+            "_dirType": "sub"
+          },
+          "disabled": {
+            "_dirType": "sub"
+          },
+          "mouseOver": {
+            "_dirType": "sub"
+          },
+          "class": {
+            "_dirType": "string",
+            "_value": "button"
+          }
+        },
+        "class": {
+          "_dirType": "string",
+          "_value": "Canvas"
+        }
+      },
+      "Result": {
+        "_dirType": "sub",
+        "$ResultSlot": {
+          "_dirType": "sub",
+          "lt": {
+            "_dirType": "vector",
+            "_x": 55,
+            "_y": 42
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 89,
+            "_y": 76
+          },
+          "origin": {
+            "_dirType": "vector",
+            "_x": 1,
+            "_y": 33
+          }
+        },
+        "class": {
+          "_dirType": "string",
+          "_value": "Canvas"
+        },
+        "foodName": {
+          "_dirType": "sub",
+          "class": {
+            "_dirType": "string",
+            "_value": "Border"
+          },
+          "$foodName": {
+            "_dirType": "sub",
+            "class": {
+              "_dirType": "string",
+              "_value": "TextBlock"
+            },
+            "font": {
+              "_dirType": "sub",
+              "size": {
+                "_dirType": "int",
+                "_value": "12"
+              },
+              "info": {
+                "_dirType": "string",
+                "_value": "MDmorris9 12pt #ffffff"
+              }
+            },
+            "color": {
+              "_dirType": "string",
+              "_value": "FFFFFF"
+            }
+          },
+          "HAlign": {
+            "_dirType": "string",
+            "_value": "Center"
+          },
+          "VAlign": {
+            "_dirType": "string",
+            "_value": "Center"
+          }
+        }
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "WidgetSwitcher"
+      }
+    }
+  },
+  "missionQuest": {
+    "_dirType": "sub",
+    "info": {
+      "_dirType": "string",
+      "_value": "UI\\UIWindow2.img\\QuestAlarm 데이터구조 참고"
+    },
+    "class": {
+      "_dirType": "string",
+      "_value": "Overlay"
+    },
+    "back": {
+      "_dirType": "sub",
+      "class": {
+        "_dirType": "string",
+        "_value": "VerticalBox"
+      }
+    },
+    "content": {
+      "_dirType": "sub",
+      "class": {
+        "_dirType": "string",
+        "_value": "VerticalBox"
+      },
+      "top": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "Box"
+        },
+        "HeightOverride": {
+          "_dirType": "int",
+          "_value": "80"
+        },
+        "SlotPadding": {
+          "_dirType": "string",
+          "_value": "0, 2, 0, 0"
+        },
+        "title": {
+          "_dirType": "sub",
+          "class": {
+            "_dirType": "string",
+            "_value": "Canvas"
+          },
+          "$BtHelp": {
+            "_dirType": "sub",
+            "normal": {
+              "_dirType": "sub"
+            },
+            "pressed": {
+              "_dirType": "sub"
+            },
+            "disabled": {
+              "_dirType": "sub"
+            },
+            "mouseOver": {
+              "_dirType": "sub"
+            },
+            "class": {
+              "_dirType": "string",
+              "_value": "button"
+            }
+          },
+          "titleText": {
+            "_dirType": "sub",
+            "class": {
+              "_dirType": "string",
+              "_value": "TextBlock"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": 74,
+              "_y": 5
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 198,
+              "_y": 17
+            },
+            "text": {
+              "_dirType": "string",
+              "_value": "探險隊任務"
+            },
+            "Visibility": {
+              "_dirType": "string",
+              "_value": "HitTestInvisible"
+            }
+          },
+          "$phase": {
+            "_dirType": "sub",
+            "class": {
+              "_dirType": "string",
+              "_value": "WidgetSwitcher"
+            }
+          }
+        }
+      },
+      "mainTitle": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "TextBlock"
+        },
+        "text": {
+          "_dirType": "string",
+          "_value": "主要任務"
+        },
+        "color": {
+          "_dirType": "string",
+          "_value": "FFFFF1B9"
+        },
+        "font": {
+          "_dirType": "sub",
+          "bold": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "size": {
+            "_dirType": "int",
+            "_value": "14"
+          }
+        },
+        "SlotPadding": {
+          "_dirType": "string",
+          "_value": "1, 5, 0, 5"
+        }
+      },
+      "mainList": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "Overlay"
+        },
+        "back": {
+          "_dirType": "sub",
+          "class": {
+            "_dirType": "string",
+            "_value": "VerticalBox"
+          }
+        },
+        "$mainList": {
+          "_dirType": "sub",
+          "SlotPadding": {
+            "_dirType": "string",
+            "_value": "5, 7, 5, 5"
+          },
+          "font": {
+            "_dirType": "sub",
+            "bold": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "size": {
+              "_dirType": "int",
+              "_value": "13"
+            }
+          }
+        }
+      },
+      "subTitle": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "TextBlock"
+        },
+        "text": {
+          "_dirType": "string",
+          "_value": "輔助任務"
+        },
+        "color": {
+          "_dirType": "string",
+          "_value": "FFFFF1B9"
+        },
+        "font": {
+          "_dirType": "sub",
+          "bold": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "size": {
+            "_dirType": "int",
+            "_value": "14"
+          }
+        },
+        "SlotPadding": {
+          "_dirType": "string",
+          "_value": "1, 10, 0, 5"
+        }
+      },
+      "subList": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "Overlay"
+        },
+        "back": {
+          "_dirType": "sub",
+          "class": {
+            "_dirType": "string",
+            "_value": "VerticalBox"
+          }
+        },
+        "$subList": {
+          "_dirType": "sub",
+          "SlotPadding": {
+            "_dirType": "string",
+            "_value": "0, 5, 5, 5"
+          },
+          "font": {
+            "_dirType": "sub",
+            "bold": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "size": {
+              "_dirType": "int",
+              "_value": "13"
+            }
+          }
+        }
+      }
+    },
+    "#changeEffect": {
+      "_dirType": "sub"
+    },
+    "#MainQuestTitle": {
+      "_dirType": "sub",
+      "$TitleText": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "TextBlock"
+        },
+        "font": {
+          "_dirType": "sub",
+          "size": {
+            "_dirType": "int",
+            "_value": "13"
+          },
+          "bold": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "color": {
+          "_dirType": "string",
+          "_value": "FFFFFF"
+        }
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "Border"
+      },
+      "Padding": {
+        "_dirType": "string",
+        "_value": "2"
+      }
+    },
+    "#QuestConditionItem": {
+      "_dirType": "sub",
+      "HBox": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "HorizontalBox"
+        },
+        "$ContentText": {
+          "_dirType": "sub",
+          "class": {
+            "_dirType": "string",
+            "_value": "TextBlock"
+          },
+          "CompletedFont": {
+            "_dirType": "sub",
+            "size": {
+              "_dirType": "int",
+              "_value": "12"
+            }
+          },
+          "CompletedColor": {
+            "_dirType": "string",
+            "_value": "636363"
+          },
+          "NotCompletedFont": {
+            "_dirType": "sub",
+            "size": {
+              "_dirType": "int",
+              "_value": "12"
+            }
+          },
+          "NotCompletedColor": {
+            "_dirType": "string",
+            "_value": "FFFFFF"
+          },
+          "SlotFill": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "SlotHAlign": {
+            "_dirType": "string",
+            "_value": "Left"
+          }
+        },
+        "$StateText": {
+          "_dirType": "sub",
+          "class": {
+            "_dirType": "string",
+            "_value": "TextBlock"
+          },
+          "CondSwitchFont": {
+            "_dirType": "sub",
+            "size": {
+              "_dirType": "int",
+              "_value": "12"
+            }
+          },
+          "CondSwitchColor": {
+            "_dirType": "string",
+            "_value": "ce3d00"
+          },
+          "CondCompareFont": {
+            "_dirType": "sub",
+            "size": {
+              "_dirType": "int",
+              "_value": "12"
+            }
+          },
+          "CondCompareColor": {
+            "_dirType": "string",
+            "_value": "FFFFFF"
+          },
+          "CompletedFont": {
+            "_dirType": "sub",
+            "size": {
+              "_dirType": "int",
+              "_value": "12"
+            }
+          },
+          "CompletedColor": {
+            "_dirType": "string",
+            "_value": "636363"
+          },
+          "SlotFill": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "SlotHAlign": {
+            "_dirType": "string",
+            "_value": "Right"
+          }
+        }
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "Border"
+      },
+      "Padding": {
+        "_dirType": "string",
+        "_value": "4"
+      }
+    }
+  },
+  "result": {
+    "_dirType": "sub",
+    "$PointListBox": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 57,
+        "_y": 137
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 318,
+        "_y": 294
+      },
+      "$PointList": {
+        "_dirType": "sub",
+        "lineGap": {
+          "_dirType": "int",
+          "_value": "30"
+        }
+      },
+      "#item": {
+        "_dirType": "sub",
+        "$Name": {
+          "_dirType": "sub",
+          "class": {
+            "_dirType": "string",
+            "_value": "TextBlock"
+          },
+          "font": {
+            "_dirType": "sub",
+            "size": {
+              "_dirType": "int",
+              "_value": "13"
+            }
+          },
+          "color": {
+            "_dirType": "string",
+            "_value": "FFFFFF"
+          },
+          "SlotFill": {
+            "_dirType": "float",
+            "_value": "0.8"
+          },
+          "SlotPadding": {
+            "_dirType": "string",
+            "_value": "0,0,0,10"
+          }
+        },
+        "$Point": {
+          "_dirType": "sub",
+          "class": {
+            "_dirType": "string",
+            "_value": "TextBlock"
+          },
+          "font": {
+            "_dirType": "sub",
+            "size": {
+              "_dirType": "int",
+              "_value": "13"
+            }
+          },
+          "color": {
+            "_dirType": "string",
+            "_value": "FFFFFF"
+          },
+          "SlotHAlign": {
+            "_dirType": "string",
+            "_value": "Right"
+          },
+          "SlotFill": {
+            "_dirType": "float",
+            "_value": "0.2"
+          },
+          "SlotPadding": {
+            "_dirType": "string",
+            "_value": "0,0,10,10"
+          }
+        },
+        "class": {
+          "_dirType": "string",
+          "_value": "HorizontalBox"
+        }
+      },
+      "scrollBar": {
+        "_dirType": "sub",
+        "enabled": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        }
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "ScrollableBox"
+      }
+    },
+    "#GoalEffect": {
+      "_dirType": "sub"
+    },
+    "#effect": {
+      "_dirType": "sub"
+    },
+    "$itemSlot0": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 364,
+        "_y": 252
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 401,
+        "_y": 287
+      }
+    },
+    "$itemSlot1": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 413,
+        "_y": 252
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 449,
+        "_y": 287
+      }
+    },
+    "$itemSlot2": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 462,
+        "_y": 251
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 498,
+        "_y": 287
+      }
+    },
+    "$itemSlot3": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 513,
+        "_y": 252
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 546,
+        "_y": 286
+      }
+    },
+    "$itemSlot4": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 559,
+        "_y": 251
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 595,
+        "_y": 286
+      }
+    },
+    "TotalPoint": {
+      "_dirType": "sub",
+      "$TotalPoint": {
+        "_dirType": "sub",
+        "font": {
+          "_dirType": "sub"
+        },
+        "class": {
+          "_dirType": "string",
+          "_value": "TextBlock"
+        }
+      },
+      "lt": {
+        "_dirType": "vector",
+        "_x": 361,
+        "_y": 126
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 534,
+        "_y": 176
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "Border"
+      },
+      "HAlign": {
+        "_dirType": "string",
+        "_value": "Right"
+      },
+      "VAlign": {
+        "_dirType": "string",
+        "_value": "Center"
+      }
+    },
+    "btOk": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "button"
+      }
+    },
+    "#EffectParam": {
+      "_dirType": "sub",
+      "PointEffectInterval": {
+        "_dirType": "float",
+        "_value": "1.5"
+      },
+      "ItemEffectInterval": {
+        "_dirType": "float",
+        "_value": "1"
+      },
+      "TotalPointEffectTime": {
+        "_dirType": "float",
+        "_value": "1"
+      },
+      "FailPointEffectInterval": {
+        "_dirType": "float",
+        "_value": "0.5"
+      }
+    }
+  },
+  "ability": {
+    "_dirType": "sub",
+    "btClose": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "CloseWindowButton"
+      }
+    },
+    "#item": {
+      "_dirType": "sub",
+      "$BtSpUp": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "class": {
+          "_dirType": "string",
+          "_value": "button"
+        }
+      },
+      "$name": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": 41,
+          "_y": 5
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 137,
+          "_y": 17
+        },
+        "class": {
+          "_dirType": "string",
+          "_value": "TextBlock"
+        },
+        "font": {
+          "_dirType": "sub",
+          "size": {
+            "_dirType": "int",
+            "_value": "12"
+          }
+        },
+        "color": {
+          "_dirType": "string",
+          "_value": "75,70,50"
+        }
+      },
+      "$level": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": 41,
+          "_y": 22
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 115,
+          "_y": 34
+        },
+        "class": {
+          "_dirType": "string",
+          "_value": "TextBlock"
+        },
+        "font": {
+          "_dirType": "sub",
+          "size": {
+            "_dirType": "int",
+            "_value": "12"
+          }
+        },
+        "color": {
+          "_dirType": "string",
+          "_value": "55,50,30"
+        }
+      },
+      "$icon": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": 1,
+          "_y": 3
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 33,
+          "_y": 35
+        }
+      },
+      "$pointNum": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": 80,
+          "_y": 22
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 105,
+          "_y": 34
+        },
+        "font": {
+          "_dirType": "sub",
+          "size": {
+            "_dirType": "int",
+            "_value": "12"
+          }
+        },
+        "class": {
+          "_dirType": "string",
+          "_value": "TextBlock"
+        },
+        "color": {
+          "_dirType": "string",
+          "_value": "dc13ec"
+        },
+        "textJustify": {
+          "_dirType": "string",
+          "_value": "Right"
+        }
+      }
+    },
+    "$category1": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 10,
+        "_y": 90
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 150,
+        "_y": 290
+      }
+    },
+    "$category2": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 152,
+        "_y": 90
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 294,
+        "_y": 290
+      }
+    },
+    "$category3": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 295,
+        "_y": 90
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 436,
+        "_y": 290
+      }
+    },
+    "$skillPoint": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 392,
+        "_y": 296
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 430,
+        "_y": 309
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "TextBlock"
+      },
+      "color": {
+        "_dirType": "string",
+        "_value": "Black"
+      },
+      "textJustify": {
+        "_dirType": "string",
+        "_value": "Right"
+      }
+    }
+  },
+  "Exit": {
+    "_dirType": "sub",
+    "$BtExit": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "Button"
+      }
+    }
+  },
+  "worldMap": {
+    "_dirType": "sub",
+    "btClose": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "CloseWindowButton"
+      }
+    },
+    "#MapList": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "sub",
+        "spot": {
+          "_dirType": "vector",
+          "_x": 144,
+          "_y": 142
+        }
+      },
+      "1": {
+        "_dirType": "sub",
+        "spot": {
+          "_dirType": "vector",
+          "_x": 234,
+          "_y": 146
+        }
+      },
+      "2": {
+        "_dirType": "sub",
+        "spot": {
+          "_dirType": "vector",
+          "_x": 317,
+          "_y": 186
+        }
+      },
+      "3": {
+        "_dirType": "sub",
+        "spot": {
+          "_dirType": "vector",
+          "_x": 424,
+          "_y": 116
+        }
+      },
+      "4": {
+        "_dirType": "sub",
+        "spot": {
+          "_dirType": "vector",
+          "_x": 511,
+          "_y": 155
+        }
+      },
+      "5": {
+        "_dirType": "sub",
+        "spot": {
+          "_dirType": "vector",
+          "_x": 161,
+          "_y": 235
+        }
+      },
+      "6": {
+        "_dirType": "sub",
+        "spot": {
+          "_dirType": "vector",
+          "_x": 282,
+          "_y": 244
+        }
+      },
+      "7": {
+        "_dirType": "sub",
+        "spot": {
+          "_dirType": "vector",
+          "_x": 428,
+          "_y": 207
+        }
+      },
+      "8": {
+        "_dirType": "sub",
+        "spot": {
+          "_dirType": "vector",
+          "_x": 180,
+          "_y": 404
+        }
+      },
+      "9": {
+        "_dirType": "sub",
+        "spot": {
+          "_dirType": "vector",
+          "_x": 268,
+          "_y": 312
+        }
+      },
+      "10": {
+        "_dirType": "sub",
+        "spot": {
+          "_dirType": "vector",
+          "_x": 403,
+          "_y": 287
+        }
+      },
+      "11": {
+        "_dirType": "sub",
+        "spot": {
+          "_dirType": "vector",
+          "_x": 466,
+          "_y": 363
+        }
+      }
+    },
+    "RouteList": {
+      "_dirType": "sub",
+      "$0_1": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$0_5": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$1_2": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$1_5": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$1_6": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$2_3": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$2_6": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$2_7": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$2_10": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$3_4": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$3_7": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$4_7": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$5_6": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$5_8": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$5_9": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$6_7": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$6_9": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$6_10": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$7_10": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$8_9": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$9_10": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$10_11": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "Canvas"
+      }
+    },
+    "class": {
+      "_dirType": "string",
+      "_value": "ConstraintCanvas"
+    }
+  },
+  "SkillToolTip": {
+    "_dirType": "sub",
+    "class": {
+      "_dirType": "string",
+      "_value": "VerticalBox"
+    },
+    "$Title": {
+      "_dirType": "sub",
+      "SlotPadding": {
+        "_dirType": "string",
+        "_value": "0,0,0,5"
+      },
+      "SlotHAlign": {
+        "_dirType": "string",
+        "_value": "Center"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "TextBlock"
+      },
+      "font": {
+        "_dirType": "sub",
+        "bold": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "size": {
+          "_dirType": "int",
+          "_value": "14"
+        }
+      }
+    },
+    "Content": {
+      "_dirType": "sub",
+      "class": {
+        "_dirType": "string",
+        "_value": "HorizontalBox"
+      },
+      "$SkillIcon": {
+        "_dirType": "sub",
+        "SlotVAlign": {
+          "_dirType": "string",
+          "_value": "Top"
+        }
+      },
+      "DescList": {
+        "_dirType": "sub",
+        "SlotPadding": {
+          "_dirType": "string",
+          "_value": "5,5,0,0"
+        },
+        "class": {
+          "_dirType": "string",
+          "_value": "VerticalBox"
+        },
+        "$MasterLevel": {
+          "_dirType": "sub",
+          "class": {
+            "_dirType": "string",
+            "_value": "TextBlock"
+          },
+          "color": {
+            "_dirType": "string",
+            "_value": "FFFFF799"
+          },
+          "lineGap": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "SlotPadding": {
+            "_dirType": "string",
+            "_value": "0,0,0,4"
+          }
+        },
+        "$Desc": {
+          "_dirType": "sub",
+          "class": {
+            "_dirType": "string",
+            "_value": "RichTextBlock"
+          },
+          "lineGap": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "mode": {
+            "_dirType": "string",
+            "_value": "ToolTip"
+          }
+        }
+      }
+    },
+    "WhiteLine": {
+      "_dirType": "sub",
+      "SlotPadding": {
+        "_dirType": "string",
+        "_value": "4,4,6,6"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "Image"
+      },
+      "image": {
+        "_dirType": "sub",
+        "type": {
+          "_dirType": "string",
+          "_value": "Color"
+        },
+        "size": {
+          "_dirType": "string",
+          "_value": "1,1"
+        },
+        "color": {
+          "_dirType": "string",
+          "_value": "White"
+        }
+      }
+    },
+    "$CurLevel": {
+      "_dirType": "sub",
+      "class": {
+        "_dirType": "string",
+        "_value": "TextBlock"
+      },
+      "lineGap": {
+        "_dirType": "int",
+        "_value": "3"
+      },
+      "SlotPadding": {
+        "_dirType": "string",
+        "_value": "2,0,0,5"
+      }
+    },
+    "$NextLevel": {
+      "_dirType": "sub",
+      "class": {
+        "_dirType": "string",
+        "_value": "TextBlock"
+      },
+      "lineGap": {
+        "_dirType": "int",
+        "_value": "3"
+      },
+      "SlotPadding": {
+        "_dirType": "string",
+        "_value": "2,0,0,0"
+      }
+    }
+  },
+  "dayNight": {
+    "_dirType": "sub",
+    "#backLayer": {
+      "_dirType": "sub"
+    },
+    "$weatherEffect": {
+      "_dirType": "sub",
+      "class": {
+        "_dirType": "string",
+        "_value": "WidgetSwitcher"
+      }
+    },
+    "TotalDays": {
+      "_dirType": "sub",
+      "$TotalDays": {
+        "_dirType": "sub",
+        "font": {
+          "_dirType": "sub"
+        },
+        "class": {
+          "_dirType": "string",
+          "_value": "TextBlock"
+        }
+      },
+      "lt": {
+        "_dirType": "vector",
+        "_x": -19,
+        "_y": 20
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 18,
+        "_y": 47
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "Border"
+      },
+      "HAlign": {
+        "_dirType": "string",
+        "_value": "Center"
+      },
+      "VAlign": {
+        "_dirType": "string",
+        "_value": "Center"
+      }
+    }
+  },
+  "worldMapToolTip": {
+    "_dirType": "sub",
+    "class": {
+      "_dirType": "string",
+      "_value": "VerticalBox"
+    },
+    "$StreetName": {
+      "_dirType": "sub",
+      "class": {
+        "_dirType": "string",
+        "_value": "TextBlock"
+      }
+    },
+    "$MapName": {
+      "_dirType": "sub",
+      "class": {
+        "_dirType": "string",
+        "_value": "TextBlock"
+      }
+    }
+  },
+  "worldMap_MistyIsland": {
+    "_dirType": "sub",
+    "btClose": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "CloseWindowButton"
+      }
+    },
+    "RouteList": {
+      "_dirType": "sub",
+      "$0_1": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$0_2": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$0_3": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$1_2": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$1_3": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$1_4": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$1_5": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$2_3": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$2_6": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$2_7": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$3_8": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$3_9": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$4_5": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$4_9": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$4_10": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$5_6": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$5_13": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$6_7": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$6_11": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$7_8": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$7_14": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$8_9": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$8_12": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$9_15": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$10_16": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$11_17": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$12_18": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$13_16": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$14_17": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "$15_18": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        }
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "Canvas"
+      }
+    },
+    "MapList": {
+      "_dirType": "sub",
+      "class": {
+        "_dirType": "string",
+        "_value": "Canvas"
+      }
+    },
+    "class": {
+      "_dirType": "string",
+      "_value": "ConstraintCanvas"
+    }
+  },
+  "chapterSelect_MistyIsland": {
+    "_dirType": "sub",
+    "$worldMap": {
+      "_dirType": "sub",
+      "class": {
+        "_dirType": "string",
+        "_value": "WidgetSwitcher"
+      }
+    },
+    "btClose": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "CloseWindowButton"
+      }
+    },
+    "$btStart": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "Button"
+      }
+    },
+    "$btChapter1": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "checked": {
+        "_dirType": "sub"
+      },
+      "checkedDisabled": {
+        "_dirType": "sub"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "CheckButton"
+      }
+    },
+    "$btChapter2": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "checked": {
+        "_dirType": "sub"
+      },
+      "checkedDisabled": {
+        "_dirType": "sub"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "CheckButton"
+      }
+    },
+    "$btChapter3": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "checked": {
+        "_dirType": "sub"
+      },
+      "checkedDisabled": {
+        "_dirType": "sub"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "CheckButton"
+      }
+    },
+    "$btEndless": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "checked": {
+        "_dirType": "sub"
+      },
+      "checkedDisabled": {
+        "_dirType": "sub"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "CheckButton"
+      }
+    },
+    "$chapterTitle": {
+      "_dirType": "sub",
+      "class": {
+        "_dirType": "string",
+        "_value": "WidgetSwitcher"
+      }
+    },
+    "chapterDesc": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 574,
+        "_y": 156
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 791,
+        "_y": 369
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "Border"
+      },
+      "$chapterDesc": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "TextBlock"
+        },
+        "lineGap": {
+          "_dirType": "int",
+          "_value": "2"
+        },
+        "font": {
+          "_dirType": "sub",
+          "size": {
+            "_dirType": "int",
+            "_value": "12"
+          },
+          "info": {
+            "_dirType": "string",
+            "_value": "MDmorris9 12pt #4b2e0d"
+          }
+        },
+        "color": {
+          "_dirType": "string",
+          "_value": "a19288"
+        },
+        "HAlign": {
+          "_dirType": "string",
+          "_value": "Center"
+        },
+        "VAlign": {
+          "_dirType": "string",
+          "_value": "Center"
+        }
+      }
+    },
+    "$rewardSlot0": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 584,
+        "_y": 393
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 629,
+        "_y": 437
+      }
+    },
+    "$rewardSlot1": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 635,
+        "_y": 393
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 680,
+        "_y": 437
+      }
+    },
+    "$rewardSlot2": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 686,
+        "_y": 393
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 730,
+        "_y": 437
+      }
+    },
+    "$rewardSlot3": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 737,
+        "_y": 393
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 782,
+        "_y": 437
+      }
+    },
+    "$rewardSlot4": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 584,
+        "_y": 441
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 629,
+        "_y": 485
+      }
+    },
+    "$rewardSlot5": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 635,
+        "_y": 441
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 680,
+        "_y": 485
+      }
+    },
+    "$rewardSlot6": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 686,
+        "_y": 441
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 730,
+        "_y": 485
+      }
+    },
+    "$rewardSlot7": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 737,
+        "_y": 441
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 782,
+        "_y": 485
+      }
+    },
+    "todayPoint": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 605,
+        "_y": 536
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 670,
+        "_y": 552
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "Border"
+      },
+      "$todayPoint": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "TextBlock"
+        },
+        "lineGap": {
+          "_dirType": "int",
+          "_value": "2"
+        },
+        "font": {
+          "_dirType": "sub",
+          "size": {
+            "_dirType": "int",
+            "_value": "11"
+          },
+          "info": {
+            "_dirType": "string",
+            "_value": "MDmorris9 12pt #4b2e0d"
+          },
+          "bold": {
+            "_dirType": "short",
+            "_value": "-1"
+          }
+        },
+        "color": {
+          "_dirType": "string",
+          "_value": "ffffff"
+        },
+        "HAlign": {
+          "_dirType": "string",
+          "_value": "Left"
+        },
+        "VAlign": {
+          "_dirType": "string",
+          "_value": "Center"
+        },
+        "text": {
+          "_dirType": "string",
+          "_value": "{}/{}"
+        }
+      }
+    },
+    "totalPoint": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 605,
+        "_y": 558
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 670,
+        "_y": 574
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "Border"
+      },
+      "$totalPoint": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "TextBlock"
+        },
+        "lineGap": {
+          "_dirType": "int",
+          "_value": "2"
+        },
+        "font": {
+          "_dirType": "sub",
+          "size": {
+            "_dirType": "int",
+            "_value": "11"
+          },
+          "info": {
+            "_dirType": "string",
+            "_value": "MDmorris9 12pt #4b2e0d"
+          },
+          "bold": {
+            "_dirType": "short",
+            "_value": "-1"
+          }
+        },
+        "color": {
+          "_dirType": "string",
+          "_value": "ffffff"
+        },
+        "HAlign": {
+          "_dirType": "string",
+          "_value": "Right"
+        },
+        "VAlign": {
+          "_dirType": "string",
+          "_value": "Center"
+        }
+      }
+    },
+    "#scroll": {
+      "_dirType": "sub"
+    }
+  },
+  "achievement_MistyIsland": {
+    "_dirType": "sub",
+    "btClose": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "CloseWindowButton"
+      }
+    },
+    "$btHelp": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "Button"
+      }
+    },
+    "$btNormal": {
+      "_dirType": "sub",
+      "class": {
+        "_dirType": "string",
+        "_value": "CheckButton"
+      },
+      "mouseover": {
+        "_dirType": "uol",
+        "_value": "normal"
+      },
+      "checked": {
+        "_dirType": "uol",
+        "_value": "pressed"
+      },
+      "disabled": {
+        "_dirType": "uol",
+        "_value": "normal"
+      }
+    },
+    "$btChallenge": {
+      "_dirType": "sub",
+      "class": {
+        "_dirType": "string",
+        "_value": "CheckButton"
+      },
+      "mouseover": {
+        "_dirType": "uol",
+        "_value": "normal"
+      },
+      "checked": {
+        "_dirType": "uol",
+        "_value": "pressed"
+      },
+      "disabled": {
+        "_dirType": "uol",
+        "_value": "normal"
+      }
+    },
+    "#list": {
+      "_dirType": "sub",
+      "$page": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "WidgetSwitcher"
+        },
+        "ready": {
+          "_dirType": "sub",
+          "progressInfo": {
+            "_dirType": "sub",
+            "lt": {
+              "_dirType": "vector",
+              "_x": 7,
+              "_y": 38
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 74,
+              "_y": 53
+            },
+            "HAlign": {
+              "_dirType": "string",
+              "_value": "Left"
+            },
+            "VAlign": {
+              "_dirType": "string",
+              "_value": "Center"
+            },
+            "class": {
+              "_dirType": "string",
+              "_value": "Border"
+            },
+            "$progressInfo": {
+              "_dirType": "sub",
+              "class": {
+                "_dirType": "string",
+                "_value": "TextBlock"
+              },
+              "color": {
+                "_dirType": "string",
+                "_value": "bcb0a7"
+              },
+              "font": {
+                "_dirType": "sub",
+                "size": {
+                  "_dirType": "int",
+                  "_value": "12"
+                }
+              },
+              "text": {
+                "_dirType": "string",
+                "_value": "進行情況"
+              }
+            }
+          },
+          "stateInfo": {
+            "_dirType": "sub",
+            "lt": {
+              "_dirType": "vector",
+              "_x": 80,
+              "_y": 38
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 327,
+              "_y": 53
+            },
+            "HAlign": {
+              "_dirType": "string",
+              "_value": "Left"
+            },
+            "VAlign": {
+              "_dirType": "string",
+              "_value": "Center"
+            },
+            "class": {
+              "_dirType": "string",
+              "_value": "Border"
+            },
+            "$stateInfo": {
+              "_dirType": "sub",
+              "class": {
+                "_dirType": "string",
+                "_value": "TextBlock"
+              },
+              "color": {
+                "_dirType": "string",
+                "_value": "ffcc00"
+              },
+              "font": {
+                "_dirType": "sub",
+                "size": {
+                  "_dirType": "int",
+                  "_value": "12"
+                }
+              },
+              "text": {
+                "_dirType": "string",
+                "_value": "{} / {}"
+              }
+            }
+          },
+          "$getPage": {
+            "_dirType": "sub",
+            "$btGet": {
+              "_dirType": "sub",
+              "normal": {
+                "_dirType": "sub"
+              },
+              "pressed": {
+                "_dirType": "sub"
+              },
+              "disabled": {
+                "_dirType": "sub"
+              },
+              "mouseOver": {
+                "_dirType": "sub"
+              },
+              "class": {
+                "_dirType": "string",
+                "_value": "Button"
+              }
+            },
+            "class": {
+              "_dirType": "string",
+              "_value": "WidgetSwitcher"
+            }
+          },
+          "class": {
+            "_dirType": "string",
+            "_value": "canvas"
+          },
+          "SlotPadding": {
+            "_dirType": "string",
+            "_value": "0, 0, 0, 5"
+          }
+        },
+        "finished": {
+          "_dirType": "sub",
+          "class": {
+            "_dirType": "string",
+            "_value": "canvas"
+          },
+          "SlotPadding": {
+            "_dirType": "string",
+            "_value": "0, 0, 0, 5"
+          }
+        }
+      },
+      "missionInfo": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": 7,
+          "_y": 7
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 327,
+          "_y": 38
+        },
+        "HAlign": {
+          "_dirType": "string",
+          "_value": "Left"
+        },
+        "VAlign": {
+          "_dirType": "string",
+          "_value": "Center"
+        },
+        "class": {
+          "_dirType": "string",
+          "_value": "Border"
+        },
+        "$missionInfo": {
+          "_dirType": "sub",
+          "class": {
+            "_dirType": "string",
+            "_value": "TextBlock"
+          },
+          "color": {
+            "_dirType": "string",
+            "_value": "bcb0a7"
+          },
+          "lineGap": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "font": {
+            "_dirType": "sub",
+            "size": {
+              "_dirType": "int",
+              "_value": "12"
+            }
+          }
+        }
+      },
+      "reward": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": 341,
+          "_y": 13
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 378,
+          "_y": 49
+        },
+        "class": {
+          "_dirType": "string",
+          "_value": "Overlay"
+        },
+        "$reward": {
+          "_dirType": "sub",
+          "SlotVAlign": {
+            "_dirType": "string",
+            "_value": "Center"
+          },
+          "SlotHAlign": {
+            "_dirType": "string",
+            "_value": "Center"
+          }
+        },
+        "$rewardCount": {
+          "_dirType": "sub",
+          "SlotVAlign": {
+            "_dirType": "string",
+            "_value": "Bottom"
+          },
+          "SlotHAlign": {
+            "_dirType": "string",
+            "_value": "Left"
+          },
+          "class": {
+            "_dirType": "string",
+            "_value": "TextBlock"
+          },
+          "font": {
+            "_dirType": "sub"
+          }
+        }
+      }
+    },
+    "$content": {
+      "_dirType": "sub",
+      "class": {
+        "_dirType": "string",
+        "_value": "WidgetSwitcher"
+      },
+      "lt": {
+        "_dirType": "vector",
+        "_x": 32,
+        "_y": 184
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 534,
+        "_y": 576
+      },
+      "normal": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "ScrollableBox"
+        },
+        "scrollBar": {
+          "_dirType": "sub",
+          "enabled": {
+            "_dirType": "sub"
+          },
+          "disabled": {
+            "_dirType": "sub"
+          }
+        },
+        "$normal": {
+          "_dirType": "sub",
+          "class": {
+            "_dirType": "string",
+            "_value": "VerticalBox"
+          }
+        }
+      },
+      "challenge": {
+        "_dirType": "sub",
+        "class": {
+          "_dirType": "string",
+          "_value": "ScrollableBox"
+        },
+        "scrollBar": {
+          "_dirType": "sub",
+          "enabled": {
+            "_dirType": "sub"
+          },
+          "disabled": {
+            "_dirType": "sub"
+          }
+        },
+        "$challenge": {
+          "_dirType": "sub",
+          "class": {
+            "_dirType": "string",
+            "_value": "VerticalBox"
+          }
+        }
+      }
+    }
+  },
+  "dayNight_MistyIsland": {
+    "_dirType": "sub",
+    "#backLayer": {
+      "_dirType": "sub"
+    },
+    "$HPgauge": {
+      "_dirType": "sub",
+      "class": {
+        "_dirType": "string",
+        "_value": "progressbar"
+      },
+      "StretchFillImage": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "#ArrowOrigin": {
+      "_dirType": "vector",
+      "_x": 0,
+      "_y": 19
+    },
+    "$weatherEffect": {
+      "_dirType": "sub",
+      "class": {
+        "_dirType": "string",
+        "_value": "WidgetSwitcher"
+      }
+    },
+    "TotalDays": {
+      "_dirType": "sub",
+      "$TotalDays": {
+        "_dirType": "sub",
+        "font": {
+          "_dirType": "sub"
+        },
+        "class": {
+          "_dirType": "string",
+          "_value": "TextBlock"
+        }
+      },
+      "lt": {
+        "_dirType": "vector",
+        "_x": -19,
+        "_y": 20
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 18,
+        "_y": 47
+      },
+      "class": {
+        "_dirType": "string",
+        "_value": "Border"
+      },
+      "HAlign": {
+        "_dirType": "string",
+        "_value": "Center"
+      },
+      "VAlign": {
+        "_dirType": "string",
+        "_value": "Center"
+      }
+    },
+    "#ArrowDegree": {
+      "_dirType": "float",
+      "_value": "162"
+    }
+  }
+}

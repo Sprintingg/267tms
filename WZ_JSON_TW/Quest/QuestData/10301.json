@@ -1,0 +1,188 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 마녀의 단단한 빗자루 만들기"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "마녀의 소중한 보물인 #b#t01002971##k를 쓰자, 어디선가 마녀의 목소리가 드리는 듯 하다."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "마녀는 마법을 풀고 하늘을 날아갈 수 있게 빗자루를 만들어야 한다고 한다."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "마녀가 좋은 곳으로 날아가길...\\r\\n#r6월 24일까지#k 마녀의 빗자루 만들기를 5회 도와주지 않으면 아무 소용 없다."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4032349:# #t4032349:# #c4032349# / 20\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010020"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "10299"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "31"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "70"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "2009062500"
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "info": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "0"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "2"
+        },
+        "3": {
+          "_dirType": "string",
+          "_value": "3"
+        },
+        "4": {
+          "_dirType": "string",
+          "_value": "4"
+        }
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1052202"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010020"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q10301e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032349"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032349"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "아아 답답해.. 나 좀 꺼내줘~ 내 목소리가 들린다면 나를 좀 꺼내 주지 않겠어?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "답답해 답답해. 벌써 이 안에 있는지도... 제발 나 좀 꺼내줘. 내가 타고 갈 빗자루를 만들 수 있게 도와줘~"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "몬스터들이 가지고 다니는 #b#t4032349##k을 20개 모아서 내게 가져다 줘. 그렇다면 내가 예전에 잡은 #b핑크빈#k의 가죽으로 만든 옷을 네게 주도록 하지."
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "제발 꺼내달란 말이야..."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "오오.. 내가 부탁한 짚단을 가지고 온거야? 어서 이리 내놓아봐."
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b#t04032349##k이 20개 필요하다고 말했을텐데... "
+          }
+        }
+      }
+    }
+  }
+}

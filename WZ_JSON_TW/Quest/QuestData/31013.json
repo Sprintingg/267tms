@@ -1,0 +1,202 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[克里塞] 請擊倒薛西斯"
+    },
+    "area": {
+      "_dirType": "string",
+      "_value": "33"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "所有準備逐漸完成。與米加爾談談吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "時候到了。擊倒薛西斯。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "已擊倒了薛西斯。現在克里塞應該可以恢復過去的快樂時光吧？"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 67,200\r\n可進行 '祕寶蘊含的力量' 任務\r\n可進行 '[克里塞] 是為了長老' 任務\r\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "擊倒薛西斯"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "67200"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2170000"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q31013s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "50"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31012"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2170000"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "31018"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "67200"
+      },
+      "charismaEXP": {
+        "_dirType": "int",
+        "_value": "60"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "目前已經完成準備了。旅行者還好嗎？\\r\\n我想應該是時候到了。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "雖然有點膽怯…但是既然準備這麼久，相信一定會有好結果。如果旅行者打前鋒我們就會在後面跟隨。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "還沒有準備好嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "和薛西斯的戰鬥結果如何？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "最後一刻他露出了從前的面貌嗎？\n嗯。但是從他沒有回家來看不知何時還會發生變異。\r\n\r\n這段時間應該注意觀察競技場附近。\r\n\r\n總之我該怎麼表達我的感激呢…"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "雖然我也想和旅行者一起努力擊倒薛西斯，但是因為競技場外的怪物太多，結果進入失敗了。真是丟臉…"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "必須擊倒薛西斯。看樣子還沒有擊倒他嗎？"
+          }
+        }
+      }
+    }
+  }
+}

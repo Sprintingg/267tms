@@ -1,0 +1,169 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 作出閃閃發亮的表情。"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "被大發企劃代表#b#p1052121##k遷就要接受#b演技課程#k. 是哪個課程? 向#b弓箭手村市場, 美髮店旁邊#k站著的#p1052121#進行對話."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "這次決定學眼神閃閃發亮的表情。聽說看到喜歡的東西時最容易會有這種表情…#b#m220000000##k的#b#p2041009##k看到堅強且有魅力的人，就經常作出這種表情。除掉#r鐘塔最下層的怪物#k後去找#p2041009#。\r\n\r\n#o7140000#  #r#a65141##k\r\n#o7160000#  #r#a65142##k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "學到閃閃發亮的表情。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052121"
+      },
+      "charmMin": {
+        "_dirType": "int",
+        "_value": "90"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "6513"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2041009"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q6514e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "7140000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "450"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "7160000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "450"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "…啊，來了。#h0#。唉…啊，什麼也不是。沒有什麼苦惱。只是…唉…那麼開始下一個課程吧？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "第十三個演技課程。這次學習讓眼睛閃閃發亮的表情吧。看到憧憬的，喜歡的，渴望的東西時，眼睛會閃閃發亮吧？用演技，人為地表現出來。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "#b#m220000004##k的#b#p2041009##k對這種表情很拿手。她看到強大而有魅力的冒險家就會是這種表情。魅力你已經足夠…強大的話…對了，除掉#r鐘塔最下層的怪物#k如何？"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "聽說鐘塔最下層的 #r#o7140000##k，#r#o7160000##k非常強大。所以擊敗那裡的怪物#r各 450隻#k後去找 #p2041009#吧。那麼希望你這次也能出色地完成。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "再也不想學演戲…不會是真的吧？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒去找#p2041009#嗎？她在 #m220000004#工作。"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "哇~ 真是個有魅力的人啊~ 光看著就大飽眼福啊！而且又那麼強大，該有多帥啊？"
+          }
+        }
+      }
+    }
+  }
+}

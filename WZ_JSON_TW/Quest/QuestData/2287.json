@@ -1,0 +1,223 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[墮落城市] 支付作曲費"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "找到諾馬耶的MP3給他。現在的話應該可以得到新曲了吧？向#b諾馬耶#k拜託赫一要出在出道舞台上唱的新曲吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "需要支付作曲費？什麼。因為是天才作曲家，這種程度應該要支付吧？在#r101大樓7～8層#k取得高級增幅電線拿去給#b諾馬耶#k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "支付作曲費。但是沒有乾脆的給新曲。是有什麼事嗎？去找#b諾馬耶#k。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000537:##t4000537:##c4000537#/50\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 8,450\r\n可進行 '不可抄襲' 任務\r\n"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "28"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "8450"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052120"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "35"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2286"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052120"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000537"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "8450"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000537"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "啊！你是找到我MP3的#h0#！上次本來要說的事是什麼？\\r\\n#L0##b在101大樓地鐵站負責遺失物的赫一…需要作為歌手出道的新曲。不幫忙作一首曲子嗎？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "作曲…雖然不曉得你知不知道，我因為是非常有名的作曲家，我歌曲的作曲費非常貴。有打算支付作曲費吧？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "作曲費用其他東西代替現金。 我很想要的高級增幅電線！ 我需要這個。 取得#r墮落城市 7~8層#k的 #b高級增幅電線 50個#k。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "就算是那樣也沒辦法免費給曲子。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "已經作好了支付我所說的作曲費的準備了嗎？好。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "一、二、三…依約定帶回了電線啊。來，這是依約定有新曲的我的作曲筆記…(但是不知為何不給我在猶豫。)"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "我歌曲的作曲費忘記是#b高級增幅電線50個#k嗎？請去101大樓7～8層取回來。"
+          }
+        }
+      }
+    }
+  }
+}

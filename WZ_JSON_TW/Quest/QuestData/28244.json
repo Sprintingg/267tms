@@ -1,0 +1,258 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[職業] 醉翁漢斯"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b魔法森林#k的#b#@1032001:##k說他也許知道如何揭開地圖上的其他區域。我們去找他談一談。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b魔法森林#k的#b#@1032001:##k說天下沒有白吃的午餐！他要求你帶給他一些#r豬肉#k，好配他剛收到的美酒。\\n他說你可以從#r緞帶肥肥#k身上取得這個物品，你可以在#b#m100030000##k發現它們的蹤跡。\\n\\n完成之後，向#b魔法森林#k的#b#@1032001:##k回報。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#b勇士之村#k的#b#@1020000:##k說他也許能夠揭開#r骯髒的藏寶圖#k上的紅色區域。我們去找他談一談。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4001357:##t4001357:##c4001357#/20\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 1,130\r\n可進行 '朽木不可雕也' 任務\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "1130"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1130"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001357"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#b#p1032104##k要你來找我？\\n嗯，讓我瞧瞧。\\n\\n"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "啊，我剛收到一瓶上等紅酒，卻沒有下酒菜可以配。\\n\\n你可以帶20片#r豬肉#k回來給我嗎?#b#m100030000##k有很多#r緞帶肥肥#k。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你一點都不好奇嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "怎麼這麼久？\\n酒的療癒香氣散得很快耶。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝啦，我會仔細品嚐的。我想我該告訴你一些事。\\n很抱歉，我無法告訴你確切做法，但我知道勇士之村的人知道怎麼去除地圖上的紅漬。真的，我曾經親眼見過。\\n\\n你為何不去找#b勇士之村#k的#b#p1020000##k試試呢？"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "我不是要你收集20片#r豬肉#k嗎？"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1032001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4001357"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1032001"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "40"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201011010000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "28243"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "500"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "510"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "520"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "511"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "521"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "512"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "522"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "1500"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "1510"
+        },
+        "9": {
+          "_dirType": "int",
+          "_value": "1511"
+        },
+        "10": {
+          "_dirType": "int",
+          "_value": "1512"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

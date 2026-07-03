@@ -1,0 +1,168 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[伊利恩] 製作水晶之門2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "215"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必要]"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "這次的課程是學習製作水晶之門。\n\n#b按下[W]鍵後，確認世界地圖移動到#m402000530#吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "進入水晶學院#m402000530#內部後可見到#o2400403#，那是有點危險的水晶…\n\n狩獵#b#o2400403#採取#i4036168# #t4036168#20個吧。#k\n\n全部都收集到的話，就回去#m402000530#。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "我已經慢慢適應水晶學院了嗎？有點危險的#o2400403#也順利解決了，課程任務也拿到了第1名！這一定是和 #p3001301#進行特殊活動後獲得的成果！"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4036168:# #t4036168:# #c4036168# / 20\r\n"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "returnMapID": {
+      "_dirType": "int",
+      "_value": "402000530"
+    },
+    "targetType": {
+      "_dirType": "int",
+      "_value": "-1"
+    },
+    "returnType": {
+      "_dirType": "int",
+      "_value": "-1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "3"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q34811s"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001334"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34808"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q34811e"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001334"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036168"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請到#b教室內#k的#r#o2400403:##k收集  #i4036168:# #b#t4036168:# 20個#k。"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 假面紳士的提議1"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "喬伊的身分"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "喬伊瘋狂的樣子非常可怕。為什麼會變成這樣？去問假面紳士吧！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "假面紳士說故事沒講完，並要我繼續找女巫的故事。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "為了詢問喬伊瘋狂的原因，而前往尋找假面紳士，假面紳士說女巫的故事還沒結束，要我繼續找故事。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "50"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "50"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "什麼事？\\r\\n#b#L0#知道叫做喬伊的玩偶嗎？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "喬伊？喬伊這個名字太多了。在這麼多的玩偶裡，只知道玩偶名字是根本查不到的。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "去問蘇菲莉雅有關喬伊的事吧。蘇菲莉雅會不會知道呢？"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "因受詛咒每天生活在恐懼中並無人幫助的#b#p2120005##k、鬧鬼宅邸的玩具工作室中只知道製造玩偶的#b約拿斯#k、天天舉辦宴會，但自己卻不能參加的#b露迪米拉#k。還有詛咒蘇菲莉雅的被拋棄的玩偶#b喬伊#k。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "故事就這麼結束？想繼續聽下去嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好。我告訴你詛咒的原因。首先向喬伊最憎恨的#b蘇菲莉雅#k詢問喬伊是誰。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你不想知道就沒辦法。祝你開心每一天…"
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2120005"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2120000"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201010131200"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201011031200"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201010131200"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201011031200"
+      }
+    }
+  }
+}

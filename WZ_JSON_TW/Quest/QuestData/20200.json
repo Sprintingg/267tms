@@ -1,0 +1,128 @@
+{
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇家騎士團] 修煉騎士的終結"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "達到等級30時#p1101002#突然開始對話…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "他說#p1101002#的等級已經提升很多，也熟悉了騎士的任務，現在可以脫離修煉騎士成為正式的騎士，看看#b騎士等級試煉#k如何。若要成為更高等級的騎士就前往耶雷弗吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "他說#p1101002#的等級已經提升很多，也熟悉了騎士的任務，現在可以脫離修煉騎士成為正式的騎士，看看騎士等級試煉如何。若要成為更高等級的騎士就前往耶雷弗吧。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[轉職]"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "若要查詢騎士等級試煉請前往耶雷弗。各騎士團長測試你的能力，若夠資格就會任命你為正式騎士…"
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#h0#玩家？你的等級提升的這麼快。任務似乎也執行了很多…這樣條件應該很足夠了，要參加#b騎士等級試煉#k嗎？現在你也該脫離修煉騎士變成正式騎士了。難道不是嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1101002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1101002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "1100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "1200"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "1300"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "1400"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "1500"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

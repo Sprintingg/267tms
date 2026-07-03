@@ -1,0 +1,204 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[幻獸師] 再次往納希"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "85"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "看他們前往時間通道,好像真的是往鐘塔方向逃了.\r\n#o8860000#太壞了... 你等著.我會阻止你的!"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p9390363#的臉色很不好.跟他講話也氣呼呼的, 好像得問問#p9390362#了."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p9390370#的最後訊息寫著 #m260000000#.\n真是不像話. 我們在 #m260000000#待一下就去了這個地方… 看來聚集的很好.\n雖然很失望但也沒辦法了. 我們決定再次向 #m260000000#前進從村子開始重新尋找.\n從#b納希宮殿#k開始仔細尋找才行."
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "29039"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "29039"
+      },
+      "transferField": {
+        "_dirType": "int",
+        "_value": "260000000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "大事不妙了...#h0#"
+      },
+      "yesEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "這裡有 #p9390370#所留下的紙條."
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "(紙條裡寫 #m260000000#)"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "還是原點.\\r#p9390363# 傢伙... 還是無法消氣.那是應該的..."
+          }
+        },
+        "3": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "也沒辦法.\\r#p9390370#所留下的線索說要往 #m260000000#的話, 要倒回去還是要到 #m260000000#.\\r我無法放棄."
+          }
+        },
+        "4": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#h0#. 雖然不好意思,但想請你去#m260000000#收集情報.別忘了. #b納希宮殿#k. \\r我先解決 #p9390363#再跟上去.\\r\\n"
+          }
+        },
+        "5": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "我知道了.我先過去之後先問問可能知道的人."
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390363"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q59202s"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201312201700"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201312201700"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "59201"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub"
+      },
+      "job_TW": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "11212"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "11213"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390362"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  }
+}

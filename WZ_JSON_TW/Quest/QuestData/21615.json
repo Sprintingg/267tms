@@ -1,0 +1,263 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[過去的英雄，狂狼勇士] 尋找狼之生命水材料"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "6"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#t4032334#材料之一的#t4032335#。位於#b#m230000000##m230000003##k的#b#p2060005##k應該有賣吧？去問問#p2060005#吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2060005#雖然有從#m230000003#飼養的狼獲得的#t4032335#，但表示是不能白給，不過可以購買…售價為8千萬楓幣…\\r\\n\\r\\n#b80,000,000楓幣#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "從#p2060005#處購買了#t4032335#。用來製作#t4032334#吧。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "meso": {
+        "_dirType": "int",
+        "_value": "-80000000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032335"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "150"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2060005"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "21614"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032335"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032334"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2000"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2100"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2110"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2111"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2112"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2060005"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "money": {
+        "_dirType": "int",
+        "_value": "-80000000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032335"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "你好。原來是以前來買過狼用營養劑的那位啊。那時候真是謝謝你啊。找我有什麼事嗎？是不是需要營養劑啊？\\n#b#L0#(問你有沒有#t4032335#。)#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "#t4032335#嗎？是有一些在#m230000003#養的#o5130104#和#o5140000#那裡得來的貨…這次你要那個嗎？要的話我當然是會賣，但是…"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝貴客。這裡是你要的東西#t4032335#，價格為#b8000萬楓幣#k。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "#b(貴客？！語氣變了？還有動作也變得委婉，親切了！)#k"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "是不是覺得有點貴啊？但是#t4032335#實在是稀有的物品所以…只要付8000萬楓幣，我就馬上給你#t4032335#。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不要了嗎？可惜啊，本想8000萬楓幣便宜賣給你的…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "雖然不知要用在什麼地方，但我相信你作為一個喜愛狼的人，一定會用在有用的地方的。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "呼呼呼…托你的福這次#m230000003#虧本的都可以掙過來了。呼呼呼呼呼呼…"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "是#b8000萬楓幣#k嗎，好像少了點哦…請再確認一下你持有的楓幣吧。"
+          }
+        }
+      }
+    }
+  }
+}

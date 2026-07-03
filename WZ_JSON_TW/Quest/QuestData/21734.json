@@ -1,0 +1,236 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[過去的英雄，狂狼勇士] 傀儡師的痕跡"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "6"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "到等級 45突然 #b#p1002104##k跟我進行對話.有新的資訊嗎 ?"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1002104#說發現北隱藏的 #o9300346#痕跡, 在#b#m100040000##k裡的 #b人偶師的藏身處 #k內就是人偶師的居住地叫我去那看看.這一次看到#o9300346#的話叫我消滅他...\r\n\r\n\r\n#o9300346##r #a217341##k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "消滅#o9300346#後回來了。但是沒有得到有關#t4032323#的線索。可是#p1002104#笑了一下，好像在說不用擔心…"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "26410"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[技能]"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002104"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "45"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q21734s"
+      },
+      "notInTeleportItemLimitedField": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "21733"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2110"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2111"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2112"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2113"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2114"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002104"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q21734e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9300346"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "忙嗎，英雄大人？這段期間，我用所有的方法打聽了維多利亞島當中，找到了有趣的情報。就是關於#o9300346#的…"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "你知道? 英雄教訓 #o9300346#後在#m101030500#裡的入口不再運作了 ? #o9300346#傢伙 ,感覺在別的地方準備居住的地方."
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "聽說在#m100000000#裡在 #b#m100040000##k裡的 #b#o9300346#藏身處#k.感覺這很確定 .馬上過去後消滅 #r#o9300346##k吧."
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "打倒#o9300346#之後回來吧，還有一個你聽到了一定高興的消息。呵呵…可以期待的哦。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯？喂喂，怎麼這樣？大陸最高情報商人得到的最新消息！可以相信的。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "看來打倒了#o9300346#…怎麼是不高興的表情啊？發生什麼事了？#b#L0#(告訴了根本就沒有關於#t4032323#的情報。)#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "啊哈！是那個啊，哈哈哈…是那個的話不用擔心。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub"
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒去消滅#r#o9300346##k嗎？ #o9300346#的新的據點是#b#m100040000##k的#b人偶師隱身處#k。快去教訓他吧。"
+          }
+        }
+      }
+    }
+  }
+}

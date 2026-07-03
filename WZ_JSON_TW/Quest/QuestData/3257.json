@@ -1,0 +1,226 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[玩具城]送玩具給孩子們"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "36"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去找玩具城#b#m220010500##k的#b#p2040003##k吧。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4000109:# #t4000109:# #c4000109# / 60\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 704,860\r\n#i2022003:# #t2022003:# 100個\r\n可進行「木馬的失控」任務\r\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "依#b#p2040003##k的拜託收集可以從 #r#o3210204##k取得的 #b#i4000109##t4000109##k #b60個#k. #o3210204#可以在#m220010200#或是#m220010800#看到."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "依#b#p2040003##k的拜託收集可以從 #r#o3210204##k取得的#b#i4000109##t4000109##k #b60個#k."
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "704860"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2022003"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2040003"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "110"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3256"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2040003"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000109"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "60"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000109"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-60"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2022003"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "704860"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "喔~原來是你。上次的發條熊擊退活動立下了大功…!!你問我最近在做什麼嗎？最近再做其他活動。就是#b玩具分享活動#k。喔~你的眼神充滿了關心？真的要參加活動嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "很好。好。這次的活動叫做#e玩具分享#n。你也知道這裡，玩具城是玩具的世界。是個充滿玩具的世界！可是其他地區不是這樣。有許多孩子無法得到想要的玩具。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "所以聚集這裡的玩具城的玩具後分給全世界的小孩. 因此希望你可以去收集玩具. 首先收集可以從 #r#o3210204##k取得的#i4000109##b#t4000109##k #b60個#k.  "
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你應該很忙。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "玩具已經都收集到了嗎？好厲害喔！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "一, 二, 三..... 剛剛好. 謝謝. 收集了這麼多玩具鴨子, 在來就是要把這些分給楓之谷的孩子們. 收到這些禮物的孩子們希望可以開心. 不這麼想嗎? "
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "收集可以從#r#o3210204##k取得的 #b#i4000109##t4000109##k #b60個#k. #o3210204#可以在#m220010200#或是#m220010800#看到."
+          }
+        }
+      }
+    }
+  }
+}

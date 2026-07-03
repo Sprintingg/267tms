@@ -1,0 +1,170 @@
+{
+  "memo": {
+    "_dirType": "string",
+    "_value": "원한(대) : 몬스터가 사망시 원한의 기운을 남김, 기운은 3초 후 폭발하여 해당 위치에 큰 피해를 입힘"
+  },
+  "AnimSet": {
+    "_dirType": "sub",
+    "appear": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment:appear": {
+            "_dirType": "sub",
+            "AnimReference": {
+              "_dirType": "sub"
+            }
+          }
+        }
+      },
+      "Sections": {
+        "_dirType": "sub",
+        "Loop": {
+          "_dirType": "sub",
+          "StartTime": {
+            "_dirType": "int",
+            "_value": "0"
+          },
+          "NextSectionName": {
+            "_dirType": "string",
+            "_value": "Loop"
+          }
+        }
+      }
+    },
+    "stand": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment:stand": {
+            "_dirType": "sub",
+            "AnimReference": {
+              "_dirType": "sub",
+              "z": {
+                "_dirType": "int",
+                "_value": "-10"
+              }
+            }
+          }
+        }
+      },
+      "Sections": {
+        "_dirType": "sub",
+        "Loop": {
+          "_dirType": "sub",
+          "StartTime": {
+            "_dirType": "int",
+            "_value": "0"
+          },
+          "NextSectionName": {
+            "_dirType": "string",
+            "_value": "Loop"
+          }
+        }
+      },
+      "Notifies": {
+        "_dirType": "sub",
+        "attack": {
+          "_dirType": "sub",
+          "TriggerTime": {
+            "_dirType": "int",
+            "_value": "1920"
+          }
+        }
+      }
+    },
+    "disabled": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment:disabled": {
+            "_dirType": "sub",
+            "AnimReference": {
+              "_dirType": "sub"
+            }
+          }
+        }
+      },
+      "Sections": {
+        "_dirType": "sub",
+        "Loop": {
+          "_dirType": "sub",
+          "StartTime": {
+            "_dirType": "int",
+            "_value": "0"
+          },
+          "NextSectionName": {
+            "_dirType": "string",
+            "_value": "Loop"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "attack": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": -125,
+          "_y": -110
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 125,
+          "_y": 105
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "10"
+        },
+        "attackPower1Rate": {
+          "_dirType": "long",
+          "_value": "100"
+        }
+      },
+      "targetingType": {
+        "_dirType": "string",
+        "_value": "Hostile"
+      },
+      "hit": {
+        "_dirType": "sub",
+        "z": {
+          "_dirType": "int",
+          "_value": "2"
+        }
+      }
+    }
+  },
+  "info": {
+    "_dirType": "sub",
+    "constants": {
+      "_dirType": "sub",
+      "attackPower1": {
+        "_dirType": "long",
+        "_value": "50"
+      }
+    }
+  },
+  "bCannotbeAttacked": {
+    "_dirType": "int",
+    "_value": "1"
+  }
+}

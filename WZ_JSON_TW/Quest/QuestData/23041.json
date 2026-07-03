@@ -1,0 +1,196 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[末日反抗軍] 特別授課緊急集合"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "16"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[轉職]"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "達到100級時教官老師又再次過來交談。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "校長說，有#b特別授課緊急集合#k，要我趕快去#b學校#k，跟責任老師見面。這次不是責任，而是由其他老師擔當…末日反抗軍是不是出什麼事了？趕快去#b地下本部#k看看。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "不知道轉職教官去了哪裡，在地下本部見不到他。由#p2151003#代替他迎接我。焦急的表情說明了一定是出問題了。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2152000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201012291200"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201012291200"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "3311"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2151003"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "突然跟你說話，真是不好意思，#h0#。現在忙嗎？現在正在緊急召集參加特殊課程的學生。\\r\\n#L0##b緊急召集？突然什麼事情？難道出了什麼事情嗎？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "啊…不用擔心。不是什麼大事，可能就是緊急聯絡網練習，之類的吧…\\r\\n#L0##b(說是這麼說，校長的額頭佈滿了汗珠。末日反抗軍出了什麼事情了嗎？！)#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "快去教室看看吧！越快越好！"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這次不是班主任，而是負責緊急召集的負責老師在等著你。不要驚慌，快到#b學校#k去找那個人吧。快！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "唉…學生們偶爾就喜歡做這樣青蛙似的行動。但是無論如何也躲不了課程。好，重新對話吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#h0#！正等著你呢。有件擔心的事，才這麼急著叫你過來的。看了旁邊你就知道…你的轉職教官出去執行任務時，失去了聯繫。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "…鎮定！我知道嚇到你了，但你可不能動搖！首先深吸一口氣再對話吧。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒去教室嗎？畢竟是緊急召集，最好把握。快到#b學校#k去教室看看吧。緊急召集負責老師在等著你呢。"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "#b(末日反抗軍出了什麼事情嗎？這麼著急的表情還是第一次見到！快到學校去吧！)#k"
+          }
+        }
+      }
+    }
+  }
+}

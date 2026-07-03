@@ -1,0 +1,258 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[聯盟] 認識狂狼勇士的人"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "256"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "莉琳不尋常地十分高興。這好像是第一次看到這樣的她。這麼高興嗎？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1105012#說，如果可以，最好和知道我是英雄的人一起去。然後，和#p1012100#一起去。 #p1105012#問，是不去嗎？這樣問問看吧。#p1105012#回答，我沒有想去，但是會看情況後，然後再去找他。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "去找#p1012100#吧，她說她本來就想聯絡他，還勸說希望一起去#m130000000#。"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必要]"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "4"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "75"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1201000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "75"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "21768"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2113"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "2114"
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q21769s"
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012100"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q21769e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "100000201"
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "嗯…現在不是可以玩的時候。請趕快參加大陸會議，狂狼勇士。但是，與其你自己去…和知道你是英雄的人一起去，會更好。\\r\\n#L0##b恩…#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "之前提到的 #m100000000#的弓箭手教育官 #p1012100#，你還記得嗎？ 他是在維多利亞島受到尊敬的人之一，一起同行的話應該很棒。\\r\\n#L0##b你呢？ 你不去嗎？ #p1105012#?#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "…我正在考慮。 這封信看起來只是邀請了狂狼勇士，但好像不知道我是否也要去… 先再等一下。 狂狼勇士，趕快去#b#p1012100##k吧。\\r\\n\\r\\n#b(接受時移動至弓箭手教育園)#l"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這個親切有禮的信… 是指定交給狂狼勇士的。 難道我忘了…？哼。 哥哥這種人…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "…啊，我剛剛要打電話，沒想到你先來了，狂狼勇士！我有話要說。女皇#p1101000#為了建立楓之谷聯盟…\\r\\n#L0##b大陸會議？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "…！你也收到消息了嗎？#p1101000#的情報能力真的很讓人看不起。呵呵…\\r\\n#L0##b那一起去吧？#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "是。 看起來精靈遊俠也要來了，所以說不定能遇到呢。\\r\\n#L0##b…精靈遊俠是誰？#l\\n#k"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "(啊…這個人忘記了…)\\r\\n反正還是去吧。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "快點前往 #m100000000#。 快一點！"
+          }
+        }
+      }
+    }
+  }
+}

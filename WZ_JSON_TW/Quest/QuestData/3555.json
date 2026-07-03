@@ -1,0 +1,164 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[* 時間神殿] 時間裡的徘徊者"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "263"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "向記錄者詢問關於失去記憶的神官的事情。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "記錄者稱，之所以失去了記憶，是因為失去了那段時間，把這句話轉告給神殿管理人，就會明白的。失去了時間…到底是什麼意思呢？\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "向神殿管理人轉告了記錄者所說的話。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "130"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "139"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1023260"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2140003"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "130"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3554"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2140000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1023260"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我知道你為什麼來找我。可是，我不能給你答案。\\r\\n"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "找回記憶是她自己該做的事情…其他人不能幫他。她丟失的是她的時間，就這樣告訴 #p2140000#就可以了。那麼，再見。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "人類從時間女神那裡獲得的叫忘卻的祝福。不過，因為其他理由陷入忘卻的人的話…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#p2140003#見過了嗎？ 他是記錄楓之谷所有歷史的人，他不知道的事情就是還沒發生的事情。好，他說什麼？ 說了失憶的神官的事情嗎？ \\r\\n"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "他丟失的是時間…是這樣嗎…？"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "失憶的神官，她丟失的就是她的時間，就這樣轉告 #p2140000#就可以。"
+          }
+        }
+      }
+    }
+  }
+}

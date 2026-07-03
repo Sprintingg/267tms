@@ -1,0 +1,308 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012003"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "20"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2014"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012003"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000007"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "700"
+      },
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "2016"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000007"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "想和我聊天？我是這個村莊的長老，沒空和你這種人閒聊。如果真想和我談話的話，給我收集一些維護村莊用的東西吧。帶來#b#t4000007##e10個#n#k和#b#t4000002##e30個#n#k的話，我也許能有空。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "你是誰啊？沒見過的傢伙。\\r\\n#b#L0#啊失禮了，只是個路過的遊客，不用費心。#l\\r\\n#L1#其實我是接受了#p1052000#的請求特意來到這裡的，請給我一些時間。#l\\r\\n#L2#哈哈～今天的天氣真不錯啊？#l"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "什麼！你說#p1052000#！我從來沒有過那種兒子！快給我滾。\\r\\n#b#L0#唔，好的很抱歉打擾了您。那麼再見#l\\r\\n#L1##p1052000#很想回到這裡來。#l\\r\\n#L2#夠了！#p1052000#已經真心悔改了！#l"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "竟敢正面頂撞我不是一般傢伙啊！#p1052000#現在過得怎麼樣？\\r\\n#b#L0##p1052000#現在身無分文過得很辛苦。#l\\r\\n#L1##p1052000#現在對流浪的生活已經感到厭倦了。#l\\r\\n#L2#想知道#p1052000#情況直接去問他啊。#l"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "讓我直接問他？我越來越喜歡你了。那麼你覺得我這個人怎麼樣？\\r\\n#b#L0#是位村莊裡出色的長老。#l\\r\\n#L1#過於嚴格和死板。#l\\r\\n#L2#外表嚴厲內心溫和的老人。#l"
+      },
+      "4": {
+        "_dirType": "string",
+        "_value": "就像你說的，我是這個村莊的長老可是自從#p1052000#出走後我這長老已經威嚴掃地了！\\r\\n#b#L0##p1052000#也認識到了這一點在悔改呢。他想回來，請以寬宏大量原諒#p1052000#吧。#l\\r\\n#L1#對你來說，在村莊裡別人怎麼看待你，比你自己的兒子還要重要嗎？比起你的兒子，村莊裡人們對你的看法更重要嗎？#l\\r\\n#L2##p1052000#自從他母親去世後,都怪你要求太嚴格,所以他一直在外面流浪。還是你先原諒他吧。如何？#l"
+      },
+      "5": {
+        "_dirType": "string",
+        "_value": "連那些事你也知道嗎？唔確實#p1052000#自從安娜去世後越來越叛逆了。可是我作為一個長老沒有好好照顧小傢伙。也難怪那傢伙變成那樣。謝謝你。多虧了你，讓我解開了與#p1052000#的誤會。告訴他，回到村莊來沒關係。不過剛才拜託的東西，還是要帶去啊。還有這是他母親的安娜的遺物#t4001003#。把這個交給他的話，他應該能明白我的意思拿著。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "0": {
+            "_dirType": "string",
+            "_value": "你當這個村莊是什麼觀光場所嗎？你這不像話的傢伙趕快從我面前消失掉！"
+          },
+          "2": {
+            "_dirType": "string",
+            "_value": "天氣確實不錯個什麼鬼啊！我可沒時間和你閒聊！不要再來煩我了，滾開！"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "0": {
+            "_dirType": "string",
+            "_value": "真是個可笑的傢伙。說是認識#p1052000#，卻被我的喝罵聲嚇住了，想這樣離開嗎？沒什麼和你好談的。就這樣滾吧！"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "他說很想回來？哈哈哈～你以為我會相信這種謊話嗎？也許正在為出走後自由自在的生活洋洋得意呢！我說的沒錯吧？"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "0": {
+            "_dirType": "string",
+            "_value": "過得很辛苦？就為了過那樣的日子離開了這裡嗎？哈哈哈～那好，你把這話轉達清楚了。「就在那裡辛苦的過日子。自己體驗活著是多麼辛苦。」就這樣說。"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "厭倦了！這個混蛋傢伙，因為厭倦所以要回來嗎！哈哈哈～我也不認識#p1052000#這個人了！你這笨蛋現在也快給我滾回去！"
+          }
+        },
+        "3": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "看來你非常誠實。誠實很好，但你現在的回答非常難聽！故意想氣我是嗎？你好像還不知道該怎樣對待人啊！"
+          },
+          "2": {
+            "_dirType": "string",
+            "_value": "哈哈哈！你的推理能力很強。怎麼從我身上看出來那些的？是真心的還是想奉承我啊？反正不想再和你談什麼了。回去吧。"
+          }
+        },
+        "4": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "0": {
+            "_dirType": "string",
+            "_value": "你好像並不是對#p1052000#很瞭解啊！是不是以什麼為代價受到#p1052000#的請求了？我絕不能原諒#p1052000#。就這樣回去吧。"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "也許正如你說的，不過我可是比你多活了幾十年的長老，你現在是要教我怎麼做嗎？沒什麼與你好談的了。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你想與我對話是嗎？我是這個村莊的長老。沒有時間陪你這樣的傢伙兩天。真想與我對話的話，就先去收集來，為補修村莊所需的物品吧。要是收集來#b#t4000007##e10個#n#k和#b#t4000002##e30個#n#k的話，說不定我會有時間呢…"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 說服長老斯坦"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "離家少年阿勒斯"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在弓箭手村公園入口見到了阿勒斯的父親斯坦長老。因為第一次見面，一句話都不跟我說。還是去幫忙弄來修理村子所需的#b#t4000007#10個和#t4000002#30個#k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把#t4000007#和#t4000002#收集回來了，這才終於肯和我說話了。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000007:##t4000007:##c4000007#/10\r\n#i4000002:##t4000002:##c4000002#/30\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "700"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[里艾那海峽] 體驗！航海現場"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "254"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "與#b#m141000000##k的#b#p1510005##k對話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b#m141000000##k的#b#p1510005##k爽快的借了船，要我去海上收集#b#t4030022##k3個回來。跟 #b#p1510006##k說話即可出航。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#b#m141000000##k的#b#p1510005##k爽快的借了船，要我去海上收集#b#t4030022##k3個回來。跟 #b#p1510006##k說話即可出航。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4030022:# #t4030022:# #c4030022# / 3\r\n"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "targetMapID": {
+      "_dirType": "int",
+      "_value": "141060000"
+    },
+    "targetPN": {
+      "_dirType": "string",
+      "_value": "pt_00"
+    },
+    "returnType": {
+      "_dirType": "int",
+      "_value": "-1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "59"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "18634"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1510005"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32162"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1510005"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q32163e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4030022"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "18634"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你說過是第一次出海吧？雖然不知道你是否能一開始就靈活地行動…但，如果是勇士的話，應該能辦到吧。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "示範航海的同時，是否能夠拜託你一件事呢？出海的話，在這附近就可以看見#b遇難船隻的碎片#k。請將#b遇難船隻的碎片#k以及#b用得到的木材#k蒐集來給我吧。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "在這裡，沒有比木材更珍貴的東西。那麼就拜託了。請和#b#p1510006##k對話後，然後出航吧！\\r\\n#e#b(在冰河觀測本部前海收集可用的木材吧。)#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯，現在好像還沒準備好的樣子啊。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "在這裡，沒有比木材更珍貴的東西。那麼就拜託了。請和#b舵手塔挐#k對話，出發吧！\\r\\n#b#e(在冰河觀測本部前海收集可用的木材吧。)#k"
+          }
+        }
+      }
+    }
+  }
+}

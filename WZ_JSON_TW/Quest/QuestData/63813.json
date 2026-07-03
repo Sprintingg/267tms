@@ -1,0 +1,186 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[冬季城堡] 試著使用渡假村的飯店吧。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "冬季城堡渡假村開啟記念而有進行宣傳活動中。使用冬季城堡渡假村飯店 5次後，獲得冬季城堡成員稱號吧。在飯店中的時候，聽說可以獲得特別的效果，快去訪問看看吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "冬季城堡渡假村開啟記念而有進行宣傳活動中。使用冬季城堡渡假村飯店 5次後，獲得冬季城堡成員稱號吧。在飯店中的時候，聽說可以獲得特別的效果，快去訪問看看吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "使用冬季城堡渡假村 5次後，獲得了冬季城堡成員的稱號。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#使用飯店 #R63813ExeCountRef63813# / 5\\r\\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\\r\\n#i1143094:# #t1143094:#"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "目前我們對使用渡假村飯店的人員提供一些禮物。目前還未使用5次呢？\\r\\n渡假村飯店入口是從大廳往右走就可以抵達。為了進入客室所需要的房卡是詢問櫃台職員吧。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400341"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q63813s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201712130900"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201712130900"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201801020900"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201801020900"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "63810"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400341"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "63813"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "5"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "eCount"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "飯店使用 5次"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q63813e"
+      }
+    }
+  }
+}

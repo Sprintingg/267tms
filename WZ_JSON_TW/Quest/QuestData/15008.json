@@ -1,0 +1,138 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[전국시대] 히에이잔 조사"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "히에이잔 입구에서 물약을 먹고 변신하였다. 어떤 식으로 히에이잔을 조사해야 하는지 #p9000428#에게 물어 보도록 하자."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "히에이잔의 깊숙한 곳에 작은 사당이 있고, 그곳에 있는 마츠야마 가문의 신물을 가져와 달라고 부탁받았다. (하야토, 칸나, 아야메 퀘스트를 전부 완료)"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "히에이잔에는 연합군의 병사들에 대해 정신지배를 하고 있었다. 그리고 히에이잔의 작은 사당에는 노히메가 마왕 강림을 위한 의식을 하고 있었다. 마왕 강림은 결국 실패하였지만 노히메는 요기가 깃든채로 히에이잔 본당으로 들어갔다."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "하야토, 칸나, 아야메로 히에이잔 조사"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "내가 부탁한 히에이잔 조사가 아직 끝나지 않았어. 하야토, 칸나, 아야메로 모두 완료하고 다시 와줘."
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000428"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q15008s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201510150000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201510150000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "15007"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000428"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q15008e"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "15008"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "111"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "RP"
+          }
+        }
+      }
+    }
+  }
+}

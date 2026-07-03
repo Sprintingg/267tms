@@ -1,0 +1,554 @@
+{
+  "Skills": {
+    "_dirType": "sub",
+    "attack1": {
+      "_dirType": "sub",
+      "Anim": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub",
+              "z": {
+                "_dirType": "int",
+                "_value": "-1"
+              }
+            }
+          }
+        },
+        "Notifies": {
+          "_dirType": "sub",
+          "attack": {
+            "_dirType": "sub",
+            "TriggerTime": {
+              "_dirType": "int",
+              "_value": "1080"
+            }
+          },
+          "sound": {
+            "_dirType": "sub",
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/RoguelikeWz2.img/Mob/9601760/Attack1"
+              }
+            }
+          }
+        }
+      },
+      "Events": {
+        "_dirType": "sub",
+        "attack": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "Attack"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "lt": {
+              "_dirType": "vector",
+              "_x": -400,
+              "_y": -50
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 130,
+              "_y": 5
+            },
+            "cooltime": {
+              "_dirType": "string",
+              "_value": "5"
+            },
+            "attackPower1Rate": {
+              "_dirType": "string",
+              "_value": "100"
+            },
+            "attackCount": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "mobCount": {
+              "_dirType": "int",
+              "_value": "1"
+            }
+          },
+          "hit": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "sub",
+              "delay": {
+                "_dirType": "int",
+                "_value": "120"
+              },
+              "z": {
+                "_dirType": "int",
+                "_value": "2"
+              }
+            }
+          }
+        }
+      },
+      "common": {
+        "_dirType": "sub",
+        "maxLevel": {
+          "_dirType": "int",
+          "_value": "20"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -310,
+          "_y": -128
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 20,
+          "_y": 4
+        },
+        "cooltime": {
+          "_dirType": "string",
+          "_value": "4"
+        }
+      }
+    },
+    "healZone": {
+      "_dirType": "sub",
+      "Anim": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub",
+              "z": {
+                "_dirType": "int",
+                "_value": "-1"
+              }
+            }
+          }
+        },
+        "Notifies": {
+          "_dirType": "sub",
+          "healZone": {
+            "_dirType": "sub",
+            "TriggerTime": {
+              "_dirType": "int",
+              "_value": "1200"
+            }
+          },
+          "sound": {
+            "_dirType": "sub",
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/RoguelikeWz2.img/Mob/9601760/Attack2"
+              }
+            }
+          }
+        }
+      },
+      "Events": {
+        "_dirType": "sub",
+        "healZone": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "SummonZone"
+          },
+          "zoneType": {
+            "_dirType": "string",
+            "_value": "self"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "duration": {
+              "_dirType": "int",
+              "_value": "19"
+            }
+          },
+          "zones": {
+            "_dirType": "sub",
+            "healZone": {
+              "_dirType": "sub",
+              "LayerSlots": {
+                "_dirType": "sub",
+                "Slot0": {
+                  "_dirType": "sub",
+                  "Segment:summoned": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "0"
+                    },
+                    "z": {
+                      "_dirType": "int",
+                      "_value": "9000"
+                    }
+                  },
+                  "Segment:stand": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "720"
+                    },
+                    "z": {
+                      "_dirType": "int",
+                      "_value": "9000"
+                    }
+                  },
+                  "Segment:die": {
+                    "_dirType": "sub",
+                    "StartPos": {
+                      "_dirType": "int",
+                      "_value": "2040"
+                    },
+                    "z": {
+                      "_dirType": "int",
+                      "_value": "9000"
+                    }
+                  }
+                }
+              },
+              "Notifies": {
+                "_dirType": "sub",
+                "healLoop": {
+                  "_dirType": "sub",
+                  "TriggerTime": {
+                    "_dirType": "int",
+                    "_value": "720"
+                  },
+                  "TriggerInterval": {
+                    "_dirType": "string",
+                    "_value": "240"
+                  },
+                  "EndTriggerTime": {
+                    "_dirType": "string",
+                    "_value": "1920"
+                  }
+                }
+              },
+              "Sections": {
+                "_dirType": "sub",
+                "summonned": {
+                  "_dirType": "sub"
+                },
+                "stand": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "720"
+                  },
+                  "NextSectionName": {
+                    "_dirType": "string",
+                    "_value": "stand"
+                  }
+                },
+                "die": {
+                  "_dirType": "sub",
+                  "StartTime": {
+                    "_dirType": "int",
+                    "_value": "2040"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "healLoop": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "AreaHeal"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "mobCount": {
+              "_dirType": "int",
+              "_value": "5"
+            },
+            "attackCount": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": -150,
+              "_y": -40
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 150,
+              "_y": 0
+            },
+            "percent": {
+              "_dirType": "string",
+              "_value": "1"
+            }
+          }
+        },
+        "die": {
+          "_dirType": "sub"
+        }
+      },
+      "common": {
+        "_dirType": "sub",
+        "maxLevel": {
+          "_dirType": "int",
+          "_value": "20"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -1200,
+          "_y": -600
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 1200,
+          "_y": 200
+        },
+        "cooltime": {
+          "_dirType": "string",
+          "_value": "30"
+        }
+      }
+    }
+  },
+  "Info": {
+    "_dirType": "sub",
+    "Chase": {
+      "_dirType": "sub",
+      "SearchRect": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": -1200,
+          "_y": -600
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 1200,
+          "_y": 0
+        },
+        "downJump": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "walkFalldown": {
+          "_dirType": "int",
+          "_value": "1"
+        }
+      },
+      "distanceX": {
+        "_dirType": "int",
+        "_value": "60"
+      }
+    },
+    "reward": {
+      "_dirType": "string",
+      "_value": "mob_elite"
+    },
+    "ImmuneTo": {
+      "_dirType": "sub",
+      "knockBack": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "stun": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "constants": {
+      "_dirType": "sub",
+      "maxHP": {
+        "_dirType": "long",
+        "_value": "500"
+      },
+      "speed": {
+        "_dirType": "long",
+        "_value": "70"
+      },
+      "attackPower1": {
+        "_dirType": "long",
+        "_value": "12"
+      },
+      "attackSpeed": {
+        "_dirType": "long",
+        "_value": "-2"
+      }
+    },
+    "DurationPolicy": {
+      "_dirType": "string",
+      "_value": "Instant"
+    }
+  },
+  "AnimSet": {
+    "_dirType": "sub",
+    "stand": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      }
+    },
+    "move": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      }
+    },
+    "hit": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      },
+      "Notifies": {
+        "_dirType": "sub",
+        "sound": {
+          "_dirType": "sub",
+          "Notify": {
+            "_dirType": "sub",
+            "!class": {
+              "_dirType": "string",
+              "_value": "WZ2AnimNotify_PlaySound"
+            },
+            "SoundPath": {
+              "_dirType": "string",
+              "_value": "Sound/RoguelikeWz2.img/Mob/9601760/Hit"
+            }
+          }
+        }
+      }
+    },
+    "die": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      },
+      "Notifies": {
+        "_dirType": "sub",
+        "sound": {
+          "_dirType": "sub",
+          "Notify": {
+            "_dirType": "sub",
+            "!class": {
+              "_dirType": "string",
+              "_value": "WZ2AnimNotify_PlaySound"
+            },
+            "SoundPath": {
+              "_dirType": "string",
+              "_value": "Sound/RoguelikeWz2.img/Mob/9601760/Die"
+            }
+          }
+        }
+      }
+    },
+    "jump": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      }
+    },
+    "appear": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        },
+        "Slot1": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub"
+          }
+        }
+      },
+      "Notifies": {
+        "_dirType": "sub",
+        "sound": {
+          "_dirType": "sub",
+          "Notify": {
+            "_dirType": "sub",
+            "!class": {
+              "_dirType": "string",
+              "_value": "WZ2AnimNotify_PlaySound"
+            },
+            "SoundPath": {
+              "_dirType": "string",
+              "_value": "Sound/RoguelikeWz2.img/Mob/summon"
+            }
+          }
+        }
+      }
+    }
+  }
+}

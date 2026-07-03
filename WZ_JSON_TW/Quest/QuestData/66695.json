@@ -1,0 +1,142 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[公會城] 小型裝飾製作協力任務"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "147"
+    },
+    "disableAtCompleteTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "公會城有可以進行的合作任務，跟公會城大廳的潘奈迪特對話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "正在進行製作裝飾的合作任務，\r\n取得材料之後與潘奈迪特對話，將可捐贈材料來完成合作任務。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#持有裝飾製作材料 (#R66695ExprogressRef66695#)"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q66695x"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9401592"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "66695"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "0"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "progress"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q66695s"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9401592"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "66695"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "持有裝飾製作材料"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "progress"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q66695e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒準備好材料嗎？\r\n 迫切需要公會城原所有人的力量。"
+          }
+        }
+      }
+    }
+  }
+}

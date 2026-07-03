@@ -1,0 +1,196 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[星光之塔] 暴走的佩里!?"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "211"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "…先把收集到的拿過去吧！得裝作沒看見，但還是不免想著透過筆記得知#b佩里#k有這樣的才能，她似乎也有成為明日之星的資質。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "佩莉得知自己的筆記被別人看見感到非常害羞，瞬間失去理性又蹦又跳，就好像暴衝的火車頭一般…為了進行招募看來得先讓#r#o4310016##k冷靜下來。\r\n\r\n#r※ 若無法成功讓佩莉冷靜下來，就得拋棄任務之後重新挑戰。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "毫無保留地展現自己的長才不就是明星基本該做的事情嗎？喚醒暴走的佩里，述說關於她的才能。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o4310016# #a344121#\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "3098601"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "145"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052209"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q34412s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34411"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052209"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4310016"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "3098601"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "sayEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#b(進入暴走狀態的佩里毫無保留地展現了自己的才能。)#k"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yesEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#b(告訴回神後的佩里她擁有的才能，並表示想要招募她成為素人歌手候選人。)#k"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "…把我選為素人歌手候選人嗎？我真的有資質嗎？那不過只是我自己練習寫的作品…"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "嗚嗚，但怎麼會突然哭起來了呢？這是第一次，落淚。第一次有人發現我的夢想，第一次有人肯定我。"
+          }
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "(得先讓#r#o4310016##k冷靜下來，才能好好談下去。)"
+          }
+        }
+      }
+    }
+  }
+}

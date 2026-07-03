@@ -1,0 +1,139 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "登記成為跟隨者！"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b領袖阿爾#k說如果有從事家族活動的想法，可以去找他。那我就到#b維多利亞港#k和#b天空之城公園#k去找領袖阿爾吧！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "領袖阿爾出的課題很簡單！就是如果有自己想後援的角色，就要註冊成為跟隨者。註冊1個以上的跟隨者就向領袖阿爾報告。\\n\\n#r註冊1個以上的跟隨者#k\\n(在家族視窗[快捷鍵:F]按下開啟家系表按鍵後確認)"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "成功註冊跟隨者！我是領路人…呼呼呼。"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "傳授領袖阿爾的知識"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "disableAtCompleteTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "disableAtStartTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "disableAtPerformTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "disableAtNPC": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "呵，動作還真快。你的樣子看起來很新鮮有趣。已經開始進行家族活動了…怎麼樣？想跟我學習從事家族活動後取得知識嗎？你答應的話，那麼我就開始給你學習這些知識的課題。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "很好，很好。這樣的行動力才能稱得上是領袖的資質。當然這並不保障你可以一定可以當領袖…而是幫助你學習開始進行家族活動時要了解的事項。最重要的是了解#b跟隨者#k和#b領路人#k的關係。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "#b跟隨者#k是你要的後援角色。當然是等級比你還低的角色，但是差異不能超過20等級。註冊成為跟隨者，要按在#r家族窗[快捷鍵:F]#k以及#r家族家系表#k的#r跟隨者註冊#k的按鍵。輸入對象名字後得到同意，該角色就成為你的跟隨者了。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "從現在開始你就開始扮演#b領路人#k的角色。倘若你沒有領路人，就能成為家族領袖，然而就算是領袖也和其他領路人的作用沒什麼不同。\\n領路人要誠心誠意的幫助自己的跟隨者，這樣才能提升聲望值。倘若領路人不好好照顧跟隨者，跟隨者可以和自己的領路人絕別去找其他領路人，因此要特別注意。照顧的方法不一定是金錢或道具，更重要的反而是要多關心是否有好好的進行冒險。"
+        },
+        "3": {
+          "_dirType": "string",
+          "_value": "啊，不知不覺愈來愈囉嗦了。現在請你去找要照顧的跟隨者。有一位以上的跟隨者註冊後再告訴我。那就祝你好運囉！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "呼呼，看你還在煩惱。你還太小，不曉得出名冒險家可以享受的特權的威力。等你有從事家族活動的決心再來找我吧！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002103"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2231"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q2232e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  }
+}

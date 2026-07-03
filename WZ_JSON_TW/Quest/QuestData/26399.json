@@ -1,0 +1,163 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[尤莉亞的圖畫]黑色顏料不夠!"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "不知名的魔法師說將會又再一次的出手相助."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "尤莉亞為了完美地完成這副圖畫,需要黑色顏料10個.請帶來黑色顏料吧.\r\n(黑色顏料可從下列怪物獲得.)\r\n\r\n-#r搖滾精神\r\n#k-#r薛西斯\r\n#k-#r小巴洛古\r\n#k-#r噴火龍\r\n#k-#r拉圖斯\r\n#k-#r海怒斯\r\n#k-#r多多\r\n#k-#r利里諾斯\r\n#k-#r萊伊卡"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "完成了尤莉亞的圖."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4033779:##t4033779:##c4033779#/10\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000178"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201302010000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201302030000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201305090000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201305230000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "26401"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000178"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q26399e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033779"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你啊..我遠遠就聽見你和尤莉亞的對話了.我來幫助你完美修復這幅畫吧,怎樣?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好.這次要真正保有工匠魂,來恢復圖畫.首先需要#b#t4033779##k10個.\n\r\n#b#t4033779##k抓住#r搖滾精神、薛西斯、小巴洛古、噴火龍、拉圖斯、海怒斯、多多、利里諾斯、萊伊卡#k的話,可能獲得."
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "唉呀,這個人還真是.說話還真唐突."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "嗯...好像還沒有全部帶來的樣子呢..."
+          }
+        }
+      }
+    }
+  }
+}

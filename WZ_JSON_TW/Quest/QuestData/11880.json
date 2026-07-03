@@ -1,0 +1,175 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 想要成為人類的虎浪浩野需要大蒜。"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "和想要變成人類的老虎虎浪浩野交談吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "想要成為人類的虎浪浩野要求幫忙收集可以吃100天的#t3994435#和#b#t3994435#30個#k。狩獵怪物取得#t3994435#交給虎浪浩野吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "想要成為人類的虎浪浩野要求幫忙收集可以吃100天的#t3994435#和#b#t3994435#30個#k。狩獵怪物取得#t3994435#交給虎浪浩野吧。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i3994435:##t3994435:##c3994435#/30\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000091"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201109300000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201110050000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201109200000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201110050000"
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "30"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000091"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q11880e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994435"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994435"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#h0#，我有一個非得實現的願望… 雖然你會認為不像話，但是 #b我想要變成人類，#k 不過不久前，山神出現在我夢中，然後告訴我變成人類的方法。 只要連續一百天吃下#b#t3994435##k就可以變成人類。 可以為了我去取得 #b#t3994435##k 30個嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "真是太感謝了！ 聽說#b#t3994435##k可以從楓之谷世界的怪物身上取得。 請去狩獵符合#h0#等級的怪物，然後收集 #t3994435# 30個給我，\\n#i3994435# #b#t3994435# 30個#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我一定要變成人類。 這是我的願望。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "真是太感謝了！ 聽說#b#t3994435##k可以從楓之谷世界的怪物身上取得。 請去狩獵符合#h0#等級的怪物，然後收集 #t3994435# 30個給我，\\n#i3994435# #b#t3994435# 30個#k"
+          }
+        }
+      }
+    }
+  }
+}

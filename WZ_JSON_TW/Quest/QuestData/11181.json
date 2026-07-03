@@ -1,0 +1,189 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "怪物公園100倍享受"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "怪物公園的休菲凱曼說有很重要的事情要說。聽說是有關#b#t4310020##k的事情，快去找他吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "必須除掉怪物公園內初級副本BOSS。\r\n只要除掉#o9800031#, #o9800016#, #o9800025#, #o9800037#, #o9800044#, #o9800149#, #o9800050# 中其中一隻就可以了。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "打敗地城內的頭目怪物就可以獲得#t4310020#。蒐集到#t4310020#，就可以交換到#t1012270#(5天)或#t1162008#(7天)。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o9101021# #a111811#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#i4310020:# #t4310020:# 5 個\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4310020"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9071000"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "114"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9071000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9101021"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4310020"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "設立在怪物公園的副本真的是個很有趣的地方！如果還沒使用過，就試用一次看看吧！對了！你蒐集到#b#t4310020##k了嗎？需要我幫忙嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "世界上本來就是有很多運氣不好的人.就像你這樣??\\n對你來說,#i1012270:#(5天)或#i1162008:#(7天)就像天上的星星吧,呵呵呵.我就特別大發善心.除掉#b等級60以上、未達114副本的魔王#k回來,我會給你#b#t4310020#5個#k,努力試試吧!"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "呵呵，你不需要幫忙嗎？知道了，那你獨自做做看吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "呵呵，真不錯。來，收下。 "
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "每天會給你一次機會，繼續努力看看吧。 因為持續努力的話得到#t1012270#(5天)或 #t1162008#(7天)的那天也不遠了。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒能清除魔王級怪物嗎？沒運命，連能力也…嘖嘖。你再多加努力。"
+          }
+        }
+      }
+    }
+  }
+}

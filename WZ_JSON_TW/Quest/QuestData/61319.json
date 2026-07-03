@@ -1,0 +1,214 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[熱情聖誕老人] 和隊友道別"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "現在去跟聖誕老人大賽的隊友道別吧。\\r\\n去見路易。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "去跟您的每位隊友道別。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "聖誕老人大賽已結束，隊伍已經離開了。您希望他們各自以自己的方式繼續成長。\\r\\n比賽結束了，但您隨時可以回到工房。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#和#r#p9201500##k對話\\r\\n#questorder2##r和#p9201501##k對話 \\r\\n#questorder3##r和#p9201502##k對話\\r\\n#questorder4##r和#p9201503##k對話\\r\\n#questorder5##r和#p9201506##k對話"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "#m693005000#"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "其他隊員將要回到他們原本的生活中了，去跟他們告別吧。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9201499"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q61319s"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201512090900"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201512300000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "61291"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201512090900"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201512300000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9201499"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q61319e"
+      },
+      "npcSpeech": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9201500"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q61319_midNPC1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9201501"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q61319_midNPC2"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9201502"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q61319_midNPC3"
+          }
+        },
+        "3": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9201503"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "4"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q61319_midNPC4"
+          }
+        },
+        "4": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9201506"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q61319_midNPC5"
+          }
+        }
+      }
+    }
+  }
+}

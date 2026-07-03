@@ -1,0 +1,244 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[過去的英雄，狂狼勇士] 狼的心臟"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "6"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽#p1202008#說，如果這樣下去的話，對#t1902016#非常危險。到底是什麼意思？問問#b#p1202008##k吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1202008#介紹自己是銀雪狼，銀雪狼想要成為成人就要飲用#b#t4032334##k。不然的話會有危險…快點擊敗神木村的#r#o8190003##k取得#t4032334#！\n\n#i4032334##t4032334##b#c4032334#/1#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "取得#t4032334#拿給#t1902016#吃！擁有更強大心臟的#t1902016#變成了成年狼。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4032334:##t4032334:##c4032334#/1\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1202008"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "150"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "21613"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2000"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2100"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2110"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2111"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2112"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "2113"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "2114"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1202008"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q21614e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032334"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032334"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1902016"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1902017"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "…你知道嗎。我們是銀雪狼，是有著銀色鮮血的狼。我們為了要成年，必須得鍛煉我們的心臟。要鍛煉心臟，就得喝只有家鄉才有的#b#t4032334##k。要是喝不到#t4032334#，就會有危險。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "你帶的那孩子…叫#t1902016#來著？#t1902016#馬上要變為成人。所以我們來找孩子。可他拒絕了。但是這樣下去孩子會有危險。所以跟你提議。找來#b#t4032334##k吧。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b#t4032334##k可以從神木村的#r#o8190003##k那裡找得到。快去找吧。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你要是拒絕的話，孩子我要帶走。放著不管，孩子會有危險。我要帶他回故鄉喝#t4032334#。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#t4032334#製造出來了嗎？那就快點給孩子喝，快把#t4032334#給孩子吧。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這樣#t1902017#就成為成年狼了。製造#t4032334#給他的你是個好人。以後#t1902017#也拜託你了。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒找到#t4032334#嗎？ #b#t4032334##k可以從神木村的#r#o8190003##k那裡找得到。快去找吧。"
+          }
+        }
+      }
+    }
+  }
+}

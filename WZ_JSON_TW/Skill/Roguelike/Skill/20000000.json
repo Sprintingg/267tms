@@ -1,0 +1,539 @@
+{
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot1": {
+        "_dirType": "sub",
+        "Segment:start": {
+          "_dirType": "sub",
+          "AnimReference": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "sub",
+              "frameIdx": {
+                "_dirType": "int",
+                "_value": "2"
+              },
+              "action": {
+                "_dirType": "string",
+                "_value": "RL_Magician_Attack"
+              }
+            }
+          },
+          "StartPos": {
+            "_dirType": "int",
+            "_value": "0"
+          },
+          "EndPos": {
+            "_dirType": "int",
+            "_value": "210"
+          }
+        },
+        "Segment:charging": {
+          "_dirType": "sub",
+          "AnimReference": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "sub",
+              "frameIdx": {
+                "_dirType": "int",
+                "_value": "2"
+              },
+              "action": {
+                "_dirType": "string",
+                "_value": "RL_Magician_Attack"
+              }
+            }
+          },
+          "StartPos": {
+            "_dirType": "int",
+            "_value": "210"
+          },
+          "EndPos": {
+            "_dirType": "int",
+            "_value": "900"
+          }
+        },
+        "Segment:fullyCharged": {
+          "_dirType": "sub",
+          "AnimReference": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "sub",
+              "frameIdx": {
+                "_dirType": "int",
+                "_value": "2"
+              },
+              "action": {
+                "_dirType": "string",
+                "_value": "RL_Magician_Attack"
+              }
+            }
+          },
+          "StartPos": {
+            "_dirType": "int",
+            "_value": "900"
+          },
+          "EndPos": {
+            "_dirType": "int",
+            "_value": "1620"
+          }
+        },
+        "fire": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "RL_Magician_Attack"
+          }
+        },
+        "fullyFire": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "RL_Magician_FullChargeAttack"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "jumpToFullyFireSection": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "900"
+        },
+        "EndTriggerTime": {
+          "_dirType": "string",
+          "_value": "1620"
+        },
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_JumpToSection"
+          },
+          "SectionName": {
+            "_dirType": "string",
+            "_value": "fullyFire"
+          },
+          "ReqElapsedTime": {
+            "_dirType": "string",
+            "_value": "3000"
+          }
+        }
+      },
+      "startSound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_PlaySound"
+          },
+          "SoundPath": {
+            "_dirType": "string",
+            "_value": "Sound/RoguelikeWz2.img/Skill/20000000/Charging"
+          }
+        }
+      },
+      "fullyChargedStartSound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_PlaySound"
+          },
+          "SoundPath": {
+            "_dirType": "string",
+            "_value": "Sound/RoguelikeWz2.img/Skill/20000000/FullyCharging"
+          }
+        },
+        "TriggerTime": {
+          "_dirType": "int",
+          "_value": "900"
+        }
+      },
+      "fireEffect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            },
+            "socketName": {
+              "_dirType": "string",
+              "_value": "None"
+            }
+          }
+        },
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "1620"
+        }
+      },
+      "fireSound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_PlaySound"
+          },
+          "SoundPath": {
+            "_dirType": "string",
+            "_value": "Sound/RoguelikeWz2.img/Skill/20000003/Use"
+          }
+        },
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "1620"
+        }
+      },
+      "fire": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "1800"
+        }
+      },
+      "fullyFireEffect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            },
+            "socketName": {
+              "_dirType": "string",
+              "_value": "None"
+            }
+          }
+        },
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "2160"
+        }
+      },
+      "fullyFireSound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_PlaySound"
+          },
+          "SoundPath": {
+            "_dirType": "string",
+            "_value": "Sound/RoguelikeWz2.img/Skill/20000004/Use"
+          }
+        },
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "2160"
+        }
+      },
+      "fullyFireProjectile": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "2340"
+        }
+      }
+    },
+    "Sections": {
+      "_dirType": "sub",
+      "start": {
+        "_dirType": "sub"
+      },
+      "charging": {
+        "_dirType": "sub",
+        "StartTime": {
+          "_dirType": "int",
+          "_value": "210"
+        }
+      },
+      "fullyCharged": {
+        "_dirType": "sub",
+        "NextSectionName": {
+          "_dirType": "string",
+          "_value": "fullyCharged"
+        },
+        "StartTime": {
+          "_dirType": "int",
+          "_value": "900"
+        }
+      },
+      "fire": {
+        "_dirType": "sub",
+        "StartTime": {
+          "_dirType": "int",
+          "_value": "1620"
+        },
+        "NextSectionName": {
+          "_dirType": "string",
+          "_value": "end"
+        }
+      },
+      "fullyFire": {
+        "_dirType": "sub",
+        "StartTime": {
+          "_dirType": "int",
+          "_value": "2160"
+        },
+        "NextSectionName": {
+          "_dirType": "string",
+          "_value": "end"
+        }
+      },
+      "end": {
+        "_dirType": "sub",
+        "StartTime": {
+          "_dirType": "int",
+          "_value": "2820"
+        }
+      }
+    },
+    "LayerSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment:start": {
+          "_dirType": "sub",
+          "AnimReference": {
+            "_dirType": "sub"
+          },
+          "EndPos": {
+            "_dirType": "int",
+            "_value": "210"
+          }
+        },
+        "Segment:charging": {
+          "_dirType": "sub",
+          "AnimReference": {
+            "_dirType": "sub"
+          },
+          "EndPos": {
+            "_dirType": "int",
+            "_value": "900"
+          }
+        },
+        "Segment:fullyCharged": {
+          "_dirType": "sub",
+          "AnimReference": {
+            "_dirType": "sub"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "fire": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "350"
+        },
+        "attackPower1Rate_fullCharge": {
+          "_dirType": "string",
+          "_value": "1200"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "4"
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "300"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -320,
+          "_y": -100
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": -30,
+          "_y": 40
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "onlyOnce": {
+            "_dirType": "string",
+            "_value": "1"
+          }
+        }
+      },
+      "hitSoundPath": {
+        "_dirType": "string",
+        "_value": "Sound/RoguelikeWz2.img/Skill/20000003/Hit"
+      }
+    },
+    "fullyFireProjectile": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Projectile"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "time": {
+          "_dirType": "string",
+          "_value": "1.17"
+        },
+        "destroyHitCount": {
+          "_dirType": "string",
+          "_value": "99"
+        },
+        "hitIntervalPerTarget": {
+          "_dirType": "long",
+          "_value": "2000"
+        },
+        "boundLT.X": {
+          "_dirType": "string",
+          "_value": "-384"
+        },
+        "boundRB.X": {
+          "_dirType": "string",
+          "_value": "0"
+        },
+        "boundLT.Y": {
+          "_dirType": "string",
+          "_value": "-154"
+        },
+        "boundRB.Y": {
+          "_dirType": "string",
+          "_value": "68"
+        },
+        "initialVelocity.X": {
+          "_dirType": "string",
+          "_value": "-222"
+        },
+        "initialVelocity.Y": {
+          "_dirType": "string",
+          "_value": "0"
+        }
+      },
+      "ball": {
+        "_dirType": "sub"
+      },
+      "onProjectileHit": {
+        "_dirType": "string",
+        "_value": "AttackByProjectile"
+      }
+    },
+    "AttackByProjectile": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "1200"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "500"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub"
+        }
+      },
+      "hitSoundPath": {
+        "_dirType": "string",
+        "_value": "Sound/RoguelikeWz2.img/Skill/20000004/Hit"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "Keydown": {
+      "_dirType": "sub",
+      "KeyUpJumpToSections": {
+        "_dirType": "sub",
+        "charging": {
+          "_dirType": "string",
+          "_value": "fire"
+        },
+        "fullyCharged": {
+          "_dirType": "string",
+          "_value": "fullyFire"
+        },
+        "start": {
+          "_dirType": "string",
+          "_value": "end"
+        }
+      }
+    },
+    "Tags": {
+      "_dirType": "sub",
+      "cannotDestroy": {
+        "_dirType": "sub"
+      }
+    },
+    "x1": {
+      "_dirType": "string",
+      "_value": "4"
+    },
+    "x2": {
+      "_dirType": "string",
+      "_value": "350"
+    },
+    "x3": {
+      "_dirType": "string",
+      "_value": "1"
+    },
+    "x4": {
+      "_dirType": "string",
+      "_value": "1200"
+    },
+    "y2": {
+      "_dirType": "string",
+      "_value": "1200"
+    },
+    "y3": {
+      "_dirType": "string",
+      "_value": "1"
+    }
+  }
+}

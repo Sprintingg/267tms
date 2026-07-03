@@ -1,0 +1,182 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[戰國時代 劍豪] 陰謀的蛛絲馬跡２"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "57"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "史菲魯納認為繼續進行調查會比較好。與史菲魯納討論之後建立調查的計畫吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "史菲魯納說越往公園深處怪物就越暴躁。到雲彩公園III清除月光精靈吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "雖然清除了月光精靈，但是還是沒有得到任何線索。感覺頭緒又漸漸的消失了。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o4230106# #a571341#\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "大概看來，更裡面棲息在公園的怪物有越來越狂暴的樣子。說不定我要找的線索在這公園的深處。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "首先比剛才的雲彩公園I更裡面的地方，在雲彩公園Ⅲ、Ⅳ抓月光精靈看看。跟剛一樣擊倒200隻左右的話，那些傢伙會害怕的。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "月光精靈在雲彩公園Ⅲ、Ⅳ有很多。希望這次能發現一些線索。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "擊退月光精靈還順利嗎? 月光精靈在雲彩公園Ⅲ、Ⅳ很多。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2032001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "50"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "57133"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub"
+      },
+      "job_TW": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "4100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "4110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "4111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "4112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "4113"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2032001"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q57134e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4230106"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "200"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "是冒險者吧?如果不是從水路來的話…那是從#m250000000#到這來的了.沒看到什麼異常現象嗎?\\r\\n#L0##b異常現象?"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "#o4230505#以前只是乖乖待著並不會攻擊人.為了#m251000000#的草藥，弄了很多#o4230505#，奇怪的是不久前#o4230505#開始移動.\\r\\n#L0##b呵...#o4230505#裡有鬼嗎?"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "不,不是鬼，應該是什麼生物鑽進了#o4230505#，帶動了#o4230505#.雖然不知道那是什麼東西，但就是那個使大家不得安寧.你能幫助解決#o4230505#嗎?"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你夠能答應幫忙真是謝謝了。那請狩獵在村子周圍的#r#o4230505##k，越多越好…先消滅#r200隻#k吧。因為還不知道是什麼東西…最好小心點。拜託了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "呃...不是鬼啦,不用擔心，希望能幫幫忙..."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "看來已經狩獵了 #o4230505# 200隻呢。真是太感謝了。空的#o4230505#隨時都可以去收集，但大家受傷就麻煩了。再次表示感謝。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "看起來好像還沒狩獵#r#o4230505#200隻#k呢…"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2092001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4230505"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "200"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2092001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "135"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2215821"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2001000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[武陵桃園] 消滅逃脫的罈壺"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#m251000000##k的#b#p2092001##k有件煩惱的事..."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2092001#說準備用來放藥草的#o4230505#裡跑進了不明物體，造成了很大的騷動。因此委託狩獵變成怪物的#r#o4230505#200隻。\\n\\n#o4230505##r#a38341##k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "狩獵#o4230505# 200隻後，#p2092001#終於鬆了一口氣。但究竟裡面有什麼呢…最終還是個謎呢。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "44"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o4230505# #a38341#\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2215821"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2001000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

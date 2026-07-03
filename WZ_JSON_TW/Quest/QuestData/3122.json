@@ -1,0 +1,572 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[冰原雪域山脈] 封印的確認"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "33"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n可進行 '復活徵兆' 任務\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b●分類：侏儒帝王雷克斯的復活－護衛、組隊任務#k\\r●種類：事前必需任務\\r\\n●內容：去找#b羅貝亞#k詢問侏儒帝王雷克斯被封印的位置。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "按照#b羅貝亞#k所說的去查看封印吧。如果沒有找到寒冰峽谷，就放棄任務後重新與羅貝亞對話。\n\r\n去查看一下侏儒帝王雷克斯被封印的地方後，回去找#b邪摩斯#k吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "已用確認過侏儒帝王－雷克斯仍被封印，請把這轉達給邪摩斯。看過了證明之後，邪摩斯變鎮靜許多。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "什麼？你是正常的嗎？居然相信邪摩斯的話而要直接去那邊？\\r\\n#L0##b不！跟相信比起來…不是太可憐了嗎…就這樣放任他，因為妄想而受折磨，搞不好殺了你也不一定。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "可憐？！你！對邪摩斯一定也不知道！！\\r\\n不！停止吧。因邪摩斯的妄想似乎無故浪費時間而雖然有點可惜…如果你一定要去的話也好。但，封印絕對不要碰！知道嗎？！"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "告訴你位置，好好聽著。往冰原雪域出去，並往東邊走，可以找到#b冰雪峽谷2#k。在那地方往#b冰雪峽谷入口#k去的話，透過洞窟可以進入冰雪峽谷。但因極寒，不會有生命體。這地方跟冰原雪域比起來是更冷的地方，一定要作好萬全準備再去比較好。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "什麼？要放棄嗎？這不是你先拜託的事嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "想去確認封印，放棄任務之後再跟我說話。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2020009"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "70"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q3122s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3121"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "0"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "111"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "121"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "131"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "112"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "122"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "132"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "211"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "221"
+        },
+        "9": {
+          "_dirType": "int",
+          "_value": "231"
+        },
+        "10": {
+          "_dirType": "int",
+          "_value": "212"
+        },
+        "11": {
+          "_dirType": "int",
+          "_value": "222"
+        },
+        "12": {
+          "_dirType": "int",
+          "_value": "232"
+        },
+        "13": {
+          "_dirType": "int",
+          "_value": "311"
+        },
+        "14": {
+          "_dirType": "int",
+          "_value": "321"
+        },
+        "15": {
+          "_dirType": "int",
+          "_value": "312"
+        },
+        "16": {
+          "_dirType": "int",
+          "_value": "322"
+        },
+        "17": {
+          "_dirType": "int",
+          "_value": "411"
+        },
+        "18": {
+          "_dirType": "int",
+          "_value": "421"
+        },
+        "19": {
+          "_dirType": "int",
+          "_value": "412"
+        },
+        "20": {
+          "_dirType": "int",
+          "_value": "422"
+        },
+        "21": {
+          "_dirType": "int",
+          "_value": "432"
+        },
+        "22": {
+          "_dirType": "int",
+          "_value": "433"
+        },
+        "23": {
+          "_dirType": "int",
+          "_value": "434"
+        },
+        "24": {
+          "_dirType": "int",
+          "_value": "511"
+        },
+        "25": {
+          "_dirType": "int",
+          "_value": "521"
+        },
+        "26": {
+          "_dirType": "int",
+          "_value": "531"
+        },
+        "27": {
+          "_dirType": "int",
+          "_value": "512"
+        },
+        "28": {
+          "_dirType": "int",
+          "_value": "522"
+        },
+        "29": {
+          "_dirType": "int",
+          "_value": "532"
+        },
+        "30": {
+          "_dirType": "int",
+          "_value": "1000"
+        },
+        "31": {
+          "_dirType": "int",
+          "_value": "1111"
+        },
+        "32": {
+          "_dirType": "int",
+          "_value": "1112"
+        },
+        "33": {
+          "_dirType": "int",
+          "_value": "1211"
+        },
+        "34": {
+          "_dirType": "int",
+          "_value": "1212"
+        },
+        "35": {
+          "_dirType": "int",
+          "_value": "1311"
+        },
+        "36": {
+          "_dirType": "int",
+          "_value": "1312"
+        },
+        "37": {
+          "_dirType": "int",
+          "_value": "1411"
+        },
+        "38": {
+          "_dirType": "int",
+          "_value": "1412"
+        },
+        "39": {
+          "_dirType": "int",
+          "_value": "1511"
+        },
+        "40": {
+          "_dirType": "int",
+          "_value": "1512"
+        },
+        "41": {
+          "_dirType": "int",
+          "_value": "2000"
+        },
+        "42": {
+          "_dirType": "int",
+          "_value": "2111"
+        },
+        "43": {
+          "_dirType": "int",
+          "_value": "2112"
+        },
+        "44": {
+          "_dirType": "int",
+          "_value": "2214"
+        },
+        "45": {
+          "_dirType": "int",
+          "_value": "2215"
+        },
+        "46": {
+          "_dirType": "int",
+          "_value": "2216"
+        },
+        "47": {
+          "_dirType": "int",
+          "_value": "2217"
+        },
+        "48": {
+          "_dirType": "int",
+          "_value": "2218"
+        },
+        "49": {
+          "_dirType": "int",
+          "_value": "2311"
+        },
+        "50": {
+          "_dirType": "int",
+          "_value": "2312"
+        },
+        "51": {
+          "_dirType": "int",
+          "_value": "2411"
+        },
+        "52": {
+          "_dirType": "int",
+          "_value": "2412"
+        },
+        "53": {
+          "_dirType": "int",
+          "_value": "2511"
+        },
+        "54": {
+          "_dirType": "int",
+          "_value": "2512"
+        },
+        "55": {
+          "_dirType": "int",
+          "_value": "2711"
+        },
+        "56": {
+          "_dirType": "int",
+          "_value": "2712"
+        },
+        "57": {
+          "_dirType": "int",
+          "_value": "3000"
+        },
+        "58": {
+          "_dirType": "int",
+          "_value": "3111"
+        },
+        "59": {
+          "_dirType": "int",
+          "_value": "3121"
+        },
+        "60": {
+          "_dirType": "int",
+          "_value": "3112"
+        },
+        "61": {
+          "_dirType": "int",
+          "_value": "3122"
+        },
+        "62": {
+          "_dirType": "int",
+          "_value": "3211"
+        },
+        "63": {
+          "_dirType": "int",
+          "_value": "3212"
+        },
+        "64": {
+          "_dirType": "int",
+          "_value": "3311"
+        },
+        "65": {
+          "_dirType": "int",
+          "_value": "3312"
+        },
+        "66": {
+          "_dirType": "int",
+          "_value": "3511"
+        },
+        "67": {
+          "_dirType": "int",
+          "_value": "3512"
+        },
+        "68": {
+          "_dirType": "int",
+          "_value": "3611"
+        },
+        "69": {
+          "_dirType": "int",
+          "_value": "3612"
+        },
+        "70": {
+          "_dirType": "int",
+          "_value": "5111"
+        },
+        "71": {
+          "_dirType": "int",
+          "_value": "5112"
+        },
+        "72": {
+          "_dirType": "int",
+          "_value": "6111"
+        },
+        "73": {
+          "_dirType": "int",
+          "_value": "6112"
+        },
+        "74": {
+          "_dirType": "int",
+          "_value": "6511"
+        },
+        "75": {
+          "_dirType": "int",
+          "_value": "6512"
+        },
+        "76": {
+          "_dirType": "int",
+          "_value": "10100"
+        },
+        "77": {
+          "_dirType": "int",
+          "_value": "10110"
+        },
+        "78": {
+          "_dirType": "int",
+          "_value": "10111"
+        },
+        "79": {
+          "_dirType": "int",
+          "_value": "10112"
+        },
+        "80": {
+          "_dirType": "int",
+          "_value": "2001"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "571"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "572"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "4001"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "4111"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "4112"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "4110"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "4002"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "4211"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "4212"
+        },
+        "9": {
+          "_dirType": "int",
+          "_value": "4210"
+        },
+        "10": {
+          "_dirType": "int",
+          "_value": "573"
+        },
+        "11": {
+          "_dirType": "int",
+          "_value": "4113"
+        },
+        "12": {
+          "_dirType": "int",
+          "_value": "4213"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2022003"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "3122"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q3122e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

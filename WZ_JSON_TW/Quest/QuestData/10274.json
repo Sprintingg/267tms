@@ -1,0 +1,153 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 準備楓之谷五週年派對！"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p9010000#說楓之谷5週年了，她正在準備盛大的宴會，但是需要準備的材料實在太多了。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "幫忙蒐集#t04032298#，然後交給楓之谷GM吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "終於把派對用品蒐集到了，希望能幫得上忙！"
+    },
+    "summary": {
+      "_dirType": "string",
+      "_value": "終於把派對用品蒐集到了，希望能幫得上忙！"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4032298:##t4032298:##c4032298#/20\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "25"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201007211200"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201008111200"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "200905280000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201007211200"
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q10274e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032298"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你來的正好，#b#h0##k。我正在為楓之谷的第5個生日做準備，但是需要的材料實在太多了。你能幫我蒐集材料嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "事實上，這種事情最好是交給#b#p9000021##k去做，但是最近不知道他在忙什麼，連人影都看不見……不知道是不是沒跟我打個招呼就去旅行了……總之，你只要幫我蒐集#b#e20個#t04032298:##k#n就行。那就拜託你了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯？你不願意嗎？你不想對楓之谷5週年表示祝賀嗎？很少人敢拒絕我的請求……"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "宴會用品還沒蒐集到嗎？你確認一下是不是#b20個#t04032298##k。"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[星光之塔] 吉他上的音樂精靈"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "211"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "根據赫一的說法，團員們狀況變得奇怪，是在演奏過練習室的吉他之後發生的，去調查一下#b練習室的吉他#k吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "吉他上面存在著音樂的化身'音樂精靈'。讓團員們如此意志消沉的原因就是音樂精靈！#b擊退音樂精靈，讓出道舞台成功進行吧！#k\r\n\r\n#r※ 沒有成功擊退音樂精靈的話，需要放棄任務後再次進行。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "成功擊退練習室吉他上的音樂精靈，聽說音樂精靈只會出現在新人歌手面前，現在應該沒事了吧？雖然以為這只是口耳相傳的流言。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o4310015# #a344241#\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "3098601"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052220"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "145"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q34424s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34423"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052235"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4310015"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "3098601"
+      },
+      "transferField": {
+        "_dirType": "int",
+        "_value": "910310512"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "原來如此，練習室的吉他上有音樂精靈…說不定就是搖滾精神耶！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "阿…就快到了耶…。好險有趕上直播…聽說就快要開始了。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "實踐全部人夢想的瞬間！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b(雖然看起來是一把昂貴的吉他，但總覺得哪裡怪怪的，要不要調查一下練習室的吉他呢？)#k"
+          }
+        }
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "哈哈，從那位新人歌手身上重新看到了搖滾精神。 喔！這麼說現在大發公司要發財了嗎？"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "雖然怎麼看都像是以前傳下來的怪談。"
+      }
+    }
+  }
+}

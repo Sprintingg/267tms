@@ -1,0 +1,246 @@
+{
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2111000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "把所有的材料都取回好了。來～收好蒙特鳩的披風吧。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "只有這次，幫你再做一個…蒙特鳩的披風是能證明蒙特鳩所屬的重要東西。如果不穿披風的話，是會被卡帕萊特誤解的呢！絕對不可以遺失。還有，做了遺失披風的煉金術師，還要休息3天呢。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "只有這次，幫你再做一個…蒙特鳩的披風是能證明蒙特鳩所屬的重要東西。如果不穿披風的話，是會被卡帕萊特誤解的呢！絕對不可以遺失。還有，做了遺失披風的煉金術師，還要休息3天呢。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[瑪迦提亞城] 再次取得蒙特鳩的披風"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "不小心遺失了#t1102135#！若沒有它就無法證明自己身為蒙特鳩一員的身分，這該怎麼半呢？快去找蒙特鳩協會長#b#p2111000##k商量一下好了。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2111000#露出不悅的表情，並說可以幫我再次製作出#t1102135#，但在此之前，要我把所需的材料收集齊全。材料是 #b#t4000021##k與 #b10000楓幣#k。呼…還好可以重新製作呀。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "重新獲得#t1102135#了！若沒有這披風，就無法被認可為蒙特鳩的一員！要小心，可不能在弄丟了。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000021:# #t4000021:# #c4000021# / 10\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "meso": {
+        "_dirType": "int",
+        "_value": "-10000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2111000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "money": {
+        "_dirType": "int",
+        "_value": "-10000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1102135"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000021"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2111000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000021"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2111000"
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "4320"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q3305s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3349"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3302"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3347"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "3": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3348"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1102135"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "85"
+      }
+    }
+  }
+}

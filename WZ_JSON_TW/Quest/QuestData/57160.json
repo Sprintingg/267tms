@@ -1,0 +1,225 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[Hayato] The Demon's Lair 3"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "57"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "The allies are on the road to victory, but Nobunaga has more tricks up his sleeve."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "Enter the temple and defeat Takigawa Kazumasu, one of Oda's Four Heavenly Kings."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "With Kazumasu down and Honnou-ji back under your control, you can only wonder where Nobunaga has fled. He and his cronies have escaped for now... but they will face their judgment."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o9421562# #a571601#\\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\\n#fUI/UIWindow2.img/QuestIcon/8/0# 9,575,667\\nCan proceed to the The End of an Era quest"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "9575667"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9130076"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "57159"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q57160s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "150"
+      },
+      "job": {
+        "_dirType": "sub"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "job_SG": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "4100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "4110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "4111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "4112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "4113"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "4114"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9130078"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q57160e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9421562"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "9575667"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "There's only one thing left to do. Defeat Takigawa Kazumasu and reclaim Honnou-ji. The enemy resistance should fall apart without Kazumasu."
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "You should have no problem with Kazumasu, right?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "Kazumasu is hiding in Honnou-ji Temple. He knows the end is coming. Don't let him down!"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "What happened, did somebody cut off your power? I knew I couldn't trust those camp barbers..."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "Enemy general Takigawa Kazumasu is in the temple. Defeat him and end this battle!"
+          }
+        }
+      }
+    }
+  }
+}

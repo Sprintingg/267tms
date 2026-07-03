@@ -1,0 +1,212 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 지구방위본부의 월동준비"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "부사관 메딘의 지구방위 본부의 월동 준비를 위해 급하게 요청할 것이 있다고 한다."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "지구방위본부의 부사관 메딘에게 큰 문젯거리가 생겼다. 부대의 겨울작전용 물품을 수송중에 잃어버렸다고 한다. 잃어버린 물품은 방한점퍼의 내피인 깔깔이라고 하는데… 수송선을 습격의 배후로 외계인들이 의심되는 상황이다. 외계인들을 퇴치하고 군용물품인 깔깔이를 되찾아 가자."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "수송 중 외계인에 의해 강탈당했던 군용물품인 깔깔이를 되찾아 부사관 메딘에게 돌려주었다. 메딘은 모든 부대가 당신의 노고에 감사드릴 거라면서 고마움을 표시했다.\\"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4032567:# #t4032567:# #c4032567# / 20\r\n"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "경험치 2,000\r\n#Wbasic#\r\n#i4310014:# #t4310014:# 1 개\r\n#b눈꽃선물받기 이벤트 자동 응모#k"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4310014"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2050009"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "65"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201101270000"
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201101270000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "75"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2050009"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q10538e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032567"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032567"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4310014"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "안녕하십니까. 지구방위본부입니다. 최근 외계인들의 습격이 잦아졌으니 주의하시기 바랍니다. 얼마 전에도 외계인이 군용수송기를 습격해서 군수물품을 분실하는 사건이 있었습니다. 동절기 전투를 대비해서 본부대원들에게 나눠주기 위해서 준비한 군복이었는데 정말 큰일입니다. 분실한 물품에 대한 회수작전을 준비 중인데 동참해 주시겠습니까?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "작전은 신속하게 이뤄져야 합니다. 분실한 물품은 동절기 군용야상점퍼의 내피로 일명 ‘깔깔이’라고 불리는 의류입니다. 솜을 대고 누빈 조끼로 최고의 발명품이죠.외계인의 본거지로 침입해 #e#b깔깔이 20개#k#n를 회수해 주십시요.\\n\\n#b#i4032567# #t4032567# 20개"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "작전참여는 명예로운 일입니다. 다시 한번 재고해 보시기 바랍니다."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "작전은 신속하게 이뤄져야 합니다. 분실한 물품은 동절기 군용야상점퍼의 내피로 일명 ‘깔깔이’라고 불리는 의류입니다. 솜을 대고 누빈 조끼로 최고의 발명품이죠.외계인의 본거지로 침입해 #e#b깔깔이 20개#k#n를 회수해 주십시요.\\n\\n#b#i4032567# #t4032567# 20개"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "작전은 신속하게 이뤄져야 합니다. 분실한 물품은 동절기 군용야상점퍼의 내피로 일명 ‘깔깔이’라고 불리는 의류입니다. 솜을 대고 누빈 조끼로 최고의 발명품이죠.외계인의 본거지로 침입해 #e#b깔깔이 20개#k#n를 회수해 주십시요.\\n\\n#b#i4032567# #t4032567# 20개"
+          }
+        }
+      }
+    }
+  }
+}

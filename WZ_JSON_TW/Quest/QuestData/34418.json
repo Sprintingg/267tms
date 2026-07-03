@@ -1,0 +1,285 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[星光之塔] 尋找蒂雅"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "211"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "要幫忙準備出道的祕書#b蒂雅#k不見蹤影。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "從#b蒂雅#k可能會去的地方開始依序找起吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "從練習室傳出某人的歌聲，歌聲的主人不是別人，正是祕書蒂雅。還以為自己已經放棄歌手之路，但卻無法放下自己的夢想。重新開始夢想的蒂雅，在熄燈的練習室內卻是如此閃耀。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#前往大廳 (#R34436Exfind1Ref34418#)\r\n#questorder2#前往地下1樓電子賣場<1>(#R34436Exfind2Ref34418#)\r\n#questorder3#前往練習室(#R34436Exfind3Ref34418#)\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2157750"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "145"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q34418s"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052203"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34417"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052212"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "34436"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "QuestRecordAndOption": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "前往大廳"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "find1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "前往地下1樓電子賣場<1>"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "find2"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "前往練習室"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "find3"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2157750"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#b(要幫忙準備出道的祕書蒂雅不見蹤影，要不要到她可能去的地方找找？)#k"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b(...首先，從#r星光之塔大廳#b開始找吧。)#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b(為了準備新人組合的出道，需要祕書蒂雅的協助。)#k"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "sayEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#b(歌聲聽起來有些孤獨，進入練習室的瞬間就停止了。好像是祕書蒂雅的聲音。)#k"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "啊，#b#ho##k...那...那個…"
+          }
+        }
+      },
+      "yesEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "其實...我...並沒有放棄夢想…"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "我也想要唱歌！我想要重新挑戰！#b#ho##k，請選擇讓我成為歌手吧！"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#b(重新開始夢想的蒂雅，即使在熄燈的練習室內，也顯得閃耀。)#k"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "defaultEx": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "sub",
+            "msg": {
+              "_dirType": "string",
+              "_value": "#b(首先從#r星光之塔大廳#b開始找起吧。)#k"
+            },
+            "userSay": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "imgPos": {
+              "_dirType": "int",
+              "_value": "1"
+            }
+          }
+        }
+      }
+    }
+  }
+}

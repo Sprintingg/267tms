@@ -1,0 +1,186 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[鯨魚號] 韋爾族王子在哪裡呢？"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "給#b#p1094001##k找回眼鏡了。 現在正式任務開始了嗎？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b#p1094001##k的任務是接待要訪問鯨魚號的韋爾族的王子。 不知道王子在哪裡，一直沒出現啊… 去找王子吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "找到韋爾族的王子了。 韋爾族的王子竟然是海豚啊…"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 742\r\n#i1082183:# #t1082183:# 1 個\r\n可進行 '幫助可憐的海豚' 任務\r\n"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "2920"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "29"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "742"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1094001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "20"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2919"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1094001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "742"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1082183"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "正常"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "可能你也聽#b#p1092006##k說過了，我的任務是迎接並接待韋爾族的王子。 可是，已經過了約定好的時間，還是沒有看到韋爾族王子殿下來。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": " 分明是發生了什麼事情… 不能一直在這裡等下去，最好去找一找王子殿下。 如何？ 你也是這樣覺得吧？ "
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "他剛跟我說他要來這，所以他出事的話應該在這附近的。所以先調查這週邊吧。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "#ho#，請你先去調查#r#m120020600##k一帶。 一旦找到查理斯王子殿下，一定要通知我。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "有什麼急事啊？ 現在有什麼事會比找到王子更緊急…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "搜查之前請先收下這個手套。 比起你現在裝備的應該更好一些。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "要抓緊時間，我們還是分開尋找吧。 之前偶爾聽說海岸那邊有可疑的海豚，先去那邊看看。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有找到查理斯王子殿下嗎？？ 應該就在離這裡不遠的某處…"
+          }
+        }
+      }
+    }
+  }
+}

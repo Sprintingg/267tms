@@ -1,0 +1,152 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[魔菈斯] 她離開的路"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "278"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "朝著#b#p3003469:##k所指引的方向時，不小心錯過了她的足跡。 \r\n\r\n該怎麼辦呢？"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4036338:# #t4036338:# #c4036338# / 30\r\n"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b#p3003472:##k表示調查沾黏於周圍怪物的#i4036338:#～#r#t4036338:##k就可以找尋到一些蛛絲馬跡，\r\n收集#i4036338:#～#r#t4036338:##k #b30個#k並拿給#b#p3003472:##k吧！\r\n\r\n想脫離這裡就跟#b#p3003472:##k搭話，如果想要重新回來就再次向#r#m450006240:##k的#b#p3003471:##k搭話吧！"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "透過#i4036338:#～#t4036338:#確認了她所經之路。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "8"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "230"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "230"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003472"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q34240s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34239"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003472"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q34240e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036338"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有收集到足夠的#i4036338:#～#r#t4036338:##k耶！\\r\\n據說只要加緊腳步收集，就能夠更明確的掌握它的蹤跡！"
+          }
+        }
+      }
+    }
+  }
+}

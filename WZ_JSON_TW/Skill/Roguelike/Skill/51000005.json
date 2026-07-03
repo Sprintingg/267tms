@@ -1,0 +1,250 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "35101002 호밍 미사일"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "alert6"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "35101002"
+          }
+        }
+      },
+      "missileLaunch": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "300"
+        }
+      },
+      "effect0": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      },
+      "effect1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      },
+      "effect2": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-2"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "missileLaunch": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Projectile"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "time": {
+          "_dirType": "string",
+          "_value": "10"
+        },
+        "emitAngle": {
+          "_dirType": "string",
+          "_value": "90"
+        },
+        "emitSpeed": {
+          "_dirType": "string",
+          "_value": "500"
+        },
+        "emitCount": {
+          "_dirType": "string",
+          "_value": "4"
+        },
+        "maxSpeed": {
+          "_dirType": "string",
+          "_value": "500"
+        },
+        "rotatable": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "emitInterval": {
+          "_dirType": "string",
+          "_value": "0.09"
+        },
+        "destroyHitCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "boundLT.X": {
+          "_dirType": "string",
+          "_value": "-10"
+        },
+        "boundRB.X": {
+          "_dirType": "string",
+          "_value": "50"
+        },
+        "boundLT.Y": {
+          "_dirType": "string",
+          "_value": "-10"
+        },
+        "boundRB.Y": {
+          "_dirType": "string",
+          "_value": "10"
+        },
+        "emitPos.X": {
+          "_dirType": "string",
+          "_value": "15 * i"
+        },
+        "emitPos.Y": {
+          "_dirType": "string",
+          "_value": "-80"
+        },
+        "chaseAccel": {
+          "_dirType": "string",
+          "_value": "2500"
+        },
+        "chaseTargetType": {
+          "_dirType": "string",
+          "_value": "DragToTarget"
+        }
+      },
+      "ball": {
+        "_dirType": "sub",
+        "z": {
+          "_dirType": "int",
+          "_value": "-100"
+        }
+      },
+      "onProjectileHit": {
+        "_dirType": "string",
+        "_value": "missileAttack"
+      }
+    },
+    "missileAttack": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "150+50*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "100"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub"
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "35101002"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "1"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "4"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -1000,
+      "_y": -1000
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 1000,
+      "_y": 1000
+    },
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "cooltime": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "150+50*x"
+    }
+  }
+}

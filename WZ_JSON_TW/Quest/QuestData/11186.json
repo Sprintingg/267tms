@@ -1,0 +1,223 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "休菲凱曼，他的真面目是？！"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "從怪物公園內的老舊袋子內發現到一張老舊照片。這就去問問看出現在照片內的人物休菲凱曼，有關這張照片的事情。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "從怪物公園內的老舊袋子內發現到一張老舊照片。這就去問問看出現在照片內的人物休菲凱曼，有關這張照片的事情。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "休菲凱曼開始回避談論有關照片的事情。似乎是在藏匿著什麼事情的樣子，到底休菲凱曼的真面目是什麼呢？"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4310020"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9071000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4350002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9071000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4350002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4350002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4310020"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "好像很常看耶，呵呵呵。來找我有什麼事嗎？\\r\\n#L0##b在怪物公園撿到的#b#t2430290##k內發現了你似乎在製作炎魔的照片。你的真面目究竟是什麼？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "照片？？最近的費神的事變多了，就算你不說我也好累。給我看照片。因你該仔細地看，等會再跟我說話吧。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "好！這照片？我想起來了！\\r\\n#L0##b現在都想起來了嗎？你的真面目是什麼？(…不管怎麼說，真的太不對勁了。)#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "那照片中的炎魔是假的，是我的雕刻品~你現在才想起來。 呵呵呵。我曾一陣子喜歡雕刻和書法。這是那時的照片。啊~想起了往事。還給我這張照片。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "現在不再好奇了吧？誤認雕刻是真的炎魔，果然我這驚人的才能… 因你幫我恢復舊記憶，給你紀念鑄幣。放下沒用的好奇心，並繼續度過愉快的時間喔~"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

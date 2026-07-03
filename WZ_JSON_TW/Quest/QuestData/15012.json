@@ -1,0 +1,142 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[전국시대] 빨간 단지에 영혼 채우기"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "[전국시대] 히에이잔"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "4"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "소년에게 음양사의 3가지 단지를 모두 주었다. 이제 각각의 단지에 병사들의 영혼을 모으는 일만 남았다."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p9000432#으로부터 #o9803056#을 단지가 가득 찰 때까지 잡아 달라는 부탁을 받았다. 영혼이 단지에 가득차게 되면 #p9000432#에게 돌아가자. 연합군의 병사들을 위해 이렇게 힘쓰다니... #p9000432#는 매우 착한 아이인 것 같다."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#o9803056#을 100마리 잡았더니 빨간 단지가 가득 찼다."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o9803056# #a150121#\\r"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000432"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q15012s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201510150000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201510150000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "15011"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000432"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q15012e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9803056"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "아직 단지에 영혼이 충분히 모이지 않았어요."
+          }
+        }
+      }
+    }
+  }
+}

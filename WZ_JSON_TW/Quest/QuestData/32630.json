@@ -1,0 +1,205 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[次元圖書館] 護衛沙漠的馬車"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "82"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "護衛哈沙勒的馬車橫越沙漠吧."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "必須安全護衛哈沙勒的運送者.\\r\\n#b(透過右邊的傳送點橫越沙漠吧.)#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "護衛哈沙勒的馬車橫越沙漠了."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#護衛哈沙勒的運送者 (#R32628Exguard1Ref32630#)\\r\\n"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "311615"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2510001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2510001"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "32628"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "護衛哈沙勒的爪牙"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "guard1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "311615"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "呼,其實我本以為會死在沙漠裡.能夠見到你真是太好了,\\r\\n#L0##b發生什麼事了嗎?#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "我們受到#e怪物#n們的襲擊!商團中存活下來的就只有我而已.因為我一直裝死,等到他們離開後,就帶著貴重品逃走了.\\r\\n#L0##b怪物的襲擊?#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "對.那是初次看到的怪物,散發著一股惡臭.就像是腐爛了一樣...光是想到就讓人覺得毛骨悚然.不過你是一個人嗎?同伴們在哪裡呢?\\r\\n#L0##b我都是一個人行動的.日落之前快點出發吧.#l\\n#k"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "什麼?你要獨自一個人護衛我?不可能吧...你該不會是認真的吧?"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "糟糕...等一下!一起走,等等我!\\r\\n#b(透過右邊的傳送點橫越沙漠吧.必須安全護衛哈沙勒的搬運者.)#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不管你是哈沙勒的傭兵還是部下,總之你就是被雇用了不是嗎?"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "呼,沒想到你能獨自消滅那麼多怪物... 你看起來很斯文,實力比想像中還厲害呢?"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "真是的,還真是個呆板的人.總之,我很喜歡你!雖然當作報答有些慚愧,但我就提供你不錯的情報吧."
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "快點穿越沙漠吧."
+          }
+        }
+      }
+    }
+  }
+}

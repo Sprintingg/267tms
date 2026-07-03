@@ -1,0 +1,189 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[緞帶肥肥] 緞帶上有祕密"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "決定了狩獵緞帶肥肥後，收集一些緞帶。跟#b#p9000292##k對話後移動到緞帶肥肥的棲息地。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "狩獵緞帶肥肥後收集紅色緞帶100個、藍色緞帶100個吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "緞帶上居然沒有什麼特別的地方。為了尋找其他方法，跟#b#p9000292##k對話吧。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4034120:# #t4034120:# #c4034120# / 100\r\n#questorder1##i4034121:# #t4034121:# #c4034121# / 100\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000292"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q32938s"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201509020000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201509020000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32937"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201506240000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201506240000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000292"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034120"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034121"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034120"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034121"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "人類，已經收集好足夠的緞帶了呢。你再等我一下。我先觀察一下這些緞帶。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "嗯…只能說是些平凡的緞帶呢。紅色的緞帶，藍色的緞帶…\\r\\n很可惜的緞帶上是無法再找到線索了。好像也沒有特別的痕跡。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "緞帶上雖然沒有什麼特別的地方，但我會再持續研究看看。\\r\\n好像要找其他方法了。直接觀察肥肥如何呢？我去找一下會有很多肥肥存在的地方，稍後再跟我對話吧。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "似乎沒有收集到足夠的緞帶呢。想要再去緞帶肥肥棲息地的話，請#r先放棄任務#k後，再跟我進行對話吧。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "似乎沒有收集到足夠的緞帶呢。想要再去緞帶肥肥棲息地的話，請#r先放棄任務#k後，再跟我進行對話吧。"
+          }
+        }
+      }
+    }
+  }
+}

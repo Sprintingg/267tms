@@ -1,0 +1,232 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[埃德爾斯坦] 購買黑色翅膀偽裝服"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "24"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#p2153000##k的祕密提議會是什麼呢。聽聽看吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2153000#說要賣自己擁有的#b#t1003134##k。身為黑色翅膀的成員，擁有進入礦山的權限的高階幹部的衣服，守門人肯定會允許通過.... 只要支付適當的代價，就會提供衣服。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p2153000#笑著說如果遺失#t1003134#時，可以再賣一次，所以隨時可以找他。雖然是讓人很討厭的男人，但是終於可以進入礦山內部了。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "完成#b購買黑色翅膀偽裝服(楓幣)#k或#b購買黑色翅膀偽裝服(道具)#k"
+    },
+    "resignedTogetherQuest": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "int",
+        "_value": "23196"
+      },
+      "1": {
+        "_dirType": "int",
+        "_value": "23197"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2153000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q23198s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "23946"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1003134"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2153000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "QuestOrOption": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "23197"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "23196"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1003134"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你應該看的出來我是黑色翅膀的成員。雖然不是幹部，但有出入礦山的許可。所以…戴著我的帽子進去，守門人也不會攔的。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "但是我的帽子當然不是免費的。我以一定的價格販售。怎麼樣？什麼？沒錢嗎？嗯嗯，那麼從附近的#r巡邏機器人S#k收集#b巡邏機器人S的記憶晶片#k#r30#k個拿給我也行。我的工作是錄製聲音。可以當作是你代替我做工作。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "什麼？你問這樣可以嗎？反正黑色翅膀的幹部中沒有人會確認這個。反正這只是簡單的勞動。收集這種事，讓別人去做也不會有什麼大問題吧？我休息，你獲得帽子。不是一石二鳥嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "果然如此。呵呵呵... 就如同我說的一樣，收集#r巡邏機器人S的記憶晶片30#k個帶來。不難吧？雖然我是免費獲得的... 物品準備好後，再跟我說話。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不要就算了。除了你還有很多人想要呢…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "好，那就給你我的帽子。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "戴著那個，礦山入口的守門人會讓你通過的。只有那些人才會嚴密的監視，以後隨便晃也沒事。反正幹部也是隨便穿著晃，沒人會在意的。呼呼…"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "萬一帽子不見了再來找我吧。你再來的時候，應該拿到了新帽子。呵呵呵。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "什麼啊？還沒收集到我要的東西嗎？唉，選錯客人了。你不是想進去礦山裡嗎？"
+          }
+        }
+      }
+    }
+  }
+}

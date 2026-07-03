@@ -1,0 +1,172 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2101000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2101012"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "85"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3923"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "77280"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "怎麼回事？現在不是演出時間啊。以後再給你看吧…什麼？我偷了岩石後面的寶物？你在說什麼啊？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "藏在岩石後面的寶物？...啊，你說那個寶物啊。對了，我把它分給居民了。什麼？你說我在妨礙沙影團？這怎麼是妨礙沙影團呢？這跟沙影團有什麼關係啊？"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "我比誰都清楚沙影團是在為#m260000000#做事。我怎麼可能妨礙他們呢？我又不是不認識沙影團…藏在岩石後面的那些寶物是其他的小偷偷來的，所以我才帶走的。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "偷走寶物的人肯定是#b#p2101000##k。因為除了#p2101000#沒人可以過來這裏！"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "討厭！好不容易收集到的寶物別人偷走了…絕不會放過他們！啊，來的正好。你偷來的寶物被別人偷走了。你問我誰偷走的？有一個人很可疑…想聽聽嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "偷寶物的人肯定是村子裏的舞女#b#p2101000##k。你問我為什麼懷疑她？因為除了#p2101000#沒人來過這裏！當時她說她是來練舞的，我就覺得有點奇怪…肯定是#p2101000#偷走寶物了！請您從#p2101000#手中找回寶物。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "什麼？好不容易偷來的寶物被別人偷走了，你都不著急？"
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[納希沙漠] 忠告"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "沙影團和紅蠍子團"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "在#b#m260010400##k裏的#p2101012#。他好像非常生氣…已經把寶物給他了，還生什麼氣呢？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在#b#m260010400##k的 #b#p2101012##k說偷走的寶物有藏在岩石後面，但似乎那個東西又被某人偷走而生氣著。依照他所說的話，偷走寶物的犯人似乎是舞姬 #p2101000#。去找 #b#p2101000##k看看吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "看來偷走寶物的人就是#p2101000#。但仔細聽了#p2101000#說的話，有些奇怪。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "43"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "77280"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

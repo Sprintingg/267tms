@@ -1,0 +1,152 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[伊利恩] 戰鬥訓練"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "215"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必要]"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "這是水晶學院的第二堂課─魔法戰鬥課程。不會使用魔法的我竟然要上魔法戰鬥課…不知道是否能勝任…沒有信心。\n\n#b按下[W]鍵後，確認世界地圖移動到#m402000527#吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "不會使用魔法的我竟然要上魔法戰鬥課…不過我有護腕，區區的練習機器人…應該沒問題吧？\n\n#b進入訓練室隔壁消滅#o2400408# 20隻吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "水晶學院的第二堂課─魔法戰鬥課程好不容易結束了…雖然差勁的實力成為了其他人的笑柄…既然沒有人受傷，這樣就該滿足了…"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q34803x"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o2400408# #a348031#\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "3"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q34803s"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001333"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34802"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q34803e"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001333"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2400408"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b從#m402000531##k消滅20隻以上的#r練習用機器人#k吧。"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[聯盟任務] 遠征隊任務 - 巨大怪物的氣息"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "223"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "在虛空海浪上，發生著不明的不祥之息。克服從巨大怪物散發初的 3階段以上的恐懼 1次後，再去找 #p3003564# 進行報告吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在虛空海浪上，發生著不明的不祥之息。克服從巨大怪物散發初的 3階段以上的恐懼 1次後，再去找 #p3003564# 進行報告吧。\r\n\r\n#b在地圖狩獵時，會跟著巨大怪物的氣息出現恐懼怪物。\r\n擊殺所有恐懼怪物後，巨大怪物的氣息消失的話，克服恐懼會提升 1階段。#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "克服恐懼而成功了遠征隊任務。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#克服3階段以上的恐懼 #R35121Ex4Ref35130# / 1\r\n"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "10000 心願"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003564"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "35119"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "999"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "not"
+          }
+        }
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201901230900"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201902060000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003564"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "35121"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q35130e"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "克服3階段以上的恐懼"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "4"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "聽說每次克服巨大怪物散發初的恐懼氣息時，就會變得更強大。但在高階段的恐懼上，要更加小心喔。"
+          }
+        }
+      }
+    }
+  }
+}

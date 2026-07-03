@@ -1,0 +1,187 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2040052"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2101008"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "85"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3900"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "222020000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "77280"
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[納希沙漠] 沙惠拉吉德的不安"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "講故事人沙惠拉吉德"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽說在#b#m260000300##k內有個一千日內能不停的講故事的人，她叫#b#p2101008##k，去找她吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "因知道很多故事，強迫被帶到宮殿裏的#p2101008#。她一直擔心有一天沒故事講怎麼辦。為了#p2101008#，得去在楓之谷中書最多的地方#b#m222020000##k借來書。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把#p2101008#的故事講給#p2040052#聽，他好像很驚訝似的。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "43"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "77280"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "歡迎來到#m222020000#。所有的楓之谷知識都在這裏。需要什麼樣的書呢...？嗯？幫助#m260000000#裡叫#p2101008#...的人嗎？什麼意思呀..."
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒到#b#m222020000##k的樣子呀…那地方，可以從#m220000000#去。"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "您好。冒險家先生…您希望聽哪個故事呢？雪山怪物的故事？海底美麗村莊的故事？這也不是…遙遠的森林裏，存在著非人類種族的故事？\\r\\n#L0##b想聽您的故事。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "…我的故事嗎？那可不是什麼有趣的。我原來只是平凡住民，興趣是講故事，後來被抓到宮殿裏…在恐懼中每天講著新的故事。\\r\\n#L0##b是在恐懼什麼呢？"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "哪天把知道的故事都講完。懼怕那時刻的到來。會讓我回村子嗎？…但王妃會這樣做嗎？不會那樣的。那之前要快點收集一些新的故事書…冒險家先生可以幫我嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "冒險家先生可能會聽過。在楓之谷，書最多的地方，#m222020000#...那地方可能會有從來沒聽過的故事吧？"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "可能會覺得荒謬…現在唯一有可能的地方，就只有#b#m222020000##k了。只要能在那裏收集到新的故事書…就可以在王妃面前多撐一段時間吧？冒險家先生…求您了。請您到#b#p2040052##k借書來吧。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "…是。不會有像故事裡的正義的冒險家嗎？"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[魔菈斯] 為了飛魚"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "278"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4036339:#  #t4036339:# #c4036339# / 50\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "剛才槍聲之下#b#p3003473:##k倒臥失去了意識。\r\n\r\n該怎麼做才好呢？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "把#i4036339:#～#r#t4036339:##k給#b#p3003473:##k吃會不會就能夠打起精神呢。\r\n收集可從#b魔菈斯內所有怪物#k取得的#i4036339:#～#r#t4036339:##k之後拿給#b#p3003473:##k吃吧！"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "好險飛魚順利打起了精神。"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "returnMapID": {
+      "_dirType": "int",
+      "_value": "450006040"
+    },
+    "returnPN": {
+      "_dirType": "string",
+      "_value": "3003473"
+    },
+    "targetType": {
+      "_dirType": "int",
+      "_value": "-1"
+    },
+    "returnType": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "8"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "230"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "230"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003473"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q34241s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34240"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003473"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q34241e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036339"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "defaultEx": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "sub",
+            "msg": {
+              "_dirType": "string",
+              "_value": "還沒收集足夠的#i4036339:#～#r#t4036339:##k，\\r\\n快集到#r50個#k拿給飛魚吃吧！"
+            },
+            "userSay": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "imgPos": {
+              "_dirType": "int",
+              "_value": "1"
+            }
+          }
+        }
+      }
+    }
+  }
+}

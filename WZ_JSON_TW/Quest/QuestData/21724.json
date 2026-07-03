@@ -1,0 +1,221 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[過去的英雄，狂狼勇士] 完成第三個情報收集"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "6"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "第三個情報收集活動。在#b#m102000000##k，和#p1103004#一起調查了兇暴的#o1140130#，調查已經接近尾聲了，與#b#p1103004##k對話。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1103004#說自己瞭解到玩偶不必在怪物身體裡，而在怪物附近也能發揮作用，並說要加強#m102000000#周邊的結界，以阻止傀儡師的侵入…到此第三個情報收集結束。去通知#b#p1002104##k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "向#p1002104#報告了#m102000000#發生的事情。到此第三個情報收集圓滿完成。"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1103004"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "20"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "21723"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2113"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "2114"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002104"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "104000004"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "通過這次事件可以確認的幾點。\\n\\n#b第一，突然變成兇暴的怪物的原因裡都存在的娃娃#k。\\n\\n#b第二，娃娃不是非得在怪物身體裡才可以影響，對週圍也會產生影響#k。\\n\\n#b還有第三…玩偶不在一個地方，而在維多利亞島的所有區域裡操縱怪物惹禍。#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "感謝你幫助我，狂狼勇士。托你的福得到了很多情報。也跟#b#p1002104##k說一聲謝謝。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "話說回來報告甚麼時候才要送出呢．．．啊，只是自言自語拉，別放在心上。\\r\\n #r ※  自動移動至任務地圖。#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這次事情好像到此結束…進一步的調查沒什麼意義…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "快來，英雄大人，怎麼樣？與#p1103004#做得好嗎？\\n#b#L0#(說了在#m102000000#裡#p1103004#整理的內容。)#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "嗯…原來如此。好啊，那麼就發動維多利亞島全部區域的情報網，抓住玩偶的尾巴。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "加上這次已經阻擾了玩偶，他會老實待著嗎？也忽視了他的警告…也不知道找到玩偶之前先攻擊我們啊，得要注意啊。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒去#b#p1002104##k那裡嗎？得要說明這次的事…"
+          }
+        }
+      }
+    }
+  }
+}

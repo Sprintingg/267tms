@@ -1,0 +1,167 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[進擊的巨人] 楓之谷的馬鈴薯"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "詢問K取得食糧的方法。\r\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "K建議是否要從楓之谷世界的怪物身上可以獲得的馬鈴薯搬到異世界去. 在楓之谷世界打倒怪物取得馬鈴薯後，帶到異世界給孩子吧..\\r\\n\\r\\n※比角色等級低11個等級或是高過等級21以上的怪物身上無法取得.\\r\\n※身上擁有楓之谷世界的食糧(馬鈴薯)回到時空的縫隙時, 楓之谷馬鈴薯會自動變成異世界的食糧(馬鈴薯)."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "K建議是否要從楓之谷世界的怪物身上可以獲得的馬鈴薯搬到異世界去. 在楓之谷世界獲得馬鈴薯後帶到異世界後, 送給孩子們讓他們開心吧."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4034246:# #t4034246:# #c4034246# / 50\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9137002"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "58442"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q58443s"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201412030000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201412310000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201410290000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201412171000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9137003"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034246"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q58443e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034246"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "在楓之谷世界打倒怪物收集50個馬鈴薯後送給孩子們享用."
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "肚子餓了…"
+          }
+        }
+      }
+    }
+  }
+}

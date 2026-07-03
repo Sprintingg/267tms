@@ -1,0 +1,182 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[冰原雪域山脈] 盧頓的忠告2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "33"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p2161002#想要給予跨越新楓之谷世界的建議。究竟是什麼內容，交談看看。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2161002#這樣告知，為了一探究竟，首先從除掉#o8210013#可取得的#r#t2430558##k，獲得#r#t2049300#或#t2049301#1張以上#k的樣子。除掉#o8210013#移動至亞尼的禁閉室。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p2161002#告知透過裝備強化卷軸可取得更好裝備的方法。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "402528"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2161002"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "139"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3149"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2161002"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q3150e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "楓之谷世界有好幾種變強的方法。提升等級或是獲得更高的技能… 可是也有截然不同的方法存在。\\r\\n#L0##b如果有的話…你知道那是什麼嗎？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "為了得知這個首先有要做的事。雖然不是簡單的工作，然而是冒險家一定可以做得到。想挑戰看看嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "很好的想法。那麼首先從抓到 #o8210013#會出現的 #r#t2430558##k獲得 #r#t2049300#或 #t2049301#1張以上#k，再來跟我對話。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "做好心理準備的話再跟我說話。為了拯救我們的國王，冒險家要盡快變強。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "取得#r裝備強化卷軸#k了。擁有這卷軸會給裝備神祕的力量，擁有驚人的力量可擁有比目前更優異的性能， 但是前述的使用方法，透過武器卷軸或是其他裝備卷軸#r可升級次數全部都消耗完畢的武器才能使用#k，這一點要留意。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "冒險家要記住的部分就是 #r強化數值越高，強化成功機率會逐漸降低#k。還有強化嘗試 #r失敗時，裝備破壞#k，需要格外注意。聽說在某處有個阻止破壞的神祕卷軸，然而還沒實際看過..."
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "強化的裝備追加了工具提示的另外顯示，可輕易辨認。如果再市場上看到貼上星星的裝備，購買一個也不錯。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "現在我對於裝備強化卷軸已經都說明完畢了。我衷心的希望你能透過此獲得可阻止我們國王暴行的優異的裝備。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒從#r亞尼的寶箱#k取得 #r#t2049300##k或 #r#t2049301##k。不需要太急。總有一天會取得。"
+          }
+        },
+        "quest": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒從#r亞尼的寶箱#k取得  #r#t2049300##k或  #r#t2049301##k。不需要太急。總有一天會取得。"
+          }
+        }
+      }
+    }
+  }
+}

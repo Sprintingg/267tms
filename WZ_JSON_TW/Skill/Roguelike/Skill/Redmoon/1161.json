@@ -1,0 +1,221 @@
+{
+  "memo": {
+    "_dirType": "string",
+    "_value": "1241000 블래스트 VI"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "6thBlast"
+          }
+        }
+      },
+      "Slot1": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "6thBlast2"
+          }
+        }
+      },
+      "Slot2": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "6thBlast3"
+          }
+        }
+      },
+      "Slot3": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "6thBlast4"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect0": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "10"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "1241000"
+          }
+        }
+      },
+      "selfBuff": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "50+30*x"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "4"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "10"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -350,
+          "_y": -210
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 90,
+          "_y": 55
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "50"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "useZ": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "z": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "randomHitOrigin": {
+            "_dirType": "int",
+            "_value": "25"
+          },
+          "showHit": {
+            "_dirType": "int",
+            "_value": "7"
+          }
+        }
+      },
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "hitSoundPath": {
+        "_dirType": "string",
+        "_value": "Sound/Skill.img/1241000/Hit"
+      }
+    },
+    "selfBuff": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "SelfBuff"
+      },
+      "selfBuffAction": {
+        "_dirType": "string",
+        "_value": "Apply"
+      },
+      "selfBuffID": {
+        "_dirType": "int",
+        "_value": "1161"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "10"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "4"
+    },
+    "iconRaw": {
+      "_dirType": "uol",
+      "_value": "icon"
+    },
+    "cooltime": {
+      "_dirType": "string",
+      "_value": "10"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -350,
+      "_y": -210
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 90,
+      "_y": 55
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "50+30*x"
+    },
+    "defenseRate": {
+      "_dirType": "string",
+      "_value": "40"
+    },
+    "time": {
+      "_dirType": "string",
+      "_value": "2"
+    }
+  },
+  "SkillTags": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "string",
+      "_value": "RLGame.Skill.Extra"
+    }
+  }
+}

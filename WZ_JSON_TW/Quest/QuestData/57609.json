@@ -1,0 +1,162 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[十字獵人] 討伐瘋狂獅王！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "利用試煉之塔14樓的頭目傳送門，嘗試進行瘋狂獅王遠征隊任務吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "嘗試完成瘋狂獅王遠征隊任務吧。成功過關後，再回到試煉之塔入口找哈特曼。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "試煉之塔14樓順利過關了。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9133034"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "2790"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "989"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9133021"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q57609e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9420139"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "charismaEXP": {
+        "_dirType": "int",
+        "_value": "100"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "最近過得好嗎？#h0#大人。呵呵，我是活動嚮導。為了紀念戰國慶祝活動，在#b活動期間中#k我將送給您一些特別的禮物。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我相信您一定能夠達成這項任務的，祝您好運。完成任務後，您可以檢查一下#r活動通知#k，或是直接來找#r活動嚮導#k我本人。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "若您準備好了，再跟我說一聲吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "您是否完成了「阿卡伊農」、「獅王」和「粉豆」遠征任務了？\\n"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "恭喜您。在此贈送您戰國金幣。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "麻煩您在完成〈瘋狂獅王遠征隊〉任務後，再跟我說一聲吧。"
+          }
+        }
+      }
+    }
+  }
+}

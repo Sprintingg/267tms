@@ -1,0 +1,201 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇家騎士團] 騎士的騎乘"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "向#b#p1101002##k聽取關於騎士的騎怪物情報。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1101002#說，去#b奇里督王台#k尋找飼養騎乘用提提的#b騎乘教官#p1102002##k…"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "與騎乘教官#p1102002#見面。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1101002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "50"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20520"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1102002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032208"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032208"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "job": {
+            "_dirType": "int",
+            "_value": "64768"
+          },
+          "jobEx": {
+            "_dirType": "int",
+            "_value": "524288"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032208"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你來嚕。那就開始進入主題嗎？就是有專為皇家騎士團所屬騎士的騎乘。與一般的騎怪物不同是利用提提的專為騎士的騎乘。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "前往連接修煉森林3的#b奇里督王台#k就可以見到飼養騎乘用提提的#b騎乘教官#p1102002##k。去向他學習騎士的騎乘吧。為了女皇的名譽。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "來，幫你寫了一張介紹函。拿給#p1102002#看，他就會教你騎乘。那麼，下次期待見到你騎乘#t1902005#的英姿。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "真是的…你只想用兩隻腳走路不丟臉嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嗯？是這次新加入的騎士吧。你要學騎乘嗎。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#p1101002#這傢伙。即使沒有這樣的介紹函也看的出來是#m130000000#的人，幹嘛每次都要寫…"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有去找#b#p1102002##k嗎？請快一點行動吧。#m130000000#又不是很大的一座島你動作夠慢了啊。該不會是因為找不到#b奇里督王台#k吧？"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "吼…其實一看就知道是騎士團員，但是若沒有#b#t4032115##k就…即使是形式也需要顧到。很抱歉去取得介紹函再回來吧。"
+          }
+        }
+      }
+    }
+  }
+}

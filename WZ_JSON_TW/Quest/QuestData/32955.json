@@ -1,0 +1,215 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[綠水靈] 綠水靈的觸角"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "決定去狩獵綠水靈了。跟 #b#p9000292##k對話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "決定從綠水靈取得 #b綠水靈的碎片#k共 #b100個#k了。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "已經把綠水靈碎片拿給 #b#p9000292##k了。會是什麼口味呢？"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4034124:# #t4034124:# #c4034124# / 100\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n可進行 '[綠水靈] 吃喝玩樂' 任務"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000292"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q32955s"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201509020000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201509020000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32954"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201506240000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201506240000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000292"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034124"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034124"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我們要做的事情並不複雜。這並不是推理、機智、才化的領域，而是誰會挑戰那禁斷的領域呢。那就是大膽、無雙、勇氣的領域。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "綠水靈雖然看起來會消失，但是被狩獵時，碎片化之後會再凝結在一起。所以，那黏稠！的身體被定論為無法食用的。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "綠水靈沒手沒腳只有身體，那麼要怎麼吃…你看到綠水靈頭上有個類似小鈴鐺的東西吧？那個就可以取得阿…\\r\\n哈哈。雖然大家的注意力從沒有放在那個身上。"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "如何？狩獵綠水靈後，收集它的碎片100個吧。之後再慢慢進行研究好了。呵呵呵…\\r\\n#r<< 接受時，會移動到戰鬥地圖。 >>"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "很好，就幫你送到很多綠水靈的地方吧。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "因綠水靈的口味而開心了一下耶，但有必要這樣嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "有收集足夠的綠水靈碎片嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我看看… 喔喔…感覺QQ的！又感覺黏黏的，但問題是要如何吃這東西才是重點。\\r\\n都沒驗證就生吃會有可能產生奇怪的毛病呢。再思考一下看看吧。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "好像沒有收集到足夠的綠水靈碎片呢。 要重新前往綠水靈居住的地方時，請#r先放棄任務#k後，再跟我說一下喔。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "好像沒有收集到足夠的綠水靈碎片呢。 要重新前往綠水靈居住的地方時，請#r先放棄任務#k後，再跟我說一下喔。"
+          }
+        }
+      }
+    }
+  }
+}

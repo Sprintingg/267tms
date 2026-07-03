@@ -1,0 +1,154 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 吉姆的委託2"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去找後街吉姆。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "這次要搜查地鐵更深處的地方. 去#b#m103020420##k後確認是否有奇怪的事物."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "2號線第3區段掉了帽子。但是這帽子好像是社會服務人員的帽子...是地鐵站服務員的嗎？去找地鐵站服務員確認一下吧。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2911"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "43"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2863"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052128"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q2866e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "103020410"
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "有委託. 這是要調查地鐵更深處. 去#b#m103020420##k確認有沒有奇怪的事物. 小小動靜也都要報告."
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "不難吧? 請盡快處理. 我會把你從2號線 3地區送到最~最~ 近的2號線 2地區.\\r\\n\\r\\n#e(答應後, #m103020410#移動)#n"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "挑委託做是可以的嗎？這樣下去會很難辦的。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這個帽子是什麼？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "這裡怎麼會有帽子…難道是冥界幽靈丟下來的？"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "嗯…這個帽子看起來很像公務員的帽子…難道是地鐵站服務員把帽子弄丟了..？吉姆那邊待會兒再去回報，還是先去找地鐵站服務員確定一下吧。 "
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "前往#m103020420#調查有無可疑之處， 快去！"
+          }
+        }
+      }
+    }
+  }
+}

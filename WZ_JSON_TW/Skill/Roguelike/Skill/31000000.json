@@ -1,0 +1,369 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "3101008 리트리트 샷 (키다운제거)"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment1": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "retreatShotPre"
+          }
+        },
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "retreatShot"
+          }
+        },
+        "Segment2": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "retreatShotEnd"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            }
+          }
+        }
+      },
+      "effect1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            },
+            "socketName": {
+              "_dirType": "string",
+              "_value": "None"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "3101008"
+          }
+        }
+      },
+      "Projectile": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "int",
+          "_value": "420"
+        }
+      },
+      "resetVelocity": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_ResetVelocity"
+          }
+        }
+      },
+      "sound2": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "int",
+          "_value": "420"
+        },
+        "TriggerInterval": {
+          "_dirType": "string",
+          "_value": "60"
+        },
+        "EndTriggerTime": {
+          "_dirType": "string",
+          "_value": "720"
+        },
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_PlaySound"
+          },
+          "SoundPath": {
+            "_dirType": "string",
+            "_value": "Sound/Skill.img/3101008/Use2"
+          }
+        }
+      },
+      "resetVelocity2": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_ResetVelocity"
+          }
+        },
+        "TriggerTime": {
+          "_dirType": "int",
+          "_value": "241"
+        }
+      }
+    },
+    "VectorSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "AnimReference": {
+            "_dirType": "sub",
+            "bEnableRootMotion": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "0": {
+              "_dirType": "sub",
+              "pos": {
+                "_dirType": "vector",
+                "_x": 0,
+                "_y": 0
+              },
+              "delay": {
+                "_dirType": "int",
+                "_value": "60"
+              },
+              "intrpl": {
+                "_dirType": "string",
+                "_value": "Linear"
+              }
+            },
+            "1": {
+              "_dirType": "sub",
+              "pos": {
+                "_dirType": "vector",
+                "_x": 0,
+                "_y": 0
+              },
+              "delay": {
+                "_dirType": "int",
+                "_value": "180"
+              },
+              "intrpl": {
+                "_dirType": "string",
+                "_value": "Linear"
+              }
+            },
+            "2": {
+              "_dirType": "sub",
+              "pos": {
+                "_dirType": "vector",
+                "_x": 200,
+                "_y": -80
+              },
+              "delay": {
+                "_dirType": "int",
+                "_value": "600"
+              },
+              "intrpl": {
+                "_dirType": "string",
+                "_value": "Linear"
+              }
+            },
+            "3": {
+              "_dirType": "sub",
+              "pos": {
+                "_dirType": "vector",
+                "_x": 200,
+                "_y": -90
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "Projectile": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Projectile"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "time": {
+          "_dirType": "string",
+          "_value": "0.8"
+        },
+        "rotatable": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "emitCount": {
+          "_dirType": "string",
+          "_value": "4"
+        },
+        "emitInterval": {
+          "_dirType": "string",
+          "_value": "0.1"
+        },
+        "destroyHitCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "boundLT.X": {
+          "_dirType": "string",
+          "_value": "0"
+        },
+        "boundRB.X": {
+          "_dirType": "string",
+          "_value": "80"
+        },
+        "boundLT.Y": {
+          "_dirType": "string",
+          "_value": "-10"
+        },
+        "boundRB.Y": {
+          "_dirType": "string",
+          "_value": "10"
+        },
+        "emitPos.X": {
+          "_dirType": "string",
+          "_value": "-50"
+        },
+        "emitPos.Y": {
+          "_dirType": "string",
+          "_value": "-5"
+        },
+        "initialVelocity.X": {
+          "_dirType": "string",
+          "_value": "-800"
+        },
+        "initialVelocity.Y": {
+          "_dirType": "string",
+          "_value": "400"
+        }
+      },
+      "ball": {
+        "_dirType": "sub"
+      },
+      "onProjectileHit": {
+        "_dirType": "string",
+        "_value": "AttackByProjectile"
+      }
+    },
+    "AttackByProjectile": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "160+45*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "200"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "useZ": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "z": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "randomHitOrigin": {
+            "_dirType": "int",
+            "_value": "20"
+          }
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "3101008"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "160+45*x"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "1"
+    },
+    "emitCount": {
+      "_dirType": "string",
+      "_value": "4"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -1000,
+      "_y": -1000
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 1000,
+      "_y": 1000
+    },
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "cooltime": {
+      "_dirType": "int",
+      "_value": "3"
+    }
+  }
+}

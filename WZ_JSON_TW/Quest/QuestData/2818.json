@@ -1,0 +1,227 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 心眼多的人"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去找勇士之村的酋長. 但是, 因為擁有古怪固執的個性要小心."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "從酋長那裡感到莫名的壓迫感，無法拒絕他的要求。\r\n得要順著箭頭去#m102030000#消滅黑肥肥 100隻，找到黑肥肥的尖牙50個。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "像被什麼迷惑似的，幫酋長找來了需要的東西。 "
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000020:# #t4000020:# #c4000020# / 50\r\n#o2230102# #a28181#\r\n#o2230112# #a28182#\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "targetMapID": {
+      "_dirType": "int",
+      "_value": "102030000"
+    },
+    "returnType": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 26,064\r\n可進行 '心裡穩定' 任務\r\n可進行 '鐵匠史密斯' 任務\r\n可進行 '變身祕藥' 任務\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "28670"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1020000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "55"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1020000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000020"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2230102"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2230112"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000020"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "正常"
+          }
+        }
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "28670"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "沒看過你耶。\\r\\n你好呀！我是#b酋長#k。\\r\\n既然有緣相見可以幫我跑個腿嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "很好！前往#m102030000#消滅黑肥肥與膽小的黑肥肥各 50隻後，取回黑肥肥尖牙 50個吧！那我就準備製作我的項鍊囉！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯，你有把握不後悔嗎？ 如果沒有黑肥肥尖牙，你覺得我會用什麼製作我的項鍊呢？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "有帶回黑肥肥尖牙嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "很好，我要設計最能表現我的力量與智慧的項鍊。 嗯，只有黑肥肥尖牙會不會太單調了呀？ 你有金牙嗎？ "
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "我會讓自己不要太緊張的，去看看吧。\\r\\n話說最近#b十隻魔精靈#k感覺在做些什麼奇怪的事情…你要不要去看看？"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "若要製作項鍊至少需要黑肥肥尖牙 50個。 最好是快點去幫我收集？"
+          }
+        }
+      }
+    }
+  }
+}

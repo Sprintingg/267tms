@@ -1,0 +1,200 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 危險的迷宮！<1-綠菇菇>"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽說在菇菇歌唱森林某處有警告怪物的標示牌…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "消滅綠菇菇#b33隻#k後去找#b奇幻村#k的#r記憶者#k。\\n\\n#o1110100##r#a21051##k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "就算消滅綠菇菇，但它的數量卻沒減少。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "200"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2000002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "請狩獵33隻！#r-#p1061011#-"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "消滅後再向#r#p1061011##k報告！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "..."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "噓！安靜！要集中精神。空中漂浮修行一不小心就會一切歸於泡影。你也跟我一起做空中漂浮修行怎麼樣？雖然看起來有點沉重…你來找我有什麼事？……"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "啊！你！除掉了#b#o1110100#33隻#k了。看到你的後背飄著33隻#o1110100#。好厲害！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我相信你不是為了獎金而做的，但你幫助了弱者，我給你點獎勵吧。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "不是想在這裡結束旅行吧？村外有很多危險的怪物。我在很多地方設置了標示牌，去看看吧。給你豐厚的獎勵！要小心怪物！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "消滅後向#r記憶者#k報告吧！"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "唉～差點破功了。小聲點說。啊！你是不明白我設置的標示牌是吧。除掉#b綠菇菇33隻#k後再來找我吧。"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "200"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2000002"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1061011"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9101000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "33"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1063003"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      }
+    }
+  }
+}

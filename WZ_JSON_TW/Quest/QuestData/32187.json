@@ -1,0 +1,209 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[里艾那海峽] 往破壞冰河的犯人基地"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "254"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "必須解讀指令並阻止真正的犯人。與學者諾拉對話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "學者諾拉解讀指令的結果，真正的犯人是埃德爾斯坦的惡棍們。出航移動到破壞冰河的犯人基地吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "學者諾拉解讀指令的結果，真正的犯人是埃德爾斯坦的惡棍們。出航移動到了破壞冰河的犯人基地。"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "targetMapID": {
+      "_dirType": "int",
+      "_value": "141050000"
+    },
+    "targetPN": {
+      "_dirType": "string",
+      "_value": "1510007"
+    },
+    "targetType": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "returnType": {
+      "_dirType": "int",
+      "_value": "-1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "59"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "136171"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1510007"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q32187s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32186"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1510007"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "32193"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "136171"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "暗號本身的公式很簡單但解讀內容有一點困難。。。 有一件是可以確認。 這是埃德爾斯坦的通用暗語。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "猜測他們需要某種動力。為了獲得那些破壞了冰河，造成原住民的分裂。 難道他們不知道為了達到目標而不斷破壞的地方可能是有些人生存的根基嗎？真的好生氣。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "用這文件可以推論出他們的根據地。勇士，請跟我們一起打敗敵人吧！"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "很好，那些傢伙的根據地就在這裡的東北方！\\r\\n#b#e(出航前往破壞冰河的犯人基地吧。)#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "準備好請告訴我。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "那些傢伙的根據地就在這裡的東北方！\\r\\n#b#e(出航前往破壞冰河的犯人基地吧。)#k"
+          }
+        },
+        "quest": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "那些傢伙的根據地就在這裡的東北方！\\r\\n#b#e(出航前往破壞冰河的犯人基地吧。)#k"
+          }
+        }
+      }
+    }
+  }
+}

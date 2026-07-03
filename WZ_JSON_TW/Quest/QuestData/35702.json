@@ -1,0 +1,138 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[苦痛迷宮] 朝向黑色太陽"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "出發前，白矛號的梅朗來找我。\r\n\r\n(※ 搭乘#b#m450009300##k的小型飛空艇前往#r#m993063000##k，跟#b#p3003703##k對話吧。)"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "跟梅朗一起搭乘了戰鬥艦。感覺到一股力量！\r\n\r\n(※ 搭乘#b#m450009300##k的小型飛空艇可前往#r#m993063001##k。)"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "進入黑色太陽裡面後，突然發生了墜落。感覺路非常得複雜...這裡是哪裡？"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q35702x"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "250"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003703"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q35702s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1465"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "35701"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003787"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q35702e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "defaultEx": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "sub",
+            "msg": {
+              "_dirType": "string",
+              "_value": "快點出發前往黑色太陽吧。"
+            },
+            "npcID": {
+              "_dirType": "int",
+              "_value": "3003703"
+            },
+            "imgPos": {
+              "_dirType": "int",
+              "_value": "1"
+            }
+          }
+        }
+      }
+    }
+  }
+}

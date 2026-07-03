@@ -1,0 +1,140 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[偵探雷夫的事件日誌] 訂單已經積堆如山啦"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "226"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4036492:# #t4036492:# #c4036492# / 25\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b黑市#k的古斯托因訂單有拖延而發著脾氣。再跟他對話看看吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "要在#b危險的黑市小巷3#k上狩獵危險的紐特里亞後，收集 #b傷痕滿滿的鐵板#k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "古斯托雖然有露出懷疑的表情，但說約定是約定就給我了鐵板。之後跟雷夫一起前往了豪華觀光事務所。"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q37111x"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "175"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "179"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001218"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q37111s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "37110"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001218"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q37111e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036492"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "25"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "不是說要在#b危險的黑市小巷3#k收集  #b傷痕滿滿的鐵板#k後拿給我嗎，該不會忘記了吧？"
+          }
+        }
+      }
+    }
+  }
+}

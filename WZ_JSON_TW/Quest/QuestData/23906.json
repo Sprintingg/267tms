@@ -1,0 +1,204 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[埃德爾斯坦] 那些人的身分"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "24"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "讓村民不願意和我說話的主因，<那些人>會是什麼樣的人呢？#b去找穿著黑衣的胖男人#k問問看吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "穿著黑衣的監視者，#p2152016#大聲說這個村子歸他控管，如果想在這村子裡活動就需要繳納活動稅。雖然態度很令人不悅，可是不像是騙人的話。只好去找#p2152016#需要的物品吧…\n\r\n#i4000603##t4000603##b#c4000603#/40#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p2152016#收到 #t4000603# 40個後顯得相當滿意。自大的點了點頭，並且說你可以在這個村子裡活動#p2152008#。\\r\\n\\r\\n該回去找#b佩樂迪#k了。\\r\\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2212"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2152016"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201012291200"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201012291200"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "23905"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2152016"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000603"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "40"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2212"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000603"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-40"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "喂~。你。沒見過啊？不是這個村的人吧？如果是外地人，要趕快向我報告啊！什麼？我是誰？竟然不認識#p2152016#？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "打開耳朵聽好了。#r這個村子由我們黑色翅膀在控制著#k！如果想在這個村裡正常活動，要聽我們的命令！聽到了沒？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "唔。好！那麼…就先繳交在我們村莊活動的活動稅吧！只要3000萬楓幣就行了！啥？你沒錢？那就出賣勞力吧！"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "從村子往右邊小路盡頭走，有幾個#r#o2150002##k，找來#b#t4000603##k#b40個#k就抵活動稅吧。嗯…不會做不到吧？"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "沒聽懂嗎？那滾出村子！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嗯…什麼？你是誰？第一次見到…啊！是剛才那個外地人啊！活動稅#t4000603#都找到了嗎？讓我看看對不對。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯…40個正好。有了這些#p2154002#也會滿足的…好！今後可以在這個村裡活動了。但，是在聽我們的話的前提下。如果想和我們黑色翅膀作對，馬上就會趕出去的！"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "什麼?假如一般的故事的話 ，到 #b佩樂迪#k講吧！ \\r他在#b左邊#k。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒找到#b#t4000603#40個#k嗎？先付了活動稅再活動！還不快去村子右邊，小路盡頭？"
+          }
+        }
+      }
+    }
+  }
+}

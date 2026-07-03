@@ -1,0 +1,181 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[妖精學院愛里涅] 庫笛的感應1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "與#b#p1500000##k培養默契尋找孩子。和在愛里涅後面#b#m101073000##k等待的魔法師庫笛對話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "必須與#b#p1500000##k培養默契尋找孩子。在庫笛探索音響的期間，前往愛里涅後方的#b#m101073000##k擊殺#r#o3501006##k 100隻之後與#b#p1500000##k對話吧！"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "與魔法師庫笛培養默契尋找孩子。庫笛利用聲響進行探攝時，在愛里涅後面#b#m101073000##k擊退了 #r#o3501006##k。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o3501006# #a321221#\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "227"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "59"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "108652"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1500013"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32121"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1500013"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3501006"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "108652"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#b#h0##k，我在這裡探測聲響，我想這樣便可以找到孩子們在哪裡。為了使我不致受到妨礙，是否能幫我打擊周遭的怪物呢？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝你。雖然不知道眼睛是否會燻得張不開，但就拜託你了。\\r\\n#b(打敗100隻#o3501006#吧。)#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "怪物太多的話我無法專心探測聲響。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "咳咳…,眼睛太燻了…。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不管怎麼說，多虧已經找到方向與距離了。 孩子們的抽咽聲便是從這傳來的呀。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還正在探測聲響當中呢！能幫我打擊周遭的怪物，好讓我不受影響呢？\\r\\n(在#b#m101073000##k打敗100隻#r#o3501006##k吧。)"
+          }
+        }
+      }
+    }
+  }
+}

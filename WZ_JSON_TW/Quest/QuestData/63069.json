@@ -1,0 +1,126 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[艾芙特領域]佩恩不能出去的理由"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "121"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "這次請試著說服#p9400216#到城牆外來吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "看著#p9400215#到城牆外的#p9400216#，他說因為他沒有搬運東西的力氣，因此無法到外面去，為了帶\\r\\n#p9400216#到城牆外，#e1.必需要先攙扶他出去#n還必須要#e2.搬運他的金銀財寶#n，如果先攙扶#p9400216#出去，那麼他的金銀財寶就會和#p9400217#留在原地而有危險，但如果先搬運他的金銀財寶到外面，那麼又會擔心可能會被留下來#o9402046#…\\r\\n\\r\\n沒有更好的方法了嗎？\\r\\n還是先送#p9400217#出去呢？"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "因為#p9400216#會感到擔心，因此先送了 #p9400217#到城牆外，\\r\\n現在只要送 #p9400216#出來…"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400216"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "63068"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q63069s"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400216"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "63071"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q63069e"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "如果不能先送#p9400217#出去，那麼我就不能放著我的金銀財寶先到外面去！"
+          }
+        }
+      }
+    }
+  }
+}

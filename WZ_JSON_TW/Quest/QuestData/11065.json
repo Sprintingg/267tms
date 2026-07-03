@@ -1,0 +1,187 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 尤莉亞的堆磚塊"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoCancel": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去找尤莉亞堆磚塊吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "尤莉亞說在一個星期內磚塊堆得最高的人可獲得禮物，根據堆磚塊的高度給予參加禮物活動的資格，提議要不要挑戰堆磚塊。將每抓200隻怪物可取得的磚塊，慢慢地堆起來得到禮物！\\r\\n#b※ 堆磚塊的高度可以去找尤莉亞確認。#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "尤莉亞說在一個星期內磚塊堆得最高的人可獲得禮物，根據堆磚塊的高度給予參加禮物活動的資格，提議要不要挑戰堆磚塊。將每抓200隻怪物可取得的磚塊，慢慢地堆起來得到禮物！\\r\\n#b※ 堆磚塊的高度可以去找尤莉亞確認。#k"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o9101018# #a110651#\r\n"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "111"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "130"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201102140000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201103070000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201101170000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201102140000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "11083"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "0"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q11065e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9101018"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "200"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好~！#b#h0##k，要不要和我玩好玩的遊戲呢？一邊狩獵，同時也收集黑塊！這是可以領取禮物的遊戲。怎麼樣呢？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "若擊倒符合你等級的怪物，我就幫你收集一個黑塊。每收集黑塊 #b10個，30個，60個，100個#k時可以領取 #b各種道具#k為禮物，還可以參與禮物贈品活動。\\r\\n#h0#，你必須去擊倒111~130級之間的怪物。擊倒怪物 #b200 隻#k我幫你收集一個黑塊。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "你可以隨時來找我查詢已收集的黑塊。還有 #r萬一你沒有完成任務就離線時，任務視為自動放棄#k，這點需要注意。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這麼好的機會不多呀～"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#h0#，你必須去擊倒111~130級之間的怪物。擊倒怪物 #b200 隻#k我幫你收集一個黑塊。"
+          }
+        }
+      }
+    }
+  }
+}

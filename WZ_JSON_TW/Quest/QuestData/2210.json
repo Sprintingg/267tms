@@ -1,0 +1,212 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 將金幣錢袋交給盲俠"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "巴勒圖的委託是什麼呢？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "按照巴勒圖的委託找到位於#b鯨魚號上層航海室門前的盲俠#k並交給他#b金幣錢袋#k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "將金幣錢袋交給盲俠"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031891"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031891"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哦～裝滿金幣的錢袋。這是巴勒圖交給我的嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "啊～這大概是一周前從錢箱裡找出來的！替我謝謝巴勒圖。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "將金幣錢袋交給盲俠。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "找我有事嗎？"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "弄丟了？剛剛我在門前撿到了。好險啊！這可是貴重的東西，別弄丟了一定要交給盲俠。"
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "首先將金幣錢袋交給盲俠。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這個金幣錢袋是我在一周前盲俠委託給我的箱子裡找到的...不過我忘記了。哈哈哈！盲俠通常在#b鯨魚號上層走廊的航海室門前#k。他總是守在那裡..."
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "只要完成我給你的3項任務，我就會給你密碼卡，要加油哦！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不願意嗎？"
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1092007"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031891"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1092011"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "200801020000"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "200801010000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "200801020000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "200801010000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2208"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "1440"
+      }
+    }
+  }
+}

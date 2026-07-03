@@ -1,0 +1,180 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[Friend's Story] 打掃學校"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "93"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "那因哈特要我打掃學校3樓走廊, 4樓走廊, 頂樓."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "那因哈特要我打掃學校3樓走廊, 4樓走廊, 頂樓."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "那因哈特要我打掃學校3樓走廊, 4樓走廊, 頂樓. 我明明有用心打掃了... 冤望啊!!"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#打掃3樓  (#R32759Ex3fRef32758#)\r\n#questorder2#打掃4樓 (#R32759Ex4fRef32758#)\r\n#questorder3#打掃頂樓 (#R32759Ex5fRef32758#)\r\n"
+    },
+    "friendsStory": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1530076"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "33040"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "no"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1530076"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q32758e"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "32759"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "打掃3樓 "
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "3f"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "打掃4樓"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "4f"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "打掃頂樓"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "5f"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "打掃完#b學校 3樓, 4樓, 還有頂樓#k後請回到我這裡. 不允許偷懶."
+          }
+        }
+      }
+    }
+  }
+}

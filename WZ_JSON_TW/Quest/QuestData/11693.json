@@ -1,0 +1,195 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 製作艾蒿松糕禮盒！"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "製作中秋節不可或缺的松糕禮盒，第二階段！可以執行製作艾蒿松糕。點擊畫面左側中秋活動提示來挑戰製作艾蒿松糕。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "執行製作艾蒿松糕當中。等級比角色低11以上或高21以上的怪物並未持有艾蒿松糕，千萬要注意。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "成功製作艾蒿松糕了。5分鐘後請再挑戰一次！成功製作艾蒿松糕5次的話，就可以挑戰製作粉紅松糕。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i3994409:##t3994409:##c3994409#/50\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "11698"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201109080000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201109190000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201108240000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201109190000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "5"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q11693e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3994409"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好，#b#e#h0##k#n。 已經來挑戰製作艾蒿了呢！ 你應該很清楚方法吧？ 那就直接開始吧？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你應該知道等級比自己低11以上或高21以上的怪物是無法取得的吧？ 那麼，加油了！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你不想要獲得金松糕項鍊嗎？ 這種時候最好還是快點挑戰吧…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "艾蒿松糕不夠。 必須收集50個。"
+          }
+        }
+      }
+    }
+  }
+}

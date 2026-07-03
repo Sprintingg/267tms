@@ -1,0 +1,284 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2012011"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "70"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31031"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2032001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033146"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033146"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "35500"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033146"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "你將破碎的黑色水晶順利轉交給史菲魯納了嗎？史菲魯納沒有大發雷霆嗎？\\r\\n#L0##b你明知道史菲魯納會生氣所以才拜託我的嗎？怎麼會這樣！因為太生氣無法詢問赫拉的下落。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "赫拉的下落…呼呼，什麼都沒聽說嗎？\\r\\n#L0##b什麼話都沒說。聽說若想復原破碎的水晶，需要#t4031051#。史菲魯納的助手…l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "從#b史菲魯納的助手#k那裡聽說的嗎？想修理破碎的水晶…？哈啊~原來如此…那麼請幫我把這個妖精之粉，轉交給史菲魯納。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "呼呼，還有請替我問候史菲魯納的助手~"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這不是#t4031051#嗎？只要有了這個，#b#t4031050##k就能恢復原狀了…！哼…？不是你打破水晶的嗎？原來如此…可能是怪物經過踩碎的…呼呼?把這種珍貴的物品掉在那裡，應該是克莉爾的錯。總之謝謝你的幫助。這是一點小心意，感謝你的報答…"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "快點把我給你的#b#t4031051##k交給史菲魯納。那麼，我很忙先告辭了~"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你怎麼這麼厚臉皮，竟敢站在我面前！你們這些傢伙，該不會忘了打破我珍貴的#b黑色水晶#k的事了吧？都是你們害我的研究延誤半年！要找到復原破碎的水晶的方法。"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "要將妖精之粉帶走！不要弄丟了，一定要順利交給史菲魯納。"
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[天空之城] 獲得妖精之粉"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b妖精克莉爾#k對我表示歉意，拿出了#b妖精之粉#k。把妖精之粉拿給史菲魯納後，等她的氣消了，再問問赫拉的行蹤吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把妖精之粉交給了史菲魯納。好像氣消了，問問赫拉的行蹤吧？"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "34"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 35,500"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "消失的赫拉"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "7"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "克莉爾看到破碎的水晶，怕史菲魯納會生氣，才讓我去轉交的。去找克莉爾問清這個情況，再要來妖精之粉才行。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4033146:# #t4033146:# #c4033146# / 1\r\n"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "targetType": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "returnType": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "targetMapID": {
+      "_dirType": "int",
+      "_value": "200050001"
+    },
+    "targetPN": {
+      "_dirType": "string",
+      "_value": "2032001"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "35500"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

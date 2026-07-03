@@ -1,0 +1,212 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 將地圖碎片交給黑巴克"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "巴勒圖的委託是什麼呢？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "按照巴勒圖的委託找到位於#b鯨魚號中央會議室的黑巴克#k並交給他#b地圖碎片#k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "將地圖碎片交給黑巴克"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031892"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031892"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "是巴勒圖要你把這張地圖拿給我的？噢！古老的地圖啊。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這是一張很古老的地圖。文字與地圖標記方法都與現在不同，大概有幾百年的歷史了…我對地圖有很強的興趣！哈哈哈哈！！年輕人～謝謝你！也向巴勒圖轉達我的謝意。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "將地圖交給黑巴克。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你想學習辨識地圖的方法嗎？"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "弄丟了？我剛才在門前撿到了這個。這可是貴重的東西，千萬別弄丟了一定要交給黑巴克。"
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "首先將破碎地圖交給黑巴克。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這是從昨天撿到的箱子裡找到的地圖...黑巴克大叔一定會喜歡的。也許這地圖顯示地點埋藏著什麼寶物也說不定。黑巴克在#b鯨魚號中央走廊的會議室#k，你去了就可以見到他。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "只要完成我給你的3項任務，我就會給你密碼卡。要加油哦！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不願意嗎？"
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1092006"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031892"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1092011"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "200801020000"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "200801010000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "200801020000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "200801010000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2208"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "1440"
+      }
+    }
+  }
+}

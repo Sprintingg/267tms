@@ -1,0 +1,334 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇家騎士團] 女皇西格諾斯"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "似乎有什麼人正在等我，快去找#b#p1102008##k問問看吧！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1102008#鄭重的說「您已學會楓之谷世界的基礎知識」，並出了簡單的問題。回答問題後，#p1102008#給了#t4032269#，並說拿著這個去見#b女皇#p1101000##k就可以…"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "見到了女皇#p1101000#。女皇以燦爛的笑容迎接了我。"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "140"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1102008"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20013"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "1000"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1101000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032269"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032269"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "140"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032269"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "歡迎您，#h0#。我一直在等您。這段時間我那些兄弟應該告訴你，楓之谷世界的基礎知識吧？這次我打算確認一下知識內容，怎麼樣？可以嗎？\\n#b#L0#嗯，可以。#l\\n#L1#什麼？考試？救命啊！#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "第一個問題。楓之谷世界的居民會委託你做特殊的事情，這種事情叫做任務。想確認您能獲得的任務、已獲得的任務或已完成的任務，應該按哪個快捷鍵呢？\\n#b#L0#A#l\\n#L1#I#l\\n#L2#Q#l\\n#L3#Z#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "第二個問題。您可以完成任務或打獵怪物、打開箱子來獲得物品。獲得的物品會放入物品欄裡。那麼，想打開物品欄需要按哪個快捷鍵呢？\\n#b#L0#W#l\\n#L1#I#l\\n#L2#K#l\\n#L3#M#l\\n#k"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "第三個問題。在楓之谷界裡累積經驗就能升級。每次升級時會獲得一定的技能點數。那麼，到了10級成為騎士後，升1級時所獲得的技能點數是多少？\\n#b#L0#1#l\\n#L1#3#l\\n#L2#5#l\\n#L3#10#l\\n#k"
+      },
+      "4": {
+        "_dirType": "string",
+        "_value": "第四個問題。在楓之谷世界裡，可使用普通攻擊或技能消滅怪物，但只能使用一種方法來打開箱子時。那麼，應該使用普通攻擊還是技能？\\n#b#L0#普通攻擊#l\\n#L1#技能攻擊#l\\n#k"
+      },
+      "5": {
+        "_dirType": "string",
+        "_value": "回答正確。您答對了所有問題。現在帶著#t4032269#去找女皇#p1101000#，就能獲得#p1101000#騎士團貴族的認可。需要馬上發給你#t4032269#嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "雖然是考試，但內容不難。即使答錯了，也可以重新挑戰。請不用擔心，盡快挑戰吧。"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "0": {
+            "_dirType": "string",
+            "_value": "答錯了。A鍵沒有任何功能。如果你願意，可以登入在鍵盤上使用技能…請重新挑戰。"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "答錯了。I鍵是打開物品欄。請重新挑戰。"
+          },
+          "3": {
+            "_dirType": "string",
+            "_value": "答錯了。Z鍵是撿物品。請重新挑戰。"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "0": {
+            "_dirType": "string",
+            "_value": "答錯了。W鍵是查看世界地圖。這個問題我還沒有教你，你卻回答了？真了不起。請重新挑戰。"
+          },
+          "2": {
+            "_dirType": "string",
+            "_value": "答錯了。K鍵是查看技能。請重新挑戰。"
+          },
+          "3": {
+            "_dirType": "string",
+            "_value": "答錯了。M鍵是查看部分地圖。請重新挑戰。"
+          }
+        },
+        "3": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "0": {
+            "_dirType": "string",
+            "_value": "答錯了。你不覺得1太少了嗎？請重新挑戰。"
+          },
+          "2": {
+            "_dirType": "string",
+            "_value": "答錯了。比5少一些些。請重新挑戰。"
+          },
+          "3": {
+            "_dirType": "string",
+            "_value": "答錯了。10太多了吧？請重新挑戰。"
+          }
+        },
+        "4": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "答錯了。無法使用技能來打開箱子。別說是攻擊，連碰到碰不到。請重新挑戰。"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "女皇在耶雷弗的中央，去找找看吧。沿著箭頭往左走就可以了。如果不小心遺失了#t4032269#，請不用擔心，我可以再寫給你。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "願你成為勇猛的騎士…"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯？如果你現在不直接收下證明書，下次就要重新回答問題了…你已經知道內容，應該很快就能回答問題。應該不用擔心吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "歡迎您來到此地…見到你很高興，謝謝你成為了騎士。我一直在等著像你如此優秀，而且能與黑暗巫師作戰的人…"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還不想去找女皇？女皇在耶雷弗的中央，就在#b#p1101001#的旁邊#k。按下#bW鍵#k在世界地圖裡找找吧。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "哎呀，看樣子是初次來到耶雷弗的貴族嘛…難怪，沒帶#t4032269#…？是不是忘了帶？如果是那樣，請再去找#b#p1102008##k接收#b#t4032269##k吧…"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "哎，弄丟了貴族證明書？好吧，我重新寫給你，請帶給女皇。"
+        }
+      }
+    }
+  }
+}

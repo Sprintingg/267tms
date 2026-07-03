@@ -1,0 +1,227 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 엘나스의 월동준비"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "엘나스에 있는 제이드가 따뜻한 겨울을 보내기 위해서 급히 무엇인가를 구하고 있다고 한다. 엘나스에 있는 제이드를 찾아가 보자."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "엘나스의 겨울소년 제이드는 따뜻한 겨울을 보내기 위해서 폐광에서 흘러나오는 식어버린 용암을 구하고 싶다고 했다. 식어버린 용암은 적당히 식어서 너무 뜨겁지 않기 때문에 난방용으로 사용하면 아주 좋다고 한다. 용암은 폐광 안에서 구할 수 있는데 가끔 설원밖으로 흘러나온 용암을 몬스터들이 가지고 있는 경우도 있다고 한다."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "엘나스의 소년 제이드가 난방용으로 사용하기 위해 식어버린 용암을 구하고 있었다. 폐광이나 설원의 몬스터들에게서 식어버린 용암을 구해서 가져다 주었다."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4032565:# #t4032565:# #c4032565# / 20\r\n"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "경험치 500\r\n#Wbasic#\r\n#i4310014:# #t4310014:# 1 개\r\n#b눈꽃선물받기 이벤트 자동 응모#k"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "500"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4310014"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2020006"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "45"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201101270000"
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201101270000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2020006"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q10536e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032565"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "500"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032565"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4310014"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "안녕~ 날씨가 정말 춥지 않아? 온 몸이 꽁꽁 얼어버릴 지경이야. 이제 곧 마을 사람들이 폐광으로 가겠군.\\r\\n#L0##b폐광으로? 거긴 왜 가는데?#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "왜 가긴~? 정말 몰라서 물어보는 거야? 엘나스 산맥은 눈이 많이 쌓여서 땔감으로 쓸 나무도 쉽게 구할 수가 없어. 그래서 예전부터 용암동굴에서 흘러나오는 용암을 난방용으로 사용하곤 했지. 폐광이나 설원으로 흘러나온 용암은 적당히 식어서 난방용으로 사용하기 딱 좋거든.\\n보아하니 새로운 일을 좋아하는 사람처럼 보이는데 나 대신 용암을 가져다 주지 않겠어? 경험해 보지 못한 일이니까 재미있을 거야."
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "좋아. 모험정신이 굉장한데? 폐광이나 설원의 몬스터들이 식어버린 용암을 가지고 있을거야. 행운을 빌어~\\n\\n#b#i4032565# #t4032565# 20개"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "귀찮을 것 같아서 그래? 하지만 재밌을텐데 다시 생각해봐."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "좋아. 모험정신이 굉장한데? 폐광이나 설원의 몬스터들이 식어버린 용암을 가지고 있을거야. 행운을 빌어~"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "좋아. 모험정신이 굉장한데? 폐광이나 설원의 몬스터들이 식어버린 용암을 가지고 있을거야. 행운을 빌어~"
+          }
+        }
+      }
+    }
+  }
+}

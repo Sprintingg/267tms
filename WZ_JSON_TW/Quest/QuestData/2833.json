@@ -1,0 +1,260 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 尋找研究材料"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "溫斯頓說為了查明怪物的來歷，得需要分析材料。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "對近遺跡發掘地附近出現不知明的怪物. 所以#p1022006#把這怪物發生的原因分析向我委託了. 為了分析打倒#b#o2230110##k和#b#o2230111##k收集怪物們所使用的#b#t4000196#和#t4000197#各30個#k 拿給#m102020400#的溫斯頓."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "說分析#t4000196#和 #t4000197#需要一些時間。 等到結束吧。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000196:# #t4000196:# #c4000196# / 30\r\n#i4000197:# #t4000197:# #c4000197# / 30\r\n#o2230110# #a28331#\r\n#o2230111# #a28332#\r\n"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "48757"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022006"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      },
+      "fieldEnter": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "102020400"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "102040000"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "102040100"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022006"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000196"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000197"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2230110"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "70"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2230111"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "70"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "48757"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000196"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "正常"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000197"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "正常"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "遺跡發掘地的#p9040002#所說, 第一次看到的奇怪的怪物在發掘地附近出現妨礙發掘作業."
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "擊退妨礙發掘作業的怪物之前有事前需要做的事情. \\r\\n學問性把這怪物發生的原因徹底分析後移除根源阻止再次出現. 你可以幫忙嗎?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你去從#r#o2230110##k和#r#o2230111##k身上弄來#b#t4000196#和#t4000197#各30張#k拿給我"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "也許我的請求有些過分?可是，要儘早消滅那些怪物才行?"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#t4000196# 30個和 #t4000197# 30個，拿來了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "辛苦了。 在我對#t4000196#和#t4000197#進行分析的時候，請你稍等一下。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "收集#t4000196# 30個與 #t4000197# 30個交給我。"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "battle"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "loot"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓幣]運氣好的日子"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "透過狩獵獲得777楓幣"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "unique"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "40"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "uiForm": {
+        "_dirType": "string",
+        "_value": "basic"
+      },
+      "gauge": {
+        "_dirType": "string",
+        "_value": "submission_info"
+      },
+      "gaugeMissionIndex": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "gaugeSubMission": {
+        "_dirType": "string",
+        "_value": "pickup_mob_reward_meso"
+      }
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "透過狩獵獲得777楓幣"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "pickup_mob_reward_meso": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            },
+            "type": {
+              "_dirType": "string",
+              "_value": "counting"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub",
+            "meso": {
+              "_dirType": "sub",
+              "min": {
+                "_dirType": "long",
+                "_value": "777"
+              },
+              "max": {
+                "_dirType": "long",
+                "_value": "777"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

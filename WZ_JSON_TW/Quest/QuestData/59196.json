@@ -1,0 +1,174 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[幻獸師] 尋找消失的人們2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "85"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "跟#p9390366#說話吧.他一定知道什麼."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "消滅#p9390364#釋放人們吧."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o9390938# #a591961#\r\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "趕走#p9390364#後解放其他人了."
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "好! 做的好!\r\n沒時間所以我長話短說."
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "疑問的魔法師帶著人往瑪迦提亞城去了."
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "我逃出有一段時間了, 已經到了或是應該過去的路上.\\r\\r\\n我知道是你有可以飛上天的能力. 現在開始趕緊過去應該可以抓到."
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "可惜只有這些. 因為他們對我們戴上奇怪的東西.所以什麼都看不到,也聽不到.\\r假如我沒有很好的聽力,也無法逃亡也無法聽到他們去的地方."
+        },
+        "3": {
+          "_dirType": "string",
+          "_value": "話就先到此為止吧.\\r看起來我跟你都沒有時間. 現在馬上到#b瑪迦提亞城#! 快!"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "快, 把那個 #p9390364#消滅救我們出去吧.\\r不只是你英雄般的行為,那也是通往英雄唯一的道路."
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "快, 把那個 #p9390364#消滅救我們出去吧.\\r不只是你英雄般的行為,那也是通往英雄唯一的道路."
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390366"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q59196s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "59195"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub"
+      },
+      "job_TW": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "11212"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "11213"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390379"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q59196e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9390938"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

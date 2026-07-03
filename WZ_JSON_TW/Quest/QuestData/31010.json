@@ -1,0 +1,187 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[克里塞] 競技場調查"
+    },
+    "area": {
+      "_dirType": "string",
+      "_value": "33"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "知己知彼百戰百勝。調查魔王薛西斯根據地的競技場吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "確認兵力的構成與規模後報告米加爾。經過競技場入口進入競技場走道，就可以知道情況了。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "好像比想像中的規模還要大？需要更徹底的準備才行。"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "競技場事前調查"
+    },
+    "order": {
+      "_dirType": "string",
+      "_value": "1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n可進行 '[克里塞] 擊退守衛兵(1)' 任務\r\n"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5147"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2170002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "50"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31025"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2170000"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q31010e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "聽說你幫了米加爾很大的忙？我代表村莊表示對旅行者的感謝。\\r\\n因為旅行者的幫忙，米加爾獲得了很大的力量。跟之前不同，充滿了活力。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "大事不是光靠有慾念就可以解決的。 可以請你觀察戰場的狀況，並且轉告米加爾嗎？\\r\\n"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "根據地競技場的狀況如何，那裡有些什麼怪物，請確認後給米加爾一些好的建議吧…"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你現在不方便嗎？那麼你考慮一下，你有意願的話再來找我，拜託你了…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "知己知彼才能百戰百勝…"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯。果然不是好對付的對象。應該更積極的準備才行。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "競技場裡有什麼怪物呢？難道你不好奇嗎？"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "確認過兵力如何嗎？請轉告米加爾目前的狀況。"
+          }
+        }
+      }
+    }
+  }
+}

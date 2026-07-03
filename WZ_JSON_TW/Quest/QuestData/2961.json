@@ -1,0 +1,241 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[黃金海岸] 海邊的原住民"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#m120041100#看見了在那邊踱步的原住民。來這裡做什麼呢?"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "要找回被#o3401003#藏起來的#p1082004#的#t4033626#才行。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "找回了#p1082004#的#t4033626#。說是黃金海岸的原住民，但是對這裡也不是非常了解，感覺好像有什麼祕密呢…"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4033626:# #t4033626:# #c4033626# / 1\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "228"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "59"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "62120"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1082203"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2960"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1082203"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033626"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033626"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "62120"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "到底是躲在那裡？啊！你是誰？\\r\\n我是#p1082004#。我們巫加巫加部落是黃金海岸的主人。 答應對美麗小島產生不滿的你們給予幫助。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#p1082004#的  #i4033626##t4033626# #o3401003#拿走。請幫忙找找。我們巫加巫加是喜愛音樂和人們的。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請幫幫我。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "是在找#t4033626#的嗎？\\r\\n#L0##b那這裡。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "謝謝。辛苦了。還好有卡隆卡隆的庇佑…\\r\\n#L0##b卡隆卡隆是什麼？你是這裡的原住民嗎？#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "就..就..有那樣的事！我們部落信奉的神明！\\r\\n#L0##b但是，其它人在那裡呢？那個後面還有別的村莊嗎？#l\\n#k"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "那個…不知道也沒差！為了村…子的安全沒必要追究。我只是為了傳播音樂而存在。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "被#o3401003#拿走的#t4033626#找回來了。"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[狐狸峽谷]守衛隊員入隊測試"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "218"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#擊殺怪物(#R34742ExclearRef34742#)\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "在#b#m410000100##k開心睡午覺的#b#p3002020##k不知道因為什麼事情突然醒來。詢問關於尖耳守備隊的事情吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "莫名其妙說要做加入尖耳守備隊的測試的瑪魯。趕緊擊退周圍的怪物與小孩進行對話。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "莫名其妙說要做加入尖耳守備隊的測試的瑪魯。很輕鬆的通過了測試。被這麼小的小孩稱讚…感覺並沒有很好。"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3002020"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q34742s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "185"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34741"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201804250900"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201804250900"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q34742e"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "34742"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3002123"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "擊退怪物"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "clear"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "總不能無條件接受吧?得盡快確認實力才行!"
+          }
+        },
+        "quest": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "嗚嗚救救!"
+          }
+        }
+      }
+    }
+  }
+}

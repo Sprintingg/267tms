@@ -1,0 +1,201 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "體力恢復的祕訣"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "85"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "利用雪豹萊伊的力量除掉了怪物們.\\r\\n但我也受到許多攻擊,所以受傷了.\\r\\n貓咪阿樂有治療的效果,萊伊也會有嗎?"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "利用雪豹萊伊的力量除掉了怪物們.\\r\\n但我也受到許多攻擊,所以受傷了.\\r\\n萊伊給我紅色藥水,說是可以恢復體力....\\r\\n是著喝喝看嗎?\\r\\n點選[I]鍵開啟物品欄,雙點擊紅色藥水就可以了."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "喝了萊伊給的紅藥水後,體力恢復了."
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\\r\\n#fUI/UIWindow2.img/QuestIcon/8/0# 372\\r\\n#i2000001:# #t2000001:# x 50\\r\\n#i2000006:# #t2000006:# x 50\\r\\n可進行 '召喚雪豹再度戰鬥!' 任務"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "long",
+            "_value": "2000001"
+          },
+          "count": {
+            "_dirType": "long",
+            "_value": "50"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "long",
+            "_value": "2000004"
+          },
+          "count": {
+            "_dirType": "long",
+            "_value": "50"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2000001"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2000004"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "趕快喝下藥水吧!沒有藥水的話,先放棄任務再說吧!"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390302"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q59011s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "59009"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub"
+      },
+      "job_TW": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "11212"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "11213"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390302"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q59011e"
+      }
+    }
+  },
+  "blocked": {
+    "_dirType": "int",
+    "_value": "1"
+  }
+}

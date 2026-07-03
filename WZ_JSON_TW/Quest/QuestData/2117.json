@@ -1,0 +1,204 @@
+{
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "我的朋友#p9040002#目前正在勇士之村附近的遺蹟挖掘地從事挖掘工作，他有個請託想請你幫忙，有一些從沒見過的怪物出現在挖掘地附近，影響他進行遺跡挖掘的工作，所以必須有人能夠清除掉它們。你能幫他這個忙嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "非常感謝你肯幫助我們，不過在清除怪物之前還有一些事情要做。我必須了解那些怪物出現的原因，才能在清除怪物之後讓它們不再出現。本來由我親自去那裡做研究最為妥當，但因為我還有很多研究工作需要去做，所以只好拜託你去幫我弄來#r#o2230110##k和#r#o2230111##k身上的#b#t4000196#和#t4000197#各5張#k。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "不認識前往遺蹟挖掘地的路嗎？從這裡一直往東走，在#r粗糙岩石地帶#k上方就會有傳送點，進去就會連接到遺蹟挖掘地。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "也許我向你提出這樣的請求有些過份…但是我必須儘快了解那些怪物才行啊…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#t4000196#5個和#t4000197#5個拿來了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "真是辛苦你了，現在我要開始分析#t4000196#和#t4000197#，請你稍等一下。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請帶來#t4000196#5個和#t4000197#5個。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022006"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "25"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000197"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000196"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 挖掘隊員杉峰的請託"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "據說在勇士之村北部岩山的#p1022006#有受託於挖掘隊員杉峰…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "最近有一些來歷不明的怪物在遺蹟挖掘地附近出沒。#p1022006#拜託我幫助調查怪物出現的原因。為了進行研究，需要將#b#o2230110##k與#b#o2230111##k的#b#t4000196#和#t4000197#各5個#k。\\n\\n#t4000196##b#c4000196##k/5\\n#t4000197##b#c4000197##k/5"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "研究#t4000196#和#t4000197#需要一些時間，只好一直等到研究結束在說吧。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1400"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1400"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000196"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-5"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000197"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-5"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  }
+}

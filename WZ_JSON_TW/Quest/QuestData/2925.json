@@ -1,0 +1,212 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[鯨魚號] 從遠海抓回的奇怪生物"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#p1092007##k說正好來迎接我。\n長的很凶，不過看起來不像是壞人。 不過為什麼遮住眼睛呢？\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b#p1092007##k前不久，在遠海上抓到了奇怪的生物，那些傢伙的氣很靈，所以請求我幫他一起研究。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "應付奇怪的生物，得到了邪惡氣息…\n感到陰沉的氣氛怪可怕的？\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4033012:# #t4033012:# #c4033012# / 1\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 2,403\r\n可進行 '邪惡氣息分析' 任務\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "29"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2403"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1092007"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "20"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q2925s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2924"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1092007"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033012"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2403"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033012"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "正常"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嗯… 實在是搞不懂啊。 "
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "不久前，出海之後捉來了奇怪的生物，卻不知道到底是什麼。 那傢伙渾身散發著奇妙的氣息，應該不是平凡之物。 為了進行調查進行攻擊，一下就會消失掉，實在沒什麼方法。 可能我的力量不適合…\\r\\n"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "對！ 你來試試怎麼樣？ 如果是你的話也許還真能行！ 如何？ 想不想試一下？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不知會有什麼危險，靠近時小心一些。 一旦發現什麼，立刻通知我。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "準備好之後，打算移動到奇怪生物所在的房間，就來找我。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這可是為了我們海盜啊。 你成為海盜的理由是什麼？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哦？ 辦到了啊。 原來這就是奇怪氣息的真相？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯… 可是，僅靠我的能力好像很難弄清它的來歷。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "沒看到奇怪的生物嗎？"
+          }
+        }
+      }
+    }
+  }
+}

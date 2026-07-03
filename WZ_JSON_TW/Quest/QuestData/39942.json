@@ -1,0 +1,155 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[賽爾尼溫] 關於黑色太陽的報告書"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "238"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "需要從卡拉伊爾的手下拿到報告書，並轉交給卡拉伊爾。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "將卡拉伊爾的手下寫的#t4037175#交給卡拉伊爾吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "將#t4037175#轉交給了卡拉伊爾，並了解了報告書的內容。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4037175:# #t4037175:# #c4037175# / 1\r\n"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3004543"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q39942s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "39940"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "260"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3004516"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q39942e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4037175"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npcEx": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "sub",
+            "msg": {
+              "_dirType": "string",
+              "_value": "還沒有去找卡拉伊爾嗎？卡拉伊爾在#b#m410000800##k。"
+            },
+            "npcID": {
+              "_dirType": "int",
+              "_value": "3004543"
+            },
+            "imgPos": {
+              "_dirType": "int",
+              "_value": "1"
+            }
+          }
+        },
+        "itemEx": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "sub",
+            "msg": {
+              "_dirType": "string",
+              "_value": "#h0#，你見到我的手下回來了啊。嗯？但是他沒有給你#b#t4037175##k嗎？請幫我叫他寫份報告。"
+            },
+            "npcID": {
+              "_dirType": "int",
+              "_value": "3004516"
+            },
+            "imgPos": {
+              "_dirType": "int",
+              "_value": "1"
+            }
+          }
+        }
+      }
+    }
+  }
+}

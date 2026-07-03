@@ -1,0 +1,182 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[收藏家的委託] 英雄的靈藥"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "290"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "從收藏家那裡來了一封信。是關於塞伊蘭遺物的事情嗎？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了提取遺物的力量千方百計打聽的收藏家。最終在煉金術士的幫助下，製作出了靈藥。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "收藏家說，以靈藥的形式提取了塞伊蘭和艾蕾麗亞遺物的力量。聽說花了很多錢...今後如果有需要靈藥的事情，可以向收藏家購買。"
+    },
+    "selfStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "200"
+      }
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "64"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "200"
+      },
+      "subJobFlags": {
+        "_dirType": "int",
+        "_value": "15"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q102016s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "102009"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9076138"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q102016e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "sayEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "(從收藏家收到一封信。)"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "我有個好消息，經過各種方法尋找方法後，我得到了煉金術師的幫助。成功以靈藥的型態萃取了遺物的力量！\\r\\n你親眼看到應該會嚇一跳。效果我可以保證。雖然費用相當可觀...."
+          },
+          "npcID": {
+            "_dirType": "int",
+            "_value": "9076138"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "大部分的錢我已經付完了，只是希望你也能幫忙補貼一點。"
+          },
+          "npcID": {
+            "_dirType": "int",
+            "_value": "9076138"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "3": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "之後如果需要靈藥時，都可以隨時找我購買。\\r\\n謝謝你的幫忙！"
+          },
+          "npcID": {
+            "_dirType": "int",
+            "_value": "9076138"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "之後如果需要靈藥時，都可以隨時找我購買。\\r\\n謝謝你的幫忙！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  }
+}

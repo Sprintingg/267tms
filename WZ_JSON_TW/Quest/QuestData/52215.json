@@ -1,0 +1,121 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 鬥神擂台 1次達成"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "50"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p9070005#好像還想說些什麼的樣子。向在#b#m960000000##的#b#p9070005##k對話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "戰鬥廣場解說員#p9070005#告知有關 鬥神擂台開幕紀念活動。進入鬥神擂台後，只有完成一次就可以的樣子…快點挑戰看看吧。\r\n\r\n#rTip！ 只要完成一局就可以獲得獎勵的鬥神擂台 參加次數已計算完畢。中間若自行退出的話，無法計算Score且也無法完成任務。#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "鬥神擂台進行1次後，就可以從 #p9070005#領到獎勵。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "在入場之前先等一下~ 現在剛好是 鬥神擂台開幕紀念活動期間。不管是何種模式，只要挑戰 鬥神擂台後，且達成#b鬥神擂台 1次#k目標的話，就可以獲得禮物喔。只是 鬥神擂台 1次應該很簡單吧？來挑戰一次看看吧~"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "參加鬥神擂台並攻擊成功的話，並且要到獎勵地圖上領取玩獎勵後，才能算是完成1次喔。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "來，那麼就等著你的帥氣模樣囉！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "連鬥神擂台 1次都沒有自信嗎？試試看的話，說不定會意外覺得怎麼~那麼簡單呢~"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "現在還沒有達成 #b鬥神擂台 1次#k嗎？ 向#b#p9070000##k對話後，不管是哪個模式都來挑戰一下 鬥神擂台吧！"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9070005"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "52214"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9070005"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q52215e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  }
+}

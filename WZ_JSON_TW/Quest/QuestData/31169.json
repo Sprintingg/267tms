@@ -1,0 +1,220 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[十字獵人] 救出雪莉"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "264"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "必須要幫助受傷的#p2144004#。詢問她要怎麼幫助她。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了讓#p2144004#暫時取得休息，以恢復體力，請去消滅威脅她的怪物。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "必須要代替受傷的#p2144004#，進一步地去調查錯開的過去時間。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o8220016# #a311691#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "可進行「[十字獵人] 倒下的狂狼勇士」任務\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "140"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "149"
+      }
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "16"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "15748636"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "15748636"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "雖然沒有受到重傷，但是要馬上移動似乎有點太困難了。 你可以幫助我嗎？\\r\\n#L0##b(每次都騙我說是受傷了，不過這次好像是真的受傷了…她真的沒事嗎…？) 我要怎麼幫助你呢？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "稍微休息一下疼痛就會減輕的。在我休息的時間裡，請你替我消滅周邊的怪物。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "在這麼重要的時間裡受傷了.... 那麼就拜託你了~不要露出那麼擔心的表情呵呵，只要休息一下就會好很多的。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你必須要幫助我。 如果你準備好了，請在與我對話。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "天啊~才沒見你多久，你似乎又變更強悍了呢。我也休息了一陣子了，現在好很多了。現在應該可以一個人獨自移動了，但是要繼續執行任務…"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "看來要我繼續在這裡進行調查，可能沒有辦法了。之後就拜託#h0#了。請繼續調查這裡。必須要阻止阿卡伊農的陰謀才行。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "現在...還需要一點時間休息。請消滅怪物，直到身體恢復為止。在消滅30隻怪物的期間休息應該就可以了。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2144004"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31168"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "140"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q31169s"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2144004"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8220016"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

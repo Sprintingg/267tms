@@ -1,0 +1,232 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[阿斯旺反抗戰]愚蠢的人2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "43"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "巫女之珠全在希拉手中？怎麼會這樣呢？聽清隆說吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "極度寵愛希拉的伊阿孫把原來應於王持有的巫女之珠交給了希拉。結果只好重新製作了…去找材料吧。\\n\\n#i4033156# #t4033156# #b#c4033156#/10#k\\n#i4033157# #t4033157# #b#c4033157#/10#k\\n#i4033158# #t4033158# #b#c4033158#/10#k\n\n#rTip：材料道具可以在補給模式取得。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "清隆拿到閃亮的寶石粉末後開始製作巫女之珠。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2183002"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3962"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2183002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033156"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033157"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033158"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033156"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033157"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033158"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "巫女之珠…那個東西，本來是只有在進行大的祭典時才會只用的，而且就算是使用了，也只會是一下子而已，然後又會被收回到王的身邊，是非常貴重的物品。但是…"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "由於殿下非常寵愛希拉，所以殿下就把那個東西全都交給了希拉。…我想其理由，你應該不是不知道吧。當時的希拉真的是一位非常優秀的大巫女。為了阿斯旺奉獻的…"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "…不過說這麼多有什麼用呢。現在也不能再去找回遺失的珠子了…雖然現在也沒辦法做出擁有那麼大力量的珠子，但是至少也要試著做看看類似的珠子。你可以幫助我嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果想要製作巫女之珠，就必須要有一些材料。如果是靠你的力量，我想一定可以找到的。那麼就拜託你了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你不想要幫助我這個無助的人嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "做出了王不該做的事情的王…但是，這又能夠怪誰呢。曾經教導過他的人是我啊。無法拋棄自我和獨善的，就是我啊。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "到現在，可以做的就只有這個啊…"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你好像還沒有把所有的東西都找來啊。"
+          }
+        }
+      }
+    }
+  }
+}

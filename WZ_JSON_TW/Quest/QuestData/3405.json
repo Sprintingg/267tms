@@ -1,0 +1,101 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[地球防衛本部] 重要的機器人零件"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "重要的零件"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去見地球防衛總部的金博士。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在玩具城玩具工廠見到曾助教並得到用來製作機器人的3個零件箱子，現在只要將這些零件箱子帶給地球防衛總部司令室的金博士就可以了吧？"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "將玩具城玩具工廠的曾助教送給我用來製作機器人的3個零件箱子轉交給地球防衛總部司令室的金博士。酬勞是瞬間就能移動到玩具城的移動膠囊…看來會很有用哦！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "38"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "3406"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "哦…來的正好。多虧你的幫助，現在新型機器人的設計已經全部完成了，現在已經開始著手製作了。不過缺少了製作機器人的3個重要零件，我已經和在玩具城的#b#p2040003##k說過了，你去幫我拿來吧。拜託了！"
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "好像還沒有見過#b#p2040003##k吧，我已經委託#p2040003#準備製作機器人必須的3個重要零件，你去幫我拿來吧。#p2040003#大概在玩具城玩具工廠的某處，我在這裡等你回來。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2040003"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2050001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "65"
+      }
+    }
+  }
+}

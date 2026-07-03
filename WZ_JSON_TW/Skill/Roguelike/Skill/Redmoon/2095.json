@@ -1,0 +1,223 @@
+{
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Projectile"
+      },
+      "onProjectileHit": {
+        "_dirType": "string",
+        "_value": "AttackByProjectile"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "time": {
+          "_dirType": "string",
+          "_value": "4"
+        },
+        "emitAngle": {
+          "_dirType": "string",
+          "_value": "-55+i*-35"
+        },
+        "emitSpeed": {
+          "_dirType": "string",
+          "_value": "700"
+        },
+        "emitCount": {
+          "_dirType": "string",
+          "_value": "4"
+        },
+        "maxSpeed": {
+          "_dirType": "string",
+          "_value": "700"
+        },
+        "destroyHitCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "emitPosRadius": {
+          "_dirType": "string",
+          "_value": "10"
+        },
+        "emitPosAngle": {
+          "_dirType": "string",
+          "_value": "-55+i*-35"
+        },
+        "chaseAccel": {
+          "_dirType": "string",
+          "_value": "4000"
+        },
+        "chaseTargetType": {
+          "_dirType": "string",
+          "_value": "DragToTarget"
+        },
+        "emitPos.X": {
+          "_dirType": "string",
+          "_value": "50"
+        },
+        "emitPos.Y": {
+          "_dirType": "string",
+          "_value": "-50"
+        },
+        "persistAccel.X": {
+          "_dirType": "string",
+          "_value": "dir*10"
+        },
+        "searchBoundLT": {
+          "_dirType": "vector",
+          "_x": -846,
+          "_y": -476
+        },
+        "searchBoundRB": {
+          "_dirType": "vector",
+          "_x": 846,
+          "_y": 250
+        },
+        "rotatable": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "boundLT": {
+          "_dirType": "vector",
+          "_x": -10,
+          "_y": -20
+        },
+        "boundRB": {
+          "_dirType": "vector",
+          "_x": 75,
+          "_y": 20
+        }
+      },
+      "ball": {
+        "_dirType": "sub"
+      },
+      "effect": {
+        "_dirType": "sub"
+      },
+      "bProjectileMustNeedTargets": {
+        "_dirType": "short",
+        "_value": "1"
+      }
+    },
+    "AttackByProjectile": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "20+12*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "4"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "buffLevel": {
+          "_dirType": "string",
+          "_value": "3"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "randomHitOrigin": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "randomHitAngle": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "pos": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "useZ": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "z": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "2341005"
+      },
+      "eventTags": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "RLGame.Effect.Shock"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "RLGame.Skill.SingleAttack"
+        }
+      },
+      "targetBuffID": {
+        "_dirType": "string",
+        "_value": "502"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "20+12*x"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "4"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "1"
+    },
+    "Tags": {
+      "_dirType": "sub",
+      "availableOnLadderOrRope": {
+        "_dirType": "sub"
+      }
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -450,
+      "_y": -450
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 450,
+      "_y": 450
+    }
+  },
+  "NetExecutionPolicy": {
+    "_dirType": "string",
+    "_value": "ServerInitiated"
+  },
+  "NetSecurityPolicy": {
+    "_dirType": "string",
+    "_value": "ServerOnlyExecution"
+  },
+  "defaultTags": {
+    "_dirType": "int",
+    "_value": "0"
+  }
+}

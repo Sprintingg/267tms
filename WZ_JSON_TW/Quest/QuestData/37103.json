@@ -1,0 +1,130 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[偵探雷夫的事件日誌] 尋找墜落的飛行船"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "226"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##r#p3001219##k進行對話\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "突然出現叫謝娜的少女而情況變得非常奇怪，現在變我要去尋找她在運送中的貨物。\r\n\r\n在#b不法之徒的村莊#k上 ，跟#b豪華觀光職員#k進行對話吧。\r\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "如果不想看到謝娜受害的話，要在 #b垃圾山#k與柯爾波見面後，再移動到 #b危險的垃圾場1#k查看飛行船。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在#b危險的垃圾場1#k上發現墜落的飛行船。在被垃圾場的惡棍包夾的時刻，自稱為#b偵探雷夫#k的人就這麼帥氣的登場了。"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q37103x"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "175"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "179"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3004033"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q37103s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "37102"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3004034"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q37103e"
+      },
+      "npcSpeech": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3001219"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "script": {
+            "_dirType": "string",
+            "_value": "q37103_1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  }
+}

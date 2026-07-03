@@ -1,0 +1,178 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[次元圖書館] 女皇的最後階段─時尚"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "82"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b奇慕#k說要使用在水世界取得的珍珠製作西格諾斯的服裝.去和#b奇慕#k交談吧."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "奇慕使用在水世界取得的珍珠製作了西格諾斯的衣服.\\r\\n#b(將女皇的衣服交給那因哈特吧.)#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "奇慕使用在水世界取得的珍珠製作了西格諾斯的衣服."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4033965:# #t4033965:# #c4033965# / 1\r\n"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033965"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "好,完成了.可以幫我把女皇的衣服交給那因哈特嗎?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "有人說真正的美麗是來自內心,但不是也有人說衣服就如同翅膀一樣嗎?嘿嘿.\\r\\n#b(將女皇的衣服交給那因哈特吧.)#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "快點交給他吧."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "好,請將這件衣服交給那因哈特吧.\\r\\n#b(將女皇的衣服交給那因哈特吧.)#k"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "女皇的衣服還沒好嗎?\\r\\n#b(和奇慕交談,然後領取女皇的衣服.)#k"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "天啊,請小心一點!若是衣服掉地上該怎麼辦呢?"
+        },
+        "yes": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "如果沾到泥土,你要負責任嗎?呼呼,真是的~ 真是難搞..."
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2520006"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32616"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2520000"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q32617e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033965"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

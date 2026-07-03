@@ -1,0 +1,86 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "memory"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "special"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "[精靈救援者] 菁英救援隊員"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "不接收網咖週末優惠，獲得20,000分以上的分數"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "unique"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "40"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "uiForm": {
+        "_dirType": "string",
+        "_value": "basic"
+      },
+      "gauge": {
+        "_dirType": "string",
+        "_value": "submission_info"
+      },
+      "gaugeMissionIndex": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "gaugeSubMission": {
+        "_dirType": "string",
+        "_value": "script"
+      }
+    },
+    "keyword": {
+      "_dirType": "string",
+      "_value": "在沒有優惠的狀態下獲得20,000分以上的紀錄"
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "以20,000分以上的分數通關"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "script": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            },
+            "type": {
+              "_dirType": "string",
+              "_value": "counting"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub"
+          }
+        }
+      }
+    }
+  }
+}

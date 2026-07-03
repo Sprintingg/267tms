@@ -1,0 +1,218 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[懸賞] 僵屍菇菇王"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "僵屍菇菇王的山坡上建立了懸賞標誌板。 \n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "僵屍菇菇王的山坡上建立了僵屍菇菇王懸賞標誌板。 消滅僵屍菇菇王 4隻後，去找#m100020000#的#p1012119#報告。 僵屍菇菇王的山坡可從幽靈菇菇路移動。\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在僵屍菇菇王的山坡上#p1012119#建立了僵屍菇菇王懸賞標誌板。 消滅僵屍菇菇王 4隻後去找#m100020000#的 #p1012119#報告，就獲得了懸賞金。 可是怎麼知道我有沒有消滅僵屍菇菇王呢？\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o6300005# #a27071#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 1,000\r\n#i1032004:# #t1032004:# 1 個\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "25"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012132"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2706"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012119"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "6300005"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "4"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1032004"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "正常"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#eWANTED#n\\n#i3800230#\\n\\n懸賞出沒在僵屍菇菇王的山丘騷擾行人的殭屍蘑菇王 4隻。 \\n罪狀： 妨礙通行，私自佔有共有地\\r\\n"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "<追申>\\n掃蕩殭屍蘑菇王 4隻的人請向菇菇歌唱山丘:#m100020000#的 #p1012119#回報。\\r\\n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "<追申>\\n- 損毀佈告時，徵收罰金10萬楓幣。\\n- 請勿在此丟棄垃圾。」\\r\\n"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "來這裡有什麼事？\\r\\n#L0##b我已掃蕩殭屍蘑菇王 4隻前來領取懸賞金。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "噢！ 你太厲害了？ 既然消滅了菇菇歌唱森林的最終首領！\\r\\n"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "終於把惱人的菇菇全部掃蕩了。 你的確有能力的懸賞獵人。 \\r\\n"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "<追申>\\n掃蕩殭屍蘑菇王 4隻的人請向菇菇歌唱山丘:#m100020000#的 #p1012119#回報。\\r\\n"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你是看到僵屍菇菇王的山丘設立的殭屍蘑菇王懸賞佈告來的嗎 ？ 若要領取懸賞金必須先掃蕩殭屍蘑菇王 4隻。\\r\\n"
+          }
+        }
+      }
+    }
+  }
+}

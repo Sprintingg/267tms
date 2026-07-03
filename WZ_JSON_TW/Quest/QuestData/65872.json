@@ -1,0 +1,232 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[我的小屋]少女感性，杜娜奶奶！"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|3"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "杜娜請艾咪跑腿後回家了。和艾咪對話吧。\r\n\r\n#b[可執行時間]#k\r\n#DL|myHome_Christmas|start|2#\r\n\n～ #DL|myHome_Christmas|end2|2#"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了讓杜娜能製作聖誕節抱枕，從米納爾森林森林岔道的綿羊那裡找來20個優質的綿羊毛吧。\r\n\r\n#b[可執行時間]#k\r\n#DL|myHome_Christmas|start|2#\r\n\r\n～ #DL|myHome_Christmas|end2|2#"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "為了幫忙杜娜的聖誕節慈善會，而前去杜娜的家的艾咪。杜娜想在聖誕節慈善會製作抱枕來販售。 為了讓杜娜可以製作抱枕，而幫她找來了綿羊毛。\r\n\r\n#b[可執行時間]#k\r\n#DL|myHome_Christmas|start|2#\r\n\n～ #DL|myHome_Christmas|end2|2#"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q65872x"
+    },
+    "demand": {
+      "_dirType": "sub",
+      "base": {
+        "_dirType": "string",
+        "_value": "#questorder1#拜訪杜娜奶奶的家 #R65872ExdonaRef65872# / 1\r\n#questorder2##i4036678:# #t4036678:# #c4036678# / 20\r\n"
+      },
+      "explain": {
+        "_dirType": "sub"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9401262"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "65871"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q65872s"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "#DL|myHome_Christmas|start#"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "#DL|myHome_Christmas|end#"
+      },
+      "worldList": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "0"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "3"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "4"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "6"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "30"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "45"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "49"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9401268"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "65872"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "拜訪杜娜奶奶的家"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "dona"
+          }
+        }
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036678"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q65872e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "只要往村莊外的森林方向走就會看見杜娜奶奶的家囉！快去看看吧！"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#h0#，綿羊可以在神木村的#m240010400#找到喔！你問我怎麼知道？呼呼，我最近可是看很多旅遊書呢！"
+          }
+        }
+      }
+    }
+  }
+}

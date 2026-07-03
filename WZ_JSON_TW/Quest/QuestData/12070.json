@@ -1,0 +1,145 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動任務] 請使用升級介紹！"
+    },
+    "autoPreComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "確認新增的升級介紹，就可領取#b正義硬幣2個#k。#r點選畫面左側活動提示#k或去找#p9010000#獲得#t04310034#。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "確認升級介紹，獲得了#b#t04310034##k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "確認升級介紹，獲得了#b#t04310034##k。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201208152359"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201208152359"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4310034"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好！#h0#，今天有事情要通知你所以聯絡了你。你聽過關於最新的#b升級指南#k相關消息嗎？"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "聽說#b升級指南#k收集了有助於升級的資訊你願意確認看看嗎？\\r\\n（若查詢#b升級指南#k相關內容就可以得到#b正義硬幣2個#k。）"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你想知道快速升級的資訊嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "首先告訴你怎麼使用升等級指南吧。\\r\\n查看左側上方的小地圖下方的話，就可以看到新追加的 #b\"升等級指南\" 按鈕#k喔。\\r\\n只要點選這個按鈕就會顯示升級的指南資料喔。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "可以看到符合我等級的#r推薦1)任務2)狩獵場3)內容#k。利用這些資訊就可以快速升級。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "等級變更時就會更換顯示符合該等級的資訊所以升級時務必做參考～。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#r其他物品欄#k已滿無法領取#t04310034#。請確認其他物品欄是否有空間？"
+          }
+        }
+      }
+    }
+  }
+}

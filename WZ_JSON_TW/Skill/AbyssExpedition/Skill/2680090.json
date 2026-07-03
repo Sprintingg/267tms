@@ -1,0 +1,153 @@
+{
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "seaSerpent"
+          }
+        },
+        "Segment1": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "stabOF"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "long",
+              "_value": "3"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AEAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "5121025"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "damage": {
+          "_dirType": "string",
+          "_value": "470+50*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "6+d(x/5)"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -110,
+          "_y": -185
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 110,
+          "_y": 75
+        },
+        "BossDamageRatio": {
+          "_dirType": "string",
+          "_value": "100"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "z": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "5121025"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "damage": {
+      "_dirType": "string",
+      "_value": "470+50*x"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "6+d(x/5)"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "1"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -110,
+      "_y": -185
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 110,
+      "_y": 75
+    },
+    "BossDamageRatio": {
+      "_dirType": "string",
+      "_value": "100"
+    }
+  },
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "5121025 씨 서펜트 인레이지"
+  },
+  "combatOrders": {
+    "_dirType": "int",
+    "_value": "1"
+  }
+}

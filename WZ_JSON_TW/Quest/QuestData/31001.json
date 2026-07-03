@@ -1,0 +1,208 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[克里塞] 這裡是克里塞？"
+    },
+    "area": {
+      "_dirType": "string",
+      "_value": "33"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "幾經曲折終於來到克里塞。讓我有種不祥的預感。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了瞭解克里塞的詳情，最好去找克里塞基地的村莊村長馬利奧內。\n\n進入基地需要「克里塞基地出入證」，但有謠言說村莊外圍1~2的「札比爾」擁有著其出入證。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "找到了克里塞基地通行證。現在就去找基地村長馬利奧內吧？"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4032912:# #t4032912:# #c4032912# / 1\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 13,860\r\n可進行 '[克里塞] 尋找村長' 任務\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "13860"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2170004"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "50"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31000"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2170004"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032912"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "13860"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032912"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "咦？！你不像本地人來這裡有什麼事嗎？\\r\\n總之先躲到這裡吧。\\r\\n"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "原來是艾利遜請你來的。就像你看到你村莊已被怪物破壞殆盡。我正要離開村莊去請求幫助。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "我要趕快離開村莊的關係，很難詳細說明。你到基地的話， 可見到村莊長老的。詳細的狀況是跟長老聽吧… \\r\\n"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "但是在基地的保安問題上，不是任何人都可以進入的。\n\n請你去消滅#b#m200100100##k的#r#o5160000##k，找來出入證的話，我就允許你進入基地。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你一定很辛苦才來到這裡…原來你不是來幫助我們的嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你找來出入證了嗎？ 讓我看看… 沒錯！ 這就是克里塞基地的出入證。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "事實上… 這個是我遺失的出入證。 因為被札比爾給搶走了，害我非常地苦惱啊…"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你既然這樣幫我，我就幫你聯繫進入基地。\r\n\r\n 你可以利用我右邊的傳送點前往基地。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "消滅#r#o5160000##k的話，可獲得進入克里塞基地的出入證 。"
+          }
+        }
+      }
+    }
+  }
+}

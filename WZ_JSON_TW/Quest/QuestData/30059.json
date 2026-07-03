@@ -1,0 +1,175 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[菇菇城堡] 守護城門"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "91"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "雖然守護了城牆, 狀況好像變得更糟. 而且警衛隊長好像因為聽到了什麼臉色發白. 問問看到底是什麼事情. "
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "嘗試掌握城牆失敗後, 嘗試從後門正面突破的維京部隊. 衝破城門的話城堡被佔領也只是時間問題了. 警衛隊長請求幫忙在維京們的攻擊中守護城後門. "
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "打倒了為了破壞後門而揹著木頭衝撞的維京部隊,平安守護了城後門. 但是所有的努力因為菲歐娜的一次敲門而化為烏有. "
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#守護城門 (#R30059ExRef30059#)\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 36,535\r\n\r\n"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "#m106031200#"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "36535"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1302007"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "30058"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "30059"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "clear"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "守護城門"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "106030302"
+      },
+      "portalName": {
+        "_dirType": "string",
+        "_value": "out00"
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "糟糕了! 維京為了破壞城門正在進擊中. 城門破碎的話城堡落在他們手裡只是時間問題而已. 無論如何一定要阻止才行. 雖然沒有臉見你但還是想再次拜託你. 請幫忙我們!"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "已經沒有可拖延的時間了! 快點去 #b#m106031200##k阻止維京們的攻擊. 一定要快點! "
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我的暈眩症又發作了. 請不要再遊晃了趕快去守護城門! "
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "要是城門被衝破的話一切就結束了, 結束! 現在快點去後門阻止維京們的攻擊! "
+          }
+        }
+      }
+    }
+  }
+}

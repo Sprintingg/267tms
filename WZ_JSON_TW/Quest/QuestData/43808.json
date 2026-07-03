@@ -1,0 +1,179 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 大富翁 DAY"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "只有2月 6日一天，\r\n只要完成#e大富翁 DAY#n 活動的話，\n就會贈送#e4 里程#n 和 #i2432970#   #e#t2432970##n1個。\r\n\r\n#r#e任務完成後，2月6日23點 59分之前！#k\r\n#b去向波明領取獎勵！#k"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "只有2月 6日一天，\r\n只要完成#e大富翁 DAY#n 活動的話，\n就會贈送#e4 里程#n 和 #i2432970#   #e#t2432970##n1個。\r\n\r\n#r#e任務完成後，2月6日23點 59分之前！#k\r\n#b去向波明領取獎勵！#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "只有2月 6日一天，\r\n只要完成#e大富翁 DAY#n 活動的話，\n就會贈送#e4 里程#n 和 #i2432970#   #e#t2432970##n1個。\r\n\r\n#r#e任務完成後，2月6日23點 59分之前！#k\r\n#b去向波明領取獎勵！#k"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#進行大富翁 #R43733ExToCountRef43808# / 12\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "starPlanet": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1540201"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201502060000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201502070000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "43803"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1540201"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "43733"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "12"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "進行大富翁 "
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "ToCount"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你是來完成大富翁 DAY的嗎？"
+      },
+      "yesEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "專注於需要迅速的腦筋迴轉與戰略的世界大富翁後的感想如何呢？"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "獎勵可以向新星世界入場大廳的 #b波明#k領取，\\n#b[活動] 請一定要透過大富翁 DAY獎勵#k任務領取獎勵~"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "noEsc": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒進行 12次。\\r\\n"
+          }
+        }
+      }
+    }
+  }
+}

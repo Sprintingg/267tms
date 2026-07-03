@@ -1,0 +1,187 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[末日反抗軍] 復仇和成長"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "16"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[轉職]"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "與黑色翅膀戰鬥的艱難任務就要開始了。在#b末日反抗軍地下本部#k與#b#p2151004##k對話，並打聽關於任務的詳細說明。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "任務內容是，除掉從外部收集情報進來的黑色翅膀，並奪走它帶著的情報。除掉乘坐飛船進來的黑色翅膀後，把情報帶來。#p2151004#說，我可以期待會看到熟悉的面孔…是什麼意思呢？總之先去#b#m310000010##k。\n\n#i4032739##t4032739##b#c4032739#/1#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在任務中見到的是以前在救回#p2151005#的時候碰上的，長的像山賊的那個黑色翅膀傢伙！雖然以前是輸了，但是這次可以輕而易舉的解決掉。把這些向#p2151004#報告後，他稱讚我成長的很快，並讓我轉職，可以使用更強的技能。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2151004"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201012291200"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201012291200"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "23022"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "3500"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2151004"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q23025e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032739"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "給你介紹任務吧。這次任務是出校從外部收集情報回到根據地的#b黑色翅膀，搶回他們的文件#k。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "越是重要的情報，黑色翅膀也會加強保安的。大概為了保護情報投入了很多人力。但是對隱藏身分的我們末日反抗軍來說，沒有比獲取情報更重要的任務了。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "我覺得一直通過我的課程變得強大的你應該能做到才推薦你這個任務…不過那只是你拿出勇氣面對任務時才可行的，如果不是，肯定會失敗的。怎麼樣？能做到嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "有勇氣的態度真是讓人欣慰啊。還好教了你機甲戰神的技能。那麼快去機場吧。現在大概已經有黑色翅膀隊員走在#b#m310000010##k了。除掉他後搶來他的報告書吧。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "你會遇到讓你感到意外，但非常熟悉的人。可以期待哦。祝你好運。一定要勝利。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我的預想錯了…我以為在這種情況下肯定不會拒絕的…因為你還沒成熟嗎？再好好考慮考慮吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "好像還沒除掉有情報的黑色翅膀。到了#b#m310000010##k能碰到從外部拿著情報進來的黑色翅膀隊員。除掉他後回收他的#b報告書#k吧。你應該能做到。"
+          }
+        }
+      }
+    }
+  }
+}

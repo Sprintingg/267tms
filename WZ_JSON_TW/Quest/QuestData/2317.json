@@ -1,0 +1,216 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[弓箭手村] 彩色菇菇芽孢（１）"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 4,600\r\n可進行 '彩色菇菇芽孢（２）' 任務\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "菇菇研究家#b#p1300007##k知道製作#b彩色菇菇芽孢#k方法。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在#b#m106020300##k擊敗#r#o3300001##k，取得製作#b彩色菇菇芽孢#k所需的#b#t4000500#30個#k，拿去給#b#p1300007##k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "收集製作#b彩色菇菇芽孢#k需要的#t4000500#30個拿去給#b#p1300007##k。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000500:##t4000500:##c4000500#/30"
+    },
+    "summary": {
+      "_dirType": "string",
+      "_value": "在#b#m106020300##k擊敗#r#o3300001##k，取得製作#b彩色菇菇芽孢#k所需的#b#t4000500#30個#k，拿去給#b#p1300007##k。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "25"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "4600"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1300007"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2316"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1300007"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000500"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "4600"
+      },
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "2318"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000500"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "阿！那 #b奇臘磨菇胞子#k的話，我在小時後，在書裡看過一次呢。我想到了。從毒菇撈取強力的毒來製作的關係，應該是需要 #t4000500#吧。若幫我拿來相關東西就幫忙置做吧。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "在#b#m106020300##k擊敗#r#o3300001##k收集 #b#t4000500# 30個#k。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "要打破結界必須要有毒蘑菇傘。等你改變主意了隨時來找我。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "已經收集到我拜託的#b#t4000500# 30個#k了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "很難收集的#b#t4000500##k已經收集到 30個了。 可以用這個製成#b彩色菇菇芽孢#k。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "為了製作#b彩色菇菇芽孢#k，需要#b#t4000500# 30個#k。 在#b#m106020300##k除掉 #r#o3300001##k取得#b#t4000500##k。"
+          }
+        }
+      }
+    }
+  }
+}

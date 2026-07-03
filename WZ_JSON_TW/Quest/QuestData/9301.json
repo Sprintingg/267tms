@@ -1,0 +1,256 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 向漢斯拜年"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "春節拜年任務"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p9010000#表示，向位在維多利亞島四大村莊的#b4位賢者#k拜過年，最後可得到#b某個物品#k，希望將那物品交給他。依照#p9010000#的指示，前往勇士之村向#p1022000#拜年問安了，#p1022000#交給了我一個#b賀年卡#k，要我去向#b魔法森林#k的#b#p1032001##k拜年問好。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "受#p1022000#所託，向位在魔法森林的#p1032001#拜年問安了。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "450"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031075"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          },
+          "job": {
+            "_dirType": "int",
+            "_value": "-705"
+          },
+          "jobEx": {
+            "_dirType": "int",
+            "_value": "-435476357"
+          },
+          "period": {
+            "_dirType": "int",
+            "_value": "10080"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "450"
+      },
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "9302"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031075"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "沒想到現在還有像你這麼懂得敬老尊賢的人…好！麻煩你拿這個交給位在魔法森林的#b#p1032001##k吧！我已經好久沒聽到她的消息了，不曉得她過得如何…我想她見到你，應該也會很會開心的。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝你大老遠跑來跟我拜年！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "若你改變心意的話，請再來找我吧！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "我是#b#p1032001##k，在這個魔法森林，幫助所有法師們探索魔法的奧義。話說回來，你來找我有什麼事情嗎？\\r\\n#b#L0##b我是來向您拜年問安的。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "喔喔！因為過年，所以才來找我拜年問安嗎？真是太令人開心了！沒想到現在還有像你這樣懂得敬老尊賢的年輕人…而且這還是#b#p1022000##k的賀年卡耶！"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請你前往#b#m101000000##k，去見#b#p1032001##k後，將我交給你的賀年卡送給他吧！"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請問有什麼事情呢？"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這…看來你是把我交給你的賀年卡給弄丟了吧！怎麼可以這麼不小心呢！看在是春節的份上，我再重新寫一張給你吧！請你把這賀年交給魔法森林的#b#p1032001##k吧！記得要向他拜年問好，我想他一定會很開心的。"
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1032001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031075"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1022000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "200802140000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "200802140000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9300"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "129600"
+      }
+    }
+  }
+}

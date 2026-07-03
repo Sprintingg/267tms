@@ -1,0 +1,311 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2101003"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000326"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000327"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2100106"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2100107"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "50"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2101003"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "86"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3931"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊啊～真頭痛。你問我有什麼事嗎？#o2100106#和 #o2100107# 這些傢伙不斷地騷擾居民。王妃根本不管治安，只收集奇怪的寶石，居民陷入水深火熱之中。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "沙影團的任務中也會擊退這些傢伙。但是弱者無法進入沙影團。怎麼樣？如果你想進入沙影團，就要替我做這件事！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好的。那麼請擊退#r#o2100106##k和#r#o2100107##k各30隻，取回#b#t4000326# 20個#k和 #b#t4000327# 20個#k當作證據。親自體驗過沙影團的任務有多麼艱難，就沒辦法說出想要進入的話了吧？"
+        }
+      },
+      "transferField": {
+        "_dirType": "int",
+        "_value": "260010500"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000326"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000327"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-20"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "124984"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "呀呀~真頭疼。你問我是什麼事？#o2100106#和#o2100107#傢伙一直欺負居民。王妃一直不怎麼重視治安，她只關心寶石，所以居民們一直都受他們的欺負。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "沙影團中也有消滅這些傢伙的任務。所以弱者是加入不了沙影團的。怎麼樣？如果你還想加入沙影團，願意做這件事嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好。那就去擊退#r#o2100106##k和#r#o2100107##k各50隻，把#b#t4000326#20個#k和#b#t4000327#20個#k帶回來當證據。只要親自體驗沙影團的任務有多困難，你大概就不敢說想要加入吧？"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "果然很難是吧？不是誰都能成為沙影團團員的。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "嗯？這麼快就消滅#o2100106#和#o2100107#了？那些傢伙可不是那麼簡單的呀…你是在開玩笑吧？嗯？這是#t4000326#和#t4000327#...真消滅那些傢伙了？這怎麼可能！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "看來你比我想像中還厲害。竟然一下子就把#o2100106#和#o2100107#消滅掉了，真沒想到。我想…你應該能加入沙影團了吧...？"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "看來你還沒擊退#r#o2100106#50隻#k和#r#o2100107#50隻#k，以及收集#b#t4000326#20個#k和#b#t4000327#20個#k。果然不是簡單的任務吧？"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "看來你還沒擊退#r#o2100106#50隻#k和#r#o2100107#50隻#k，以及收集#b#t4000326#20個#k和#b#t4000327#20個#k。果然不是簡單的任務吧？"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[納希沙漠] 亞廷的測試"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "再次去見#p2101003#後，#p2101003#說只要去消滅#m260000000#欺負村民的#r#o2100106##k和#r#o2100107#各50隻#k，把#b#t4000326##k和#b#t4000327##k各#b20個#k帶回來，就能成為沙影團。\\n\\n#o2100106# #r#a39321##k\\n#o2100107# #r#a39322##k\\n\\n#i4000326# #t4000326# #b#c4000326# / 20#k\\n#i4000327# #t4000327# #b#c4000327# / 20#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "消滅了#o2100106#和#o2100107#，#p2101003#一付很驚異的表情，好像認可了我的強大~呼呼。那麼現在就可以成為沙影團員了？"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "43"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4000326:# #t4000326:# #c4000326# / 20\r\n#questorder1##i4000327:# #t4000327:# #c4000327# / 20\r\n#questorder1##o2100106# #a39321#\r\n#questorder1##o2100107# #a39322#\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "124984"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "returnMapID": {
+      "_dirType": "int",
+      "_value": "260000200"
+    },
+    "returnPN": {
+      "_dirType": "string",
+      "_value": "2101003"
+    },
+    "targetType": {
+      "_dirType": "int",
+      "_value": "-1"
+    },
+    "returnType": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demand": {
+      "_dirType": "sub",
+      "explain": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

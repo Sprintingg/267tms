@@ -1,0 +1,203 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 冷天就是要帶青蛙帽子!"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "已經完成 #b‘溫暖的春天郊遊!’#k 活動36次。去找 #p9010010#之後，要求給予 #t01003227#。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "已經完成 #b‘溫暖的春天郊遊!’#k 活動36次。去找 #p9010010#之後，要求給予 #t01003227#。\\r\\n\\r\\n#b#i01003227##t01003227#(30天)#k\\r\\n\r\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "已經完成 #b‘溫暖的春天郊遊!’#k 活動36次。去找 #p9010010#之後，要求給予 #t01003227#。\\r\\n\\r\\n#b#i01003227##t01003227#(30天)#k\\r\\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#i1003227:# #t1003227:# 1 個\r\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "執行#b溫暖的春天郊遊!#k任務 36次"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "11123"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201204111200"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201205021200"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201204111200"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201205021200"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "36"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330072"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q11124e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1003227"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "period": {
+            "_dirType": "int",
+            "_value": "43200"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "恭喜， 完成了#b#e#h0#!#n#k\\r\\n#b#e36次#n#k!好，按照我跟你的承諾，我給你青蛙帽子。在村莊找我吧?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "準備#b#t01003227##k之後，我將會等你，再跟我對話吧。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不想拿#t01003227#嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "怎樣，很適合在春天吹微微風時的設計吧？ "
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "需要完成#b'溫暖的春天郊遊!'#k任務36次，才可以收到 #t01003227#。"
+          }
+        }
+      }
+    }
+  }
+}

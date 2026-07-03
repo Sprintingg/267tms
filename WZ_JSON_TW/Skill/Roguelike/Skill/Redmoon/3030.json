@@ -1,0 +1,388 @@
+{
+  "info": {
+    "_dirType": "string",
+    "_value": "리피팅 크로스보우 카트리지 400031055"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "5thRepeatinCartrigeSniping"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "2"
+            },
+            "90": {
+              "_dirType": "vector",
+              "_x": -30,
+              "_y": -25
+            },
+            "91": {
+              "_dirType": "vector",
+              "_x": -50,
+              "_y": -95
+            },
+            "92": {
+              "_dirType": "vector",
+              "_x": -75,
+              "_y": 40
+            },
+            "93": {
+              "_dirType": "vector",
+              "_x": -65,
+              "_y": -45
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "400031055"
+          }
+        }
+      },
+      "Projectile1": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "480"
+        }
+      },
+      "Projectile2": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "600"
+        }
+      },
+      "Projectile3": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "720"
+        }
+      },
+      "Projectile4": {
+        "_dirType": "sub",
+        "TriggerTime": {
+          "_dirType": "string",
+          "_value": "840"
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "AttackByProjectile": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "12*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "9"
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "50"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "1"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "randomHit": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "0": {
+          "_dirType": "sub",
+          "randomHitOrigin": {
+            "_dirType": "int",
+            "_value": "20"
+          }
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "400031055"
+      },
+      "eventTags": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "RLGame.Skill.SingleAttack"
+        }
+      }
+    },
+    "Projectile1": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Projectile"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "time": {
+          "_dirType": "string",
+          "_value": "2"
+        },
+        "destroyHitCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "hitIntervalPerTarget": {
+          "_dirType": "long",
+          "_value": "2000"
+        },
+        "boundLT": {
+          "_dirType": "vector",
+          "_x": -140,
+          "_y": -60
+        },
+        "boundRB": {
+          "_dirType": "vector",
+          "_x": 60,
+          "_y": 60
+        },
+        "initialVelocity": {
+          "_dirType": "vector",
+          "_x": -1500,
+          "_y": 0
+        },
+        "emitPos": {
+          "_dirType": "vector",
+          "_x": -30,
+          "_y": -25
+        }
+      },
+      "ball": {
+        "_dirType": "sub"
+      },
+      "onProjectileHit": {
+        "_dirType": "string",
+        "_value": "AttackByProjectile"
+      }
+    },
+    "Projectile2": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Projectile"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "time": {
+          "_dirType": "string",
+          "_value": "2"
+        },
+        "destroyHitCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "hitIntervalPerTarget": {
+          "_dirType": "long",
+          "_value": "2000"
+        },
+        "boundLT": {
+          "_dirType": "vector",
+          "_x": -140,
+          "_y": -60
+        },
+        "boundRB": {
+          "_dirType": "vector",
+          "_x": 60,
+          "_y": 60
+        },
+        "initialVelocity": {
+          "_dirType": "vector",
+          "_x": -1500,
+          "_y": 0
+        },
+        "emitPos": {
+          "_dirType": "vector",
+          "_x": -50,
+          "_y": -95
+        }
+      },
+      "ball": {
+        "_dirType": "sub"
+      },
+      "onProjectileHit": {
+        "_dirType": "string",
+        "_value": "AttackByProjectile"
+      }
+    },
+    "Projectile3": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Projectile"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "time": {
+          "_dirType": "string",
+          "_value": "2"
+        },
+        "destroyHitCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "hitIntervalPerTarget": {
+          "_dirType": "long",
+          "_value": "2000"
+        },
+        "boundLT": {
+          "_dirType": "vector",
+          "_x": -140,
+          "_y": -60
+        },
+        "boundRB": {
+          "_dirType": "vector",
+          "_x": 60,
+          "_y": 60
+        },
+        "initialVelocity": {
+          "_dirType": "vector",
+          "_x": -1500,
+          "_y": 0
+        },
+        "emitPos": {
+          "_dirType": "vector",
+          "_x": -75,
+          "_y": 40
+        }
+      },
+      "ball": {
+        "_dirType": "sub"
+      },
+      "onProjectileHit": {
+        "_dirType": "string",
+        "_value": "AttackByProjectile"
+      }
+    },
+    "Projectile4": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Projectile"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "time": {
+          "_dirType": "string",
+          "_value": "2"
+        },
+        "destroyHitCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "hitIntervalPerTarget": {
+          "_dirType": "long",
+          "_value": "2000"
+        },
+        "boundLT": {
+          "_dirType": "vector",
+          "_x": -140,
+          "_y": -60
+        },
+        "boundRB": {
+          "_dirType": "vector",
+          "_x": 60,
+          "_y": 60
+        },
+        "initialVelocity": {
+          "_dirType": "vector",
+          "_x": -1500,
+          "_y": 0
+        },
+        "emitPos": {
+          "_dirType": "vector",
+          "_x": -65,
+          "_y": -45
+        }
+      },
+      "ball": {
+        "_dirType": "sub"
+      },
+      "onProjectileHit": {
+        "_dirType": "string",
+        "_value": "AttackByProjectile"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "12*x"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "1"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "9"
+    },
+    "iconRaw": {
+      "_dirType": "uol",
+      "_value": "icon"
+    },
+    "cooltime": {
+      "_dirType": "string",
+      "_value": "12"
+    }
+  },
+  "SkillTags": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "string",
+      "_value": "RLGame.Skill.Extra"
+    }
+  }
+}

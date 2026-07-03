@@ -1,0 +1,181 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[怪物收藏品]來吧，怪物！"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "楓之谷世界知名的怪物收集家休菲凱曼有話想說。\\r\\n\\r\\n#b每個伺服器只有1個角色可完成任務。#k\\r\\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "請嘗試完成77個以上的怪物收藏品。\\r\\n\\r\\n#b每個伺服器只有1個角色可完成任務。#k\\r\\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "收集77個怪物收藏品，獲得禮物#t3017017#。\\r\\n\\r\\n#b每個伺服器只有1個角色可完成任務。#k\\r\\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#i3017017#  #t3017017#"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#怪物收集數量#R18821ExcountRef10785# / 77\\r\\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9071000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201601140000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201601140000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9071000"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "18821"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q10785e"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "77"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "怪物收集數量"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "count"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好阿～我是收集怪物的專家休菲凱曼，呵呵呵。\\r不確定你知不知道，我在收集怪物的部分可說是相當卓越呢。我可是繞行了楓之谷世界，用收集來的特殊怪物來開怪物公園呢．．．\\r\\n"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "恩恩，那是什麼表情呢？總之… #h0#，你對收集怪物有沒有興趣呢？身為收集初學者的你，想說要不要給點禮物阿，呵呵呵。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "很好很好，可是，也不能直接給你。先去#b怪物收藏上登錄 77隻的怪物#k吧。那麼我就會給你世上哪裡無法取得的特殊設計的椅子禮物吧。\\r\\n那麼展現出你的根性吧，呵呵呵。\\r\\n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "恩恩，看來對收集怪物沒有什麼興趣呢。\\r\\n若對收集怪物有興趣的話，請麻煩再跟我對話吧。可是，不知道我的心情會哪時後變的關係，要就快點喔。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒完成 #b怪物收藏 77個#k嗎？要成為像我這樣收集的專家的話，需要忍耐和毅力！和探險精神呢。"
+          }
+        }
+      }
+    }
+  }
+}

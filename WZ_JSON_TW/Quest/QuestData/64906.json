@@ -1,0 +1,199 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[我的小屋] 藝術品運輸作戰"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|3"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "想把裝飾品移至凱妮司施工現場的米蘭達，看來需要他人的協助無法單靠自己的力量進行。\r\n\r\n#e - 可執行期間 - #n\r\n#DL|myHome_NewYear|start|2#\r\n～ #DL|myHome_NewYear|end2|2#"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "必須將裝有米蘭達裝飾品的車輪，安全護送至凱妮司的施工現場，雖然怪物並不危險，但萬一裝飾品碎掉可就不好了！\r\n\r\n#e - 可執行期間 - #n\r\n#DL|myHome_NewYear|start|2#\r\n～ #DL|myHome_NewYear|end2|2#"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "平安將米蘭達親手做的裝飾品送至凱妮司的施工現場，凱妮司非常感謝大家的協助，因此提議新年慶典早晨在新蓋的林中庭園度過。\r\n\r\n#e - 可執行期間 - #n\r\n#DL|myHome_NewYear|start|2#\r\n～ #DL|myHome_NewYear|end2|2#"
+    },
+    "demand": {
+      "_dirType": "sub",
+      "explain": {
+        "_dirType": "sub"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400924"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "64905"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q64906s"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "#DL|myHome_NewYear|start#"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "#DL|myHome_NewYear|end#"
+      },
+      "worldList": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "0"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "3"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "4"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "6"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "30"
+        },
+        "7": {
+          "_dirType": "int",
+          "_value": "45"
+        },
+        "8": {
+          "_dirType": "int",
+          "_value": "49"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9400924"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "64906"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "護衛米蘭達至施工地點"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "finish"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "裝飾品碎裂的話可就不好了！"
+          }
+        }
+      }
+    }
+  }
+}

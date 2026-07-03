@@ -1,0 +1,193 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[伊甸提斯克慶典] 準備第9個慶典"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "disableAtStartTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "disableAtPerformTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "disableAtCompleteTab": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "disableAtNPC": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoAccept": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o9101025# #a5029741#\r\n"
+    },
+    "disableAtCompleteBalloon": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoCompleteAction": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9062962"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "101"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "202404012359"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "202404012359"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "202403140000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "202403140000"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q502974s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "502973"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9062962"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9101025"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1000"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "addPopupSay": {
+        "_dirType": "sub",
+        "message": {
+          "_dirType": "string",
+          "_value": "第#r9#k個#b慶典準備#k完成了。"
+        },
+        "npcID": {
+          "_dirType": "int",
+          "_value": "9062962"
+        },
+        "duration": {
+          "_dirType": "int",
+          "_value": "5000"
+        }
+      },
+      "setWSR": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "recordID": {
+            "_dirType": "int",
+            "_value": "372"
+          },
+          "key": {
+            "_dirType": "string",
+            "_value": "step"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "9"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  }
+}

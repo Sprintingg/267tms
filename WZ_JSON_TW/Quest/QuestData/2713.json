@@ -1,0 +1,233 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[弓箭手村] 綠菇菇 沙拉的料理食譜"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "明明夫人說這是自己新開發的沙拉料理食譜，把「綠菇菇沙拉」料理食譜給了勒沃。 趕快回到等著料理食譜的卡蜜拉那裡才好。\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "明明夫人說這是自己新開發的沙拉料理食譜，把「綠菇菇沙拉」料理食譜給了勒沃。 趕快回到等著料理食譜的卡蜜拉那裡，交給了明明夫人送的料理食譜。 卡蜜拉收到新的料理食譜後，兩眼發光地興奮著。\n"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4033060:# #t4033060:# #c4033060# / 1\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 500\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "25"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "500"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "卡蜜拉的料理百書"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012106"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2712"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1012108"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033060"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033060"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "正常"
+          },
+          "resignRemove": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "500"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033060"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "正常"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "好，在這裡。 這是我新開發的沙拉食譜。 請交給卡蜜拉。 這是利用綠菇菇做的爽口沙拉。 請交給卡蜜拉。\\r\\n"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你不是說是為了這個食譜來的嗎。 卡蜜拉一定很期待…\\r\\n"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "啊！ 你拿到明明夫人的食譜嗎？ 是什麼食譜呢？\\r\\n#L0##b好像是說綠菇菇的爽口沙拉食譜。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "沙拉！！ 沒錯。 為了健康需要多食用蔬菜。 啊！ 沒錯。 既然對健康有意的食物我要做好吃一點拿給瑪亞。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請把我新開發的沙拉食譜交給卡蜜拉。 這是利用綠菇菇做的爽口沙拉。 請交給卡蜜拉。\\r\\n"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "去找明明夫人的事情怎樣了呢？ 食譜呢？\\r\\n"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "她把食譜忘在這裡了。 你看。 這次請不要忘記。 卡蜜拉的個性很急現在可能經等的迫不及待了。\\r\\n"
+        }
+      }
+    }
+  }
+}

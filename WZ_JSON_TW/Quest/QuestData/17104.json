@@ -1,0 +1,206 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[水世界]幫我再擋一次。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "35"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o9390004# #a171041#\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽聽#p9390005##k新的委託吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p9390005##k說為擴充調查的範圍，委託擊退 #o9390004##k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "擊退了#o9390004##k。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "5000000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5000000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "終於可以放心進行調查了。這一切都是#b#h ##k的功勞。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "但是，為了更加進出這個地方，就得清理一下棲息在那邊的怪物。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "希望你能夠再辛苦一下，可以嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "謝謝你。從這裡稍微走遠一點就有棲息的 #r#o9390004##k 了。也把#r#o9390004##k擊倒 #r#e300#k隻#n左右吧。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "#r#o9390004##k既然是 #r#o9390003##k的變種所以更危險，還請你多加小心吧。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請再考慮看看。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "看來這次也輕易解決了呢。#r#o9390004##k大概是害怕的樣子，所以放棄成群結隊行動。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "現在這邊也可以著手進行調查了。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "可是那些怪物為什麼變得如此狂暴？本來就具有攻擊性，但是還不到這種程度..."
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "嗯… 可以待會再來和我說話嗎？"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "好像還不夠。是要#r300隻#k。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390005"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "200"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "17103"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390005"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9390004"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "300"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

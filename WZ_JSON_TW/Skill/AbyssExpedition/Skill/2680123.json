@@ -1,0 +1,187 @@
+{
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "37110000 해머 스매시"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "RWchoppingHammer"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      },
+      "summon": {
+        "_dirType": "sub"
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AEAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "37110000"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "summon": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "SummonZone"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "summonXpos": {
+          "_dirType": "int",
+          "_value": "-80"
+        },
+        "footholdInstallSummoned": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "duration": {
+          "_dirType": "int",
+          "_value": "5"
+        },
+        "fixedDir": {
+          "_dirType": "int",
+          "_value": "1"
+        }
+      },
+      "Zone": {
+        "_dirType": "int",
+        "_value": "2680123"
+      }
+    },
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": -245,
+          "_y": -200
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 145,
+          "_y": 0
+        },
+        "damage": {
+          "_dirType": "string",
+          "_value": "140+3*x"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "6"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "8"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "onlyOnce": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "37110000"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "20"
+    },
+    "footholdAffectedArea": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -245,
+      "_y": -200
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 145,
+      "_y": 0
+    },
+    "damage": {
+      "_dirType": "string",
+      "_value": "140+3*x"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "6"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "8"
+    },
+    "duration": {
+      "_dirType": "string",
+      "_value": "5"
+    },
+    "s": {
+      "_dirType": "string",
+      "_value": "8"
+    },
+    "damageZ": {
+      "_dirType": "string",
+      "_value": "150"
+    },
+    "attackCountZ": {
+      "_dirType": "string",
+      "_value": "2"
+    }
+  }
+}

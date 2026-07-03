@@ -1,0 +1,171 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1201000"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q36911s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "36910"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2113"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "2114"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002104"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q36911e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4037292"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[過去的英雄，狂狼勇士] 前往維多利亞島"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "6"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4037292:# #t4037292:# #c4037292# / 1\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "修煉還得繼續。直到打敗黑魔法師…現在該怎麼修煉呢？問問#b#p1201000##k吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1201000#說，光待在#m140000000#裡無法變得強大，建議去#b維多利亞島#k。去那裡修煉的同時，瞭解一下這個世界是怎麼運作的…而且剛好有個人可以幫忙，去#b#m104000004##k找一個叫#b情報商人#p1002104##k的人。\r\n\r\n\\r\\n\\r\\n要去#m104000000#的話，首先要乘船離開#m140000000#。走出村莊往右走，通過被雪覆蓋的平原，有企鵝的小港口。在這裡跟船員企鵝#b#p1200003##k對話可以搭乘船。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "情報商人#p1002104#原來是在#m140000000#等待英雄的人之一，是#p1201000#的遠親。可是由於數百年來沒有一個英雄回來，最後都離開村莊了。只剩下#p1201000#一個人，可能覺得良心不安，#p1002104#表示願意提供任何幫助。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還不前往#b維多利亞島的#m104000000##k嗎？從村莊的右邊一直走到#b港口#k搭船就可以了。第一次是免費的，不用擔心，過去就對了。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "恩？是不是為了買必要的情報而來的？但是這裡的規定是不向沒有介紹信的人販售情報…對不起。#b跟認識的人要一下介紹信吧#k。"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "什麼，信件丟了嗎？不帶信件去，是不會相信你是英雄的。既然要離開島的…重新寫封信給你，這次不要弄丟啦。"
+        }
+      }
+    }
+  }
+}

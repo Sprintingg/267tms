@@ -1,0 +1,142 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[比叡山] 異常的聯軍士兵 -壹-"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "比叡山調查 - 劍斗"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "95"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "幫哭泣的少年找到行李後，少年停止哭泣。趁這時問他關於聯軍士兵的事情吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了讓異常的聯軍士兵恢復原狀，擊退#o9450030#找出#i4034154:# #t4034154:#吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "擊退#o9450030:#，獲得了#i4034154:# #t4034154:# 。得知下令洗腦聯軍的元兇是濃姬。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4034154:# #t4034154:# #c4034154# / 1\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9130107"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "58928"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q58929s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "140"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201412310000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9130107"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034154"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q58929e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "…嗚…請不要走…幫幫我。"
+          }
+        }
+      }
+    }
+  }
+}

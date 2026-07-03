@@ -1,0 +1,239 @@
+{
+  "memo": {
+    "_dirType": "string",
+    "_value": "1221009 블래스트"
+  },
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "blastNew"
+          }
+        }
+      },
+      "Slot1": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "blastNew2"
+          }
+        }
+      },
+      "Slot2": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "blastNew3"
+          }
+        }
+      },
+      "Slot3": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "blastNew4"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect0": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "10"
+            }
+          }
+        }
+      },
+      "effect1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "z": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-2"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2RLAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "1221009"
+          }
+        }
+      },
+      "selfBuff": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "50+30*x"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "3"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "10"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -320,
+          "_y": -160
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 90,
+          "_y": 40
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "50"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "useZ": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "z": {
+          "_dirType": "int",
+          "_value": "2"
+        },
+        "randomHitOrigin": {
+          "_dirType": "int",
+          "_value": "25"
+        },
+        "showHit": {
+          "_dirType": "int",
+          "_value": "5"
+        }
+      },
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "hitSoundPath": {
+        "_dirType": "string",
+        "_value": "Sound/Skill.img/1221009 /Hit"
+      }
+    },
+    "selfBuff": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "SelfBuff"
+      },
+      "selfBuffAction": {
+        "_dirType": "string",
+        "_value": "Apply"
+      },
+      "selfBuffID": {
+        "_dirType": "int",
+        "_value": "1160"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "5"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "10"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "3"
+    },
+    "iconRaw": {
+      "_dirType": "uol",
+      "_value": "icon"
+    },
+    "cooltime": {
+      "_dirType": "string",
+      "_value": "10"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -320,
+      "_y": -160
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 90,
+      "_y": 40
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "50+30*x"
+    },
+    "defenseRate": {
+      "_dirType": "string",
+      "_value": "30"
+    },
+    "time": {
+      "_dirType": "string",
+      "_value": "2"
+    }
+  },
+  "SkillTags": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "string",
+      "_value": "RLGame.Skill.Extra"
+    }
+  }
+}

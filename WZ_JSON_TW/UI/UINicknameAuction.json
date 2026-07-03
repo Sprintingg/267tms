@@ -1,0 +1,3751 @@
+{
+  "main": {
+    "_dirType": "sub",
+    "world": {
+      "_dirType": "sub"
+    },
+    "check:exactWord": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 247,
+        "_y": 50
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 261,
+        "_y": 63
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "請先搜尋正確一致的關鍵字\\n區分英文大小寫後進行搜尋"
+      },
+      "id": {
+        "_dirType": "int",
+        "_value": "2002"
+      },
+      "acceptFocus": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "type": {
+        "_dirType": "int",
+        "_value": "5"
+      }
+    },
+    "button:hotSearch": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "id": {
+        "_dirType": "int",
+        "_value": "2003"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "可搜尋韓文兩個字的角色名字"
+      }
+    },
+    "button:filter": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "id": {
+        "_dirType": "int",
+        "_value": "2004"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "使用篩選設定後，即可搜尋到角色名字。"
+      }
+    },
+    "button:Exit": {
+      "_dirType": "sub",
+      "id": {
+        "_dirType": "int",
+        "_value": "1000"
+      },
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "新暱稱拍賣結束"
+      }
+    },
+    "btCoolTime": {
+      "_dirType": "sub"
+    },
+    "button:Search": {
+      "_dirType": "sub",
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "normal": {
+        "_dirType": "sub"
+      },
+      "id": {
+        "_dirType": "int",
+        "_value": "3000"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "搜尋已登錄販賣的名字。"
+      }
+    },
+    "button:MarketPrice": {
+      "_dirType": "sub",
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "normal": {
+        "_dirType": "sub"
+      },
+      "id": {
+        "_dirType": "int",
+        "_value": "3001"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "標示成交的拍賣中高成交價的名字目錄。"
+      }
+    },
+    "button:Mark": {
+      "_dirType": "sub",
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "normal": {
+        "_dirType": "sub"
+      },
+      "id": {
+        "_dirType": "int",
+        "_value": "3002"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "確認儲存的名字目錄。"
+      }
+    },
+    "button:myAuction": {
+      "_dirType": "sub",
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "normal": {
+        "_dirType": "sub"
+      },
+      "id": {
+        "_dirType": "int",
+        "_value": "3003"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "確認完成販賣的名字目錄與狀態或領取名字。"
+      }
+    },
+    "vector:world": {
+      "_dirType": "vector",
+      "_x": 775,
+      "_y": 26
+    },
+    "vector:level": {
+      "_dirType": "vector",
+      "_x": 812,
+      "_y": 25
+    },
+    "vector:job": {
+      "_dirType": "vector",
+      "_x": 841,
+      "_y": 25
+    },
+    "vector:charName": {
+      "_dirType": "vector",
+      "_x": 852,
+      "_y": 45
+    },
+    "vector:maplePoint": {
+      "_dirType": "vector",
+      "_x": 742,
+      "_y": 57
+    },
+    "vector:NumOfNameSlot": {
+      "_dirType": "vector",
+      "_x": 723,
+      "_y": 37
+    },
+    "waiting": {
+      "_dirType": "sub"
+    },
+    "vector:MaxNameSlot": {
+      "_dirType": "vector",
+      "_x": 749,
+      "_y": 37
+    }
+  },
+  "tab_Search": {
+    "_dirType": "sub",
+    "vector:date": {
+      "_dirType": "vector",
+      "_x": 30,
+      "_y": 35
+    },
+    "result_list": {
+      "_dirType": "sub",
+      "vector:pageNum": {
+        "_dirType": "vector",
+        "_x": 509,
+        "_y": 132
+      },
+      "BidList": {
+        "_dirType": "sub",
+        "icon": {
+          "_dirType": "sub"
+        },
+        "pos": {
+          "_dirType": "sub",
+          "itemName": {
+            "_dirType": "vector",
+            "_x": 100,
+            "_y": 169
+          },
+          "price": {
+            "_dirType": "vector",
+            "_x": 107,
+            "_y": 203
+          },
+          "remainTime": {
+            "_dirType": "vector",
+            "_x": 107,
+            "_y": 222
+          }
+        }
+      },
+      "button:Front": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "4000"
+        },
+        "ToolTip": {
+          "_dirType": "string",
+          "_value": "移動到清單的第一頁"
+        }
+      },
+      "button:Forward": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "4001"
+        },
+        "ToolTip": {
+          "_dirType": "string",
+          "_value": "移動到目錄的上一頁"
+        }
+      },
+      "button:Backward": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "4002"
+        },
+        "ToolTip": {
+          "_dirType": "string",
+          "_value": "移動到目錄的下一頁"
+        }
+      },
+      "button:Back": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "4003"
+        },
+        "ToolTip": {
+          "_dirType": "string",
+          "_value": "移動到目錄的最後一頁"
+        }
+      },
+      "combo:sort": {
+        "_dirType": "sub",
+        "contents": {
+          "_dirType": "sub",
+          "sort": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "sub",
+              "string": {
+                "_dirType": "string",
+                "_value": "以近期登錄日期排序"
+              }
+            },
+            "1": {
+              "_dirType": "sub",
+              "string": {
+                "_dirType": "string",
+                "_value": "以較快結束排序"
+              }
+            },
+            "2": {
+              "_dirType": "sub",
+              "string": {
+                "_dirType": "string",
+                "_value": "以較慢結束排序"
+              }
+            },
+            "3": {
+              "_dirType": "sub",
+              "string": {
+                "_dirType": "string",
+                "_value": "以較低投標價排序"
+              }
+            },
+            "4": {
+              "_dirType": "sub",
+              "string": {
+                "_dirType": "string",
+                "_value": "以較高投標價排序"
+              }
+            },
+            "5": {
+              "_dirType": "sub",
+              "string": {
+                "_dirType": "string",
+                "_value": "以角色名字排序"
+              }
+            }
+          }
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": 877,
+          "_y": 128
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 1003,
+          "_y": 152
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "4005"
+        },
+        "textLeft": {
+          "_dirType": "int",
+          "_value": "10"
+        },
+        "textTop": {
+          "_dirType": "int",
+          "_value": "5"
+        },
+        "backColor": {
+          "_dirType": "string",
+          "_value": "ff444444"
+        },
+        "backFocusedColor": {
+          "_dirType": "string",
+          "_value": "ff222222"
+        },
+        "boxPosX": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "boxPosY": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "boxWidth": {
+          "_dirType": "int",
+          "_value": "108"
+        },
+        "boxTestLeftOffset": {
+          "_dirType": "int",
+          "_value": "3"
+        },
+        "fType": {
+          "_dirType": "int",
+          "_value": "38"
+        },
+        "fTypeSelect": {
+          "_dirType": "int",
+          "_value": "42"
+        },
+        "fTypeSelectFouced": {
+          "_dirType": "int",
+          "_value": "38"
+        },
+        "sButtonUOL": {
+          "_dirType": "string",
+          "_value": "UI/Basic.img/ComboBox18"
+        },
+        "fontColor": {
+          "_dirType": "string",
+          "_value": "ffaaaaaa"
+        }
+      },
+      "lt": {
+        "_dirType": "vector",
+        "_x": 19,
+        "_y": 184
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 1003,
+        "_y": 679
+      }
+    },
+    "searching": {
+      "_dirType": "sub"
+    },
+    "button:AllList": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "id": {
+        "_dirType": "int",
+        "_value": "4006"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "更新了新名字拍賣中，販賣中的角色名字目錄。"
+      }
+    }
+  },
+  "tab_MarketPrice": {
+    "_dirType": "sub",
+    "marketprice_list": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": 19,
+        "_y": 184
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 1003,
+        "_y": 679
+      },
+      "sort": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "5000"
+          },
+          "lt": {
+            "_dirType": "vector",
+            "_x": 104,
+            "_y": 160
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 180,
+            "_y": 176
+          },
+          "tooltip": {
+            "_dirType": "sub",
+            "text": {
+              "_dirType": "string",
+              "_value": "已得標角色名字的目錄\\n點擊右側箭頭後可進行排序。"
+            },
+            "delay": {
+              "_dirType": "int",
+              "_value": "100"
+            }
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "5001"
+          },
+          "lt": {
+            "_dirType": "vector",
+            "_x": 356,
+            "_y": 160
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 414,
+            "_y": 176
+          },
+          "tooltip": {
+            "_dirType": "sub",
+            "text": {
+              "_dirType": "string",
+              "_value": "已得標角色名字的價\\n點擊右側箭頭後可進行排序。"
+            },
+            "delay": {
+              "_dirType": "int",
+              "_value": "100"
+            }
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "5002"
+          },
+          "lt": {
+            "_dirType": "vector",
+            "_x": 596,
+            "_y": 160
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 656,
+            "_y": 176
+          },
+          "tooltip": {
+            "_dirType": "sub",
+            "text": {
+              "_dirType": "string",
+              "_value": "已得標角色名字的總投標人數\\n點擊右側箭頭後可進行排序。"
+            },
+            "delay": {
+              "_dirType": "int",
+              "_value": "100"
+            }
+          }
+        },
+        "3": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "5005"
+          },
+          "lt": {
+            "_dirType": "vector",
+            "_x": 811,
+            "_y": 160
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 878,
+            "_y": 176
+          },
+          "tooltip": {
+            "_dirType": "sub",
+            "text": {
+              "_dirType": "string",
+              "_value": "得標時間\\n點擊右側箭頭後可進行排序。"
+            },
+            "delay": {
+              "_dirType": "int",
+              "_value": "100"
+            }
+          }
+        }
+      },
+      "bars": {
+        "_dirType": "sub",
+        "listCount": {
+          "_dirType": "int",
+          "_value": "9"
+        },
+        "pos": {
+          "_dirType": "sub",
+          "price": {
+            "_dirType": "vector",
+            "_x": 381,
+            "_y": 203
+          },
+          "bidCount": {
+            "_dirType": "vector",
+            "_x": 622,
+            "_y": 203
+          },
+          "endDate": {
+            "_dirType": "vector",
+            "_x": 844,
+            "_y": 203
+          },
+          "itemName": {
+            "_dirType": "vector",
+            "_x": 141,
+            "_y": 203
+          }
+        }
+      },
+      "button:Front": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "4000"
+        },
+        "ToolTip": {
+          "_dirType": "string",
+          "_value": "移動到清單的第一頁"
+        }
+      },
+      "button:Forward": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "4001"
+        },
+        "ToolTip": {
+          "_dirType": "string",
+          "_value": "移動到目錄的上一頁"
+        }
+      },
+      "button:Backward": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "4002"
+        },
+        "ToolTip": {
+          "_dirType": "string",
+          "_value": "移動到目錄的下一頁"
+        }
+      },
+      "button:Back": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "4003"
+        },
+        "ToolTip": {
+          "_dirType": "string",
+          "_value": "移動到目錄的最後一頁"
+        }
+      },
+      "tooltip:TTitemName": {
+        "_dirType": "sub",
+        "text": {
+          "_dirType": "string",
+          "_value": "已得標角色名字目錄\\n點擊右側箭頭後可進行排序。"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": 104,
+          "_y": 160
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 180,
+          "_y": 176
+        },
+        "delay": {
+          "_dirType": "int",
+          "_value": "100"
+        }
+      },
+      "tooltip:TTbuyPrice": {
+        "_dirType": "sub",
+        "text": {
+          "_dirType": "string",
+          "_value": "已得標角色名字的價\\n點擊右側箭頭後可進行排序。"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": 356,
+          "_y": 160
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 414,
+          "_y": 176
+        },
+        "delay": {
+          "_dirType": "int",
+          "_value": "100"
+        }
+      },
+      "tooltip:TTbidCount": {
+        "_dirType": "sub",
+        "text": {
+          "_dirType": "string",
+          "_value": "已得標角色名字的總投標人數\\n點擊右側箭頭後可進行排序。"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": 596,
+          "_y": 160
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 656,
+          "_y": 176
+        },
+        "delay": {
+          "_dirType": "int",
+          "_value": "100"
+        }
+      },
+      "tooltip:TTtimeRemain": {
+        "_dirType": "sub",
+        "text": {
+          "_dirType": "string",
+          "_value": "得標時間\\n點擊右側箭頭後可進行排序。"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": 811,
+          "_y": 160
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 878,
+          "_y": 176
+        },
+        "delay": {
+          "_dirType": "int",
+          "_value": "100"
+        }
+      },
+      "vector:pageNum": {
+        "_dirType": "vector",
+        "_x": 509,
+        "_y": 132
+      }
+    }
+  },
+  "tab_Mark": {
+    "_dirType": "sub",
+    "mark_list": {
+      "_dirType": "sub",
+      "sort": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "5000"
+          },
+          "lt": {
+            "_dirType": "vector",
+            "_x": 111,
+            "_y": 160
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 182,
+            "_y": 176
+          },
+          "tooltip": {
+            "_dirType": "sub",
+            "text": {
+              "_dirType": "string",
+              "_value": "我的最愛角色名字目錄\\n點擊右側箭頭後可進行排序。"
+            },
+            "delay": {
+              "_dirType": "int",
+              "_value": "100"
+            }
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "5006"
+          },
+          "lt": {
+            "_dirType": "vector",
+            "_x": 260,
+            "_y": 160
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 301,
+            "_y": 176
+          },
+          "tooltip": {
+            "_dirType": "sub",
+            "text": {
+              "_dirType": "string",
+              "_value": "我的最愛角色名字的拍賣狀態\\n點擊右側箭頭後可進行排序。"
+            },
+            "delay": {
+              "_dirType": "int",
+              "_value": "100"
+            }
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "5001"
+          },
+          "lt": {
+            "_dirType": "vector",
+            "_x": 367,
+            "_y": 160
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 462,
+            "_y": 176
+          },
+          "tooltip": {
+            "_dirType": "sub",
+            "text": {
+              "_dirType": "string",
+              "_value": "我的最愛角色名字的現在最高投標價\\n點擊右側箭頭後可進行排序。"
+            },
+            "delay": {
+              "_dirType": "int",
+              "_value": "100"
+            }
+          }
+        },
+        "3": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "5002"
+          },
+          "lt": {
+            "_dirType": "vector",
+            "_x": 530,
+            "_y": 160
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 589,
+            "_y": 176
+          },
+          "tooltip": {
+            "_dirType": "sub",
+            "text": {
+              "_dirType": "string",
+              "_value": "我的最愛角色名字的現在投標人數\\n點擊右側箭頭後可進行排序。"
+            },
+            "delay": {
+              "_dirType": "int",
+              "_value": "100"
+            }
+          }
+        },
+        "4": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "5004"
+          },
+          "lt": {
+            "_dirType": "vector",
+            "_x": 664,
+            "_y": 160
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 728,
+            "_y": 176
+          },
+          "tooltip": {
+            "_dirType": "sub",
+            "text": {
+              "_dirType": "string",
+              "_value": "我的最愛角色名字剩餘的拍賣時間\\n點擊右側箭頭後可進行排序。"
+            },
+            "delay": {
+              "_dirType": "int",
+              "_value": "100"
+            }
+          }
+        },
+        "5": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "5005"
+          },
+          "lt": {
+            "_dirType": "vector",
+            "_x": 814,
+            "_y": 160
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 879,
+            "_y": 176
+          },
+          "tooltip": {
+            "_dirType": "sub",
+            "text": {
+              "_dirType": "string",
+              "_value": "我的最愛角色名字的交易日期\\n點擊右側箭頭後可進行排序。"
+            },
+            "delay": {
+              "_dirType": "int",
+              "_value": "100"
+            }
+          }
+        }
+      },
+      "bars": {
+        "_dirType": "sub",
+        "listCount": {
+          "_dirType": "int",
+          "_value": "9"
+        },
+        "etc": {
+          "_dirType": "sub",
+          "btDelete": {
+            "_dirType": "sub",
+            "normal": {
+              "_dirType": "sub"
+            },
+            "pressed": {
+              "_dirType": "sub"
+            },
+            "disabled": {
+              "_dirType": "sub"
+            },
+            "mouseOver": {
+              "_dirType": "sub"
+            }
+          }
+        },
+        "pos": {
+          "_dirType": "sub",
+          "itemName": {
+            "_dirType": "vector",
+            "_x": 139,
+            "_y": 203
+          },
+          "state": {
+            "_dirType": "vector",
+            "_x": 275,
+            "_y": 203
+          },
+          "price": {
+            "_dirType": "vector",
+            "_x": 411,
+            "_y": 203
+          },
+          "bidCount": {
+            "_dirType": "vector",
+            "_x": 552,
+            "_y": 203
+          },
+          "remainTime": {
+            "_dirType": "vector",
+            "_x": 694,
+            "_y": 203
+          },
+          "endDate": {
+            "_dirType": "vector",
+            "_x": 844,
+            "_y": 203
+          },
+          "btDelete": {
+            "_dirType": "vector",
+            "_x": 963,
+            "_y": 199
+          }
+        }
+      },
+      "button:Front": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "4000"
+        },
+        "ToolTip": {
+          "_dirType": "string",
+          "_value": "移動到清單的第一頁"
+        }
+      },
+      "button:Forward": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "4001"
+        },
+        "ToolTip": {
+          "_dirType": "string",
+          "_value": "移動到目錄的上一頁"
+        }
+      },
+      "button:Backward": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "4002"
+        },
+        "ToolTip": {
+          "_dirType": "string",
+          "_value": "移動到目錄的下一頁"
+        }
+      },
+      "button:Back": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "4003"
+        },
+        "ToolTip": {
+          "_dirType": "string",
+          "_value": "移動到目錄的最後一頁"
+        }
+      },
+      "tooltip:TTitemName": {
+        "_dirType": "sub",
+        "text": {
+          "_dirType": "string",
+          "_value": "我的最愛角色名字目錄\\n點擊右側箭頭後可進行排序。"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": 111,
+          "_y": 160
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 182,
+          "_y": 176
+        },
+        "delay": {
+          "_dirType": "int",
+          "_value": "100"
+        }
+      },
+      "tooltip:TTauctionStatus": {
+        "_dirType": "sub",
+        "text": {
+          "_dirType": "string",
+          "_value": "我的最愛角色名字的拍賣狀態\\n點擊右側箭頭後可進行排序。"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": 260,
+          "_y": 160
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 301,
+          "_y": 176
+        },
+        "delay": {
+          "_dirType": "int",
+          "_value": "100"
+        }
+      },
+      "tooltip:TTbuyPrice": {
+        "_dirType": "sub",
+        "text": {
+          "_dirType": "string",
+          "_value": "我的最愛角色名字的現在最高投標價\\n點擊右側箭頭後可進行排序。"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": 379,
+          "_y": 160
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 450,
+          "_y": 176
+        },
+        "delay": {
+          "_dirType": "int",
+          "_value": "100"
+        }
+      },
+      "tooltip:TTbidCount": {
+        "_dirType": "sub",
+        "text": {
+          "_dirType": "string",
+          "_value": "我的最愛角色名字的現在投標人數\\n點擊右側箭頭後可進行排序。"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": 530,
+          "_y": 160
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 580,
+          "_y": 176
+        },
+        "delay": {
+          "_dirType": "int",
+          "_value": "100"
+        }
+      },
+      "tooltip:TTtimeRemain": {
+        "_dirType": "sub",
+        "text": {
+          "_dirType": "string",
+          "_value": "我的最愛角色名字剩餘的拍賣時間\\n點擊右側箭頭後可進行排序。"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": 664,
+          "_y": 160
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 728,
+          "_y": 176
+        },
+        "delay": {
+          "_dirType": "int",
+          "_value": "100"
+        }
+      },
+      "tooltip:TTtimeEnd": {
+        "_dirType": "sub",
+        "text": {
+          "_dirType": "string",
+          "_value": "我的最愛角色名字的交易日期\\n點擊右側箭頭後可進行排序。"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": 814,
+          "_y": 160
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 879,
+          "_y": 176
+        },
+        "delay": {
+          "_dirType": "int",
+          "_value": "100"
+        }
+      }
+    },
+    "vector:pageNum": {
+      "_dirType": "vector",
+      "_x": 509,
+      "_y": 132
+    }
+  },
+  "tab_myAuction": {
+    "_dirType": "sub",
+    "button:SellList": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "id": {
+        "_dirType": "int",
+        "_value": "10000"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "在目錄中顯示販售中的交易"
+      }
+    },
+    "button:BidList": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "id": {
+        "_dirType": "int",
+        "_value": "10001"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "顯示投標中的交易內容"
+      }
+    },
+    "button:Complete": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "id": {
+        "_dirType": "int",
+        "_value": "10002"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "顯示拍賣結束內容"
+      }
+    },
+    "tab_Sell": {
+      "_dirType": "sub",
+      "SellList": {
+        "_dirType": "sub",
+        "sort": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "sub",
+            "id": {
+              "_dirType": "int",
+              "_value": "5000"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": 110,
+              "_y": 160
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 181,
+              "_y": 176
+            },
+            "tooltip": {
+              "_dirType": "sub",
+              "text": {
+                "_dirType": "string",
+                "_value": "販賣中的角色名字目錄\\n點擊右側箭頭後可進行排序。"
+              },
+              "delay": {
+                "_dirType": "int",
+                "_value": "100"
+              }
+            }
+          },
+          "1": {
+            "_dirType": "sub",
+            "id": {
+              "_dirType": "int",
+              "_value": "5007"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": 288,
+              "_y": 160
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 367,
+              "_y": 176
+            },
+            "tooltip": {
+              "_dirType": "sub",
+              "text": {
+                "_dirType": "string",
+                "_value": "登錄販賣時，設定的角色名字最低投標價\\n點擊右側箭頭後可進行排序。"
+              },
+              "delay": {
+                "_dirType": "int",
+                "_value": "100"
+              }
+            }
+          },
+          "2": {
+            "_dirType": "sub",
+            "id": {
+              "_dirType": "int",
+              "_value": "5001"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": 465,
+              "_y": 156
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 560,
+              "_y": 176
+            },
+            "tooltip": {
+              "_dirType": "sub",
+              "text": {
+                "_dirType": "string",
+                "_value": "登錄販賣時，設定的角色名字最高投標價\\n點擊右側箭頭後可進行排序。"
+              },
+              "delay": {
+                "_dirType": "int",
+                "_value": "100"
+              }
+            }
+          },
+          "3": {
+            "_dirType": "sub",
+            "id": {
+              "_dirType": "int",
+              "_value": "5002"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": 649,
+              "_y": 158
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 714,
+              "_y": 176
+            },
+            "tooltip": {
+              "_dirType": "sub",
+              "text": {
+                "_dirType": "string",
+                "_value": "總投標次數\\n點擊右側箭頭後可進行排序。"
+              },
+              "delay": {
+                "_dirType": "int",
+                "_value": "100"
+              }
+            }
+          },
+          "4": {
+            "_dirType": "sub",
+            "id": {
+              "_dirType": "int",
+              "_value": "5005"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": 824,
+              "_y": 158
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 888,
+              "_y": 176
+            },
+            "tooltip": {
+              "_dirType": "sub",
+              "text": {
+                "_dirType": "string",
+                "_value": "拍賣結束剩餘時間\\n點擊右側箭頭後可進行排序。"
+              },
+              "delay": {
+                "_dirType": "int",
+                "_value": "100"
+              }
+            }
+          }
+        },
+        "bars": {
+          "_dirType": "sub",
+          "listCount": {
+            "_dirType": "int",
+            "_value": "9"
+          },
+          "pos": {
+            "_dirType": "sub",
+            "itemName": {
+              "_dirType": "vector",
+              "_x": 140,
+              "_y": 203
+            },
+            "bid": {
+              "_dirType": "vector",
+              "_x": 319,
+              "_y": 203
+            },
+            "highestBid": {
+              "_dirType": "vector",
+              "_x": 509,
+              "_y": 203
+            },
+            "bidCount": {
+              "_dirType": "vector",
+              "_x": 674,
+              "_y": 203
+            },
+            "remainTime": {
+              "_dirType": "vector",
+              "_x": 852,
+              "_y": 203
+            }
+          }
+        },
+        "tooltip:TTitemName": {
+          "_dirType": "sub",
+          "text": {
+            "_dirType": "string",
+            "_value": "販賣中的角色名字目錄\\n點擊右側箭頭後可進行排序。"
+          },
+          "lt": {
+            "_dirType": "vector",
+            "_x": 110,
+            "_y": 160
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 181,
+            "_y": 176
+          },
+          "delay": {
+            "_dirType": "int",
+            "_value": "100"
+          }
+        },
+        "tooltip:TTstartBid": {
+          "_dirType": "sub",
+          "text": {
+            "_dirType": "string",
+            "_value": "販賣中角色名字的投標起價\\n點擊右側箭頭後可進行排序。"
+          },
+          "lt": {
+            "_dirType": "vector",
+            "_x": 288,
+            "_y": 160
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 362,
+            "_y": 176
+          },
+          "delay": {
+            "_dirType": "int",
+            "_value": "100"
+          }
+        },
+        "tooltip:TThighestBid": {
+          "_dirType": "sub",
+          "text": {
+            "_dirType": "string",
+            "_value": "登錄販賣時，設定的角色名字最高投標價\\n點擊右側箭頭後可進行排序。"
+          },
+          "lt": {
+            "_dirType": "vector",
+            "_x": 465,
+            "_y": 156
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 561,
+            "_y": 176
+          },
+          "delay": {
+            "_dirType": "int",
+            "_value": "100"
+          }
+        },
+        "tooltip:TTbidCount": {
+          "_dirType": "sub",
+          "text": {
+            "_dirType": "string",
+            "_value": "總投標次數\\n點擊右側箭頭後可進行排序。"
+          },
+          "lt": {
+            "_dirType": "vector",
+            "_x": 649,
+            "_y": 158
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 703,
+            "_y": 176
+          },
+          "delay": {
+            "_dirType": "int",
+            "_value": "100"
+          }
+        },
+        "tooltip:TTremainTime": {
+          "_dirType": "sub",
+          "text": {
+            "_dirType": "string",
+            "_value": "拍賣結束剩餘時間\\n點擊右側箭頭後可進行排序。"
+          },
+          "lt": {
+            "_dirType": "vector",
+            "_x": 824,
+            "_y": 158
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 888,
+            "_y": 176
+          },
+          "delay": {
+            "_dirType": "int",
+            "_value": "100"
+          }
+        }
+      },
+      "vector:date": {
+        "_dirType": "vector",
+        "_x": 490,
+        "_y": 20
+      },
+      "vector:guideSell": {
+        "_dirType": "vector",
+        "_x": 0,
+        "_y": 0
+      }
+    },
+    "tab_Bid": {
+      "_dirType": "sub",
+      "BidList": {
+        "_dirType": "sub",
+        "sort": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "sub",
+            "id": {
+              "_dirType": "int",
+              "_value": "5000"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": 110,
+              "_y": 160
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 181,
+              "_y": 176
+            },
+            "tooltip": {
+              "_dirType": "sub",
+              "text": {
+                "_dirType": "string",
+                "_value": "投標中角色名字目錄\\n點擊右側箭頭後可進行排序。"
+              },
+              "delay": {
+                "_dirType": "int",
+                "_value": "100"
+              }
+            }
+          },
+          "1": {
+            "_dirType": "sub",
+            "id": {
+              "_dirType": "int",
+              "_value": "5001"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": 269,
+              "_y": 160
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 362,
+              "_y": 176
+            },
+            "tooltip": {
+              "_dirType": "sub",
+              "text": {
+                "_dirType": "string",
+                "_value": "投標中角色名字的現在最高投標價\\n點擊右側箭頭後可進行排序。"
+              },
+              "delay": {
+                "_dirType": "int",
+                "_value": "100"
+              }
+            }
+          },
+          "2": {
+            "_dirType": "sub",
+            "id": {
+              "_dirType": "int",
+              "_value": "5008"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": 436,
+              "_y": 160
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 509,
+              "_y": 176
+            },
+            "tooltip": {
+              "_dirType": "sub",
+              "text": {
+                "_dirType": "string",
+                "_value": "我的投標價\\n點擊右側箭頭後可進行排序。"
+              },
+              "delay": {
+                "_dirType": "int",
+                "_value": "100"
+              }
+            }
+          },
+          "3": {
+            "_dirType": "sub",
+            "id": {
+              "_dirType": "int",
+              "_value": "5002"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": 570,
+              "_y": 160
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 627,
+              "_y": 176
+            },
+            "tooltip": {
+              "_dirType": "sub",
+              "text": {
+                "_dirType": "string",
+                "_value": "參加此項角色名字拍賣的投標人數\\n點擊右側箭頭後可進行排序。"
+              },
+              "delay": {
+                "_dirType": "int",
+                "_value": "100"
+              }
+            }
+          },
+          "4": {
+            "_dirType": "sub",
+            "id": {
+              "_dirType": "int",
+              "_value": "5004"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": 684,
+              "_y": 160
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 748,
+              "_y": 176
+            },
+            "tooltip": {
+              "_dirType": "sub",
+              "text": {
+                "_dirType": "string",
+                "_value": "拍賣結束剩餘時間\\n點擊右側箭頭後可進行排序。"
+              },
+              "delay": {
+                "_dirType": "int",
+                "_value": "100"
+              }
+            }
+          }
+        },
+        "bars": {
+          "_dirType": "sub",
+          "listCount": {
+            "_dirType": "int",
+            "_value": "9"
+          },
+          "pos": {
+            "_dirType": "sub",
+            "itemName": {
+              "_dirType": "vector",
+              "_x": 140,
+              "_y": 203
+            },
+            "highestBid": {
+              "_dirType": "vector",
+              "_x": 308,
+              "_y": 204
+            },
+            "myPrice": {
+              "_dirType": "vector",
+              "_x": 468,
+              "_y": 204
+            },
+            "bidCount": {
+              "_dirType": "vector",
+              "_x": 595,
+              "_y": 203
+            },
+            "remainTime": {
+              "_dirType": "vector",
+              "_x": 714,
+              "_y": 203
+            },
+            "return": {
+              "_dirType": "vector",
+              "_x": 908,
+              "_y": 199
+            },
+            "rebidding": {
+              "_dirType": "vector",
+              "_x": 838,
+              "_y": 199
+            },
+            "highestBidder": {
+              "_dirType": "vector",
+              "_x": 909,
+              "_y": 203
+            }
+          },
+          "etc": {
+            "_dirType": "sub",
+            "btReturn": {
+              "_dirType": "sub",
+              "normal": {
+                "_dirType": "sub"
+              },
+              "pressed": {
+                "_dirType": "sub"
+              },
+              "disabled": {
+                "_dirType": "sub"
+              },
+              "mouseOver": {
+                "_dirType": "sub"
+              }
+            },
+            "btRebidding": {
+              "_dirType": "sub",
+              "normal": {
+                "_dirType": "sub"
+              },
+              "pressed": {
+                "_dirType": "sub"
+              },
+              "disabled": {
+                "_dirType": "sub"
+              },
+              "mouseOver": {
+                "_dirType": "sub"
+              }
+            }
+          }
+        },
+        "tooltip:TTmyPrice": {
+          "_dirType": "sub",
+          "text": {
+            "_dirType": "string",
+            "_value": "我的投標價\\n點擊右側箭頭後可進行排序。"
+          },
+          "lt": {
+            "_dirType": "vector",
+            "_x": 436,
+            "_y": 160
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 509,
+            "_y": 176
+          },
+          "delay": {
+            "_dirType": "int",
+            "_value": "100"
+          }
+        },
+        "tooltip:TTbidCount": {
+          "_dirType": "sub",
+          "text": {
+            "_dirType": "string",
+            "_value": "參加此項角色名字拍賣的投標人數\\n點擊右側箭頭後可進行排序。"
+          },
+          "lt": {
+            "_dirType": "vector",
+            "_x": 570,
+            "_y": 160
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 624,
+            "_y": 176
+          },
+          "delay": {
+            "_dirType": "int",
+            "_value": "100"
+          }
+        },
+        "tooltip:TTremainTime": {
+          "_dirType": "sub",
+          "text": {
+            "_dirType": "string",
+            "_value": "拍賣結束剩餘時間\\n點擊右側箭頭後可進行排序。"
+          },
+          "lt": {
+            "_dirType": "vector",
+            "_x": 684,
+            "_y": 160
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 748,
+            "_y": 176
+          },
+          "delay": {
+            "_dirType": "int",
+            "_value": "100"
+          }
+        },
+        "button:Front": {
+          "_dirType": "sub",
+          "normal": {
+            "_dirType": "sub"
+          },
+          "pressed": {
+            "_dirType": "sub"
+          },
+          "disabled": {
+            "_dirType": "sub"
+          },
+          "mouseOver": {
+            "_dirType": "sub"
+          },
+          "id": {
+            "_dirType": "int",
+            "_value": "4000"
+          },
+          "ToolTip": {
+            "_dirType": "string",
+            "_value": "移動到清單的第一頁"
+          }
+        },
+        "button:Forward": {
+          "_dirType": "sub",
+          "normal": {
+            "_dirType": "sub"
+          },
+          "pressed": {
+            "_dirType": "sub"
+          },
+          "disabled": {
+            "_dirType": "sub"
+          },
+          "mouseOver": {
+            "_dirType": "sub"
+          },
+          "id": {
+            "_dirType": "int",
+            "_value": "4001"
+          },
+          "ToolTip": {
+            "_dirType": "string",
+            "_value": "移動到目錄的上一頁"
+          }
+        },
+        "button:Backward": {
+          "_dirType": "sub",
+          "normal": {
+            "_dirType": "sub"
+          },
+          "pressed": {
+            "_dirType": "sub"
+          },
+          "disabled": {
+            "_dirType": "sub"
+          },
+          "mouseOver": {
+            "_dirType": "sub"
+          },
+          "id": {
+            "_dirType": "int",
+            "_value": "4002"
+          },
+          "ToolTip": {
+            "_dirType": "string",
+            "_value": "移動到目錄的下一頁"
+          }
+        },
+        "button:Back": {
+          "_dirType": "sub",
+          "normal": {
+            "_dirType": "sub"
+          },
+          "pressed": {
+            "_dirType": "sub"
+          },
+          "disabled": {
+            "_dirType": "sub"
+          },
+          "mouseOver": {
+            "_dirType": "sub"
+          },
+          "id": {
+            "_dirType": "int",
+            "_value": "4003"
+          },
+          "ToolTip": {
+            "_dirType": "string",
+            "_value": "移動到目錄的最後一頁"
+          }
+        },
+        "vector:pageNum": {
+          "_dirType": "vector",
+          "_x": 509,
+          "_y": 132
+        }
+      },
+      "vector:guideBid": {
+        "_dirType": "vector",
+        "_x": 0,
+        "_y": 0
+      }
+    },
+    "tab_Complete": {
+      "_dirType": "sub",
+      "CompleteList": {
+        "_dirType": "sub",
+        "sort": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "sub",
+            "id": {
+              "_dirType": "int",
+              "_value": "5005"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": 78,
+              "_y": 160
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 141,
+              "_y": 176
+            },
+            "tooltip": {
+              "_dirType": "sub",
+              "text": {
+                "_dirType": "string",
+                "_value": "交易日期\\n點擊右側箭頭後可進行排序。"
+              },
+              "delay": {
+                "_dirType": "int",
+                "_value": "100"
+              }
+            }
+          },
+          "1": {
+            "_dirType": "sub",
+            "id": {
+              "_dirType": "int",
+              "_value": "5000"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": 225,
+              "_y": 160
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 303,
+              "_y": 176
+            },
+            "tooltip": {
+              "_dirType": "sub",
+              "text": {
+                "_dirType": "string",
+                "_value": "已結束拍賣角色名字目錄\\n點擊右側箭頭後可進行排序。"
+              },
+              "delay": {
+                "_dirType": "int",
+                "_value": "100"
+              }
+            }
+          },
+          "2": {
+            "_dirType": "sub",
+            "id": {
+              "_dirType": "int",
+              "_value": "5006"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": 375,
+              "_y": 160
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 419,
+              "_y": 176
+            },
+            "tooltip": {
+              "_dirType": "sub",
+              "text": {
+                "_dirType": "string",
+                "_value": "角色名字拍賣結果\\n點擊右側箭頭後可進行排序。"
+              },
+              "delay": {
+                "_dirType": "int",
+                "_value": "100"
+              }
+            }
+          },
+          "3": {
+            "_dirType": "sub",
+            "id": {
+              "_dirType": "int",
+              "_value": "5002"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": 469,
+              "_y": 160
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 528,
+              "_y": 176
+            },
+            "tooltip": {
+              "_dirType": "sub",
+              "text": {
+                "_dirType": "string",
+                "_value": "參加此項角色名字拍賣的投標人數\\n點擊右側箭頭後可進行排序。"
+              },
+              "delay": {
+                "_dirType": "int",
+                "_value": "100"
+              }
+            }
+          },
+          "4": {
+            "_dirType": "sub",
+            "id": {
+              "_dirType": "int",
+              "_value": "5001"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": 578,
+              "_y": 160
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 637,
+              "_y": 176
+            },
+            "tooltip": {
+              "_dirType": "sub",
+              "text": {
+                "_dirType": "string",
+                "_value": "已結束拍賣角色名字的最高投標價\\n點擊右側箭頭後可進行排序。"
+              },
+              "delay": {
+                "_dirType": "int",
+                "_value": "100"
+              }
+            }
+          },
+          "5": {
+            "_dirType": "sub",
+            "id": {
+              "_dirType": "int",
+              "_value": "8005"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": 885,
+              "_y": 160
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 935,
+              "_y": 176
+            }
+          },
+          "6": {
+            "_dirType": "sub",
+            "id": {
+              "_dirType": "int",
+              "_value": "5008"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": 712,
+              "_y": 160
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 775,
+              "_y": 176
+            },
+            "tooltip": {
+              "_dirType": "sub",
+              "text": {
+                "_dirType": "string",
+                "_value": "本人參加此項角色名字拍賣的投標價\\n點擊右側箭頭後可進行排序。"
+              },
+              "delay": {
+                "_dirType": "int",
+                "_value": "100"
+              }
+            }
+          }
+        },
+        "bars": {
+          "_dirType": "sub",
+          "listCount": {
+            "_dirType": "int",
+            "_value": "9"
+          },
+          "pos": {
+            "_dirType": "sub",
+            "endDate": {
+              "_dirType": "vector",
+              "_x": 110,
+              "_y": 203
+            },
+            "itemName": {
+              "_dirType": "vector",
+              "_x": 259,
+              "_y": 203
+            },
+            "state": {
+              "_dirType": "vector",
+              "_x": 397,
+              "_y": 203
+            },
+            "bidCount": {
+              "_dirType": "vector",
+              "_x": 502,
+              "_y": 203
+            },
+            "highestBid": {
+              "_dirType": "vector",
+              "_x": 604,
+              "_y": 203
+            },
+            "process1": {
+              "_dirType": "vector",
+              "_x": 873,
+              "_y": 199
+            },
+            "process2": {
+              "_dirType": "vector",
+              "_x": 838,
+              "_y": 199
+            },
+            "process3": {
+              "_dirType": "vector",
+              "_x": 908,
+              "_y": 199
+            },
+            "process4": {
+              "_dirType": "vector",
+              "_x": 908,
+              "_y": 203
+            },
+            "myBid": {
+              "_dirType": "vector",
+              "_x": 737,
+              "_y": 203
+            }
+          },
+          "etc": {
+            "_dirType": "sub",
+            "btReSell": {
+              "_dirType": "sub",
+              "normal": {
+                "_dirType": "sub"
+              },
+              "pressed": {
+                "_dirType": "sub"
+              },
+              "disabled": {
+                "_dirType": "sub"
+              },
+              "mouseOver": {
+                "_dirType": "sub"
+              }
+            },
+            "btReturnName": {
+              "_dirType": "sub",
+              "normal": {
+                "_dirType": "sub"
+              },
+              "pressed": {
+                "_dirType": "sub"
+              },
+              "disabled": {
+                "_dirType": "sub"
+              },
+              "mouseOver": {
+                "_dirType": "sub"
+              }
+            },
+            "btReturn": {
+              "_dirType": "sub",
+              "normal": {
+                "_dirType": "sub"
+              },
+              "pressed": {
+                "_dirType": "sub"
+              },
+              "disabled": {
+                "_dirType": "sub"
+              },
+              "mouseOver": {
+                "_dirType": "sub"
+              }
+            },
+            "btReceiveName": {
+              "_dirType": "sub",
+              "normal": {
+                "_dirType": "sub"
+              },
+              "pressed": {
+                "_dirType": "sub"
+              },
+              "disabled": {
+                "_dirType": "sub"
+              },
+              "mouseOver": {
+                "_dirType": "sub"
+              }
+            },
+            "btCollect": {
+              "_dirType": "sub",
+              "normal": {
+                "_dirType": "sub"
+              },
+              "pressed": {
+                "_dirType": "sub"
+              },
+              "disabled": {
+                "_dirType": "sub"
+              },
+              "mouseOver": {
+                "_dirType": "sub"
+              }
+            }
+          }
+        },
+        "tooltip:TTtimeEnd": {
+          "_dirType": "sub",
+          "text": {
+            "_dirType": "string",
+            "_value": "交易結束日期\\n點擊右側箭頭後可進行排序。"
+          },
+          "lt": {
+            "_dirType": "vector",
+            "_x": 78,
+            "_y": 160
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 141,
+            "_y": 176
+          },
+          "delay": {
+            "_dirType": "int",
+            "_value": "100"
+          }
+        },
+        "tooltip:TTitemName": {
+          "_dirType": "sub",
+          "text": {
+            "_dirType": "string",
+            "_value": "已結束拍賣的角色名字目錄\\n點擊右側箭頭後可進行排序。"
+          },
+          "lt": {
+            "_dirType": "vector",
+            "_x": 225,
+            "_y": 160
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 303,
+            "_y": 176
+          },
+          "delay": {
+            "_dirType": "int",
+            "_value": "100"
+          }
+        },
+        "tooltip:TTauctionStatus": {
+          "_dirType": "sub",
+          "text": {
+            "_dirType": "string",
+            "_value": "角色名字拍賣結果\\n點擊右側箭頭後可進行排序。"
+          },
+          "lt": {
+            "_dirType": "vector",
+            "_x": 375,
+            "_y": 160
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 419,
+            "_y": 176
+          },
+          "delay": {
+            "_dirType": "int",
+            "_value": "100"
+          }
+        },
+        "tooltip:TTbidCount": {
+          "_dirType": "sub",
+          "text": {
+            "_dirType": "string",
+            "_value": "參加此項角色名字拍賣的投標人數\\n點擊右側箭頭後可進行排序。"
+          },
+          "lt": {
+            "_dirType": "vector",
+            "_x": 469,
+            "_y": 160
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 528,
+            "_y": 176
+          },
+          "delay": {
+            "_dirType": "int",
+            "_value": "100"
+          }
+        },
+        "tooltip:TThighestBid": {
+          "_dirType": "sub",
+          "text": {
+            "_dirType": "string",
+            "_value": "已結束拍賣角色名字的最高投標價\\n點擊右側箭頭後可進行排序。"
+          },
+          "lt": {
+            "_dirType": "vector",
+            "_x": 578,
+            "_y": 160
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 627,
+            "_y": 176
+          },
+          "delay": {
+            "_dirType": "int",
+            "_value": "100"
+          }
+        },
+        "tooltip:TTmyBid": {
+          "_dirType": "sub",
+          "text": {
+            "_dirType": "string",
+            "_value": "本人參加此項角色名字拍賣的投標價\\n點擊右側箭頭後可進行排序。"
+          },
+          "lt": {
+            "_dirType": "vector",
+            "_x": 712,
+            "_y": 160
+          },
+          "rb": {
+            "_dirType": "vector",
+            "_x": 775,
+            "_y": 176
+          },
+          "delay": {
+            "_dirType": "int",
+            "_value": "100"
+          }
+        },
+        "button:Front": {
+          "_dirType": "sub",
+          "normal": {
+            "_dirType": "sub"
+          },
+          "pressed": {
+            "_dirType": "sub"
+          },
+          "disabled": {
+            "_dirType": "sub"
+          },
+          "mouseOver": {
+            "_dirType": "sub"
+          },
+          "id": {
+            "_dirType": "int",
+            "_value": "4000"
+          },
+          "ToolTip": {
+            "_dirType": "string",
+            "_value": "移動到清單的第一頁"
+          }
+        },
+        "button:Forward": {
+          "_dirType": "sub",
+          "normal": {
+            "_dirType": "sub"
+          },
+          "pressed": {
+            "_dirType": "sub"
+          },
+          "disabled": {
+            "_dirType": "sub"
+          },
+          "mouseOver": {
+            "_dirType": "sub"
+          },
+          "id": {
+            "_dirType": "int",
+            "_value": "4001"
+          },
+          "ToolTip": {
+            "_dirType": "string",
+            "_value": "移動到目錄的上一頁"
+          }
+        },
+        "button:Backward": {
+          "_dirType": "sub",
+          "normal": {
+            "_dirType": "sub"
+          },
+          "pressed": {
+            "_dirType": "sub"
+          },
+          "disabled": {
+            "_dirType": "sub"
+          },
+          "mouseOver": {
+            "_dirType": "sub"
+          },
+          "id": {
+            "_dirType": "int",
+            "_value": "4002"
+          },
+          "ToolTip": {
+            "_dirType": "string",
+            "_value": "移動到目錄的下一頁"
+          }
+        },
+        "button:Back": {
+          "_dirType": "sub",
+          "normal": {
+            "_dirType": "sub"
+          },
+          "pressed": {
+            "_dirType": "sub"
+          },
+          "disabled": {
+            "_dirType": "sub"
+          },
+          "mouseOver": {
+            "_dirType": "sub"
+          },
+          "id": {
+            "_dirType": "int",
+            "_value": "4003"
+          },
+          "ToolTip": {
+            "_dirType": "string",
+            "_value": "移動到目錄的最後一頁"
+          }
+        }
+      },
+      "vector:pageNum": {
+        "_dirType": "vector",
+        "_x": 509,
+        "_y": 132
+      },
+      "vector:expireDate": {
+        "_dirType": "vector",
+        "_x": 640,
+        "_y": 696
+      },
+      "vector:date": {
+        "_dirType": "vector",
+        "_x": 383,
+        "_y": 696
+      },
+      "vector:expireDate2": {
+        "_dirType": "vector",
+        "_x": 660,
+        "_y": 700
+      },
+      "vector:date2": {
+        "_dirType": "vector",
+        "_x": 350,
+        "_y": 700
+      },
+      "vector:guideComplete": {
+        "_dirType": "vector",
+        "_x": 0,
+        "_y": 0
+      }
+    },
+    "button:StartAuction": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "id": {
+        "_dirType": "int",
+        "_value": "20000"
+      },
+      "ToolTip": {
+        "_dirType": "string",
+        "_value": "販售角色名稱"
+      }
+    }
+  },
+  "popup": {
+    "_dirType": "sub",
+    "bid": {
+      "_dirType": "sub",
+      "button:Mark": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "3"
+        }
+      },
+      "button:Bid": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "1"
+        }
+      },
+      "button:Cancel": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "2"
+        }
+      },
+      "button:Caution": {
+        "_dirType": "sub",
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "checked": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "5"
+        }
+      },
+      "highestBid_num": {
+        "_dirType": "sub"
+      },
+      "pos": {
+        "_dirType": "sub",
+        "vector:itemName": {
+          "_dirType": "vector",
+          "_x": 170,
+          "_y": 79
+        },
+        "vector:remainTime": {
+          "_dirType": "vector",
+          "_x": 258,
+          "_y": 138
+        },
+        "vector:bidCount": {
+          "_dirType": "vector",
+          "_x": 135,
+          "_y": 138
+        },
+        "vector:addUnit": {
+          "_dirType": "vector",
+          "_x": 223,
+          "_y": 222
+        },
+        "vector:startBid": {
+          "_dirType": "vector",
+          "_x": 223,
+          "_y": 185
+        },
+        "vector:highestBid": {
+          "_dirType": "vector",
+          "_x": 172,
+          "_y": 268
+        },
+        "vector:bidKorean": {
+          "_dirType": "vector",
+          "_x": 162,
+          "_y": 359
+        }
+      },
+      "tooltip:TTbuyPrice": {
+        "_dirType": "sub",
+        "text": {
+          "_dirType": "string",
+          "_value": "只能比現在最高投標價的最小投標單位以上的價進行投標"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": 33,
+          "_y": 344
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 81,
+          "_y": 361
+        },
+        "delay": {
+          "_dirType": "int",
+          "_value": "100"
+        }
+      }
+    },
+    "rebid": {
+      "_dirType": "sub",
+      "button:Bid": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "1"
+        }
+      },
+      "button:Cancel": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "2"
+        }
+      },
+      "highestBid_num": {
+        "_dirType": "sub"
+      },
+      "pos": {
+        "_dirType": "sub",
+        "vector:itemName": {
+          "_dirType": "vector",
+          "_x": 170,
+          "_y": 77
+        },
+        "vector:remainTime": {
+          "_dirType": "vector",
+          "_x": 259,
+          "_y": 136
+        },
+        "vector:bidCount": {
+          "_dirType": "vector",
+          "_x": 140,
+          "_y": 136
+        },
+        "vector:addUnit": {
+          "_dirType": "vector",
+          "_x": 223,
+          "_y": 219
+        },
+        "vector:startBid": {
+          "_dirType": "vector",
+          "_x": 223,
+          "_y": 182
+        },
+        "vector:highestBid": {
+          "_dirType": "vector",
+          "_x": 171,
+          "_y": 269
+        },
+        "vector:myBid": {
+          "_dirType": "vector",
+          "_x": 223,
+          "_y": 331
+        },
+        "vector:bidKorean": {
+          "_dirType": "vector",
+          "_x": 168,
+          "_y": 398
+        }
+      },
+      "tooltip:TTbuyPrice": {
+        "_dirType": "sub",
+        "text": {
+          "_dirType": "string",
+          "_value": "只能比現在最高投標價的最小投標單位以上的價進行投標"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": 33,
+          "_y": 384
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 81,
+          "_y": 401
+        },
+        "delay": {
+          "_dirType": "int",
+          "_value": "100"
+        }
+      }
+    },
+    "sell": {
+      "_dirType": "sub",
+      "button:Sell": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "1"
+        }
+      },
+      "button:Cancel": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "2"
+        }
+      },
+      "radio:24h": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": 186,
+          "_y": 198
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 240,
+          "_y": 210
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "2002"
+        },
+        "acceptFocus": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "type": {
+          "_dirType": "int",
+          "_value": "16"
+        }
+      },
+      "radio:48h": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": 245,
+          "_y": 198
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 299,
+          "_y": 210
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "2003"
+        },
+        "acceptFocus": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "type": {
+          "_dirType": "int",
+          "_value": "16"
+        }
+      },
+      "vector:itemName": {
+        "_dirType": "vector",
+        "_x": 170,
+        "_y": 77
+      },
+      "vector:deposit": {
+        "_dirType": "vector",
+        "_x": 238,
+        "_y": 322
+      },
+      "vector:commission": {
+        "_dirType": "vector",
+        "_x": 250,
+        "_y": 337
+      },
+      "radio:8h": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": 126,
+          "_y": 198
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 174,
+          "_y": 210
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "2004"
+        },
+        "acceptFocus": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "type": {
+          "_dirType": "int",
+          "_value": "16"
+        }
+      },
+      "vector:startbidKorean": {
+        "_dirType": "vector",
+        "_x": 223,
+        "_y": 176
+      }
+    },
+    "resell": {
+      "_dirType": "sub",
+      "button:Sell": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "1"
+        }
+      },
+      "button:Cancel": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "2"
+        }
+      },
+      "radio:24h": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": 184,
+          "_y": 202
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 239,
+          "_y": 214
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "2002"
+        },
+        "acceptFocus": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "type": {
+          "_dirType": "int",
+          "_value": "16"
+        }
+      },
+      "radio:48h": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": 245,
+          "_y": 202
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 299,
+          "_y": 214
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "2003"
+        },
+        "acceptFocus": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "type": {
+          "_dirType": "int",
+          "_value": "16"
+        }
+      },
+      "vector:itemName": {
+        "_dirType": "vector",
+        "_x": 170,
+        "_y": 77
+      },
+      "vector:deposit": {
+        "_dirType": "vector",
+        "_x": 245,
+        "_y": 251
+      },
+      "vector:commission": {
+        "_dirType": "vector",
+        "_x": 257,
+        "_y": 266
+      },
+      "vector:startbidKorean": {
+        "_dirType": "vector",
+        "_x": 223,
+        "_y": 179
+      },
+      "radio:8h": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": 125,
+          "_y": 202
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 173,
+          "_y": 214
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "2004"
+        },
+        "acceptFocus": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "type": {
+          "_dirType": "int",
+          "_value": "16"
+        }
+      }
+    },
+    "bid_success": {
+      "_dirType": "sub"
+    },
+    "sell_confirm": {
+      "_dirType": "sub",
+      "vector:bid": {
+        "_dirType": "vector",
+        "_x": 223,
+        "_y": 52
+      },
+      "vector:remainTime": {
+        "_dirType": "vector",
+        "_x": 189,
+        "_y": 91
+      },
+      "button:OK": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "1"
+        }
+      },
+      "button:Cancel": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "2"
+        }
+      }
+    },
+    "sell_success": {
+      "_dirType": "sub",
+      "button:OK": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "1"
+        }
+      }
+    },
+    "notice": {
+      "_dirType": "sub",
+      "check:confirm": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": 211,
+          "_y": 333
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 225,
+          "_y": 346
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "2000"
+        },
+        "acceptFocus": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "type": {
+          "_dirType": "int",
+          "_value": "5"
+        }
+      },
+      "button:Yes": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "1"
+        }
+      },
+      "button:No": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "2"
+        }
+      },
+      "vector:lt": {
+        "_dirType": "vector",
+        "_x": 42,
+        "_y": 65
+      },
+      "scroll:line": {
+        "_dirType": "sub",
+        "length": {
+          "_dirType": "int",
+          "_value": "246"
+        },
+        "wheelRange": {
+          "_dirType": "int",
+          "_value": "460"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "1001"
+        },
+        "path": {
+          "_dirType": "string",
+          "_value": "UI/Basic.img/VScr21"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": 501,
+          "_y": 60
+        },
+        "vector": {
+          "_dirType": "vector",
+          "_x": 507,
+          "_y": 305
+        }
+      }
+    },
+    "searchFilter": {
+      "_dirType": "sub",
+      "button:Search": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "1"
+        }
+      },
+      "button:Cancel": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "2"
+        }
+      },
+      "combo:letterType": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": 35,
+          "_y": 86
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 244,
+          "_y": 112
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "2000"
+        },
+        "contents": {
+          "_dirType": "sub",
+          "letterType": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "sub",
+              "string": {
+                "_dirType": "string",
+                "_value": "全部"
+              }
+            },
+            "1": {
+              "_dirType": "sub",
+              "string": {
+                "_dirType": "string",
+                "_value": "只有中文字"
+              }
+            },
+            "2": {
+              "_dirType": "sub",
+              "string": {
+                "_dirType": "string",
+                "_value": "僅限數字"
+              }
+            },
+            "3": {
+              "_dirType": "sub",
+              "string": {
+                "_dirType": "string",
+                "_value": "僅限英文"
+              }
+            }
+          }
+        },
+        "textLeft": {
+          "_dirType": "int",
+          "_value": "15"
+        },
+        "textTop": {
+          "_dirType": "int",
+          "_value": "8"
+        },
+        "backColor": {
+          "_dirType": "string",
+          "_value": "ff444444"
+        },
+        "backFocusedColor": {
+          "_dirType": "string",
+          "_value": "ff222222"
+        },
+        "boxPosX": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "boxPosY": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "boxWidth": {
+          "_dirType": "int",
+          "_value": "204"
+        },
+        "boxTestLeftOffset": {
+          "_dirType": "int",
+          "_value": "8"
+        },
+        "fType": {
+          "_dirType": "int",
+          "_value": "38"
+        },
+        "fTypeSelect": {
+          "_dirType": "int",
+          "_value": "42"
+        },
+        "sButtonUOL": {
+          "_dirType": "string",
+          "_value": "UI/Basic.img/ComboBox7"
+        },
+        "font": {
+          "_dirType": "string",
+          "_value": "simsun"
+        }
+      }
+    },
+    "getName": {
+      "_dirType": "sub",
+      "button:Yes": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "1"
+        }
+      },
+      "button:No": {
+        "_dirType": "sub",
+        "normal": {
+          "_dirType": "sub"
+        },
+        "pressed": {
+          "_dirType": "sub"
+        },
+        "disabled": {
+          "_dirType": "sub"
+        },
+        "mouseOver": {
+          "_dirType": "sub"
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "2"
+        }
+      },
+      "vector:afterName": {
+        "_dirType": "vector",
+        "_x": 169,
+        "_y": 79
+      },
+      "edit:nameConfirm": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": 67,
+          "_y": 165
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 282,
+          "_y": 181
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "3"
+        },
+        "maxlen": {
+          "_dirType": "string",
+          "_value": "12"
+        },
+        "font": {
+          "_dirType": "string",
+          "_value": "MD摩利斯9"
+        },
+        "color": {
+          "_dirType": "string",
+          "_value": "ff777777"
+        }
+      },
+      "check:warning1": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": 55,
+          "_y": 206
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 72,
+          "_y": 219
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "4"
+        },
+        "acceptFocus": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "type": {
+          "_dirType": "int",
+          "_value": "5"
+        }
+      },
+      "check:warning2": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": 55,
+          "_y": 247
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 72,
+          "_y": 260
+        },
+        "id": {
+          "_dirType": "int",
+          "_value": "5"
+        },
+        "acceptFocus": {
+          "_dirType": "int",
+          "_value": "1"
+        },
+        "type": {
+          "_dirType": "int",
+          "_value": "5"
+        }
+      }
+    }
+  },
+  "popup_alertBox": {
+    "_dirType": "sub",
+    "button:Yes": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "id": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "popup_alertBox2": {
+    "_dirType": "sub",
+    "button:Yes": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "id": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "button:No": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "id": {
+        "_dirType": "int",
+        "_value": "2"
+      }
+    }
+  },
+  "popup_alertBox3": {
+    "_dirType": "sub",
+    "button:Yes": {
+      "_dirType": "sub",
+      "normal": {
+        "_dirType": "sub"
+      },
+      "pressed": {
+        "_dirType": "sub"
+      },
+      "disabled": {
+        "_dirType": "sub"
+      },
+      "mouseOver": {
+        "_dirType": "sub"
+      },
+      "id": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "popup_alert": {
+    "_dirType": "sub"
+  },
+  "popup_alert2": {
+    "_dirType": "sub"
+  },
+  "popup_alarm": {
+    "_dirType": "sub",
+    "makeBid": {
+      "_dirType": "sub"
+    },
+    "outbid": {
+      "_dirType": "sub"
+    },
+    "sold": {
+      "_dirType": "sub"
+    },
+    "notSail": {
+      "_dirType": "sub"
+    }
+  },
+  "guideString": {
+    "_dirType": "sub",
+    "eventTime": {
+      "_dirType": "string",
+      "_value": "#fcFFA4E4F0#活動期間：2025年#fcFFFFFFFF#6月26日(四)上午10點00分～#fcFFA4E4F0#2025年#fcFFFFFFFF#7月16日(三)晚上11點59分"
+    },
+    "guideSell": {
+      "_dirType": "string",
+      "_value": "#fcFFA4E4F0#登錄販售角色名稱的期限至#fcFFFFFFFF#2025年7月13日(日)晚上11點59分#fcFFA4E4F0#為止。\\n只能#fcFFFFFFFF#同時販售1個#fcFFA4E4F0#角色名稱，限#fcFFFFFFFF#同時進行10個#fcFFA4E4F0#角色名稱交易，包含#fcFFFFFFFF#販售、競標、結束交易的未領取記錄#fcFFA4E4F0#。"
+    },
+    "guideBid": {
+      "_dirType": "string",
+      "_value": "無法任意#fcFFFFFFFF#取消#fcFFA4E4F0##fcFFA4E4F0#已經#fcFFFFFFFF##fcFFA4E4F0#在進行的交易。\\n可同時進行#fcFFFFFFFF#10個#fcFFA4E4F0#角色名稱交易，包含#fcFFFFFFFF#販售、競標、結束交易的未領取記錄#fcFFA4E4F0#。"
+    },
+    "guideComplete": {
+      "_dirType": "string",
+      "_value": "2025年6月26日後#fcFFA4E4F0#完成的拍賣名稱及費用將保留至#fcFFFFFFFF#2025年12月16日23點59分00秒#fcFFA4E4F0#為止，\\n#fcFFFFFFFF#2025年1月23日起至2025年2月12日期間內#fcFFA4E4F0#完成的拍賣名稱及費用將保留至#fcFFFFFFFF#2025年7月12日23點59分00秒#fcFFA4E4F0#為止。\\n #fcFFFFFFFF#超過期間後將無法領取名稱及費用。"
+    }
+  }
+}

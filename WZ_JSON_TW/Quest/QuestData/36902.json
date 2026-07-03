@@ -1,0 +1,158 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[過去的英雄，狂狼勇士] 消失的武器"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "6"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "與位於前往村莊路上的#b#p1202002##k對話。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1202002#說見到英雄感到無比榮幸，並說站在不遠處的弟弟#b#p1202003##k也非常想見一見英雄，請我去跟弟弟打個招呼。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p1202003#說我是英雄，卻拿著平凡的武器。我真的是英雄嗎？"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1541451"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q36902s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "36901"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2000"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1541452"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q36902e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "剛才我好像聽到說「英雄回來了…」，是我聽錯了嗎？什麼？沒聽錯嗎？這位真的…這位就是英雄嗎？！"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "     #i4001172#"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "真是高興啊…竟然能這樣見到英雄，真是榮幸啊！求您和我握個手吧，順便在抱一下就更好了，但首先還是先簽個名吧…"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "啊，不好意思！真是對不起。因為太高興了，所以有點失態。先讓我做點深呼吸…呼哈呼哈~好了鎮定下來了。但是英雄，我能不能拜託您一件事啊？求求您！"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "在那旁邊有我的弟弟#b#p1202003##k，他一直都很想見英雄先生。我知道您很忙，但是能不能和#p1202003#打個招呼啊？求您了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "哦，那樣啊。英雄果然很忙啊…哭哭。要是改變主意了，隨時可以來找我。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "看來還沒有去見#b#p1202003##k吧。他就在旁邊。要見崇拜自己的人有點緊張吧？英雄也有害羞的一面啊。"
+          }
+        }
+      }
+    }
+  }
+}

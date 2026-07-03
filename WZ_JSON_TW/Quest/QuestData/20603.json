@@ -1,0 +1,226 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "90"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "1101005"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "20600"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "1311"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "1312"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1101005"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032122"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032122"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      },
+      "skill": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "13111002"
+          },
+          "masterLevel": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "job": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "int",
+              "_value": "1311"
+            },
+            "1": {
+              "_dirType": "int",
+              "_value": "1312"
+            }
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇家騎士團] 破風使者的新技能"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "好好思想#p1101002#說過的話，好像是說可以向#b#p1101005##k學習新的技能…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p1101005#說雖然有新的技能，但是以目前的等級學習太危險，若要學習新的技能必須證明已有足夠的能力。向#m130020000#的#b第三練武場#k取得#b#t4032122##k就可以獲得認證…\\n\\n#i4032122##t4032122##b#c4032122#/1#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "擊倒怪物取得了#t4032122#。#p1101005#說已獲得學習新技能的資格。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "帶來#t4032122#了…果然…你沒已讓我失望…好，你有足夠的資格學習這技能了。那就傳授技能給你吧！…"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "傳授給你破風使者的新技能#b暴風神射#k。一定要使用在正當的地方。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有取得#b#t4032122##k吧。前往#m130020000#的#b第三練武場#k準備參加試煉後，取回#t4032122#…"
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "…是什麼事呢？新的技能？…是#p1101002#說的吧…這冷酷的人竟然把情報給你這還沒有預備好的人。新的技能？雖然是有若要學習你的等級還太低…太危險了。\\n#b#L0#雖然危險我還是想學習技能。#l\\n#L1#既然危險就沒辦法嚕…#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "若要學習技能…有一個方法。就是你要證明，你有能力學習這個技能。若能通過可能危及性命的試煉…那就傳授技能給你吧…"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "…我想偶爾大膽的參加挑戰應該也無所謂吧。"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#m130020000#的#b第三練武場#k已準備好了試煉。參加試煉後取回#b#t4032122##k。那麼就傳授技能給你吧！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "…雖然希望你考慮但我還是很失望…你真沒勇氣。這麼矛盾的感覺…真是沒想到！"
+        }
+      }
+    }
+  }
+}

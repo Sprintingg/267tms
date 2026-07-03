@@ -1,0 +1,291 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[凱撒] 安慰提爾2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "22"
+    },
+    "selfStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "突然想到#p3000013#是不是喜歡花。要去哪裡取得花呢？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "除掉#b#o2400001##k就能得到花。#b#o2400001##k就在 #b#m400030100##k，前去收集 #t04033341# #b30個#k拿去給位於 #b#m400020300##k的#p3000013#。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p3000013#的眼睛腫腫的，應該是哭過了。一邊哭一邊道謝，可是反應普通，看到在基地無力的行走的樣子，應該是很憂鬱。然而從現在起，#p3000013#有個要克服的問題。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4033341:# #t4033341:# #c4033341# / 30\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 1,000\r\n可進行 '資源收集比賽' 任務\r\n"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "targetMapID": {
+      "_dirType": "int",
+      "_value": "400030100"
+    },
+    "returnMapID": {
+      "_dirType": "int",
+      "_value": "400020100"
+    },
+    "returnPN": {
+      "_dirType": "string",
+      "_value": "mid02"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "25728"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "25727"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "6100"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "6110"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "6111"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "6112"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "6113"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "6114"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3000013"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033341"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033341"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-30"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "女生還是比較喜歡花嗎？ 雖然 #p3000013#完全感覺不出是個女生，但女生終究還是女生，就去取得花吧。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "解決位於#b#m400030100##k的 #b#o2400001##k，然後收集 #b#t04033341# 30個#k。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "雖然不想表現出來，但#p3000013#似乎非常累的樣子。如果是朋友，就別輕言放棄，試著找尋方法幫忙吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "#h0#， 我還以為你走了，結果又來了。哈哈哈 我已經恢復元氣了！哈哈哈\\r\\n#L0##b嗯。這... 這是...\\r(雖然在笑，但是從腫脹的雙眼來看，似乎哭過的樣子。)#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "啊。是#b#t04033341##k呢。謝謝你。放在我們的基地一定很漂亮。\\r\\n#L0##b(反應果然不是很少。沒有效果嗎？ 得快點打起精神才行...)#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "那我有事情，就先告辭了。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "再見了。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#p3000013#在赫力席母攻擊隊根據地。就在萬神殿西邊，快點去吧。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "帶一點#t04033341#過去，一定會拿來扔我的。30個就夠了，快點去湊齊吧！"
+          }
+        }
+      }
+    }
+  }
+}

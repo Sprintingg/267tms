@@ -1,0 +1,249 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[墮落城市] 馬沙的拒絕"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "說他變成無法幫助的馬沙。他有什麼不好的事嗎？雖然可惜，但去找#b拉娜#k轉達此事。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "找到馬沙遺失寄物櫃的鑰匙，打開地鐵站的#b寄物櫃#k。寄物櫃鑰匙是在#r101大樓5~6層#不見的吧？"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "雖然找到#b馬沙#k遺失禮物盒的鑰匙而開啟了地鐵站入口的禮物盒。但裡面關著。再次打開看看。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4032506:##t4032506:##c4032506#/1\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 8,250\r\n可進行 '傳說的剪刀' 任務\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "28"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "8250"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052121"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "35"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2276"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052118"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032506"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "2278"
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "8250"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032506"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "什麼？馬沙拒絕了？\\r\\n#L0##b是，好像有不好的事。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "那是事實啊。沒有傳說的剪刀，沒有辦法整理髮型…\\r\\n#L0##b傳說的剪刀？那是什麼？#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "稍微剪也可以讓造型顯現的傳說的剪刀。馬沙因怕遺失那剪刀，在下班時一定放在地鐵站入口的寄物櫃內才下班。但是不久之前說遺失了寄物櫃的鑰匙。不管如何找到鑰匙給他的話，似乎會聽取請託，要幫忙找鑰匙嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "依據傳聞是在101大樓5～6層逛街時不見的。不管如何都像是模特兒們拿走了…是那個模特兒似乎沒辦法知道。消滅模特兒，找到#b寄物櫃鑰匙#k。打開地鐵站的寄物櫃看看。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "沒有自信嗎？如果是你的話一定可以的。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "…\\r\\n#L0##b(很堅固關閉的寄物櫃。沒有鑰匙無法打開。)#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "#b(打開寄物櫃後，似乎有什麼東西?)#k"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "找到#b寄物櫃鑰匙#k打開位在地鐵站的寄物櫃。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b(為了開啟這禮物盒，似乎需要#b禮物盒鑰匙#k。)#k"
+          }
+        }
+      }
+    }
+  }
+}

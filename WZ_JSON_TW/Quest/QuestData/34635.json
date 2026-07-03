@@ -1,0 +1,195 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[卡蒂娜] 生物兵器：紫色死神"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "214"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "和#b柯尼#k談論關於生體兵器：紫色死神的事情。\n"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "為了阻止生物兵器的完成，必須比海查德的部下更先找到武器零件。和#b柯尼#k說話，確認武器零件的位置。\n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "向柯尼確認了武器零件的位置。去找吧！\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "6952"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001205"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q34635s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "36"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "34634"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "6400"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "6410"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "6411"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "6412"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "6413"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "6414"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3001205"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "6952"
+      },
+      "transferField": {
+        "_dirType": "int",
+        "_value": "402000123"
+      },
+      "portalName": {
+        "_dirType": "string",
+        "_value": "sp"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "sayEx": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "好，卡蒂娜！武器零件在 #b垃圾場#k、#b狗仔的戰場#k、 #b當鋪#k三個地方。我告辭了。\\r\\n"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "若是發生問題，就使用無線電聯絡吧！希望沒有發生什麼事情。\\r\\n"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "msg": {
+            "_dirType": "string",
+            "_value": "#b(分部長和柯尼前往祕密據點了。現在我要去尋找武器零件。先去第一個地點垃圾場僻靜處吧！)#k\\r\\n #r ※ 自動移動到該地圖。#k"
+          },
+          "userSay": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "imgPos": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "沒錯，出發前先去問柯尼關於武器零件的位置。那祝你成功！\\r\\n"
+          }
+        }
+      }
+    }
+  }
+}

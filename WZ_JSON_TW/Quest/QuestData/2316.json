@@ -1,0 +1,180 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[弓箭手村] 菇菇森林探險（３）"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "從#b#p1300004##k那裡得到解除結界的線索。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "去找菇菇研究家#b#p1300007##。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "告訴#b#p1300007##k菇菇森林的奇怪的結界。"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 1,600\r\n可進行 '彩色菇菇芽孢（１）' 任務\r\n"
+    },
+    "summary": {
+      "_dirType": "string",
+      "_value": "去找菇菇研究家#b#p1300007##。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "25"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1600"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1300004"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2315"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1300007"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "2317"
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "1600"
+      },
+      "insightEXP": {
+        "_dirType": "int",
+        "_value": "20"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "聽說有解除這種結界的藥品。 你說是#b彩色菇菇芽孢#k。 嗯… 外面的菇菇研究家#b#p1300007##k是菇菇 專業，去找 #b#p1300007##k。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b#p1300007##k說可以幫助你。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "既然拒絕了怎麼還會問？真是奇怪的傢伙…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊！ 你是那位勇士。 我是菇菇王國 #b國立菇菇研究家#p1300007##k。 可是你需要 #b彩色菇菇芽孢#k嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b彩色菇菇芽孢#k嗎…。我好像從哪裡聽說過。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "快點去找菇菇研究家 #b#p1300007##k。"
+          }
+        }
+      }
+    }
+  }
+}

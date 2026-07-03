@@ -1,0 +1,160 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[星星力量] 危機的米納爾森林"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "41"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p2081006#正在苦思克服米納爾森林危機的方法，聽聽看有哪些方法吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2081006#說矮人族能找到解決米納爾森林危機的方法，去找#m240000000#村莊的 #p2081000#，並且轉達米納爾西邊森林的狀況吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "受#p2081006#的委託，向 #p2081000#轉達米納爾西邊森林的狀況了， #p2081000#雖然說幸虧摩伊拉平安無事，但對於米納爾森林嚴重的狀態卻感到相當驚慌的樣子。"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "#m240000000#"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "586787"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2081006"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "130"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3884"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2081000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "586787"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "比較緊急的狀況已經先處理完了，話雖如此也並不代表目前的情況很樂觀，聽說變異的怪物們持續出現在米納爾森林，而且也不清楚何時又會降下流星。可以確定目前米納爾森林面臨著龐大的危機，\\r\\n必須快點將此一事實轉告矮人族，你可以跑一趟嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請將這邊的狀況轉告 #b#m240000000##k 村裡的 #r#p2081000##k，矮人族長期以來守護了米納爾森林，一定能找到對策的。 \\r\\n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果情況允許的話，我很想要親自出馬，但就如同你看到的一樣，我目前處於被困住的狀態，什麼都做不了……\\r\\n"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "為何這麼慢呢？害我很擔心你是不是發生什麼事了。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "呵呵，連那邊也被流星力量影響了嗎？ 摩伊拉平安無事嗎？真是太好了，看來情況似乎相當嚴重。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b#m240000000##k 請將這邊的情況轉告村裡的 #r#p2081000##k，米納爾森林面臨危機了。 \\r\\n"
+          }
+        }
+      }
+    }
+  }
+}

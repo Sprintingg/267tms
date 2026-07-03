@@ -1,0 +1,159 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 不屈的冰騎士"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "聽說有可以挑戰戰鬥廣場解說員羅茲弟的大亂鬥挑戰任務。趕快去找並進行挑戰看看吧！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "廣場解說員羅茲弟說要是今日內於冰騎士模式當中贏了#b冰騎士#k1次的話，就可以獲得禮物。\\r\\n\\r\\n#rTip！ 必須於大亂鬥當中以冰騎士模式贏冰騎士1次。要是在中途離開，或者當日沒有完成此任務的話，活動就會初始化並無法完成此任務。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "完成任務並接收獎賞。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9070005"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q11274s"
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9070005"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "11059"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q11274e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好 #h0#~我是戰鬥廣場嚮導羅茲弟。當您完成我給予的挑戰任務時，會給予您禮物。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "這次的任務是~今天一天內，在大亂鬥的冰騎士模式以冰騎士獲勝1次即可，雖然不簡單，要達成有點難，但是 #h0#的話，您當然會挑戰吧？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "別忘了！在冰騎士模式以冰騎士獲勝1次。靠挑戰獲勝是沒有任何意思的，再1點！於途中出去或過了一天後會初始化則無法達成任務，請別忘了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "也沒有那麼難吧…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "唉呀！你達成任務啦！在冰騎士模式以冰騎士獲勝1次！如何？ 不會很難吧？那麼，照約定給予你禮物。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "來，也有其他任務請挑戰看看。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒能達成任務嗎？只要在冰騎士模式以冰騎士獲勝1次即可。"
+          }
+        },
+        "quest": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒能達成任務嗎？只要在冰騎士模式以冰騎士獲勝1次即可。"
+          }
+        }
+      }
+    }
+  }
+}

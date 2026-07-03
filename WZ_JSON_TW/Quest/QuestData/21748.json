@@ -1,0 +1,207 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[過去的英雄，狂狼勇士] 被搶走的武陵封印石"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "6"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "武陵的封印石被搶走了…怎麼辦？去#b#m104000000##k問問#b#p1002104##k吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "把#m250000000#的事情都告訴了#p1002104#，#p1002104#說到#b#m140000000##k把這些事情告訴給#b#p1201000##k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p1201000#說如果把封印石帶到村莊的人是英雄們，只要多研究有關英雄的事情就會瞭解封印石，這樣已經足夠了。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "12067"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[技能]"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002104"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "54"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "21747"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "notInTeleportItemLimitedField": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2110"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "2111"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "2112"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "2113"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "2114"
+        }
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1201000"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q21748e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "140000000"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "12067"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "來了，英雄大人？在#m250000000#裡事呢…咦，又…看你的表情事情沒那麼順利。怎麼回事？\\n#b#L0#(講了關於桃花仙島的封印石。)#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "這次也是受到#o9300352#的阻礙嗎… 黑色翅膀還真不是蓋…不過英雄們也逐漸累積許多經驗不是嗎？下次一定可以阻止這些傢伙，撐著點！\\r\\n很了解英雄的#p1201000#應該可以從這些情報中分析出一些有用的事情吧！幫我轉告#b莉琳#k。\\r\\n如果還有找到其他關於黑色翅膀的資訊，請他聯絡我，那麼就下次見囉！替我向#p1201000#報平安。\\r\\n\\r\\n#b(接受後立即移動至瑞恩)#k"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "英雄大人也真是的…表情生硬但意外小心謹慎啊。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒去#b#p1201000##k那裡嗎？不要因一兩次的失敗變得喪氣，英雄大人。#p1201000#會對那些眼都不眨的。因為他知道什麼更重要。"
+          }
+        }
+      }
+    }
+  }
+}

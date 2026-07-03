@@ -1,0 +1,292 @@
+{
+  "common": {
+    "_dirType": "sub",
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "cooltime": {
+      "_dirType": "string",
+      "_value": "10"
+    },
+    "attackPower1Rate": {
+      "_dirType": "string",
+      "_value": "300"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "1"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "1"
+    }
+  },
+  "aim": {
+    "_dirType": "sub",
+    "radius": {
+      "_dirType": "int",
+      "_value": "50"
+    }
+  },
+  "hookchain": {
+    "_dirType": "sub"
+  },
+  "!class": {
+    "_dirType": "string",
+    "_value": "WZ2RLHookSkill_SpearGun"
+  },
+  "stretchSpeed": {
+    "_dirType": "int",
+    "_value": "3300"
+  },
+  "duration": {
+    "_dirType": "int",
+    "_value": "5"
+  },
+  "maxDistance": {
+    "_dirType": "int",
+    "_value": "1000"
+  },
+  "aimAngularSpeed": {
+    "_dirType": "int",
+    "_value": "150"
+  },
+  "sound": {
+    "_dirType": "sub",
+    "Notify": {
+      "_dirType": "sub",
+      "!class": {
+        "_dirType": "string",
+        "_value": "WZ2AnimNotify_PlaySound"
+      },
+      "SoundPath": {
+        "_dirType": "string",
+        "_value": "Sound/Redmoon.img/Skill/312/Use"
+      }
+    }
+  },
+  "SkillTags": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "string",
+      "_value": "RLGame.Skill.Basic"
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "onHit": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "300"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "50"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "buffLevel": {
+          "_dirType": "string",
+          "_value": "2"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub"
+        }
+      },
+      "hitSoundPath": {
+        "_dirType": "string",
+        "_value": "Sound/Redmoon.img/Skill/312/Hit"
+      },
+      "targetBuffID": {
+        "_dirType": "string",
+        "_value": "502"
+      },
+      "eventTags": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "RLGame.Effect.Shock"
+        }
+      }
+    },
+    "onFootholdHit": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "SummonZone"
+      },
+      "zoneType": {
+        "_dirType": "string",
+        "_value": "exactSelf"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "duration": {
+          "_dirType": "string",
+          "_value": "3"
+        },
+        "count": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "z": {
+          "_dirType": "int",
+          "_value": "20000"
+        }
+      },
+      "zones": {
+        "_dirType": "sub",
+        "transferZone": {
+          "_dirType": "sub",
+          "LayerSlots": {
+            "_dirType": "sub",
+            "Slot0": {
+              "_dirType": "sub",
+              "Segment:stand": {
+                "_dirType": "sub"
+              },
+              "Segment:loop": {
+                "_dirType": "sub"
+              },
+              "Segment:die": {
+                "_dirType": "sub"
+              }
+            }
+          },
+          "Notifies": {
+            "_dirType": "sub",
+            "onZoneExpire": {
+              "_dirType": "sub",
+              "TriggerTime": {
+                "_dirType": "string",
+                "_value": "1020"
+              }
+            }
+          },
+          "Sections": {
+            "_dirType": "sub",
+            "stand": {
+              "_dirType": "sub",
+              "StartTime": {
+                "_dirType": "int",
+                "_value": "0"
+              }
+            },
+            "loop": {
+              "_dirType": "sub",
+              "StartTime": {
+                "_dirType": "int",
+                "_value": "480"
+              },
+              "NextSectionName": {
+                "_dirType": "string",
+                "_value": "loop"
+              }
+            },
+            "die": {
+              "_dirType": "sub",
+              "StartTime": {
+                "_dirType": "int",
+                "_value": "960"
+              }
+            }
+          }
+        }
+      }
+    },
+    "onZoneExpire": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "100"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "8"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -200,
+          "_y": -125
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 200,
+          "_y": 125
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "50"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "5"
+        },
+        "buffLevel": {
+          "_dirType": "string",
+          "_value": "2"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub"
+        }
+      },
+      "hitSoundPath": {
+        "_dirType": "string",
+        "_value": "Sound/RoguelikeWz2.img/Skill/20000008/Hit"
+      },
+      "effect": {
+        "_dirType": "sub"
+      },
+      "targetBuffID": {
+        "_dirType": "string",
+        "_value": "502"
+      },
+      "eventTags": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "RLGame.Effect.Shock"
+        }
+      }
+    }
+  },
+  "defaultTags": {
+    "_dirType": "int",
+    "_value": "0"
+  },
+  "AimRelativeLocation": {
+    "_dirType": "vector",
+    "_x": -67,
+    "_y": -67
+  },
+  "AimMaxAngle": {
+    "_dirType": "int",
+    "_value": "90"
+  }
+}

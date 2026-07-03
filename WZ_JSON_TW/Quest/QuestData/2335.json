@@ -1,0 +1,209 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[弓箭手村] 清除餘黨"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "在城堡內還有#b總理大臣#k的殘黨…\n\n#r是與「稱號-菇菇王國守護者」任務無關的其他任務。#k"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "尋找總理大臣的殘黨躲避的地方。從#b瑪天路３#k可以進入到他們躲藏的地方。另外請同時消滅出現在#b瑪天路#k各處的#r#o3300003#、#o3300004#各40隻#k。如消滅殘黨，請向#b#p1300003#報告。\n\n#r是與「稱號-菇菇王國守護者」任務無關的其他任務。#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "發現#b總理大臣#k殘黨的據點，掃蕩敵人後，向#b#p1300003##k報告。"
+    },
+    "summary": {
+      "_dirType": "string",
+      "_value": "清除總理大臣的殘黨吧。首先前去#b#m106021001##k，消滅#r#o3300003#、#r#o3300004#各40隻#k。 #b#m106021001##k可從#b#m106021000##k進入。\n\n#r是與「稱號-菇菇王國守護者」任務無關的其他任務。#k"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "尋找總理大臣的殘黨，並且將他們消滅。\n\n從#b#m106021000##k可以到#b#m106021001##k，請在附近尋找看看，確認是否還有殘黨。\n#o3300003##a23351#\n#o3300004##a23352#\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 5,000\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "25"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1300002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q2335s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2334"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1300003"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "2347"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3300003"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "40"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3300004"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "40"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "太優秀了。 勇士啊！ 聽說你擊退了#b企鵝國王#k，並且拯救了公主！！"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯？ 聽說你在那裡消滅了城內剩餘的殘黨… 真的很謝謝你。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "公主說城內還殘存有總理大臣的殘黨？ #b#m106021001##k可在#b瑪天路3#k使用公主提供的#b#t4032405##k進入。 那麼殘黨就可以在#b瑪天路#k處處發現了。"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "殘黨們可能躲藏的地方是 #b#m106021001##k，在#b瑪天路3#k使用我給的 #b#t4032405##k就可以進入。 殘黨可以在 #b瑪天路#k各處發現得到，請一定要解決掉他們。"
+          }
+        }
+      }
+    }
+  }
+}

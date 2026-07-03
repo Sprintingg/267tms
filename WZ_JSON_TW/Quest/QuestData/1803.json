@@ -1,0 +1,144 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[進化系統] 研究室探索"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "87"
+    },
+    "selfStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "到達了只剩機器的研究室。進化系統到底能不能夠再次啟動呢?"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "調查研究室並找出進化系統的啟動方法吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "全息圖突然出現了。那個是什麼呢?"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "q1803"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1802"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9075006"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "1808"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "find"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#b(這機器是拿來做什麼的呢? 好像不是要治療史烏所需的機器... 機器可以啟動看看嗎?可以啟動嗎?)"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b(機器可以啟動看看嗎?可以啟動嗎?)"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "進化系統開始。\\r\\n"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "quest": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "嗯嗯，真的沒有可以 啟動機器的線索嗎? 好好找一下研究室。"
+          }
+        }
+      }
+    }
+  }
+}

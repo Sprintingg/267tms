@@ -1,0 +1,170 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[次元圖書館] 暴風雨中的追擊"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "82"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "白魔法師發生什麼事了呢?"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "研究終極光芒的白魔法師最後被黑暗力量吞噬掉了.\\r\\n#b(透過右側的傳送點去追擊消失在歐洛拉後方森林的白魔法師吧.)#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "必須阻止白魔法師才行."
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "q32648"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "咳...咳咳...竟然發生這種事...\\r\\n#L0##b白魔法師發生什麼事了呢?#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "研究終極光芒時,結果卻被力量吞噬了."
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "光芒的力量太深,太廣闊了,\\r\\n我們就像是絕對觸碰不到天空卻又伸出手的孩子們一樣.就像是漂流在茫茫大海的小船一樣無力...如果能就這樣停下來就好了..."
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "是從什麼時候開始呢...知道大師犯了禁忌,\\r\\n儘管知道他的研究方法錯了...我卻選擇深信他.我很好奇他能夠開啟的未來.光芒的另一端會讓我們看到些什麼..."
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "後悔已經太遲了...咳咳,咳咳.\\r\\n一切拜託了!請去阻止大師.說不定現在還來得及挽回.\\r\\n#b(透過右邊的傳送點去追擊消失在歐洛拉後方森林的白魔法師吧.)#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "一切拜託了.請去阻止大師.說不定現在還來得及挽回."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b(去追擊消失在歐洛拉後方森林的白魔法師吧.)#k"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2510019"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32647"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "32628"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q32648e"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2510022"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "clear"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "check1"
+          }
+        }
+      }
+    }
+  }
+}

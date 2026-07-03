@@ -1,0 +1,111 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[進化系統] 假想世界1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "32"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "透過#p9075006#直接進行進化系統看看吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "透過進行進化系統 之後向#e#b假想世界中心#p9075007##k#n詢問在假想世界可以做些什麼事吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "就算熟悉了進化系統內的世界，它也是個陌生的空間。\\n向#p9075007#問問看現在應該要做什麼事吧。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9075006"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1804"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9075007"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "歡迎到進化系統。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "進化系統的假想世界是由9個連結來組成，各連結可各別進行訓練程式。並不是各程式所必需的，可選擇想要的強化程式來執行。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "還有，透過核心，可變化假想世界。核心可從完成各連結程式或除掉系統怪物來獲得。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "要連線進化系統嗎?\\n先放棄任務後，再接受。"
+          }
+        }
+      }
+    }
+  }
+}

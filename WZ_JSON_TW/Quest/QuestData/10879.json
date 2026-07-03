@@ -1,0 +1,238 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 去問月光小夜曲-維英吧"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "照尤莉亞所說去找#b魔法森林#k的#b精靈維英#k。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "精靈維英說如果想要打聽什麼，就把她作業需要的物品帶來。比如說發出清澄綠光的#b精煉綠寶石#k之類的？"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把精靈維英需要的精煉綠寶石送給她，並聽取了關於黃金富豪的故事。聽說不久前黃金富豪用詭異的聲音說「終於把月光拿到手了」，且掩不住一臉的喜悅…\\n難道月光是說……"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4021003:# #t4021003:# #c4021003# / 1\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 500\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "500"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "500"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4021003"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "又有什麼事來煩我？ 有事情要問？我為什麼要回答人類的問題？等等！那好吧。如果你願意幫我找到我現在需要的物品也許我可以回答你一下下。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯！我正在做功課可是 #b精煉綠寶石#k已經沒了。如果幫我找到就回答你一下下問題。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不願意就拉倒！我也很忙。請你離開！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "找到了？該不會是拿有裂痕之類的東西吧？嗯…看起來還不錯。那就聽聽你的問題吧。你要問我什麼？\\r\\n#L0##b請問你知道關於月光小夜曲這首曲子嗎？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "月光小夜曲？我第一次聽到呢？我不知道。為什麼最近大家都在找月光呢？\\r\\n#L0##b除了我還有別人詢問關於月光小夜曲嗎？#l\\n#k"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "不是，不是問關於月光小夜曲，而是不久前看到黃金富豪詭異地笑說 #b「終於把月光拿到手了。」#k。讓我超不爽。人類都是這樣嗎 ？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "總之我算回答了你的問題。這綠寶石我帶走了。你也回去吧。旁邊有人類會讓我心神不寧 。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "嗯！我正在做功課可是 #b精煉綠寶石#k已經沒了。如果幫我找到就回答你一下下問題。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1032106"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201009150000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201010040000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201009080000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201009150000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "10867"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1032106"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4021003"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

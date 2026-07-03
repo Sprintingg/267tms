@@ -1,0 +1,159 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[風暴] 時空石支援"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "2013年冬天！為了迎接巨大暴風般命運的楓之谷的勇士，GM說會給予 #e#b#t2430883##k#n。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "2013年冬天！為了迎接巨大暴風般命運的楓之谷的勇士，GM說會給予 #e#b#t2430883##k#n。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "2013年冬天！為了迎接巨大暴風般命運的楓之谷的勇士，GM給予 #e#b#t2430883##k#n。\\r\\n#e9月19日前#n 可使用。"
+    },
+    "autoPreComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201302270000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201302270000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2430883"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2430883"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          },
+          "dateExpire": {
+            "_dirType": "string",
+            "_value": "2013022800"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好 #b#h0##k，2013年冬天為了面臨巨大暴風般命運的楓之谷勇士提供可以到大陸任何一個村子的 #e#b#t2430883##k#n。現在要領取嗎？\\r\\n#i2430883:# #t2430883# 1個"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯，若是你改變想法，就再來找我吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#b#e#t2430883##n#k每30分鐘可以使用一次，如果遺失了隨時還可以重新領取，所以請安心妥善使用。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "確認道具欄是否有空格後再重試一次。"
+          }
+        }
+      }
+    }
+  }
+}

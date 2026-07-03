@@ -1,0 +1,137 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[次元圖書館] 在艾靈森林的線索"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "82"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "和妖精女王艾畢奈亞交談吧.她會告訴你關於白魔法師的行蹤."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "妖精女王艾畢奈亞提供白魔法師去了平靜森林的情報。\\r\\n#b(透過左邊的傳送點離開艾靈森林吧。)#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "為了見白魔法師,抵達了平靜森林."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "藉由左邊的通道離開艾靈森林吧."
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "showLayerTag": {
+      "_dirType": "string",
+      "_value": "q32635"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "一定要將我的話轉達給白魔法師。因為我是為了讓你傳話，才會刻意將情報提供給你的。\\r\\n#b(透過左邊的傳送點離開艾靈森林吧。)#k"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "......\\r\\n#b(消滅所有怪物,然後再重新交談.)#k"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2510002"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q32635s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32634"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2510003"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q32635e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8230047"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

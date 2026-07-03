@@ -1,0 +1,134 @@
+{
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "Segment0": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "shiningCross"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "effect": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "fix": {
+              "_dirType": "int",
+              "_value": "1"
+            }
+          }
+        }
+      },
+      "sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AEAnimNotify_PlaySkillSound"
+          },
+          "SkillID": {
+            "_dirType": "int",
+            "_value": "51121009"
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "EventDelay": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "damage": {
+          "_dirType": "string",
+          "_value": "154+50*x"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "4+d(x/4)"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "8"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -285,
+          "_y": -145
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 10,
+          "_y": 30
+        },
+        "maxLevel": {
+          "_dirType": "int",
+          "_value": "30"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub"
+        }
+      },
+      "hitSoundSkillID": {
+        "_dirType": "int",
+        "_value": "51121009"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "damage": {
+      "_dirType": "string",
+      "_value": "154+50*x"
+    },
+    "mobCount": {
+      "_dirType": "string",
+      "_value": "4+d(x/4)"
+    },
+    "attackCount": {
+      "_dirType": "string",
+      "_value": "8"
+    },
+    "maxLevel": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "lt": {
+      "_dirType": "vector",
+      "_x": -285,
+      "_y": -145
+    },
+    "rb": {
+      "_dirType": "vector",
+      "_x": 10,
+      "_y": 30
+    }
+  },
+  "skillinfo": {
+    "_dirType": "string",
+    "_value": "51121009 샤이닝 크로스"
+  }
+}

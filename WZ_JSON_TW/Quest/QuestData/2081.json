@@ -1,0 +1,185 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002101"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1002101"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "8"
+      },
+      "subJobFlags": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "0"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1000"
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[維多利亞島] 有關轉職的指導"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "要怎樣才能選擇職業呢？去維多利亞港找坤問問好了。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "要到維多利亞港，聽#p1002101#所提出的職業相關說明後解開問題。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "有關#p1002101#職業的問題全部解開了.為了選擇職業#b戰士、法師、弓箭手、盜賊#k全部#b等級10#k的話,就可以選擇.戰士在勇士之村,法師在魔法森林,弓箭手在弓箭手村,盜賊在墮落城市,海盜在鯨魚號可轉職."
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "30"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "1000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "第一個問題我剛剛已經說啦,可從#b戰士、魔法師、弓箭手、到賊、海賊幾個等級#k當中,以#b職業#k做選擇吧?\\n\\n\\r\\n#L0##b8級#l\\n#L1#1級#l\\n#L2#10級#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "好.猜得不錯呢?應該不是在哪裡做了小抄吧?\\n話雖如此..我真的認為是戰士體質呢...有時候也想就這樣~射射看那彎曲箭矢呢.遠遠咻咻地射箭,多帥啊?\\n\\n想成為#b弓箭手#k的話,應該要去#b哪裡#k呢?\\n\\n#L0##b勇士之村#l\\n#L1#弓箭手村#l\\n#L2#墮落城市#l\\n#L3#魔法森林#l"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "有聽懂我的話就好!哈哈哈!!"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "唔，這種程度的話應該很充分了..在劍士,弓箭手,盜賊,法師當中，決定選擇哪個之後再來找我吧！我會告訴你該去哪裡的。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "3"
+          },
+          "0": {
+            "_dirType": "string",
+            "_value": "不是說過嘛？法師要等到了8級之後才能選擇作為職業。"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "馬上就要選擇職業的話太勉強了吧？這麼快就忘記我說過的話了嗎？等級只要達到10的嘛!!"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "0": {
+            "_dirType": "string",
+            "_value": "勇士之村是想成為戰士就應該要去的地方吧?我也在修煉的時候去了勇士之村."
+          },
+          "2": {
+            "_dirType": "string",
+            "_value": "墮落城市有個有名的盜賊_達克魯.對於職業是盜賊的這件事情有興趣嗎?"
+          },
+          "3": {
+            "_dirType": "string",
+            "_value": "住在像魔法森林這樣充滿樹林的地方,感覺能常保健康..要找有肌肉的魔法師們還真困難."
+          }
+        }
+      }
+    },
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊,說明說那麼多不太合我的胃口..盡可能簡單講的簡單點吧.職達到#b10等級#k的話就可以選擇#b戰士、魔法師、弓箭手、盜賊、海賊#k.想要擁有職業的話必須去找村莊裡的某~個~人."
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "不想知道要去找哪個村莊的哪個人嗎？劍士是勇士之村的#p1022000#,弓箭手是弓箭手村的#p1012100#,盜賊是墮落城市的#p1052001#,法師是魔法森林的#p1032001#，去找這些人，他們會指導你的。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "複雜的聽著頭就痛..哈哈哈!!既短又易懂的說明吧？啊~~這些可是很重要的哦。好好記住我所說的，如果做好我所出題目的解答準備..再叫我吧。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓之島] 桑想吃的是什麼？"
+    },
+    "parent": {
+      "_dirType": "string",
+      "_value": "妮娜和桑的晚餐"
+    },
+    "order": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "和妮娜說說話。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在訓練所下層見到了正在為給弟弟桑準備晚餐而苦惱的妮娜。要問在水世界水族箱前的桑想要吃什麼樣的晚餐。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "詢問妮娜的弟弟桑想要吃什麼晚餐，得到的回答是菇菇湯。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "20"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "nextQuest": {
+        "_dirType": "int",
+        "_value": "1004"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "媽呀…這不是旅行者嗎！來的正是時候啊。哦…有件事想請你幫忙，可以幫我嗎？在這裡稍微往東邊走，有一間長得像香菇的房子。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "桑就在那裡，請幫我問問我的弟弟桑，今天晚上想吃什麼？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有見到#p2001#嗎?就在右邊的菇菇房子裡。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2102"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "200203220200"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "200203220600"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "200203220200"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "200203220600"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "0"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  }
+}

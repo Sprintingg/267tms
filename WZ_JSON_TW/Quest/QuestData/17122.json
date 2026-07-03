@@ -1,0 +1,206 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[水世界]正式應對"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "35"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o9390017# #a171221#\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "為了取得下一個委託去找安。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "安似乎找到震動的根源地了。但是去那邊的途中有許多阿卡伊農召喚的怪物聚集。擊退#o9390017#且開出一條活路吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": " 擊倒#o9390017#打開了第一個活路。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "5000000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5000000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊，你來了啊。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "已經進行深入調查了，此一震動是來自水世界深海深處的樣子。而且去的途中，有似乎是阿卡伊農召喚的怪物聚集在那邊擋住去路。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "為了尋找震源地，似乎需要先整理阻擋著的怪物們吧？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "好，先去 #b#m860000031##k吧！ 那麼或許會遇到 #r#o9390017##k。那些傢伙只要抓500隻左右就能確保接下來的路。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "#o9390017#既然是阿卡伊農帶來的黑魔法師的怪物，不可能像現在好對付吧。小心一點吧。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "不是？那難道一邊要被怪物攻擊，一邊前進嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "平安回來了啊。結果怎麼樣呢？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "根據我的委託順利解決了。我就知道你一定能輕鬆解決。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "就先邊休息，邊進行下一項委託準備。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "準備結束的話，可以再來找我嗎？"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "好像還沒找到生路。請多多加油。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390007"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "200"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "17121"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390007"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9390017"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "500"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

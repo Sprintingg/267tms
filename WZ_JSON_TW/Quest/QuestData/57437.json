@@ -1,0 +1,226 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[Kanna] Honnou-ji Infiltration 2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "58"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "You made it to the Honnou-ji entrance. Touch base with Kanetsugu and go over the infiltration plan."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "The princess is in here somewhere. Hurry to the eastern wing and rescue her!"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "You successfully rescued the princess from Honnou-ji. Surprisingly, she seems fine."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "Saving Sakuno"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\\n#fUI/UIWindow2.img/QuestIcon/8/0# 19,112\\nCan proceed to Internal Affairs quest"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[Required]"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "19112"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9130093"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "57436"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q57437s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "29"
+      },
+      "job": {
+        "_dirType": "sub"
+      },
+      "job_SG": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "4200"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "4210"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "4211"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "4212"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "4002"
+        },
+        "5": {
+          "_dirType": "int",
+          "_value": "4213"
+        },
+        "6": {
+          "_dirType": "int",
+          "_value": "4214"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9130093"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "57437"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          }
+        }
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q57437e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "19112"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "Shingen was right. I snooped around the area while you were on your way and the security here is quite lacking."
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "We're so close to the eastern temple wing. I almost feel sorry for the enemy. But Master Kenshin's first rule is no mercy, so Oda's Army will see none from us! Kanna, I leave the rescue of the princess to you."
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "I shall remain here to protect the escape route. Be cautious. It is still possible that the frail security is a trap."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "I don't see Princess Sakuno by your side."
+          }
+        }
+      }
+    }
+  }
+}

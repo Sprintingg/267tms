@@ -1,0 +1,247 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[幻獸師] 卡帕萊特協會的合作"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "85"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "得到蒙特鳩協會的同意.\r\n回到#p9390368#那邊."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p9390368#這次去卡帕萊特協會,將賄賂給#p2111001#.\r\n前往卡帕萊特協會."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "把#t4034054#拿給#p2111001#.#p2111001#說會完全幫我們追蹤#o8860000#.\r\n回到#p9390368#那邊."
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "232594"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034054"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "232594"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034054"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "誰啊? 在某個地方出現了蒙特鳩傢伙們的味道?"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯. 是賄賂嗎? 這樣扭扭捏捏的話就走開啦!\\r哦?這個 #t4034054#!! 剛好急需這個,你怎麼知道的? 真有格調."
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "想問些什麼?\\r\\n雖然不是很喜歡先去拜訪蒙特鳩, 特別是看誠意才會回答你."
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "大概會問我們研究所有沒有受到入侵吧?"
+        },
+        "3": {
+          "_dirType": "string",
+          "_value": "嗯. 我的情報看起來這麼可笑嗎? 我已經知道你去過蒙特鳩協會的事了. 那些蒙特鳩傢伙是在我的手掌心上."
+        },
+        "4": {
+          "_dirType": "string",
+          "_value": "反正,就那樣啦.\\r沒錯其實我們研究所是被侵入的狀態. 氣死人了,連那些人是誰都不知道.\\r真的是超丟臉的所以也沒向別人求助. 腐敗的傢伙們."
+        },
+        "5": {
+          "_dirType": "string",
+          "_value": "軍團長 #o8860000#? 是這樣啊. 我們受到楓之谷武鬥大會綁架事件的牽連了嗎? 真倒楣."
+        },
+        "6": {
+          "_dirType": "string",
+          "_value": "你看.所以你們回到研究所,然後把那些傢伙們全趕走了?那樣的話我會考慮."
+        },
+        "7": {
+          "_dirType": "string",
+          "_value": "首先,回去.我現在因為這個研究很忙.以後派人來的話再把研究所設計圖給他看."
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "幹嘛?來這有何貴幹?"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "什? 要辦的事搞丟了?真不乾脆..."
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390368"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q59225s"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "59224"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub"
+      },
+      "job_TW": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "11212"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "11213"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2111001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034054"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

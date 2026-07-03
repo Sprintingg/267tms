@@ -1,0 +1,321 @@
+{
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2012012"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "70"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3055"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3054"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031190"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2012012"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000073"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "15"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4003004"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000021"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好呀！和#p2012019#對話還順利嗎？什麼？天哪…遺失了#t4031190#嗎？怎麼這樣…如果要和#p2012019#對話一定要再次製作 #t4031190#。不過你要取的材料…你辦得到嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "已經做過一次了，比剛剛更熟練，不需要麼多材料了。請取得#t4000073# 50個、 #t4003004# 10個和 #t4000021# 10個。這些就能製作#t4031190#。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "有困難的話，那也沒辦法…如果找不到#t4031190#只好再次製作，你再來此地吧！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000073"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-15"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4003004"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000021"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-5"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        },
+        "3": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031190"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[天空之城] 再次收集妖精的號角"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "啊!將可以與#p2012019#對話的#t4031190#弄丟了.怎麼辦呢?再去找#b#p2012012##k問問吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2012012#說，因為之前已經做過一次，所以重新製作#t4031190#並不困難，只要提供材料就行。 說可以用更少的材料製作，所以讓我們試試看拿#b#t4000073#15個#k和#b#t4003004#10個#k、#b#t4000021#5個#k吧？"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "將所需材料交給#p2012012#並獲得#t4031190#.啊咻...#p2012012#說如果再將#t4031190#弄丟了可以再來找他製作，但還是小心保管別再弄丟了。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "34"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000073:# #t4000073:# #c4000073# / 30\n#i4003004:# #t4003004:# #c4003004# / 10\n#i4000021:# #t4000021:# #c4000021# / 5\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4031190"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好?和#p2012019#聊得怎麼樣？啊?哎呀…把#t4031190#弄丟了?這個…如何你想再和#p2012019#聊聊，我可以再為你製作#t4031190#。只是材料需要你自己來準備...可以嗎?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "因為已經做過一次，所以比上次更熟悉，可以使用更少的材料。請帶來#b#t4000073#15個#k和#b#t4003004#10個#k、#b#t4000021#5個#k。如果有這樣的材料，應該就能製作#t4031190#。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果你覺得困難那就沒辦法了...如果你找不到遺失的#t4031190#想再重新製作時再來找我。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#t4031190#材料收集齊全了嗎?好啊.材料齊全了。這樣我就可以製作#t4031190#了.請稍等..."
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "好了,這就是#t4031190#。製作過程比上次可順利多了。請妥善保管，小心不要再弄丟了。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果又弄丟了#t4031190#,就來找我吧.只要帶來材料,我會幫你重新製造的。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "嗯…好像還沒收集到全部的#t4031190#材料呢？ 是忘記製作#t4031190#材料的材料嗎？ 那是用#b#t4000073#15個#k和#b#t4003004#10個#k、#b#t4000021#5個#k製作的。"
+          }
+        }
+      }
+    }
+  }
+}

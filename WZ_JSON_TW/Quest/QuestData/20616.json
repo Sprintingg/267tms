@@ -1,0 +1,282 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇家騎士團] 女神的恩典"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "15"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "接受女神的恩典可以變成更強的騎士團。請找女神。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "跟神木村的豎琴獲得女神力量的根源帶去吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "跟神木村的豎琴獲得女神力量的根源帶去吧。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4032861:# #t4032861:# #c4032861# / 5\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1101000"
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "1112"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "1212"
+        },
+        "2": {
+          "_dirType": "int",
+          "_value": "1312"
+        },
+        "3": {
+          "_dirType": "int",
+          "_value": "1412"
+        },
+        "4": {
+          "_dirType": "int",
+          "_value": "1512"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1101000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032861"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032861"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-5"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      },
+      "skill": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "10000074"
+          },
+          "skillLevel": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "masterLevel": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "job": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "int",
+              "_value": "1112"
+            },
+            "1": {
+              "_dirType": "int",
+              "_value": "1212"
+            },
+            "2": {
+              "_dirType": "int",
+              "_value": "1312"
+            },
+            "3": {
+              "_dirType": "int",
+              "_value": "1412"
+            },
+            "4": {
+              "_dirType": "int",
+              "_value": "1512"
+            }
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "10001075"
+          },
+          "skillLevel": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "masterLevel": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "job": {
+            "_dirType": "sub",
+            "0": {
+              "_dirType": "int",
+              "_value": "1112"
+            },
+            "1": {
+              "_dirType": "int",
+              "_value": "1212"
+            },
+            "2": {
+              "_dirType": "int",
+              "_value": "1312"
+            },
+            "3": {
+              "_dirType": "int",
+              "_value": "1412"
+            },
+            "4": {
+              "_dirType": "int",
+              "_value": "1512"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "#b#h0##k。什麼事要找我呢？\\r\\n#L0##b嗯，我聽說若得到女皇的恩寵，就能成為更強的皇家騎士團。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "我身為這裡的女皇，可以把恩寵賜給許多的騎士團。但是不知從何時開始力量逐漸減弱了。你願意幫助我找回失去的力量嗎 ？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我的能力來自佩里多特寶石。但是賜給太多騎士團恩寵之後，力量就逐漸減弱了。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "聽說神木村的哈維和血腥哈維有罕見的太陽力量的佩里多特。騎士請去像他們取得#b佩里多特 5個#k。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你對現在很滿意嗎？以目前的能力應該無法擊倒闇黑龍王或粉豆…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "請問找到擁有太陽能力的佩里多特嗎？那麼我就頒賜恩寵給你。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "就按照我們的約定讓你變得更強。\r\n因為我的傲氣你已經擁有比之前更多的 HP與 MP，因為我的祈禱你可以感覺到更強的能力。請打開技能欄確認吧 。\r\n"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "去向神木村的#r哈維#k和#r血腥哈維#k取得 #b佩里多特5個#k。"
+          }
+        }
+      }
+    }
+  }
+}

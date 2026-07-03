@@ -1,0 +1,232 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "info": {
+      "_dirType": "string",
+      "_value": "끈끈이 발판, 지나가는 몬스터 슬로우"
+    },
+    "placementArea": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": -59,
+        "_y": -25
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 61,
+        "_y": 0
+      }
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "craft"
+    },
+    "noFlip": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "string",
+      "_value": "r2692016"
+    },
+    "demolish": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "firstAttack": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "firstAttackRange": {
+      "_dirType": "sub",
+      "lt": {
+        "_dirType": "vector",
+        "_x": -59,
+        "_y": -32
+      },
+      "rb": {
+        "_dirType": "vector",
+        "_x": 59,
+        "_y": 0
+      }
+    },
+    "maxHP": {
+      "_dirType": "int",
+      "_value": "1000"
+    },
+    "attackPower": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "targetType": {
+      "_dirType": "string",
+      "_value": "tower"
+    }
+  },
+  "Anims": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "stand": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub",
+              "AnimReference": {
+                "_dirType": "sub"
+              }
+            }
+          }
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub",
+              "AnimReference": {
+                "_dirType": "sub"
+              }
+            }
+          }
+        },
+        "Notifies": {
+          "_dirType": "sub",
+          "sound": {
+            "_dirType": "sub",
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/MExplorer.img/Reactor/2000000/0_hit"
+              }
+            }
+          }
+        }
+      },
+      "die": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub",
+              "AnimReference": {
+                "_dirType": "sub"
+              }
+            }
+          }
+        },
+        "Notifies": {
+          "_dirType": "sub",
+          "sound": {
+            "_dirType": "sub",
+            "Notify": {
+              "_dirType": "sub",
+              "!class": {
+                "_dirType": "string",
+                "_value": "WZ2AnimNotify_PlaySound"
+              },
+              "SoundPath": {
+                "_dirType": "string",
+                "_value": "Sound/MExplorer.img/Reactor/2000000/0_die"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "Skills": {
+    "_dirType": "sub",
+    "attack1": {
+      "_dirType": "sub",
+      "Anim": {
+        "_dirType": "sub",
+        "LayerSlots": {
+          "_dirType": "sub",
+          "Slot0": {
+            "_dirType": "sub",
+            "Segment0": {
+              "_dirType": "sub"
+            }
+          }
+        },
+        "Notifies": {
+          "_dirType": "sub",
+          "Attack": {
+            "_dirType": "sub"
+          }
+        }
+      },
+      "Events": {
+        "_dirType": "sub",
+        "Attack": {
+          "_dirType": "sub",
+          "type": {
+            "_dirType": "string",
+            "_value": "Attack"
+          },
+          "constants": {
+            "_dirType": "sub",
+            "damage": {
+              "_dirType": "string",
+              "_value": "100"
+            },
+            "attackCount": {
+              "_dirType": "string",
+              "_value": "1"
+            },
+            "lt": {
+              "_dirType": "vector",
+              "_x": -59,
+              "_y": -32
+            },
+            "rb": {
+              "_dirType": "vector",
+              "_x": 59,
+              "_y": 0
+            },
+            "mobCount": {
+              "_dirType": "string",
+              "_value": "6"
+            }
+          },
+          "targetBuffID": {
+            "_dirType": "int",
+            "_value": "2996"
+          }
+        }
+      },
+      "common": {
+        "_dirType": "sub",
+        "cooltime": {
+          "_dirType": "string",
+          "_value": "5"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -59,
+          "_y": -32
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 59,
+          "_y": 0
+        }
+      }
+    }
+  }
+}

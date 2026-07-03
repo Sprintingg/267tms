@@ -1,0 +1,92 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "growth"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "stat"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "[潛能]偵測到傳說等級潛能"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "潛能重設後達成傳說等級"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "unique"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "40"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "uiForm": {
+        "_dirType": "string",
+        "_value": "basic"
+      },
+      "gauge": {
+        "_dirType": "string",
+        "_value": "mission_count"
+      }
+    },
+    "sync": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "潛能重設後達成傳說等級"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "ability_change": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            },
+            "type": {
+              "_dirType": "string",
+              "_value": "counting"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub",
+            "ability": {
+              "_dirType": "sub",
+              "ability_grade": {
+                "_dirType": "sub",
+                "min": {
+                  "_dirType": "int",
+                  "_value": "3"
+                },
+                "max": {
+                  "_dirType": "int",
+                  "_value": "3"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

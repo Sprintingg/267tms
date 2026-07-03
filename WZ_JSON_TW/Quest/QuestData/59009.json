@@ -1,0 +1,156 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[幻獸師] 召喚森林靈魂-雪豹"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "85"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "與萊伊簽了守護契約.\\r\\n雖然不知道為什麼,但覺得有股奇怪的力量."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "必須熟悉使用萊伊力量的方法.\\r\\n使用#b[Shift]#k鍵開啟#b\"召喚森林靈魂\"#k後,按右側方向鍵即可使用雪豹的力量.在雪豹模式時輸入#b[Ctrl]#k鍵集退怪物們吧!"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "學習了使用萊伊力量的方法."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o9390927# #a590091#\r\n"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[必須]"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "使用'召喚森林靈魂'技能,按右邊的方向鍵!那就會變成雪豹模式!SHAKE IT OUT!"
+          },
+          "1": {
+            "_dirType": "string",
+            "_value": "再來輸入[ctrl]鍵,使用雪豹突擊技能"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390302"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q59009s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "59008"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub"
+      },
+      "job_TW": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "11212"
+        },
+        "1": {
+          "_dirType": "int",
+          "_value": "11213"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9390302"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q59009e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9390927"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "5"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

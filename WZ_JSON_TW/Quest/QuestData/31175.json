@@ -1,0 +1,251 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[十字獵人] 奇怪的氣息"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "264"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "雖然守住了英雄們的安全，但是#p2144006#似乎好像還被施展了什麼。請去與他對話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2144006#說在時間神殿的方向感受到邪惡的氣息。接受#b#p2144009##k的幫助去時間神殿看看吧！"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p2144006#說在時間神殿的方向感受到邪惡的氣息。接受#b#p2144009##k的幫助去時間神殿看看吧！"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "可進行「[十字獵人] 前往時間神殿」任務\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "140"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "149"
+      }
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "16"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "8924227"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2144006"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q31175s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "140"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31174"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2144009"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q31175e"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "8924227"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "這就可以確保英雄們的安全。雖然他們長久時間沉睡，不過哪個時間一定會再次甦醒。這都多虧你。但是還有一點不是很安心。剛剛暫時恢復力量時有感覺到邪惡的氣息。這就像面對黑魔法師時一樣。那肯定是你說的#r阿卡伊農#k吧。\\r\\n#L0##b這氣息在哪裡感覺到的呢？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "雖然有點模糊，是從#b時間神殿#k的方向傳來的。在封印黑魔法師的時候，我和普力特用盡我們所有魔力準備了安全裝置。黑魔法師扭曲封印時間點的時空間，讓任何人都#b無法回到#k那之前的過去。\\r\\n#L0##b  #l\\n#k"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "2": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果想前往時間神殿，雖然你已經經歷過了，但還是得變為龍飛過去才行。 在神木村的某處應該還會有之道如何變身為龍的矮人族存在的。 他的名字也許叫做#b#p2144009##k，請你去找他吧。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "嗯？居然突然提出疑問。如果說阿卡伊農的目的是消滅英雄，那麼英雄們倒下的現在不就是最好的時機嗎？這確實是個好問題。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "就算不能除掉和黑魔法師一起被封印的夜光，按他的性格，他也不會搞出大事，並安靜地潛逃。但攻擊現在的英雄，確實是一個合理的選擇。"
+        },
+        "3": {
+          "_dirType": "string",
+          "_value": "但他是像蛇一樣的人。應該他還有暗中盤算些什麼吧。先往時間神殿出發吧。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "就這樣忽略不管的話，會讓我有非常不安的感覺。 感覺如果就放著不管，似乎會出什麼大事。"
+        }
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "但如果是#b時間超越者優伊娜#k的話，就另當別論了。 普力特的時間魔法再怎麼優秀，也終究是個人類而已。 如果是時間的女神優伊娜，區區扭曲時空就能輕鬆解決。我好像知道為什麼阿卡伊農沒有出現在我們面前了。\\r\\n#L0#b那麼，阿卡伊農……！#l\\n#k"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "看來你和我的想法是一致的。沒錯，阿卡伊農一定是去時間神殿找被封印的女神優伊娜的。我很想追上他，可是我已經沒有任何力量了。所以，拜託你去時間神殿看看情況吧。"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "呃啊! 不要靠近我!\\r\\n#L0##b不會傷害你. 我是來找可以變身為龍的矮人族.#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "…嗯？ 現在還有人在這附近徘徊，還真是神奇呢。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "總之，請等一下再來與我對話，好嗎？ 因為你我混亂的心情還沒有平復啊。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#b#p2144009##k應該就在神木村的某處。 透過右邊的傳送點去吧。"
+          }
+        }
+      }
+    }
+  }
+}

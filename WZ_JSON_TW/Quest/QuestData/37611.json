@@ -1,0 +1,156 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "area": {
+      "_dirType": "int",
+      "_value": "273"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "[反轉城市]我們不是老鼠"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#返回避難處(#R37611ExdirRef37611#)\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "和#r倍爾的居處#k的#b倍爾#k對話。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "前往#r地下線路避難處#k和#b倍爾#k對話。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "決定聯手對抗#bT-boy#k。\r\n必須跟著倍爾前往#r地下線路某處#k。"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q37611x"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|1"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "8"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "205"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "205"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q37611s"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3004601"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "37610"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3004614"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q37611e"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "37611"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "返回避難處。"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "dir"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "如果想回地下線路避難處，必須往左走。"
+          }
+        }
+      }
+    }
+  }
+}

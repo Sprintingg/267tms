@@ -1,0 +1,269 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[櫻花城] 擊退蟾蜍怪"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "18"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "一解除領主房間的結界後，就聽見富士驚慌失措的嗓音。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "富士說進入解除結界咒術的領主房間，擊退 #e#b蟾蜍怪#k#n和 #r#e救出被囚禁在櫃子裡的領主後#k#n，吩咐帶著證據 #b#e#t4000703##k#n去找美代子公主。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "富士說進入解除結界咒術的領主房間，#e#b擊退蟾蜍怪#k#n和救出 #r#e被囚禁在櫃子裡的領主後#k#n，吩咐帶著證據 #b#e#t4000703##k#n去找美代子公主。"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4000703:# #t4000703:# #c4000703# / 1\r\n#o6500012# #a43251#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 130,000\r\n可進行 '月亮與櫻花武士' 任務\r\n可進行 '為了葵準備的禮物' 任務\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "130000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2200003"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4324"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2200004"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "4325"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "確認"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "king"
+          }
+        }
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000703"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "6500012"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "130000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4000703"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#h0#，現在是好機會！已經解除蟾蜍怪的結界了，請去領主的房間擊退蟾蜍怪，然後救出領主吧！"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "在蟾蜍怪現出原形之前，絕對不能讓他有任何空檔！擊敗妖怪後，將 #b#e#t4000703##k#n帶來當作證據，確認被關在櫃子中的領主的生死後，將消息告訴被囚禁的 #b美代子公主#k！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "你回來了呀！已經擊退蟾蜍怪了嗎？父親呢？是否平安無事呢？\\r\\n#L0##b領主平安無事。蟾蜍怪已經完全消失了。我將 #t4000703#帶來當作證據。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "父親平安無事，真是太好了！真是叫人捏一把冷汗。真是太感謝了。應該是上天可憐我，所以才會派你這麼一位武士來。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "已經擊敗蟾蜍怪了嗎？父親的生死呢？"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "在蟾蜍怪現出原形之前，絕對不能讓他有任何空檔！擊敗妖怪後，將 #b#e#t4000703##k#n帶來當作證據，確認被關在櫃子中的領主的生死後，將消息告訴被囚禁的 #b美代子公主#k！"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "已經擊敗蟾蜍怪了嗎？父親的生死呢？"
+          }
+        },
+        "quest": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "已經擊敗蟾蜍怪了嗎？父親的生死呢？"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "已經擊敗蟾蜍怪了嗎？父親的生死呢？"
+          }
+        }
+      }
+    }
+  }
+}

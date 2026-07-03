@@ -1,0 +1,216 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[專門技術] 說話的樹的委託I"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "2"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b魔法森林閃爍的樹叢通道#k的#b說話的樹#k說有件事想要拜託…"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "說話的樹說由於自己太矮，總是受到人們的歧視。拜託我幫他去找有助於長高的藥水。\r\n\r\n#i2003000##t2003000#  #b#c2003000# / 10#k\r\n#i2003020##t2003020#  #b#c2003020# / 10#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "幫說話的樹找回了藥水。"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2640"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1032112"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "35"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1032112"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2003000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2003020"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2640"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2003000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2003020"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "雖然我會說話，但不一定非要說很多。可是有些人經過的時候就跟我說話。理由就是好奇無聊。真是有夠麻煩的。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "無論怎麼警告還是說話，肯定就是瞧不起我。話說，我身為魔法森林的樹看起來又小又好欺負。所以說再長高一點，煩人的人會不會減少呢？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "就這麼待著身高不會長高的。因為在這裡有很多個高的樹，連吸收陽光都很難。所以我也像人類一樣喝藥水。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "找來#b體力恢復藥水 1000#k和#b活力恢復藥水 1000#k。喝了那個肯定會長高，就像沒人來煩我的程度一樣。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "啥？那種藥水從哪裡找？據說不是商店賣的藥水。是不是有會製作的人呢？啥，再不清楚就自己做也可以。好像說學煉金術就可以製造藥水。 "
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "哼，你也瞧不起我吧？ "
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "拜託的藥水找到了嗎？給我看看，我喝一下。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "咕嚕咕嚕~ …怎麼樣？長高了嗎？啥？一點都沒有？據說是特效藥水，不是嗎？只對人類有效果的藥水嗎？"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "首先先觀察吧。謝謝你幫我。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒找到拜託的藥水嗎？聽說那不是在雜貨商店賣的藥水…是不是只有會煉金術的人才可以做呢？"
+          }
+        }
+      }
+    }
+  }
+}

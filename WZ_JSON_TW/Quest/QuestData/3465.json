@@ -1,0 +1,197 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[星星力量] 導正消失的時間"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "36"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p2041023#因為變異的鐘塔最下層的狀況而陷入混亂當中，和#p2041023#交談吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2041023#說清理因為流星而變異的鐘塔最下層是他唯一能做的事情，消滅隱藏因為星星墜落而分散的時間的 #o6300100#和 #o7140000#，然後恢復時間吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "受#p2041023#的委託消滅隱藏時間的#o6300100#和 #o7140000#，並且讓時間恢復原狀了。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o6300100# #a34651#\r\n#questorder1##o7140000# #a34652#"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "#m220060100#\r\n#m220060200#"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "764892"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2041023"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "115"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3463"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2041023"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "6300100"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "7140000"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "764892"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這也是沒辦法的，畢竟我們要如何阻擋墜落的星星呢？我們唯一能做的就是負責善後。但是，這次的事情造成的餘波太大了，協助收拾所需要的人力不足，你願意幫忙嗎？  \\r\\n"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "星星墜落的衝擊導致鐘塔最下層的時間完全分散了，大概是 #r#o6300100##k和 #r#o7140000##k他們將分散的時間藏起來了吧，只要解決他們，就能找回分散的時間。 \\r\\n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果不能守住這個地方，玩具城就會有危險，畢竟這個地方就如同玩具城的心臟一樣。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "消失的時間全都找回來了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "太好了，幸虧能阻止最糟糕的情況發生，時間消失會怎麼樣呢？我根本就無法想像，倘若真的發生那種情況……這個世界就會變成沒有過去、現在和未來的地方吧。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#r#o6300100##k和 #r#o7140000##k一定是躲在分散的時空中，只要解決他們，就能找回時空。"
+          }
+        }
+      }
+    }
+  }
+}

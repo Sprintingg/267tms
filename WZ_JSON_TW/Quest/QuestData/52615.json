@@ -1,0 +1,205 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[皇帝的陵]掃除皇帝的聖物2"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "61"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去找高材打聽關於下一個聖物的內容吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "去擊退皇帝的聖物其中之一的毒牙蛇。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "去向泰尤雄打聽如何去找皇帝吧。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#o9410222# #a526151#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 298,796\r\n可進行 '[皇帝的陵]尋找皇帝' 任務\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "298796"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "long",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "298796"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "已將去找毒牙蛇的道路打開了，準備好要擊退第二個聖物了嗎?"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "第二個聖物毒牙蛇是皇帝的寵物。因為在暗黑氣息中塊頭培養得非常巨大尖牙也非常的發達。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "擊退毒牙蛇後起在去找泰尤雄詢問去找皇帝的方法。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "再次與我對話的話就讓你去找毒牙蛇。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "要聽完我的說明才可以進入皇帝的陵的下個階段。改變想法的話再來找我。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "已擊退#b#o9410222##k了嗎?"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "擊退#b#o9410222##k了阿。. 守護皇帝的兩個聖物以全部消失現在可以去見皇帝了。請過一會再跟我說話。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒去找 #p9330232#嗎？"
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "請擊退#b#o9410222##k後再過來。"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330231"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "125"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201301160000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201301160000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "52614"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330232"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9410222"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

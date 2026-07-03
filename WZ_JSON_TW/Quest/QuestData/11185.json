@@ -1,0 +1,216 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "休菲凱曼和闇黑龍王"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "從怪物公園內的老舊袋子內發現到一張老舊照片。這就去問問看出現在照片內的人物休菲凱曼，有關這張照片的事情吧！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "從怪物公園內的老舊袋子內發現到一張老舊照片。這就去問問看出現在照片內的人物休菲凱曼，有關這張照片的事情吧！"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "在怪物公園的時候撿到了老舊的照片。照片裡休菲凱曼竟然靠在闇黑龍王的頭上笑著。不過他竟然會和闇黑龍王一起照相，到底他的真面目是什麼呢。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4310020"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          }
+        }
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9071000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4350001"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9071000"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4350001"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4310020"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4350001"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "看樣子常來怪物公園的樣子呢。有什麼事呢？\\r\\n#L0##b在你想要找的舊信封裡，找到了很古老的照片。是你和闇黑龍王一起照的照片。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "我所找過的信封？和闇黑龍王一起照的照片…等我一下下。我得回想一下。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "(到底是誰做的？趕快找到並解決…) 啊~看樣子是在講那照片，被勇敢的我嚇到了嗎？\\r\\n#L0##b別馬虎敷衍了事，講事實。你的真面目是什麼？為什麼會和闇黑龍王？？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "在年輕時期，到新楓之谷各地旅行並擊退了怪物，雖然很遺憾地沒能擊退闇黑龍王，但那照片就是其證據啊！沒必要以那種尊敬的眼神來看我。 那麼你去忙吧。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "memo": {
+    "_dirType": "string",
+    "_value": "드럼통 (폭발)(B세트)"
+  },
+  "AnimSet": {
+    "_dirType": "sub",
+    "appear": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "AnimReference": {
+              "_dirType": "sub"
+            }
+          }
+        }
+      },
+      "Sections": {
+        "_dirType": "sub",
+        "Loop": {
+          "_dirType": "sub",
+          "StartTime": {
+            "_dirType": "int",
+            "_value": "0"
+          },
+          "NextSectionName": {
+            "_dirType": "string",
+            "_value": "Loop"
+          }
+        }
+      }
+    },
+    "stand": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "AnimReference": {
+              "_dirType": "sub"
+            }
+          }
+        }
+      },
+      "Sections": {
+        "_dirType": "sub",
+        "Loop": {
+          "_dirType": "sub",
+          "StartTime": {
+            "_dirType": "int",
+            "_value": "0"
+          },
+          "NextSectionName": {
+            "_dirType": "string",
+            "_value": "Loop"
+          }
+        }
+      }
+    },
+    "hit": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "AnimReference": {
+              "_dirType": "sub"
+            }
+          }
+        }
+      },
+      "Sections": {
+        "_dirType": "sub",
+        "Loop": {
+          "_dirType": "sub",
+          "StartTime": {
+            "_dirType": "int",
+            "_value": "0"
+          },
+          "NextSectionName": {
+            "_dirType": "string",
+            "_value": "Loop"
+          }
+        }
+      }
+    },
+    "disabled": {
+      "_dirType": "sub",
+      "LayerSlots": {
+        "_dirType": "sub",
+        "Slot0": {
+          "_dirType": "sub",
+          "Segment0": {
+            "_dirType": "sub",
+            "AnimReference": {
+              "_dirType": "sub"
+            }
+          }
+        }
+      },
+      "Sections": {
+        "_dirType": "sub",
+        "Start": {
+          "_dirType": "sub",
+          "StartTime": {
+            "_dirType": "int",
+            "_value": "0"
+          },
+          "NextSectionName": {
+            "_dirType": "string",
+            "_value": "Loop"
+          }
+        },
+        "Loop": {
+          "_dirType": "sub",
+          "StartTime": {
+            "_dirType": "int",
+            "_value": "1110"
+          },
+          "NextSectionName": {
+            "_dirType": "string",
+            "_value": "Loop"
+          }
+        }
+      },
+      "Notifies": {
+        "_dirType": "sub",
+        "sound": {
+          "_dirType": "sub",
+          "Notify": {
+            "_dirType": "sub",
+            "!class": {
+              "_dirType": "string",
+              "_value": "WZ2AnimNotify_PlaySound"
+            },
+            "SoundPath": {
+              "_dirType": "string",
+              "_value": "Sound/Redmoon.img/etc/die"
+            }
+          }
+        },
+        "attack": {
+          "_dirType": "sub",
+          "TriggerTime": {
+            "_dirType": "int",
+            "_value": "360"
+          }
+        },
+        "effect": {
+          "_dirType": "sub",
+          "Notify": {
+            "_dirType": "sub",
+            "!class": {
+              "_dirType": "string",
+              "_value": "WZ2AnimNotify_LayerEffect"
+            },
+            "Effect": {
+              "_dirType": "sub",
+              "overlay": {
+                "_dirType": "string",
+                "_value": "None"
+              },
+              "z": {
+                "_dirType": "string",
+                "_value": "Z_EFFECT"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "attack": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "lt": {
+          "_dirType": "vector",
+          "_x": -115,
+          "_y": -160
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 115,
+          "_y": 60
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "1"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "10"
+        }
+      },
+      "CalculationModifiers": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "TransientAggregatorIdentifier": {
+            "_dirType": "string",
+            "_value": "finalDamage"
+          },
+          "AggregatorType": {
+            "_dirType": "string",
+            "_value": "Transient"
+          },
+          "ModifierChannel": {
+            "_dirType": "string",
+            "_value": "Channel0"
+          },
+          "ModifierOp": {
+            "_dirType": "string",
+            "_value": "Additive"
+          },
+          "ModifierMagnitude": {
+            "_dirType": "sub",
+            "MagnitudeCalculationType": {
+              "_dirType": "string",
+              "_value": "AttributeBased"
+            },
+            "AttributeBasedMagnitude": {
+              "_dirType": "sub",
+              "AttributeCalculationType": {
+                "_dirType": "string",
+                "_value": "AttributeMagnitude"
+              },
+              "Coefficient": {
+                "_dirType": "sub",
+                "ValuesText": {
+                  "_dirType": "string",
+                  "_value": "0.3"
+                }
+              },
+              "BackingAttribute": {
+                "_dirType": "sub",
+                "AttributeToCapture": {
+                  "_dirType": "sub",
+                  "Field": {
+                    "_dirType": "string",
+                    "_value": "MaxHP"
+                  },
+                  "Class": {
+                    "_dirType": "string",
+                    "_value": "WZ2RLAttributeSet"
+                  }
+                },
+                "AttributeSource": {
+                  "_dirType": "string",
+                  "_value": "Target"
+                }
+              }
+            }
+          }
+        }
+      },
+      "targetingType": {
+        "_dirType": "string",
+        "_value": "All"
+      }
+    }
+  },
+  "info": {
+    "_dirType": "sub",
+    "hitPoint": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  }
+}

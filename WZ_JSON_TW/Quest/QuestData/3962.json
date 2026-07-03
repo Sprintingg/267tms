@@ -1,0 +1,140 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[阿斯旺反抗戰]愚蠢的人1"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "43"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "向伊阿孫索取巫女之珠吧…他為什麼討厭梅迪沙呢？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "伊阿孫露出不悅的臉色說若需要巫女之珠就去問清隆。好像有什麼難言之隱，是什麼呢？"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "清隆以苦澀的臉色說他把巫女之珠都給了希拉目前手中並沒有，所以要重新製作。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2183000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "3961"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2183002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "……\\r\\n#L0##b(這個人看起來好像有點不是很愉快…什麼？難道不能向他請求這種事情嗎？真的是因為討厭梅迪沙嗎？)#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "如果你想要巫女之珠，那就去找清隆吧。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "身為阿斯旺之王的我，竟然也要聽取異地人的意見…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "咦？你說你需要巫女之珠？那是殿下管理的物品耶…不，應該說殿下現在沒有那個東西。因為以前全都給了希拉…"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "看來只能再次製作了…"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你想要再去找王嗎？"
+          }
+        }
+      }
+    }
+  }
+}

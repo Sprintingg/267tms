@@ -1,0 +1,173 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 作出昏昏欲睡的表情。"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "被大發企劃代表#b#p1052121##k遷就要接受#b演技課程#k. 是哪個課程? 向#b弓箭手村市場, 美髮店旁邊#k站著的#p1052121#進行對話."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "這次來學習想睡覺的表情. 如果是打瞌睡的表情在#b鯨魚號的 #m120000400##k的#b#p1092004##k平常都在打瞌睡, 可以向他學習. 但是直視的期間為了不讓他醒來打倒周圍的怪物. "
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "學到昏昏欲睡的表情。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o1210101# #a65061#\r\n#questorder1##o1210104# #a65062#\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052121"
+      },
+      "charmMin": {
+        "_dirType": "int",
+        "_value": "50"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "6505"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1092004"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q6506e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1210101"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "1210104"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "100"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#h0#。冒險還順利嗎？不像被冒險累垮的魅力，真讓人佩服啊。那麼開始演技課程吧？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "第五個課程。這次學習昏昏欲睡的表情吧。無防備的表情不容易出現，所以需要學習。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "說到睡覺有想到的人嗎? #b鯨魚號, #m120000400##k上有通常都在睡覺的船員, #b#p1092004##k. 請好好觀察他."
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "要想仔細觀察#p1092004#的表情，最好給他提供容易睡覺的環境。除掉鯨魚號週圍的#r肥肥們#k會有幫助的。那就期待你的表現。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你的魅力會經由演技課程越來越閃耀…可惜啊。請再考慮一下吧。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒有見到#b#p1092004##k嗎? 他通常在#b鯨魚號, #m120000400##k睡覺."
+          }
+        },
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "Zzzzz…！！怪物！怪物出現了…不是嗎？啊，最近怎麼老是夢見#r肥肥#k啊？"
+          }
+        }
+      }
+    }
+  }
+}

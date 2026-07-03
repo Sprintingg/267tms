@@ -1,0 +1,125 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 作出嚇呆的表情。"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "被大發企劃代表#b#p1052121##k遷就要接受#b演技課程#k. 是哪個課程? 向#b弓箭手村市場, 美髮店旁邊#k站著的#p1052121#進行對話."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "這次決定學習嚇呆的表情。要讓在#b#m101000000##k的#b#p1032104##k博士嚇呆…說什麼話可以讓#p1032104#博士嚇呆呢？好好想一下，再跟#p1032104# 博士說話吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "學會作出嚇呆的表情的方法。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1052121"
+      },
+      "charmMin": {
+        "_dirType": "int",
+        "_value": "40"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "6503"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1032104"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q6504e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#h0#。你的魅力越來越耀眼啊。只要具備好的演技你馬上就可以進軍演藝圈了。那麼開始演技課程啊？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這是第三個演技課程。那麼這次就學習嚇呆的表情嗎。這種表情越是理性的人演得更好。認識#b#m101000000##k的#b#p1032104##k博士嗎？她肯定能擺出這種表情的。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "問題是如何讓#p1032104#博士感到嚇呆…這個你要好好想想。如果你知道她 #b已經結了婚，而且還有孩子#k的話，就會知道她會對什麼樣的話感到嚇呆。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "演技課程難嗎？還沒有那麼難的表情啊…"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒見到 #b#p1032104##k博士嗎？她就在#b#m101000000##k。"
+          }
+        }
+      }
+    }
+  }
+}

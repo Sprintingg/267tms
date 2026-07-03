@@ -1,0 +1,110 @@
+{
+  "info": {
+    "_dirType": "sub",
+    "mainCategory": {
+      "_dirType": "string",
+      "_value": "item"
+    },
+    "subCategory": {
+      "_dirType": "string",
+      "_value": "enchantment"
+    },
+    "name": {
+      "_dirType": "string",
+      "_value": "[星力]星星有20個！"
+    },
+    "desc": {
+      "_dirType": "string",
+      "_value": "星力20星強化成功"
+    },
+    "difficulty": {
+      "_dirType": "string",
+      "_value": "unique"
+    },
+    "score": {
+      "_dirType": "int",
+      "_value": "40"
+    },
+    "uiType": {
+      "_dirType": "sub",
+      "uiForm": {
+        "_dirType": "string",
+        "_value": "basic"
+      },
+      "gauge": {
+        "_dirType": "string",
+        "_value": "submission_info"
+      },
+      "gaugeMissionIndex": {
+        "_dirType": "int",
+        "_value": "0"
+      },
+      "gaugeSubMission": {
+        "_dirType": "string",
+        "_value": "starforce_enchant"
+      }
+    }
+  },
+  "mission": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "name": {
+        "_dirType": "string",
+        "_value": "星力20星強化成功"
+      },
+      "subMission": {
+        "_dirType": "sub",
+        "starforce_enchant": {
+          "_dirType": "sub",
+          "score": {
+            "_dirType": "sub",
+            "targetScore": {
+              "_dirType": "int",
+              "_value": "1"
+            },
+            "compare": {
+              "_dirType": "string",
+              "_value": "greater_than_or_equal_to"
+            },
+            "type": {
+              "_dirType": "string",
+              "_value": "counting"
+            }
+          },
+          "checkValue": {
+            "_dirType": "sub",
+            "starforce_enchant": {
+              "_dirType": "sub",
+              "starforce_enchant_result": {
+                "_dirType": "sub",
+                "condition": {
+                  "_dirType": "string",
+                  "_value": "or"
+                },
+                "values": {
+                  "_dirType": "sub",
+                  "0": {
+                    "_dirType": "string",
+                    "_value": "success"
+                  }
+                }
+              },
+              "starforce_stars": {
+                "_dirType": "sub",
+                "min": {
+                  "_dirType": "int",
+                  "_value": "20"
+                },
+                "max": {
+                  "_dirType": "int",
+                  "_value": "20"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

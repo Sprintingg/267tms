@@ -1,0 +1,157 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[3！3！3！活動] 一個禮拜簽到3次第1週"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "從3月22日開始到3月28日為止#b[3！3！3！活動] 進行一個禮拜只要簽到3次就給楓之谷點數的#k第1週活動。去聽聽正在進行活動的GM說明吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "從3月22日開始到3月28日為止#b[3！3！3！活動] 進行一個禮拜只要簽到3次就給楓之谷點數的#k第1週活動。去聽聽正在進行活動的GM說明吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "從3月22日開始到3月28日為止#b[3！3！3！活動] 進行一個禮拜只要簽到3次就給楓之谷點數的#k第1週活動。去聽聽正在進行活動的GM說明吧。"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201203290000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201203290000"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "12263"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "10"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q12261s"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201203150000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201203150000"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "2"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q12261e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你好 #h0# ！\\r\\n#b2012年 3月 22日#k起至#b2012年 4月 4日#k至進行幸運的3！3！3！出席活動。#r一週內完成 3次出席點名#k時待活動結束後透過抽獎可以獲得 #b楓之谷點數#k的禮物。你要申請今天的出席點名挑戰楓之谷點數嗎？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "一週只要出席三次就自動參加活動，所以請在遊戲下線之前記得要參加～！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你參加出席點名了嗎？ #b幸運的 3！3！3！活動進行至 4月 4日#k請每天前往參加。那麼，希望在楓之谷度過快樂時光！"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你今天還沒有出席點名喔～。請再一次出席點名。"
+          }
+        }
+      }
+    }
+  }
+}

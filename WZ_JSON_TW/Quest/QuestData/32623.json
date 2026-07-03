@@ -1,0 +1,160 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[次元圖書館] 桃醫仙的靈藥"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "82"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "已經交出所有材料了.現在能夠製作藥品了吧?\\r\\n和桃醫仙交談吧."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "桃醫仙製作了靈藥.這樣就能夠治療女皇的病了.\\r\\n#b(將桃醫仙的靈藥帶回去耶雷弗交給那因哈特吧.)#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "已經將桃醫仙製作的藥交給那因哈特了.\\r\\n希望對西格諾斯會有效果."
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033969"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "好,靈藥已經製作好了,好好帶在身上吧."
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "錢早就收到了.不用擔心,儘管好好治療患者的病吧.雖然不清楚你是要讓誰吃...\\r\\n#b(將桃醫仙的靈藥帶回去耶雷弗交給那因哈特吧.)#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "材料都交給你了,你這是什麼意思呢?"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "既然已經收到藥品,為何還不快點回去呢?\\r\\n#b(將桃醫仙的靈藥帶回去耶雷弗交給那因哈特吧.)#k"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "桃醫仙的靈藥什麼時候才能夠取得呢?\\r\\n#b(去找桃花仙境的桃醫仙,並且取得桃醫仙的靈藥.)#k"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "什麼?藥品遺失了?"
+        },
+        "yes": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "嘖嘖... 正巧材料還有剩下,所以我才會重新製作給你.好好保管吧."
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2520015"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32622"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2520000"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q32623e"
+      }
+    }
+  }
+}

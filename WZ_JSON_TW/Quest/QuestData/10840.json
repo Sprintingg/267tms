@@ -1,0 +1,261 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[活動] 黃金富豪的研究支援"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#b#p2084001##k今天有事需要得到幫助，去找#b#p2084001##k看看。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#b#p9000021##k正在為#b#p2084001##k的兼職而正在為末日反抗軍開發新的道具。聽說#b#p9000021##k的研究進行的比較困難，#p2084001#希望我去找#b#p9000021##k幫助其將研究繼續進行下去，並在事後進行回報。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "找到#b#p9000021##k，幫助其收集燃料材料，並向黃金富豪報告。"
+    },
+    "autoCancel": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4032811:##t4032811:##c4032811#/10\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "500"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2084001"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "13"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201103140000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201104040000"
+      },
+      "start_t": {
+        "_dirType": "string",
+        "_value": "201008300000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201009270000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "10827"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          }
+        }
+      },
+      "dayOfWeek": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "Thursday"
+        }
+      },
+      "dayByDay": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000021"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q10840e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032811"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "10"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "dayOfWeek": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "Thursday"
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "info": {
+        "_dirType": "string",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4032811"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-10"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "這件事，我想交給你去做。"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "嗯，其實除你之外，我還有一位雇傭的人。你肯定也見過他，他叫#b#p9000021##k，記得嗎？"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "我跟#b#p9000021##k說了，我會支援他有關研究的一切需要，相應的他也要為末日反抗軍開發出新的道具來。而且那個開發專案，現在馬上就要成功了。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "但是我今天從加加那裡聽說，缺少實驗材料中的怪物紫色結晶。我希望你能替他取來這個材料。"
+        },
+        "3": {
+          "_dirType": "string",
+          "_value": "#b怪物紫色結晶#k是怪物爆出的稀有物品。現在我們需要#b10個#k結晶。只要收集10個結晶，送到加加那裡就可以了。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "看來你還有其他事要做呢…那我明白了。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "啊啊…爭取在最短的時間內完成吧…。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "哦，是黃金富豪先生派來的助手嗎？什麼？你說你把怪物紫色結晶拿來了？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "哼…馬上就要完成了是嗎？真是辛苦你了。完成之後，我們會給你看的，拭目以待吧。"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "還有轉告一下黃金富豪先生，就跟他說東西馬上就要完成了，而且開發出來的東西不會讓他失望的。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "材料什麼時候才會到呢…"
+          }
+        },
+        "quest": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "你去找加加吧。去幫他開發新的道具吧。"
+          }
+        }
+      }
+    }
+  }
+}

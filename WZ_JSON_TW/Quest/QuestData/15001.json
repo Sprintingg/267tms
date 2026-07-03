@@ -1,0 +1,145 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[전국시대] 타케다 신겐의 부탁 -1-"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "새로온 무장에게서 여기까지 어떻게 오게 되었는지 물어보려면 어떻게 해야할까? #p9000427#에게 다시 한번 말을 걸어 보자."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "새로 온 무장은 알 수 없는 주술에 걸려있는 것 같은데 하필이면 주술에 관한 내용이 적혀 있는 편지를 잃어버렸다고 한다. 어떤 주술인지 알아내기 위해 #m910810100#, #m910810120#, #m910810140#의 #o9803051#, #o9803052#으로부터 #b#i4034683:# #t4034683:##k을 모아오자."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "#p9000427#에게 부탁 받은 #b#i4034683:# #t4034683:##k을 모아 주었다. 주술까지 가르치다니... 오다군이 점점 강력해지는 것 같아 걱정이다."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4034683:# #t4034683:# #c4034683# / 30\\r"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000427"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q15001s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "33"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201510150000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201510150000"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "15000"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9000427"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q15001e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4034683"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "30"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "주술서가 너무 부족하군. 100권 중에 30권만 모아 달라는게 그렇게 힘든 일인가?"
+          }
+        },
+        "quest": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "이 정도 양으로는 분석할 수 없다네."
+          }
+        }
+      }
+    }
+  }
+}

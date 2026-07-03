@@ -1,0 +1,219 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[職業] 邪念體的出沒消息"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "10"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[轉職]"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "returnMapID": {
+      "_dirType": "int",
+      "_value": "120000100"
+    },
+    "returnPN": {
+      "_dirType": "string",
+      "_value": "ai04"
+    },
+    "targetType": {
+      "_dirType": "int",
+      "_value": "-1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "確認手下是否已經結束線索調查了吧！"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "線索調查結果顯示，有邪念體正在操控皇帝。\r\n\r\n現在就立即前往天空森林入口一探究竟吧！"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "已收集所有線索。現在可以知道所有事情的元兇了。"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330209"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "52434"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "job": {
+        "_dirType": "sub"
+      },
+      "job_TW": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "571"
+        }
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9330209"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q52435e"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9410162"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "250010000"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2430753"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "你所找來的線索，我已經都解讀過了。操控皇帝的東西，就是邪念體。"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "那種東西聽說是在邪惡的人死後，將其靈魂合在一起，所做成的邪惡精隨。在楓之谷裡，則是被稱之為黑暗魔法師的部下。"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "分析線索之後發現，邪念體近期出現在武陵地區的天空森林入口。"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "在那邊使用我所給的#b#t2430753:#就會出現邪念體，請擊殺那個邪念體。\\r\\n#b#e(接收時立即移動至#m250010000:#)#k#n"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "現在就送你到武陵地區的天空森林入口，小心喔！邪念體是能夠把皇帝變成魁儡般恐怖的東西。"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你還沒有準備好嗎？俠客有時也必須要有毅然決然地判斷的。"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "務必要擊殺邪念體喔。"
+          }
+        }
+      }
+    }
+  }
+}

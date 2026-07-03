@@ -1,0 +1,235 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[玫瑰庭園]玫瑰花束交給伊菲亞"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4030035:# #t4030035:# #c4030035# / 1\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "賽西莉亞似乎在製作些什麼.跟他交談吧!"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "賽西莉亞拜託將玫瑰花束交給伊菲亞.\\r\\n#b(若是遺失的話,只要和賽西莉亞交談就能夠重新領取.)#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "將賽西莉亞的玫瑰花束交給了伊菲亞."
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "221"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "682200"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2162000"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "115"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31038"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2161001"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q31039e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4030035"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4030035"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4030035"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "普通"
+          }
+        }
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "682200"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "鏘鏘,這是花束.怎麼樣,伊菲亞應該會很喜歡吧?希望這花束能稍微撫平伊菲亞哀傷的心."
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "...你說什麼?你說這是一般的玫瑰花束?才不是咧!這可是注入園藝師之魂精心捆綁的花束!\\r\\n#b(把玫瑰花束交給伊菲亞.)#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "這可不是普通的花束!"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "賽西莉亞的心地真的很善良.我還記得喔...管理花朵的方法是我親自教的.雖然宮裡的人常驚慌的問說王妃的手上怎麼能沾到泥土,但我還是很喜歡親手摸摸泥土和花朵.\\r\\n"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "怎麼樣,賽西莉亞製作的花束很美吧?"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "...你說什麼?你說這是一般的玫瑰花束?才不是咧!這可是注入園藝師之魂精心捆綁的花束!\\r\\n\\r\\n(把玫瑰花束交給伊菲亞.)"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "找我有什麼事嗎...?\\r\\n\\r\\n(需要玫瑰花.要是弄丟了,就再去向賽西莉亞取花吧.)"
+          }
+        }
+      },
+      "lost": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "什麼?你把我傾心製作的花束弄丟了?"
+        },
+        "yes": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "怎麼可以把這種東西弄丟呢!那裡面含有人家的心意耶."
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "Anim": {
+    "_dirType": "sub",
+    "AvatarSlots": {
+      "_dirType": "sub",
+      "Slot0": {
+        "_dirType": "sub",
+        "combo1": {
+          "_dirType": "sub",
+          "Action": {
+            "_dirType": "string",
+            "_value": "RL_Thief_1"
+          }
+        }
+      }
+    },
+    "Notifies": {
+      "_dirType": "sub",
+      "combo1Effect1": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "3"
+            }
+          }
+        }
+      },
+      "combo1Effect2": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_LayerEffect"
+          },
+          "Effect": {
+            "_dirType": "sub",
+            "z": {
+              "_dirType": "int",
+              "_value": "-1"
+            }
+          }
+        }
+      },
+      "combo1Sound": {
+        "_dirType": "sub",
+        "Notify": {
+          "_dirType": "sub",
+          "!class": {
+            "_dirType": "string",
+            "_value": "WZ2AnimNotify_PlaySound"
+          },
+          "SoundPath": {
+            "_dirType": "string",
+            "_value": "Sound/RoguelikeWz2.img/Skill/40000003/Use"
+          }
+        }
+      },
+      "combo1Attack": {
+        "_dirType": "sub"
+      }
+    },
+    "Sections": {
+      "_dirType": "sub",
+      "combo1": {
+        "_dirType": "sub",
+        "NextSectionName": {
+          "_dirType": "string",
+          "_value": "end"
+        }
+      },
+      "end": {
+        "_dirType": "sub",
+        "StartTime": {
+          "_dirType": "int",
+          "_value": "420"
+        }
+      }
+    }
+  },
+  "Events": {
+    "_dirType": "sub",
+    "combo1Attack": {
+      "_dirType": "sub",
+      "type": {
+        "_dirType": "string",
+        "_value": "Attack"
+      },
+      "constants": {
+        "_dirType": "sub",
+        "attackPower1Rate": {
+          "_dirType": "string",
+          "_value": "250"
+        },
+        "attackCount": {
+          "_dirType": "string",
+          "_value": "3"
+        },
+        "mobCount": {
+          "_dirType": "string",
+          "_value": "3"
+        },
+        "lt": {
+          "_dirType": "vector",
+          "_x": -150,
+          "_y": -110
+        },
+        "rb": {
+          "_dirType": "vector",
+          "_x": 30,
+          "_y": 15
+        },
+        "knockBackImpactX": {
+          "_dirType": "string",
+          "_value": "150"
+        }
+      },
+      "hit": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "onlyOnce": {
+            "_dirType": "string",
+            "_value": "1"
+          }
+        }
+      },
+      "hitSoundPath": {
+        "_dirType": "string",
+        "_value": "Sound/RoguelikeWz2.img/Skill/40000003/Hit"
+      }
+    }
+  },
+  "common": {
+    "_dirType": "sub",
+    "Tags": {
+      "_dirType": "sub",
+      "cannotDestroy": {
+        "_dirType": "sub"
+      }
+    },
+    "x1": {
+      "_dirType": "string",
+      "_value": "3"
+    },
+    "x2": {
+      "_dirType": "string",
+      "_value": "250"
+    },
+    "x3": {
+      "_dirType": "string",
+      "_value": "3"
+    }
+  }
+}

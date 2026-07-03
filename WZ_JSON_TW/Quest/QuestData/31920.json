@@ -1,0 +1,194 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[未來之門] 尋找祖先的智慧3"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "去詢問#b幽靈斯坦#k有關武術教練使用的 #r特殊方法#k吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "幽靈斯坦說武術教練在勇士之村 #b被怪物侵入#k時，使用了 #r木笛#k。聽說那是蘊含特殊力量的笛子... 快去將這件事告訴#b修行者#k吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "武術教練從使用過的怪物身上查出 #r守護居民的特殊方法#k了。"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "47"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "15125700"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2142007"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "185"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31919"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2142105"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "15125700"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "這種驕傲的戰士，也會留名後代。\\r你對這位朋友的什麼感興趣呢？\\r\\n#L0##b我想知道武術教練生前守護居民免受怪物攻擊的特別方法。#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "啊啊….想起來了。"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "拜訪勇士之村時，怪物們突然 #r攻進村子#k。正巧戰士們外出狩獵，情況非常危險。\\r\\n"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "但是武術教練突然拿出#e#r笛子#k#n。吹完那個之後#b怪物們開始撤退了#k。\\r該怎麼表達當時的感情呢？那是激動人心的瞬間。\\r\\n#e#b(向黃昏的勇士之村的修行者講述笛子的故事吧。)#k"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "咦？不想聽嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "偉大的先祖呀！ 請賜予我智慧。\\r\\n#L0##b已經查出武術教練保護居民的方法了！#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "什麼？那是真的嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "終於能夠保護居民們 #b了嗎？"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "好像聽到了崇高戰士呼喚出的靈魂聲音。"
+          }
+        }
+      }
+    }
+  }
+}

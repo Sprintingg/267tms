@@ -1,0 +1,178 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[聯盟任務] 遠征隊任務 - 聯盟的援軍"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "223"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "從聯盟派送的援軍已到達。接收強大援軍的幫助狩獵怪物，並一同協力擊倒光之巨人吧。完成任務後，回去跟 #b#p3003564##k進行報告完成遠征隊任務吧。\r\n\r\n聯盟的援軍是在狩獵怪物就會抵達，如果援軍越多時，可以獲得更強大的 #b援軍效果#k。但是巨人發散亡滅之光之後，一段期間內比較難補充支援軍的抵達。\r\n\r\n#r相關任務跟先前任務不同，是極度危險的任務。尤其如果不注意巨人的亡滅之光、懲罰之光的話，感覺會很容易失敗。#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "受到聯盟支援軍的幫助而成功了遠征隊任務。可是他們…"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "從聯盟派送的援軍已到達。接收強大援軍的幫助狩獵怪物，並一同協力擊倒光之巨人吧。完成任務後，回去跟 #b#p3003564##k進行報告完成遠征隊任務吧。\r\n\r\n聯盟的援軍是在狩獵怪物就會抵達，如果援軍越多時，可以獲得更強大的 #b援軍效果#k。但是巨人發散亡滅之光之後，一段期間內比較難補充支援軍的抵達。\r\n\r\n#r相關任務跟先前任務不同，是極度危險的任務。尤其如果不注意巨人的亡滅之光、懲罰之光的話，感覺會很容易失敗。#k"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1#聯盟支援軍抵達 #R35357ExarmyRef35369# / 35\r\n"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "10000 心願"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "35356"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003564"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "999"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "not"
+          }
+        }
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201902201000"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201903262359"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "3003564"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q35369e"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "35357"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "35"
+          },
+          "conditionContent": {
+            "_dirType": "string",
+            "_value": "聯盟支援軍的抵達"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "army"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "與聯盟支援軍的幫助一起阻擋光之巨人吧！\\r\\n- 聯盟的支援軍是狩獵怪物時就會出現，且若支援軍越多時，就可以獲得更強的 #b支援軍效果#k。但是巨人發散亡滅之光之後，一段期間內比較難補充支援軍的抵達。\\r\\n#r相關任務跟先前任務不同，是極度危險的任務。尤其如果不注意巨人的亡滅之光、懲罰之光的話，感覺會很容易失敗。#k"
+          }
+        }
+      }
+    }
+  }
+}

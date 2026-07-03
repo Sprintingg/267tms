@@ -1,0 +1,194 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[過去的英雄，狂狼勇士] 捉拿小偷！"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "6"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "為什麼會潛入到島上來了呢？去問問#b#p1201002##k吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "鑲在#p1201002#上的寶石#t4032312#被盜走了！竊盜犯#o9001013#正逃往#m140020300#方向了。應該是想利用船隻逃走。趕快去#m140020300#消滅#r#o9001013##k吧。\\r\\n\\r\\n#o9001013##r#a213011##k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "擊退#r#o9001013##k後返回。可是實際上沒找回 #b#t4032312##k... 知道真相的#b#p1201002##k大發雷霆。"
+    },
+    "type": {
+      "_dirType": "string",
+      "_value": "[轉職]"
+    },
+    "startNavi": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "returnMapID": {
+      "_dirType": "int",
+      "_value": "140000000"
+    },
+    "targetType": {
+      "_dirType": "int",
+      "_value": "-1"
+    },
+    "returnPN": {
+      "_dirType": "string",
+      "_value": "1201002"
+    },
+    "returnType": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|2"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1201002"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "60"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "21300"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "job": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "int",
+          "_value": "2110"
+        }
+      },
+      "job_TW": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1201002"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q21301e"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "9001013"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "140020200"
+      },
+      "portalName": {
+        "_dirType": "string",
+        "_value": "east00"
+      }
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "島裡進了小偷！那傢伙偷走了我本體上的#b#t4032312##k寶石！他裝扮成企鵝誰都不知道，不只這樣還輕鬆的逃出瑞恩村了！"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "再怎麼喊也沒人能聽見，沒辦法抓小偷，真鬱悶…叫#p1201000#的女孩子竟然還嫌我吵，用繃帶把我包起來！反正我就是跟人無法溝通…"
+      },
+      "2": {
+        "_dirType": "string",
+        "_value": "啊！不是閒聊時候了！小偷逃走前得趕快抓住！他拿著#b紅朱玉#k往港口去了，而且還慢悠悠的走著應該沒離開瑞恩島，快去抓他吧！"
+      },
+      "3": {
+        "_dirType": "string",
+        "_value": "究竟誰是小偷？不是很簡單嘛？最喜歡寶石的鳥兒是哪種鳥呢？當然是烏鴉啦！#r#o9001013##k喂！\\r\\n\\r\\n#b(接受時移動至#m140020200#，請將我從那邊移動至#m140020300#。)"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "什麼？不去？想學技術就說我長得帥，現在沒好處就說還不是靠裝飾，最後連個忙也不幫，你這個背叛者！"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "mob": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "還沒抓到#r#o9001013##k嗎？說了去#b港口#k那就能抓到的嘛…再拖下去你搭飛機也追不上…"
+          }
+        }
+      }
+    }
+  }
+}

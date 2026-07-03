@@ -1,0 +1,206 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[楓之谷知己]取得楓之谷簽名"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "其他朋友在楓之谷的旅行已經近行多久了呢?#p9010000#要告訴大家能和其他朋友們一起分享9周年快樂的方法."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p9010000#說#r#e1年以上的知己#k#n的其他玩家得到簽名的話,可取得#e#b好友點數(FP)#k#n,收集好友點數的話,可以領到好禮.\\n楓之谷玩越久的玩家,可獲得更多的簽名,就可以有更多的好友點數...\\r\\n#e<好友點數(FP)獲得方法>#n\\n1)想獲得簽名的角色滑鼠滑過,點滑鼠右鍵.\\n2)#r選擇'楓之谷簽名'#k選單.\\n3)按領取簽名鍵,成功取得簽名的話,可取得好友點數(FP)."
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "從楓之谷資歷越久的玩家身上獲得簽名的話,可以獲得較高的朋友點數.收集朋友點數(FP)領取#e#b楓友禮物#k#n.\\r\\n#e<朋友點數(FP)獲得方法>#n\\n1)游標移到想取得簽名的角色上,點選滑鼠右鍵.\\n2)#r選擇「獲得簽名」#k選項.\\n3)成功獲得簽名後會得到朋友點數(FP)."
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "autoComplete": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "resignBlocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "99|0"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "end": {
+        "_dirType": "string",
+        "_value": "201305230000"
+      },
+      "end_t": {
+        "_dirType": "string",
+        "_value": "201305160000"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "18127"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "0"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "FP"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "9010000"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "18127"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q13762e"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "1"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "FP"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "那麼現在開始告訴你收集#e#b楓之谷好友點數(FP)#k#n的方法.\\n為了收集好友點數,要取得其他角色的簽名.好友點數#r一天只能取得10次#k,#r楓之谷知己圖示的角色#k才可取得簽名.而且#r一天可以給20位#k簽名."
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "光是用說的沒辦法理解吧?請你親自去跟其他人要簽名吧.跟在楓之谷待越久的玩家要簽名,可以獲得較高的#b朋友點數(FP)#k."
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "#i3800500#\\n第一,找到名字前貼有#e楓之谷知己#n徽章的角色,角色所在位置#e滑鼠#n蓋過,點選#e右鍵#n,選擇#r#e'領取楓之谷簽名'#k#n選單."
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "#i3800501#\\n那麼向收到簽名要求的對象角色發送訊息.點對象[O]鍵的話,就會開啟簽名欄."
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "要請人簽名的人點選#e[領取簽名],#n要給人簽名的人點選#e[簽名]#n,成功領取簽名的話就會獲得朋友點數(FP).\\n#i3800502#"
+        },
+        "3": {
+          "_dirType": "string",
+          "_value": "但,請注意以下事項.\\n\\n#e#b<限制事項>#k#n\\n1.只能收到一次同一個帳戶內角色的簽名.\\n2.一天只能收到10個人的簽名.\\n3.簽名的人一天只能簽20次.\\n4.楓之谷管理人年份越久的人,簽名一次可獲得的FP會增加."
+        },
+        "4": {
+          "_dirType": "string",
+          "_value": "首先去聚集了很多人的地方看看好嗎?自由市場還是村莊之類的地方."
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "請不要把獲得簽名這件事想得太困難."
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "做得真不錯.這應該不難吧?那麼,就繼續認真地蒐集友情點數(FP)吧.蒐集的點數夠多的話,就可以兌換特別的禮物喔.\\n"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "希望你在楓之谷世界能認識許多好朋友!"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "首先去聚集了很多人的地方看看好嗎?自由市場還是村莊之類的地方."
+          }
+        }
+      }
+    }
+  }
+}

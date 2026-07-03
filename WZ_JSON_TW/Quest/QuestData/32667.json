@@ -1,0 +1,160 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[次元圖書館]故事的碎片"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "82"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "次元圖書館的圖書館長塔雷思說只要找到故事的碎片,就會提升墜飾欄位7天作為回報."
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "次元圖書館的圖書館長塔雷思說只要找到#b故事的碎片20個#k,就會提升墜飾欄位7天作為回報。\r\n#b故事的碎片#k可以向書櫃另一端森林的怪物取得。\r\n\r\n#e#b(從次元圖書館透過右邊的傳送點便能進入)#k#n"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "幫忙次元圖書館的圖書館長塔雷思尋找故事的碎片,獲得了禮物."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4033978:# #t4033978:# #c4033978# / 20\r\n"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2500002"
+      },
+      "infoNumber": {
+        "_dirType": "int",
+        "_value": "32668"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q32667s"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "100"
+      },
+      "infoex": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "value": {
+            "_dirType": "string",
+            "_value": "3"
+          },
+          "cond": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "exVariable": {
+            "_dirType": "string",
+            "_value": "count"
+          }
+        }
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "32666"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "interval": {
+        "_dirType": "int",
+        "_value": "0"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2500002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q32667e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033978"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "20"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "收集#b故事的碎片20個#k。可以從其他地圖的怪物低機率取得。無論哪邊都可以，去你喜歡的地方吧。\\r\\n#b(可透過雲雀麗塔對話入場。)#k#n\\r\\n\\r\\n - 書櫃另一端的艾靈森林\\r\\n - 書櫃另一端的平靜森林\\r\\n"
+          }
+        }
+      }
+    }
+  }
+}

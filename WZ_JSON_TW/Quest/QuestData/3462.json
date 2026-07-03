@@ -1,0 +1,149 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[拉圖斯]混沌之光"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "36"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "#p2041021#說看見了很新奇的東西，試著和他交談吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "#p2041021#說看到巨大的光芒降落在鐘塔最下層，而且那道光芒消失在時空的裂縫中，#p2041021#拜託去調查能知道光芒真面目的線索。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "受#p2041021#的委託調查墜墮到鐘塔最下層且消失在時空縫隙中的光芒時，從#p2041026#那邊聽到靈魂探測器震動的情報。"
+    },
+    "placeSummary": {
+      "_dirType": "string",
+      "_value": "#m220050300#"
+    },
+    "autoStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "summary": {
+      "_dirType": "string",
+      "_value": "去找位於#m220050300##k的#e幽靈獵人 巴柏#n，並且尋找關於混沌之光的線索。"
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "16"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "481572"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2041021"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "115"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q3462s"
+      },
+      "notInTeleportItemLimitedField": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "normalAutoStart": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "start": {
+        "_dirType": "string",
+        "_value": "201803010900"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2041026"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "completeNpcAutoGuide": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "481572"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "奇怪，真的太奇怪了，為什麼會突然這樣呢？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "你看，靈魂探測器震動了？就算鐘塔最下層本來就有很多幽靈，但也沒有到這種程度，不過，為何會突然震動的如此劇烈呢？"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "光線在時空的縫隙中消失不見了，請去尋找能查明那道光芒真面目的線索吧。"
+          }
+        }
+      }
+    }
+  }
+}

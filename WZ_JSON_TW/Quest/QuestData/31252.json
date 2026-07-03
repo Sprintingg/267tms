@@ -1,0 +1,207 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[克林森烏德城] 與魔族追擊者的戰鬥"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "66"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "與#p2134012#對話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "去第三道門後的#m301030000#/2擊退 #o8148006# 160隻和#o8148007# 160隻吧。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "去第三道門後的#m301030000#/2擊退了 #o8148006# 160隻和#o8148007# 160隻。"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##o8148006# #a312521#\r\n#questorder1##o8148007# #a312522#\r\n"
+    },
+    "rewardSummary": {
+      "_dirType": "string",
+      "_value": "#Wbasic#\r\n#fUI/UIWindow2.img/QuestIcon/8/0# 2,966,548\r\n可透過'[克林森烏德城] 第三次脫逃' 任務來進行\r\n"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "long",
+        "_value": "2966548"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "category": {
+      "_dirType": "string",
+      "_value": "0|0"
+    },
+    "blocked": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "demand": {
+      "_dirType": "sub",
+      "explain": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2134012"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "130"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "31250"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "npc": {
+        "_dirType": "int",
+        "_value": "2134012"
+      },
+      "mob": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8148006"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "160"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "8148007"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "160"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "2966548"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "第二個通道沒辦法使用了。開啟了第三個門往 #m301030000#去引起注意一下。這次可以幫我應付一下 #o8148006# 160隻， #o8148007# 160隻，怎麼樣？"
+      },
+      "stop": {
+        "_dirType": "sub"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "太棒了，真帥氣。做善事會得到好報的。\r\n#b（到第三道門另一頭的#m301030000#，擊退#o8148006# 160隻、#o8148007# 160個吧。）#k\r\n"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "都到這地步了，你要放棄嗎？不覺得魔族居民很可憐嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "充分吸引敵人的注意了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "為什麼用那種眼神看我呢？... 哈哈哈，你問我為什麼要擊退的數目越來越多？那是當然的啦。因為敵人的監視越來越嚴密了呀。\r\n\r\n總之現在可以利用第三條祕密通道了。幫我轉達吧。（去找#p2134009#吧。）\r\n"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "做善事會得到好報的。\r\n#b（到第三道門另一頭的#m301030000#，擊退#o8148006# 160隻、#o8148007# 160個吧。）#k"
+          }
+        }
+      }
+    }
+  }
+}

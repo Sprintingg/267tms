@@ -1,0 +1,170 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[收藏家的委託] 艾蕾麗亞的遺物"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "290"
+    },
+    "selfStart": {
+      "_dirType": "int",
+      "_value": "1"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "亞凱斯特告訴我，可以去自己很久以前使用的#b被封鎖的研究室#k中找找看#b艾蕾麗亞的遺物#k。究竟那裡會有什麼樣的真相呢？"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "在#b被封鎖的研究室#k找到#b艾蕾麗亞的日記和項鍊。#k日記上寫著，艾蕾麗亞和他的同伴們發生了什麼事，最後和賽伊蘭見面的那天，以及她再次回歸戰爭的理由...一切都寫在上面了。去找在#b冰原雪域#k的#b亞凱斯特#k吧。\r\n\r\n#b(* 進行任務時若遇到問題，請放棄任務後重新進行。)#k"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "告訴了亞凱斯特從艾蕾麗亞的遺物中找到了線索。"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "200"
+      }
+    },
+    "reqType": {
+      "_dirType": "int",
+      "_value": "64"
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5000000"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "subJobFlags": {
+        "_dirType": "int",
+        "_value": "15"
+      },
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "200"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q102007s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "102006"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "2020005"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "transferField": {
+        "_dirType": "int",
+        "_value": "211000000"
+      },
+      "portalName": {
+        "_dirType": "string",
+        "_value": "outPT"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "5000000"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "#b這項鍊…雖然失去了光芒，但還是殘留著神祕的感覺。#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "#b閱讀日誌後，再去找亞凱斯特吧。#k\\r\\n#b#e(*接受時將立即移動。)#n#k"
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "怎麼樣，找到什麼了嗎？"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "日誌裡有那樣的內容嗎？嗯...確實，師父在那位劍士來訪後的某一天，#b將自己的一切傳授給我後離開了這裡。#k"
+        },
+        "1": {
+          "_dirType": "string",
+          "_value": "然後...#b在300年前的戰爭中戰死#k了。"
+        },
+        "2": {
+          "_dirType": "string",
+          "_value": "我原本無法理解師父為何要那樣離開，但現在我終於明白了。 原來是師父最後的願望。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub"
+      }
+    }
+  }
+}

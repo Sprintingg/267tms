@@ -1,0 +1,140 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[偵探雷夫的事件日誌] 跟烏鴉小姐喝杯茶"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "226"
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#questorder1##i4036494:# #t4036494:# #c4036494# / 25\r\n"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "稱為淨化裝置的東西上刻上的花紋竟然是公司的花紋！那麼，謝娜的真面目難道是…？去#b古勒葛棲息地#k的雷夫對話吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "雷夫斯說可以透過操作機器來停止。但說按鈕都消失不見了呢？要去 #b危險的古勒葛棲息地1#k跟古勒葛們找回 #b淨化裝置按鈕#k。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "找回了淨化裝置，可是不太能夠理解雷夫斯再說什麼話。"
+    },
+    "resignScript": {
+      "_dirType": "string",
+      "_value": "q37118x"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "175"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "179"
+      },
+      "except": {
+        "_dirType": "sub"
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3004045"
+      },
+      "startscript": {
+        "_dirType": "string",
+        "_value": "q37118s"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "37117"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "3004046"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "endscript": {
+        "_dirType": "string",
+        "_value": "q37118e"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4036494"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "25"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub"
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "stop": {
+        "_dirType": "sub",
+        "default": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "(叨叨咕咕)…淨化裝置按鈕…在#b危險的古勒葛棲息地1#k中…"
+          }
+        }
+      }
+    }
+  }
+}

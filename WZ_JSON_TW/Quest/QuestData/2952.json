@@ -1,0 +1,244 @@
+{
+  "QuestInfo": {
+    "_dirType": "sub",
+    "name": {
+      "_dirType": "string",
+      "_value": "[黃金海岸] 重要的東西"
+    },
+    "0": {
+      "_dirType": "string",
+      "_value": "前往黃金海岸渡假村的途中遇到了不知道在找什麼東西的人。問他看看是不是走對了路吧。"
+    },
+    "1": {
+      "_dirType": "string",
+      "_value": "清除在海灘草地2的#o3401000#, #o3401001#，並找出#r#t4033625##k。\\n找到球之後，必需要將球交給在#b#m120040000#的黃金富豪二世#k才可以。"
+    },
+    "2": {
+      "_dirType": "string",
+      "_value": "幫助黃金富豪找到了#t4033625#。但說這種小狗的玩具是重要的東西…這個人到底..."
+    },
+    "demandSummary": {
+      "_dirType": "string",
+      "_value": "#i4033625:# #t4033625:# #c4033625# / 1\r\n"
+    },
+    "area": {
+      "_dirType": "int",
+      "_value": "228"
+    },
+    "recommend": {
+      "_dirType": "sub",
+      "lvmin": {
+        "_dirType": "int",
+        "_value": "30"
+      },
+      "lvmax": {
+        "_dirType": "int",
+        "_value": "59"
+      }
+    },
+    "reward": {
+      "_dirType": "sub",
+      "exp": {
+        "_dirType": "int",
+        "_value": "21405"
+      },
+      "item": {
+        "_dirType": "sub"
+      },
+      "explain": {
+        "_dirType": "sub",
+        "summaryDemand": {
+          "_dirType": "sub",
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Check": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1082201"
+      },
+      "QuestOrOption": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "quest": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "2951"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        },
+        "1": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "23671"
+          },
+          "state": {
+            "_dirType": "int",
+            "_value": "2"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "npc": {
+        "_dirType": "int",
+        "_value": "1082002"
+      },
+      "order": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033625"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "order": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      }
+    }
+  },
+  "Act": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub"
+    },
+    "1": {
+      "_dirType": "sub",
+      "item": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "id": {
+            "_dirType": "int",
+            "_value": "4033625"
+          },
+          "count": {
+            "_dirType": "int",
+            "_value": "-1"
+          },
+          "potentialGrade": {
+            "_dirType": "string",
+            "_value": "一般"
+          }
+        }
+      },
+      "exp": {
+        "_dirType": "int",
+        "_value": "21405"
+      }
+    }
+  },
+  "Say": {
+    "_dirType": "sub",
+    "0": {
+      "_dirType": "sub",
+      "ask": {
+        "_dirType": "int",
+        "_value": "1"
+      },
+      "0": {
+        "_dirType": "string",
+        "_value": "這裡是什麼地方…是在那裡？\\r\\n#L0##b我，往這方向走去應該會到黃金海岸渡假村吧？#l\\n#k"
+      },
+      "1": {
+        "_dirType": "string",
+        "_value": "等一下？你說的是什麼話？我有點不太專心…這，我踩的是什麼啊！啊對不起，可以幫我一下嗎？"
+      },
+      "stop": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "sub",
+          "answer": {
+            "_dirType": "int",
+            "_value": "1"
+          },
+          "flip": {
+            "_dirType": "int",
+            "_value": "1"
+          }
+        }
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "我在找個東西，請一起找找吧。#i4033625#產生#t4033625#是重要的事情！如果要找到球的話，請轉交給在#b#m120040000#的黃金富豪二世#k。 要不然名聲也會被搞亂…那樣我有點急事…拜託了！"
+        }
+      },
+      "no": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "如果不幫忙的話可以閃開一點嗎？"
+        }
+      }
+    },
+    "1": {
+      "_dirType": "sub",
+      "0": {
+        "_dirType": "string",
+        "_value": "好像是第一次見面的樣子~你是那位？啊！#t4033625#就是帶那位來的人。"
+      },
+      "yes": {
+        "_dirType": "sub",
+        "0": {
+          "_dirType": "string",
+          "_value": "呼呼，好了。 我們 威廉遺失這球之後他很傷心呢。 你不知道威廉嗎？跟她打招呼吧。他就是我的小孩 。"
+        }
+      },
+      "stop": {
+        "_dirType": "sub",
+        "npc": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "我現在有點忙。#m120040200#的怪物消滅掉#t4033625#然後找到#b黃金富豪二世#k請轉交。一直往右邊走的話會經過海邊草叢1然後就會出現黃金海岸渡假村了。"
+          }
+        },
+        "item": {
+          "_dirType": "sub",
+          "0": {
+            "_dirType": "string",
+            "_value": "#t4033625#應該要找…好像往#m120040200#飛過去了。那個地方的怪物藏著球嗎？"
+          }
+        }
+      }
+    }
+  }
+}
